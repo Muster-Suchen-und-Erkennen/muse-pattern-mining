@@ -22,6 +22,9 @@
       <MiningStructure>
         <ID>ms_basiselement_1</ID>
       </MiningStructure>
+      <MiningStructure>
+        <ID>ms_kostuem_film_rolle_1</ID>
+      </MiningStructure>
     </MiningStructures>
     <DataSourceImpersonationInfo>
       <ImpersonationMode xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">Default</ImpersonationMode>

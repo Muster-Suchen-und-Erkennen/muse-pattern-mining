@@ -40,7 +40,7 @@
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.DataSourceView</Type>
-        <TimeStamp>gFysqQ8EPp7YdwgVlNdwq5nGrL4=11.09.2015 09:37:3811.09.2015 09:33:12</TimeStamp>
+        <TimeStamp>AChZdt5ZnNNVj4Z262kNoSTANkE=11.09.2015 13:00:4611.09.2015 09:33:12</TimeStamp>
         <ID>
           <String>dsv_kostuem_film_rolle</String>
         </ID>
@@ -54,9 +54,16 @@
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.MiningStructure</Type>
-        <TimeStamp>o+T2+VL1s8PJsQT22ODsqIh7FIM=11.09.2015 11:02:3011.09.2015 10:38:16</TimeStamp>
+        <TimeStamp>9U13xRxTTjCMSF5fusqJme0yuVI=11.09.2015 14:12:2111.09.2015 10:38:16</TimeStamp>
         <ID>
           <String>ms_basiselement_1</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.MiningStructure</Type>
+        <TimeStamp>iQpT15UfSMYbLoLl33XUkaNIKxk=11.09.2015 14:10:1111.09.2015 11:26:53</TimeStamp>
+        <ID>
+          <String>ms_kostuem_film_rolle_1</String>
         </ID>
       </ObjectSnapshot>
     </ObjectSnapshots>
@@ -71,5 +78,5 @@
   </Snapshot>
   <AssemblyLocations />
   <ProcessingComplete>true</ProcessingComplete>
-  <LastDeployed>2015-09-11T09:02:34.063333Z</LastDeployed>
+  <LastDeployed>2015-09-11T12:13:55.856667Z</LastDeployed>
 </DeploymentSnapshot>
