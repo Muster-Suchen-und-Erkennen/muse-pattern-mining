@@ -1,0 +1,2013 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="aad9ed67-4a96-4617-99c6-cb1ad7e5a75f" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Kostuem DWX3</ID>
+  <Name>Kostuem DWX3</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>Kostuem DWX3</DataSourceID>
+  <Schema>
+    <xs:schema id="Kostuem_x0020_DWX3" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="Kostuem_x0020_DWX3" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="9a853f02-3765-41d4-b6a7-10a4eb660d00">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_Basiselement" msprop:design-time-name="6d81bf0a-d051-428a-b353-768bbf9f3546" msprop:DbTableName="Basiselement" msprop:FriendlyName="Basiselement" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="BECubeID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="7837acb5-a5b3-4a3e-9b83-a978af5805ee" msprop:DbColumnName="BECubeID" msprop:FriendlyName="BECubeID" type="xs:int" />
+                  <xs:element name="Basiselementname" msprop:design-time-name="ea2cda6f-b60d-4d16-abb4-48f8042fd4c5" msprop:DbColumnName="Basiselementname" msprop:FriendlyName="Basiselementname">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="BasiselementID" msprop:design-time-name="222a50b8-6c4e-41da-a4a0-37ee1983ca17" msprop:DbColumnName="BasiselementID" msprop:FriendlyName="BasiselementID" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Basiselementdesign" msprop:design-time-name="8d9c9f16-0459-4a85-ac2a-866dca1cadf5" msprop:DbTableName="Basiselementdesign" msprop:FriendlyName="Basiselementdesign" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="BasiselementID" msprop:design-time-name="b04cd0bb-f572-4751-8611-deb391c5f5c0" msprop:DbColumnName="BasiselementID" msprop:FriendlyName="BasiselementID" type="xs:int" minOccurs="0" />
+                  <xs:element name="Designname" msprop:design-time-name="92d46802-7e87-4c85-82e8-e6d18690b114" msprop:DbColumnName="Designname" msprop:FriendlyName="Designname" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="BEDesignID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="350d45a9-f9a1-44a7-97c3-fc5c5634f1d6" msprop:DbColumnName="BEDesignID" msprop:FriendlyName="BEDesignID" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Basiselementfarbe" msprop:design-time-name="9c4c9d29-1d16-4529-908f-a00eb71ee4f0" msprop:DbTableName="Basiselementfarbe" msprop:FriendlyName="Basiselementfarbe" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="BasiselementID" msprop:design-time-name="7fccaed6-acf6-4009-8abb-2053e7cc24eb" msprop:DbColumnName="BasiselementID" msprop:FriendlyName="BasiselementID" type="xs:int" minOccurs="0" />
+                  <xs:element name="BEFarbID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="deab5d5c-be04-469b-916d-d6624caff31e" msprop:DbColumnName="BEFarbID" msprop:FriendlyName="BEFarbID" type="xs:int" />
+                  <xs:element name="Farbname" msprop:design-time-name="ce3d866c-2aa6-4771-961b-50dcf07075ec" msprop:DbColumnName="Farbname" msprop:FriendlyName="Farbname" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Farbeindruck" msprop:design-time-name="4e4db5d0-263d-4254-8e4c-2850cb01e676" msprop:DbColumnName="Farbeindruck" msprop:FriendlyName="Farbeindruck" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Basiselementform" msprop:design-time-name="375bbeaf-27a5-4349-9063-a180617ee16f" msprop:DbTableName="Basiselementform" msprop:FriendlyName="Basiselementform" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="BasiselementID" msprop:design-time-name="2332f224-2c76-4c37-a654-ae5586ded890" msprop:DbColumnName="BasiselementID" msprop:FriendlyName="BasiselementID" type="xs:int" minOccurs="0" />
+                  <xs:element name="Formname" msprop:design-time-name="a12178ea-c005-4bcb-92fb-bed5a363863a" msprop:DbColumnName="Formname" msprop:FriendlyName="Formname" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="BEFormID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="4289c581-0db5-471f-8022-b80d7d26f36a" msprop:DbColumnName="BEFormID" msprop:FriendlyName="BEFormID" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Basiselementfunktion" msprop:design-time-name="f925b155-95a8-410b-b6b4-eff63772a5b9" msprop:DbTableName="Basiselementfunktion" msprop:FriendlyName="Basiselementfunktion" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="BasiselementID" msprop:design-time-name="9233554b-7141-472c-b4ba-1dacfefbe884" msprop:DbColumnName="BasiselementID" msprop:FriendlyName="BasiselementID" type="xs:int" minOccurs="0" />
+                  <xs:element name="Funktionsname" msprop:design-time-name="b0771024-c1de-4f96-8a61-575ec8e8ab6c" msprop:DbColumnName="Funktionsname" msprop:FriendlyName="Funktionsname" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="BEFunktionID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="717f62dd-edf3-43cc-ad34-4cb3a34281fb" msprop:DbColumnName="BEFunktionID" msprop:FriendlyName="BEFunktionID" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Basiselementmaterial" msprop:design-time-name="604c7584-3e51-4dc1-a461-300e0733e7ee" msprop:DbTableName="Basiselementmaterial" msprop:FriendlyName="Basiselementmaterial" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="BasiselementID" msprop:design-time-name="eb67e0f5-2941-4bb8-a23b-37e1ec72e7c8" msprop:DbColumnName="BasiselementID" msprop:FriendlyName="BasiselementID" type="xs:int" minOccurs="0" />
+                  <xs:element name="Materialname" msprop:design-time-name="b9329909-53b0-46e3-aa7f-65eba081d7fa" msprop:DbColumnName="Materialname" msprop:FriendlyName="Materialname" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Materialeindruck" msprop:design-time-name="253c5a3c-ac8f-4d99-a1b8-6e5e6e51c0bd" msprop:DbColumnName="Materialeindruck" msprop:FriendlyName="Materialeindruck" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="89" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="BEMaterialID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="8e36df5f-612c-480d-a524-88640df9e119" msprop:DbColumnName="BEMaterialID" msprop:FriendlyName="BEMaterialID" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Basiselementtrageweise" msprop:design-time-name="f779d9f9-ea8c-4506-abb7-f37ca806b988" msprop:DbTableName="Basiselementtrageweise" msprop:FriendlyName="Basiselementtrageweise" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="BasiselementID" msprop:design-time-name="1a3584bf-7821-4b2c-b077-d797bef46350" msprop:DbColumnName="BasiselementID" msprop:FriendlyName="BasiselementID" type="xs:int" minOccurs="0" />
+                  <xs:element name="Trageweisename" msprop:design-time-name="abd40dad-6087-4520-9b40-7e8ab5a106dc" msprop:DbColumnName="Trageweisename" msprop:FriendlyName="Trageweisename" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="BETragweiseID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="fdd65f89-c21b-45e1-9b85-a182f55cdaa7" msprop:DbColumnName="BETragweiseID" msprop:FriendlyName="BETragweiseID" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Basiselementzustand" msprop:design-time-name="94c1ea40-992d-4e11-8f84-caf64488d2d0" msprop:DbTableName="Basiselementzustand" msprop:FriendlyName="Basiselementzustand" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="BasiselementID" msprop:design-time-name="93d00dc7-698f-478b-9ed7-03a5c5365052" msprop:DbColumnName="BasiselementID" msprop:FriendlyName="BasiselementID" type="xs:int" minOccurs="0" />
+                  <xs:element name="Zustandsname" msprop:design-time-name="2a0e78b3-6863-4293-9ae3-b7077a729c09" msprop:DbColumnName="Zustandsname" msprop:FriendlyName="Zustandsname" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="BEZustandID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="c4cf1a06-1d4d-4313-835a-d3f75a124547" msprop:DbColumnName="BEZustandID" msprop:FriendlyName="BEZustandID" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_FaktentabelleBasiselement" msprop:design-time-name="3e744b68-27e6-43b2-b6a6-51216c2c06b4" msprop:DbTableName="FaktentabelleBasiselement" msprop:FriendlyName="FaktentabelleBasiselement" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="KostuemID" msprop:design-time-name="6c831fab-46c4-4f59-9d43-cda957db2c41" msprop:DbColumnName="KostuemID" msprop:FriendlyName="KostuemID" type="xs:int" minOccurs="0" />
+                  <xs:element name="RollenID" msprop:design-time-name="7cf5feb1-4390-4b84-b8f6-3711b8cb971e" msprop:DbColumnName="RollenID" msprop:FriendlyName="RollenID" type="xs:int" minOccurs="0" />
+                  <xs:element name="FilmID" msprop:design-time-name="693f9141-be02-4b23-9477-ad907217f73b" msprop:DbColumnName="FilmID" msprop:FriendlyName="FilmID" type="xs:int" minOccurs="0" />
+                  <xs:element name="BECubeID" msprop:design-time-name="9edfc7d1-a1bf-4234-9d60-0c92d1793c2d" msprop:DbColumnName="BECubeID" msprop:FriendlyName="BECubeID" type="xs:int" minOccurs="0" />
+                  <xs:element name="BEMaterialID" msprop:design-time-name="e1bf62c6-93f6-4d73-b73c-ea8a78cd39b8" msprop:DbColumnName="BEMaterialID" msprop:FriendlyName="BEMaterialID" type="xs:int" minOccurs="0" />
+                  <xs:element name="BEDesignID" msprop:design-time-name="a2041f56-5f14-48f9-8006-87f206605613" msprop:DbColumnName="BEDesignID" msprop:FriendlyName="BEDesignID" type="xs:int" minOccurs="0" />
+                  <xs:element name="BEFarbID" msprop:design-time-name="eb28f65e-38c8-4ee5-bff0-3d247f84c550" msprop:DbColumnName="BEFarbID" msprop:FriendlyName="BEFarbID" type="xs:int" minOccurs="0" />
+                  <xs:element name="BEFormID" msprop:design-time-name="8cef0d04-1231-4545-af85-9a56317016f4" msprop:DbColumnName="BEFormID" msprop:FriendlyName="BEFormID" type="xs:int" minOccurs="0" />
+                  <xs:element name="BEFunktionID" msprop:design-time-name="a18c60d2-4b37-4514-811e-9606ee2f0c90" msprop:DbColumnName="BEFunktionID" msprop:FriendlyName="BEFunktionID" type="xs:int" minOccurs="0" />
+                  <xs:element name="BETragweiseID" msprop:design-time-name="dc3dd035-952b-4766-89b6-cefea08a32f6" msprop:DbColumnName="BETragweiseID" msprop:FriendlyName="BETragweiseID" type="xs:int" minOccurs="0" />
+                  <xs:element name="BEZustandID" msprop:design-time-name="c7e51786-be81-47b1-9720-4f56add4df39" msprop:DbColumnName="BEZustandID" msprop:FriendlyName="BEZustandID" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_FaktentabelleFilm" msprop:design-time-name="6f145e0e-7ab3-414b-8193-e25824b283f4" msprop:DbTableName="FaktentabelleFilm" msprop:FriendlyName="FaktentabelleFilm" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="FilmgenreID" msprop:design-time-name="8b9e9a53-715a-452b-8aa2-7eeea33b6ceb" msprop:DbColumnName="FilmgenreID" msprop:FriendlyName="FilmgenreID" type="xs:int" minOccurs="0" />
+                  <xs:element name="FilmfarbkonzeptID" msprop:design-time-name="f636f759-e7e7-410d-8e23-d8467c776493" msprop:DbColumnName="FilmfarbkonzeptID" msprop:FriendlyName="FilmfarbkonzeptID" type="xs:int" minOccurs="0" />
+                  <xs:element name="FilmID" msprop:design-time-name="c7f81329-6cb5-45ae-b4e9-fdc8f72dde8a" msprop:DbColumnName="FilmID" msprop:FriendlyName="FilmID" type="xs:int" minOccurs="0" />
+                  <xs:element name="FilmproduktionsortID" msprop:design-time-name="dc977c92-754c-41b8-bf8a-677d8be64858" msprop:DbColumnName="FilmproduktionsortID" msprop:FriendlyName="FilmproduktionsortID" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_FaktentabelleKostuem" msprop:design-time-name="f96ae67f-977e-446a-94c8-b8351c6c714f" msprop:DbTableName="FaktentabelleKostuem" msprop:FriendlyName="FaktentabelleKostuem" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="KostuemID" msprop:design-time-name="4c521ea7-980a-4fb5-aad5-69665826ce76" msprop:DbColumnName="KostuemID" msprop:FriendlyName="KostuemID" type="xs:int" minOccurs="0" />
+                  <xs:element name="RollenID" msprop:design-time-name="bac6654c-a630-4f37-8e8a-a6336e5b8dda" msprop:DbColumnName="RollenID" msprop:FriendlyName="RollenID" type="xs:int" minOccurs="0" />
+                  <xs:element name="FilmID" msprop:design-time-name="8939d185-907c-4086-9a4a-013335f41c31" msprop:DbColumnName="FilmID" msprop:FriendlyName="FilmID" type="xs:int" minOccurs="0" />
+                  <xs:element name="KostuemspielzeitID" msprop:design-time-name="ad9f1895-7ff9-4816-8cc6-f7f68f35db9f" msprop:DbColumnName="KostuemspielzeitID" msprop:FriendlyName="KostuemspielzeitID" type="xs:int" minOccurs="0" />
+                  <xs:element name="KostuemspielortID" msprop:design-time-name="8d30b87a-a97e-490b-a408-21b2af8c7617" msprop:DbColumnName="KostuemspielortID" msprop:FriendlyName="KostuemspielortID" type="xs:int" minOccurs="0" />
+                  <xs:element name="KostuemtageszeitID" msprop:design-time-name="8330059b-d9d9-4875-8e5e-55be5514b78d" msprop:DbColumnName="KostuemtageszeitID" msprop:FriendlyName="KostuemtageszeitID" type="xs:int" minOccurs="0" />
+                  <xs:element name="KostuemaltereindruckID" msprop:design-time-name="994b3a56-b5f2-42d4-8f9a-1f2340df3833" msprop:DbColumnName="KostuemaltereindruckID" msprop:FriendlyName="KostuemaltereindruckID" type="xs:int" minOccurs="0" />
+                  <xs:element name="CharaktereigenschaftenID" msprop:design-time-name="5dcfb395-a0ab-4321-857d-f24ef7fe6122" msprop:DbColumnName="CharaktereigenschaftenID" msprop:FriendlyName="CharaktereigenschaftenID" type="xs:int" minOccurs="0" />
+                  <xs:element name="KostuemkoerpermodifikationenID" msprop:design-time-name="0b8c6e8f-c252-4c92-b19b-7621e5d01440" msprop:DbColumnName="KostuemkoerpermodifikationenID" msprop:FriendlyName="KostuemkoerpermodifikationenID" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_FaktentabelleKostuemTimecode" msprop:design-time-name="ab80c188-2da9-4cad-92c5-8ef9f1513ec7" msprop:DbTableName="FaktentabelleKostuemTimecode" msprop:FriendlyName="FaktentabelleKostuemTimecode" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="KostuemID" msprop:design-time-name="93b9afc2-0e49-436c-83a6-2c1f617d2593" msprop:DbColumnName="KostuemID" msprop:FriendlyName="KostuemID" type="xs:int" minOccurs="0" />
+                  <xs:element name="RollenID" msprop:design-time-name="759d88d9-cd8e-426c-94ab-9c9c53980cf2" msprop:DbColumnName="RollenID" msprop:FriendlyName="RollenID" type="xs:int" minOccurs="0" />
+                  <xs:element name="FilmID" msprop:design-time-name="d844303e-cdec-4ed4-889a-612865a2b4f5" msprop:DbColumnName="FilmID" msprop:FriendlyName="FilmID" type="xs:int" minOccurs="0" />
+                  <xs:element name="Timecodeanfang" msdata:DataType="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:design-time-name="d180f2a2-89ed-408c-8090-b2f7ff08a868" msprop:DbColumnName="Timecodeanfang" msprop:FriendlyName="Timecodeanfang" type="xs:anyType" minOccurs="0" />
+                  <xs:element name="Timecodeende" msdata:DataType="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:design-time-name="c6a5e733-933b-42c4-a43c-49624f214d7f" msprop:DbColumnName="Timecodeende" msprop:FriendlyName="Timecodeende" type="xs:anyType" minOccurs="0" />
+                  <xs:element name="Spieldauer" msprop:design-time-name="fc340138-a7c7-422c-81dc-10cc8e053d79" msprop:DbColumnName="Spieldauer" msprop:FriendlyName="Spieldauer" type="xs:int" minOccurs="0" />
+                  <xs:element name="SpieldauerProzent" msprop:design-time-name="d84c2bdf-8647-44ee-8204-1faac3675494" msprop:DbColumnName="SpieldauerProzent" msprop:FriendlyName="SpieldauerProzent" type="xs:decimal" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_FaktentabelleRolle" msprop:design-time-name="f04e01ec-8dd1-4a84-b934-0fa4fac651f4" msprop:DbTableName="FaktentabelleRolle" msprop:FriendlyName="FaktentabelleRolle" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="FilmID" msprop:design-time-name="75610b84-0f1a-44d0-8773-7631ff7d9a14" msprop:DbColumnName="FilmID" msprop:FriendlyName="FilmID" type="xs:int" minOccurs="0" />
+                  <xs:element name="RollenID" msprop:design-time-name="2333c065-69db-4b7e-96c8-69987cecf222" msprop:DbColumnName="RollenID" msprop:FriendlyName="RollenID" type="xs:int" minOccurs="0" />
+                  <xs:element name="RollenfamilienstandID" msprop:design-time-name="194719c5-57ff-4b21-86e3-e230af02c97b" msprop:DbColumnName="RollenfamilienstandID" msprop:FriendlyName="RollenfamilienstandID" type="xs:int" minOccurs="0" />
+                  <xs:element name="RolledominantecharaktereigenschaftID" msprop:design-time-name="11a95e31-dd8e-4490-b358-68d55eea48b7" msprop:DbColumnName="RolledominantecharaktereigenschaftID" msprop:FriendlyName="RolledominantecharaktereigenschaftID" type="xs:int" minOccurs="0" />
+                  <xs:element name="StereotypID" msprop:design-time-name="a2093b5a-4862-4f39-9b8d-e48557e1daf8" msprop:DbColumnName="StereotypID" msprop:FriendlyName="StereotypID" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_FaktentabelleTeilelement" msprop:design-time-name="67a27e83-8941-4bd2-a5c3-cc9d0054e7d1" msprop:DbTableName="FaktentabelleTeilelement" msprop:FriendlyName="FaktentabelleTeilelement" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="BECubeID" msprop:design-time-name="74bd2747-524c-4961-aba9-849cd08a607c" msprop:DbColumnName="BECubeID" msprop:FriendlyName="BECubeID" type="xs:int" minOccurs="0" />
+                  <xs:element name="TECubeID" msprop:design-time-name="1f5a04ef-a9b9-41de-8ab9-7d8c1d421408" msprop:DbColumnName="TECubeID" msprop:FriendlyName="TECubeID" type="xs:int" minOccurs="0" />
+                  <xs:element name="TEDesignID" msprop:design-time-name="b4f35dbd-c185-4ef9-aa47-9a00ede02f26" msprop:DbColumnName="TEDesignID" msprop:FriendlyName="TEDesignID" type="xs:int" minOccurs="0" />
+                  <xs:element name="TEFarbID" msprop:design-time-name="bc3a6a3a-fc88-49e6-b390-344670b7f9c8" msprop:DbColumnName="TEFarbID" msprop:FriendlyName="TEFarbID" type="xs:int" minOccurs="0" />
+                  <xs:element name="TEMaterialID" msprop:design-time-name="57abaf92-a50e-4303-a5fe-69147d4b10c5" msprop:DbColumnName="TEMaterialID" msprop:FriendlyName="TEMaterialID" type="xs:int" minOccurs="0" />
+                  <xs:element name="TEFormID" msprop:design-time-name="720a2934-27d9-4384-a6d6-2f0ea88dd4a5" msprop:DbColumnName="TEFormID" msprop:FriendlyName="TEFormID" type="xs:int" minOccurs="0" />
+                  <xs:element name="TETragweiseID" msprop:design-time-name="f2935411-da3b-4752-b4e6-c985e7e26ca5" msprop:DbColumnName="TETragweiseID" msprop:FriendlyName="TETragweiseID" type="xs:int" minOccurs="0" />
+                  <xs:element name="TEZustandID" msprop:design-time-name="eb32cf7b-4aa7-4380-8204-47eb1e229e5e" msprop:DbColumnName="TEZustandID" msprop:FriendlyName="TEZustandID" type="xs:int" minOccurs="0" />
+                  <xs:element name="FilmID" msprop:design-time-name="24b0681d-d70f-4e15-9df8-765409245284" msprop:DbColumnName="FilmID" msprop:FriendlyName="FilmID" type="xs:int" minOccurs="0" />
+                  <xs:element name="RollenID" msprop:design-time-name="1eef3fc7-9e03-49b8-b0f9-03b1c44f9083" msprop:DbColumnName="RollenID" msprop:FriendlyName="RollenID" type="xs:int" minOccurs="0" />
+                  <xs:element name="KostuemID" msprop:design-time-name="3a735c0b-7024-4ec1-a0eb-2a05316ee35b" msprop:DbColumnName="KostuemID" msprop:FriendlyName="KostuemID" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Film" msprop:design-time-name="bbc4e3ec-9e23-4c55-8b7f-6041a6f0525b" msprop:DbTableName="Film" msprop:FriendlyName="Film" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="FilmID" msprop:design-time-name="c2a4ae5f-271a-4298-b45a-922c3471d445" msprop:DbColumnName="FilmID" msprop:FriendlyName="FilmID" type="xs:int" />
+                  <xs:element name="Filmtitel" msprop:design-time-name="ad147cd3-e3fb-489d-bb44-098394dd4492" msprop:DbColumnName="Filmtitel" msprop:FriendlyName="Filmtitel" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Originaltitel" msprop:design-time-name="74d3d082-8c72-4e55-a62b-d9c92b7e40b2" msprop:DbColumnName="Originaltitel" msprop:FriendlyName="Originaltitel" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Regiseurvorname" msprop:design-time-name="6319744e-6cf6-4c45-aa55-96b6d4969117" msprop:DbColumnName="Regiseurvorname" msprop:FriendlyName="Regiseurvorname" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Regiseurnachname" msprop:design-time-name="24c3634c-db3c-431b-9098-b37085994175" msprop:DbColumnName="Regiseurnachname" msprop:FriendlyName="Regiseurnachname" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Kostuembildnervorname" msprop:design-time-name="6fad6908-e560-4c0d-87d6-956dd1288c45" msprop:DbColumnName="Kostuembildnervorname" msprop:FriendlyName="Kostuembildnervorname" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Kostuembildnernachname" msprop:design-time-name="81f041c4-c013-42aa-9713-1abe2beb71e4" msprop:DbColumnName="Kostuembildnernachname" msprop:FriendlyName="Kostuembildnernachname" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Erscheinungsjahr" msprop:design-time-name="45270917-8b1d-4a0a-a459-0903415fea0a" msprop:DbColumnName="Erscheinungsjahr" msprop:FriendlyName="Erscheinungsjahr" type="xs:int" minOccurs="0" />
+                  <xs:element name="Stil" msprop:design-time-name="75eca5c8-7cc7-4d1a-b42e-8a748125e821" msprop:DbColumnName="Stil" msprop:FriendlyName="Stil" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Dauer" msprop:design-time-name="b44b66f6-27fa-40de-895c-67e565a92b95" msprop:DbColumnName="Dauer" msprop:FriendlyName="Dauer" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Filmfarbkonzept" msprop:design-time-name="7f729da5-67a4-4f7b-bc93-2c4bca01b77e" msprop:DbTableName="Filmfarbkonzept" msprop:FriendlyName="Filmfarbkonzept" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="FilmID" msprop:design-time-name="e3f904fb-4b54-44da-9836-41b78ca12fa5" msprop:DbColumnName="FilmID" msprop:FriendlyName="FilmID" type="xs:int" minOccurs="0" />
+                  <xs:element name="Farbkonzept" msprop:design-time-name="848dafb4-4ac3-4089-b09d-aa391895e0a8" msprop:DbColumnName="Farbkonzept" msprop:FriendlyName="Farbkonzept" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="FilmfarbkonzeptID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="0a0a6e0c-1e0c-4fc7-9de4-babc7820d27e" msprop:DbColumnName="FilmfarbkonzeptID" msprop:FriendlyName="FilmfarbkonzeptID" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Filmgenre" msprop:design-time-name="2a30ab0b-457d-4cfe-a47f-9b1758b12674" msprop:DbTableName="Filmgenre" msprop:FriendlyName="Filmgenre" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="FilmgenreID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="ee5468b0-1588-48cb-b07c-26379c6510c5" msprop:DbColumnName="FilmgenreID" msprop:FriendlyName="FilmgenreID" type="xs:int" />
+                  <xs:element name="FilmID" msprop:design-time-name="08d24ff9-1ff5-4648-916a-88c72b1d9488" msprop:DbColumnName="FilmID" msprop:FriendlyName="FilmID" type="xs:int" />
+                  <xs:element name="Genre" msprop:design-time-name="59fe4551-2b1b-418c-bd4c-d7ccf66663bc" msprop:DbColumnName="Genre" msprop:FriendlyName="Genre">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Filmproduktionsort" msprop:design-time-name="cf7c0acc-0e3e-4d1c-b029-ceef65b1cb54" msprop:DbTableName="Filmproduktionsort" msprop:FriendlyName="Filmproduktionsort" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="FilmID" msprop:design-time-name="73da89cb-93ac-47a5-8a33-9a38655b959f" msprop:DbColumnName="FilmID" msprop:FriendlyName="FilmID" type="xs:int" minOccurs="0" />
+                  <xs:element name="Produktionsort" msprop:design-time-name="9fa197e8-2803-4fe0-b64f-016eaed1f458" msprop:DbColumnName="Produktionsort" msprop:FriendlyName="Produktionsort" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="FilmproduktionsortID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="140981cb-ceab-4c0e-a619-241acc95d041" msprop:DbColumnName="FilmproduktionsortID" msprop:FriendlyName="FilmproduktionsortID" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_HelperBasisteilelement" msprop:design-time-name="ba6c24e9-b529-43de-8f40-6515da42a4fb" msprop:DbTableName="HelperBasisteilelement" msprop:FriendlyName="HelperBasisteilelement" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="BasiselementID" msprop:design-time-name="01a72abf-6082-457e-bfb0-87d1bc139182" msprop:DbColumnName="BasiselementID" msprop:FriendlyName="BasiselementID" type="xs:int" minOccurs="0" />
+                  <xs:element name="TeilelementID" msprop:design-time-name="bed9290f-351a-425d-afcf-6992b4c446f7" msprop:DbColumnName="TeilelementID" msprop:FriendlyName="TeilelementID" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Hierarchie_Basiselement" msprop:design-time-name="139ea18b-6446-42ad-97a4-aa723cfc1278" msprop:DbTableName="Hierarchie_Basiselement" msprop:FriendlyName="Hierarchie_Basiselement" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="BETyp" msprop:design-time-name="c9b1ddcf-9911-449d-81c4-e888a4027150" msprop:DbColumnName="BETyp" msprop:FriendlyName="BETyp">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="SuperTyp" msprop:design-time-name="055ae1a6-9613-4fdb-90ed-1dea4584a325" msprop:DbColumnName="SuperTyp" msprop:FriendlyName="SuperTyp" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Hierarchie_Basiselement_Design" msprop:design-time-name="c37f0f2c-5139-4f35-88b5-78e697491597" msprop:DbTableName="Hierarchie_Basiselement_Design" msprop:FriendlyName="Hierarchie_Basiselement_Design" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="DESuperTyp" msprop:design-time-name="2c4bc07f-d8cb-44cf-bf3b-3ec56d3c2382" msprop:DbColumnName="DESuperTyp" msprop:FriendlyName="DESuperTyp" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="DETyp" msprop:design-time-name="59f0961c-1f87-47a1-b760-8426f402dfa4" msprop:DbColumnName="DETyp" msprop:FriendlyName="DETyp">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Hierarchie_Basiselement_Farbe" msprop:design-time-name="041be177-791d-4bdf-9f51-da8b5193f667" msprop:DbTableName="Hierarchie_Basiselement_Farbe" msprop:FriendlyName="Hierarchie_Basiselement_Farbe" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="FarbTyp" msprop:design-time-name="4e7d4e04-7523-41d8-8382-8cfd5daaf8f3" msprop:DbColumnName="FarbTyp" msprop:FriendlyName="FarbTyp">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="FarbSuperTyp" msprop:design-time-name="8659dd9c-d8a0-4a48-8e8c-52b3f9d00751" msprop:DbColumnName="FarbSuperTyp" msprop:FriendlyName="FarbSuperTyp" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Hierarchie_Basiselement_Form" msprop:design-time-name="b9f5cde9-457f-4ec5-9f62-252b4cfb9cc2" msprop:DbTableName="Hierarchie_Basiselement_Form" msprop:FriendlyName="Hierarchie_Basiselement_Form" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="FormTyp" msprop:design-time-name="4fd269bb-0ab6-4011-a52f-9647ff5ee959" msprop:DbColumnName="FormTyp" msprop:FriendlyName="FormTyp">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="FormSuperTyp" msprop:design-time-name="39976ec6-a33d-4685-97d2-4d9ab05bb1de" msprop:DbColumnName="FormSuperTyp" msprop:FriendlyName="FormSuperTyp" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Hierarchie_Basiselement_Funktion" msprop:design-time-name="539ab6b8-05f1-443d-9e69-026c9a71a1b0" msprop:DbTableName="Hierarchie_Basiselement_Funktion" msprop:FriendlyName="Hierarchie_Basiselement_Funktion" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="FunktionsTyp" msprop:design-time-name="adaa2531-7021-47f3-ab36-19acda0a7c12" msprop:DbColumnName="FunktionsTyp" msprop:FriendlyName="FunktionsTyp">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="FunktionsSuperTyp" msprop:design-time-name="b00da106-c3f6-4549-b91a-529509a8c4ea" msprop:DbColumnName="FunktionsSuperTyp" msprop:FriendlyName="FunktionsSuperTyp" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Hierarchie_Basiselement_Material" msprop:design-time-name="2b589368-cb51-4537-a251-ab58a219b06c" msprop:DbTableName="Hierarchie_Basiselement_Material" msprop:FriendlyName="Hierarchie_Basiselement_Material" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="MaterialTyp" msprop:design-time-name="bbca4552-241e-4587-8696-916b7b3ac9ff" msprop:DbColumnName="MaterialTyp" msprop:FriendlyName="MaterialTyp">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="MaterialSuperTyp" msprop:design-time-name="97897e40-0f64-470d-b064-a9d37e736a4b" msprop:DbColumnName="MaterialSuperTyp" msprop:FriendlyName="MaterialSuperTyp" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Hierarchie_Basiselement_Tragweise" msprop:design-time-name="e7f8f169-a9b3-4a66-9bdd-40d25723b0f0" msprop:DbTableName="Hierarchie_Basiselement_Tragweise" msprop:FriendlyName="Hierarchie_Basiselement_Tragweise" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="TrageweiseTyp" msprop:design-time-name="ce706d91-6b60-4037-90d2-3a63cdb861cd" msprop:DbColumnName="TrageweiseTyp" msprop:FriendlyName="TrageweiseTyp">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="TrageweiseSuperTyp" msprop:design-time-name="b2cf6128-2a4b-4b2e-a928-97d364c13f14" msprop:DbColumnName="TrageweiseSuperTyp" msprop:FriendlyName="TrageweiseSuperTyp" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Hierarchie_Basiselement_Zustand" msprop:design-time-name="5682566c-88b9-47ac-b0ae-857006e4dddf" msprop:DbTableName="Hierarchie_Basiselement_Zustand" msprop:FriendlyName="Hierarchie_Basiselement_Zustand" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ZustandTyp" msprop:design-time-name="b3fa2307-6d1d-46f3-8597-a56221fec543" msprop:DbColumnName="ZustandTyp" msprop:FriendlyName="ZustandTyp">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="ZustandSuperTyp" msprop:design-time-name="9764441f-f3c2-473e-b866-63d4ed261ae4" msprop:DbColumnName="ZustandSuperTyp" msprop:FriendlyName="ZustandSuperTyp" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Hierarchie_Film_Farbkonzept" msprop:design-time-name="3ebc5184-bac7-4983-9ed8-ebb56e8f321e" msprop:DbTableName="Hierarchie_Film_Farbkonzept" msprop:FriendlyName="Hierarchie_Film_Farbkonzept" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="FarbkonzeptnameTyp" msprop:design-time-name="e7d81ecd-0019-44bf-9869-90eb33c410cc" msprop:DbColumnName="FarbkonzeptnameTyp" msprop:FriendlyName="FarbkonzeptnameTyp">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="FarbkonzeptnameSuperTyp" msprop:design-time-name="ff1002c8-1d21-41be-b9b9-5f3b4e81918e" msprop:DbColumnName="FarbkonzeptnameSuperTyp" msprop:FriendlyName="FarbkonzeptnameSuperTyp" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Hierarchie_Film_Genre" msprop:design-time-name="76fc1115-650d-48a9-b594-0cbc5ab16619" msprop:DbTableName="Hierarchie_Film_Genre" msprop:FriendlyName="Hierarchie_Film_Genre" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="GenreTyp" msprop:design-time-name="5253f4ea-1dcf-4498-a4d0-3be41de73816" msprop:DbColumnName="GenreTyp" msprop:FriendlyName="GenreTyp">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="GenreSuperTyp" msprop:design-time-name="523fafe1-b569-4ad8-96f4-225710828857" msprop:DbColumnName="GenreSuperTyp" msprop:FriendlyName="GenreSuperTyp" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Hierarchie_Film_Produktionsort" msprop:design-time-name="30c2ed43-b561-4abd-b908-86c9f101267d" msprop:DbTableName="Hierarchie_Film_Produktionsort" msprop:FriendlyName="Hierarchie_Film_Produktionsort" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ProduktionsortTyp" msprop:design-time-name="928c46f6-7e3a-4a51-9b2e-afa5d8bb7071" msprop:DbColumnName="ProduktionsortTyp" msprop:FriendlyName="ProduktionsortTyp">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="ProduktionsortSuperTyp" msprop:design-time-name="63fe9542-220d-41ef-b5ca-af3848e0fdf6" msprop:DbColumnName="ProduktionsortSuperTyp" msprop:FriendlyName="ProduktionsortSuperTyp" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Hierarchie_Kostuem_Alterseindruck" msprop:design-time-name="f8ca5960-1ee7-407e-92a2-c56c28541b61" msprop:DbTableName="Hierarchie_Kostuem_Alterseindruck" msprop:FriendlyName="Hierarchie_Kostuem_Alterseindruck" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="AlterseindruckTyp" msprop:design-time-name="7baaeca3-dd07-47eb-9d6d-995efe572bff" msprop:DbColumnName="AlterseindruckTyp" msprop:FriendlyName="AlterseindruckTyp">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="AlterseindruckTypusSuperTyp" msprop:design-time-name="4820951d-3a9a-4c18-aed9-d7c1e6cac13f" msprop:DbColumnName="AlterseindruckTypusSuperTyp" msprop:FriendlyName="AlterseindruckTypusSuperTyp" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Hierarchie_Kostuem_Charaktereigenschaft" msprop:design-time-name="4a4848dc-3b46-4ac8-afa5-308d2293afbe" msprop:DbTableName="Hierarchie_Kostuem_Charaktereigenschaft" msprop:FriendlyName="Hierarchie_Kostuem_Charaktereigenschaft" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="CharakterTyp" msprop:design-time-name="d4894f13-76ca-420d-934f-0cc25617b119" msprop:DbColumnName="CharakterTyp" msprop:FriendlyName="CharakterTyp">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="CharakterSuperTyp" msprop:design-time-name="29a77514-fd7b-4d12-8e1b-20772928d0f3" msprop:DbColumnName="CharakterSuperTyp" msprop:FriendlyName="CharakterSuperTyp" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Hierarchie_Kostuem_Farbe" msprop:design-time-name="ad69c8d9-89ad-4fa4-a6a8-229cf8045929" msprop:DbTableName="Hierarchie_Kostuem_Farbe" msprop:FriendlyName="Hierarchie_Kostuem_Farbe" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="FarbTyp" msprop:design-time-name="e59b47f2-3630-4d9e-9246-b9c426923d42" msprop:DbColumnName="FarbTyp" msprop:FriendlyName="FarbTyp">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="FarbSuperTyp" msprop:design-time-name="a5651178-14b8-499e-a5e3-21611cab1b3d" msprop:DbColumnName="FarbSuperTyp" msprop:FriendlyName="FarbSuperTyp" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Hierarchie_Kostuem_Koerpermodifikation" msprop:design-time-name="1be34c58-275c-428c-8c44-3fb1d4295c60" msprop:DbTableName="Hierarchie_Kostuem_Koerpermodifikation" msprop:FriendlyName="Hierarchie_Kostuem_Koerpermodifikation" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="KoerpermodifikationsTyp" msprop:design-time-name="a0a7d26a-d483-412e-9a35-9a00d6536d04" msprop:DbColumnName="KoerpermodifikationsTyp" msprop:FriendlyName="KoerpermodifikationsTyp">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="KoerpermodifikationsSuperTyp" msprop:design-time-name="5c49d9a5-0fe6-48bc-b14a-9906d557fd97" msprop:DbColumnName="KoerpermodifikationsSuperTyp" msprop:FriendlyName="KoerpermodifikationsSuperTyp" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Hierarchie_Kostuem_Spielort" msprop:design-time-name="d9ad0f47-17c6-4458-bc46-75882cb4716d" msprop:DbTableName="Hierarchie_Kostuem_Spielort" msprop:FriendlyName="Hierarchie_Kostuem_Spielort" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="SpielortTyp" msprop:design-time-name="55acc9c5-727d-4f72-b315-316f6ba2aa9a" msprop:DbColumnName="SpielortTyp" msprop:FriendlyName="SpielortTyp">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="SpielortSuperTyp" msprop:design-time-name="e23c10a0-c6b1-4898-b6b4-e0f17ffc4fc2" msprop:DbColumnName="SpielortSuperTyp" msprop:FriendlyName="SpielortSuperTyp" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Hierarchie_Kostuem_Spielzeit" msprop:design-time-name="a0fdfb5a-58f5-4e11-8be4-240d309b6005" msprop:DbTableName="Hierarchie_Kostuem_Spielzeit" msprop:FriendlyName="Hierarchie_Kostuem_Spielzeit" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="SpielzeitTyp" msprop:design-time-name="c59e95de-4051-451b-88c2-fccbad6609b9" msprop:DbColumnName="SpielzeitTyp" msprop:FriendlyName="SpielzeitTyp">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="SpielzeitSuperTyp" msprop:design-time-name="79dc7c60-9c79-4f3d-bd0f-31ee9814e773" msprop:DbColumnName="SpielzeitSuperTyp" msprop:FriendlyName="SpielzeitSuperTyp" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Hierarchie_Kostuem_Tageszeit" msprop:design-time-name="532a91d8-ae8f-48cd-b6ae-6882a95d4ab3" msprop:DbTableName="Hierarchie_Kostuem_Tageszeit" msprop:FriendlyName="Hierarchie_Kostuem_Tageszeit" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="TageszeitTyp" msprop:design-time-name="b3d2a154-0cea-4589-b6ed-a2ead43624a7" msprop:DbColumnName="TageszeitTyp" msprop:FriendlyName="TageszeitTyp">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="TageszeitSuperTyp" msprop:design-time-name="340c772f-f7d1-4062-9418-186d50356ca7" msprop:DbColumnName="TageszeitSuperTyp" msprop:FriendlyName="TageszeitSuperTyp" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Hierarchie_Rolle_Dominante_Charaktereigenschaft" msprop:design-time-name="9d386834-b7d8-4c06-ab64-7b9bcbc964cb" msprop:DbTableName="Hierarchie_Rolle_Dominante_Charaktereigenschaft" msprop:FriendlyName="Hierarchie_Rolle_Dominante_Charaktereigenschaft" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="TypusTyp" msprop:design-time-name="4d915dcd-0321-4b8c-8a75-4b6195ff7db3" msprop:DbColumnName="TypusTyp" msprop:FriendlyName="TypusTyp">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="TypusSuperTyp" msprop:design-time-name="ecd74f23-705d-43d7-9f2b-5cc17f37658e" msprop:DbColumnName="TypusSuperTyp" msprop:FriendlyName="TypusSuperTyp" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Hierarchie_Teilelement" msprop:design-time-name="efddff94-a379-416a-b99b-dc33a9f9dde5" msprop:DbTableName="Hierarchie_Teilelement" msprop:FriendlyName="Hierarchie_Teilelement" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="TETyp" msprop:design-time-name="fcc528ec-2899-4244-9fac-0cd6be945b7f" msprop:DbColumnName="TETyp" msprop:FriendlyName="TETyp">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="TESuperTyp" msprop:design-time-name="80af97a8-f3ae-432c-989c-f3507893dd68" msprop:DbColumnName="TESuperTyp" msprop:FriendlyName="TESuperTyp" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Hierarchie_Teilelement_Design" msprop:design-time-name="6d8dd3b5-eed5-4367-af74-569f194d3082" msprop:DbTableName="Hierarchie_Teilelement_Design" msprop:FriendlyName="Hierarchie_Teilelement_Design" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="DESuperTyp" msprop:design-time-name="431c6003-0054-4161-b11a-1af5ddfc00cf" msprop:DbColumnName="DESuperTyp" msprop:FriendlyName="DESuperTyp" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="DETyp" msprop:design-time-name="a37c7bc7-8f09-4643-9d40-b0dcfb09f040" msprop:DbColumnName="DETyp" msprop:FriendlyName="DETyp">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Hierarchie_Teilelement_Farbe" msprop:design-time-name="a1ed6c27-1395-4283-8517-ed0e01ae35d4" msprop:DbTableName="Hierarchie_Teilelement_Farbe" msprop:FriendlyName="Hierarchie_Teilelement_Farbe" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="FarbTyp" msprop:design-time-name="0cb77a78-b486-4da1-afbd-2ac7d3f874d6" msprop:DbColumnName="FarbTyp" msprop:FriendlyName="FarbTyp">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="FarbSuperTyp" msprop:design-time-name="0fd0ce6b-77bb-443a-94d8-2c61d38be55f" msprop:DbColumnName="FarbSuperTyp" msprop:FriendlyName="FarbSuperTyp" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Hierarchie_Teilelement_Form" msprop:design-time-name="c4f39dea-e120-44c4-8f7c-d7746ee2ab80" msprop:DbTableName="Hierarchie_Teilelement_Form" msprop:FriendlyName="Hierarchie_Teilelement_Form" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="FormTyp" msprop:design-time-name="7d3e1596-876a-4c98-80ae-2f64baf3794e" msprop:DbColumnName="FormTyp" msprop:FriendlyName="FormTyp">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="FormSuperTyp" msprop:design-time-name="faf3e84f-28b2-4bb2-b11e-1b020837d4c9" msprop:DbColumnName="FormSuperTyp" msprop:FriendlyName="FormSuperTyp" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Hierarchie_Teilelement_Material" msprop:design-time-name="f38139ea-9bfe-4cfb-b5e1-2c3c3b2143ac" msprop:DbTableName="Hierarchie_Teilelement_Material" msprop:FriendlyName="Hierarchie_Teilelement_Material" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="MaterialTyp" msprop:design-time-name="fba0c45f-a02f-451d-911e-dceb090eaec7" msprop:DbColumnName="MaterialTyp" msprop:FriendlyName="MaterialTyp">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="MaterialSuperTyp" msprop:design-time-name="eb24cbe4-72a6-46ce-9bd5-a9e34c3627fb" msprop:DbColumnName="MaterialSuperTyp" msprop:FriendlyName="MaterialSuperTyp" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Hierarchie_Teilelement_Tragweise" msprop:design-time-name="50a9fd5b-3a25-419d-a03d-031a0541e8e0" msprop:DbTableName="Hierarchie_Teilelement_Tragweise" msprop:FriendlyName="Hierarchie_Teilelement_Tragweise" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="TrageweiseTyp" msprop:design-time-name="753abab1-0952-4920-94c8-4823dae92d70" msprop:DbColumnName="TrageweiseTyp" msprop:FriendlyName="TrageweiseTyp">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="TrageweiseSuperTyp" msprop:design-time-name="561d1547-ea5f-4c08-8754-f542a91f4cb3" msprop:DbColumnName="TrageweiseSuperTyp" msprop:FriendlyName="TrageweiseSuperTyp" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Hierarchie_Teilelement_Zustand" msprop:design-time-name="d2226dfc-b26d-4a98-b929-f924c9a01cca" msprop:DbTableName="Hierarchie_Teilelement_Zustand" msprop:FriendlyName="Hierarchie_Teilelement_Zustand" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ZustandTyp" msprop:design-time-name="4c9593b9-b227-46a9-8dc9-af6dd0457c10" msprop:DbColumnName="ZustandTyp" msprop:FriendlyName="ZustandTyp">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="ZustandSuperTyp" msprop:design-time-name="6296ad25-9cb8-463e-ab37-93ccf0119079" msprop:DbColumnName="ZustandSuperTyp" msprop:FriendlyName="ZustandSuperTyp" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Kostuem" msprop:design-time-name="e45b6b74-58c7-4408-b08d-d443b9d9394d" msprop:DbTableName="Kostuem" msprop:FriendlyName="Kostuem" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="KostuemID" msprop:design-time-name="7a2f8999-3068-4850-a1f4-77e80f1a9880" msprop:DbColumnName="KostuemID" msprop:FriendlyName="KostuemID" type="xs:int" />
+                  <xs:element name="RollenID" msprop:design-time-name="0ae2748f-1403-46a4-b71b-83923b3d8ced" msprop:DbColumnName="RollenID" msprop:FriendlyName="RollenID" type="xs:int" />
+                  <xs:element name="FilmID" msprop:design-time-name="1aec413f-c044-4271-94dd-869f01c9b05d" msprop:DbColumnName="FilmID" msprop:FriendlyName="FilmID" type="xs:int" />
+                  <xs:element name="Szenenbeschreibung" msprop:design-time-name="e57a0e81-f60b-43fb-9689-137850da1187" msprop:DbColumnName="Szenenbeschreibung" msprop:FriendlyName="Szenenbeschreibung" type="xs:string" minOccurs="0" />
+                  <xs:element name="Ortsbegebenheit" msprop:design-time-name="fe9dda4a-ebec-40bf-989c-ba559284c595" msprop:DbColumnName="Ortsbegebenheit" msprop:FriendlyName="Ortsbegebenheit" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="35" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="DominanteFarbe" msprop:design-time-name="e632386d-7f7c-4315-8f4b-8359bb05234a" msprop:DbColumnName="DominanteFarbe" msprop:FriendlyName="DominanteFarbe" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="StereotypRelevant" msprop:design-time-name="293f003d-0e45-4436-89a3-fb89a5a5fe7e" msprop:DbColumnName="StereotypRelevant" msprop:FriendlyName="StereotypRelevant" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="15" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="DominanteFunktion" msprop:design-time-name="4c5d490d-259f-4290-8044-8ec0afacf0fd" msprop:DbColumnName="DominanteFunktion" msprop:FriendlyName="DominanteFunktion" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="DominanterZustand" msprop:design-time-name="84c1a35a-986d-4307-a564-41054bcb754c" msprop:DbColumnName="DominanterZustand" msprop:FriendlyName="DominanterZustand" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Kostuemkurztext" msprop:design-time-name="897472d6-ffaf-4752-9beb-02c7ae641f84" msprop:DbColumnName="Kostuemkurztext" msprop:FriendlyName="Kostuemkurztext" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="museURL" msprop:design-time-name="5b275ce3-1393-4dbe-9fc5-3f10ac42dc02" msprop:DbColumnName="museURL" msprop:FriendlyName="museURL" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="150" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Kostuemalterseindruck" msprop:design-time-name="cdeafe37-4b1f-49f9-bc5a-4442b1e4594f" msprop:DbTableName="Kostuemalterseindruck" msprop:FriendlyName="Kostuemalterseindruck" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="KostuemID" msprop:design-time-name="2a3ec1ce-8c38-48ae-a021-dbe0e23ed82a" msprop:DbColumnName="KostuemID" msprop:FriendlyName="KostuemID" type="xs:int" minOccurs="0" />
+                  <xs:element name="RollenID" msprop:design-time-name="5b00140c-81b1-428d-a46b-fdddc194a7f0" msprop:DbColumnName="RollenID" msprop:FriendlyName="RollenID" type="xs:int" minOccurs="0" />
+                  <xs:element name="FilmID" msprop:design-time-name="3953de83-31ad-48fc-8e7a-9951c62cc45b" msprop:DbColumnName="FilmID" msprop:FriendlyName="FilmID" type="xs:int" minOccurs="0" />
+                  <xs:element name="Alterseindruck" msprop:design-time-name="98eb7ec8-95f0-445e-9675-6a237e9545d2" msprop:DbColumnName="Alterseindruck" msprop:FriendlyName="Alterseindruck" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="NumAlter" msprop:design-time-name="7422fb36-86bb-4c05-9f48-b56ceb11c2f5" msprop:DbColumnName="NumAlter" msprop:FriendlyName="NumAlter" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="KostuemaltereindruckID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="ccc2b855-d15a-4096-b895-9063d6887331" msprop:DbColumnName="KostuemaltereindruckID" msprop:FriendlyName="KostuemaltereindruckID" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Kostuemcharaktereigenschaft" msprop:design-time-name="6643c367-2755-4d28-a0c5-25507a3e2647" msprop:DbTableName="Kostuemcharaktereigenschaft" msprop:FriendlyName="Kostuemcharaktereigenschaft" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="KostuemID" msprop:design-time-name="ec4eb4fc-40a7-4a39-bd5b-53bf91d47ad0" msprop:DbColumnName="KostuemID" msprop:FriendlyName="KostuemID" type="xs:int" minOccurs="0" />
+                  <xs:element name="RollenID" msprop:design-time-name="34b2323c-36f1-4d6e-bd68-442e881ba429" msprop:DbColumnName="RollenID" msprop:FriendlyName="RollenID" type="xs:int" minOccurs="0" />
+                  <xs:element name="FilmID" msprop:design-time-name="16324956-73e9-403c-8393-dbec599f9eb9" msprop:DbColumnName="FilmID" msprop:FriendlyName="FilmID" type="xs:int" minOccurs="0" />
+                  <xs:element name="Charaktereigenschaft" msprop:design-time-name="7b257af6-e65b-48d8-b23e-fe9ed0efe61f" msprop:DbColumnName="Charaktereigenschaft" msprop:FriendlyName="Charaktereigenschaft" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="CharaktereigenschaftenID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="ecd381f9-44a2-4ebc-9803-0b8072079d9b" msprop:DbColumnName="CharaktereigenschaftenID" msprop:FriendlyName="CharaktereigenschaftenID" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Kostuemkoerpermodifikationen" msprop:design-time-name="f94bb8f2-c375-47eb-9582-70106d96dd1e" msprop:DbTableName="Kostuemkoerpermodifikationen" msprop:FriendlyName="Kostuemkoerpermodifikationen" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="KostuemID" msprop:design-time-name="999d49f4-3947-417c-8cb1-f18cff309565" msprop:DbColumnName="KostuemID" msprop:FriendlyName="KostuemID" type="xs:int" minOccurs="0" />
+                  <xs:element name="RollenID" msprop:design-time-name="6b5bee91-add9-4c7f-84f3-88a8d4fe982e" msprop:DbColumnName="RollenID" msprop:FriendlyName="RollenID" type="xs:int" minOccurs="0" />
+                  <xs:element name="FilmID" msprop:design-time-name="16bc89c6-1258-475b-bea9-4cb44bc279ab" msprop:DbColumnName="FilmID" msprop:FriendlyName="FilmID" type="xs:int" minOccurs="0" />
+                  <xs:element name="Koerpermodifikationname" msprop:design-time-name="e92289e0-faff-4838-aafb-724b09304fb9" msprop:DbColumnName="Koerpermodifikationname" msprop:FriendlyName="Koerpermodifikationname" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="KostuemkoerpermodifikationenID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="7f2f8531-771b-4f7f-a936-8ce6189729b7" msprop:DbColumnName="KostuemkoerpermodifikationenID" msprop:FriendlyName="KostuemkoerpermodifikationenID" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_kostuemspielort" msprop:design-time-name="8f4983a7-8829-4db5-8c9c-ad0c6d087296" msprop:DbTableName="kostuemspielort" msprop:FriendlyName="kostuemspielort" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="KostuemID" msprop:design-time-name="e05c7dd1-16f1-432d-9941-a5d6e04707c0" msprop:DbColumnName="KostuemID" msprop:FriendlyName="KostuemID" type="xs:int" minOccurs="0" />
+                  <xs:element name="RollenID" msprop:design-time-name="83f0def0-c079-4ef6-8f41-6fd9c13a2842" msprop:DbColumnName="RollenID" msprop:FriendlyName="RollenID" type="xs:int" minOccurs="0" />
+                  <xs:element name="FilmID" msprop:design-time-name="6ddc3c9c-6f72-4242-8b2f-6f1f82af1d97" msprop:DbColumnName="FilmID" msprop:FriendlyName="FilmID" type="xs:int" minOccurs="0" />
+                  <xs:element name="Spielort" msprop:design-time-name="e9644655-acee-4a74-bbcb-683f18a56398" msprop:DbColumnName="Spielort" msprop:FriendlyName="Spielort" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Spielortfreitext" msprop:design-time-name="93db3d8f-4061-486e-be3c-65318b808be7" msprop:DbColumnName="Spielortfreitext" msprop:FriendlyName="Spielortfreitext" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="KostuemspielortID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="6b37dce3-2717-46ee-85d0-f65be0bacf11" msprop:DbColumnName="KostuemspielortID" msprop:FriendlyName="KostuemspielortID" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_kostuemspielzeit" msprop:design-time-name="d2a31bf7-ba45-4d24-9f0c-de312d73b98d" msprop:DbTableName="kostuemspielzeit" msprop:FriendlyName="kostuemspielzeit" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="KostuemID" msprop:design-time-name="39e8d8f7-394f-4cbe-b2cc-adfa754e867e" msprop:DbColumnName="KostuemID" msprop:FriendlyName="KostuemID" type="xs:int" minOccurs="0" />
+                  <xs:element name="RollenID" msprop:design-time-name="a259f09a-42fe-44b1-a789-f3e4fc378eaf" msprop:DbColumnName="RollenID" msprop:FriendlyName="RollenID" type="xs:int" minOccurs="0" />
+                  <xs:element name="FilmID" msprop:design-time-name="233667ce-b4f0-446b-90ea-e80fabe64a35" msprop:DbColumnName="FilmID" msprop:FriendlyName="FilmID" type="xs:int" minOccurs="0" />
+                  <xs:element name="Spielzeit" msprop:design-time-name="8216ad8e-154d-4932-8a96-9d9bf13f2ca3" msprop:DbColumnName="Spielzeit" msprop:FriendlyName="Spielzeit" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="SpielzeitVon" msprop:design-time-name="3bc36a26-31e1-412e-8a02-4924a578bdce" msprop:DbColumnName="SpielzeitVon" msprop:FriendlyName="SpielzeitVon" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="SpielzeitBis" msprop:design-time-name="ea0f172c-461e-4de7-885e-6716b643c1a1" msprop:DbColumnName="SpielzeitBis" msprop:FriendlyName="SpielzeitBis" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="KostuemspielzeitID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="65098fc6-be92-42e3-8824-6f86cdd98d98" msprop:DbColumnName="KostuemspielzeitID" msprop:FriendlyName="KostuemspielzeitID" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Kostuemtageszeit" msprop:design-time-name="11b41955-f621-42c2-9b5c-9e0bec5fbba7" msprop:DbTableName="Kostuemtageszeit" msprop:FriendlyName="Kostuemtageszeit" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="KostuemID" msprop:design-time-name="05ac39e2-1316-4c6c-bc51-7d1c77e99232" msprop:DbColumnName="KostuemID" msprop:FriendlyName="KostuemID" type="xs:int" minOccurs="0" />
+                  <xs:element name="RollenID" msprop:design-time-name="4d53ab0e-4d26-4d4b-86d1-36fff65b98fd" msprop:DbColumnName="RollenID" msprop:FriendlyName="RollenID" type="xs:int" minOccurs="0" />
+                  <xs:element name="FilmID" msprop:design-time-name="8c93f9dd-1878-49c9-96de-e279e9240212" msprop:DbColumnName="FilmID" msprop:FriendlyName="FilmID" type="xs:int" minOccurs="0" />
+                  <xs:element name="Tageszeit" msprop:design-time-name="551e4614-d531-47a0-b658-787b2ac568fd" msprop:DbColumnName="Tageszeit" msprop:FriendlyName="Tageszeit" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="KostuemtageszeitID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="ccd0d7d4-5979-4cc1-bfb2-f50433f1d8d6" msprop:DbColumnName="KostuemtageszeitID" msprop:FriendlyName="KostuemtageszeitID" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Mapping_Stereotyp" msprop:design-time-name="d52e358e-9610-4ad5-b302-d4e8d1e54a6b" msprop:DbTableName="Mapping_Stereotyp" msprop:FriendlyName="Mapping_Stereotyp" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="RollenID" msprop:design-time-name="5b1093ba-8b2c-4fae-b42e-d6005da52851" msprop:DbColumnName="RollenID" msprop:FriendlyName="RollenID" type="xs:int" />
+                  <xs:element name="FilmID" msprop:design-time-name="5a25db43-15a3-40c1-9200-15669e291270" msprop:DbColumnName="FilmID" msprop:FriendlyName="FilmID" type="xs:int" />
+                  <xs:element name="StereotypID" msprop:design-time-name="b78325d2-dc78-4e2f-8cc3-5caba1abc711" msprop:DbColumnName="StereotypID" msprop:FriendlyName="StereotypID" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_ReportingDimension" msprop:design-time-name="806a0f91-a484-46e7-8d7f-c2c492be763a" msprop:DbTableName="ReportingDimension" msprop:FriendlyName="ReportingDimension" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="report" msprop:design-time-name="4b4d9829-855f-48b8-b6bc-9fcea2e2f1f4" msprop:DbColumnName="report" msprop:FriendlyName="report" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="museURL" msprop:design-time-name="f47ed4c6-5096-4be4-b52d-b9393e26be2c" msprop:DbColumnName="museURL" msprop:FriendlyName="museURL" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="filmID" msprop:design-time-name="97f5f844-ccfd-4a51-b4d4-54f3581ed8fb" msprop:DbColumnName="filmID" msprop:FriendlyName="filmID" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_ReportingFaktentabelle" msprop:design-time-name="ce6bc46b-aeb6-4c66-9a41-feaa08b7264c" msprop:DbTableName="ReportingFaktentabelle" msprop:FriendlyName="ReportingFaktentabelle" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="report" msprop:design-time-name="610ca8ae-0f97-4827-8b6c-0aede19ec312" msprop:DbColumnName="report" msprop:FriendlyName="report" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Rolle" msprop:design-time-name="9cfe367e-de2a-4230-a38f-1bc401fbb82e" msprop:DbTableName="Rolle" msprop:FriendlyName="Rolle" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="RollenID" msprop:design-time-name="b0329feb-6a87-4372-9a5c-0b2345f786be" msprop:DbColumnName="RollenID" msprop:FriendlyName="RollenID" type="xs:int" />
+                  <xs:element name="FilmID" msprop:design-time-name="f69dd386-2399-4e79-a8e1-088e6b4229c6" msprop:DbColumnName="FilmID" msprop:FriendlyName="FilmID" type="xs:int" />
+                  <xs:element name="Rollenvorname" msprop:design-time-name="34f4f1eb-6140-47f2-8440-5dbdfdc95e5d" msprop:DbColumnName="Rollenvorname" msprop:FriendlyName="Rollenvorname" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Rollennachname" msprop:design-time-name="53df9b75-3fb0-4b0d-802d-e12bdb64d382" msprop:DbColumnName="Rollennachname" msprop:FriendlyName="Rollennachname" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Rollenberuf" msprop:design-time-name="611d0b49-d153-4e39-970b-1a9c4d47aacb" msprop:DbColumnName="Rollenberuf" msprop:FriendlyName="Rollenberuf" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Geschlecht" msprop:design-time-name="c1a89649-d4f0-439e-9814-c92adece6c19" msprop:DbColumnName="Geschlecht" msprop:FriendlyName="Geschlecht" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="29" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="DominanterAlterseindruck" msprop:design-time-name="7046ca9b-cac1-409f-9754-c834d02885a5" msprop:DbColumnName="DominanterAlterseindruck" msprop:FriendlyName="DominanterAlterseindruck" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="DominantesAlter" msprop:design-time-name="efeede6a-d6f6-4148-947e-21cb4e85e072" msprop:DbColumnName="DominantesAlter" msprop:FriendlyName="DominantesAlter" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Schauspielervorname" msprop:design-time-name="59350f2d-e10c-433d-85d5-fd5809df0eeb" msprop:DbColumnName="Schauspielervorname" msprop:FriendlyName="Schauspielervorname" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Schauspielernachname" msprop:design-time-name="f3cfafe5-817e-46ec-a002-c112cddbeaaa" msprop:DbColumnName="Schauspielernachname" msprop:FriendlyName="Schauspielernachname" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Rollenrelevanz" msprop:design-time-name="12c20a1a-9c55-4245-96fd-3404ffdb8e7e" msprop:DbColumnName="Rollenrelevanz" msprop:FriendlyName="Rollenrelevanz" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="29" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Stereotyp" msprop:design-time-name="42e32f9c-0479-43f2-b614-f53ffafd2329" msprop:DbColumnName="Stereotyp" msprop:FriendlyName="Stereotyp" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="200" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Name" msprop:design-time-name="85367ece-b752-476f-b93d-943ccb78d73c" msprop:DbColumnName="Name" msprop:FriendlyName="Name" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="MuseURL" msprop:design-time-name="cfccce08-4f22-4ff6-b4a9-63a0e23a4ca1" msprop:DbColumnName="MuseURL" msprop:FriendlyName="MuseURL" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="150" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Rolledominantecharaktereigenschaft" msprop:design-time-name="492dad78-303e-4b79-b52f-672ef1cc0291" msprop:DbTableName="Rolledominantecharaktereigenschaft" msprop:FriendlyName="Rolledominantecharaktereigenschaft" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="RollenID" msprop:design-time-name="ec6d34f1-af0a-498f-8be2-a8801d17e9c0" msprop:DbColumnName="RollenID" msprop:FriendlyName="RollenID" type="xs:int" minOccurs="0" />
+                  <xs:element name="FilmID" msprop:design-time-name="a4603c1f-51c8-4a6e-a6a5-6b110dc04075" msprop:DbColumnName="FilmID" msprop:FriendlyName="FilmID" type="xs:int" minOccurs="0" />
+                  <xs:element name="DominanteCharaktereigenschaft" msprop:design-time-name="f932d10e-fc65-44f4-a1e8-31a04d45e295" msprop:DbColumnName="DominanteCharaktereigenschaft" msprop:FriendlyName="DominanteCharaktereigenschaft" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="RolledominantecharaktereigenschaftID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="93789452-07b9-4c37-a2ce-e441d42e87b4" msprop:DbColumnName="RolledominantecharaktereigenschaftID" msprop:FriendlyName="RolledominantecharaktereigenschaftID" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Rollenfamilienstand" msprop:design-time-name="bb192250-7e77-4671-9598-652e3753ae54" msprop:DbTableName="Rollenfamilienstand" msprop:FriendlyName="Rollenfamilienstand" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="RollenID" msprop:design-time-name="01496096-694f-468d-9105-f972a4722923" msprop:DbColumnName="RollenID" msprop:FriendlyName="RollenID" type="xs:int" minOccurs="0" />
+                  <xs:element name="FilmID" msprop:design-time-name="53fd1a35-6683-43e2-8bb2-12fd461a0463" msprop:DbColumnName="FilmID" msprop:FriendlyName="FilmID" type="xs:int" minOccurs="0" />
+                  <xs:element name="Familienstand" msprop:design-time-name="0b624093-1116-4b3f-98f0-e63c82dd96b8" msprop:DbColumnName="Familienstand" msprop:FriendlyName="Familienstand" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="38" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="RollenfamilienstandID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="0736a66e-5ccb-436f-b35d-5420daad6670" msprop:DbColumnName="RollenfamilienstandID" msprop:FriendlyName="RollenfamilienstandID" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Stereotyp" msprop:design-time-name="4e7444d8-6fd5-4fe9-b4a6-7b56d427e85f" msprop:DbTableName="Stereotyp" msprop:FriendlyName="Stereotyp" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="StereotypID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="75924d38-c2a8-45e2-9261-46a2bcbaa99b" msprop:DbColumnName="StereotypID" msprop:FriendlyName="StereotypID" type="xs:int" />
+                  <xs:element name="Name" msprop:design-time-name="d0121f6d-f181-41a5-b463-c297e6a8ab91" msprop:DbColumnName="Name" msprop:FriendlyName="Name" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="80" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Teilelementdesign" msprop:design-time-name="2ed095ef-db17-43bb-b641-fa31862050ec" msprop:DbTableName="Teilelementdesign" msprop:FriendlyName="Teilelementdesign" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="TeilelementID" msprop:design-time-name="e589b498-b89c-4661-af96-4f19dbe8412a" msprop:DbColumnName="TeilelementID" msprop:FriendlyName="TeilelementID" type="xs:int" minOccurs="0" />
+                  <xs:element name="Designname" msprop:design-time-name="96866949-48f7-411c-b329-d5c32c44e140" msprop:DbColumnName="Designname" msprop:FriendlyName="Designname" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="TEDesignID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="8aac4ea1-bd8f-4f88-b32d-f1daa52a7c7b" msprop:DbColumnName="TEDesignID" msprop:FriendlyName="TEDesignID" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Teilelemente" msprop:design-time-name="8ee591f1-ddad-4fc3-8591-dbab4feafa7c" msprop:DbTableName="Teilelemente" msprop:FriendlyName="Teilelemente" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="TeilelementID" msprop:design-time-name="5954acf3-1ce4-4e79-a2f5-8c90841d18d5" msprop:DbColumnName="TeilelementID" msprop:FriendlyName="TeilelementID" type="xs:int" />
+                  <xs:element name="Teilelementname" msprop:design-time-name="d7aadb43-1f8e-46bf-9eee-251aa2ec4392" msprop:DbColumnName="Teilelementname" msprop:FriendlyName="Teilelementname" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="TECubeID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="6349f380-a695-4428-ada3-b25961f597c1" msprop:DbColumnName="TECubeID" msprop:FriendlyName="TECubeID" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Teilelementfarbe" msprop:design-time-name="6014d88e-2929-4443-a5f2-5a00ffbffb87" msprop:DbTableName="Teilelementfarbe" msprop:FriendlyName="Teilelementfarbe" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="TeilelementID" msprop:design-time-name="99e352b4-e244-4f04-8e65-6567abc13557" msprop:DbColumnName="TeilelementID" msprop:FriendlyName="TeilelementID" type="xs:int" minOccurs="0" />
+                  <xs:element name="Farbname" msprop:design-time-name="e052c0e5-0242-408c-bd78-190479a57391" msprop:DbColumnName="Farbname" msprop:FriendlyName="Farbname" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Farbeindruck" msprop:design-time-name="23fc49c0-a1be-425b-8feb-57e7666f0fd0" msprop:DbColumnName="Farbeindruck" msprop:FriendlyName="Farbeindruck" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="TEFarbID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="af4f162f-841e-4b14-acfc-25476af1f146" msprop:DbColumnName="TEFarbID" msprop:FriendlyName="TEFarbID" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Teilelementform" msprop:design-time-name="c72ce8b7-097c-45c1-b8db-0b9de17e0dd0" msprop:DbTableName="Teilelementform" msprop:FriendlyName="Teilelementform" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="TeilelementID" msprop:design-time-name="da4f1e12-de06-4b3a-b90f-647b69e0ff74" msprop:DbColumnName="TeilelementID" msprop:FriendlyName="TeilelementID" type="xs:int" minOccurs="0" />
+                  <xs:element name="Formname" msprop:design-time-name="39e747be-7fae-4678-8a87-c400fff01f48" msprop:DbColumnName="Formname" msprop:FriendlyName="Formname" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="TEFormID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="cf7feb6a-7626-493f-abe6-f90b5f5ad342" msprop:DbColumnName="TEFormID" msprop:FriendlyName="TEFormID" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Teilelementmaterial" msprop:design-time-name="85d9355c-1825-42dc-a228-f4a295aec54a" msprop:DbTableName="Teilelementmaterial" msprop:FriendlyName="Teilelementmaterial" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="TeilelementID" msprop:design-time-name="a2f2eb87-2c56-43fa-a7ca-6fed641171c5" msprop:DbColumnName="TeilelementID" msprop:FriendlyName="TeilelementID" type="xs:int" minOccurs="0" />
+                  <xs:element name="Materialname" msprop:design-time-name="02833a72-188d-406f-a19a-412be0b5e044" msprop:DbColumnName="Materialname" msprop:FriendlyName="Materialname" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Materialeindruck" msprop:design-time-name="f8d7bfd3-eff0-4a93-9bd4-0fc3d83b792c" msprop:DbColumnName="Materialeindruck" msprop:FriendlyName="Materialeindruck" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="89" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="TEMaterialID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="6448fa1e-c700-4095-8ce3-ed583c162459" msprop:DbColumnName="TEMaterialID" msprop:FriendlyName="TEMaterialID" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Teilelementtrageweise" msprop:design-time-name="887cf5ab-e449-4386-a67f-594428eccbbc" msprop:DbTableName="Teilelementtrageweise" msprop:FriendlyName="Teilelementtrageweise" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="TeilelementID" msprop:design-time-name="093f73b5-b541-4f12-91d6-2cddc57889c0" msprop:DbColumnName="TeilelementID" msprop:FriendlyName="TeilelementID" type="xs:int" minOccurs="0" />
+                  <xs:element name="Trageweisename" msprop:design-time-name="f2662033-8a86-441d-8af3-ed275aa5babd" msprop:DbColumnName="Trageweisename" msprop:FriendlyName="Trageweisename" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="TETragweiseID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="18ac413e-2abf-41ba-b453-a9d0297254c8" msprop:DbColumnName="TETragweiseID" msprop:FriendlyName="TETragweiseID" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Teilelementzustand" msprop:design-time-name="5efcb4df-3611-4f3e-a2e6-fdaad60a4275" msprop:DbTableName="Teilelementzustand" msprop:FriendlyName="Teilelementzustand" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="TeilelementID" msprop:design-time-name="4948669b-34bd-4a86-acad-da1d81336373" msprop:DbColumnName="TeilelementID" msprop:FriendlyName="TeilelementID" type="xs:int" minOccurs="0" />
+                  <xs:element name="Zustandsname" msprop:design-time-name="ffac3874-4e4b-4bea-b926-0d0e72f313b1" msprop:DbColumnName="Zustandsname" msprop:FriendlyName="Zustandsname" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="TEZustandID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="f5db2d47-47ff-497a-8554-5f0ab7501846" msprop:DbColumnName="TEZustandID" msprop:FriendlyName="TEZustandID" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Basiselement" />
+          <xs:field xpath="BECubeID" />
+        </xs:unique>
+        <xs:unique name="dbo_Basiselementdesign_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Basiselementdesign" />
+          <xs:field xpath="BEDesignID" />
+        </xs:unique>
+        <xs:unique name="dbo_Basiselementfarbe_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Basiselementfarbe" />
+          <xs:field xpath="BEFarbID" />
+        </xs:unique>
+        <xs:unique name="dbo_Basiselementform_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Basiselementform" />
+          <xs:field xpath="BEFormID" />
+        </xs:unique>
+        <xs:unique name="dbo_Basiselementfunktion_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Basiselementfunktion" />
+          <xs:field xpath="BEFunktionID" />
+        </xs:unique>
+        <xs:unique name="dbo_Basiselementmaterial_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Basiselementmaterial" />
+          <xs:field xpath="BEMaterialID" />
+        </xs:unique>
+        <xs:unique name="dbo_Basiselementtrageweise_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Basiselementtrageweise" />
+          <xs:field xpath="BETragweiseID" />
+        </xs:unique>
+        <xs:unique name="dbo_Basiselementzustand_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Basiselementzustand" />
+          <xs:field xpath="BEZustandID" />
+        </xs:unique>
+        <xs:unique name="dbo_Film_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Film" />
+          <xs:field xpath="FilmID" />
+        </xs:unique>
+        <xs:unique name="dbo_Filmfarbkonzept_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Filmfarbkonzept" />
+          <xs:field xpath="FilmfarbkonzeptID" />
+        </xs:unique>
+        <xs:unique name="dbo_Filmgenre_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Filmgenre" />
+          <xs:field xpath="FilmgenreID" />
+        </xs:unique>
+        <xs:unique name="dbo_Filmproduktionsort_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Filmproduktionsort" />
+          <xs:field xpath="FilmproduktionsortID" />
+        </xs:unique>
+        <xs:unique name="dbo_Hierarchie_Basiselement_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Hierarchie_Basiselement" />
+          <xs:field xpath="BETyp" />
+        </xs:unique>
+        <xs:unique name="dbo_Hierarchie_Basiselement_Design_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Hierarchie_Basiselement_Design" />
+          <xs:field xpath="DETyp" />
+        </xs:unique>
+        <xs:unique name="dbo_Hierarchie_Basiselement_Farbe_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Hierarchie_Basiselement_Farbe" />
+          <xs:field xpath="FarbTyp" />
+        </xs:unique>
+        <xs:unique name="dbo_Hierarchie_Basiselement_Form_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Hierarchie_Basiselement_Form" />
+          <xs:field xpath="FormTyp" />
+        </xs:unique>
+        <xs:unique name="dbo_Hierarchie_Basiselement_Funktion_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Hierarchie_Basiselement_Funktion" />
+          <xs:field xpath="FunktionsTyp" />
+        </xs:unique>
+        <xs:unique name="dbo_Hierarchie_Basiselement_Material_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Hierarchie_Basiselement_Material" />
+          <xs:field xpath="MaterialTyp" />
+        </xs:unique>
+        <xs:unique name="dbo_Hierarchie_Basiselement_Tragweise_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Hierarchie_Basiselement_Tragweise" />
+          <xs:field xpath="TrageweiseTyp" />
+        </xs:unique>
+        <xs:unique name="dbo_Hierarchie_Basiselement_Zustand_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Hierarchie_Basiselement_Zustand" />
+          <xs:field xpath="ZustandTyp" />
+        </xs:unique>
+        <xs:unique name="dbo_Hierarchie_Film_Farbkonzept_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Hierarchie_Film_Farbkonzept" />
+          <xs:field xpath="FarbkonzeptnameTyp" />
+        </xs:unique>
+        <xs:unique name="dbo_Hierarchie_Film_Genre_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Hierarchie_Film_Genre" />
+          <xs:field xpath="GenreTyp" />
+        </xs:unique>
+        <xs:unique name="dbo_Hierarchie_Film_Produktionsort_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Hierarchie_Film_Produktionsort" />
+          <xs:field xpath="ProduktionsortTyp" />
+        </xs:unique>
+        <xs:unique name="dbo_Hierarchie_Kostuem_Alterseindruck_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Hierarchie_Kostuem_Alterseindruck" />
+          <xs:field xpath="AlterseindruckTyp" />
+        </xs:unique>
+        <xs:unique name="dbo_Hierarchie_Kostuem_Charaktereigenschaft_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Hierarchie_Kostuem_Charaktereigenschaft" />
+          <xs:field xpath="CharakterTyp" />
+        </xs:unique>
+        <xs:unique name="dbo_Hierarchie_Kostuem_Farbe_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Hierarchie_Kostuem_Farbe" />
+          <xs:field xpath="FarbTyp" />
+        </xs:unique>
+        <xs:unique name="dbo_Hierarchie_Kostuem_Koerpermodifikation_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Hierarchie_Kostuem_Koerpermodifikation" />
+          <xs:field xpath="KoerpermodifikationsTyp" />
+        </xs:unique>
+        <xs:unique name="dbo_Hierarchie_Kostuem_Spielort_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Hierarchie_Kostuem_Spielort" />
+          <xs:field xpath="SpielortTyp" />
+        </xs:unique>
+        <xs:unique name="dbo_Hierarchie_Kostuem_Spielzeit_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Hierarchie_Kostuem_Spielzeit" />
+          <xs:field xpath="SpielzeitTyp" />
+        </xs:unique>
+        <xs:unique name="dbo_Hierarchie_Kostuem_Tageszeit_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Hierarchie_Kostuem_Tageszeit" />
+          <xs:field xpath="TageszeitTyp" />
+        </xs:unique>
+        <xs:unique name="dbo_Hierarchie_Rolle_Dominante_Charaktereigenschaft_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Hierarchie_Rolle_Dominante_Charaktereigenschaft" />
+          <xs:field xpath="TypusTyp" />
+        </xs:unique>
+        <xs:unique name="dbo_Hierarchie_Teilelement_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Hierarchie_Teilelement" />
+          <xs:field xpath="TETyp" />
+        </xs:unique>
+        <xs:unique name="dbo_Hierarchie_Teilelement_Design_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Hierarchie_Teilelement_Design" />
+          <xs:field xpath="DETyp" />
+        </xs:unique>
+        <xs:unique name="dbo_Hierarchie_Teilelement_Farbe_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Hierarchie_Teilelement_Farbe" />
+          <xs:field xpath="FarbTyp" />
+        </xs:unique>
+        <xs:unique name="dbo_Hierarchie_Teilelement_Form_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Hierarchie_Teilelement_Form" />
+          <xs:field xpath="FormTyp" />
+        </xs:unique>
+        <xs:unique name="dbo_Hierarchie_Teilelement_Material_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Hierarchie_Teilelement_Material" />
+          <xs:field xpath="MaterialTyp" />
+        </xs:unique>
+        <xs:unique name="dbo_Hierarchie_Teilelement_Tragweise_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Hierarchie_Teilelement_Tragweise" />
+          <xs:field xpath="TrageweiseTyp" />
+        </xs:unique>
+        <xs:unique name="dbo_Hierarchie_Teilelement_Zustand_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Hierarchie_Teilelement_Zustand" />
+          <xs:field xpath="ZustandTyp" />
+        </xs:unique>
+        <xs:unique name="dbo_Kostuem_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Kostuem" />
+          <xs:field xpath="KostuemID" />
+          <xs:field xpath="RollenID" />
+          <xs:field xpath="FilmID" />
+        </xs:unique>
+        <xs:unique name="dbo_Kostuemalterseindruck_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Kostuemalterseindruck" />
+          <xs:field xpath="KostuemaltereindruckID" />
+        </xs:unique>
+        <xs:unique name="dbo_Kostuemcharaktereigenschaft_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Kostuemcharaktereigenschaft" />
+          <xs:field xpath="CharaktereigenschaftenID" />
+        </xs:unique>
+        <xs:unique name="dbo_Kostuemkoerpermodifikationen_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Kostuemkoerpermodifikationen" />
+          <xs:field xpath="KostuemkoerpermodifikationenID" />
+        </xs:unique>
+        <xs:unique name="dbo_kostuemspielort_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_kostuemspielort" />
+          <xs:field xpath="KostuemspielortID" />
+        </xs:unique>
+        <xs:unique name="dbo_kostuemspielzeit_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_kostuemspielzeit" />
+          <xs:field xpath="KostuemspielzeitID" />
+        </xs:unique>
+        <xs:unique name="dbo_Kostuemtageszeit_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Kostuemtageszeit" />
+          <xs:field xpath="KostuemtageszeitID" />
+        </xs:unique>
+        <xs:unique name="dbo_Mapping_Stereotyp_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Mapping_Stereotyp" />
+          <xs:field xpath="RollenID" />
+          <xs:field xpath="FilmID" />
+          <xs:field xpath="StereotypID" />
+        </xs:unique>
+        <xs:unique name="dbo_Rolle_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Rolle" />
+          <xs:field xpath="RollenID" />
+          <xs:field xpath="FilmID" />
+        </xs:unique>
+        <xs:unique name="dbo_Rolledominantecharaktereigenschaft_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Rolledominantecharaktereigenschaft" />
+          <xs:field xpath="RolledominantecharaktereigenschaftID" />
+        </xs:unique>
+        <xs:unique name="dbo_Rollenfamilienstand_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Rollenfamilienstand" />
+          <xs:field xpath="RollenfamilienstandID" />
+        </xs:unique>
+        <xs:unique name="dbo_Stereotyp_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Stereotyp" />
+          <xs:field xpath="StereotypID" />
+        </xs:unique>
+        <xs:unique name="dbo_Teilelementdesign_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Teilelementdesign" />
+          <xs:field xpath="TEDesignID" />
+        </xs:unique>
+        <xs:unique name="dbo_Teilelemente_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Teilelemente" />
+          <xs:field xpath="TECubeID" />
+        </xs:unique>
+        <xs:unique name="dbo_Teilelementfarbe_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Teilelementfarbe" />
+          <xs:field xpath="TEFarbID" />
+        </xs:unique>
+        <xs:unique name="dbo_Teilelementform_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Teilelementform" />
+          <xs:field xpath="TEFormID" />
+        </xs:unique>
+        <xs:unique name="dbo_Teilelementmaterial_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Teilelementmaterial" />
+          <xs:field xpath="TEMaterialID" />
+        </xs:unique>
+        <xs:unique name="dbo_Teilelementtrageweise_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Teilelementtrageweise" />
+          <xs:field xpath="TETragweiseID" />
+        </xs:unique>
+        <xs:unique name="dbo_Teilelementzustand_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Teilelementzustand" />
+          <xs:field xpath="TEZustandID" />
+        </xs:unique>
+        <xs:keyref name="FK_Teilelementzustand_TeilelementZustand_Hierachie" refer="dbo_Hierarchie_Teilelement_Zustand_Constraint1">
+          <xs:selector xpath=".//dbo_Teilelementzustand" />
+          <xs:field xpath="Zustandsname" />
+        </xs:keyref>
+        <xs:keyref name="FK_Teilelementtrageweise_TeilelementTrageweise_Hierachie" refer="dbo_Hierarchie_Teilelement_Tragweise_Constraint1">
+          <xs:selector xpath=".//dbo_Teilelementtrageweise" />
+          <xs:field xpath="Trageweisename" />
+        </xs:keyref>
+        <xs:keyref name="FK_Teilelementmaterial_TeilelementMaterial_Hierachie" refer="dbo_Hierarchie_Teilelement_Material_Constraint1">
+          <xs:selector xpath=".//dbo_Teilelementmaterial" />
+          <xs:field xpath="Materialname" />
+        </xs:keyref>
+        <xs:keyref name="FK_Teilelementform_TeilelementForm_Hierachie" refer="dbo_Hierarchie_Teilelement_Form_Constraint1">
+          <xs:selector xpath=".//dbo_Teilelementform" />
+          <xs:field xpath="Formname" />
+        </xs:keyref>
+        <xs:keyref name="FK_Teilelementfarbe_TeilelementFarb_Hierachie" refer="dbo_Hierarchie_Teilelement_Farbe_Constraint1">
+          <xs:selector xpath=".//dbo_Teilelementfarbe" />
+          <xs:field xpath="Farbname" />
+        </xs:keyref>
+        <xs:keyref name="FK_Teilelemente_TE_Hierachie" refer="dbo_Hierarchie_Teilelement_Constraint1">
+          <xs:selector xpath=".//dbo_Teilelemente" />
+          <xs:field xpath="Teilelementname" />
+        </xs:keyref>
+        <xs:keyref name="FK_Teilelementdesign_TeilelementDesign_Hierachie" refer="dbo_Hierarchie_Teilelement_Design_Constraint1">
+          <xs:selector xpath=".//dbo_Teilelementdesign" />
+          <xs:field xpath="Designname" />
+        </xs:keyref>
+        <xs:keyref name="FK_Rolledominantecharaktereigenschaft_Typus_Hierachie" refer="dbo_Hierarchie_Rolle_Dominante_Charaktereigenschaft_Constraint1">
+          <xs:selector xpath=".//dbo_Rolledominantecharaktereigenschaft" />
+          <xs:field xpath="DominanteCharaktereigenschaft" />
+        </xs:keyref>
+        <xs:keyref name="FK_Kostuemtageszeit_Tageszeit_Hierachie" refer="dbo_Hierarchie_Kostuem_Tageszeit_Constraint1">
+          <xs:selector xpath=".//dbo_Kostuemtageszeit" />
+          <xs:field xpath="Tageszeit" />
+        </xs:keyref>
+        <xs:keyref name="FK_kostuemspielzeit_Spielzeit_Hierachie" refer="dbo_Hierarchie_Kostuem_Spielzeit_Constraint1">
+          <xs:selector xpath=".//dbo_kostuemspielzeit" />
+          <xs:field xpath="Spielzeit" />
+        </xs:keyref>
+        <xs:keyref name="FK_kostuemspielort_Spielort_Hierachie" refer="dbo_Hierarchie_Kostuem_Spielort_Constraint1">
+          <xs:selector xpath=".//dbo_kostuemspielort" />
+          <xs:field xpath="Spielort" />
+        </xs:keyref>
+        <xs:keyref name="FK_Kostuemkoerpermodifikationen_Koerpermodifikationen_Hierachie" refer="dbo_Hierarchie_Kostuem_Koerpermodifikation_Constraint1">
+          <xs:selector xpath=".//dbo_Kostuemkoerpermodifikationen" />
+          <xs:field xpath="Koerpermodifikationname" />
+        </xs:keyref>
+        <xs:keyref name="FK_Kostuemcharaktereigenschaft_CharaktereigenschaftenHierachie" refer="dbo_Hierarchie_Kostuem_Charaktereigenschaft_Constraint1">
+          <xs:selector xpath=".//dbo_Kostuemcharaktereigenschaft" />
+          <xs:field xpath="Charaktereigenschaft" />
+        </xs:keyref>
+        <xs:keyref name="FK_Kostuemalterseindruck_Alterseindruck_Hierachie" refer="dbo_Hierarchie_Kostuem_Alterseindruck_Constraint1">
+          <xs:selector xpath=".//dbo_Kostuemalterseindruck" />
+          <xs:field xpath="Alterseindruck" />
+        </xs:keyref>
+        <xs:keyref name="FK_Kostuem_KostuemFarb_Hierachie" refer="dbo_Hierarchie_Kostuem_Farbe_Constraint1">
+          <xs:selector xpath=".//dbo_Kostuem" />
+          <xs:field xpath="DominanteFarbe" />
+        </xs:keyref>
+        <xs:keyref name="FK_TeilelementZustand_Hierachie_TeilelementZustand_Hierachie" refer="dbo_Hierarchie_Teilelement_Zustand_Constraint1">
+          <xs:selector xpath=".//dbo_Hierarchie_Teilelement_Zustand" />
+          <xs:field xpath="ZustandSuperTyp" />
+        </xs:keyref>
+        <xs:keyref name="FK_TeilelementTrageweise_Hierachie_TeilelementTrageweise_Hierachie" refer="dbo_Hierarchie_Teilelement_Tragweise_Constraint1">
+          <xs:selector xpath=".//dbo_Hierarchie_Teilelement_Tragweise" />
+          <xs:field xpath="TrageweiseSuperTyp" />
+        </xs:keyref>
+        <xs:keyref name="FK_TeilelementMaterial_Hierachie_TeilelementMaterial_Hierachie" refer="dbo_Hierarchie_Teilelement_Material_Constraint1">
+          <xs:selector xpath=".//dbo_Hierarchie_Teilelement_Material" />
+          <xs:field xpath="MaterialSuperTyp" />
+        </xs:keyref>
+        <xs:keyref name="FK_TeilelementForm_Hierachie_TeilelementForm_Hierachie" refer="dbo_Hierarchie_Teilelement_Form_Constraint1">
+          <xs:selector xpath=".//dbo_Hierarchie_Teilelement_Form" />
+          <xs:field xpath="FormSuperTyp" />
+        </xs:keyref>
+        <xs:keyref name="FK_TeilelementFarb_Hierachie_TeilelementFarb_Hierachie" refer="dbo_Hierarchie_Teilelement_Farbe_Constraint1">
+          <xs:selector xpath=".//dbo_Hierarchie_Teilelement_Farbe" />
+          <xs:field xpath="FarbSuperTyp" />
+        </xs:keyref>
+        <xs:keyref name="FK_TeilelementDesign_Hierachie_TeilelementDesign_Hierachie" refer="dbo_Hierarchie_Teilelement_Design_Constraint1">
+          <xs:selector xpath=".//dbo_Hierarchie_Teilelement_Design" />
+          <xs:field xpath="DESuperTyp" />
+        </xs:keyref>
+        <xs:keyref name="FK_TE_Hierachie_TE_Hierachie" refer="dbo_Hierarchie_Teilelement_Constraint1">
+          <xs:selector xpath=".//dbo_Hierarchie_Teilelement" />
+          <xs:field xpath="TESuperTyp" />
+        </xs:keyref>
+        <xs:keyref name="FK_Typus_Hierachie_Typus_Hierachie" refer="dbo_Hierarchie_Rolle_Dominante_Charaktereigenschaft_Constraint1">
+          <xs:selector xpath=".//dbo_Hierarchie_Rolle_Dominante_Charaktereigenschaft" />
+          <xs:field xpath="TypusSuperTyp" />
+        </xs:keyref>
+        <xs:keyref name="FK_Tageszeit_Hierachie_Tageszeit_Hierachie" refer="dbo_Hierarchie_Kostuem_Tageszeit_Constraint1">
+          <xs:selector xpath=".//dbo_Hierarchie_Kostuem_Tageszeit" />
+          <xs:field xpath="TageszeitSuperTyp" />
+        </xs:keyref>
+        <xs:keyref name="FK_Spielzeit_Hierachie_Spielzeit_Hierachie" refer="dbo_Hierarchie_Kostuem_Spielzeit_Constraint1">
+          <xs:selector xpath=".//dbo_Hierarchie_Kostuem_Spielzeit" />
+          <xs:field xpath="SpielzeitSuperTyp" />
+        </xs:keyref>
+        <xs:keyref name="FK_Spielort_Hierachie_Spielort_Hierachie" refer="dbo_Hierarchie_Kostuem_Spielort_Constraint1">
+          <xs:selector xpath=".//dbo_Hierarchie_Kostuem_Spielort" />
+          <xs:field xpath="SpielortSuperTyp" />
+        </xs:keyref>
+        <xs:keyref name="FK_Koerpermodifikationen_Hierachie_Koerpermodifikationen_Hierachie" refer="dbo_Hierarchie_Kostuem_Koerpermodifikation_Constraint1">
+          <xs:selector xpath=".//dbo_Hierarchie_Kostuem_Koerpermodifikation" />
+          <xs:field xpath="KoerpermodifikationsSuperTyp" />
+        </xs:keyref>
+        <xs:keyref name="FK_KostuemFarb_Hierachie_KostuemFarb_Hierachie" refer="dbo_Hierarchie_Kostuem_Farbe_Constraint1">
+          <xs:selector xpath=".//dbo_Hierarchie_Kostuem_Farbe" />
+          <xs:field xpath="FarbSuperTyp" />
+        </xs:keyref>
+        <xs:keyref name="FK_CharaktereigenschaftenHierachie_CharaktereigenschaftenHierachie" refer="dbo_Hierarchie_Kostuem_Charaktereigenschaft_Constraint1">
+          <xs:selector xpath=".//dbo_Hierarchie_Kostuem_Charaktereigenschaft" />
+          <xs:field xpath="CharakterSuperTyp" />
+        </xs:keyref>
+        <xs:keyref name="FK_Alterseindruck_Hierachie_Alterseindruck_Hierachie" refer="dbo_Hierarchie_Kostuem_Alterseindruck_Constraint1">
+          <xs:selector xpath=".//dbo_Hierarchie_Kostuem_Alterseindruck" />
+          <xs:field xpath="AlterseindruckTypusSuperTyp" />
+        </xs:keyref>
+        <xs:keyref name="FK_Produktionsort_Hierachie_Produktionsort_Hierachie" refer="dbo_Hierarchie_Film_Produktionsort_Constraint1">
+          <xs:selector xpath=".//dbo_Hierarchie_Film_Produktionsort" />
+          <xs:field xpath="ProduktionsortSuperTyp" />
+        </xs:keyref>
+        <xs:keyref name="FK_Genre_Hierachie_Genre_Hierachie" refer="dbo_Hierarchie_Film_Genre_Constraint1">
+          <xs:selector xpath=".//dbo_Hierarchie_Film_Genre" />
+          <xs:field xpath="GenreSuperTyp" />
+        </xs:keyref>
+        <xs:keyref name="FK_Farbkonzept_Hierachie_Farbkonzept_Hierachie" refer="dbo_Hierarchie_Film_Farbkonzept_Constraint1">
+          <xs:selector xpath=".//dbo_Hierarchie_Film_Farbkonzept" />
+          <xs:field xpath="FarbkonzeptnameSuperTyp" />
+        </xs:keyref>
+        <xs:keyref name="FK_Zustand_Hierachie_Zustand_Hierachie" refer="dbo_Hierarchie_Basiselement_Zustand_Constraint1">
+          <xs:selector xpath=".//dbo_Hierarchie_Basiselement_Zustand" />
+          <xs:field xpath="ZustandSuperTyp" />
+        </xs:keyref>
+        <xs:keyref name="FK_Trageweise_Hierachie_Trageweise_Hierachie" refer="dbo_Hierarchie_Basiselement_Tragweise_Constraint1">
+          <xs:selector xpath=".//dbo_Hierarchie_Basiselement_Tragweise" />
+          <xs:field xpath="TrageweiseSuperTyp" />
+        </xs:keyref>
+        <xs:keyref name="FK_Material_Hierachie_Material_Hierachie" refer="dbo_Hierarchie_Basiselement_Material_Constraint1">
+          <xs:selector xpath=".//dbo_Hierarchie_Basiselement_Material" />
+          <xs:field xpath="MaterialSuperTyp" />
+        </xs:keyref>
+        <xs:keyref name="FK_Funktion_Hierachie_Funktion_Hierachie" refer="dbo_Hierarchie_Basiselement_Funktion_Constraint1">
+          <xs:selector xpath=".//dbo_Hierarchie_Basiselement_Funktion" />
+          <xs:field xpath="FunktionsSuperTyp" />
+        </xs:keyref>
+        <xs:keyref name="FK_Form_Hierachie_Form_Hierachie" refer="dbo_Hierarchie_Basiselement_Form_Constraint1">
+          <xs:selector xpath=".//dbo_Hierarchie_Basiselement_Form" />
+          <xs:field xpath="FormSuperTyp" />
+        </xs:keyref>
+        <xs:keyref name="FK_Farb_Hierarchie_Farb_Hierarchie" refer="dbo_Hierarchie_Basiselement_Farbe_Constraint1">
+          <xs:selector xpath=".//dbo_Hierarchie_Basiselement_Farbe" />
+          <xs:field xpath="FarbSuperTyp" />
+        </xs:keyref>
+        <xs:keyref name="FK_Design_Hierachie_Design_Hierachie" refer="dbo_Hierarchie_Basiselement_Design_Constraint1">
+          <xs:selector xpath=".//dbo_Hierarchie_Basiselement_Design" />
+          <xs:field xpath="DESuperTyp" />
+        </xs:keyref>
+        <xs:keyref name="FK_BE_Hierachie_BE_Hierachie" refer="dbo_Hierarchie_Basiselement_Constraint1">
+          <xs:selector xpath=".//dbo_Hierarchie_Basiselement" />
+          <xs:field xpath="SuperTyp" />
+        </xs:keyref>
+        <xs:keyref name="FK_Filmproduktionsort_Produktionsort_Hierachie" refer="dbo_Hierarchie_Film_Produktionsort_Constraint1">
+          <xs:selector xpath=".//dbo_Filmproduktionsort" />
+          <xs:field xpath="Produktionsort" />
+        </xs:keyref>
+        <xs:keyref name="FK_Filmgenre_Genre_Hierachie" refer="dbo_Hierarchie_Film_Genre_Constraint1">
+          <xs:selector xpath=".//dbo_Filmgenre" />
+          <xs:field xpath="Genre" />
+        </xs:keyref>
+        <xs:keyref name="FK_Filmfarbkonzept_Farbkonzept_Hierachie" refer="dbo_Hierarchie_Film_Farbkonzept_Constraint1">
+          <xs:selector xpath=".//dbo_Filmfarbkonzept" />
+          <xs:field xpath="Farbkonzept" />
+        </xs:keyref>
+        <xs:keyref name="FK_FaktentabelleTeilelement_Teilelemente" refer="dbo_Teilelemente_Constraint1">
+          <xs:selector xpath=".//dbo_FaktentabelleTeilelement" />
+          <xs:field xpath="TECubeID" />
+        </xs:keyref>
+        <xs:keyref name="FK_FaktentabelleTeilelement_Teilelementzustand" refer="dbo_Teilelementzustand_Constraint1">
+          <xs:selector xpath=".//dbo_FaktentabelleTeilelement" />
+          <xs:field xpath="TEZustandID" />
+        </xs:keyref>
+        <xs:keyref name="FK_FaktentabelleTeilelement_Rolle" refer="dbo_Rolle_Constraint1">
+          <xs:selector xpath=".//dbo_FaktentabelleTeilelement" />
+          <xs:field xpath="RollenID" />
+          <xs:field xpath="FilmID" />
+        </xs:keyref>
+        <xs:keyref name="FK_FaktentabelleTeilelement_Film" refer="dbo_Film_Constraint1">
+          <xs:selector xpath=".//dbo_FaktentabelleTeilelement" />
+          <xs:field xpath="FilmID" />
+        </xs:keyref>
+        <xs:keyref name="FK_FaktentabelleTeilelement_Kostuem" refer="dbo_Kostuem_Constraint1">
+          <xs:selector xpath=".//dbo_FaktentabelleTeilelement" />
+          <xs:field xpath="KostuemID" />
+          <xs:field xpath="RollenID" />
+          <xs:field xpath="FilmID" />
+        </xs:keyref>
+        <xs:keyref name="FK_FaktentabelleTeilelement_Teilelementform" refer="dbo_Teilelementform_Constraint1">
+          <xs:selector xpath=".//dbo_FaktentabelleTeilelement" />
+          <xs:field xpath="TEFormID" />
+        </xs:keyref>
+        <xs:keyref name="FK_FaktentabelleTeilelement_Teilelementtrageweise" refer="dbo_Teilelementtrageweise_Constraint1">
+          <xs:selector xpath=".//dbo_FaktentabelleTeilelement" />
+          <xs:field xpath="TETragweiseID" />
+        </xs:keyref>
+        <xs:keyref name="FK_FaktentabelleTeilelement_Teilelementmaterial" refer="dbo_Teilelementmaterial_Constraint1">
+          <xs:selector xpath=".//dbo_FaktentabelleTeilelement" />
+          <xs:field xpath="TEMaterialID" />
+        </xs:keyref>
+        <xs:keyref name="FK_FaktentabelleTeilelement_Teilelementfarbe" refer="dbo_Teilelementfarbe_Constraint1">
+          <xs:selector xpath=".//dbo_FaktentabelleTeilelement" />
+          <xs:field xpath="TEFarbID" />
+        </xs:keyref>
+        <xs:keyref name="FK_FaktentabelleTeilelement_Teilelementdesign" refer="dbo_Teilelementdesign_Constraint1">
+          <xs:selector xpath=".//dbo_FaktentabelleTeilelement" />
+          <xs:field xpath="TEDesignID" />
+        </xs:keyref>
+        <xs:keyref name="FK_FaktentabelleRolle_Rollenfamilienstand" refer="dbo_Rollenfamilienstand_Constraint1">
+          <xs:selector xpath=".//dbo_FaktentabelleRolle" />
+          <xs:field xpath="RollenfamilienstandID" />
+        </xs:keyref>
+        <xs:keyref name="FK_FaktentabelleRolle_Rolledominantecharaktereigenschaft" refer="dbo_Rolledominantecharaktereigenschaft_Constraint1">
+          <xs:selector xpath=".//dbo_FaktentabelleRolle" />
+          <xs:field xpath="RolledominantecharaktereigenschaftID" />
+        </xs:keyref>
+        <xs:keyref name="FK_FaktentabelleRolle_Stereotyp" refer="dbo_Stereotyp_Constraint1">
+          <xs:selector xpath=".//dbo_FaktentabelleRolle" />
+          <xs:field xpath="StereotypID" />
+        </xs:keyref>
+        <xs:keyref name="FK_FaktentabelleRolle_Film" refer="dbo_Film_Constraint1">
+          <xs:selector xpath=".//dbo_FaktentabelleRolle" />
+          <xs:field xpath="FilmID" />
+        </xs:keyref>
+        <xs:keyref name="FK_FaktentabelleRolle_Rolle" refer="dbo_Rolle_Constraint1">
+          <xs:selector xpath=".//dbo_FaktentabelleRolle" />
+          <xs:field xpath="RollenID" />
+          <xs:field xpath="FilmID" />
+        </xs:keyref>
+        <xs:keyref name="FK_FaktentabelleKostuemTimecode_Film" refer="dbo_Film_Constraint1">
+          <xs:selector xpath=".//dbo_FaktentabelleKostuemTimecode" />
+          <xs:field xpath="FilmID" />
+        </xs:keyref>
+        <xs:keyref name="FK_FaktentabelleKostuemTimecode_Rolle" refer="dbo_Rolle_Constraint1">
+          <xs:selector xpath=".//dbo_FaktentabelleKostuemTimecode" />
+          <xs:field xpath="RollenID" />
+          <xs:field xpath="FilmID" />
+        </xs:keyref>
+        <xs:keyref name="FK_FaktentabelleKostuemTimecode_Kostuem" refer="dbo_Kostuem_Constraint1">
+          <xs:selector xpath=".//dbo_FaktentabelleKostuemTimecode" />
+          <xs:field xpath="KostuemID" />
+          <xs:field xpath="RollenID" />
+          <xs:field xpath="FilmID" />
+        </xs:keyref>
+        <xs:keyref name="FK_FaktentabelleKostuem_Kostuemtageszeit" refer="dbo_Kostuemtageszeit_Constraint1">
+          <xs:selector xpath=".//dbo_FaktentabelleKostuem" />
+          <xs:field xpath="KostuemtageszeitID" />
+        </xs:keyref>
+        <xs:keyref name="FK_FaktentabelleKostuem_kostuemspielzeit" refer="dbo_kostuemspielzeit_Constraint1">
+          <xs:selector xpath=".//dbo_FaktentabelleKostuem" />
+          <xs:field xpath="KostuemspielzeitID" />
+        </xs:keyref>
+        <xs:keyref name="FK_FaktentabelleKostuem_Rolle" refer="dbo_Rolle_Constraint1">
+          <xs:selector xpath=".//dbo_FaktentabelleKostuem" />
+          <xs:field xpath="RollenID" />
+          <xs:field xpath="FilmID" />
+        </xs:keyref>
+        <xs:keyref name="FK_FaktentabelleKostuem_Film" refer="dbo_Film_Constraint1">
+          <xs:selector xpath=".//dbo_FaktentabelleKostuem" />
+          <xs:field xpath="FilmID" />
+        </xs:keyref>
+        <xs:keyref name="FK_FaktentabelleKostuem_Kostuemalterseindruck" refer="dbo_Kostuemalterseindruck_Constraint1">
+          <xs:selector xpath=".//dbo_FaktentabelleKostuem" />
+          <xs:field xpath="KostuemaltereindruckID" />
+        </xs:keyref>
+        <xs:keyref name="FK_FaktentabelleKostuem_Kostuemcharaktereigenschaft" refer="dbo_Kostuemcharaktereigenschaft_Constraint1">
+          <xs:selector xpath=".//dbo_FaktentabelleKostuem" />
+          <xs:field xpath="CharaktereigenschaftenID" />
+        </xs:keyref>
+        <xs:keyref name="FK_FaktentabelleKostuem_Kostuem" refer="dbo_Kostuem_Constraint1">
+          <xs:selector xpath=".//dbo_FaktentabelleKostuem" />
+          <xs:field xpath="KostuemID" />
+          <xs:field xpath="RollenID" />
+          <xs:field xpath="FilmID" />
+        </xs:keyref>
+        <xs:keyref name="FK_FaktentabelleKostuem_Kostuemkoerpermodifikationen" refer="dbo_Kostuemkoerpermodifikationen_Constraint1">
+          <xs:selector xpath=".//dbo_FaktentabelleKostuem" />
+          <xs:field xpath="KostuemkoerpermodifikationenID" />
+        </xs:keyref>
+        <xs:keyref name="FK_FaktentabelleKostuem_kostuemspielort" refer="dbo_kostuemspielort_Constraint1">
+          <xs:selector xpath=".//dbo_FaktentabelleKostuem" />
+          <xs:field xpath="KostuemspielortID" />
+        </xs:keyref>
+        <xs:keyref name="FK_FaktentabelleFilm_Film" refer="dbo_Film_Constraint1">
+          <xs:selector xpath=".//dbo_FaktentabelleFilm" />
+          <xs:field xpath="FilmID" />
+        </xs:keyref>
+        <xs:keyref name="FK_FaktentabelleFilm_Filmproduktionsort" refer="dbo_Filmproduktionsort_Constraint1">
+          <xs:selector xpath=".//dbo_FaktentabelleFilm" />
+          <xs:field xpath="FilmproduktionsortID" />
+        </xs:keyref>
+        <xs:keyref name="FK_FaktentabelleFilm_Filmgenre" refer="dbo_Filmgenre_Constraint1">
+          <xs:selector xpath=".//dbo_FaktentabelleFilm" />
+          <xs:field xpath="FilmgenreID" />
+        </xs:keyref>
+        <xs:keyref name="FK_FaktentabelleFilm_Filmfarbkonzept" refer="dbo_Filmfarbkonzept_Constraint1">
+          <xs:selector xpath=".//dbo_FaktentabelleFilm" />
+          <xs:field xpath="FilmfarbkonzeptID" />
+        </xs:keyref>
+        <xs:keyref name="FK_FaktentabelleBasiselement_Basiselementtrageweise" refer="dbo_Basiselementtrageweise_Constraint1">
+          <xs:selector xpath=".//dbo_FaktentabelleBasiselement" />
+          <xs:field xpath="BETragweiseID" />
+        </xs:keyref>
+        <xs:keyref name="FK_FaktentabelleBasiselement_Basiselementfunktion" refer="dbo_Basiselementfunktion_Constraint1">
+          <xs:selector xpath=".//dbo_FaktentabelleBasiselement" />
+          <xs:field xpath="BEFunktionID" />
+        </xs:keyref>
+        <xs:keyref name="FK_FaktentabelleBasiselement_Film" refer="dbo_Film_Constraint1">
+          <xs:selector xpath=".//dbo_FaktentabelleBasiselement" />
+          <xs:field xpath="FilmID" />
+        </xs:keyref>
+        <xs:keyref name="FK_FaktentabelleBasiselement_Rolle" refer="dbo_Rolle_Constraint1">
+          <xs:selector xpath=".//dbo_FaktentabelleBasiselement" />
+          <xs:field xpath="RollenID" />
+          <xs:field xpath="FilmID" />
+        </xs:keyref>
+        <xs:keyref name="FK_FaktentabelleBasiselement_Basiselementfarbe" refer="dbo_Basiselementfarbe_Constraint1">
+          <xs:selector xpath=".//dbo_FaktentabelleBasiselement" />
+          <xs:field xpath="BEFarbID" />
+        </xs:keyref>
+        <xs:keyref name="FK_FaktentabelleBasiselement_Basiselementzustand" refer="dbo_Basiselementzustand_Constraint1">
+          <xs:selector xpath=".//dbo_FaktentabelleBasiselement" />
+          <xs:field xpath="BEZustandID" />
+        </xs:keyref>
+        <xs:keyref name="FK_FaktentabelleBasiselement_Basiselementdesign" refer="dbo_Basiselementdesign_Constraint1">
+          <xs:selector xpath=".//dbo_FaktentabelleBasiselement" />
+          <xs:field xpath="BEDesignID" />
+        </xs:keyref>
+        <xs:keyref name="FK_FaktentabelleBasiselement_Basiselementmaterial" refer="dbo_Basiselementmaterial_Constraint1">
+          <xs:selector xpath=".//dbo_FaktentabelleBasiselement" />
+          <xs:field xpath="BEMaterialID" />
+        </xs:keyref>
+        <xs:keyref name="FK_FaktentabelleBasiselement_Basiselement" refer="Constraint1">
+          <xs:selector xpath=".//dbo_FaktentabelleBasiselement" />
+          <xs:field xpath="BECubeID" />
+        </xs:keyref>
+        <xs:keyref name="FK_FaktentabelleBasiselement_Kostuem" refer="dbo_Kostuem_Constraint1">
+          <xs:selector xpath=".//dbo_FaktentabelleBasiselement" />
+          <xs:field xpath="KostuemID" />
+          <xs:field xpath="RollenID" />
+          <xs:field xpath="FilmID" />
+        </xs:keyref>
+        <xs:keyref name="FK_FaktentabelleBasiselement_Basiselementform" refer="dbo_Basiselementform_Constraint1">
+          <xs:selector xpath=".//dbo_FaktentabelleBasiselement" />
+          <xs:field xpath="BEFormID" />
+        </xs:keyref>
+        <xs:keyref name="FK_Basiselementzustand_Zustand_Hierachie" refer="dbo_Hierarchie_Basiselement_Zustand_Constraint1">
+          <xs:selector xpath=".//dbo_Basiselementzustand" />
+          <xs:field xpath="Zustandsname" />
+        </xs:keyref>
+        <xs:keyref name="FK_Basiselementtrageweise_Trageweise_Hierachie" refer="dbo_Hierarchie_Basiselement_Tragweise_Constraint1">
+          <xs:selector xpath=".//dbo_Basiselementtrageweise" />
+          <xs:field xpath="Trageweisename" />
+        </xs:keyref>
+        <xs:keyref name="FK_Basiselementmaterial_Material_Hierachie" refer="dbo_Hierarchie_Basiselement_Material_Constraint1">
+          <xs:selector xpath=".//dbo_Basiselementmaterial" />
+          <xs:field xpath="Materialname" />
+        </xs:keyref>
+        <xs:keyref name="FK_Basiselementfunktion_Funktion_Hierachie" refer="dbo_Hierarchie_Basiselement_Funktion_Constraint1">
+          <xs:selector xpath=".//dbo_Basiselementfunktion" />
+          <xs:field xpath="Funktionsname" />
+        </xs:keyref>
+        <xs:keyref name="FK_Basiselementform_Form_Hierachie" refer="dbo_Hierarchie_Basiselement_Form_Constraint1">
+          <xs:selector xpath=".//dbo_Basiselementform" />
+          <xs:field xpath="Formname" />
+        </xs:keyref>
+        <xs:keyref name="FK_Basiselementfarbe_Farb_Hierarchie" refer="dbo_Hierarchie_Basiselement_Farbe_Constraint1">
+          <xs:selector xpath=".//dbo_Basiselementfarbe" />
+          <xs:field xpath="Farbname" />
+        </xs:keyref>
+        <xs:keyref name="FK_Basiselementdesign_Design_Hierachie" refer="dbo_Hierarchie_Basiselement_Design_Constraint1">
+          <xs:selector xpath=".//dbo_Basiselementdesign" />
+          <xs:field xpath="Designname" />
+        </xs:keyref>
+        <xs:keyref name="FK_Basiselement_BE_Hierachie" refer="dbo_Hierarchie_Basiselement_Constraint1">
+          <xs:selector xpath=".//dbo_Basiselement" />
+          <xs:field xpath="Basiselementname" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <Kostuem_x0020_DWX3 xmlns="" />
+  </Schema>
+</DataSourceView>
