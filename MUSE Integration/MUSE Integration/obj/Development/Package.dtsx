@@ -11,8 +11,8 @@
   DTS:LocaleID="1031"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="57"
-  DTS:VersionGUID="{E8A99ACA-147F-4312-810F-8AC43222E550}">
+  DTS:VersionBuild="89"
+  DTS:VersionGUID="{01E34FD1-A516-40E1-895C-CC4911FD42C0}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -75,7 +75,7 @@
               DestinationConnection="{B8B49AAC-80FB-4012-B7AD-0F5B998EBC98}"
               SourceDatabase="muse"
               DestinationDatabase="muse_analytics"
-              TablesList="32,20,[dbo].[basiselement],26,[dbo].[basiselementdesign],25,[dbo].[basiselementfarbe],24,[dbo].[basiselementform],28,[dbo].[basiselementfunktion],28,[dbo].[basiselementmaterial],28,[dbo].[basiselementrelation],31,[dbo].[basiselementteilelement],30,[dbo].[basiselementtrageweise],27,[dbo].[basiselementzustand],12,[dbo].[film],23,[dbo].[filmfarbkonzept],17,[dbo].[filmgenre],26,[dbo].[filmproduktionsort],29,[dbo].[kostuemalterseindruck],27,[dbo].[kostuembasiselement],35,[dbo].[kostuemcharaktereigenschaft],34,[dbo].[kostuemkoerpermodifikation],23,[dbo].[kostuemspielort],24,[dbo].[kostuemspielzeit],24,[dbo].[kostuemtageszeit],23,[dbo].[kostuemtimecode],13,[dbo].[rolle],42,[dbo].[rolledominantecharaktereigenschaft],26,[dbo].[rollefamilienstand],19,[dbo].[teilelement],25,[dbo].[teilelementdesign],24,[dbo].[teilelementfarbe],23,[dbo].[teilelementform],27,[dbo].[teilelementmaterial],29,[dbo].[teilelementtrageweise],26,[dbo].[teilelementzustand],"
+              TablesList="31,20,[dbo].[basiselement],26,[dbo].[basiselementdesign],24,[dbo].[basiselementform],28,[dbo].[basiselementfunktion],28,[dbo].[basiselementmaterial],28,[dbo].[basiselementrelation],31,[dbo].[basiselementteilelement],30,[dbo].[basiselementtrageweise],27,[dbo].[basiselementzustand],12,[dbo].[film],23,[dbo].[filmfarbkonzept],17,[dbo].[filmgenre],26,[dbo].[filmproduktionsort],29,[dbo].[kostuemalterseindruck],27,[dbo].[kostuembasiselement],35,[dbo].[kostuemcharaktereigenschaft],34,[dbo].[kostuemkoerpermodifikation],23,[dbo].[kostuemspielort],24,[dbo].[kostuemspielzeit],24,[dbo].[kostuemtageszeit],23,[dbo].[kostuemtimecode],13,[dbo].[rolle],42,[dbo].[rolledominantecharaktereigenschaft],26,[dbo].[rollefamilienstand],19,[dbo].[teilelement],25,[dbo].[teilelementdesign],24,[dbo].[teilelementfarbe],23,[dbo].[teilelementform],27,[dbo].[teilelementmaterial],29,[dbo].[teilelementtrageweise],26,[dbo].[teilelementzustand],"
               DropObjectsFirst="True"
               CopyData="True" />
           </DTS:ObjectData>
@@ -1103,12 +1103,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
                           cachedName="Kostuemkurztext"
                           externalMetadataColumnId="Package\Basic Preparation\Create Kostuem Table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Kostuemkurztext]"
                           lineageId="Package\Basic Preparation\Create Kostuem Table\OLE DB Source.Outputs[OLE DB Source Output].Columns[Kostuemkurztext]" />
-                        <inputColumn
-                          refId="Package\Basic Preparation\Create Kostuem Table\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ID]"
-                          cachedDataType="i4"
-                          cachedName="ID"
-                          externalMetadataColumnId="Package\Basic Preparation\Create Kostuem Table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ID]"
-                          lineageId="Package\Basic Preparation\Create Kostuem Table\Increment arbitrary ID column.Outputs[Output 0].Columns[ID]" />
                       </inputColumns>
                       <externalMetadataColumns
                         isUsed="True">
@@ -1159,9 +1153,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
                           length="100"
                           name="Kostuemkurztext" />
                         <externalMetadataColumn
-                          refId="Package\Basic Preparation\Create Kostuem Table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ID]"
+                          refId="Package\Basic Preparation\Create Kostuem Table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[IDCOL]"
                           dataType="i4"
-                          name="ID" />
+                          name="IDCOL" />
                       </externalMetadataColumns>
                     </input>
                   </inputs>
@@ -1553,6 +1547,477 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
       </DTS:PrecedenceConstraints>
     </DTS:Executable>
     <DTS:Executable
+      DTS:refId="Package\Basiselementfarbe"
+      DTS:CreationName="STOCK:SEQUENCE"
+      DTS:DelayValidation="True"
+      DTS:Description="Basiselementfarbe"
+      DTS:DTSID="{F407E7D6-4291-4AB9-8E10-D58025A1ECAF}"
+      DTS:ExecutableType="STOCK:SEQUENCE"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Basiselementfarbe">
+      <DTS:Variables />
+      <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package\Basiselementfarbe\Basiselementfarbe Level Flow"
+          DTS:CreationName="Microsoft.Pipeline"
+          DTS:Description="Data Flow Task"
+          DTS:DTSID="{073FD854-3220-41A1-8BCD-4DEB29B1AFFC}"
+          DTS:ExecutableType="Microsoft.Pipeline"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Basiselementfarbe Level Flow"
+          DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <pipeline
+              version="1">
+              <components>
+                <component
+                  refId="Package\Basiselementfarbe\Basiselementfarbe Level Flow\OLE DB Destination"
+                  componentClassID="Microsoft.OLEDBDestination"
+                  contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+                  description="OLE DB Destination"
+                  name="OLE DB Destination"
+                  usesDispositions="true"
+                  version="4">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset">[dbo].[basiselementfarbe]</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1252</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">0</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepIdentity">false</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepNulls">false</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                      name="FastLoadOptions"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                      name="FastLoadMaxInsertCommitSize">2147483647</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Basiselementfarbe\Basiselementfarbe Level Flow\OLE DB Destination.Connections[OleDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[muse_analytics]"
+                      connectionManagerRefId="Package.ConnectionManagers[muse_analytics]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\Basiselementfarbe\Basiselementfarbe Level Flow\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                      errorOrTruncationOperation="Insert"
+                      errorRowDisposition="FailComponent"
+                      hasSideEffects="true"
+                      name="OLE DB Destination Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Basiselementfarbe\Basiselementfarbe Level Flow\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Farbname]"
+                          cachedDataType="wstr"
+                          cachedLength="45"
+                          cachedName="Farbname"
+                          externalMetadataColumnId="Package\Basiselementfarbe\Basiselementfarbe Level Flow\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Farbname]"
+                          lineageId="Package\Basiselementfarbe\Basiselementfarbe Level Flow\OLE DB Source.Outputs[OLE DB Source Output].Columns[Farbname]" />
+                        <inputColumn
+                          refId="Package\Basiselementfarbe\Basiselementfarbe Level Flow\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[BasiselementID]"
+                          cachedDataType="i4"
+                          cachedName="BasiselementID"
+                          externalMetadataColumnId="Package\Basiselementfarbe\Basiselementfarbe Level Flow\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[BasiselementID]"
+                          lineageId="Package\Basiselementfarbe\Basiselementfarbe Level Flow\OLE DB Source.Outputs[OLE DB Source Output].Columns[BasiselementID]" />
+                        <inputColumn
+                          refId="Package\Basiselementfarbe\Basiselementfarbe Level Flow\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Farbeindruck]"
+                          cachedDataType="wstr"
+                          cachedLength="45"
+                          cachedName="Farbeindruck"
+                          externalMetadataColumnId="Package\Basiselementfarbe\Basiselementfarbe Level Flow\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Farbeindruck]"
+                          lineageId="Package\Basiselementfarbe\Basiselementfarbe Level Flow\OLE DB Source.Outputs[OLE DB Source Output].Columns[Farbeindruck]" />
+                        <inputColumn
+                          refId="Package\Basiselementfarbe\Basiselementfarbe Level Flow\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[FarbeL1]"
+                          cachedDataType="wstr"
+                          cachedLength="45"
+                          cachedName="FarbeL1"
+                          externalMetadataColumnId="Package\Basiselementfarbe\Basiselementfarbe Level Flow\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FarbnameL1]"
+                          lineageId="Package\Basiselementfarbe\Basiselementfarbe Level Flow\OLE DB Source.Outputs[OLE DB Source Output].Columns[FarbeL1]" />
+                        <inputColumn
+                          refId="Package\Basiselementfarbe\Basiselementfarbe Level Flow\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[FarbeL2]"
+                          cachedDataType="wstr"
+                          cachedLength="45"
+                          cachedName="FarbeL2"
+                          externalMetadataColumnId="Package\Basiselementfarbe\Basiselementfarbe Level Flow\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FarbnameL2]"
+                          lineageId="Package\Basiselementfarbe\Basiselementfarbe Level Flow\OLE DB Source.Outputs[OLE DB Source Output].Columns[FarbeL2]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Basiselementfarbe\Basiselementfarbe Level Flow\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[BasiselementID]"
+                          dataType="i4"
+                          name="BasiselementID" />
+                        <externalMetadataColumn
+                          refId="Package\Basiselementfarbe\Basiselementfarbe Level Flow\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Farbname]"
+                          dataType="wstr"
+                          length="45"
+                          name="Farbname" />
+                        <externalMetadataColumn
+                          refId="Package\Basiselementfarbe\Basiselementfarbe Level Flow\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Farbeindruck]"
+                          dataType="wstr"
+                          length="45"
+                          name="Farbeindruck" />
+                        <externalMetadataColumn
+                          refId="Package\Basiselementfarbe\Basiselementfarbe Level Flow\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FarbnameL1]"
+                          dataType="wstr"
+                          length="45"
+                          name="FarbnameL1" />
+                        <externalMetadataColumn
+                          refId="Package\Basiselementfarbe\Basiselementfarbe Level Flow\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FarbnameL2]"
+                          dataType="wstr"
+                          length="45"
+                          name="FarbnameL2" />
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Basiselementfarbe\Basiselementfarbe Level Flow\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="OLE DB Destination Error Output"
+                      synchronousInputId="Package\Basiselementfarbe\Basiselementfarbe Level Flow\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Basiselementfarbe\Basiselementfarbe Level Flow\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Basiselementfarbe\Basiselementfarbe Level Flow\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Basiselementfarbe\Basiselementfarbe Level Flow\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Basiselementfarbe\Basiselementfarbe Level Flow\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Basiselementfarbe\Basiselementfarbe Level Flow\OLE DB Source"
+                  componentClassID="Microsoft.OLEDBSource"
+                  contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+                  description="OLE DB Source"
+                  name="OLE DB Source"
+                  usesDispositions="true"
+                  version="7">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset">[dbo].[basiselementfarbe]</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">WITH FarbenListe AS
+(
+	SELECT WurzelFarbe.*,
+		CAST('' AS nvarchar(45)) AS FarbeL1,
+		CAST('' AS nvarchar(45)) AS FarbeL2,
+		CAST('' AS nvarchar(45)) AS FarbeL3
+		FROM [muse].[dbo].[farbendomaene] AS WurzelFarbe
+		WHERE [Farbname] = 'Farben'
+
+	UNION ALL
+
+	SELECT Farbe.*,
+		CAST(ElternFarbe.FarbeL2 AS nvarchar(45)) AS FarbeL1,
+		CAST(ElternFarbe.FarbeL3 AS nvarchar(45)) AS FarbeL2,
+		CAST(Farbe.Farbname AS nvarchar(45)) AS FarbeL3
+		FROM [muse].[dbo].[farbendomaene] AS Farbe
+		INNER JOIN FarbenListe AS ElternFarbe
+		ON ElternFarbe.UntergeordneteFarbe = Farbe.Farbname
+		WHERE Farbe.[Farbname] &lt;&gt; 'Farben'
+		AND Farbe.[Farbname] &lt;&gt; ''
+),
+AuswaehlbareFarben AS
+(
+	SELECT *
+		FROM FarbenListe AS f
+		WHERE
+		(
+			SELECT COUNT(Farbname)
+				FROM FarbenListe
+				WHERE Farbname = f.Farbname AND UntergeordneteFarbe &lt;&gt; ''
+		) = 0
+),
+NormierteFarbenListe AS
+(
+	SELECT 
+		Farbname,
+		FarbeL1,
+		FarbeL2
+		FROM AuswaehlbareFarben
+		WHERE FarbeL1 &lt;&gt; ''
+
+	UNION ALL
+
+	SELECT
+		Farbname,
+		FarbeL2 AS FarbeL1,
+		Farbname AS FarbeL2
+		FROM AuswaehlbareFarben
+		WHERE FarbeL1 = ''
+)
+SELECT
+	basiselementfarbe.*,
+	NormierteFarbenListe.FarbeL1,
+	NormierteFarbenListe.FarbeL2
+	FROM basiselementfarbe,
+	NormierteFarbenListe
+	WHERE basiselementfarbe.Farbname = NormierteFarbenListe.Farbname;</property>
+                    <property
+                      dataType="System.String"
+                      description="The variable that contains the SQL command to be executed."
+                      name="SqlCommandVariable"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1252</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">2</property>
+                    <property
+                      dataType="System.String"
+                      description="The mappings between the parameters in the SQL command and variables."
+                      name="ParameterMapping"></property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Basiselementfarbe\Basiselementfarbe Level Flow\OLE DB Source.Connections[OleDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[muse]"
+                      connectionManagerRefId="Package.ConnectionManagers[muse]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <outputs>
+                    <output
+                      refId="Package\Basiselementfarbe\Basiselementfarbe Level Flow\OLE DB Source.Outputs[OLE DB Source Output]"
+                      name="OLE DB Source Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Basiselementfarbe\Basiselementfarbe Level Flow\OLE DB Source.Outputs[OLE DB Source Output].Columns[Farbname]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Basiselementfarbe\Basiselementfarbe Level Flow\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Farbname]"
+                          length="45"
+                          lineageId="Package\Basiselementfarbe\Basiselementfarbe Level Flow\OLE DB Source.Outputs[OLE DB Source Output].Columns[Farbname]"
+                          name="Farbname"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Basiselementfarbe\Basiselementfarbe Level Flow\OLE DB Source.Outputs[OLE DB Source Output].Columns[BasiselementID]"
+                          dataType="i4"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Basiselementfarbe\Basiselementfarbe Level Flow\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[BasiselementID]"
+                          lineageId="Package\Basiselementfarbe\Basiselementfarbe Level Flow\OLE DB Source.Outputs[OLE DB Source Output].Columns[BasiselementID]"
+                          name="BasiselementID"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Basiselementfarbe\Basiselementfarbe Level Flow\OLE DB Source.Outputs[OLE DB Source Output].Columns[Farbeindruck]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Basiselementfarbe\Basiselementfarbe Level Flow\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Farbeindruck]"
+                          length="45"
+                          lineageId="Package\Basiselementfarbe\Basiselementfarbe Level Flow\OLE DB Source.Outputs[OLE DB Source Output].Columns[Farbeindruck]"
+                          name="Farbeindruck"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Basiselementfarbe\Basiselementfarbe Level Flow\OLE DB Source.Outputs[OLE DB Source Output].Columns[FarbeL1]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Basiselementfarbe\Basiselementfarbe Level Flow\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[FarbeL1]"
+                          length="45"
+                          lineageId="Package\Basiselementfarbe\Basiselementfarbe Level Flow\OLE DB Source.Outputs[OLE DB Source Output].Columns[FarbeL1]"
+                          name="FarbeL1"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Basiselementfarbe\Basiselementfarbe Level Flow\OLE DB Source.Outputs[OLE DB Source Output].Columns[FarbeL2]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Basiselementfarbe\Basiselementfarbe Level Flow\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[FarbeL2]"
+                          length="45"
+                          lineageId="Package\Basiselementfarbe\Basiselementfarbe Level Flow\OLE DB Source.Outputs[OLE DB Source Output].Columns[FarbeL2]"
+                          name="FarbeL2"
+                          truncationRowDisposition="FailComponent" />
+                      </outputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Basiselementfarbe\Basiselementfarbe Level Flow\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Farbname]"
+                          dataType="wstr"
+                          length="45"
+                          name="Farbname" />
+                        <externalMetadataColumn
+                          refId="Package\Basiselementfarbe\Basiselementfarbe Level Flow\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[BasiselementID]"
+                          dataType="i4"
+                          name="BasiselementID" />
+                        <externalMetadataColumn
+                          refId="Package\Basiselementfarbe\Basiselementfarbe Level Flow\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Farbeindruck]"
+                          dataType="wstr"
+                          length="45"
+                          name="Farbeindruck" />
+                        <externalMetadataColumn
+                          refId="Package\Basiselementfarbe\Basiselementfarbe Level Flow\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[FarbeL1]"
+                          dataType="wstr"
+                          length="45"
+                          name="FarbeL1" />
+                        <externalMetadataColumn
+                          refId="Package\Basiselementfarbe\Basiselementfarbe Level Flow\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[FarbeL2]"
+                          dataType="wstr"
+                          length="45"
+                          name="FarbeL2" />
+                      </externalMetadataColumns>
+                    </output>
+                    <output
+                      refId="Package\Basiselementfarbe\Basiselementfarbe Level Flow\OLE DB Source.Outputs[OLE DB Source Error Output]"
+                      isErrorOut="true"
+                      name="OLE DB Source Error Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Basiselementfarbe\Basiselementfarbe Level Flow\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[BasiselementID]"
+                          dataType="i4"
+                          lineageId="Package\Basiselementfarbe\Basiselementfarbe Level Flow\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[BasiselementID]"
+                          name="BasiselementID" />
+                        <outputColumn
+                          refId="Package\Basiselementfarbe\Basiselementfarbe Level Flow\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Farbname]"
+                          dataType="wstr"
+                          length="45"
+                          lineageId="Package\Basiselementfarbe\Basiselementfarbe Level Flow\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Farbname]"
+                          name="Farbname" />
+                        <outputColumn
+                          refId="Package\Basiselementfarbe\Basiselementfarbe Level Flow\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Farbeindruck]"
+                          dataType="wstr"
+                          length="45"
+                          lineageId="Package\Basiselementfarbe\Basiselementfarbe Level Flow\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Farbeindruck]"
+                          name="Farbeindruck" />
+                        <outputColumn
+                          refId="Package\Basiselementfarbe\Basiselementfarbe Level Flow\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[FarbeL1]"
+                          dataType="wstr"
+                          length="45"
+                          lineageId="Package\Basiselementfarbe\Basiselementfarbe Level Flow\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[FarbeL1]"
+                          name="FarbeL1" />
+                        <outputColumn
+                          refId="Package\Basiselementfarbe\Basiselementfarbe Level Flow\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[FarbeL2]"
+                          dataType="wstr"
+                          length="45"
+                          lineageId="Package\Basiselementfarbe\Basiselementfarbe Level Flow\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[FarbeL2]"
+                          name="FarbeL2" />
+                        <outputColumn
+                          refId="Package\Basiselementfarbe\Basiselementfarbe Level Flow\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Basiselementfarbe\Basiselementfarbe Level Flow\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Basiselementfarbe\Basiselementfarbe Level Flow\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Basiselementfarbe\Basiselementfarbe Level Flow\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+              </components>
+              <paths>
+                <path
+                  refId="Package\Basiselementfarbe\Basiselementfarbe Level Flow.Paths[OLE DB Source Output]"
+                  endId="Package\Basiselementfarbe\Basiselementfarbe Level Flow\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  name="OLE DB Source Output"
+                  startId="Package\Basiselementfarbe\Basiselementfarbe Level Flow\OLE DB Source.Outputs[OLE DB Source Output]" />
+              </paths>
+            </pipeline>
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Basiselementfarbe\Create Basiselementfarbe Table"
+          DTS:CreationName="Microsoft.ExecuteSQLTask"
+          DTS:DTSID="{5ba24d27-7d34-4e73-b61d-e599006d14ff}"
+          DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Create Basiselementfarbe Table"
+          DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2014; © 2014 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+          DTS:ThreadHint="0">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <SQLTask:SqlTaskData
+              SQLTask:Connection="{82D75573-97DA-4285-AB7B-6708F7CF9820}"
+              SQLTask:SqlStatementSource="IF OBJECT_ID('dbo.basiselementfarbe', 'U') IS NOT NULL&#xA;  DROP TABLE [dbo].[basiselementfarbe]&#xA;GO&#xA;&#xA;CREATE TABLE [dbo].[basiselementfarbe](&#xA;&#x9;[BasiselementID] [int] NOT NULL,&#xA;&#x9;[Farbname] [nvarchar](45) NOT NULL,&#xA;&#x9;[Farbeindruck] [nvarchar](45) NOT NULL,&#xA;&#x9;[FarbnameL1] nvarchar(45) NOT NULL,&#xA;&#x9;[FarbnameL2] nvarchar(45) NOT NULL&#xA;) ON [PRIMARY]&#xA;&#xA;GO" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          </DTS:ObjectData>
+        </DTS:Executable>
+      </DTS:Executables>
+      <DTS:PrecedenceConstraints>
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\Basiselementfarbe.PrecedenceConstraints[Constraint]"
+          DTS:CreationName=""
+          DTS:DTSID="{A3A77DB7-6ADC-40BF-ADAD-74FA34F137E9}"
+          DTS:From="Package\Basiselementfarbe\Create Basiselementfarbe Table"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint"
+          DTS:To="Package\Basiselementfarbe\Basiselementfarbe Level Flow" />
+      </DTS:PrecedenceConstraints>
+    </DTS:Executable>
+    <DTS:Executable
       DTS:refId="Package\Stereotyp"
       DTS:CreationName="STOCK:SEQUENCE"
       DTS:DelayValidation="True"
@@ -1570,7 +2035,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
           DTS:LocaleID="-1"
           DTS:ObjectName="Create Stereotyp Table"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2014; © 2014 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="0">
+          DTS:ThreadHint="1">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -1581,6 +2046,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
         <DTS:Executable
           DTS:refId="Package\Stereotyp\Stereotyp Parser Flow"
           DTS:CreationName="Microsoft.Pipeline"
+          DTS:DelayValidation="True"
           DTS:DTSID="{FBEA9EFA-E841-4511-8E3E-7ADC437053BF}"
           DTS:ExecutableType="Microsoft.Pipeline"
           DTS:LocaleID="-1"
@@ -3069,6 +3535,14 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint"
       DTS:To="Package\Stereotyp" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{6E776722-E6D0-48AC-B834-E2C68F6169D3}"
+      DTS:From="Package\Basic Preparation"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 1"
+      DTS:To="Package\Basiselementfarbe" />
   </DTS:PrecedenceConstraints>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
@@ -3081,15 +3555,23 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
     design-time-name="Package">
     <LayoutInfo>
       <GraphLayout
-        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="175,42"
-          Id="Package\Basic Preparation\Drop Kostuem Table"
-          TopLeft="70,81" />
+        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="299,42"
           Id="Package\Basic Preparation\Copy Tables, except Kostuem and Taxonomies"
           TopLeft="10,12.5" />
+        <NodeLayout
+          Size="183,42"
+          Id="Package\Basic Preparation\Create Kostuem Table"
+          TopLeft="66,148" />
+        <NodeLayout
+          Size="187,42"
+          Id="Package\Basic Preparation\Data Clean Up"
+          TopLeft="67,222" />
+        <NodeLayout
+          Size="175,42"
+          Id="Package\Basic Preparation\Drop Kostuem Table"
+          TopLeft="70,81" />
         <EdgeLayout
           Id="Package\Basic Preparation.PrecedenceConstraints[Constraint]"
           TopLeft="158.5,54.5">
@@ -3112,10 +3594,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="183,42"
-          Id="Package\Basic Preparation\Create Kostuem Table"
-          TopLeft="66,148" />
         <EdgeLayout
           Id="Package\Basic Preparation.PrecedenceConstraints[Constraint 1]"
           TopLeft="157.5,123">
@@ -3138,10 +3616,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="187,42"
-          Id="Package\Basic Preparation\Data Clean Up"
-          TopLeft="67,222" />
         <EdgeLayout
           Id="Package\Basic Preparation.PrecedenceConstraints[Constraint 2]"
           TopLeft="159,190">
@@ -3230,6 +3704,77 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <NodeLayout
+          Size="224,60"
+          Id="Package\Basiselementfarbe\Create Basiselementfarbe Table"
+          TopLeft="5.50000000000001,5.5" />
+        <NodeLayout
+          Size="218,42"
+          Id="Package\Basiselementfarbe\Basiselementfarbe Level Flow"
+          TopLeft="8.5,112.5" />
+        <EdgeLayout
+          Id="Package\Basiselementfarbe.PrecedenceConstraints[Constraint]"
+          TopLeft="117.5,65.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,47"
+              Start="0,0"
+              End="0,39.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,39.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="235,160"
+          Size="235,203"
+          Id="Package\Basiselementfarbe"
+          TopLeft="566,512" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 1]"
+          TopLeft="461,378">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="105,235.5"
+              Start="0,0"
+              End="97.5,235.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="38.3021582733813,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="38.3021582733813,0"
+                    Point2="42.3021582733813,0"
+                    Point3="42.3021582733813,4" />
+                  <mssgle:LineSegment
+                    End="42.3021582733813,231.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="42.3021582733813,231.5"
+                    Point2="42.3021582733813,235.5"
+                    Point3="46.3021582733813,235.5" />
+                  <mssgle:LineSegment
+                    End="97.5,235.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </Package>
@@ -3237,7 +3782,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
     design-time-name="Package\Basic Preparation\Create Kostuem Table">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="150,42"
           Id="Package\Basic Preparation\Create Kostuem Table\OLE DB Source"
@@ -3269,7 +3814,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -3291,7 +3838,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -3329,13 +3878,17 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
+          Size="163,42"
+          Id="Package\Stereotyp\Stereotyp Parser Flow\Script Component"
+          TopLeft="388,324" />
+        <NodeLayout
           Size="150,43"
           Id="Package\Stereotyp\Stereotyp Parser Flow\OLE DB Source"
           TopLeft="186,207" />
         <NodeLayout
-          Size="163,42"
-          Id="Package\Stereotyp\Stereotyp Parser Flow\Script Component"
-          TopLeft="388,324" />
+          Size="171,42"
+          Id="Package\Stereotyp\Stereotyp Parser Flow\OLE DB Destination"
+          TopLeft="716,241" />
         <EdgeLayout
           Id="Package\Stereotyp\Stereotyp Parser Flow.Paths[OLE DB Source Output]"
           TopLeft="261,250">
@@ -3370,10 +3923,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="171,42"
-          Id="Package\Stereotyp\Stereotyp Parser Flow\OLE DB Destination"
-          TopLeft="716,241" />
         <EdgeLayout
           Id="Package\Stereotyp\Stereotyp Parser Flow.Paths[Output0]"
           TopLeft="495.333333333333,324">
@@ -3426,6 +3975,70 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Stereotyp\Stereotyp Parser Flow\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Basiselementfarbe\Basiselementfarbe Level Flow">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="150,42"
+          Id="Package\Basiselementfarbe\Basiselementfarbe Level Flow\OLE DB Source"
+          TopLeft="126,92" />
+        <NodeLayout
+          Size="171,42"
+          Id="Package\Basiselementfarbe\Basiselementfarbe Level Flow\OLE DB Destination"
+          TopLeft="445,89" />
+        <EdgeLayout
+          Id="Package\Basiselementfarbe\Basiselementfarbe Level Flow.Paths[OLE DB Source Output]"
+          TopLeft="276,111.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="169,0"
+              Start="0,0"
+              End="161.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="161.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Basiselementfarbe\Basiselementfarbe Level Flow\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Basiselementfarbe\Basiselementfarbe Level Flow\OLE DB Destination">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
