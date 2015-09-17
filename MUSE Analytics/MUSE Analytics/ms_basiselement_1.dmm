@@ -16,7 +16,7 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="84" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-5701" scrolltop="2258" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="75" x="29607" y="18045" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="84" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-5701" scrolltop="2258" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="75" x="35322" y="19738" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
               <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
             </font>
@@ -2041,6 +2041,165 @@
               <ID>Genre</ID>
               <Name>Genre</Name>
               <SourceColumnID>Genre</SourceColumnID>
+              <Usage>Key</Usage>
+            </Column>
+          </Columns>
+        </Column>
+      </Columns>
+    </MiningModel>
+    <MiningModel dwd:design-time-name="fc86bec4-e1c8-4736-9a10-235fac1b0668">
+      <ID>charakter_genre___farbe</ID>
+      <Name>charakter_genre___farbe</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Algorithm>Microsoft_Association_Rules</Algorithm>
+      <AlgorithmParameters>
+        <AlgorithmParameter>
+          <Name>MINIMUM_PROBABILITY</Name>
+          <Value xsi:type="xsd:double">0.1</Value>
+        </AlgorithmParameter>
+        <AlgorithmParameter>
+          <Name>MINIMUM_SUPPORT</Name>
+          <Value xsi:type="xsd:double">0.025</Value>
+        </AlgorithmParameter>
+      </AlgorithmParameters>
+      <Columns>
+        <Column dwd:design-time-name="49bb1629-5f16-4a29-81d2-bfe0ccfb3ffe">
+          <ID>Basiselement ID</ID>
+          <Name>Basiselement ID</Name>
+          <SourceColumnID>Basiselement ID</SourceColumnID>
+          <Usage>Key</Usage>
+        </Column>
+        <Column dwd:design-time-name="7f18c748-283e-48cf-8371-f92fbd03b3c1">
+          <ID>Dominante Farbe</ID>
+          <Name>Dominante Farbe</Name>
+          <SourceColumnID>Dominante Farbe</SourceColumnID>
+          <Usage>PredictOnly</Usage>
+        </Column>
+        <Column dwd:design-time-name="12071eff-20c7-4ff2-9cbc-536caf688a52">
+          <ID>Basiselement Farbname</ID>
+          <Name>Basiselement Farbname</Name>
+          <SourceColumnID>Basiselement Farbname</SourceColumnID>
+          <Usage>PredictOnly</Usage>
+          <Columns>
+            <Column dwd:design-time-name="d921ec63-5c9d-46be-b198-90376fcd8e9f">
+              <ID>Farbname</ID>
+              <Name>Farbname</Name>
+              <SourceColumnID>Farbname</SourceColumnID>
+              <Usage>Key</Usage>
+            </Column>
+          </Columns>
+        </Column>
+        <Column dwd:design-time-name="cb9dca25-03dc-4e58-8f66-e5c2acc1f5e4">
+          <ID>Kostuem Charaktereigenschaft</ID>
+          <Name>Kostuem Charaktereigenschaft</Name>
+          <SourceColumnID>Kostuem Charaktereigenschaft</SourceColumnID>
+          <Columns>
+            <Column dwd:design-time-name="ba24855a-24f8-4356-92ee-2f759148269e">
+              <ID>Charaktereigenschaft</ID>
+              <Name>Charaktereigenschaft</Name>
+              <SourceColumnID>Charaktereigenschaft</SourceColumnID>
+              <Usage>Key</Usage>
+            </Column>
+          </Columns>
+        </Column>
+        <Column dwd:design-time-name="4207549a-9cae-43e6-a339-db3c49292f9c">
+          <ID>Film Genre</ID>
+          <Name>Film Genre</Name>
+          <SourceColumnID>Film Genre</SourceColumnID>
+          <Columns>
+            <Column dwd:design-time-name="de032a13-cf51-4168-8de4-814acec3ae5e">
+              <ID>Genre</ID>
+              <Name>Genre</Name>
+              <SourceColumnID>Genre</SourceColumnID>
+              <Usage>Key</Usage>
+            </Column>
+          </Columns>
+        </Column>
+        <Column dwd:design-time-name="4402dd00-c26d-4023-a2e9-3bee6372e5e2">
+          <ID>Rolle Dominantecharaktereigenschaft</ID>
+          <Name>Rolle Dominantecharaktereigenschaft</Name>
+          <SourceColumnID>Rolle Dominantecharaktereigenschaft</SourceColumnID>
+          <Columns>
+            <Column dwd:design-time-name="55038ae1-92b5-4b33-b844-ebe106c8cc46">
+              <ID>Dominante Charaktereigenschaft</ID>
+              <Name>Dominante Charaktereigenschaft</Name>
+              <SourceColumnID>Dominante Charaktereigenschaft</SourceColumnID>
+              <Usage>Key</Usage>
+            </Column>
+          </Columns>
+        </Column>
+      </Columns>
+    </MiningModel>
+    <MiningModel dwd:design-time-name="15cf08d4-fdfe-4950-b193-aeb933bfcb4f">
+      <ID>charakter___farbe</ID>
+      <Name>charakter___farbe</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Algorithm>Microsoft_Association_Rules</Algorithm>
+      <AlgorithmParameters>
+        <AlgorithmParameter>
+          <Name>MINIMUM_PROBABILITY</Name>
+          <Value xsi:type="xsd:double">0.1</Value>
+        </AlgorithmParameter>
+        <AlgorithmParameter>
+          <Name>MINIMUM_SUPPORT</Name>
+          <Value xsi:type="xsd:double">0.025</Value>
+        </AlgorithmParameter>
+      </AlgorithmParameters>
+      <Columns>
+        <Column dwd:design-time-name="9b806081-c25e-43e4-908f-bc7ab3662b48">
+          <ID>Basiselement ID</ID>
+          <Name>Basiselement ID</Name>
+          <SourceColumnID>Basiselement ID</SourceColumnID>
+          <Usage>Key</Usage>
+        </Column>
+        <Column dwd:design-time-name="7d36c42a-0034-449e-8fc6-42a707ab9106">
+          <ID>Dominante Farbe</ID>
+          <Name>Dominante Farbe</Name>
+          <SourceColumnID>Dominante Farbe</SourceColumnID>
+          <Usage>PredictOnly</Usage>
+        </Column>
+        <Column dwd:design-time-name="61304a27-a406-47db-8fb3-c646d02c769d">
+          <ID>Basiselement Farbname</ID>
+          <Name>Basiselement Farbname</Name>
+          <SourceColumnID>Basiselement Farbname</SourceColumnID>
+          <Usage>PredictOnly</Usage>
+          <Columns>
+            <Column dwd:design-time-name="d832465a-3cc2-4dfc-b2ec-07f2e74af683">
+              <ID>Farbname</ID>
+              <Name>Farbname</Name>
+              <SourceColumnID>Farbname</SourceColumnID>
+              <Usage>Key</Usage>
+            </Column>
+          </Columns>
+        </Column>
+        <Column dwd:design-time-name="55b506d9-8d8e-4349-801c-56a3aeae7f73">
+          <ID>Kostuem Charaktereigenschaft</ID>
+          <Name>Kostuem Charaktereigenschaft</Name>
+          <SourceColumnID>Kostuem Charaktereigenschaft</SourceColumnID>
+          <Columns>
+            <Column dwd:design-time-name="3f605285-77cd-465d-a9fc-d5fa821276f8">
+              <ID>Charaktereigenschaft</ID>
+              <Name>Charaktereigenschaft</Name>
+              <SourceColumnID>Charaktereigenschaft</SourceColumnID>
+              <Usage>Key</Usage>
+            </Column>
+          </Columns>
+        </Column>
+        <Column dwd:design-time-name="0209e15f-c443-4703-bd05-bebc2a20058b">
+          <ID>Rolle Dominantecharaktereigenschaft</ID>
+          <Name>Rolle Dominantecharaktereigenschaft</Name>
+          <SourceColumnID>Rolle Dominantecharaktereigenschaft</SourceColumnID>
+          <Columns>
+            <Column dwd:design-time-name="f3b268a0-9de8-4c88-8d26-34eb2709b2be">
+              <ID>Dominante Charaktereigenschaft</ID>
+              <Name>Dominante Charaktereigenschaft</Name>
+              <SourceColumnID>Dominante Charaktereigenschaft</SourceColumnID>
               <Usage>Key</Usage>
             </Column>
           </Columns>

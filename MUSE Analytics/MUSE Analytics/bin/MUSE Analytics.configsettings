@@ -23,7 +23,22 @@
         <ID>ms_basiselement_1</ID>
       </MiningStructure>
       <MiningStructure>
-        <ID>ms_kostuem_film_rolle_1</ID>
+        <ID>ms_kostuem_1</ID>
+      </MiningStructure>
+      <MiningStructure>
+        <ID>ms_basiselement_zustand_1</ID>
+      </MiningStructure>
+      <MiningStructure>
+        <ID>ms_basiselement_farbe_1</ID>
+      </MiningStructure>
+      <MiningStructure>
+        <ID>ms_basiselement_farbe_2</ID>
+      </MiningStructure>
+      <MiningStructure>
+        <ID>ms_basiselement_farbe_3</ID>
+      </MiningStructure>
+      <MiningStructure>
+        <ID>ms_kostuem_2</ID>
       </MiningStructure>
     </MiningStructures>
     <DataSourceImpersonationInfo>
