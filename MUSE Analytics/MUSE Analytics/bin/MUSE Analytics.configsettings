@@ -20,9 +20,6 @@
     </DataSources>
     <MiningStructures>
       <MiningStructure>
-        <ID>ms_basiselement_1</ID>
-      </MiningStructure>
-      <MiningStructure>
         <ID>ms_kostuem_1</ID>
       </MiningStructure>
       <MiningStructure>
@@ -30,12 +27,6 @@
       </MiningStructure>
       <MiningStructure>
         <ID>ms_basiselement_farbe_1</ID>
-      </MiningStructure>
-      <MiningStructure>
-        <ID>ms_basiselement_farbe_2</ID>
-      </MiningStructure>
-      <MiningStructure>
-        <ID>ms_basiselement_farbe_3</ID>
       </MiningStructure>
       <MiningStructure>
         <ID>ms_kostuem_2</ID>

@@ -16,7 +16,7 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="6" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-12234" scrolltop="-5005" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="35322" y="19738" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="16" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-10812" scrolltop="-2032" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="30877" y="19738" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
               <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
             </font>
@@ -27,7 +27,7 @@
           <layoutmanager>
             <ddsxmlobj />
           </layoutmanager>
-          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="KostuemFilmRolle" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="4419" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="KostuemFilmRolle" left="0" top="6395" logicalid="8" controlid="1" masterid="0" hint1="0" hint2="0" width="4419" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
             <control>
               <ddsxmlobjectstreaminitwrapper binary="000a00004311000088130000" />
             </control>
@@ -38,7 +38,7 @@
             </layoutobject>
             <shape groupshapeid="0" groupnode="0" />
           </ddscontrol>
-          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="Charakter" left="285" top="7400" logicalid="2" controlid="2" masterid="0" hint1="0" hint2="0" width="3889" height="1879" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="Charakter" left="6819" top="7955" logicalid="9" controlid="2" masterid="0" hint1="0" hint2="0" width="3889" height="1879" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
             <control>
               <ddsxmlobjectstreaminitwrapper binary="000a0000310f000057070000" />
             </control>
@@ -49,7 +49,7 @@
             </layoutobject>
             <shape groupshapeid="0" groupnode="0" />
           </ddscontrol>
-          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="Basiselement" left="6839" top="1560" logicalid="3" controlid="3" masterid="0" hint1="0" hint2="0" width="3545" height="1879" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="Basiselement" left="437" top="13795" logicalid="10" controlid="3" masterid="0" hint1="0" hint2="0" width="3545" height="1879" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
             <control>
               <ddsxmlobjectstreaminitwrapper binary="000a0000d90d000057070000" />
             </control>
@@ -60,7 +60,7 @@
             </layoutobject>
             <shape groupshapeid="0" groupnode="0" />
           </ddscontrol>
-          <ddscontrol controlprogid="MSDDS.Polyline" left="4139" top="2101" logicalid="4" controlid="4" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+          <ddscontrol controlprogid="MSDDS.Polyline" left="1810" top="10896" logicalid="11" controlid="4" masterid="0" hint1="0" hint2="0" width="799" height="3199" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
             <control>
               <ddsxmlobj>
                 <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
@@ -73,14 +73,12 @@
                 <property name="VisibleAP" value="0" vartype="3" />
               </ddsxmlobj>
             </layoutobject>
-            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="3" sourceattachpoint="23" destattachpoint="16" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
-              <point x="4439" y="2500" />
-              <point x="5639" y="2500" />
-              <point x="5639" y="2499" />
-              <point x="6839" y="2499" />
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="3" sourceattachpoint="7" destattachpoint="6" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="2209" y="11395" />
+              <point x="2209" y="13795" />
             </connector>
           </ddscontrol>
-          <ddscontrol controlprogid="MSDDS.Polyline" left="1830" top="4501" logicalid="5" controlid="5" masterid="0" hint1="0" hint2="0" width="799" height="3199" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+          <ddscontrol controlprogid="MSDDS.Polyline" left="4119" top="8496" logicalid="12" controlid="5" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
             <control>
               <ddsxmlobj>
                 <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
@@ -93,9 +91,40 @@
                 <property name="VisibleAP" value="0" vartype="3" />
               </ddsxmlobj>
             </layoutobject>
-            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="2" sourceattachpoint="7" destattachpoint="6" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
-              <point x="2229" y="5000" />
-              <point x="2229" y="7400" />
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="2" sourceattachpoint="23" destattachpoint="16" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="4419" y="8895" />
+              <point x="5619" y="8895" />
+              <point x="5619" y="8894" />
+              <point x="6819" y="8894" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="KostuemCharaktereigenschaft" left="0" top="0" logicalid="13" controlid="6" masterid="0" hint1="0" hint2="0" width="4419" height="3995" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000a0000431100009b0f0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="Kostuemcharaktereigenschaft" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="1810" top="3695" logicalid="14" controlid="7" masterid="0" hint1="0" hint2="0" width="799" height="3200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[Kostuemcharaktereigenschaft-KostuemFilmRolle]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="6" sourceattachpoint="6" destattachpoint="7" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="2209" y="6395" />
+              <point x="2209" y="3995" />
             </connector>
           </ddscontrol>
         </dds>
@@ -111,15 +140,15 @@
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
-      <Value>-12234</Value>
+      <Value>-10812</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
-      <Value>-5005</Value>
+      <Value>-2032</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
-      <Value>20</Value>
+      <Value>0</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
@@ -136,6 +165,237 @@
     <DataSourceViewID>dsv_kostuem_film_rolle</DataSourceViewID>
   </Source>
   <Columns>
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="86c9354e-97c9-4943-8888-48fd0f8def66">
+      <ID>Kostuem Charaktereigenschaft</ID>
+      <Name>Kostuem Charaktereigenschaft</Name>
+      <ForeignKeyColumns>
+        <ForeignKeyColumn dwd:design-time-name="ea19c0e3-7ffe-4aa9-87d9-e9183e26a6a7">
+          <DataType>Integer</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1592bd01-04bb-4fb7-8aa4-07d572a142f6">
+            <TableID>Kostuemcharaktereigenschaft</TableID>
+            <ColumnID>ID</ColumnID>
+          </Source>
+        </ForeignKeyColumn>
+      </ForeignKeyColumns>
+      <Columns>
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="2a6b918f-0467-4221-8a0e-c1084c7f3c75">
+          <ID>Charaktereigenschaft</ID>
+          <Name>Charaktereigenschaft</Name>
+          <IsKey>true</IsKey>
+          <Type>Text</Type>
+          <Content>Key</Content>
+          <KeyColumns>
+            <KeyColumn dwd:design-time-name="2e79c772-4e00-4fd5-b2a1-0f0f7c836459">
+              <DataType>WChar</DataType>
+              <DataSize>45</DataSize>
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="69fad8b1-d683-4e1b-9b95-9b22fd0c2a8f">
+                <TableID>Kostuemcharaktereigenschaft</TableID>
+                <ColumnID>Charaktereigenschaft</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+      </Columns>
+    </Column>
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="17b18d15-fe4a-4e7e-9f20-200806acb06b">
+      <ID>Kostuem Charaktereigenschaft 1</ID>
+      <Name>Kostuem Charaktereigenschaft 1</Name>
+      <ForeignKeyColumns>
+        <ForeignKeyColumn dwd:design-time-name="1118456a-960f-4600-bb95-b018393c60c8">
+          <DataType>Integer</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="531414fd-8197-4046-9c09-9bfa9c254ccc">
+            <TableID>Kostuemcharaktereigenschaft</TableID>
+            <ColumnID>ID</ColumnID>
+          </Source>
+        </ForeignKeyColumn>
+      </ForeignKeyColumns>
+      <Columns>
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="3cfa0466-38a7-4e36-8718-958a8ed9d31d">
+          <ID>Charaktereigenschaft L2</ID>
+          <Name>Charaktereigenschaft L2</Name>
+          <IsKey>true</IsKey>
+          <Type>Text</Type>
+          <Content>Key</Content>
+          <KeyColumns>
+            <KeyColumn dwd:design-time-name="ae48b9c5-2006-4c30-8146-b31594a1bdc0">
+              <DataType>WChar</DataType>
+              <DataSize>45</DataSize>
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="8d8d55f5-61c4-4b8f-b1cd-2c64c91fcce2">
+                <TableID>Kostuemcharaktereigenschaft</TableID>
+                <ColumnID>Charaktereigenschaft_L2</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+      </Columns>
+    </Column>
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="dc969394-12f6-43cc-8444-74759e46e612">
+      <ID>Basiselement 1</ID>
+      <Name>Basiselement 1</Name>
+      <ForeignKeyColumns>
+        <ForeignKeyColumn dwd:design-time-name="ec970766-05a4-4f61-9149-27b4f9edd1a4">
+          <DataType>Integer</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f41e6bd0-77b1-4e4d-851e-ef2b44f26f0d">
+            <TableID>Basiselement</TableID>
+            <ColumnID>ID</ColumnID>
+          </Source>
+        </ForeignKeyColumn>
+      </ForeignKeyColumns>
+      <Columns>
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="2da9a8aa-c262-49cf-94b3-0fc297875ced">
+          <ID>Basiselementname L2</ID>
+          <Name>Basiselementname L2</Name>
+          <IsKey>true</IsKey>
+          <Type>Text</Type>
+          <Content>Key</Content>
+          <KeyColumns>
+            <KeyColumn dwd:design-time-name="0c59908f-3d22-4007-a96c-9cbcee3f024f">
+              <DataType>WChar</DataType>
+              <DataSize>45</DataSize>
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="39d7b85f-9482-46ba-8d78-cfbc4cd65a9b">
+                <TableID>Basiselement</TableID>
+                <ColumnID>Basiselementname_L2</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+      </Columns>
+    </Column>
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="a6dec4f6-a717-4f60-9166-8b25bfeab870">
+      <ID>Kostuem Charaktereigenschaft 5</ID>
+      <Name>Kostuem Charaktereigenschaft 5</Name>
+      <ForeignKeyColumns>
+        <ForeignKeyColumn dwd:design-time-name="bd200518-d596-4c3d-a3d0-f801051a4333">
+          <DataType>Integer</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="137f3585-8eb7-43ce-9313-be7dd9284d27">
+            <TableID>Kostuemcharaktereigenschaft</TableID>
+            <ColumnID>ID</ColumnID>
+          </Source>
+        </ForeignKeyColumn>
+      </ForeignKeyColumns>
+      <Columns>
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="a5e29c7b-0490-4597-8ec6-5b5838090b7a">
+          <ID>Charaktereigenschaft L6</ID>
+          <Name>Charaktereigenschaft L6</Name>
+          <IsKey>true</IsKey>
+          <Type>Text</Type>
+          <Content>Key</Content>
+          <KeyColumns>
+            <KeyColumn dwd:design-time-name="4d87e317-cf96-4634-b806-30de3d367d3e">
+              <DataType>WChar</DataType>
+              <DataSize>45</DataSize>
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="741f1fde-c1c0-4f86-bfe1-3f11d8e30a62">
+                <TableID>Kostuemcharaktereigenschaft</TableID>
+                <ColumnID>Charaktereigenschaft_L6</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+      </Columns>
+    </Column>
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="4c22cbcf-102d-449b-9ced-279a7936b4fd">
+      <ID>Kostuem Charaktereigenschaft 4</ID>
+      <Name>Kostuem Charaktereigenschaft 4</Name>
+      <ForeignKeyColumns>
+        <ForeignKeyColumn dwd:design-time-name="27946899-f13a-4f25-ae9d-f5778efaa395">
+          <DataType>Integer</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="afa4528f-649b-46d7-b5f4-e2f1ab4e7d43">
+            <TableID>Kostuemcharaktereigenschaft</TableID>
+            <ColumnID>ID</ColumnID>
+          </Source>
+        </ForeignKeyColumn>
+      </ForeignKeyColumns>
+      <Columns>
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="84a27fec-c8f3-4cec-8415-3568b8cf7c31">
+          <ID>Charaktereigenschaft L5</ID>
+          <Name>Charaktereigenschaft L5</Name>
+          <IsKey>true</IsKey>
+          <Type>Text</Type>
+          <Content>Key</Content>
+          <KeyColumns>
+            <KeyColumn dwd:design-time-name="fc08dfe6-09cf-404a-8fc8-911838d21a6d">
+              <DataType>WChar</DataType>
+              <DataSize>45</DataSize>
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="d7ce3ebd-f971-4339-adf7-636e5f332408">
+                <TableID>Kostuemcharaktereigenschaft</TableID>
+                <ColumnID>Charaktereigenschaft_L5</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+      </Columns>
+    </Column>
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="dbd939d0-de43-4cad-9dd5-e6b0b48854da">
+      <ID>Kostuem Charaktereigenschaft 3</ID>
+      <Name>Kostuem Charaktereigenschaft 3</Name>
+      <ForeignKeyColumns>
+        <ForeignKeyColumn dwd:design-time-name="07559b1f-7116-45c7-84e9-d2fec2c3cf55">
+          <DataType>Integer</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1e9978c3-5d9b-4265-9d66-9439f7e124b4">
+            <TableID>Kostuemcharaktereigenschaft</TableID>
+            <ColumnID>ID</ColumnID>
+          </Source>
+        </ForeignKeyColumn>
+      </ForeignKeyColumns>
+      <Columns>
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="8c729ebc-df6b-46e5-8eb4-9ed81108d861">
+          <ID>Charaktereigenschaft L4</ID>
+          <Name>Charaktereigenschaft L4</Name>
+          <IsKey>true</IsKey>
+          <Type>Text</Type>
+          <Content>Key</Content>
+          <KeyColumns>
+            <KeyColumn dwd:design-time-name="248ba763-4641-4c36-b3b4-c736b24718c5">
+              <DataType>WChar</DataType>
+              <DataSize>45</DataSize>
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="3dbbb027-f759-42c5-a90b-4e048645b04b">
+                <TableID>Kostuemcharaktereigenschaft</TableID>
+                <ColumnID>Charaktereigenschaft_L4</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+      </Columns>
+    </Column>
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="b31145a3-3d16-4e3a-9ae3-74c1ee4acdc1">
+      <ID>Kostuem Charaktereigenschaft 2</ID>
+      <Name>Kostuem Charaktereigenschaft 2</Name>
+      <ForeignKeyColumns>
+        <ForeignKeyColumn dwd:design-time-name="c0f9c24f-0d75-4273-b639-408b5b865825">
+          <DataType>Integer</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9b4397c3-9acd-44dd-ba98-e01222256fbe">
+            <TableID>Kostuemcharaktereigenschaft</TableID>
+            <ColumnID>ID</ColumnID>
+          </Source>
+        </ForeignKeyColumn>
+      </ForeignKeyColumns>
+      <Columns>
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="4b64b51f-dd0d-41ad-92f5-3443c32fc8e4">
+          <ID>Charaktereigenschaft L3</ID>
+          <Name>Charaktereigenschaft L3</Name>
+          <IsKey>true</IsKey>
+          <Type>Text</Type>
+          <Content>Key</Content>
+          <KeyColumns>
+            <KeyColumn dwd:design-time-name="735726ee-e130-4015-bf17-e150ddcd1dca">
+              <DataType>WChar</DataType>
+              <DataSize>45</DataSize>
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="3be9ac88-1ed8-4529-8740-ac0b6ae87d4c">
+                <TableID>Kostuemcharaktereigenschaft</TableID>
+                <ColumnID>Charaktereigenschaft_L3</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+      </Columns>
+    </Column>
     <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="5be944c0-16d6-4027-8620-00b82b385f19">
       <ID>Geschlecht</ID>
       <Name>Geschlecht</Name>
@@ -151,6 +411,39 @@
           </Source>
         </KeyColumn>
       </KeyColumns>
+    </Column>
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="205f519a-54e1-4434-ab2e-e75754f5a46a">
+      <ID>Basiselement 3</ID>
+      <Name>Basiselement 3</Name>
+      <ForeignKeyColumns>
+        <ForeignKeyColumn dwd:design-time-name="6d76f2e8-dd2d-4dfc-b394-06f87043ab6c">
+          <DataType>Integer</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="85592c3d-b0c8-4599-9d49-4eecf8a60dd0">
+            <TableID>Basiselement</TableID>
+            <ColumnID>ID</ColumnID>
+          </Source>
+        </ForeignKeyColumn>
+      </ForeignKeyColumns>
+      <Columns>
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="4f5a471d-3ac8-4148-9436-d4f099b1139f">
+          <ID>Basiselementname L4</ID>
+          <Name>Basiselementname L4</Name>
+          <IsKey>true</IsKey>
+          <Type>Text</Type>
+          <Content>Key</Content>
+          <KeyColumns>
+            <KeyColumn dwd:design-time-name="066e2a6e-4b7c-42d0-af86-623a2c7c0084">
+              <DataType>WChar</DataType>
+              <DataSize>45</DataSize>
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="737b11cb-4c77-41d1-b5f4-7d5e9c8182ce">
+                <TableID>Basiselement</TableID>
+                <ColumnID>Basiselementname_L4</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+      </Columns>
     </Column>
     <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="7e46726f-d9b8-4188-b02e-f3436ec99a64">
       <ID>ID</ID>
@@ -169,11 +462,43 @@
         </KeyColumn>
       </KeyColumns>
     </Column>
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="05abb798-d778-4325-bdd5-75b0df9cc1b5">
+      <ID>Basiselement 2</ID>
+      <Name>Basiselement 2</Name>
+      <ForeignKeyColumns>
+        <ForeignKeyColumn dwd:design-time-name="d3cdb414-066e-4729-a8f2-e583c4e9c98a">
+          <DataType>Integer</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="074c96de-ba38-4550-964e-d4d323f75f2f">
+            <TableID>Basiselement</TableID>
+            <ColumnID>ID</ColumnID>
+          </Source>
+        </ForeignKeyColumn>
+      </ForeignKeyColumns>
+      <Columns>
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="f6780328-755d-454c-b1de-2c0413bf423f">
+          <ID>Basiselementname L3</ID>
+          <Name>Basiselementname L3</Name>
+          <IsKey>true</IsKey>
+          <Type>Text</Type>
+          <Content>Key</Content>
+          <KeyColumns>
+            <KeyColumn dwd:design-time-name="61325001-eef2-46f6-8b15-4fad8a87972d">
+              <DataType>WChar</DataType>
+              <DataSize>45</DataSize>
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="39d6ef19-9ec0-4cd5-986d-fb99ef8bf934">
+                <TableID>Basiselement</TableID>
+                <ColumnID>Basiselementname_L3</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+      </Columns>
+    </Column>
     <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="b7871c9c-4570-47a7-9b3e-876ca4724b8b">
       <Annotations>
         <Annotation>
           <Name>MDXFilterComponent</Name>
-          <Value></Value>
         </Annotation>
       </Annotations>
       <ID>Basiselement</ID>
@@ -208,11 +533,76 @@
         </Column>
       </Columns>
     </Column>
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="3a343fb0-e80d-4993-9b50-422e17bee060">
+      <ID>Basiselement 5</ID>
+      <Name>Basiselement 5</Name>
+      <ForeignKeyColumns>
+        <ForeignKeyColumn dwd:design-time-name="5cdf8a7f-76c2-470e-9e08-e65de664396d">
+          <DataType>Integer</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ebc19e04-3609-40f5-93bb-d70aa9e33193">
+            <TableID>Basiselement</TableID>
+            <ColumnID>ID</ColumnID>
+          </Source>
+        </ForeignKeyColumn>
+      </ForeignKeyColumns>
+      <Columns>
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="48574382-4cf6-427f-a478-951b83042bd8">
+          <ID>Basiselementname L6</ID>
+          <Name>Basiselementname L6</Name>
+          <IsKey>true</IsKey>
+          <Type>Text</Type>
+          <Content>Key</Content>
+          <KeyColumns>
+            <KeyColumn dwd:design-time-name="68e1bcd4-70ff-41d3-b2fb-b203fc12996f">
+              <DataType>WChar</DataType>
+              <DataSize>45</DataSize>
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="98fbdd56-2ba8-4deb-9a13-50b186d19e4b">
+                <TableID>Basiselement</TableID>
+                <ColumnID>Basiselementname_L6</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+      </Columns>
+    </Column>
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="00d8ca3d-c33d-4662-bb6b-aa4cdb30b76e">
+      <ID>Basiselement 6</ID>
+      <Name>Basiselement 6</Name>
+      <ForeignKeyColumns>
+        <ForeignKeyColumn dwd:design-time-name="a147c9b7-7092-44ae-8f71-a0c87a2be034">
+          <DataType>Integer</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="edae09bd-bb47-43b7-9e6c-265b69de74c6">
+            <TableID>Basiselement</TableID>
+            <ColumnID>ID</ColumnID>
+          </Source>
+        </ForeignKeyColumn>
+      </ForeignKeyColumns>
+      <Columns>
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="6b558eda-b926-4d6b-a59f-6d60b4b69f59">
+          <ID>Basiselementname L7</ID>
+          <Name>Basiselementname L7</Name>
+          <IsKey>true</IsKey>
+          <Type>Text</Type>
+          <Content>Key</Content>
+          <KeyColumns>
+            <KeyColumn dwd:design-time-name="1a742ca8-13ff-4e93-acd4-e2a8e579e721">
+              <DataType>WChar</DataType>
+              <DataSize>45</DataSize>
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="d9da5b97-1cd5-4451-8dbc-8c004797f8e2">
+                <TableID>Basiselement</TableID>
+                <ColumnID>Basiselementname_L7</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+      </Columns>
+    </Column>
     <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="e8a4aece-e181-481b-bf60-d14266ebbefc">
       <Annotations>
         <Annotation>
           <Name>MDXFilterComponent</Name>
-          <Value></Value>
         </Annotation>
       </Annotations>
       <ID>Charakter</ID>
@@ -247,6 +637,39 @@
         </Column>
       </Columns>
     </Column>
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="09fba673-ce0c-4f5d-a972-62f7492ffd3f">
+      <ID>Basiselement 4</ID>
+      <Name>Basiselement 4</Name>
+      <ForeignKeyColumns>
+        <ForeignKeyColumn dwd:design-time-name="97e9bdd5-1a97-4499-a0d9-039548affc39">
+          <DataType>Integer</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="124513a6-d41d-4db7-a23d-033ce17dbf22">
+            <TableID>Basiselement</TableID>
+            <ColumnID>ID</ColumnID>
+          </Source>
+        </ForeignKeyColumn>
+      </ForeignKeyColumns>
+      <Columns>
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="ec39344e-805f-4e2c-9b4f-cee138ced74f">
+          <ID>Basiselementname L5</ID>
+          <Name>Basiselementname L5</Name>
+          <IsKey>true</IsKey>
+          <Type>Text</Type>
+          <Content>Key</Content>
+          <KeyColumns>
+            <KeyColumn dwd:design-time-name="6a5d7fbe-7d8a-404b-b904-80cec5f99e38">
+              <DataType>WChar</DataType>
+              <DataSize>45</DataSize>
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="dea90bbd-0488-4ccb-9c68-1b155d59c2ad">
+                <TableID>Basiselement</TableID>
+                <ColumnID>Basiselementname_L5</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+      </Columns>
+    </Column>
   </Columns>
   <MiningModels>
     <MiningModel dwd:design-time-name="12b8328f-0ae3-4a8b-ad86-f804fa25f189">
@@ -275,29 +698,29 @@
           <SourceColumnID>ID</SourceColumnID>
           <Usage>Key</Usage>
         </Column>
-        <Column dwd:design-time-name="586a005b-e868-4b9e-a174-a44868869a27">
-          <ID>Basiselement</ID>
-          <Name>Basiselement</Name>
-          <SourceColumnID>Basiselement</SourceColumnID>
-          <Usage>PredictOnly</Usage>
+        <Column dwd:design-time-name="ea411c41-8ee7-489c-a56f-6f40d43140be">
+          <ID>Kostuem Charaktereigenschaft 2</ID>
+          <Name>Kostuem Charaktereigenschaft 2</Name>
+          <SourceColumnID>Kostuem Charaktereigenschaft 2</SourceColumnID>
           <Columns>
-            <Column dwd:design-time-name="e1fcfa0a-991d-4f87-978b-69dd0fe58df0">
-              <ID>Basiselementname</ID>
-              <Name>Basiselementname</Name>
-              <SourceColumnID>Basiselementname</SourceColumnID>
+            <Column dwd:design-time-name="ee266de7-5a1a-483b-a63d-978354fbe249">
+              <ID>Charaktereigenschaft L3</ID>
+              <Name>Charaktereigenschaft L3</Name>
+              <SourceColumnID>Charaktereigenschaft L3</SourceColumnID>
               <Usage>Key</Usage>
             </Column>
           </Columns>
         </Column>
-        <Column dwd:design-time-name="6cb3d124-18fc-4ba1-9922-728fcc393419">
-          <ID>Charakter</ID>
-          <Name>Charakter</Name>
-          <SourceColumnID>Charakter</SourceColumnID>
+        <Column dwd:design-time-name="1ad76cd0-bf22-41d4-9617-ea468a53882a">
+          <ID>Basiselement 3</ID>
+          <Name>Basiselement 3</Name>
+          <SourceColumnID>Basiselement 3</SourceColumnID>
+          <Usage>PredictOnly</Usage>
           <Columns>
-            <Column dwd:design-time-name="6bdbdd7d-0e00-4a26-a05b-009bc82d2ff5">
-              <ID>Charaktereigenschaft</ID>
-              <Name>Charaktereigenschaft</Name>
-              <SourceColumnID>Charaktereigenschaft</SourceColumnID>
+            <Column dwd:design-time-name="f6e6700f-e03d-4e46-a487-066b86293693">
+              <ID>Basiselementname L4</ID>
+              <Name>Basiselementname L4</Name>
+              <SourceColumnID>Basiselementname L4</SourceColumnID>
               <Usage>Key</Usage>
             </Column>
           </Columns>
@@ -331,29 +754,29 @@
           <SourceColumnID>ID</SourceColumnID>
           <Usage>Key</Usage>
         </Column>
-        <Column dwd:design-time-name="0e6e0ce5-5e81-4774-8fa4-c3b4eaf4b9c0">
-          <ID>Basiselement</ID>
-          <Name>Basiselement</Name>
-          <SourceColumnID>Basiselement</SourceColumnID>
-          <Usage>Predict</Usage>
+        <Column dwd:design-time-name="cb213b1b-6eed-456e-ab9d-8a32c5675b48">
+          <ID>Kostuem Charaktereigenschaft 2</ID>
+          <Name>Kostuem Charaktereigenschaft 2</Name>
+          <SourceColumnID>Kostuem Charaktereigenschaft 2</SourceColumnID>
           <Columns>
-            <Column dwd:design-time-name="be784196-55ba-4e4a-bd77-279fdfd554be">
-              <ID>Basiselementname</ID>
-              <Name>Basiselementname</Name>
-              <SourceColumnID>Basiselementname</SourceColumnID>
+            <Column dwd:design-time-name="e7f0a53a-a012-418e-8007-899f80caf75a">
+              <ID>Charaktereigenschaft L3</ID>
+              <Name>Charaktereigenschaft L3</Name>
+              <SourceColumnID>Charaktereigenschaft L3</SourceColumnID>
               <Usage>Key</Usage>
             </Column>
           </Columns>
         </Column>
-        <Column dwd:design-time-name="335672d7-4ae4-4b94-b8bd-d42e7c19ca87">
-          <ID>Charakter</ID>
-          <Name>Charakter</Name>
-          <SourceColumnID>Charakter</SourceColumnID>
+        <Column dwd:design-time-name="e21aceb5-864f-4e35-b850-dbc842aea482">
+          <ID>Basiselement 3</ID>
+          <Name>Basiselement 3</Name>
+          <SourceColumnID>Basiselement 3</SourceColumnID>
+          <Usage>Predict</Usage>
           <Columns>
-            <Column dwd:design-time-name="8bcac233-3b2c-4707-9032-05cc6defcf80">
-              <ID>Charaktereigenschaft</ID>
-              <Name>Charaktereigenschaft</Name>
-              <SourceColumnID>Charaktereigenschaft</SourceColumnID>
+            <Column dwd:design-time-name="db0e3090-c3be-4e15-9f5e-fc4f2968d016">
+              <ID>Basiselementname L4</ID>
+              <Name>Basiselementname L4</Name>
+              <SourceColumnID>Basiselementname L4</SourceColumnID>
               <Usage>Key</Usage>
             </Column>
           </Columns>

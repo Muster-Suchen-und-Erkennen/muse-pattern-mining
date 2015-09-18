@@ -16,7 +16,7 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="24" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-5829" scrolltop="-2018" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="26220" y="19738" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="24" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-5829" scrolltop="-2018" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="30639" y="19738" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
               <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
             </font>
@@ -227,6 +227,72 @@
     <DataSourceViewID>dsv_kostuem_film_rolle</DataSourceViewID>
   </Source>
   <Columns>
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="3c0c658a-581e-4ac4-8860-144f0a2d7891">
+      <ID>Film Genre 1</ID>
+      <Name>Film Genre 1</Name>
+      <ForeignKeyColumns>
+        <ForeignKeyColumn dwd:design-time-name="e256f046-1aff-4b97-b493-e1da5914916d">
+          <DataType>Integer</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="986ba89c-fc0c-4cfe-85d4-ef8d71e633c8">
+            <TableID>Filmgenre</TableID>
+            <ColumnID>ID</ColumnID>
+          </Source>
+        </ForeignKeyColumn>
+      </ForeignKeyColumns>
+      <Columns>
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="8c3ece0e-503c-4cff-9c1a-58b41eb4f728">
+          <ID>Genre L2</ID>
+          <Name>Genre L2</Name>
+          <IsKey>true</IsKey>
+          <Type>Text</Type>
+          <Content>Key</Content>
+          <KeyColumns>
+            <KeyColumn dwd:design-time-name="ceeef7d8-aafd-4d39-b7a5-f04b91cebf39">
+              <DataType>WChar</DataType>
+              <DataSize>45</DataSize>
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="dbfc37dc-a144-44f6-9e20-b258cec56a89">
+                <TableID>Filmgenre</TableID>
+                <ColumnID>Genre_L2</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+      </Columns>
+    </Column>
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="2bfb4408-1627-484a-b30e-a93a28d0240e">
+      <ID>Basiselement 1</ID>
+      <Name>Basiselement 1</Name>
+      <ForeignKeyColumns>
+        <ForeignKeyColumn dwd:design-time-name="fb0a3404-532b-4302-9f55-4b28380d1724">
+          <DataType>Integer</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="05746aef-871a-4610-819d-7ccbf704c9db">
+            <TableID>Basiselement</TableID>
+            <ColumnID>ID</ColumnID>
+          </Source>
+        </ForeignKeyColumn>
+      </ForeignKeyColumns>
+      <Columns>
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="7f51b071-2dca-4ce4-957a-c975b2f13441">
+          <ID>Basiselementname L2</ID>
+          <Name>Basiselementname L2</Name>
+          <IsKey>true</IsKey>
+          <Type>Text</Type>
+          <Content>Key</Content>
+          <KeyColumns>
+            <KeyColumn dwd:design-time-name="3a0209e8-4a8a-4d21-82c5-6b66fc1da651">
+              <DataType>WChar</DataType>
+              <DataSize>45</DataSize>
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="004ca2b9-42dd-4291-9171-fe71ebcfa494">
+                <TableID>Basiselement</TableID>
+                <ColumnID>Basiselementname_L2</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+      </Columns>
+    </Column>
     <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="f51dac0e-8f80-4539-a41e-fb00df5335f2">
       <ID>Charakter</ID>
       <Name>Charakter</Name>
@@ -260,6 +326,39 @@
         </Column>
       </Columns>
     </Column>
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="4e5cd0ef-d557-400b-b7cf-6979ba564102">
+      <ID>Basiselement 2</ID>
+      <Name>Basiselement 2</Name>
+      <ForeignKeyColumns>
+        <ForeignKeyColumn dwd:design-time-name="ac9b9ddd-fe90-42f0-b43b-8d0f8a767b78">
+          <DataType>Integer</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="600356c1-1125-4d3c-a999-99e9a58afec3">
+            <TableID>Basiselement</TableID>
+            <ColumnID>ID</ColumnID>
+          </Source>
+        </ForeignKeyColumn>
+      </ForeignKeyColumns>
+      <Columns>
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="3fadd1b3-a432-42d0-a61f-795e9cc58c22">
+          <ID>Basiselementname L3</ID>
+          <Name>Basiselementname L3</Name>
+          <IsKey>true</IsKey>
+          <Type>Text</Type>
+          <Content>Key</Content>
+          <KeyColumns>
+            <KeyColumn dwd:design-time-name="1ad151a6-09d4-4995-b8de-255b74616009">
+              <DataType>WChar</DataType>
+              <DataSize>45</DataSize>
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="d59a71ef-b004-4c45-9c60-e6ae8452d1f6">
+                <TableID>Basiselement</TableID>
+                <ColumnID>Basiselementname_L3</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+      </Columns>
+    </Column>
     <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="ccd79381-3244-493b-b34d-7d5d05317874">
       <ID>Basiselement</ID>
       <Name>Basiselement</Name>
@@ -287,6 +386,336 @@
               <Source xsi:type="ColumnBinding" dwd:design-time-name="7585b2ce-721f-4e4c-893a-6a06421bc9c4">
                 <TableID>Basiselement</TableID>
                 <ColumnID>Basiselementname</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+      </Columns>
+    </Column>
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="89e1f92b-30d9-417d-b29c-134a14aeff48">
+      <ID>Basiselement 3</ID>
+      <Name>Basiselement 3</Name>
+      <ForeignKeyColumns>
+        <ForeignKeyColumn dwd:design-time-name="68abc5ff-d017-49cf-90e2-f9e74cdd212f">
+          <DataType>Integer</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="592e8fc4-0924-4093-a09b-fd26ae7019d6">
+            <TableID>Basiselement</TableID>
+            <ColumnID>ID</ColumnID>
+          </Source>
+        </ForeignKeyColumn>
+      </ForeignKeyColumns>
+      <Columns>
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="8bd685d5-97c2-4a71-b5ea-2e9ab2c27d7a">
+          <ID>Basiselementname L4</ID>
+          <Name>Basiselementname L4</Name>
+          <IsKey>true</IsKey>
+          <Type>Text</Type>
+          <Content>Key</Content>
+          <KeyColumns>
+            <KeyColumn dwd:design-time-name="f640ab99-307a-4202-ac40-2f194efc185c">
+              <DataType>WChar</DataType>
+              <DataSize>45</DataSize>
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="9a49102a-e167-417c-b1c3-95aa6d02d5f8">
+                <TableID>Basiselement</TableID>
+                <ColumnID>Basiselementname_L4</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+      </Columns>
+    </Column>
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="fc1c74ee-0af7-4714-a801-acf0d21ad938">
+      <ID>Kostuem Charaktereigenschaft 5</ID>
+      <Name>Kostuem Charaktereigenschaft 5</Name>
+      <ForeignKeyColumns>
+        <ForeignKeyColumn dwd:design-time-name="d8a68c71-48a7-49c7-9510-c84fb3d35c4d">
+          <DataType>Integer</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9ae2dc86-b84f-4165-90a3-0262fbe5b3fa">
+            <TableID>Kostuemcharaktereigenschaft</TableID>
+            <ColumnID>ID</ColumnID>
+          </Source>
+        </ForeignKeyColumn>
+      </ForeignKeyColumns>
+      <Columns>
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="99163bff-d4da-4a63-8618-682af6e1968b">
+          <ID>Charaktereigenschaft L6</ID>
+          <Name>Charaktereigenschaft L6</Name>
+          <IsKey>true</IsKey>
+          <Type>Text</Type>
+          <Content>Key</Content>
+          <KeyColumns>
+            <KeyColumn dwd:design-time-name="8fe557b8-be26-4232-b595-82b4b2a19f09">
+              <DataType>WChar</DataType>
+              <DataSize>45</DataSize>
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="83e4fa59-aa87-495c-b9c5-3906bef0e03d">
+                <TableID>Kostuemcharaktereigenschaft</TableID>
+                <ColumnID>Charaktereigenschaft_L6</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+      </Columns>
+    </Column>
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="c12b9714-200f-4b19-ad7f-90a0f690c2f1">
+      <ID>Kostuem Charaktereigenschaft 4</ID>
+      <Name>Kostuem Charaktereigenschaft 4</Name>
+      <ForeignKeyColumns>
+        <ForeignKeyColumn dwd:design-time-name="72b3b150-7ed9-46a0-bf97-8a567557ee16">
+          <DataType>Integer</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a200117e-b903-4579-9268-24866ad68e8f">
+            <TableID>Kostuemcharaktereigenschaft</TableID>
+            <ColumnID>ID</ColumnID>
+          </Source>
+        </ForeignKeyColumn>
+      </ForeignKeyColumns>
+      <Columns>
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="416ecc06-e974-4c86-a812-e8fb7744db8f">
+          <ID>Charaktereigenschaft L5</ID>
+          <Name>Charaktereigenschaft L5</Name>
+          <IsKey>true</IsKey>
+          <Type>Text</Type>
+          <Content>Key</Content>
+          <KeyColumns>
+            <KeyColumn dwd:design-time-name="a8248cac-e334-4ea0-b2c3-44b88dc499db">
+              <DataType>WChar</DataType>
+              <DataSize>45</DataSize>
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="8cb09352-c604-4eab-9736-c9f05ce9a3a0">
+                <TableID>Kostuemcharaktereigenschaft</TableID>
+                <ColumnID>Charaktereigenschaft_L5</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+      </Columns>
+    </Column>
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="fe69bc9d-b6f9-447e-a7de-e5bdb27b7961">
+      <ID>Kostuem Charaktereigenschaft 3</ID>
+      <Name>Kostuem Charaktereigenschaft 3</Name>
+      <ForeignKeyColumns>
+        <ForeignKeyColumn dwd:design-time-name="aa5f5220-20c8-4ff3-b95d-5d0a430e7226">
+          <DataType>Integer</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="dcb5297d-88d0-4831-b422-11647c832402">
+            <TableID>Kostuemcharaktereigenschaft</TableID>
+            <ColumnID>ID</ColumnID>
+          </Source>
+        </ForeignKeyColumn>
+      </ForeignKeyColumns>
+      <Columns>
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="8498b70a-15f4-4d2a-be9c-5c4b3e3d4774">
+          <ID>Charaktereigenschaft L4</ID>
+          <Name>Charaktereigenschaft L4</Name>
+          <IsKey>true</IsKey>
+          <Type>Text</Type>
+          <Content>Key</Content>
+          <KeyColumns>
+            <KeyColumn dwd:design-time-name="20e29742-68b7-4887-892a-249f069b6536">
+              <DataType>WChar</DataType>
+              <DataSize>45</DataSize>
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="4a714aae-e672-4f80-a082-b5c543592f72">
+                <TableID>Kostuemcharaktereigenschaft</TableID>
+                <ColumnID>Charaktereigenschaft_L4</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+      </Columns>
+    </Column>
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="98a09353-0501-44eb-aca2-2b12811fe1b0">
+      <ID>Kostuem Charaktereigenschaft 2</ID>
+      <Name>Kostuem Charaktereigenschaft 2</Name>
+      <ForeignKeyColumns>
+        <ForeignKeyColumn dwd:design-time-name="f6affe8a-3046-4a11-8aff-af047cc12362">
+          <DataType>Integer</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5745675d-38cd-440d-8323-a0ccee9eb05a">
+            <TableID>Kostuemcharaktereigenschaft</TableID>
+            <ColumnID>ID</ColumnID>
+          </Source>
+        </ForeignKeyColumn>
+      </ForeignKeyColumns>
+      <Columns>
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="76cf029b-1b5c-49f6-9c05-156480f7db3c">
+          <ID>Charaktereigenschaft L3</ID>
+          <Name>Charaktereigenschaft L3</Name>
+          <IsKey>true</IsKey>
+          <Type>Text</Type>
+          <Content>Key</Content>
+          <KeyColumns>
+            <KeyColumn dwd:design-time-name="c1f6901a-630a-40b0-bd25-92ec67fd6aca">
+              <DataType>WChar</DataType>
+              <DataSize>45</DataSize>
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="1ea49c88-1047-4ab3-83a1-01f5289ca668">
+                <TableID>Kostuemcharaktereigenschaft</TableID>
+                <ColumnID>Charaktereigenschaft_L3</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+      </Columns>
+    </Column>
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="a39107aa-2e0e-40a3-b9e7-18db86c959cf">
+      <ID>Kostuem Charaktereigenschaft 1</ID>
+      <Name>Kostuem Charaktereigenschaft 1</Name>
+      <ForeignKeyColumns>
+        <ForeignKeyColumn dwd:design-time-name="e0d35618-90fc-4fa6-ae79-f8346df9377c">
+          <DataType>Integer</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="eda730f9-1ab2-4d75-a06a-faa57fed7666">
+            <TableID>Kostuemcharaktereigenschaft</TableID>
+            <ColumnID>ID</ColumnID>
+          </Source>
+        </ForeignKeyColumn>
+      </ForeignKeyColumns>
+      <Columns>
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="19648262-9e34-49a2-b4a7-084816d6cf23">
+          <ID>Charaktereigenschaft L2</ID>
+          <Name>Charaktereigenschaft L2</Name>
+          <IsKey>true</IsKey>
+          <Type>Text</Type>
+          <Content>Key</Content>
+          <KeyColumns>
+            <KeyColumn dwd:design-time-name="722b3b33-b432-4344-8dc8-9dbe73c789c4">
+              <DataType>WChar</DataType>
+              <DataSize>45</DataSize>
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="a8a7040f-9b98-4e89-b449-f6a1b5724198">
+                <TableID>Kostuemcharaktereigenschaft</TableID>
+                <ColumnID>Charaktereigenschaft_L2</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+      </Columns>
+    </Column>
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="04a11e79-3792-47d2-bfc7-e11d82ffb513">
+      <ID>Kostuem Charaktereigenschaft</ID>
+      <Name>Kostuem Charaktereigenschaft</Name>
+      <ForeignKeyColumns>
+        <ForeignKeyColumn dwd:design-time-name="f48f052e-34c5-4e83-9dd9-41233a34633c">
+          <DataType>Integer</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ea5ad45e-8e3f-4570-a0c6-2a6d6bb25e98">
+            <TableID>Kostuemcharaktereigenschaft</TableID>
+            <ColumnID>ID</ColumnID>
+          </Source>
+        </ForeignKeyColumn>
+      </ForeignKeyColumns>
+      <Columns>
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="613e8823-b564-4ba1-91fd-cd155bf49d3e">
+          <ID>Charaktereigenschaft</ID>
+          <Name>Charaktereigenschaft</Name>
+          <IsKey>true</IsKey>
+          <Type>Text</Type>
+          <Content>Key</Content>
+          <KeyColumns>
+            <KeyColumn dwd:design-time-name="b8312fbf-9c03-47e9-9695-27a9ba171fe9">
+              <DataType>WChar</DataType>
+              <DataSize>45</DataSize>
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="377dc70b-7859-4175-a195-f62225c24d1d">
+                <TableID>Kostuemcharaktereigenschaft</TableID>
+                <ColumnID>Charaktereigenschaft</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+      </Columns>
+    </Column>
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="1900eedf-d159-42e9-bbb0-154a1624b42d">
+      <ID>Basiselement 6</ID>
+      <Name>Basiselement 6</Name>
+      <ForeignKeyColumns>
+        <ForeignKeyColumn dwd:design-time-name="e7e7a8cf-4f54-4b47-ad9b-b56cf8b08650">
+          <DataType>Integer</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6bd04085-a24d-4f1e-9968-f7177a92473c">
+            <TableID>Basiselement</TableID>
+            <ColumnID>ID</ColumnID>
+          </Source>
+        </ForeignKeyColumn>
+      </ForeignKeyColumns>
+      <Columns>
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="fb540f0f-8fec-4d88-ac57-5165f420302e">
+          <ID>Basiselementname L7</ID>
+          <Name>Basiselementname L7</Name>
+          <IsKey>true</IsKey>
+          <Type>Text</Type>
+          <Content>Key</Content>
+          <KeyColumns>
+            <KeyColumn dwd:design-time-name="586fc31c-cf46-4ad5-8848-3fbe8db4817a">
+              <DataType>WChar</DataType>
+              <DataSize>45</DataSize>
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="7304281b-0365-4f54-bee8-cd2e57fbf2e2">
+                <TableID>Basiselement</TableID>
+                <ColumnID>Basiselementname_L7</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+      </Columns>
+    </Column>
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="708b4d1e-f4ab-4828-b721-113c6191c12c">
+      <ID>Basiselement 5</ID>
+      <Name>Basiselement 5</Name>
+      <ForeignKeyColumns>
+        <ForeignKeyColumn dwd:design-time-name="38b24124-3a88-4db8-91fe-550c0cd02fef">
+          <DataType>Integer</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="07d51c8e-6bc0-4761-a0cd-2c754c0022a6">
+            <TableID>Basiselement</TableID>
+            <ColumnID>ID</ColumnID>
+          </Source>
+        </ForeignKeyColumn>
+      </ForeignKeyColumns>
+      <Columns>
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="ef0a581a-fed1-4d5b-bbc4-bb64d026aaee">
+          <ID>Basiselementname L6</ID>
+          <Name>Basiselementname L6</Name>
+          <IsKey>true</IsKey>
+          <Type>Text</Type>
+          <Content>Key</Content>
+          <KeyColumns>
+            <KeyColumn dwd:design-time-name="7f3aaa0a-7c5f-4dbd-a931-df5186b6b01d">
+              <DataType>WChar</DataType>
+              <DataSize>45</DataSize>
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="72f326b5-cc02-421b-b35a-14a8efb3ba91">
+                <TableID>Basiselement</TableID>
+                <ColumnID>Basiselementname_L6</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+      </Columns>
+    </Column>
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="61cd9eab-a8f2-40ce-bf0b-691e636a2640">
+      <ID>Basiselement 4</ID>
+      <Name>Basiselement 4</Name>
+      <ForeignKeyColumns>
+        <ForeignKeyColumn dwd:design-time-name="894c09fb-f774-4029-bfb4-fd8d3f4d840e">
+          <DataType>Integer</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="65f2f8ce-8598-498d-833a-8198c35cb4da">
+            <TableID>Basiselement</TableID>
+            <ColumnID>ID</ColumnID>
+          </Source>
+        </ForeignKeyColumn>
+      </ForeignKeyColumns>
+      <Columns>
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="174e7300-3745-433a-b787-dc96c025c1bf">
+          <ID>Basiselementname L5</ID>
+          <Name>Basiselementname L5</Name>
+          <IsKey>true</IsKey>
+          <Type>Text</Type>
+          <Content>Key</Content>
+          <KeyColumns>
+            <KeyColumn dwd:design-time-name="58848639-993b-4390-a48f-cd36e859a79c">
+              <DataType>WChar</DataType>
+              <DataSize>45</DataSize>
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="b31c3a93-b4d3-4e23-a41d-53d7f9a0fdc6">
+                <TableID>Basiselement</TableID>
+                <ColumnID>Basiselementname_L5</ColumnID>
               </Source>
             </KeyColumn>
           </KeyColumns>
@@ -386,42 +815,42 @@
           <SourceColumnID>ID</SourceColumnID>
           <Usage>Key</Usage>
         </Column>
-        <Column dwd:design-time-name="aaaf31ae-38ae-4843-b60d-1b420713f1ce">
-          <ID>Basiselement</ID>
-          <Name>Basiselement</Name>
-          <SourceColumnID>Basiselement</SourceColumnID>
+        <Column dwd:design-time-name="1467cf3c-59b5-4736-9c3b-8e07a783b573">
+          <ID>Film Genre 1</ID>
+          <Name>Film Genre 1</Name>
+          <SourceColumnID>Film Genre 1</SourceColumnID>
+          <Columns>
+            <Column dwd:design-time-name="e6bfd429-4b0f-469b-9f27-7e762250aaab">
+              <ID>Genre L2</ID>
+              <Name>Genre L2</Name>
+              <SourceColumnID>Genre L2</SourceColumnID>
+              <Usage>Key</Usage>
+            </Column>
+          </Columns>
+        </Column>
+        <Column dwd:design-time-name="0316c4da-d0ab-40c9-9465-d97144ad4931">
+          <ID>Kostuem Charaktereigenschaft 2</ID>
+          <Name>Kostuem Charaktereigenschaft 2</Name>
+          <SourceColumnID>Kostuem Charaktereigenschaft 2</SourceColumnID>
+          <Columns>
+            <Column dwd:design-time-name="6a91dfc3-91a2-4d98-a969-a11a6ef9f78c">
+              <ID>Charaktereigenschaft L3</ID>
+              <Name>Charaktereigenschaft L3</Name>
+              <SourceColumnID>Charaktereigenschaft L3</SourceColumnID>
+              <Usage>Key</Usage>
+            </Column>
+          </Columns>
+        </Column>
+        <Column dwd:design-time-name="2ed7178b-f7f9-4ed7-ad02-69f6c3111540">
+          <ID>Basiselement 3</ID>
+          <Name>Basiselement 3</Name>
+          <SourceColumnID>Basiselement 3</SourceColumnID>
           <Usage>PredictOnly</Usage>
           <Columns>
-            <Column dwd:design-time-name="71f29e5e-7b05-40df-978c-79add5a9ec67">
-              <ID>Basiselementname</ID>
-              <Name>Basiselementname</Name>
-              <SourceColumnID>Basiselementname</SourceColumnID>
-              <Usage>Key</Usage>
-            </Column>
-          </Columns>
-        </Column>
-        <Column dwd:design-time-name="addf4344-c8bb-4884-a935-c7a7de1521b3">
-          <ID>Film Genre</ID>
-          <Name>Film Genre</Name>
-          <SourceColumnID>Film Genre</SourceColumnID>
-          <Columns>
-            <Column dwd:design-time-name="b2bba1ce-d6a9-4de1-97c8-e562e3c67983">
-              <ID>Genre</ID>
-              <Name>Genre</Name>
-              <SourceColumnID>Genre</SourceColumnID>
-              <Usage>Key</Usage>
-            </Column>
-          </Columns>
-        </Column>
-        <Column dwd:design-time-name="ca616f8a-1d88-4eeb-81e5-883acc23be00">
-          <ID>Charakter</ID>
-          <Name>Charakter</Name>
-          <SourceColumnID>Charakter</SourceColumnID>
-          <Columns>
-            <Column dwd:design-time-name="bd7fd5b1-c6c3-4994-be61-e82dcc74a9cd">
-              <ID>Charaktereigenschaft</ID>
-              <Name>Charaktereigenschaft</Name>
-              <SourceColumnID>Charaktereigenschaft</SourceColumnID>
+            <Column dwd:design-time-name="54099d15-2f2a-447a-8467-4ceb5a9292ce">
+              <ID>Basiselementname L4</ID>
+              <Name>Basiselementname L4</Name>
+              <SourceColumnID>Basiselementname L4</SourceColumnID>
               <Usage>Key</Usage>
             </Column>
           </Columns>
@@ -453,42 +882,42 @@
           <SourceColumnID>ID</SourceColumnID>
           <Usage>Key</Usage>
         </Column>
-        <Column dwd:design-time-name="01e52f07-5ef0-4885-bec6-761f021f2719">
-          <ID>Basiselement</ID>
-          <Name>Basiselement</Name>
-          <SourceColumnID>Basiselement</SourceColumnID>
+        <Column dwd:design-time-name="1d40bdc4-ccb1-413b-94ca-673be2ad3e54">
+          <ID>Basiselement 3</ID>
+          <Name>Basiselement 3</Name>
+          <SourceColumnID>Basiselement 3</SourceColumnID>
           <Usage>Predict</Usage>
           <Columns>
-            <Column dwd:design-time-name="ea749ae0-7d58-4f90-ac30-c18120222f6e">
-              <ID>Basiselementname</ID>
-              <Name>Basiselementname</Name>
-              <SourceColumnID>Basiselementname</SourceColumnID>
+            <Column dwd:design-time-name="0cd78560-f87f-4b16-a874-5b7e51158efc">
+              <ID>Basiselementname L4</ID>
+              <Name>Basiselementname L4</Name>
+              <SourceColumnID>Basiselementname L4</SourceColumnID>
               <Usage>Key</Usage>
             </Column>
           </Columns>
         </Column>
-        <Column dwd:design-time-name="5745a4e1-252b-41fb-a3fc-af35d76aa981">
-          <ID>Film Genre</ID>
-          <Name>Film Genre</Name>
-          <SourceColumnID>Film Genre</SourceColumnID>
+        <Column dwd:design-time-name="a53de7a6-afbb-4c73-9598-03a5c1a5fa9e">
+          <ID>Film Genre 1</ID>
+          <Name>Film Genre 1</Name>
+          <SourceColumnID>Film Genre 1</SourceColumnID>
           <Columns>
-            <Column dwd:design-time-name="196149cd-4860-4963-87f5-ca4bb50310d9">
-              <ID>Genre</ID>
-              <Name>Genre</Name>
-              <SourceColumnID>Genre</SourceColumnID>
+            <Column dwd:design-time-name="d7f0a9e0-a91b-4643-99ab-413ff804e894">
+              <ID>Genre L2</ID>
+              <Name>Genre L2</Name>
+              <SourceColumnID>Genre L2</SourceColumnID>
               <Usage>Key</Usage>
             </Column>
           </Columns>
         </Column>
-        <Column dwd:design-time-name="a1fb9aed-02c2-4c3e-ae8e-3b4658102b9c">
-          <ID>Charakter</ID>
-          <Name>Charakter</Name>
-          <SourceColumnID>Charakter</SourceColumnID>
+        <Column dwd:design-time-name="b0d8e2bf-90f6-4dbd-8cb8-ae5c2a2058d3">
+          <ID>Kostuem Charaktereigenschaft 2</ID>
+          <Name>Kostuem Charaktereigenschaft 2</Name>
+          <SourceColumnID>Kostuem Charaktereigenschaft 2</SourceColumnID>
           <Columns>
-            <Column dwd:design-time-name="73d34034-7c72-47ba-9d9f-e7d4725afad3">
-              <ID>Charaktereigenschaft</ID>
-              <Name>Charaktereigenschaft</Name>
-              <SourceColumnID>Charaktereigenschaft</SourceColumnID>
+            <Column dwd:design-time-name="ba6c9253-ea30-4d6f-bc4b-7b71fc1fc469">
+              <ID>Charaktereigenschaft L3</ID>
+              <Name>Charaktereigenschaft L3</Name>
+              <SourceColumnID>Charaktereigenschaft L3</SourceColumnID>
               <Usage>Key</Usage>
             </Column>
           </Columns>
@@ -516,50 +945,50 @@
           <SourceColumnID>ID</SourceColumnID>
           <Usage>Key</Usage>
         </Column>
-        <Column dwd:design-time-name="a80726f5-b080-437f-816d-53769ba0c20d">
-          <ID>Basiselement</ID>
-          <Name>Basiselement</Name>
-          <SourceColumnID>Basiselement</SourceColumnID>
-          <Usage>Predict</Usage>
-          <Columns>
-            <Column dwd:design-time-name="71fdae87-3070-4eeb-a5f9-53a27c00b2cc">
-              <ID>Basiselementname</ID>
-              <Name>Basiselementname</Name>
-              <SourceColumnID>Basiselementname</SourceColumnID>
-              <Usage>Key</Usage>
-            </Column>
-          </Columns>
-        </Column>
-        <Column dwd:design-time-name="29be5b96-6cd6-41e0-84d9-bf3c4b943726">
-          <ID>Film Genre</ID>
-          <Name>Film Genre</Name>
-          <SourceColumnID>Film Genre</SourceColumnID>
-          <Columns>
-            <Column dwd:design-time-name="fbb9d4ff-ea99-4ac4-ba34-25feef092ce4">
-              <ID>Genre</ID>
-              <Name>Genre</Name>
-              <SourceColumnID>Genre</SourceColumnID>
-              <Usage>Key</Usage>
-            </Column>
-          </Columns>
-        </Column>
-        <Column dwd:design-time-name="914037cb-75f5-4db3-834d-26b080adb544">
-          <ID>Charakter</ID>
-          <Name>Charakter</Name>
-          <SourceColumnID>Charakter</SourceColumnID>
-          <Columns>
-            <Column dwd:design-time-name="5a94351f-540f-4cf8-8c8d-26f2d141f2bb">
-              <ID>Charaktereigenschaft</ID>
-              <Name>Charaktereigenschaft</Name>
-              <SourceColumnID>Charaktereigenschaft</SourceColumnID>
-              <Usage>Key</Usage>
-            </Column>
-          </Columns>
-        </Column>
         <Column dwd:design-time-name="0af1b809-870d-41f4-947a-d88a67260c5a">
           <ID>Geschlecht</ID>
           <Name>Geschlecht</Name>
           <SourceColumnID>Geschlecht</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="c3e91a13-2130-497b-8689-f9d19c0e06c5">
+          <ID>Basiselement 3</ID>
+          <Name>Basiselement 3</Name>
+          <SourceColumnID>Basiselement 3</SourceColumnID>
+          <Usage>PredictOnly</Usage>
+          <Columns>
+            <Column dwd:design-time-name="e1c35a53-dffe-4d79-8820-13ff7a9866d2">
+              <ID>Basiselementname L4</ID>
+              <Name>Basiselementname L4</Name>
+              <SourceColumnID>Basiselementname L4</SourceColumnID>
+              <Usage>Key</Usage>
+            </Column>
+          </Columns>
+        </Column>
+        <Column dwd:design-time-name="c30e7291-702e-40f9-ab12-da3aac96a939">
+          <ID>Film Genre 1</ID>
+          <Name>Film Genre 1</Name>
+          <SourceColumnID>Film Genre 1</SourceColumnID>
+          <Columns>
+            <Column dwd:design-time-name="2e305db5-f2e4-4e3a-8021-93786d90622e">
+              <ID>Genre L2</ID>
+              <Name>Genre L2</Name>
+              <SourceColumnID>Genre L2</SourceColumnID>
+              <Usage>Key</Usage>
+            </Column>
+          </Columns>
+        </Column>
+        <Column dwd:design-time-name="2e9db9a4-5e83-4976-afef-cb1d60965278">
+          <ID>Kostuem Charaktereigenschaft 2</ID>
+          <Name>Kostuem Charaktereigenschaft 2</Name>
+          <SourceColumnID>Kostuem Charaktereigenschaft 2</SourceColumnID>
+          <Columns>
+            <Column dwd:design-time-name="62afaa31-9c1a-43c3-8ad9-3fd4a56a7cd5">
+              <ID>Charaktereigenschaft L3</ID>
+              <Name>Charaktereigenschaft L3</Name>
+              <SourceColumnID>Charaktereigenschaft L3</SourceColumnID>
+              <Usage>Key</Usage>
+            </Column>
+          </Columns>
         </Column>
       </Columns>
     </MiningModel>

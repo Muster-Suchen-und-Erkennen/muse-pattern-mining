@@ -32,10 +32,6 @@
   </DataSourceViews>
   <MiningModels>
     <ProjectItem>
-      <Name>ms_basiselement_1.dmm</Name>
-      <FullPath>ms_basiselement_1.dmm</FullPath>
-    </ProjectItem>
-    <ProjectItem>
       <Name>ms_kostuem_1.dmm</Name>
       <FullPath>ms_kostuem_1.dmm</FullPath>
     </ProjectItem>
@@ -46,14 +42,6 @@
     <ProjectItem>
       <Name>ms_basiselement_farbe_1.dmm</Name>
       <FullPath>ms_basiselement_farbe_1.dmm</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>ms_basiselement_farbe_2.dmm</Name>
-      <FullPath>ms_basiselement_farbe_2.dmm</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>ms_basiselement_farbe_3.dmm</Name>
-      <FullPath>ms_basiselement_farbe_3.dmm</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>ms_kostuem_2.dmm</Name>
