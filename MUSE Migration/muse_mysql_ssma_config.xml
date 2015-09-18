@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<variables
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="C:\Microsoft SQL Server Migration Assistant for MySQL\Schemas\ConsoleScriptVariablesSchema.xsd">
+
+	<variable name="$WorkingFolder$"  value="."/>
+
+	<variable-group name="MySqlParams">
+		<variable-group name="MySqlConnectionParams">
+			<variable name="$SourceUserName$" value="root"/>
+			<variable name="$SourceServer$" value="127.0.0.1"/>
+			<variable name="$SourcePort$" value="3306"/>
+			<variable name="$SourcePassword$" value=""/>
+		</variable-group>
+
+		<variable-group name="MySqlServerObjectParams">
+			<variable name="$SourceDatabase$" value="`muse-2015-07-26`"/>
+		</variable-group>
+	</variable-group>
+	
+	<variable-group name="SQLServerParams">
+		<variable-group name="SqlServerConnectionParams">
+			<variable name="$TargetServerName$" value="localhost"/>
+			<variable name="$TargetDB$" value="muse"/>
+		</variable-group>    
+	</variable-group>
+	
+	<variable-group name="ProjectSpecs">
+		<variable name="$project_name$" value="MUSE Migration"/>
+		<variable name="$project_overwrite$" value="true"/>
+		<variable name="$project_folder$" value="$WorkingFolder$\$project_name$"/>
+	</variable-group>
+	
+	<variable-group name="Reports">
+		<variable name="$SummaryReportsFolder$" value="$WorkingFolder$"/>
+	</variable-group>
+	
+</variables>
