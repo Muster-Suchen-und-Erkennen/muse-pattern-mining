@@ -54,28 +54,28 @@
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.MiningStructure</Type>
-        <TimeStamp>QaSifrCsUE59+VI1t1tyXnydb+k=18.09.2015 13:03:0517.09.2015 08:25:09</TimeStamp>
+        <TimeStamp>yltunfPB5Dfth6mAwXsjhKvXBKk=18.09.2015 13:46:5417.09.2015 08:25:09</TimeStamp>
         <ID>
           <String>ms_kostuem_1</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.MiningStructure</Type>
-        <TimeStamp>0pdCgpvLtXz3Pn68mNMCWATFbXQ=18.09.2015 13:00:5417.09.2015 08:25:09</TimeStamp>
+        <TimeStamp>bUOaRWIEjptuQoLw/wdXQ2B1z90=18.09.2015 13:46:5417.09.2015 08:25:09</TimeStamp>
         <ID>
           <String>ms_basiselement_zustand_1</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.MiningStructure</Type>
-        <TimeStamp>JYsSii+Edeim6flIYjhfxLYhSkE=18.09.2015 13:01:2117.09.2015 08:25:09</TimeStamp>
+        <TimeStamp>rq+YDQOY42+uorIAYxWEmi8aN+Y=18.09.2015 13:46:5417.09.2015 08:25:09</TimeStamp>
         <ID>
           <String>ms_basiselement_farbe_1</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.MiningStructure</Type>
-        <TimeStamp>7ujbZmmNazNG66TsH1F5YfiSnGw=18.09.2015 13:06:4517.09.2015 08:25:09</TimeStamp>
+        <TimeStamp>P3QM3LWzM2niB3QVy0WBkJuctqg=18.09.2015 13:46:5417.09.2015 08:25:09</TimeStamp>
         <ID>
           <String>ms_kostuem_2</String>
         </ID>
@@ -92,5 +92,5 @@
   </Snapshot>
   <AssemblyLocations />
   <ProcessingComplete>true</ProcessingComplete>
-  <LastDeployed>2015-09-18T11:10:14.153333Z</LastDeployed>
+  <LastDeployed>2015-09-18T12:17:46.776667Z</LastDeployed>
 </DeploymentSnapshot>

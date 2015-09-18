@@ -779,6 +779,7 @@
           </Columns>
         </Column>
       </Columns>
+      <AllowDrillThrough>true</AllowDrillThrough>
     </MiningModel>
     <MiningModel dwd:design-time-name="35f78289-5017-4117-b19a-91e4d0a84027">
       <ID>ms_basiselement_farbe_1__charakter_geschlecht___farbe</ID>
@@ -838,6 +839,7 @@
           </Columns>
         </Column>
       </Columns>
+      <AllowDrillThrough>true</AllowDrillThrough>
     </MiningModel>
     <MiningModel dwd:design-time-name="e006ca49-60ae-4948-a88a-5cdf8ab7176b">
       <ID>ms_basiselement_farbe_1__genre___farbe</ID>
@@ -892,6 +894,7 @@
           </Columns>
         </Column>
       </Columns>
+      <AllowDrillThrough>true</AllowDrillThrough>
     </MiningModel>
   </MiningModels>
 </MiningStructure>
