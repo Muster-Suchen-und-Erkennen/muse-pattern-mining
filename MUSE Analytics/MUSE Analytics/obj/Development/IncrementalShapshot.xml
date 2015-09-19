@@ -54,7 +54,7 @@
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.MiningStructure</Type>
-        <TimeStamp>yltunfPB5Dfth6mAwXsjhKvXBKk=18.09.2015 13:46:5417.09.2015 08:25:09</TimeStamp>
+        <TimeStamp>GxyuyJ0SrYkCA8JCPlSsw8apFdk=19.09.2015 10:17:1317.09.2015 08:25:09</TimeStamp>
         <ID>
           <String>ms_kostuem_1</String>
         </ID>
@@ -75,7 +75,7 @@
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.MiningStructure</Type>
-        <TimeStamp>P3QM3LWzM2niB3QVy0WBkJuctqg=18.09.2015 13:46:5417.09.2015 08:25:09</TimeStamp>
+        <TimeStamp>kRt6/NmwmEwyCwmJ1GUQKrr6+XQ=18.09.2015 14:24:1517.09.2015 08:25:09</TimeStamp>
         <ID>
           <String>ms_kostuem_2</String>
         </ID>
@@ -92,5 +92,5 @@
   </Snapshot>
   <AssemblyLocations />
   <ProcessingComplete>true</ProcessingComplete>
-  <LastDeployed>2015-09-18T12:17:46.776667Z</LastDeployed>
+  <LastDeployed>2015-09-19T08:17:38.526667Z</LastDeployed>
 </DeploymentSnapshot>

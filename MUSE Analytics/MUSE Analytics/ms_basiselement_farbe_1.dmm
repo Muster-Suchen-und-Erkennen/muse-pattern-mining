@@ -710,15 +710,15 @@
             </Column>
           </Columns>
         </Column>
-        <Column dwd:design-time-name="ebd7feff-1c57-4c67-b64b-105b81d26c58">
-          <ID>Kostuem Charaktereigenschaft 2</ID>
-          <Name>Kostuem Charaktereigenschaft 2</Name>
-          <SourceColumnID>Kostuem Charaktereigenschaft 2</SourceColumnID>
+        <Column dwd:design-time-name="14f82cad-858a-479c-a61f-006a8946f180">
+          <ID>Kostuem Charaktereigenschaft 3</ID>
+          <Name>Kostuem Charaktereigenschaft 3</Name>
+          <SourceColumnID>Kostuem Charaktereigenschaft 3</SourceColumnID>
           <Columns>
-            <Column dwd:design-time-name="037b9c39-871b-405f-99d1-4a1edb511feb">
-              <ID>Charaktereigenschaft L3</ID>
-              <Name>Charaktereigenschaft L3</Name>
-              <SourceColumnID>Charaktereigenschaft L3</SourceColumnID>
+            <Column dwd:design-time-name="9763192d-0807-4813-bc7e-7b49ab90bba1">
+              <ID>Charaktereigenschaft L4</ID>
+              <Name>Charaktereigenschaft L4</Name>
+              <SourceColumnID>Charaktereigenschaft L4</SourceColumnID>
               <Usage>Key</Usage>
             </Column>
           </Columns>
@@ -765,15 +765,15 @@
             </Column>
           </Columns>
         </Column>
-        <Column dwd:design-time-name="d99e3929-86cc-4902-80d7-f0a134c2bdd4">
-          <ID>Kostuem Charaktereigenschaft 2</ID>
-          <Name>Kostuem Charaktereigenschaft 2</Name>
-          <SourceColumnID>Kostuem Charaktereigenschaft 2</SourceColumnID>
+        <Column dwd:design-time-name="b8fb3f97-1aca-447e-b46f-90d81d5824d6">
+          <ID>Kostuem Charaktereigenschaft 3</ID>
+          <Name>Kostuem Charaktereigenschaft 3</Name>
+          <SourceColumnID>Kostuem Charaktereigenschaft 3</SourceColumnID>
           <Columns>
-            <Column dwd:design-time-name="44d180dd-11a5-4fc2-834c-d83bf49adbb9">
-              <ID>Charaktereigenschaft L3</ID>
-              <Name>Charaktereigenschaft L3</Name>
-              <SourceColumnID>Charaktereigenschaft L3</SourceColumnID>
+            <Column dwd:design-time-name="929904aa-de4c-495c-97d2-eb3f736932c7">
+              <ID>Charaktereigenschaft L4</ID>
+              <Name>Charaktereigenschaft L4</Name>
+              <SourceColumnID>Charaktereigenschaft L4</SourceColumnID>
               <Usage>Key</Usage>
             </Column>
           </Columns>
@@ -825,15 +825,15 @@
           <Name>Geschlecht</Name>
           <SourceColumnID>Geschlecht</SourceColumnID>
         </Column>
-        <Column dwd:design-time-name="6f1707ab-5818-4ac6-8fcb-e4ca7a5199af">
-          <ID>Kostuem Charaktereigenschaft 2</ID>
-          <Name>Kostuem Charaktereigenschaft 2</Name>
-          <SourceColumnID>Kostuem Charaktereigenschaft 2</SourceColumnID>
+        <Column dwd:design-time-name="185bbda8-0688-439c-bbbe-eb3d7d7e4857">
+          <ID>Kostuem Charaktereigenschaft 3</ID>
+          <Name>Kostuem Charaktereigenschaft 3</Name>
+          <SourceColumnID>Kostuem Charaktereigenschaft 3</SourceColumnID>
           <Columns>
-            <Column dwd:design-time-name="e9a4837a-a8f5-4f81-b7d4-8c6ff68a28ae">
-              <ID>Charaktereigenschaft L3</ID>
-              <Name>Charaktereigenschaft L3</Name>
-              <SourceColumnID>Charaktereigenschaft L3</SourceColumnID>
+            <Column dwd:design-time-name="997b4b7c-871d-4b0c-b049-a38e59ca2153">
+              <ID>Charaktereigenschaft L4</ID>
+              <Name>Charaktereigenschaft L4</Name>
+              <SourceColumnID>Charaktereigenschaft L4</SourceColumnID>
               <Usage>Key</Usage>
             </Column>
           </Columns>
