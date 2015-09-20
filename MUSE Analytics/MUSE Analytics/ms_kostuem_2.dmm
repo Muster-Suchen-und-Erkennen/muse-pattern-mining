@@ -16,7 +16,7 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="24" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-5829" scrolltop="-2018" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="30639" y="19738" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="24" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-5829" scrolltop="-2018" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="32332" y="19738" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
               <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
             </font>
@@ -828,19 +828,6 @@
             </Column>
           </Columns>
         </Column>
-        <Column dwd:design-time-name="0316c4da-d0ab-40c9-9465-d97144ad4931">
-          <ID>Kostuem Charaktereigenschaft 2</ID>
-          <Name>Kostuem Charaktereigenschaft 2</Name>
-          <SourceColumnID>Kostuem Charaktereigenschaft 2</SourceColumnID>
-          <Columns>
-            <Column dwd:design-time-name="6a91dfc3-91a2-4d98-a969-a11a6ef9f78c">
-              <ID>Charaktereigenschaft L3</ID>
-              <Name>Charaktereigenschaft L3</Name>
-              <SourceColumnID>Charaktereigenschaft L3</SourceColumnID>
-              <Usage>Key</Usage>
-            </Column>
-          </Columns>
-        </Column>
         <Column dwd:design-time-name="2ed7178b-f7f9-4ed7-ad02-69f6c3111540">
           <ID>Basiselement 3</ID>
           <Name>Basiselement 3</Name>
@@ -855,7 +842,21 @@
             </Column>
           </Columns>
         </Column>
+        <Column dwd:design-time-name="85976763-11d2-496c-a07b-e25147d3e56f">
+          <ID>Kostuem Charaktereigenschaft 3</ID>
+          <Name>Kostuem Charaktereigenschaft 3</Name>
+          <SourceColumnID>Kostuem Charaktereigenschaft 3</SourceColumnID>
+          <Columns>
+            <Column dwd:design-time-name="79773b9f-73cb-4e13-b81a-2d60480df693">
+              <ID>Charaktereigenschaft L4</ID>
+              <Name>Charaktereigenschaft L4</Name>
+              <SourceColumnID>Charaktereigenschaft L4</SourceColumnID>
+              <Usage>Key</Usage>
+            </Column>
+          </Columns>
+        </Column>
       </Columns>
+      <AllowDrillThrough>true</AllowDrillThrough>
     </MiningModel>
     <MiningModel dwd:design-time-name="d711537f-e2b8-4247-8107-8f9a258b4c03">
       <ID>ms_kostuem_2__charakter_genre___basiselement_2</ID>
@@ -909,20 +910,21 @@
             </Column>
           </Columns>
         </Column>
-        <Column dwd:design-time-name="b0d8e2bf-90f6-4dbd-8cb8-ae5c2a2058d3">
-          <ID>Kostuem Charaktereigenschaft 2</ID>
-          <Name>Kostuem Charaktereigenschaft 2</Name>
-          <SourceColumnID>Kostuem Charaktereigenschaft 2</SourceColumnID>
+        <Column dwd:design-time-name="6c983b93-e529-4da3-aad4-5eaf24705518">
+          <ID>Kostuem Charaktereigenschaft 3</ID>
+          <Name>Kostuem Charaktereigenschaft 3</Name>
+          <SourceColumnID>Kostuem Charaktereigenschaft 3</SourceColumnID>
           <Columns>
-            <Column dwd:design-time-name="ba6c9253-ea30-4d6f-bc4b-7b71fc1fc469">
-              <ID>Charaktereigenschaft L3</ID>
-              <Name>Charaktereigenschaft L3</Name>
-              <SourceColumnID>Charaktereigenschaft L3</SourceColumnID>
+            <Column dwd:design-time-name="5fb636c1-8373-40b3-9931-96c3755ed916">
+              <ID>Charaktereigenschaft L4</ID>
+              <Name>Charaktereigenschaft L4</Name>
+              <SourceColumnID>Charaktereigenschaft L4</SourceColumnID>
               <Usage>Key</Usage>
             </Column>
           </Columns>
         </Column>
       </Columns>
+      <AllowDrillThrough>true</AllowDrillThrough>
     </MiningModel>
     <MiningModel dwd:design-time-name="eee65a2f-970e-47d7-b450-25b7dc041dd9">
       <ID>ms_kostuem_2__charakter_genre_geschlecht___basiselement_1</ID>
@@ -936,6 +938,10 @@
         <AlgorithmParameter>
           <Name>MINIMUM_PROBABILITY</Name>
           <Value xsi:type="xsd:double">0.1</Value>
+        </AlgorithmParameter>
+        <AlgorithmParameter>
+          <Name>MINIMUM_SUPPORT</Name>
+          <Value xsi:type="xsd:double">0.025</Value>
         </AlgorithmParameter>
       </AlgorithmParameters>
       <Columns>
@@ -977,20 +983,21 @@
             </Column>
           </Columns>
         </Column>
-        <Column dwd:design-time-name="2e9db9a4-5e83-4976-afef-cb1d60965278">
-          <ID>Kostuem Charaktereigenschaft 2</ID>
-          <Name>Kostuem Charaktereigenschaft 2</Name>
-          <SourceColumnID>Kostuem Charaktereigenschaft 2</SourceColumnID>
+        <Column dwd:design-time-name="f7aee12e-ab56-49c2-9d8f-f2e888e01bc9">
+          <ID>Kostuem Charaktereigenschaft 3</ID>
+          <Name>Kostuem Charaktereigenschaft 3</Name>
+          <SourceColumnID>Kostuem Charaktereigenschaft 3</SourceColumnID>
           <Columns>
-            <Column dwd:design-time-name="62afaa31-9c1a-43c3-8ad9-3fd4a56a7cd5">
-              <ID>Charaktereigenschaft L3</ID>
-              <Name>Charaktereigenschaft L3</Name>
-              <SourceColumnID>Charaktereigenschaft L3</SourceColumnID>
+            <Column dwd:design-time-name="75a92bae-4095-412d-9b19-5fedc22b7abb">
+              <ID>Charaktereigenschaft L4</ID>
+              <Name>Charaktereigenschaft L4</Name>
+              <SourceColumnID>Charaktereigenschaft L4</SourceColumnID>
               <Usage>Key</Usage>
             </Column>
           </Columns>
         </Column>
       </Columns>
+      <AllowDrillThrough>true</AllowDrillThrough>
     </MiningModel>
   </MiningModels>
 </MiningStructure>

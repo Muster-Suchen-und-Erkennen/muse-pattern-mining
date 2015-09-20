@@ -16,7 +16,7 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="16" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-10812" scrolltop="-2032" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="30877" y="19738" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="16" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-10812" scrolltop="-2032" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="32332" y="19738" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
               <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
             </font>
@@ -685,6 +685,10 @@
           <Name>MINIMUM_PROBABILITY</Name>
           <Value xsi:type="xsd:double">0.1</Value>
         </AlgorithmParameter>
+        <AlgorithmParameter>
+          <Name>MINIMUM_SUPPORT</Name>
+          <Value xsi:type="xsd:double">0.025</Value>
+        </AlgorithmParameter>
       </AlgorithmParameters>
       <Columns>
         <Column dwd:design-time-name="9bd39f5e-6216-4127-89e9-01f5060d52bb">
@@ -711,16 +715,16 @@
             </Column>
           </Columns>
         </Column>
-        <Column dwd:design-time-name="1ad76cd0-bf22-41d4-9617-ea468a53882a">
-          <ID>Basiselement 3</ID>
-          <Name>Basiselement 3</Name>
-          <SourceColumnID>Basiselement 3</SourceColumnID>
+        <Column dwd:design-time-name="54c4fe17-e0f6-4e42-b45e-bf9306767ed1">
+          <ID>Basiselement 5</ID>
+          <Name>Basiselement 5</Name>
+          <SourceColumnID>Basiselement 5</SourceColumnID>
           <Usage>PredictOnly</Usage>
           <Columns>
-            <Column dwd:design-time-name="f6e6700f-e03d-4e46-a487-066b86293693">
-              <ID>Basiselementname L4</ID>
-              <Name>Basiselementname L4</Name>
-              <SourceColumnID>Basiselementname L4</SourceColumnID>
+            <Column dwd:design-time-name="511ceec2-11d9-4ed8-be43-1348837043bd">
+              <ID>Basiselementname L6</ID>
+              <Name>Basiselementname L6</Name>
+              <SourceColumnID>Basiselementname L6</SourceColumnID>
               <Usage>Key</Usage>
             </Column>
           </Columns>
@@ -741,6 +745,10 @@
           <Name>MINIMUM_PROBABILITY</Name>
           <Value xsi:type="xsd:double">0.1</Value>
         </AlgorithmParameter>
+        <AlgorithmParameter>
+          <Name>MINIMUM_SUPPORT</Name>
+          <Value xsi:type="xsd:double">0.025</Value>
+        </AlgorithmParameter>
       </AlgorithmParameters>
       <Columns>
         <Column dwd:design-time-name="816784d9-81e4-47b9-9dc7-22ddc185756a">
@@ -754,12 +762,86 @@
           <SourceColumnID>ID</SourceColumnID>
           <Usage>Key</Usage>
         </Column>
-        <Column dwd:design-time-name="cb213b1b-6eed-456e-ab9d-8a32c5675b48">
+        <Column dwd:design-time-name="90004fd0-32fb-4807-a3b6-aea5c49bf195">
+          <ID>Kostuem Charaktereigenschaft 3</ID>
+          <Name>Kostuem Charaktereigenschaft 3</Name>
+          <SourceColumnID>Kostuem Charaktereigenschaft 3</SourceColumnID>
+          <Columns>
+            <Column dwd:design-time-name="b7f87a16-61b4-4ff1-9672-7d17e83b8dd6">
+              <ID>Charaktereigenschaft L4</ID>
+              <Name>Charaktereigenschaft L4</Name>
+              <SourceColumnID>Charaktereigenschaft L4</SourceColumnID>
+              <Usage>Key</Usage>
+            </Column>
+          </Columns>
+        </Column>
+        <Column dwd:design-time-name="a4fc9f67-4704-4042-80c3-750122678992">
+          <ID>Basiselement 4</ID>
+          <Name>Basiselement 4</Name>
+          <SourceColumnID>Basiselement 4</SourceColumnID>
+          <Usage>PredictOnly</Usage>
+          <Columns>
+            <Column dwd:design-time-name="66c2d358-b6be-4e06-a841-29f40763f8d6">
+              <ID>Basiselementname L5</ID>
+              <Name>Basiselementname L5</Name>
+              <SourceColumnID>Basiselementname L5</SourceColumnID>
+              <Usage>Key</Usage>
+            </Column>
+          </Columns>
+        </Column>
+      </Columns>
+      <AllowDrillThrough>true</AllowDrillThrough>
+    </MiningModel>
+    <MiningModel dwd:design-time-name="641ec062-b121-4e8f-82a6-9b378411c48e">
+      <ID>ms_kostuem_1__charakter_geschlecht___basiselement_3</ID>
+      <Name>ms_kostuem_1__charakter_geschlecht___basiselement_3</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Algorithm>Microsoft_Association_Rules</Algorithm>
+      <AlgorithmParameters>
+        <AlgorithmParameter>
+          <Name>MINIMUM_PROBABILITY</Name>
+          <Value xsi:type="xsd:double">0.1</Value>
+        </AlgorithmParameter>
+        <AlgorithmParameter>
+          <Name>MINIMUM_SUPPORT</Name>
+          <Value xsi:type="xsd:double">0.025</Value>
+        </AlgorithmParameter>
+      </AlgorithmParameters>
+      <Columns>
+        <Column dwd:design-time-name="35058f27-3836-41bd-8083-30ef2aaeef92">
+          <ID>Geschlecht</ID>
+          <Name>Geschlecht</Name>
+          <SourceColumnID>Geschlecht</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="f15dfbfc-7658-412d-b887-110047e9799a">
+          <ID>ID</ID>
+          <Name>ID</Name>
+          <SourceColumnID>ID</SourceColumnID>
+          <Usage>Key</Usage>
+        </Column>
+        <Column dwd:design-time-name="87c88690-ef9f-4be3-8d63-c753ae5d2f85">
+          <ID>Basiselement 5</ID>
+          <Name>Basiselement 5</Name>
+          <SourceColumnID>Basiselement 5</SourceColumnID>
+          <Usage>Predict</Usage>
+          <Columns>
+            <Column dwd:design-time-name="6d3b9a65-d35e-436e-9455-fb939766a72a">
+              <ID>Basiselementname L6</ID>
+              <Name>Basiselementname L6</Name>
+              <SourceColumnID>Basiselementname L6</SourceColumnID>
+              <Usage>Key</Usage>
+            </Column>
+          </Columns>
+        </Column>
+        <Column dwd:design-time-name="b970636e-1f3d-4583-b895-7358a63c32bf">
           <ID>Kostuem Charaktereigenschaft 2</ID>
           <Name>Kostuem Charaktereigenschaft 2</Name>
           <SourceColumnID>Kostuem Charaktereigenschaft 2</SourceColumnID>
           <Columns>
-            <Column dwd:design-time-name="e7f0a53a-a012-418e-8007-899f80caf75a">
+            <Column dwd:design-time-name="4498037e-f9ec-4a0c-b22a-16c1a9ef036c">
               <ID>Charaktereigenschaft L3</ID>
               <Name>Charaktereigenschaft L3</Name>
               <SourceColumnID>Charaktereigenschaft L3</SourceColumnID>
@@ -767,16 +849,61 @@
             </Column>
           </Columns>
         </Column>
-        <Column dwd:design-time-name="e21aceb5-864f-4e35-b850-dbc842aea482">
-          <ID>Basiselement 3</ID>
-          <Name>Basiselement 3</Name>
-          <SourceColumnID>Basiselement 3</SourceColumnID>
+      </Columns>
+    </MiningModel>
+    <MiningModel dwd:design-time-name="1ecf1559-4577-4df5-8f77-dfa42a9c7ddc">
+      <ID>ms_kostuem_1__charakter_geschlecht___basiselement_4</ID>
+      <Name>ms_kostuem_1__charakter_geschlecht___basiselement_4</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Algorithm>Microsoft_Association_Rules</Algorithm>
+      <AlgorithmParameters>
+        <AlgorithmParameter>
+          <Name>MINIMUM_PROBABILITY</Name>
+          <Value xsi:type="xsd:double">0.1</Value>
+        </AlgorithmParameter>
+        <AlgorithmParameter>
+          <Name>MINIMUM_SUPPORT</Name>
+          <Value xsi:type="xsd:double">0.025</Value>
+        </AlgorithmParameter>
+      </AlgorithmParameters>
+      <Columns>
+        <Column dwd:design-time-name="386e1232-c27e-4326-90d2-0f83bb8f26cd">
+          <ID>Geschlecht</ID>
+          <Name>Geschlecht</Name>
+          <SourceColumnID>Geschlecht</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="57030e35-2d52-4dbf-847e-58264002abd0">
+          <ID>ID</ID>
+          <Name>ID</Name>
+          <SourceColumnID>ID</SourceColumnID>
+          <Usage>Key</Usage>
+        </Column>
+        <Column dwd:design-time-name="1af42c32-9a04-438f-849d-bebb8c6b4184">
+          <ID>Kostuem Charaktereigenschaft 3</ID>
+          <Name>Kostuem Charaktereigenschaft 3</Name>
+          <SourceColumnID>Kostuem Charaktereigenschaft 3</SourceColumnID>
+          <Columns>
+            <Column dwd:design-time-name="37c77a2a-c0ce-4a1d-9da3-7f042a92dfdb">
+              <ID>Charaktereigenschaft L4</ID>
+              <Name>Charaktereigenschaft L4</Name>
+              <SourceColumnID>Charaktereigenschaft L4</SourceColumnID>
+              <Usage>Key</Usage>
+            </Column>
+          </Columns>
+        </Column>
+        <Column dwd:design-time-name="946dd829-e9b5-4266-8728-d5919086003d">
+          <ID>Basiselement 4</ID>
+          <Name>Basiselement 4</Name>
+          <SourceColumnID>Basiselement 4</SourceColumnID>
           <Usage>Predict</Usage>
           <Columns>
-            <Column dwd:design-time-name="db0e3090-c3be-4e15-9f5e-fc4f2968d016">
-              <ID>Basiselementname L4</ID>
-              <Name>Basiselementname L4</Name>
-              <SourceColumnID>Basiselementname L4</SourceColumnID>
+            <Column dwd:design-time-name="c801e823-46c2-4d39-8d6b-0811a2622488">
+              <ID>Basiselementname L5</ID>
+              <Name>Basiselementname L5</Name>
+              <SourceColumnID>Basiselementname L5</SourceColumnID>
               <Usage>Key</Usage>
             </Column>
           </Columns>

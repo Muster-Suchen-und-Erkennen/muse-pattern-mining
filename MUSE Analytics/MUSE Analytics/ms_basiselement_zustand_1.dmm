@@ -598,6 +598,7 @@
           </Columns>
         </Column>
       </Columns>
+      <AllowDrillThrough>true</AllowDrillThrough>
     </MiningModel>
   </MiningModels>
 </MiningStructure>
