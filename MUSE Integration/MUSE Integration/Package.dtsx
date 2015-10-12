@@ -11,8 +11,8 @@
   DTS:LocaleID="1031"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="170"
-  DTS:VersionGUID="{B2D156E9-D698-47C2-853A-E206B817CC1A}">
+  DTS:VersionBuild="184"
+  DTS:VersionGUID="{816FB7B7-C28E-47CA-942C-5ECCC5F67989}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -93,6 +93,97 @@
             <pipeline
               version="1">
               <components>
+                <component
+                  refId="Package\Basic Preparation\Create Kostuem Table\Add MUSE URL"
+                  componentClassID="Microsoft.DerivedColumn"
+                  contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+                  description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+                  name="Add MUSE URL"
+                  usesDispositions="true">
+                  <inputs>
+                    <input
+                      refId="Package\Basic Preparation\Create Kostuem Table\Add MUSE URL.Inputs[Derived Column Input]"
+                      description="Input to the Derived Column Transformation"
+                      name="Derived Column Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Basic Preparation\Create Kostuem Table\Add MUSE URL.Inputs[Derived Column Input].Columns[FilmID]"
+                          cachedDataType="i4"
+                          cachedName="FilmID"
+                          lineageId="Package\Basic Preparation\Create Kostuem Table\OLE DB Source.Outputs[OLE DB Source Output].Columns[FilmID]" />
+                        <inputColumn
+                          refId="Package\Basic Preparation\Create Kostuem Table\Add MUSE URL.Inputs[Derived Column Input].Columns[KostuemID]"
+                          cachedDataType="i4"
+                          cachedName="KostuemID"
+                          lineageId="Package\Basic Preparation\Create Kostuem Table\OLE DB Source.Outputs[OLE DB Source Output].Columns[KostuemID]" />
+                        <inputColumn
+                          refId="Package\Basic Preparation\Create Kostuem Table\Add MUSE URL.Inputs[Derived Column Input].Columns[RollenID]"
+                          cachedDataType="i4"
+                          cachedName="RollenID"
+                          lineageId="Package\Basic Preparation\Create Kostuem Table\OLE DB Source.Outputs[OLE DB Source Output].Columns[RollenID]" />
+                      </inputColumns>
+                      <externalMetadataColumns />
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Basic Preparation\Create Kostuem Table\Add MUSE URL.Outputs[Derived Column Output]"
+                      description="Default Output of the Derived Column Transformation"
+                      exclusionGroup="1"
+                      name="Derived Column Output"
+                      synchronousInputId="Package\Basic Preparation\Create Kostuem Table\Add MUSE URL.Inputs[Derived Column Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Basic Preparation\Create Kostuem Table\Add MUSE URL.Outputs[Derived Column Output].Columns[MuseURL]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Computation"
+                          errorRowDisposition="FailComponent"
+                          length="103"
+                          lineageId="Package\Basic Preparation\Create Kostuem Table\Add MUSE URL.Outputs[Derived Column Output].Columns[MuseURL]"
+                          name="MuseURL"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Expression"
+                              name="Expression">"https://muse.informatik.uni-stuttgart.de/#/filme/" + (DT_WSTR,12)#{Package\Basic Preparation\Create Kostuem Table\OLE DB Source.Outputs[OLE DB Source Output].Columns[FilmID]} + "/rollen/" + (DT_WSTR,12)#{Package\Basic Preparation\Create Kostuem Table\OLE DB Source.Outputs[OLE DB Source Output].Columns[RollenID]} + "/kostueme/" + (DT_WSTR,12)#{Package\Basic Preparation\Create Kostuem Table\OLE DB Source.Outputs[OLE DB Source Output].Columns[KostuemID]}</property>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Friendly Expression"
+                              expressionType="Notify"
+                              name="FriendlyExpression">"https://muse.informatik.uni-stuttgart.de/#/filme/" + (DT_WSTR,12)FilmID + "/rollen/" + (DT_WSTR,12)RollenID + "/kostueme/" + (DT_WSTR,12)KostuemID</property>
+                          </properties>
+                        </outputColumn>
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                    <output
+                      refId="Package\Basic Preparation\Create Kostuem Table\Add MUSE URL.Outputs[Derived Column Error Output]"
+                      description="Error Output of the Derived Column Transformation"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="Derived Column Error Output"
+                      synchronousInputId="Package\Basic Preparation\Create Kostuem Table\Add MUSE URL.Inputs[Derived Column Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Basic Preparation\Create Kostuem Table\Add MUSE URL.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Basic Preparation\Create Kostuem Table\Add MUSE URL.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Basic Preparation\Create Kostuem Table\Add MUSE URL.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Basic Preparation\Create Kostuem Table\Add MUSE URL.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
                 <component
                   refId="Package\Basic Preparation\Create Kostuem Table\Increment arbitrary ID column"
                   componentClassID="Microsoft.ManagedComponentHost"
@@ -1109,6 +1200,13 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
                           cachedName="ID"
                           externalMetadataColumnId="Package\Basic Preparation\Create Kostuem Table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ID]"
                           lineageId="Package\Basic Preparation\Create Kostuem Table\Increment arbitrary ID column.Outputs[Output 0].Columns[ID]" />
+                        <inputColumn
+                          refId="Package\Basic Preparation\Create Kostuem Table\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[MuseURL]"
+                          cachedDataType="wstr"
+                          cachedLength="103"
+                          cachedName="MuseURL"
+                          externalMetadataColumnId="Package\Basic Preparation\Create Kostuem Table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MuseURL]"
+                          lineageId="Package\Basic Preparation\Create Kostuem Table\Add MUSE URL.Outputs[Derived Column Output].Columns[MuseURL]" />
                       </inputColumns>
                       <externalMetadataColumns
                         isUsed="True">
@@ -1162,6 +1260,11 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
                           refId="Package\Basic Preparation\Create Kostuem Table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ID]"
                           dataType="i4"
                           name="ID" />
+                        <externalMetadataColumn
+                          refId="Package\Basic Preparation\Create Kostuem Table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MuseURL]"
+                          dataType="wstr"
+                          length="255"
+                          name="MuseURL" />
                       </externalMetadataColumns>
                     </input>
                   </inputs>
@@ -1479,13 +1582,18 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
               </components>
               <paths>
                 <path
+                  refId="Package\Basic Preparation\Create Kostuem Table.Paths[Derived Column Output]"
+                  endId="Package\Basic Preparation\Create Kostuem Table\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  name="Derived Column Output"
+                  startId="Package\Basic Preparation\Create Kostuem Table\Add MUSE URL.Outputs[Derived Column Output]" />
+                <path
                   refId="Package\Basic Preparation\Create Kostuem Table.Paths[OLE DB Source Output]"
                   endId="Package\Basic Preparation\Create Kostuem Table\Increment arbitrary ID column.Inputs[Input 0]"
                   name="OLE DB Source Output"
                   startId="Package\Basic Preparation\Create Kostuem Table\OLE DB Source.Outputs[OLE DB Source Output]" />
                 <path
                   refId="Package\Basic Preparation\Create Kostuem Table.Paths[Output 0]"
-                  endId="Package\Basic Preparation\Create Kostuem Table\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  endId="Package\Basic Preparation\Create Kostuem Table\Add MUSE URL.Inputs[Derived Column Input]"
                   name="Output 0"
                   startId="Package\Basic Preparation\Create Kostuem Table\Increment arbitrary ID column.Outputs[Output 0]" />
               </paths>
@@ -1521,7 +1629,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
               SQLTask:Connection="{82D75573-97DA-4285-AB7B-6708F7CF9820}"
-              SQLTask:SqlStatementSource="IF OBJECT_ID('dbo.kostuem', 'U') IS NOT NULL&#xA;  DROP TABLE [dbo].[kostuem]&#xA;GO&#xA;CREATE TABLE [dbo].[kostuem](&#xA;&#x9;[KostuemID] [int] NULL,&#xA;&#x9;[RollenID] [int] NULL,&#xA;&#x9;[FilmID] [int] NULL,&#xA;&#x9;[Szenenbeschreibung] [nvarchar](max) NULL,&#xA;&#x9;[Ortsbegebenheit] [nvarchar](35) NULL,&#xA;&#x9;[DominanteFarbe] [nvarchar](45) NULL,&#xA;&#x9;[StereotypRelevant] [nvarchar](15) NULL,&#xA;&#x9;[DominanteFunktion] [nvarchar](45) NULL,&#xA;&#x9;[DominanterZustand] [nvarchar](45) NULL,&#xA;&#x9;[Kostuemkurztext] [nvarchar](100) NULL,&#xA;&#x9;[ID] [int] NULL&#xA;) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]&#xA;GO" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+              SQLTask:SqlStatementSource="IF OBJECT_ID('dbo.kostuem', 'U') IS NOT NULL&#xA;  DROP TABLE [dbo].[kostuem]&#xA;GO&#xA;CREATE TABLE [dbo].[kostuem](&#xA;&#x9;[KostuemID] [int] NULL,&#xA;&#x9;[RollenID] [int] NULL,&#xA;&#x9;[FilmID] [int] NULL,&#xA;&#x9;[Szenenbeschreibung] [nvarchar](max) NULL,&#xA;&#x9;[Ortsbegebenheit] [nvarchar](35) NULL,&#xA;&#x9;[DominanteFarbe] [nvarchar](45) NULL,&#xA;&#x9;[StereotypRelevant] [nvarchar](15) NULL,&#xA;&#x9;[DominanteFunktion] [nvarchar](45) NULL,&#xA;&#x9;[DominanterZustand] [nvarchar](45) NULL,&#xA;&#x9;[Kostuemkurztext] [nvarchar](100) NULL,&#xA;&#x9;[ID] [int] NULL,&#xA;&#x9;[MuseURL] [nvarchar](255) NULL&#xA;) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]&#xA;GO" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
           </DTS:ObjectData>
         </DTS:Executable>
       </DTS:Executables>
@@ -1571,7 +1679,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
           DTS:ExecutableType="Microsoft.ScriptTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="Flatten Hierarchy"
-          DTS:ThreadHint="2">
+          DTS:ThreadHint="0">
           <DTS:Variables />
           <DTS:ObjectData>
             <ScriptProject
@@ -1579,6 +1687,36 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
               VSTAMajorVersion="3"
               VSTAMinorVersion="0"
               Language="CSharp">
+              <ProjectItem
+                Name="Properties\AssemblyInfo.cs"
+                Encoding="UTF8"><![CDATA[using System.Reflection;
+using System.Runtime.CompilerServices;
+
+//
+// General Information about an assembly is controlled through the following 
+// set of attributes. Change these attribute values to modify the information
+// associated with an assembly.
+//
+[assembly: AssemblyTitle("ST_1ebb46fb9d2b4c5abed465bdb863318a")]
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("ST_1ebb46fb9d2b4c5abed465bdb863318a")]
+[assembly: AssemblyCopyright("Copyright @  2015")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
+//
+// Version information for an assembly consists of the following four values:
+//
+//      Major Version
+//      Minor Version 
+//      Build Number
+//      Revision
+//
+// You can specify all the values or you can default the Revision and Build Numbers 
+// by using the '*' as shown below:
+
+[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
               <ProjectItem
                 Name="Properties\Resources.resx"
                 Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
@@ -1698,35 +1836,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
 </root>]]></ProjectItem>
-              <ProjectItem
-                Name="Properties\Settings.Designer.cs"
-                Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
-// <auto-generated>
-//     This code was generated by a tool.
-//
-//     Changes to this file may cause incorrect behavior and will be lost if
-//     the code is regenerated.
-// </auto-generated>
-//------------------------------------------------------------------------------
-
-[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_1ebb46fb9d2b4c5abed465bdb863318a.Properties.Settings.get_Default():ST_1ebb46fb9d2b4c5abed465bdb863318a.Properties.Sett" +
-    "ings")]
-
-namespace ST_1ebb46fb9d2b4c5abed465bdb863318a.Properties {
-    
-    
-    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
-        
-        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-        private static Settings defaultInstance = new Settings();
-        
-        public static Settings Default {
-            get {
-                return defaultInstance;
-            }
-        }
-    }
-}]]></ProjectItem>
               <ProjectItem
                 Name="TreeNode.cs"
                 Encoding="UTF8"><![CDATA[using System;
@@ -2302,35 +2411,34 @@ namespace ST_1ebb46fb9d2b4c5abed465bdb863318a
 	</msb:ItemGroup>
 </c:Project>]]></ProjectItem>
               <ProjectItem
-                Name="Properties\AssemblyInfo.cs"
-                Encoding="UTF8"><![CDATA[using System.Reflection;
-using System.Runtime.CompilerServices;
+                Name="Properties\Settings.Designer.cs"
+                Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
 
-//
-// General Information about an assembly is controlled through the following 
-// set of attributes. Change these attribute values to modify the information
-// associated with an assembly.
-//
-[assembly: AssemblyTitle("ST_1ebb46fb9d2b4c5abed465bdb863318a")]
-[assembly: AssemblyDescription("")]
-[assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ST_1ebb46fb9d2b4c5abed465bdb863318a")]
-[assembly: AssemblyCopyright("Copyright @  2015")]
-[assembly: AssemblyTrademark("")]
-[assembly: AssemblyCulture("")]
-//
-// Version information for an assembly consists of the following four values:
-//
-//      Major Version
-//      Minor Version 
-//      Build Number
-//      Revision
-//
-// You can specify all the values or you can default the Revision and Build Numbers 
-// by using the '*' as shown below:
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_1ebb46fb9d2b4c5abed465bdb863318a.Properties.Settings.get_Default():ST_1ebb46fb9d2b4c5abed465bdb863318a.Properties.Sett" +
+    "ings")]
 
-[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
+namespace ST_1ebb46fb9d2b4c5abed465bdb863318a.Properties {
+    
+    
+    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
+        
+        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+        private static Settings defaultInstance = new Settings();
+        
+        public static Settings Default {
+            get {
+                return defaultInstance;
+            }
+        }
+    }
+}]]></ProjectItem>
               <ProjectItem
                 Name="Properties\Settings.settings"
                 Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
@@ -2712,6 +2820,34 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
       </DTS:Executables>
     </DTS:Executable>
     <DTS:Executable
+      DTS:refId="Package\Reporting"
+      DTS:CreationName="STOCK:SEQUENCE"
+      DTS:Description="Sequence Container"
+      DTS:DTSID="{17A5B7FD-86EF-47DD-8094-39B5F9854223}"
+      DTS:ExecutableType="STOCK:SEQUENCE"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Reporting">
+      <DTS:Variables />
+      <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package\Reporting\Invalid Timecodes"
+          DTS:CreationName="Microsoft.ExecuteSQLTask"
+          DTS:DTSID="{AD7AAC6F-31A5-49A5-825F-2F04501EC340}"
+          DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Invalid Timecodes"
+          DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2014; © 2014 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+          DTS:ThreadHint="1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <SQLTask:SqlTaskData
+              SQLTask:Connection="{82D75573-97DA-4285-AB7B-6708F7CF9820}"
+              SQLTask:SqlStatementSource="IF OBJECT_ID('dbo.reporting_invalid_timecodes', 'V') IS NOT NULL&#xA;  DROP VIEW dbo.reporting_invalid_timecodes&#xA;GO&#xA;CREATE VIEW dbo.reporting_invalid_timecodes AS&#xA;SELECT F.Filmtitel&#xA;, K.Kostuemkurztext&#xA;, R.Rollenvorname&#xA;, R.Rollennachname&#xA;, DATEDIFF(second, KT.Timecodeanfang, KT.Timecodeende) as 'Sekunden im Bild'&#xA;, K.MuseURL&#xA;FROM Kostuem K, Kostuemtimecode KT, Film F, Rolle R&#xA;WHERE &#xA;    KT.KostuemID = K.KostuemID&#xA;AND KT.RollenID = K.RollenID&#xA;AND KT.FilmID = K.FilmID&#xA;AND F.FilmID = K.FilmID&#xA;AND R.FilmID = F.FilmID&#xA;AND R.RollenID = K.RollenID&#xA;AND DATEDIFF(second, KT.Timecodeanfang, KT.Timecodeende) &lt; 1" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          </DTS:ObjectData>
+        </DTS:Executable>
+      </DTS:Executables>
+    </DTS:Executable>
+    <DTS:Executable
       DTS:refId="Package\Stereotyp"
       DTS:CreationName="STOCK:SEQUENCE"
       DTS:DelayValidation="True"
@@ -2729,7 +2865,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
           DTS:LocaleID="-1"
           DTS:ObjectName="Create Stereotyp Table"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2014; © 2014 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="1">
+          DTS:ThreadHint="2">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -4219,572 +4355,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           DTS:To="Package\Stereotyp\Stereotyp Parser Flow" />
       </DTS:PrecedenceConstraints>
     </DTS:Executable>
-    <DTS:Executable
-      DTS:refId="Package\Union Charaktereigenschaft"
-      DTS:CreationName="STOCK:SEQUENCE"
-      DTS:DelayValidation="True"
-      DTS:Description="Sequence Container"
-      DTS:DTSID="{5EFA9BDA-331D-469C-B431-90E817CA2A0E}"
-      DTS:ExecutableType="STOCK:SEQUENCE"
-      DTS:LocaleID="-1"
-      DTS:ObjectName="Union Charaktereigenschaft">
-      <DTS:Variables />
-      <DTS:Executables>
-        <DTS:Executable
-          DTS:refId="Package\Union Charaktereigenschaft\Create Charakter Table"
-          DTS:CreationName="Microsoft.ExecuteSQLTask"
-          DTS:Description="Execute SQL Task"
-          DTS:DTSID="{B0601BB6-6BC4-459F-9357-FA32368545F1}"
-          DTS:ExecutableType="Microsoft.ExecuteSQLTask"
-          DTS:LocaleID="-1"
-          DTS:ObjectName="Create Charakter Table"
-          DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2014; © 2014 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="0">
-          <DTS:Variables />
-          <DTS:ObjectData>
-            <SQLTask:SqlTaskData
-              SQLTask:Connection="{82D75573-97DA-4285-AB7B-6708F7CF9820}"
-              SQLTask:SqlStatementSource="IF OBJECT_ID('dbo.charakter', 'U') IS NOT NULL&#xA;  DROP TABLE [dbo].[charakter]&#xA;GO&#xA;&#xA;CREATE TABLE [dbo].[charakter](&#xA;&#x9;[ID] [int] NULL,&#xA;&#x9;[Charaktereigenschaft] [nvarchar](45) NULL&#xA;) ON [PRIMARY]&#xA;GO&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
-          </DTS:ObjectData>
-        </DTS:Executable>
-        <DTS:Executable
-          DTS:refId="Package\Union Charaktereigenschaft\Union Charaktereigenschaft"
-          DTS:CreationName="Microsoft.Pipeline"
-          DTS:DelayValidation="True"
-          DTS:Description="Data Flow Task"
-          DTS:DTSID="{EDE9B8FC-2DD0-48A8-859B-CAEBF8CE502F}"
-          DTS:ExecutableType="Microsoft.Pipeline"
-          DTS:LocaleID="-1"
-          DTS:ObjectName="Union Charaktereigenschaft"
-          DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
-          <DTS:Variables />
-          <DTS:ObjectData>
-            <pipeline
-              version="1">
-              <components>
-                <component
-                  refId="Package\Union Charaktereigenschaft\Union Charaktereigenschaft\OLE DB Destination"
-                  componentClassID="Microsoft.OLEDBDestination"
-                  contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
-                  description="OLE DB Destination"
-                  name="OLE DB Destination"
-                  usesDispositions="true"
-                  version="4">
-                  <properties>
-                    <property
-                      dataType="System.Int32"
-                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
-                      name="CommandTimeout">0</property>
-                    <property
-                      dataType="System.String"
-                      description="Specifies the name of the database object used to open a rowset."
-                      name="OpenRowset">[charakter]</property>
-                    <property
-                      dataType="System.String"
-                      description="Specifies the variable that contains the name of the database object used to open a rowset."
-                      name="OpenRowsetVariable"></property>
-                    <property
-                      dataType="System.String"
-                      description="The SQL command to be executed."
-                      name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
-                    <property
-                      dataType="System.Int32"
-                      description="Specifies the column code page to use when code page information is unavailable from the data source."
-                      name="DefaultCodePage">1252</property>
-                    <property
-                      dataType="System.Boolean"
-                      description="Forces the use of the DefaultCodePage property value when describing character data."
-                      name="AlwaysUseDefaultCodePage">false</property>
-                    <property
-                      dataType="System.Int32"
-                      description="Specifies the mode used to access the database."
-                      name="AccessMode"
-                      typeConverter="AccessMode">0</property>
-                    <property
-                      dataType="System.Boolean"
-                      description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
-                      name="FastLoadKeepIdentity">false</property>
-                    <property
-                      dataType="System.Boolean"
-                      description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
-                      name="FastLoadKeepNulls">false</property>
-                    <property
-                      dataType="System.String"
-                      description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
-                      name="FastLoadOptions"></property>
-                    <property
-                      dataType="System.Int32"
-                      description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
-                      name="FastLoadMaxInsertCommitSize">2147483647</property>
-                  </properties>
-                  <connections>
-                    <connection
-                      refId="Package\Union Charaktereigenschaft\Union Charaktereigenschaft\OLE DB Destination.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[muse_analytics]"
-                      connectionManagerRefId="Package.ConnectionManagers[muse_analytics]"
-                      description="The OLE DB runtime connection used to access the database."
-                      name="OleDbConnection" />
-                  </connections>
-                  <inputs>
-                    <input
-                      refId="Package\Union Charaktereigenschaft\Union Charaktereigenschaft\OLE DB Destination.Inputs[OLE DB Destination Input]"
-                      errorOrTruncationOperation="Insert"
-                      errorRowDisposition="FailComponent"
-                      hasSideEffects="true"
-                      name="OLE DB Destination Input">
-                      <inputColumns>
-                        <inputColumn
-                          refId="Package\Union Charaktereigenschaft\Union Charaktereigenschaft\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ID]"
-                          cachedDataType="i4"
-                          cachedName="ID"
-                          externalMetadataColumnId="Package\Union Charaktereigenschaft\Union Charaktereigenschaft\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ID]"
-                          lineageId="Package\Union Charaktereigenschaft\Union Charaktereigenschaft\Union All.Outputs[Union All Output 1].Columns[ID]" />
-                        <inputColumn
-                          refId="Package\Union Charaktereigenschaft\Union Charaktereigenschaft\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Charaktereigenschaft]"
-                          cachedDataType="wstr"
-                          cachedLength="45"
-                          cachedName="Charaktereigenschaft"
-                          externalMetadataColumnId="Package\Union Charaktereigenschaft\Union Charaktereigenschaft\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Charaktereigenschaft]"
-                          lineageId="Package\Union Charaktereigenschaft\Union Charaktereigenschaft\Union All.Outputs[Union All Output 1].Columns[Charaktereigenschaft]" />
-                      </inputColumns>
-                      <externalMetadataColumns
-                        isUsed="True">
-                        <externalMetadataColumn
-                          refId="Package\Union Charaktereigenschaft\Union Charaktereigenschaft\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ID]"
-                          dataType="i4"
-                          name="ID" />
-                        <externalMetadataColumn
-                          refId="Package\Union Charaktereigenschaft\Union Charaktereigenschaft\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Charaktereigenschaft]"
-                          dataType="wstr"
-                          length="45"
-                          name="Charaktereigenschaft" />
-                      </externalMetadataColumns>
-                    </input>
-                  </inputs>
-                  <outputs>
-                    <output
-                      refId="Package\Union Charaktereigenschaft\Union Charaktereigenschaft\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
-                      exclusionGroup="1"
-                      isErrorOut="true"
-                      name="OLE DB Destination Error Output"
-                      synchronousInputId="Package\Union Charaktereigenschaft\Union Charaktereigenschaft\OLE DB Destination.Inputs[OLE DB Destination Input]">
-                      <outputColumns>
-                        <outputColumn
-                          refId="Package\Union Charaktereigenschaft\Union Charaktereigenschaft\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
-                          dataType="i4"
-                          lineageId="Package\Union Charaktereigenschaft\Union Charaktereigenschaft\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
-                          name="ErrorCode"
-                          specialFlags="1" />
-                        <outputColumn
-                          refId="Package\Union Charaktereigenschaft\Union Charaktereigenschaft\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
-                          dataType="i4"
-                          lineageId="Package\Union Charaktereigenschaft\Union Charaktereigenschaft\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
-                          name="ErrorColumn"
-                          specialFlags="2" />
-                      </outputColumns>
-                      <externalMetadataColumns />
-                    </output>
-                  </outputs>
-                </component>
-                <component
-                  refId="Package\Union Charaktereigenschaft\Union Charaktereigenschaft\OLE DB Source Kostuemcharaktereigenschaft"
-                  componentClassID="Microsoft.OLEDBSource"
-                  contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
-                  description="OLE DB Source"
-                  name="OLE DB Source Kostuemcharaktereigenschaft"
-                  usesDispositions="true"
-                  version="7">
-                  <properties>
-                    <property
-                      dataType="System.Int32"
-                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
-                      name="CommandTimeout">0</property>
-                    <property
-                      dataType="System.String"
-                      description="Specifies the name of the database object used to open a rowset."
-                      name="OpenRowset">[dbo].[kostuemcharaktereigenschaft]</property>
-                    <property
-                      dataType="System.String"
-                      description="Specifies the variable that contains the name of the database object used to open a rowset."
-                      name="OpenRowsetVariable"></property>
-                    <property
-                      dataType="System.String"
-                      description="The SQL command to be executed."
-                      name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT        kostuem.ID, kostuemcharaktereigenschaft.Charaktereigenschaft
-FROM            kostuem INNER JOIN
-                         kostuemcharaktereigenschaft ON kostuem.KostuemID = kostuemcharaktereigenschaft.KostuemID AND kostuem.RollenID = kostuemcharaktereigenschaft.RollenID AND 
-                         kostuem.FilmID = kostuemcharaktereigenschaft.FilmID</property>
-                    <property
-                      dataType="System.String"
-                      description="The variable that contains the SQL command to be executed."
-                      name="SqlCommandVariable"></property>
-                    <property
-                      dataType="System.Int32"
-                      description="Specifies the column code page to use when code page information is unavailable from the data source."
-                      name="DefaultCodePage">1252</property>
-                    <property
-                      dataType="System.Boolean"
-                      description="Forces the use of the DefaultCodePage property value when describing character data."
-                      name="AlwaysUseDefaultCodePage">false</property>
-                    <property
-                      dataType="System.Int32"
-                      description="Specifies the mode used to access the database."
-                      name="AccessMode"
-                      typeConverter="AccessMode">2</property>
-                    <property
-                      dataType="System.String"
-                      description="The mappings between the parameters in the SQL command and variables."
-                      name="ParameterMapping"></property>
-                  </properties>
-                  <connections>
-                    <connection
-                      refId="Package\Union Charaktereigenschaft\Union Charaktereigenschaft\OLE DB Source Kostuemcharaktereigenschaft.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[muse_analytics]"
-                      connectionManagerRefId="Package.ConnectionManagers[muse_analytics]"
-                      description="The OLE DB runtime connection used to access the database."
-                      name="OleDbConnection" />
-                  </connections>
-                  <outputs>
-                    <output
-                      refId="Package\Union Charaktereigenschaft\Union Charaktereigenschaft\OLE DB Source Kostuemcharaktereigenschaft.Outputs[OLE DB Source Output]"
-                      name="OLE DB Source Output">
-                      <outputColumns>
-                        <outputColumn
-                          refId="Package\Union Charaktereigenschaft\Union Charaktereigenschaft\OLE DB Source Kostuemcharaktereigenschaft.Outputs[OLE DB Source Output].Columns[Charaktereigenschaft]"
-                          dataType="wstr"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Union Charaktereigenschaft\Union Charaktereigenschaft\OLE DB Source Kostuemcharaktereigenschaft.Outputs[OLE DB Source Output].ExternalColumns[Charaktereigenschaft]"
-                          length="45"
-                          lineageId="Package\Union Charaktereigenschaft\Union Charaktereigenschaft\OLE DB Source Kostuemcharaktereigenschaft.Outputs[OLE DB Source Output].Columns[Charaktereigenschaft]"
-                          name="Charaktereigenschaft"
-                          truncationRowDisposition="FailComponent" />
-                        <outputColumn
-                          refId="Package\Union Charaktereigenschaft\Union Charaktereigenschaft\OLE DB Source Kostuemcharaktereigenschaft.Outputs[OLE DB Source Output].Columns[ID]"
-                          dataType="i4"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Union Charaktereigenschaft\Union Charaktereigenschaft\OLE DB Source Kostuemcharaktereigenschaft.Outputs[OLE DB Source Output].ExternalColumns[ID]"
-                          lineageId="Package\Union Charaktereigenschaft\Union Charaktereigenschaft\OLE DB Source Kostuemcharaktereigenschaft.Outputs[OLE DB Source Output].Columns[ID]"
-                          name="ID"
-                          truncationRowDisposition="FailComponent" />
-                      </outputColumns>
-                      <externalMetadataColumns
-                        isUsed="True">
-                        <externalMetadataColumn
-                          refId="Package\Union Charaktereigenschaft\Union Charaktereigenschaft\OLE DB Source Kostuemcharaktereigenschaft.Outputs[OLE DB Source Output].ExternalColumns[Charaktereigenschaft]"
-                          dataType="wstr"
-                          length="45"
-                          name="Charaktereigenschaft" />
-                        <externalMetadataColumn
-                          refId="Package\Union Charaktereigenschaft\Union Charaktereigenschaft\OLE DB Source Kostuemcharaktereigenschaft.Outputs[OLE DB Source Output].ExternalColumns[ID]"
-                          dataType="i4"
-                          name="ID" />
-                      </externalMetadataColumns>
-                    </output>
-                    <output
-                      refId="Package\Union Charaktereigenschaft\Union Charaktereigenschaft\OLE DB Source Kostuemcharaktereigenschaft.Outputs[OLE DB Source Error Output]"
-                      isErrorOut="true"
-                      name="OLE DB Source Error Output">
-                      <outputColumns>
-                        <outputColumn
-                          refId="Package\Union Charaktereigenschaft\Union Charaktereigenschaft\OLE DB Source Kostuemcharaktereigenschaft.Outputs[OLE DB Source Error Output].Columns[ID]"
-                          dataType="i4"
-                          lineageId="Package\Union Charaktereigenschaft\Union Charaktereigenschaft\OLE DB Source Kostuemcharaktereigenschaft.Outputs[OLE DB Source Error Output].Columns[ID]"
-                          name="ID" />
-                        <outputColumn
-                          refId="Package\Union Charaktereigenschaft\Union Charaktereigenschaft\OLE DB Source Kostuemcharaktereigenschaft.Outputs[OLE DB Source Error Output].Columns[Charaktereigenschaft]"
-                          dataType="wstr"
-                          length="45"
-                          lineageId="Package\Union Charaktereigenschaft\Union Charaktereigenschaft\OLE DB Source Kostuemcharaktereigenschaft.Outputs[OLE DB Source Error Output].Columns[Charaktereigenschaft]"
-                          name="Charaktereigenschaft" />
-                        <outputColumn
-                          refId="Package\Union Charaktereigenschaft\Union Charaktereigenschaft\OLE DB Source Kostuemcharaktereigenschaft.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
-                          dataType="i4"
-                          lineageId="Package\Union Charaktereigenschaft\Union Charaktereigenschaft\OLE DB Source Kostuemcharaktereigenschaft.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
-                          name="ErrorCode"
-                          specialFlags="1" />
-                        <outputColumn
-                          refId="Package\Union Charaktereigenschaft\Union Charaktereigenschaft\OLE DB Source Kostuemcharaktereigenschaft.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
-                          dataType="i4"
-                          lineageId="Package\Union Charaktereigenschaft\Union Charaktereigenschaft\OLE DB Source Kostuemcharaktereigenschaft.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
-                          name="ErrorColumn"
-                          specialFlags="2" />
-                      </outputColumns>
-                      <externalMetadataColumns />
-                    </output>
-                  </outputs>
-                </component>
-                <component
-                  refId="Package\Union Charaktereigenschaft\Union Charaktereigenschaft\OLE DB Source Rolledominantecharaktereigenschaft"
-                  componentClassID="Microsoft.OLEDBSource"
-                  contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
-                  description="OLE DB Source"
-                  name="OLE DB Source Rolledominantecharaktereigenschaft"
-                  usesDispositions="true"
-                  version="7">
-                  <properties>
-                    <property
-                      dataType="System.Int32"
-                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
-                      name="CommandTimeout">0</property>
-                    <property
-                      dataType="System.String"
-                      description="Specifies the name of the database object used to open a rowset."
-                      name="OpenRowset">[dbo].[rolledominantecharaktereigenschaft]</property>
-                    <property
-                      dataType="System.String"
-                      description="Specifies the variable that contains the name of the database object used to open a rowset."
-                      name="OpenRowsetVariable"></property>
-                    <property
-                      dataType="System.String"
-                      description="The SQL command to be executed."
-                      name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT        kostuem.ID, rolledominantecharaktereigenschaft.DominanteCharaktereigenschaft AS Charaktereigenschaft
-FROM            rolledominantecharaktereigenschaft INNER JOIN
-                         kostuem ON rolledominantecharaktereigenschaft.RollenID = kostuem.RollenID AND rolledominantecharaktereigenschaft.FilmID = kostuem.FilmID</property>
-                    <property
-                      dataType="System.String"
-                      description="The variable that contains the SQL command to be executed."
-                      name="SqlCommandVariable"></property>
-                    <property
-                      dataType="System.Int32"
-                      description="Specifies the column code page to use when code page information is unavailable from the data source."
-                      name="DefaultCodePage">1252</property>
-                    <property
-                      dataType="System.Boolean"
-                      description="Forces the use of the DefaultCodePage property value when describing character data."
-                      name="AlwaysUseDefaultCodePage">false</property>
-                    <property
-                      dataType="System.Int32"
-                      description="Specifies the mode used to access the database."
-                      name="AccessMode"
-                      typeConverter="AccessMode">2</property>
-                    <property
-                      dataType="System.String"
-                      description="The mappings between the parameters in the SQL command and variables."
-                      name="ParameterMapping"></property>
-                  </properties>
-                  <connections>
-                    <connection
-                      refId="Package\Union Charaktereigenschaft\Union Charaktereigenschaft\OLE DB Source Rolledominantecharaktereigenschaft.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[muse_analytics]"
-                      connectionManagerRefId="Package.ConnectionManagers[muse_analytics]"
-                      description="The OLE DB runtime connection used to access the database."
-                      name="OleDbConnection" />
-                  </connections>
-                  <outputs>
-                    <output
-                      refId="Package\Union Charaktereigenschaft\Union Charaktereigenschaft\OLE DB Source Rolledominantecharaktereigenschaft.Outputs[OLE DB Source Output]"
-                      name="OLE DB Source Output">
-                      <outputColumns>
-                        <outputColumn
-                          refId="Package\Union Charaktereigenschaft\Union Charaktereigenschaft\OLE DB Source Rolledominantecharaktereigenschaft.Outputs[OLE DB Source Output].Columns[ID]"
-                          dataType="i4"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Union Charaktereigenschaft\Union Charaktereigenschaft\OLE DB Source Rolledominantecharaktereigenschaft.Outputs[OLE DB Source Output].ExternalColumns[ID]"
-                          lineageId="Package\Union Charaktereigenschaft\Union Charaktereigenschaft\OLE DB Source Rolledominantecharaktereigenschaft.Outputs[OLE DB Source Output].Columns[ID]"
-                          name="ID"
-                          truncationRowDisposition="FailComponent" />
-                        <outputColumn
-                          refId="Package\Union Charaktereigenschaft\Union Charaktereigenschaft\OLE DB Source Rolledominantecharaktereigenschaft.Outputs[OLE DB Source Output].Columns[Charaktereigenschaft]"
-                          dataType="wstr"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Union Charaktereigenschaft\Union Charaktereigenschaft\OLE DB Source Rolledominantecharaktereigenschaft.Outputs[OLE DB Source Output].ExternalColumns[Charaktereigenschaft]"
-                          length="45"
-                          lineageId="Package\Union Charaktereigenschaft\Union Charaktereigenschaft\OLE DB Source Rolledominantecharaktereigenschaft.Outputs[OLE DB Source Output].Columns[Charaktereigenschaft]"
-                          name="Charaktereigenschaft"
-                          truncationRowDisposition="FailComponent" />
-                      </outputColumns>
-                      <externalMetadataColumns
-                        isUsed="True">
-                        <externalMetadataColumn
-                          refId="Package\Union Charaktereigenschaft\Union Charaktereigenschaft\OLE DB Source Rolledominantecharaktereigenschaft.Outputs[OLE DB Source Output].ExternalColumns[ID]"
-                          dataType="i4"
-                          name="ID" />
-                        <externalMetadataColumn
-                          refId="Package\Union Charaktereigenschaft\Union Charaktereigenschaft\OLE DB Source Rolledominantecharaktereigenschaft.Outputs[OLE DB Source Output].ExternalColumns[Charaktereigenschaft]"
-                          dataType="wstr"
-                          length="45"
-                          name="Charaktereigenschaft" />
-                      </externalMetadataColumns>
-                    </output>
-                    <output
-                      refId="Package\Union Charaktereigenschaft\Union Charaktereigenschaft\OLE DB Source Rolledominantecharaktereigenschaft.Outputs[OLE DB Source Error Output]"
-                      isErrorOut="true"
-                      name="OLE DB Source Error Output">
-                      <outputColumns>
-                        <outputColumn
-                          refId="Package\Union Charaktereigenschaft\Union Charaktereigenschaft\OLE DB Source Rolledominantecharaktereigenschaft.Outputs[OLE DB Source Error Output].Columns[ID]"
-                          dataType="i4"
-                          lineageId="Package\Union Charaktereigenschaft\Union Charaktereigenschaft\OLE DB Source Rolledominantecharaktereigenschaft.Outputs[OLE DB Source Error Output].Columns[ID]"
-                          name="ID" />
-                        <outputColumn
-                          refId="Package\Union Charaktereigenschaft\Union Charaktereigenschaft\OLE DB Source Rolledominantecharaktereigenschaft.Outputs[OLE DB Source Error Output].Columns[Charaktereigenschaft]"
-                          dataType="wstr"
-                          length="45"
-                          lineageId="Package\Union Charaktereigenschaft\Union Charaktereigenschaft\OLE DB Source Rolledominantecharaktereigenschaft.Outputs[OLE DB Source Error Output].Columns[Charaktereigenschaft]"
-                          name="Charaktereigenschaft" />
-                        <outputColumn
-                          refId="Package\Union Charaktereigenschaft\Union Charaktereigenschaft\OLE DB Source Rolledominantecharaktereigenschaft.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
-                          dataType="i4"
-                          lineageId="Package\Union Charaktereigenschaft\Union Charaktereigenschaft\OLE DB Source Rolledominantecharaktereigenschaft.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
-                          name="ErrorCode"
-                          specialFlags="1" />
-                        <outputColumn
-                          refId="Package\Union Charaktereigenschaft\Union Charaktereigenschaft\OLE DB Source Rolledominantecharaktereigenschaft.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
-                          dataType="i4"
-                          lineageId="Package\Union Charaktereigenschaft\Union Charaktereigenschaft\OLE DB Source Rolledominantecharaktereigenschaft.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
-                          name="ErrorColumn"
-                          specialFlags="2" />
-                      </outputColumns>
-                      <externalMetadataColumns />
-                    </output>
-                  </outputs>
-                </component>
-                <component
-                  refId="Package\Union Charaktereigenschaft\Union Charaktereigenschaft\Union All"
-                  componentClassID="Microsoft.UnionAll"
-                  contactInfo="Union All;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
-                  description="Combines rows from multiple data flows without sorting. For example, add rows back to a data flow after correction of errors. If sorting is important, we recommend using the Merge transformation."
-                  name="Union All"
-                  version="1">
-                  <inputs>
-                    <input
-                      refId="Package\Union Charaktereigenschaft\Union Charaktereigenschaft\Union All.Inputs[Union All Input 1]"
-                      name="Union All Input 1">
-                      <inputColumns>
-                        <inputColumn
-                          refId="Package\Union Charaktereigenschaft\Union Charaktereigenschaft\Union All.Inputs[Union All Input 1].Columns[ID]"
-                          cachedDataType="i4"
-                          cachedName="ID"
-                          lineageId="Package\Union Charaktereigenschaft\Union Charaktereigenschaft\OLE DB Source Rolledominantecharaktereigenschaft.Outputs[OLE DB Source Output].Columns[ID]">
-                          <properties>
-                            <property
-                              containsID="true"
-                              dataType="System.Int32"
-                              description="Output column lineage ID"
-                              name="OutputColumnLineageID">#{Package\Union Charaktereigenschaft\Union Charaktereigenschaft\Union All.Outputs[Union All Output 1].Columns[ID]}</property>
-                          </properties>
-                        </inputColumn>
-                        <inputColumn
-                          refId="Package\Union Charaktereigenschaft\Union Charaktereigenschaft\Union All.Inputs[Union All Input 1].Columns[Charaktereigenschaft]"
-                          cachedDataType="wstr"
-                          cachedLength="45"
-                          cachedName="Charaktereigenschaft"
-                          lineageId="Package\Union Charaktereigenschaft\Union Charaktereigenschaft\OLE DB Source Rolledominantecharaktereigenschaft.Outputs[OLE DB Source Output].Columns[Charaktereigenschaft]">
-                          <properties>
-                            <property
-                              containsID="true"
-                              dataType="System.Int32"
-                              description="Output column lineage ID"
-                              name="OutputColumnLineageID">#{Package\Union Charaktereigenschaft\Union Charaktereigenschaft\Union All.Outputs[Union All Output 1].Columns[Charaktereigenschaft]}</property>
-                          </properties>
-                        </inputColumn>
-                      </inputColumns>
-                      <externalMetadataColumns />
-                    </input>
-                    <input
-                      refId="Package\Union Charaktereigenschaft\Union Charaktereigenschaft\Union All.Inputs[Union All Input 2]"
-                      hasSideEffects="true"
-                      name="Union All Input 2">
-                      <inputColumns>
-                        <inputColumn
-                          refId="Package\Union Charaktereigenschaft\Union Charaktereigenschaft\Union All.Inputs[Union All Input 2].Columns[Charaktereigenschaft]"
-                          cachedDataType="wstr"
-                          cachedLength="45"
-                          cachedName="Charaktereigenschaft"
-                          lineageId="Package\Union Charaktereigenschaft\Union Charaktereigenschaft\OLE DB Source Kostuemcharaktereigenschaft.Outputs[OLE DB Source Output].Columns[Charaktereigenschaft]">
-                          <properties>
-                            <property
-                              containsID="true"
-                              dataType="System.Int32"
-                              description="Output column lineage ID"
-                              name="OutputColumnLineageID">#{Package\Union Charaktereigenschaft\Union Charaktereigenschaft\Union All.Outputs[Union All Output 1].Columns[Charaktereigenschaft]}</property>
-                          </properties>
-                        </inputColumn>
-                        <inputColumn
-                          refId="Package\Union Charaktereigenschaft\Union Charaktereigenschaft\Union All.Inputs[Union All Input 2].Columns[ID]"
-                          cachedDataType="i4"
-                          cachedName="ID"
-                          lineageId="Package\Union Charaktereigenschaft\Union Charaktereigenschaft\OLE DB Source Kostuemcharaktereigenschaft.Outputs[OLE DB Source Output].Columns[ID]">
-                          <properties>
-                            <property
-                              containsID="true"
-                              dataType="System.Int32"
-                              description="Output column lineage ID"
-                              name="OutputColumnLineageID">#{Package\Union Charaktereigenschaft\Union Charaktereigenschaft\Union All.Outputs[Union All Output 1].Columns[ID]}</property>
-                          </properties>
-                        </inputColumn>
-                      </inputColumns>
-                      <externalMetadataColumns />
-                    </input>
-                    <input
-                      refId="Package\Union Charaktereigenschaft\Union Charaktereigenschaft\Union All.Inputs[Union All Input 3]"
-                      dangling="true"
-                      hasSideEffects="true"
-                      name="Union All Input 3">
-                      <externalMetadataColumns />
-                    </input>
-                  </inputs>
-                  <outputs>
-                    <output
-                      refId="Package\Union Charaktereigenschaft\Union Charaktereigenschaft\Union All.Outputs[Union All Output 1]"
-                      name="Union All Output 1">
-                      <outputColumns>
-                        <outputColumn
-                          refId="Package\Union Charaktereigenschaft\Union Charaktereigenschaft\Union All.Outputs[Union All Output 1].Columns[ID]"
-                          dataType="i4"
-                          lineageId="Package\Union Charaktereigenschaft\Union Charaktereigenschaft\Union All.Outputs[Union All Output 1].Columns[ID]"
-                          name="ID" />
-                        <outputColumn
-                          refId="Package\Union Charaktereigenschaft\Union Charaktereigenschaft\Union All.Outputs[Union All Output 1].Columns[Charaktereigenschaft]"
-                          dataType="wstr"
-                          length="45"
-                          lineageId="Package\Union Charaktereigenschaft\Union Charaktereigenschaft\Union All.Outputs[Union All Output 1].Columns[Charaktereigenschaft]"
-                          name="Charaktereigenschaft" />
-                      </outputColumns>
-                      <externalMetadataColumns />
-                    </output>
-                  </outputs>
-                </component>
-              </components>
-              <paths>
-                <path
-                  refId="Package\Union Charaktereigenschaft\Union Charaktereigenschaft.Paths[OLE DB Source Output]"
-                  endId="Package\Union Charaktereigenschaft\Union Charaktereigenschaft\Union All.Inputs[Union All Input 1]"
-                  name="OLE DB Source Output"
-                  startId="Package\Union Charaktereigenschaft\Union Charaktereigenschaft\OLE DB Source Rolledominantecharaktereigenschaft.Outputs[OLE DB Source Output]" />
-                <path
-                  refId="Package\Union Charaktereigenschaft\Union Charaktereigenschaft.Paths[OLE DB Source Output1]"
-                  endId="Package\Union Charaktereigenschaft\Union Charaktereigenschaft\Union All.Inputs[Union All Input 2]"
-                  name="OLE DB Source Output"
-                  startId="Package\Union Charaktereigenschaft\Union Charaktereigenschaft\OLE DB Source Kostuemcharaktereigenschaft.Outputs[OLE DB Source Output]" />
-                <path
-                  refId="Package\Union Charaktereigenschaft\Union Charaktereigenschaft.Paths[Union All Output 1]"
-                  endId="Package\Union Charaktereigenschaft\Union Charaktereigenschaft\OLE DB Destination.Inputs[OLE DB Destination Input]"
-                  name="Union All Output 1"
-                  startId="Package\Union Charaktereigenschaft\Union Charaktereigenschaft\Union All.Outputs[Union All Output 1]" />
-              </paths>
-            </pipeline>
-          </DTS:ObjectData>
-        </DTS:Executable>
-      </DTS:Executables>
-      <DTS:PrecedenceConstraints>
-        <DTS:PrecedenceConstraint
-          DTS:refId="Package\Union Charaktereigenschaft.PrecedenceConstraints[Constraint 2]"
-          DTS:CreationName=""
-          DTS:DTSID="{0655EF43-97BA-4CBB-9DD2-31079E65D672}"
-          DTS:From="Package\Union Charaktereigenschaft\Create Charakter Table"
-          DTS:LogicalAnd="True"
-          DTS:ObjectName="Constraint 2"
-          DTS:To="Package\Union Charaktereigenschaft\Union Charaktereigenschaft" />
-      </DTS:PrecedenceConstraints>
-    </DTS:Executable>
   </DTS:Executables>
   <DTS:PrecedenceConstraints>
     <DTS:PrecedenceConstraint
@@ -4806,11 +4376,11 @@ FROM            rolledominantecharaktereigenschaft INNER JOIN
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 2]"
       DTS:CreationName=""
-      DTS:DTSID="{C7842D00-060B-4B25-A30B-9C47FDAF800C}"
+      DTS:DTSID="{90CAD339-CB64-4E06-8BA1-F9C9F450C213}"
       DTS:From="Package\Basic Preparation"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 2"
-      DTS:To="Package\Union Charaktereigenschaft" />
+      DTS:To="Package\Reporting" />
   </DTS:PrecedenceConstraints>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
@@ -4909,7 +4479,7 @@ FROM            rolledominantecharaktereigenschaft INNER JOIN
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="310,409"
+          PanelSize="310,408"
           Size="310,452"
           Id="Package\Basic Preparation"
           TopLeft="153,140" />
@@ -4920,10 +4490,10 @@ FROM            rolledominantecharaktereigenschaft INNER JOIN
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="170,103"
+          PanelSize="170,102"
           Size="170,146"
           Id="Package\Hierarchy"
-          TopLeft="619,596" />
+          TopLeft="582,365" />
         <NodeLayout
           Size="187,42"
           Id="Package\Stereotyp\Create Stereotyp Table"
@@ -4957,73 +4527,36 @@ FROM            rolledominantecharaktereigenschaft INNER JOIN
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="198,205"
+          PanelSize="198,204"
           Size="198,248"
           Id="Package\Stereotyp"
-          TopLeft="629,311" />
-        <NodeLayout
-          Size="188,42"
-          Id="Package\Union Charaktereigenschaft\Create Charakter Table"
-          TopLeft="16,5.5" />
-        <NodeLayout
-          Size="209,42"
-          Id="Package\Union Charaktereigenschaft\Union Charaktereigenschaft"
-          TopLeft="5.50000000000001,107.5" />
-        <EdgeLayout
-          Id="Package\Union Charaktereigenschaft.PrecedenceConstraints[Constraint 2]"
-          TopLeft="110,47.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <ContainerLayout
-          HeaderHeight="43"
-          IsExpanded="True"
-          PanelSize="220,205"
-          Size="220,248"
-          Id="Package\Union Charaktereigenschaft"
-          TopLeft="790,40" />
+          TopLeft="579,57" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="463,366">
+          TopLeft="463,292">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="166,69"
+              EndConnector="116,-111"
               Start="0,0"
-              End="158.5,69">
+              End="108.5,-111">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="79,0" />
+                    End="42.6455026455026,0" />
                   <mssgle:CubicBezierSegment
-                    Point1="79,0"
-                    Point2="83,0"
-                    Point3="83,4" />
+                    Point1="42.6455026455026,0"
+                    Point2="46.6455026455026,0"
+                    Point3="46.6455026455026,-4" />
                   <mssgle:LineSegment
-                    End="83,65" />
+                    End="46.6455026455026,-107" />
                   <mssgle:CubicBezierSegment
-                    Point1="83,65"
-                    Point2="83,69"
-                    Point3="87,69" />
+                    Point1="46.6455026455026,-107"
+                    Point2="46.6455026455026,-111"
+                    Point3="50.6455026455026,-111" />
                   <mssgle:LineSegment
-                    End="158.5,69" />
+                    End="108.5,-111" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -5034,30 +4567,18 @@ FROM            rolledominantecharaktereigenschaft INNER JOIN
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 1]"
-          TopLeft="463,477">
+          TopLeft="463,439">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="156,192"
+              EndConnector="119,0"
               Start="0,0"
-              End="148.5,192">
+              End="111.5,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="48.6099706744868,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="48.6099706744868,0"
-                    Point2="52.6099706744868,0"
-                    Point3="52.6099706744868,4" />
-                  <mssgle:LineSegment
-                    End="52.6099706744868,188" />
-                  <mssgle:CubicBezierSegment
-                    Point1="52.6099706744868,188"
-                    Point2="52.6099706744868,192"
-                    Point3="56.6099706744868,192" />
-                  <mssgle:LineSegment
-                    End="148.5,192" />
+                    End="111.5,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -5066,32 +4587,43 @@ FROM            rolledominantecharaktereigenschaft INNER JOIN
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <NodeLayout
+          Size="164,42"
+          Id="Package\Reporting\Invalid Timecodes"
+          TopLeft="5.5,5.5" />
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="175,102"
+          Size="175,146"
+          Id="Package\Reporting"
+          TopLeft="564,599" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 2]"
-          TopLeft="463,255">
+          TopLeft="463,477">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="327,-91"
+              EndConnector="101,195"
               Start="0,0"
-              End="319.5,-91">
+              End="93.5,195">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="106.278592375367,0" />
+                    End="30.0615835777126,0" />
                   <mssgle:CubicBezierSegment
-                    Point1="106.278592375367,0"
-                    Point2="110.278592375367,0"
-                    Point3="110.278592375367,-4" />
+                    Point1="30.0615835777126,0"
+                    Point2="34.0615835777126,0"
+                    Point3="34.0615835777126,4" />
                   <mssgle:LineSegment
-                    End="110.278592375367,-87" />
+                    End="34.0615835777126,191" />
                   <mssgle:CubicBezierSegment
-                    Point1="110.278592375367,-87"
-                    Point2="110.278592375367,-91"
-                    Point3="114.278592375367,-91" />
+                    Point1="34.0615835777126,191"
+                    Point2="34.0615835777126,195"
+                    Point3="38.0615835777126,195" />
                   <mssgle:LineSegment
-                    End="319.5,-91" />
+                    End="93.5,195" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -5109,31 +4641,35 @@ FROM            rolledominantecharaktereigenschaft INNER JOIN
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
+          Size="171,42"
+          Id="Package\Basic Preparation\Create Kostuem Table\OLE DB Destination"
+          TopLeft="794,288" />
+        <NodeLayout
           Size="150,42"
           Id="Package\Basic Preparation\Create Kostuem Table\OLE DB Source"
-          TopLeft="208,290" />
+          TopLeft="151,288" />
+        <NodeLayout
+          Size="150,42"
+          Id="Package\Basic Preparation\Create Kostuem Table\Add MUSE URL"
+          TopLeft="575,287" />
         <NodeLayout
           Size="163,42"
           Id="Package\Basic Preparation\Create Kostuem Table\Increment arbitrary ID column"
-          TopLeft="478,292" />
-        <NodeLayout
-          Size="171,42"
-          Id="Package\Basic Preparation\Create Kostuem Table\OLE DB Destination"
-          TopLeft="721,291" />
+          TopLeft="359,287" />
         <EdgeLayout
           Id="Package\Basic Preparation\Create Kostuem Table.Paths[Output 0]"
-          TopLeft="641,312.5">
+          TopLeft="522,308">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="80,0"
+              EndConnector="53,0"
               Start="0,0"
-              End="72.5,0">
+              End="45.5,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="72.5,0" />
+                    End="45.5,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -5146,18 +4682,42 @@ FROM            rolledominantecharaktereigenschaft INNER JOIN
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Basic Preparation\Create Kostuem Table.Paths[OLE DB Source Output]"
-          TopLeft="358,312">
+          TopLeft="301,308.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="120,0"
+              EndConnector="58,0"
               Start="0,0"
-              End="112.5,0">
+              End="50.5,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="112.5,0" />
+                    End="50.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Basic Preparation\Create Kostuem Table.Paths[Derived Column Output]"
+          TopLeft="725,308.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="69,0"
+              Start="0,0"
+              End="61.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="61.5,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -5172,7 +4732,7 @@ FROM            rolledominantecharaktereigenschaft INNER JOIN
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Basic Preparation\Create Kostuem Table\OLE DB Source">
+    design-time-name="Package\Basic Preparation\Create Kostuem Table\OLE DB Destination">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -5185,7 +4745,7 @@ FROM            rolledominantecharaktereigenschaft INNER JOIN
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Basic Preparation\Create Kostuem Table\OLE DB Destination">
+    design-time-name="Package\Basic Preparation\Create Kostuem Table\OLE DB Source">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -5304,165 +4864,6 @@ FROM            rolledominantecharaktereigenschaft INNER JOIN
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Stereotyp\Stereotyp Parser Flow\OLE DB Destination">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <TaskHost
-    design-time-name="Package\Union Charaktereigenschaft\Union Charaktereigenschaft">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
-        <NodeLayout
-          Size="324,42"
-          Id="Package\Union Charaktereigenschaft\Union Charaktereigenschaft\OLE DB Source Rolledominantecharaktereigenschaft"
-          TopLeft="92,86" />
-        <NodeLayout
-          Size="121,42"
-          Id="Package\Union Charaktereigenschaft\Union Charaktereigenschaft\Union All"
-          TopLeft="540,199" />
-        <NodeLayout
-          Size="292,42"
-          Id="Package\Union Charaktereigenschaft\Union Charaktereigenschaft\OLE DB Source Kostuemcharaktereigenschaft"
-          TopLeft="90,312" />
-        <NodeLayout
-          Size="171,42"
-          Id="Package\Union Charaktereigenschaft\Union Charaktereigenschaft\OLE DB Destination"
-          TopLeft="809,192" />
-        <EdgeLayout
-          Id="Package\Union Charaktereigenschaft\Union Charaktereigenschaft.Paths[Union All Output 1]"
-          TopLeft="661,216.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="148,0"
-              Start="0,0"
-              End="140.5,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="140.5,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Union Charaktereigenschaft\Union Charaktereigenschaft.Paths[OLE DB Source Output1]"
-          TopLeft="236,312">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="364.5,-71"
-              Start="0,0"
-              End="364.5,-63.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,-31.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,-31.5"
-                    Point2="0,-35.5"
-                    Point3="4,-35.5" />
-                  <mssgle:LineSegment
-                    End="360.5,-35.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="360.5,-35.5"
-                    Point2="364.5,-35.5"
-                    Point3="364.5,-39.5" />
-                  <mssgle:LineSegment
-                    End="364.5,-63.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Union Charaktereigenschaft\Union Charaktereigenschaft.Paths[OLE DB Source Output]"
-          TopLeft="254,128">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="346.5,71"
-              Start="0,0"
-              End="346.5,63.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,31.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,31.5"
-                    Point2="0,35.5"
-                    Point3="4,35.5" />
-                  <mssgle:LineSegment
-                    End="342.5,35.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="342.5,35.5"
-                    Point2="346.5,35.5"
-                    Point3="346.5,39.5" />
-                  <mssgle:LineSegment
-                    End="346.5,63.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\Union Charaktereigenschaft\Union Charaktereigenschaft\OLE DB Source Rolledominantecharaktereigenschaft">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Union Charaktereigenschaft\Union Charaktereigenschaft\OLE DB Source Kostuemcharaktereigenschaft">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Union Charaktereigenschaft\Union Charaktereigenschaft\OLE DB Destination">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
