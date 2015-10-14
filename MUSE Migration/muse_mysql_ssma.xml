@@ -84,8 +84,11 @@
 				<metabase-object object-name="$SourceDatabase$.rolle"/>
 				<metabase-object object-name="$SourceDatabase$.rolledominantecharaktereigenschaft"/>
 				<metabase-object object-name="$SourceDatabase$.rollefamilienstand"/>
+				<metabase-object object-name="$SourceDatabase$.rollenberufdomaene"/>
+				<metabase-object object-name="$SourceDatabase$.spielortdetaildomaene"/>
 				<metabase-object object-name="$SourceDatabase$.spielortdomaene"/>
 				<metabase-object object-name="$SourceDatabase$.spielzeitdomaene"/>
+				<metabase-object object-name="$SourceDatabase$.stereotypdomaene"/>
 				<metabase-object object-name="$SourceDatabase$.tageszeitdomaene"/>
 				<metabase-object object-name="$SourceDatabase$.teilelement"/>
 				<metabase-object object-name="$SourceDatabase$.teilelementdesign"/>
@@ -93,8 +96,6 @@
 				<metabase-object object-name="$SourceDatabase$.teilelementfarbe"/>
 				<metabase-object object-name="$SourceDatabase$.teilelementform"/>
 				<metabase-object object-name="$SourceDatabase$.teilelementmaterial"/>
-				<metabase-object object-name="$SourceDatabase$.teilelementmaterialbug"/>
-				<metabase-object object-name="$SourceDatabase$.teilelementmaterialbug_alt"/>
 				<metabase-object object-name="$SourceDatabase$.teilelementtrageweise"/>
 				<metabase-object object-name="$SourceDatabase$.teilelementzustand"/>
 				<metabase-object object-name="$SourceDatabase$.trageweisendomaene"/>
