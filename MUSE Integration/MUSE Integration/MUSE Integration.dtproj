@@ -26,11 +26,12 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">WIN-PMAUG1E77ME</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAxlPKhsccd0CQn9+eHDPbggAAAAACAAAAAAAQZgAAAAEAACAAAADvAhsPB3dlSNJrfuC6nFDHzC24Wnq6RTswcQkSqr9AQgAAAAAOgAAAAAIAACAAAADpQnQnuwU+RQ+lZQzB9GTrXy64NwdjJgiz34u7vJhw5ZAAAABi9QeLEz3HmUMneeJjI/kLEnkFr+rDV7GPOQPm1UFD+6ZKTxj4ABJgVk0WM7RMP9fo8eKCpc1HqM0/sqj0OTjVBU9hQqYmAx9LjqTtbUsGKJ9k12wfn7Zf8OvPim8xwVqHU5nJWZskXszG+yVKnKVv7q8FWKCZ+65SoaKu5IFpTLq9I3zGRdKviMewxGgJuXxAAAAA9QT3hEYZF2KSumKm1hBcyq6E6EE3Z92i4rhFkWM3d9CpkSAcQrti6okvz1md5zxOy3wJ+R0KTgdMs9zxbmuSYg==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAlOdMrcey2USnMyHoXTU+IQAAAAACAAAAAAAQZgAAAAEAACAAAAD/o0yhT46lW+r1ZKvV7mRU6Sid2SYKt+eUOo5ciJobWAAAAAAOgAAAAAIAACAAAAChnZeUJEBvwP0UOXfKzVX0SqYBPidd0xWv54RUDzpI1JAAAADgbOW4C6/tvH5hfpJyQsQXUzoWJC7GkwFslvTksRz6LvtDRl5hjfa/PD1V5vmyOhXmrl0Ir9rHzw2Cfn3xYQC3mElyu0KMDmQzSnYk7gTlg5KDaXEZf3glvmh8QffFhq4AtuRYzvt1utrJqth0/9ypSglPusKpxxMGFmeH8wrORo6jGdDmqcft0b/LVlCfnS5AAAAAv4iRV9IwIOmL20vaqT53vbf64GhHnWNKzPCwr7k9h3kQMc6LyUr3rrlzDIM7odMY13+yiKuEQmuPbQoWm9krrw==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
           <SSIS:Package SSIS:Name="Package.dtsx" SSIS:EntryPoint="1" />
+          <SSIS:Package SSIS:Name="MySQL Migration Package.dtsx" SSIS:EntryPoint="1" />
         </SSIS:Packages>
         <SSIS:ConnectionManagers />
         <SSIS:DeploymentInfo>
@@ -42,10 +43,10 @@
                 <SSIS:Property SSIS:Name="Name">Package</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">195</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">208</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{0D55E3A7-956B-4E91-84AD-6EAD2BAAAA2A}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{F05E6C07-4613-4037-991C-4E80B45811FF}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -300,6 +301,82 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
+                  </SSIS:Properties>
+                </SSIS:Parameter>
+              </SSIS:Parameters>
+            </SSIS:PackageMetaData>
+            <SSIS:PackageMetaData SSIS:Name="MySQL Migration Package.dtsx">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">{6BF8608A-FC86-45D3-B964-9EE0F26E91D3}</SSIS:Property>
+                <SSIS:Property SSIS:Name="Name">MySQL Migration Package</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">15</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionComments">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{AD5DA9BF-9C0B-4CAE-B08C-64AE432381D5}</SSIS:Property>
+                <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="ProtectionLevel">1</SSIS:Property>
+              </SSIS:Properties>
+              <SSIS:Parameters>
+                <SSIS:Parameter SSIS:Name="MigrationReportDir">
+                  <SSIS:Properties>
+                    <SSIS:Property SSIS:Name="ID">{A8F4A4B2-15A6-4515-8BEF-389C3CCA06BE}</SSIS:Property>
+                    <SSIS:Property SSIS:Name="CreationName">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="Description">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">.</SSIS:Property>
+                    <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
+                  </SSIS:Properties>
+                </SSIS:Parameter>
+                <SSIS:Parameter SSIS:Name="MigrationReportFilename">
+                  <SSIS:Properties>
+                    <SSIS:Property SSIS:Name="ID">{FB5DB594-00B7-4CC7-9BBD-FC7AEE1D1DDD}</SSIS:Property>
+                    <SSIS:Property SSIS:Name="CreationName">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="Description">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Required">1</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">Muse-MySQL-Migration-Report.xml</SSIS:Property>
+                    <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
+                  </SSIS:Properties>
+                </SSIS:Parameter>
+                <SSIS:Parameter SSIS:Name="CM.muse_mysql_ssma.xml.ConnectionString">
+                  <SSIS:Properties>
+                    <SSIS:Property SSIS:Name="ID">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="CreationName">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="Description">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">C:\Users\Administrator\Desktop\git\muse-patternmining\MUSE Migration\muse_mysql_ssma.xml</SSIS:Property>
+                    <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
+                  </SSIS:Properties>
+                </SSIS:Parameter>
+                <SSIS:Parameter SSIS:Name="CM.muse_mysql_ssma_config.xml.ConnectionString">
+                  <SSIS:Properties>
+                    <SSIS:Property SSIS:Name="ID">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="CreationName">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="Description">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">C:\Users\Administrator\Desktop\git\muse-patternmining\MUSE Migration\muse_mysql_ssma_config.xml</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
