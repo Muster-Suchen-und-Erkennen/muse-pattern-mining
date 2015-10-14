@@ -16,7 +16,7 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="20" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-5829" scrolltop="-2018" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="33390" y="24368" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="20" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-5829" scrolltop="-2018" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="33046" y="24368" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
               <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
             </font>
@@ -196,6 +196,22 @@
     <DataSourceViewID>dsv_kostuem_film_rolle</DataSourceViewID>
   </Source>
   <Columns>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="2d468046-99bd-4054-955b-9cafbcf21352">
+      <ID>Muse URL</ID>
+      <Name>Muse URL</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="da61bbce-a4d4-4d55-b952-e71b9bbd65a5">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e46a35fd-3f51-47fe-9d15-9fc85092fa5c">
+            <TableID>KostuemFilmRolle</TableID>
+            <ColumnID>MuseURL</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
     <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="3c0c658a-581e-4ac4-8860-144f0a2d7891">
       <ID>Film Genre 1</ID>
       <Name>Film Genre 1</Name>
@@ -736,12 +752,12 @@
       <Algorithm>Microsoft_Association_Rules</Algorithm>
       <AlgorithmParameters>
         <AlgorithmParameter>
-          <Name>MINIMUM_PROBABILITY</Name>
-          <Value xsi:type="xsd:double">0.1</Value>
+          <Name>MINIMUM_ITEMSET_SIZE</Name>
+          <Value xsi:type="xsd:int">2</Value>
         </AlgorithmParameter>
         <AlgorithmParameter>
-          <Name>MINIMUM_SUPPORT</Name>
-          <Value xsi:type="xsd:double">0.025</Value>
+          <Name>MINIMUM_PROBABILITY</Name>
+          <Value xsi:type="xsd:double">0.1</Value>
         </AlgorithmParameter>
       </AlgorithmParameters>
       <Columns>
@@ -764,20 +780,6 @@
             </Column>
           </Columns>
         </Column>
-        <Column dwd:design-time-name="2ed7178b-f7f9-4ed7-ad02-69f6c3111540">
-          <ID>Basiselement 3</ID>
-          <Name>Basiselement 3</Name>
-          <SourceColumnID>Basiselement 3</SourceColumnID>
-          <Usage>PredictOnly</Usage>
-          <Columns>
-            <Column dwd:design-time-name="54099d15-2f2a-447a-8467-4ceb5a9292ce">
-              <ID>Basiselementname L4</ID>
-              <Name>Basiselementname L4</Name>
-              <SourceColumnID>Basiselementname L4</SourceColumnID>
-              <Usage>Key</Usage>
-            </Column>
-          </Columns>
-        </Column>
         <Column dwd:design-time-name="85976763-11d2-496c-a07b-e25147d3e56f">
           <ID>Kostuem Charaktereigenschaft 3</ID>
           <Name>Kostuem Charaktereigenschaft 3</Name>
@@ -787,6 +789,20 @@
               <ID>Charaktereigenschaft L4</ID>
               <Name>Charaktereigenschaft L4</Name>
               <SourceColumnID>Charaktereigenschaft L4</SourceColumnID>
+              <Usage>Key</Usage>
+            </Column>
+          </Columns>
+        </Column>
+        <Column dwd:design-time-name="9e27c46e-2a89-4a34-9121-8be87221ba22">
+          <ID>Basiselement 5</ID>
+          <Name>Basiselement 5</Name>
+          <SourceColumnID>Basiselement 5</SourceColumnID>
+          <Usage>PredictOnly</Usage>
+          <Columns>
+            <Column dwd:design-time-name="35238eec-2f78-41dc-96af-0516c10b7899">
+              <ID>Basiselementname L6</ID>
+              <Name>Basiselementname L6</Name>
+              <SourceColumnID>Basiselementname L6</SourceColumnID>
               <Usage>Key</Usage>
             </Column>
           </Columns>
@@ -804,12 +820,12 @@
       <Algorithm>Microsoft_Association_Rules</Algorithm>
       <AlgorithmParameters>
         <AlgorithmParameter>
-          <Name>MINIMUM_PROBABILITY</Name>
-          <Value xsi:type="xsd:double">0.1</Value>
+          <Name>MINIMUM_ITEMSET_SIZE</Name>
+          <Value xsi:type="xsd:int">2</Value>
         </AlgorithmParameter>
         <AlgorithmParameter>
-          <Name>MINIMUM_SUPPORT</Name>
-          <Value xsi:type="xsd:double">0.025</Value>
+          <Name>MINIMUM_PROBABILITY</Name>
+          <Value xsi:type="xsd:double">0.1</Value>
         </AlgorithmParameter>
       </AlgorithmParameters>
       <Columns>
@@ -818,20 +834,6 @@
           <Name>ID</Name>
           <SourceColumnID>ID</SourceColumnID>
           <Usage>Key</Usage>
-        </Column>
-        <Column dwd:design-time-name="1d40bdc4-ccb1-413b-94ca-673be2ad3e54">
-          <ID>Basiselement 3</ID>
-          <Name>Basiselement 3</Name>
-          <SourceColumnID>Basiselement 3</SourceColumnID>
-          <Usage>Predict</Usage>
-          <Columns>
-            <Column dwd:design-time-name="0cd78560-f87f-4b16-a874-5b7e51158efc">
-              <ID>Basiselementname L4</ID>
-              <Name>Basiselementname L4</Name>
-              <SourceColumnID>Basiselementname L4</SourceColumnID>
-              <Usage>Key</Usage>
-            </Column>
-          </Columns>
         </Column>
         <Column dwd:design-time-name="a53de7a6-afbb-4c73-9598-03a5c1a5fa9e">
           <ID>Film Genre 1</ID>
@@ -859,6 +861,20 @@
             </Column>
           </Columns>
         </Column>
+        <Column dwd:design-time-name="b4f29c3c-4ba7-4d97-bee4-c64be0320f32">
+          <ID>Basiselement 5</ID>
+          <Name>Basiselement 5</Name>
+          <SourceColumnID>Basiselement 5</SourceColumnID>
+          <Usage>Predict</Usage>
+          <Columns>
+            <Column dwd:design-time-name="8e657384-5231-4616-ae5f-30664acae19f">
+              <ID>Basiselementname L6</ID>
+              <Name>Basiselementname L6</Name>
+              <SourceColumnID>Basiselementname L6</SourceColumnID>
+              <Usage>Key</Usage>
+            </Column>
+          </Columns>
+        </Column>
       </Columns>
       <AllowDrillThrough>true</AllowDrillThrough>
     </MiningModel>
@@ -872,12 +888,12 @@
       <Algorithm>Microsoft_Association_Rules</Algorithm>
       <AlgorithmParameters>
         <AlgorithmParameter>
-          <Name>MINIMUM_PROBABILITY</Name>
-          <Value xsi:type="xsd:double">0.1</Value>
+          <Name>MINIMUM_ITEMSET_SIZE</Name>
+          <Value xsi:type="xsd:int">2</Value>
         </AlgorithmParameter>
         <AlgorithmParameter>
-          <Name>MINIMUM_SUPPORT</Name>
-          <Value xsi:type="xsd:double">0.025</Value>
+          <Name>MINIMUM_PROBABILITY</Name>
+          <Value xsi:type="xsd:double">0.1</Value>
         </AlgorithmParameter>
       </AlgorithmParameters>
       <Columns>
@@ -891,20 +907,6 @@
           <ID>Geschlecht</ID>
           <Name>Geschlecht</Name>
           <SourceColumnID>Geschlecht</SourceColumnID>
-        </Column>
-        <Column dwd:design-time-name="c3e91a13-2130-497b-8689-f9d19c0e06c5">
-          <ID>Basiselement 3</ID>
-          <Name>Basiselement 3</Name>
-          <SourceColumnID>Basiselement 3</SourceColumnID>
-          <Usage>PredictOnly</Usage>
-          <Columns>
-            <Column dwd:design-time-name="e1c35a53-dffe-4d79-8820-13ff7a9866d2">
-              <ID>Basiselementname L4</ID>
-              <Name>Basiselementname L4</Name>
-              <SourceColumnID>Basiselementname L4</SourceColumnID>
-              <Usage>Key</Usage>
-            </Column>
-          </Columns>
         </Column>
         <Column dwd:design-time-name="c30e7291-702e-40f9-ab12-da3aac96a939">
           <ID>Film Genre 1</ID>
@@ -928,6 +930,20 @@
               <ID>Charaktereigenschaft L4</ID>
               <Name>Charaktereigenschaft L4</Name>
               <SourceColumnID>Charaktereigenschaft L4</SourceColumnID>
+              <Usage>Key</Usage>
+            </Column>
+          </Columns>
+        </Column>
+        <Column dwd:design-time-name="7460fe9b-3c51-42bf-b0e8-f7542bb7ace4">
+          <ID>Basiselement 5</ID>
+          <Name>Basiselement 5</Name>
+          <SourceColumnID>Basiselement 5</SourceColumnID>
+          <Usage>Predict</Usage>
+          <Columns>
+            <Column dwd:design-time-name="8773a185-6049-431d-94c9-05aa942049c4">
+              <ID>Basiselementname L6</ID>
+              <Name>Basiselementname L6</Name>
+              <SourceColumnID>Basiselementname L6</SourceColumnID>
               <Usage>Key</Usage>
             </Column>
           </Columns>

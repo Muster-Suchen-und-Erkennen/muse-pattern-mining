@@ -40,21 +40,21 @@
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.DataSourceView</Type>
-        <TimeStamp>0AZpA+u03JNw0r6RKgmA+cLahzk=13.10.2015 13:30:2111.09.2015 11:05:57</TimeStamp>
-        <ID>
-          <String>dsv_basiselemente</String>
-        </ID>
-      </ObjectSnapshot>
-      <ObjectSnapshot>
-        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
-        <TimeStamp>+LBk/d9zGa++ldPT5+BZXQzxC70=13.10.2015 13:30:2111.09.2015 11:05:57</TimeStamp>
+        <TimeStamp>dKPVFAu1s++T3gcl951HU4buvqk=14.10.2015 10:56:1211.09.2015 11:05:57</TimeStamp>
         <ID>
           <String>dsv_kostuem_film_rolle</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>FWt1k8fgX4NLW4hJZHOyPCkQ/nw=13.10.2015 18:58:0511.09.2015 11:05:57</TimeStamp>
+        <ID>
+          <String>dsv_basiselemente</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.MiningStructure</Type>
-        <TimeStamp>St7jVVOvt4o81DZu1nUKaITUX5s=12.10.2015 15:45:0617.09.2015 08:25:09</TimeStamp>
+        <TimeStamp>B0vVBeaUaVqsLNSAytE/3F41C6g=14.10.2015 11:01:1917.09.2015 08:25:09</TimeStamp>
         <ID>
           <String>ms_kostuem_1</String>
         </ID>
@@ -68,14 +68,14 @@
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.MiningStructure</Type>
-        <TimeStamp>OFFDjO+bpPJW/Jfghe2YBIWVDFY=12.10.2015 15:45:1817.09.2015 08:25:09</TimeStamp>
+        <TimeStamp>21VjgJIRs4nrALKOmDNwW046m1k=13.10.2015 19:06:4617.09.2015 08:25:09</TimeStamp>
         <ID>
           <String>ms_basiselement_farbe_1</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.MiningStructure</Type>
-        <TimeStamp>aHNyqFGC2R4/eeoArCw32FOO6Bs=12.10.2015 16:13:1517.09.2015 08:25:09</TimeStamp>
+        <TimeStamp>ROyh635gCAFo0JkRioO+nR8Ivf4=14.10.2015 11:09:2517.09.2015 08:25:09</TimeStamp>
         <ID>
           <String>ms_kostuem_2</String>
         </ID>
@@ -92,5 +92,5 @@
   </Snapshot>
   <AssemblyLocations />
   <ProcessingComplete>true</ProcessingComplete>
-  <LastDeployed>2015-10-13T11:31:04.24Z</LastDeployed>
+  <LastDeployed>2015-10-14T09:09:30.35Z</LastDeployed>
 </DeploymentSnapshot>
