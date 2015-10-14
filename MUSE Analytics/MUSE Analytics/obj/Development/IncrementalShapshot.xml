@@ -40,42 +40,42 @@
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.DataSourceView</Type>
-        <TimeStamp>ktpO4ZUM4HGi8T+lMWB7YUamgpM=18.09.2015 10:25:5411.09.2015 11:05:57</TimeStamp>
+        <TimeStamp>dKPVFAu1s++T3gcl951HU4buvqk=14.10.2015 10:56:1211.09.2015 11:05:57</TimeStamp>
         <ID>
           <String>dsv_kostuem_film_rolle</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.DataSourceView</Type>
-        <TimeStamp>RALgV79aamk43uN2aQ9qKAJ967s=18.09.2015 12:47:3611.09.2015 11:05:57</TimeStamp>
+        <TimeStamp>FWt1k8fgX4NLW4hJZHOyPCkQ/nw=13.10.2015 18:58:0511.09.2015 11:05:57</TimeStamp>
         <ID>
           <String>dsv_basiselemente</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.MiningStructure</Type>
-        <TimeStamp>GxyuyJ0SrYkCA8JCPlSsw8apFdk=19.09.2015 10:17:1317.09.2015 08:25:09</TimeStamp>
+        <TimeStamp>B0vVBeaUaVqsLNSAytE/3F41C6g=14.10.2015 11:01:1917.09.2015 08:25:09</TimeStamp>
         <ID>
           <String>ms_kostuem_1</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.MiningStructure</Type>
-        <TimeStamp>bUOaRWIEjptuQoLw/wdXQ2B1z90=18.09.2015 13:46:5417.09.2015 08:25:09</TimeStamp>
+        <TimeStamp>3EQks2kYp6uv9zHyjNHrIr0TYZg=12.10.2015 15:45:0617.09.2015 08:25:09</TimeStamp>
         <ID>
           <String>ms_basiselement_zustand_1</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.MiningStructure</Type>
-        <TimeStamp>rq+YDQOY42+uorIAYxWEmi8aN+Y=18.09.2015 13:46:5417.09.2015 08:25:09</TimeStamp>
+        <TimeStamp>21VjgJIRs4nrALKOmDNwW046m1k=13.10.2015 19:06:4617.09.2015 08:25:09</TimeStamp>
         <ID>
           <String>ms_basiselement_farbe_1</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.MiningStructure</Type>
-        <TimeStamp>kRt6/NmwmEwyCwmJ1GUQKrr6+XQ=18.09.2015 14:24:1517.09.2015 08:25:09</TimeStamp>
+        <TimeStamp>ROyh635gCAFo0JkRioO+nR8Ivf4=14.10.2015 11:09:2517.09.2015 08:25:09</TimeStamp>
         <ID>
           <String>ms_kostuem_2</String>
         </ID>
@@ -92,5 +92,5 @@
   </Snapshot>
   <AssemblyLocations />
   <ProcessingComplete>true</ProcessingComplete>
-  <LastDeployed>2015-09-19T08:17:38.526667Z</LastDeployed>
+  <LastDeployed>2015-10-14T09:09:30.35Z</LastDeployed>
 </DeploymentSnapshot>

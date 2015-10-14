@@ -16,7 +16,7 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="16" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-10753" scrolltop="-4529" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="32332" y="19738" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="16" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-10753" scrolltop="-4529" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="34740" y="24368" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
               <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
             </font>
@@ -499,44 +499,6 @@
               <Source xsi:type="ColumnBinding" dwd:design-time-name="fc6ccea4-588b-4e33-be41-8961f4a994ab">
                 <TableID>dbo_basiselementzustand</TableID>
                 <ColumnID>Zustandsname</ColumnID>
-              </Source>
-            </KeyColumn>
-          </KeyColumns>
-        </Column>
-      </Columns>
-    </Column>
-    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="307d07e4-48ca-4542-8013-14b47fd116f2">
-      <Annotations>
-        <Annotation>
-          <Name>MDXFilterComponent</Name>
-        </Annotation>
-      </Annotations>
-      <ID>Charakter</ID>
-      <Name>Charakter</Name>
-      <ForeignKeyColumns>
-        <ForeignKeyColumn dwd:design-time-name="88851d12-bafa-4371-a6eb-e3b3673d295f">
-          <DataType>Integer</DataType>
-          <DataSize>-1</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="5e39419e-1948-4753-8867-568abff68659">
-            <TableID>Charakter</TableID>
-            <ColumnID>BasiselementID</ColumnID>
-          </Source>
-        </ForeignKeyColumn>
-      </ForeignKeyColumns>
-      <Columns>
-        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="c592d073-72a1-430b-b022-67b2adfce3f3">
-          <ID>Charaktereigenschaft</ID>
-          <Name>Charaktereigenschaft</Name>
-          <IsKey>true</IsKey>
-          <Type>Text</Type>
-          <Content>Key</Content>
-          <KeyColumns>
-            <KeyColumn dwd:design-time-name="e9339795-a65c-4135-a6d0-9c8487611148">
-              <DataType>WChar</DataType>
-              <DataSize>45</DataSize>
-              <Source xsi:type="ColumnBinding" dwd:design-time-name="a1b00e08-3ac3-4343-89d9-a525fe9853ac">
-                <TableID>Charakter</TableID>
-                <ColumnID>Charaktereigenschaft</ColumnID>
               </Source>
             </KeyColumn>
           </KeyColumns>

@@ -16,7 +16,7 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="24" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-5829" scrolltop="-2018" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="32332" y="19738" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="20" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-5829" scrolltop="-2018" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="33046" y="24368" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
               <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
             </font>
@@ -27,7 +27,7 @@
           <layoutmanager>
             <ddsxmlobj />
           </layoutmanager>
-          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="RolleCharaktereigenschaft" left="12239" top="5839" logicalid="12" controlid="1" masterid="0" hint1="0" hint2="0" width="5239" height="1879" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="RolleCharaktereigenschaft" left="12239" top="5839" logicalid="10" controlid="1" masterid="0" hint1="0" hint2="0" width="5239" height="1879" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
             <control>
               <ddsxmlobjectstreaminitwrapper binary="000a00007714000057070000" />
             </control>
@@ -38,7 +38,7 @@
             </layoutobject>
             <shape groupshapeid="0" groupnode="0" />
           </ddscontrol>
-          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="KostuemFilmRolle" left="5420" top="4279" logicalid="13" controlid="2" masterid="0" hint1="0" hint2="0" width="4419" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="KostuemFilmRolle" left="5420" top="4279" logicalid="11" controlid="2" masterid="0" hint1="0" hint2="0" width="4419" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
             <control>
               <ddsxmlobjectstreaminitwrapper binary="000a00004311000088130000" />
             </control>
@@ -49,7 +49,7 @@
             </layoutobject>
             <shape groupshapeid="0" groupnode="0" />
           </ddscontrol>
-          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="FilmGenre" left="20" top="5839" logicalid="14" controlid="3" masterid="0" hint1="0" hint2="0" width="3000" height="1879" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="FilmGenre" left="20" top="5839" logicalid="12" controlid="3" masterid="0" hint1="0" hint2="0" width="3000" height="1879" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
             <control>
               <ddsxmlobjectstreaminitwrapper binary="000a0000b80b000057070000" />
             </control>
@@ -60,9 +60,9 @@
             </layoutobject>
             <shape groupshapeid="0" groupnode="0" />
           </ddscontrol>
-          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="Basiselement" left="5857" top="11679" logicalid="15" controlid="4" masterid="0" hint1="0" hint2="0" width="3545" height="1879" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="Basiselement" left="5857" top="11679" logicalid="13" controlid="4" masterid="0" hint1="0" hint2="0" width="3545" height="3466" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
             <control>
-              <ddsxmlobjectstreaminitwrapper binary="000a0000d90d000057070000" />
+              <ddsxmlobjectstreaminitwrapper binary="000a0000d90d00008a0d0000" />
             </control>
             <layoutobject>
               <ddsxmlobj>
@@ -71,7 +71,7 @@
             </layoutobject>
             <shape groupshapeid="0" groupnode="0" />
           </ddscontrol>
-          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="KostuemCharaktereigenschaft" left="5685" top="0" logicalid="16" controlid="5" masterid="0" hint1="0" hint2="0" width="3889" height="1879" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="KostuemCharaktereigenschaft" left="5685" top="0" logicalid="14" controlid="5" masterid="0" hint1="0" hint2="0" width="3889" height="1879" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
             <control>
               <ddsxmlobjectstreaminitwrapper binary="000a0000310f000057070000" />
             </control>
@@ -82,7 +82,7 @@
             </layoutobject>
             <shape groupshapeid="0" groupnode="0" />
           </ddscontrol>
-          <ddscontrol controlprogid="MSDDS.Polyline" left="9539" top="6380" logicalid="17" controlid="6" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+          <ddscontrol controlprogid="MSDDS.Polyline" left="9539" top="6380" logicalid="15" controlid="6" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
             <control>
               <ddsxmlobj>
                 <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
@@ -102,7 +102,7 @@
               <point x="12239" y="6778" />
             </connector>
           </ddscontrol>
-          <ddscontrol controlprogid="MSDDS.Polyline" left="7230" top="8780" logicalid="18" controlid="7" masterid="0" hint1="0" hint2="0" width="799" height="3199" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+          <ddscontrol controlprogid="MSDDS.Polyline" left="7230" top="8780" logicalid="16" controlid="7" masterid="0" hint1="0" hint2="0" width="799" height="3199" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
             <control>
               <ddsxmlobj>
                 <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
@@ -120,7 +120,7 @@
               <point x="7629" y="11679" />
             </connector>
           </ddscontrol>
-          <ddscontrol controlprogid="MSDDS.Polyline" left="2720" top="6380" logicalid="19" controlid="8" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+          <ddscontrol controlprogid="MSDDS.Polyline" left="2720" top="6380" logicalid="17" controlid="8" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
             <control>
               <ddsxmlobj>
                 <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
@@ -140,7 +140,7 @@
               <point x="3020" y="6778" />
             </connector>
           </ddscontrol>
-          <ddscontrol controlprogid="MSDDS.Polyline" left="7230" top="1579" logicalid="20" controlid="9" masterid="0" hint1="0" hint2="0" width="799" height="3200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+          <ddscontrol controlprogid="MSDDS.Polyline" left="7230" top="1579" logicalid="18" controlid="9" masterid="0" hint1="0" hint2="0" width="799" height="3200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
             <control>
               <ddsxmlobj>
                 <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
@@ -156,37 +156,6 @@
             <connector lineroutestyle="MSDDS.Rectilinear" sourceid="2" destid="5" sourceattachpoint="6" destattachpoint="7" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
               <point x="7629" y="4279" />
               <point x="7629" y="1879" />
-            </connector>
-          </ddscontrol>
-          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="Charakter" left="0" top="0" logicalid="21" controlid="10" masterid="0" hint1="0" hint2="0" width="3969" height="1879" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
-            <control>
-              <ddsxmlobjectstreaminitwrapper binary="000a0000810f000057070000" />
-            </control>
-            <layoutobject>
-              <ddsxmlobj>
-                <property name="LogicalObject" value="Charakter" vartype="8" />
-              </ddsxmlobj>
-            </layoutobject>
-            <shape groupshapeid="0" groupnode="0" />
-          </ddscontrol>
-          <ddscontrol controlprogid="MSDDS.Polyline" left="3334" top="1579" logicalid="22" controlid="11" masterid="0" hint1="0" hint2="0" width="3045" height="3200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
-            <control>
-              <ddsxmlobj>
-                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
-              </ddsxmlobj>
-            </control>
-            <layoutobject>
-              <ddsxmlobj>
-                <property name="LogicalObject" value="dataSet.Relations[Charakter-KostuemFilmRolle]" vartype="8" />
-                <property name="Virtual" value="0" vartype="11" />
-                <property name="VisibleAP" value="0" vartype="3" />
-              </ddsxmlobj>
-            </layoutobject>
-            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="2" destid="10" sourceattachpoint="0" destattachpoint="13" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
-              <point x="5979" y="4279" />
-              <point x="5979" y="3079" />
-              <point x="3634" y="3079" />
-              <point x="3634" y="1879" />
             </connector>
           </ddscontrol>
         </dds>
@@ -210,7 +179,7 @@
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
-      <Value>0</Value>
+      <Value>20</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
@@ -227,6 +196,22 @@
     <DataSourceViewID>dsv_kostuem_film_rolle</DataSourceViewID>
   </Source>
   <Columns>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="2d468046-99bd-4054-955b-9cafbcf21352">
+      <ID>Muse URL</ID>
+      <Name>Muse URL</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="da61bbce-a4d4-4d55-b952-e71b9bbd65a5">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e46a35fd-3f51-47fe-9d15-9fc85092fa5c">
+            <TableID>KostuemFilmRolle</TableID>
+            <ColumnID>MuseURL</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
     <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="3c0c658a-581e-4ac4-8860-144f0a2d7891">
       <ID>Film Genre 1</ID>
       <Name>Film Genre 1</Name>
@@ -287,39 +272,6 @@
               <Source xsi:type="ColumnBinding" dwd:design-time-name="004ca2b9-42dd-4291-9171-fe71ebcfa494">
                 <TableID>Basiselement</TableID>
                 <ColumnID>Basiselementname_L2</ColumnID>
-              </Source>
-            </KeyColumn>
-          </KeyColumns>
-        </Column>
-      </Columns>
-    </Column>
-    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="f51dac0e-8f80-4539-a41e-fb00df5335f2">
-      <ID>Charakter</ID>
-      <Name>Charakter</Name>
-      <ForeignKeyColumns>
-        <ForeignKeyColumn dwd:design-time-name="bb4ba053-a6ae-478c-b3b6-c1387315c1ae">
-          <DataType>Integer</DataType>
-          <DataSize>-1</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="92febef9-e7e1-4917-b389-52841e33e387">
-            <TableID>Charakter</TableID>
-            <ColumnID>ID</ColumnID>
-          </Source>
-        </ForeignKeyColumn>
-      </ForeignKeyColumns>
-      <Columns>
-        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="b423b62b-f266-40fb-bf1a-603083012ded">
-          <ID>Charaktereigenschaft</ID>
-          <Name>Charaktereigenschaft</Name>
-          <IsKey>true</IsKey>
-          <Type>Text</Type>
-          <Content>Key</Content>
-          <KeyColumns>
-            <KeyColumn dwd:design-time-name="91f3a550-516c-4b2a-b556-9de3a37a5577">
-              <DataType>WChar</DataType>
-              <DataSize>45</DataSize>
-              <Source xsi:type="ColumnBinding" dwd:design-time-name="6334858f-fad2-422d-ba07-c02ee5f8048a">
-                <TableID>Charakter</TableID>
-                <ColumnID>Charaktereigenschaft</ColumnID>
               </Source>
             </KeyColumn>
           </KeyColumns>
@@ -800,12 +752,12 @@
       <Algorithm>Microsoft_Association_Rules</Algorithm>
       <AlgorithmParameters>
         <AlgorithmParameter>
-          <Name>MINIMUM_PROBABILITY</Name>
-          <Value xsi:type="xsd:double">0.1</Value>
+          <Name>MINIMUM_ITEMSET_SIZE</Name>
+          <Value xsi:type="xsd:int">2</Value>
         </AlgorithmParameter>
         <AlgorithmParameter>
-          <Name>MINIMUM_SUPPORT</Name>
-          <Value xsi:type="xsd:double">0.025</Value>
+          <Name>MINIMUM_PROBABILITY</Name>
+          <Value xsi:type="xsd:double">0.1</Value>
         </AlgorithmParameter>
       </AlgorithmParameters>
       <Columns>
@@ -828,20 +780,6 @@
             </Column>
           </Columns>
         </Column>
-        <Column dwd:design-time-name="2ed7178b-f7f9-4ed7-ad02-69f6c3111540">
-          <ID>Basiselement 3</ID>
-          <Name>Basiselement 3</Name>
-          <SourceColumnID>Basiselement 3</SourceColumnID>
-          <Usage>PredictOnly</Usage>
-          <Columns>
-            <Column dwd:design-time-name="54099d15-2f2a-447a-8467-4ceb5a9292ce">
-              <ID>Basiselementname L4</ID>
-              <Name>Basiselementname L4</Name>
-              <SourceColumnID>Basiselementname L4</SourceColumnID>
-              <Usage>Key</Usage>
-            </Column>
-          </Columns>
-        </Column>
         <Column dwd:design-time-name="85976763-11d2-496c-a07b-e25147d3e56f">
           <ID>Kostuem Charaktereigenschaft 3</ID>
           <Name>Kostuem Charaktereigenschaft 3</Name>
@@ -851,6 +789,20 @@
               <ID>Charaktereigenschaft L4</ID>
               <Name>Charaktereigenschaft L4</Name>
               <SourceColumnID>Charaktereigenschaft L4</SourceColumnID>
+              <Usage>Key</Usage>
+            </Column>
+          </Columns>
+        </Column>
+        <Column dwd:design-time-name="9e27c46e-2a89-4a34-9121-8be87221ba22">
+          <ID>Basiselement 5</ID>
+          <Name>Basiselement 5</Name>
+          <SourceColumnID>Basiselement 5</SourceColumnID>
+          <Usage>PredictOnly</Usage>
+          <Columns>
+            <Column dwd:design-time-name="35238eec-2f78-41dc-96af-0516c10b7899">
+              <ID>Basiselementname L6</ID>
+              <Name>Basiselementname L6</Name>
+              <SourceColumnID>Basiselementname L6</SourceColumnID>
               <Usage>Key</Usage>
             </Column>
           </Columns>
@@ -868,12 +820,12 @@
       <Algorithm>Microsoft_Association_Rules</Algorithm>
       <AlgorithmParameters>
         <AlgorithmParameter>
-          <Name>MINIMUM_PROBABILITY</Name>
-          <Value xsi:type="xsd:double">0.1</Value>
+          <Name>MINIMUM_ITEMSET_SIZE</Name>
+          <Value xsi:type="xsd:int">2</Value>
         </AlgorithmParameter>
         <AlgorithmParameter>
-          <Name>MINIMUM_SUPPORT</Name>
-          <Value xsi:type="xsd:double">0.025</Value>
+          <Name>MINIMUM_PROBABILITY</Name>
+          <Value xsi:type="xsd:double">0.1</Value>
         </AlgorithmParameter>
       </AlgorithmParameters>
       <Columns>
@@ -882,20 +834,6 @@
           <Name>ID</Name>
           <SourceColumnID>ID</SourceColumnID>
           <Usage>Key</Usage>
-        </Column>
-        <Column dwd:design-time-name="1d40bdc4-ccb1-413b-94ca-673be2ad3e54">
-          <ID>Basiselement 3</ID>
-          <Name>Basiselement 3</Name>
-          <SourceColumnID>Basiselement 3</SourceColumnID>
-          <Usage>Predict</Usage>
-          <Columns>
-            <Column dwd:design-time-name="0cd78560-f87f-4b16-a874-5b7e51158efc">
-              <ID>Basiselementname L4</ID>
-              <Name>Basiselementname L4</Name>
-              <SourceColumnID>Basiselementname L4</SourceColumnID>
-              <Usage>Key</Usage>
-            </Column>
-          </Columns>
         </Column>
         <Column dwd:design-time-name="a53de7a6-afbb-4c73-9598-03a5c1a5fa9e">
           <ID>Film Genre 1</ID>
@@ -923,6 +861,20 @@
             </Column>
           </Columns>
         </Column>
+        <Column dwd:design-time-name="b4f29c3c-4ba7-4d97-bee4-c64be0320f32">
+          <ID>Basiselement 5</ID>
+          <Name>Basiselement 5</Name>
+          <SourceColumnID>Basiselement 5</SourceColumnID>
+          <Usage>Predict</Usage>
+          <Columns>
+            <Column dwd:design-time-name="8e657384-5231-4616-ae5f-30664acae19f">
+              <ID>Basiselementname L6</ID>
+              <Name>Basiselementname L6</Name>
+              <SourceColumnID>Basiselementname L6</SourceColumnID>
+              <Usage>Key</Usage>
+            </Column>
+          </Columns>
+        </Column>
       </Columns>
       <AllowDrillThrough>true</AllowDrillThrough>
     </MiningModel>
@@ -936,12 +888,12 @@
       <Algorithm>Microsoft_Association_Rules</Algorithm>
       <AlgorithmParameters>
         <AlgorithmParameter>
-          <Name>MINIMUM_PROBABILITY</Name>
-          <Value xsi:type="xsd:double">0.1</Value>
+          <Name>MINIMUM_ITEMSET_SIZE</Name>
+          <Value xsi:type="xsd:int">2</Value>
         </AlgorithmParameter>
         <AlgorithmParameter>
-          <Name>MINIMUM_SUPPORT</Name>
-          <Value xsi:type="xsd:double">0.025</Value>
+          <Name>MINIMUM_PROBABILITY</Name>
+          <Value xsi:type="xsd:double">0.1</Value>
         </AlgorithmParameter>
       </AlgorithmParameters>
       <Columns>
@@ -955,20 +907,6 @@
           <ID>Geschlecht</ID>
           <Name>Geschlecht</Name>
           <SourceColumnID>Geschlecht</SourceColumnID>
-        </Column>
-        <Column dwd:design-time-name="c3e91a13-2130-497b-8689-f9d19c0e06c5">
-          <ID>Basiselement 3</ID>
-          <Name>Basiselement 3</Name>
-          <SourceColumnID>Basiselement 3</SourceColumnID>
-          <Usage>PredictOnly</Usage>
-          <Columns>
-            <Column dwd:design-time-name="e1c35a53-dffe-4d79-8820-13ff7a9866d2">
-              <ID>Basiselementname L4</ID>
-              <Name>Basiselementname L4</Name>
-              <SourceColumnID>Basiselementname L4</SourceColumnID>
-              <Usage>Key</Usage>
-            </Column>
-          </Columns>
         </Column>
         <Column dwd:design-time-name="c30e7291-702e-40f9-ab12-da3aac96a939">
           <ID>Film Genre 1</ID>
@@ -992,6 +930,20 @@
               <ID>Charaktereigenschaft L4</ID>
               <Name>Charaktereigenschaft L4</Name>
               <SourceColumnID>Charaktereigenschaft L4</SourceColumnID>
+              <Usage>Key</Usage>
+            </Column>
+          </Columns>
+        </Column>
+        <Column dwd:design-time-name="7460fe9b-3c51-42bf-b0e8-f7542bb7ace4">
+          <ID>Basiselement 5</ID>
+          <Name>Basiselement 5</Name>
+          <SourceColumnID>Basiselement 5</SourceColumnID>
+          <Usage>Predict</Usage>
+          <Columns>
+            <Column dwd:design-time-name="8773a185-6049-431d-94c9-05aa942049c4">
+              <ID>Basiselementname L6</ID>
+              <Name>Basiselementname L6</Name>
+              <SourceColumnID>Basiselementname L6</SourceColumnID>
               <Usage>Key</Usage>
             </Column>
           </Columns>

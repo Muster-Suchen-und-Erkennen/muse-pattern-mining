@@ -16,7 +16,7 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="16" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-10812" scrolltop="-2032" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="32332" y="19738" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="16" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-10812" scrolltop="-2032" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="29395" y="24368" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
               <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
             </font>
@@ -34,17 +34,6 @@
             <layoutobject>
               <ddsxmlobj>
                 <property name="LogicalObject" value="KostuemFilmRolle" vartype="8" />
-              </ddsxmlobj>
-            </layoutobject>
-            <shape groupshapeid="0" groupnode="0" />
-          </ddscontrol>
-          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="Charakter" left="6819" top="7955" logicalid="9" controlid="2" masterid="0" hint1="0" hint2="0" width="3889" height="1879" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
-            <control>
-              <ddsxmlobjectstreaminitwrapper binary="000a0000310f000057070000" />
-            </control>
-            <layoutobject>
-              <ddsxmlobj>
-                <property name="LogicalObject" value="Charakter" vartype="8" />
               </ddsxmlobj>
             </layoutobject>
             <shape groupshapeid="0" groupnode="0" />
@@ -76,26 +65,6 @@
             <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="3" sourceattachpoint="7" destattachpoint="6" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
               <point x="2209" y="11395" />
               <point x="2209" y="13795" />
-            </connector>
-          </ddscontrol>
-          <ddscontrol controlprogid="MSDDS.Polyline" left="4119" top="8496" logicalid="12" controlid="5" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
-            <control>
-              <ddsxmlobj>
-                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
-              </ddsxmlobj>
-            </control>
-            <layoutobject>
-              <ddsxmlobj>
-                <property name="LogicalObject" value="dataSet.Relations[Charakter-KostuemFilmRolle]" vartype="8" />
-                <property name="Virtual" value="0" vartype="11" />
-                <property name="VisibleAP" value="0" vartype="3" />
-              </ddsxmlobj>
-            </layoutobject>
-            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="2" sourceattachpoint="23" destattachpoint="16" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
-              <point x="4419" y="8895" />
-              <point x="5619" y="8895" />
-              <point x="5619" y="8894" />
-              <point x="6819" y="8894" />
             </connector>
           </ddscontrol>
           <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="KostuemCharaktereigenschaft" left="0" top="0" logicalid="13" controlid="6" masterid="0" hint1="0" hint2="0" width="4419" height="3995" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
@@ -165,6 +134,22 @@
     <DataSourceViewID>dsv_kostuem_film_rolle</DataSourceViewID>
   </Source>
   <Columns>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="3f837158-54df-4c31-b19e-8a9e2d5fd1d2">
+      <ID>Muse URL</ID>
+      <Name>Muse URL</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="8f1557da-6867-47b8-8cad-156a144191f1">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="194c00ec-df35-4e79-ba17-871b3be5c0d9">
+            <TableID>KostuemFilmRolle</TableID>
+            <ColumnID>MuseURL</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
     <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="86c9354e-97c9-4943-8888-48fd0f8def66">
       <ID>Kostuem Charaktereigenschaft</ID>
       <Name>Kostuem Charaktereigenschaft</Name>
@@ -599,44 +584,6 @@
         </Column>
       </Columns>
     </Column>
-    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="e8a4aece-e181-481b-bf60-d14266ebbefc">
-      <Annotations>
-        <Annotation>
-          <Name>MDXFilterComponent</Name>
-        </Annotation>
-      </Annotations>
-      <ID>Charakter</ID>
-      <Name>Charakter</Name>
-      <ForeignKeyColumns>
-        <ForeignKeyColumn dwd:design-time-name="7de5e908-3be3-4c30-bc41-6718a49bc8dd">
-          <DataType>Integer</DataType>
-          <DataSize>-1</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="205e6ca4-d19d-439b-99af-3771519e4d9f">
-            <TableID>Charakter</TableID>
-            <ColumnID>ID</ColumnID>
-          </Source>
-        </ForeignKeyColumn>
-      </ForeignKeyColumns>
-      <Columns>
-        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="5c631914-f097-4dca-94ef-2f48155afa9a">
-          <ID>Charaktereigenschaft</ID>
-          <Name>Charaktereigenschaft</Name>
-          <IsKey>true</IsKey>
-          <Type>Text</Type>
-          <Content>Key</Content>
-          <KeyColumns>
-            <KeyColumn dwd:design-time-name="011cce97-81f2-4ed0-85d3-03c2a211346a">
-              <DataType>WChar</DataType>
-              <DataSize>45</DataSize>
-              <Source xsi:type="ColumnBinding" dwd:design-time-name="06e4ce14-1be3-476a-91f4-5b73a5e48802">
-                <TableID>Charakter</TableID>
-                <ColumnID>Charaktereigenschaft</ColumnID>
-              </Source>
-            </KeyColumn>
-          </KeyColumns>
-        </Column>
-      </Columns>
-    </Column>
     <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="09fba673-ce0c-4f5d-a972-62f7492ffd3f">
       <ID>Basiselement 4</ID>
       <Name>Basiselement 4</Name>
@@ -682,12 +629,12 @@
       <Algorithm>Microsoft_Association_Rules</Algorithm>
       <AlgorithmParameters>
         <AlgorithmParameter>
-          <Name>MINIMUM_PROBABILITY</Name>
-          <Value xsi:type="xsd:double">0.1</Value>
+          <Name>MINIMUM_ITEMSET_SIZE</Name>
+          <Value xsi:type="xsd:int">2</Value>
         </AlgorithmParameter>
         <AlgorithmParameter>
-          <Name>MINIMUM_SUPPORT</Name>
-          <Value xsi:type="xsd:double">0.025</Value>
+          <Name>MINIMUM_PROBABILITY</Name>
+          <Value xsi:type="xsd:double">0.1</Value>
         </AlgorithmParameter>
       </AlgorithmParameters>
       <Columns>
@@ -702,19 +649,6 @@
           <SourceColumnID>ID</SourceColumnID>
           <Usage>Key</Usage>
         </Column>
-        <Column dwd:design-time-name="ea411c41-8ee7-489c-a56f-6f40d43140be">
-          <ID>Kostuem Charaktereigenschaft 2</ID>
-          <Name>Kostuem Charaktereigenschaft 2</Name>
-          <SourceColumnID>Kostuem Charaktereigenschaft 2</SourceColumnID>
-          <Columns>
-            <Column dwd:design-time-name="ee266de7-5a1a-483b-a63d-978354fbe249">
-              <ID>Charaktereigenschaft L3</ID>
-              <Name>Charaktereigenschaft L3</Name>
-              <SourceColumnID>Charaktereigenschaft L3</SourceColumnID>
-              <Usage>Key</Usage>
-            </Column>
-          </Columns>
-        </Column>
         <Column dwd:design-time-name="54c4fe17-e0f6-4e42-b45e-bf9306767ed1">
           <ID>Basiselement 5</ID>
           <Name>Basiselement 5</Name>
@@ -725,6 +659,19 @@
               <ID>Basiselementname L6</ID>
               <Name>Basiselementname L6</Name>
               <SourceColumnID>Basiselementname L6</SourceColumnID>
+              <Usage>Key</Usage>
+            </Column>
+          </Columns>
+        </Column>
+        <Column dwd:design-time-name="a92c9cf5-fdbd-4260-8557-22ce03cdfa2e">
+          <ID>Kostuem Charaktereigenschaft 3</ID>
+          <Name>Kostuem Charaktereigenschaft 3</Name>
+          <SourceColumnID>Kostuem Charaktereigenschaft 3</SourceColumnID>
+          <Columns>
+            <Column dwd:design-time-name="489ce300-379d-4371-920c-ab664391c48d">
+              <ID>Charaktereigenschaft L4</ID>
+              <Name>Charaktereigenschaft L4</Name>
+              <SourceColumnID>Charaktereigenschaft L4</SourceColumnID>
               <Usage>Key</Usage>
             </Column>
           </Columns>
@@ -742,12 +689,12 @@
       <Algorithm>Microsoft_Association_Rules</Algorithm>
       <AlgorithmParameters>
         <AlgorithmParameter>
-          <Name>MINIMUM_PROBABILITY</Name>
-          <Value xsi:type="xsd:double">0.1</Value>
+          <Name>MINIMUM_ITEMSET_SIZE</Name>
+          <Value xsi:type="xsd:int">2</Value>
         </AlgorithmParameter>
         <AlgorithmParameter>
-          <Name>MINIMUM_SUPPORT</Name>
-          <Value xsi:type="xsd:double">0.025</Value>
+          <Name>MINIMUM_PROBABILITY</Name>
+          <Value xsi:type="xsd:double">0.1</Value>
         </AlgorithmParameter>
       </AlgorithmParameters>
       <Columns>
@@ -802,12 +749,12 @@
       <Algorithm>Microsoft_Association_Rules</Algorithm>
       <AlgorithmParameters>
         <AlgorithmParameter>
-          <Name>MINIMUM_PROBABILITY</Name>
-          <Value xsi:type="xsd:double">0.1</Value>
+          <Name>MINIMUM_ITEMSET_SIZE</Name>
+          <Value xsi:type="xsd:int">2</Value>
         </AlgorithmParameter>
         <AlgorithmParameter>
-          <Name>MINIMUM_SUPPORT</Name>
-          <Value xsi:type="xsd:double">0.025</Value>
+          <Name>MINIMUM_PROBABILITY</Name>
+          <Value xsi:type="xsd:double">0.1</Value>
         </AlgorithmParameter>
       </AlgorithmParameters>
       <Columns>
@@ -836,15 +783,15 @@
             </Column>
           </Columns>
         </Column>
-        <Column dwd:design-time-name="b970636e-1f3d-4583-b895-7358a63c32bf">
-          <ID>Kostuem Charaktereigenschaft 2</ID>
-          <Name>Kostuem Charaktereigenschaft 2</Name>
-          <SourceColumnID>Kostuem Charaktereigenschaft 2</SourceColumnID>
+        <Column dwd:design-time-name="2c8d4c27-371c-4255-b419-35610d41f27d">
+          <ID>Kostuem Charaktereigenschaft 3</ID>
+          <Name>Kostuem Charaktereigenschaft 3</Name>
+          <SourceColumnID>Kostuem Charaktereigenschaft 3</SourceColumnID>
           <Columns>
-            <Column dwd:design-time-name="4498037e-f9ec-4a0c-b22a-16c1a9ef036c">
-              <ID>Charaktereigenschaft L3</ID>
-              <Name>Charaktereigenschaft L3</Name>
-              <SourceColumnID>Charaktereigenschaft L3</SourceColumnID>
+            <Column dwd:design-time-name="4de7b8db-4d1f-41e6-8a07-b8a0688aae0e">
+              <ID>Charaktereigenschaft L4</ID>
+              <Name>Charaktereigenschaft L4</Name>
+              <SourceColumnID>Charaktereigenschaft L4</SourceColumnID>
               <Usage>Key</Usage>
             </Column>
           </Columns>
@@ -861,12 +808,12 @@
       <Algorithm>Microsoft_Association_Rules</Algorithm>
       <AlgorithmParameters>
         <AlgorithmParameter>
-          <Name>MINIMUM_PROBABILITY</Name>
-          <Value xsi:type="xsd:double">0.1</Value>
+          <Name>MINIMUM_ITEMSET_SIZE</Name>
+          <Value xsi:type="xsd:int">2</Value>
         </AlgorithmParameter>
         <AlgorithmParameter>
-          <Name>MINIMUM_SUPPORT</Name>
-          <Value xsi:type="xsd:double">0.025</Value>
+          <Name>MINIMUM_PROBABILITY</Name>
+          <Value xsi:type="xsd:double">0.1</Value>
         </AlgorithmParameter>
       </AlgorithmParameters>
       <Columns>
