@@ -11,8 +11,8 @@
   DTS:LocaleID="1031"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="223"
-  DTS:VersionGUID="{3EAF0EAA-10CA-4565-9841-2618CC7391CB}">
+  DTS:VersionBuild="230"
+  DTS:VersionGUID="{89193368-3D77-4622-BC66-22CE2EA57DD3}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -1679,7 +1679,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
           DTS:ExecutableType="Microsoft.ScriptTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="Flatten Hierarchy"
-          DTS:ThreadHint="1">
+          DTS:ThreadHint="0">
           <DTS:Variables />
           <DTS:ObjectData>
             <ScriptProject
@@ -1688,35 +1688,14 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
               VSTAMinorVersion="0"
               Language="CSharp">
               <ProjectItem
-                Name="Properties\AssemblyInfo.cs"
-                Encoding="UTF8"><![CDATA[using System.Reflection;
-using System.Runtime.CompilerServices;
-
-//
-// General Information about an assembly is controlled through the following 
-// set of attributes. Change these attribute values to modify the information
-// associated with an assembly.
-//
-[assembly: AssemblyTitle("ST_1ebb46fb9d2b4c5abed465bdb863318a")]
-[assembly: AssemblyDescription("")]
-[assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ST_1ebb46fb9d2b4c5abed465bdb863318a")]
-[assembly: AssemblyCopyright("Copyright @  2015")]
-[assembly: AssemblyTrademark("")]
-[assembly: AssemblyCulture("")]
-//
-// Version information for an assembly consists of the following four values:
-//
-//      Major Version
-//      Minor Version 
-//      Build Number
-//      Revision
-//
-// You can specify all the values or you can default the Revision and Build Numbers 
-// by using the '*' as shown below:
-
-[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
+                Name="Properties\Settings.settings"
+                Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
+<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
+  <Profiles>
+    <Profile Name="(Default)" />
+  </Profiles>
+  <Settings />
+</SettingsFile>]]></ProjectItem>
               <ProjectItem
                 Name="Properties\Resources.resx"
                 Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
@@ -2440,14 +2419,35 @@ namespace ST_1ebb46fb9d2b4c5abed465bdb863318a.Properties {
     }
 }]]></ProjectItem>
               <ProjectItem
-                Name="Properties\Settings.settings"
-                Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
-<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
-  <Profiles>
-    <Profile Name="(Default)" />
-  </Profiles>
-  <Settings />
-</SettingsFile>]]></ProjectItem>
+                Name="Properties\AssemblyInfo.cs"
+                Encoding="UTF8"><![CDATA[using System.Reflection;
+using System.Runtime.CompilerServices;
+
+//
+// General Information about an assembly is controlled through the following 
+// set of attributes. Change these attribute values to modify the information
+// associated with an assembly.
+//
+[assembly: AssemblyTitle("ST_1ebb46fb9d2b4c5abed465bdb863318a")]
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("ST_1ebb46fb9d2b4c5abed465bdb863318a")]
+[assembly: AssemblyCopyright("Copyright @  2015")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
+//
+// Version information for an assembly consists of the following four values:
+//
+//      Major Version
+//      Minor Version 
+//      Build Number
+//      Revision
+//
+// You can specify all the values or you can default the Revision and Build Numbers 
+// by using the '*' as shown below:
+
+[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
               <ProjectItem
                 Name="Properties\Resources.Designer.cs"
                 Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
@@ -2854,7 +2854,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
           DTS:LocaleID="-1"
           DTS:ObjectName="Invalid Timecodes"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2014; © 2014 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="3">
+          DTS:ThreadHint="1">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -2882,7 +2882,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
           DTS:LocaleID="-1"
           DTS:ObjectName="Create Stereotyp Table"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2014; © 2014 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="0">
+          DTS:ThreadHint="3">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -4761,6 +4761,247 @@ ORDER BY kostuem.FilmID, kostuem.RollenID, kostuem.KostuemID</property>
                       <arrayElements
                         arrayElementCount="30">
                         <arrayElement
+                          dataType="System.String"><![CDATA[ComponentWrapper.cs]]></arrayElement>
+                        <arrayElement
+                          dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                        <arrayElement
+                          dataType="System.String"><![CDATA[/* THIS IS AUTO-GENERATED CODE THAT WILL BE OVERWRITTEN! DO NOT EDIT!
+*  Microsoft SQL Server Integration Services component wrapper
+*  This module defines the base class for your component
+*  THIS IS AUTO-GENERATED CODE THAT WILL BE OVERWRITTEN! DO NOT EDIT! */
+
+using System;
+using System.Data;
+using Microsoft.SqlServer.Dts.Pipeline;
+using Microsoft.SqlServer.Dts.Pipeline.Wrapper;
+using Microsoft.SqlServer.Dts.Runtime.Wrapper;
+
+public class UserComponent: ScriptComponent
+{
+    public Connections Connections;
+    public Variables Variables;
+    public UserComponent()
+    {
+        Connections = new Connections(this);
+        Variables = new Variables(this);
+    }
+
+    public Output0Buffer Output0Buffer;
+
+    int InputsFinished = 0;
+
+    public override void ProcessInput(int InputID, string InputName, PipelineBuffer Buffer, OutputNameMap OutputMap)
+    {
+
+        if (InputName.Equals(@"Input 0", StringComparison.Ordinal))
+        {
+            Input0_ProcessInput(new Input0Buffer(Buffer, GetColumnIndexes(InputID), OutputMap));
+        }
+
+        if (Buffer.EndOfRowset)
+        {
+            InputsFinished = InputsFinished + 1;
+            if (InputsFinished == 1)
+            {
+                FinishOutputs();
+                MarkOutputsFinished();
+            }
+        }
+
+    }
+
+    public virtual void FinishOutputs()
+    {
+    }
+
+    private void MarkOutputsFinished()
+    {
+
+        if (null != Output0Buffer)
+        {
+            Output0Buffer.SetEndOfRowset();
+            Output0Buffer = null;
+        }
+
+    }
+
+    public override void PrimeOutput(int Outputs, int[] OutputIDs, PipelineBuffer[] Buffers, OutputNameMap OutputMap)
+    {
+       for(int Idx = 0; Idx < Outputs; Idx++)
+       {
+            if(OutputIDs[Idx] == GetOutputID(OutputMap, @"Output 0"))
+            {
+                Output0Buffer = new Output0Buffer(Buffers[Idx], GetColumnIndexes(OutputIDs[Idx]), OutputMap);
+            }
+        }
+
+        CreateNewOutputRows();
+
+    }
+
+    public virtual void CreateNewOutputRows()
+    {
+    }
+
+    public virtual void Input0_ProcessInput(Input0Buffer Buffer)
+    {
+        while (Buffer.NextRow())
+        {
+            Input0_ProcessInputRow(Buffer);
+        }
+    }
+
+    public virtual void Input0_ProcessInputRow(Input0Buffer Row)
+    {
+    }
+
+}
+
+public class Connections
+{
+    ScriptComponent ParentComponent;
+
+    public Connections(ScriptComponent Component)
+    {
+        ParentComponent = Component;
+    }
+
+}
+
+public class Variables
+{
+    ScriptComponent ParentComponent;
+
+    public Variables(ScriptComponent Component)
+    {
+        ParentComponent = Component;
+    }
+
+}
+]]></arrayElement>
+                        <arrayElement
+                          dataType="System.String"><![CDATA[Properties\Resources.resx]]></arrayElement>
+                        <arrayElement
+                          dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                        <arrayElement
+                          dataType="System.String"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+</root>]]></arrayElement>
+                        <arrayElement
                           dataType="System.String"><![CDATA[main.cs]]></arrayElement>
                         <arrayElement
                           dataType="System.String"><![CDATA[UTF8]]></arrayElement>
@@ -4899,221 +5140,9 @@ public class ScriptMain : UserComponent
             i++;
         } while (i <= caseNumber);
     }
+
 }
 ]]></arrayElement>
-                        <arrayElement
-                          dataType="System.String"><![CDATA[Properties\Resources.resx]]></arrayElement>
-                        <arrayElement
-                          dataType="System.String"><![CDATA[UTF8]]></arrayElement>
-                        <arrayElement
-                          dataType="System.String"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
-<root>
-  <!-- 
-    Microsoft ResX Schema 
-    
-    Version 2.0
-    
-    The primary goals of this format is to allow a simple XML format 
-    that is mostly human readable. The generation and parsing of the 
-    various data types are done through the TypeConverter classes 
-    associated with the data types.
-    
-    Example:
-    
-    ... ado.net/XML headers & schema ...
-    <resheader name="resmimetype">text/microsoft-resx</resheader>
-    <resheader name="version">2.0</resheader>
-    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
-    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
-    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
-    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
-    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
-        <value>[base64 mime encoded serialized .NET Framework object]</value>
-    </data>
-    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
-        <comment>This is a comment</comment>
-    </data>
-                
-    There are any number of "resheader" rows that contain simple 
-    name/value pairs.
-    
-    Each data row contains a name, and value. The row also contains a 
-    type or mimetype. Type corresponds to a .NET class that support 
-    text/value conversion through the TypeConverter architecture. 
-    Classes that don't support this are serialized and stored with the 
-    mimetype set.
-    
-    The mimetype is used for serialized objects, and tells the 
-    ResXResourceReader how to depersist the object. This is currently not 
-    extensible. For a given mimetype the value must be set accordingly:
-    
-    Note - application/x-microsoft.net.object.binary.base64 is the format 
-    that the ResXResourceWriter will generate, however the reader can 
-    read any of the formats listed below.
-    
-    mimetype: application/x-microsoft.net.object.binary.base64
-    value   : The object must be serialized with 
-            : System.Serialization.Formatters.Binary.BinaryFormatter
-            : and then encoded with base64 encoding.
-    
-    mimetype: application/x-microsoft.net.object.soap.base64
-    value   : The object must be serialized with 
-            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
-            : and then encoded with base64 encoding.
-
-    mimetype: application/x-microsoft.net.object.bytearray.base64
-    value   : The object must be serialized into a byte array 
-            : using a System.ComponentModel.TypeConverter
-            : and then encoded with base64 encoding.
-    -->
-  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-    <xsd:element name="root" msdata:IsDataSet="true">
-      <xsd:complexType>
-        <xsd:choice maxOccurs="unbounded">
-          <xsd:element name="metadata">
-            <xsd:complexType>
-              <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" />
-              </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" />
-              <xsd:attribute name="type" type="xsd:string" />
-              <xsd:attribute name="mimetype" type="xsd:string" />
-            </xsd:complexType>
-          </xsd:element>
-          <xsd:element name="assembly">
-            <xsd:complexType>
-              <xsd:attribute name="alias" type="xsd:string" />
-              <xsd:attribute name="name" type="xsd:string" />
-            </xsd:complexType>
-          </xsd:element>
-          <xsd:element name="data">
-            <xsd:complexType>
-              <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
-              </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
-              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
-              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
-            </xsd:complexType>
-          </xsd:element>
-          <xsd:element name="resheader">
-            <xsd:complexType>
-              <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-              </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" />
-            </xsd:complexType>
-          </xsd:element>
-        </xsd:choice>
-      </xsd:complexType>
-    </xsd:element>
-  </xsd:schema>
-  <resheader name="resmimetype">
-    <value>text/microsoft-resx</value>
-  </resheader>
-  <resheader name="version">
-    <value>2.0</value>
-  </resheader>
-  <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </resheader>
-  <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </resheader>
-</root>]]></arrayElement>
-                        <arrayElement
-                          dataType="System.String"><![CDATA[SC_64a66fc91d5e48ae8b092fd3a3a88e34.csproj]]></arrayElement>
-                        <arrayElement
-                          dataType="System.String"><![CDATA[UTF8]]></arrayElement>
-                        <arrayElement
-                          dataType="System.String"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <PropertyGroup>
-    <ProjectTypeGuids>{30D016F9-3734-4E33-A861-5E7D899E18F3};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>8.0.30703</ProductVersion>
-    <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{75D373D5-56B2-47B5-8E81-28FF10564167}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SC_64a66fc91d5e48ae8b092fd3a3a88e34</RootNamespace>
-    <AssemblyName>SC_64a66fc91d5e48ae8b092fd3a3a88e34</AssemblyName>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
-    <FileAlignment>512</FileAlignment>
-    <ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>true</ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>.\bin\Debug\</OutputPath>
-    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
-    <DebugSymbols>false</DebugSymbols>
-    <Optimize>true</Optimize>
-    <OutputPath>.\bin\Release\</OutputPath>
-    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
-    <DefineConstants>TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <ItemGroup>
-    <Reference Include="System" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Windows.Forms" />
-    <Reference Include="System.Xml" />
-    <Reference Include="Microsoft.SqlServer.TxScript, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
-    <Reference Include="Microsoft.SqlServer.DTSRuntimeWrap, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
-    <Reference Include="Microsoft.SqlServer.DTSPipelineWrap, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
-    <Reference Include="Microsoft.SqlServer.PipelineHost, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
-    <Compile Include="main.cs" />
-    <Compile Include="BufferWrapper.cs" />
-    <Compile Include="ComponentWrapper.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <AppDesigner Include="Properties\" />
-    <Compile Include="Properties\AssemblyInfo.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
-    <None Include="Properties\Settings.settings">
-      <Generator>SettingsSingleFileGenerator</Generator>
-      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
-    </None>
-    <Compile Include="Properties\Settings.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Settings.settings</DependentUpon>
-    </Compile>
-  </ItemGroup>
-  <!-- Include the build rules for a C# project.-->
-  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
-  <!-- This section defines VSTA properties that describe the host-changable project properties. -->
-  <ProjectExtensions>
-    <VisualStudio>
-      <FlavorProperties GUID="{30D016F9-3734-4E33-A861-5E7D899E18F3}">
-        <ProjectProperties HostName="VSTAHostName" HostPackage="{B3A685AA-7EAF-4BC6-9940-57959FA5AC07}" ApplicationType="usd" Language="cs" TemplatesPath="" />
-        <Host Name="ScriptComponent" IconIndex="0" />
-        <ProjectClient>
-          <HostIdentifier>SSIS_SC120</HostIdentifier>
-        </ProjectClient>
-      </FlavorProperties>
-    </VisualStudio>
-  </ProjectExtensions>
-</Project>]]></arrayElement>
                         <arrayElement
                           dataType="System.String"><![CDATA[BufferWrapper.cs]]></arrayElement>
                         <arrayElement
@@ -5139,14 +5168,14 @@ public class Input0Buffer: ScriptBuffer
     {
     }
 
-    public Int32 BasiselementID
+    public Double Anteil
     {
         get
         {
-            return Buffer.GetInt32(BufferColumnIndexes[0]);
+            return Buffer.GetDouble(BufferColumnIndexes[0]);
         }
     }
-    public bool BasiselementID_IsNull
+    public bool Anteil_IsNull
     {
         get
         {
@@ -5154,14 +5183,14 @@ public class Input0Buffer: ScriptBuffer
         }
     }
 
-    public String Basiselementname
+    public Int32 BasiselementID
     {
         get
         {
-            return Buffer.GetString(BufferColumnIndexes[1]);
+            return Buffer.GetInt32(BufferColumnIndexes[1]);
         }
     }
-    public bool Basiselementname_IsNull
+    public bool BasiselementID_IsNull
     {
         get
         {
@@ -5169,14 +5198,14 @@ public class Input0Buffer: ScriptBuffer
         }
     }
 
-    public String BasiselementnameL8
+    public String Basiselementname
     {
         get
         {
             return Buffer.GetString(BufferColumnIndexes[2]);
         }
     }
-    public bool BasiselementnameL8_IsNull
+    public bool Basiselementname_IsNull
     {
         get
         {
@@ -5184,14 +5213,14 @@ public class Input0Buffer: ScriptBuffer
         }
     }
 
-    public String BasiselementnameL7
+    public String BasiselementnameL8
     {
         get
         {
             return Buffer.GetString(BufferColumnIndexes[3]);
         }
     }
-    public bool BasiselementnameL7_IsNull
+    public bool BasiselementnameL8_IsNull
     {
         get
         {
@@ -5199,14 +5228,14 @@ public class Input0Buffer: ScriptBuffer
         }
     }
 
-    public String BasiselementnameL6
+    public String BasiselementnameL7
     {
         get
         {
             return Buffer.GetString(BufferColumnIndexes[4]);
         }
     }
-    public bool BasiselementnameL6_IsNull
+    public bool BasiselementnameL7_IsNull
     {
         get
         {
@@ -5214,14 +5243,14 @@ public class Input0Buffer: ScriptBuffer
         }
     }
 
-    public String BasiselementnameL5
+    public String BasiselementnameL6
     {
         get
         {
             return Buffer.GetString(BufferColumnIndexes[5]);
         }
     }
-    public bool BasiselementnameL5_IsNull
+    public bool BasiselementnameL6_IsNull
     {
         get
         {
@@ -5229,14 +5258,14 @@ public class Input0Buffer: ScriptBuffer
         }
     }
 
-    public String BasiselementnameL4
+    public String BasiselementnameL5
     {
         get
         {
             return Buffer.GetString(BufferColumnIndexes[6]);
         }
     }
-    public bool BasiselementnameL4_IsNull
+    public bool BasiselementnameL5_IsNull
     {
         get
         {
@@ -5244,14 +5273,14 @@ public class Input0Buffer: ScriptBuffer
         }
     }
 
-    public String BasiselementnameL3
+    public String BasiselementnameL4
     {
         get
         {
             return Buffer.GetString(BufferColumnIndexes[7]);
         }
     }
-    public bool BasiselementnameL3_IsNull
+    public bool BasiselementnameL4_IsNull
     {
         get
         {
@@ -5259,14 +5288,14 @@ public class Input0Buffer: ScriptBuffer
         }
     }
 
-    public String BasiselementnameL2
+    public String BasiselementnameL3
     {
         get
         {
             return Buffer.GetString(BufferColumnIndexes[8]);
         }
     }
-    public bool BasiselementnameL2_IsNull
+    public bool BasiselementnameL3_IsNull
     {
         get
         {
@@ -5274,14 +5303,14 @@ public class Input0Buffer: ScriptBuffer
         }
     }
 
-    public String BasiselementnameL1
+    public String BasiselementnameL2
     {
         get
         {
             return Buffer.GetString(BufferColumnIndexes[9]);
         }
     }
-    public bool BasiselementnameL1_IsNull
+    public bool BasiselementnameL2_IsNull
     {
         get
         {
@@ -5289,14 +5318,14 @@ public class Input0Buffer: ScriptBuffer
         }
     }
 
-    public Double Anteil
+    public String BasiselementnameL1
     {
         get
         {
-            return Buffer.GetDouble(BufferColumnIndexes[10]);
+            return Buffer.GetString(BufferColumnIndexes[10]);
         }
     }
-    public bool Anteil_IsNull
+    public bool BasiselementnameL1_IsNull
     {
         get
         {
@@ -5575,10 +5604,10 @@ public class Output0Buffer: ScriptBuffer
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="SC_64a66fc91d5e48ae8b092fd3a3a88e34.Properties.Settings.get_Default():SC_64a66fc91d5e48ae8b092fd3a3a88e34.Properties.Sett" +
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="SC_5c5bb911751a40929d21768e8c7904b1.Properties.Settings.get_Default():SC_5c5bb911751a40929d21768e8c7904b1.Properties.Sett" +
     "ings")]
 
-namespace SC_64a66fc91d5e48ae8b092fd3a3a88e34.Properties {
+namespace SC_5c5bb911751a40929d21768e8c7904b1.Properties {
     
     
     internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
@@ -5595,124 +5624,96 @@ namespace SC_64a66fc91d5e48ae8b092fd3a3a88e34.Properties {
 }
 ]]></arrayElement>
                         <arrayElement
-                          dataType="System.String"><![CDATA[ComponentWrapper.cs]]></arrayElement>
+                          dataType="System.String"><![CDATA[SC_5c5bb911751a40929d21768e8c7904b1.csproj]]></arrayElement>
                         <arrayElement
                           dataType="System.String"><![CDATA[UTF8]]></arrayElement>
                         <arrayElement
-                          dataType="System.String"><![CDATA[/* THIS IS AUTO-GENERATED CODE THAT WILL BE OVERWRITTEN! DO NOT EDIT!
-*  Microsoft SQL Server Integration Services component wrapper
-*  This module defines the base class for your component
-*  THIS IS AUTO-GENERATED CODE THAT WILL BE OVERWRITTEN! DO NOT EDIT! */
-
-using System;
-using System.Data;
-using Microsoft.SqlServer.Dts.Pipeline;
-using Microsoft.SqlServer.Dts.Pipeline.Wrapper;
-using Microsoft.SqlServer.Dts.Runtime.Wrapper;
-
-public class UserComponent: ScriptComponent
-{
-    public Connections Connections;
-    public Variables Variables;
-    public UserComponent()
-    {
-        Connections = new Connections(this);
-        Variables = new Variables(this);
-    }
-
-    public Output0Buffer Output0Buffer;
-
-    int InputsFinished = 0;
-
-    public override void ProcessInput(int InputID, string InputName, PipelineBuffer Buffer, OutputNameMap OutputMap)
-    {
-
-        if (InputName.Equals(@"Input0", StringComparison.Ordinal))
-        {
-            Input0_ProcessInput(new Input0Buffer(Buffer, GetColumnIndexes(InputID), OutputMap));
-        }
-
-        if (Buffer.EndOfRowset)
-        {
-            InputsFinished = InputsFinished + 1;
-            if (InputsFinished == 1)
-            {
-                FinishOutputs();
-                MarkOutputsFinished();
-            }
-        }
-
-    }
-
-    public virtual void FinishOutputs()
-    {
-    }
-
-    private void MarkOutputsFinished()
-    {
-
-        if (null != Output0Buffer)
-        {
-            Output0Buffer.SetEndOfRowset();
-            Output0Buffer = null;
-        }
-
-    }
-
-    public override void PrimeOutput(int Outputs, int[] OutputIDs, PipelineBuffer[] Buffers, OutputNameMap OutputMap)
-    {
-       for(int Idx = 0; Idx < Outputs; Idx++)
-       {
-            if(OutputIDs[Idx] == GetOutputID(OutputMap, @"Output0"))
-            {
-                Output0Buffer = new Output0Buffer(Buffers[Idx], GetColumnIndexes(OutputIDs[Idx]), OutputMap);
-            }
-        }
-
-        CreateNewOutputRows();
-
-    }
-
-    public virtual void CreateNewOutputRows()
-    {
-    }
-
-    public virtual void Input0_ProcessInput(Input0Buffer Buffer)
-    {
-        while (Buffer.NextRow())
-        {
-            Input0_ProcessInputRow(Buffer);
-        }
-    }
-
-    public virtual void Input0_ProcessInputRow(Input0Buffer Row)
-    {
-    }
-
-}
-
-public class Connections
-{
-    ScriptComponent ParentComponent;
-
-    public Connections(ScriptComponent Component)
-    {
-        ParentComponent = Component;
-    }
-
-}
-
-public class Variables
-{
-    ScriptComponent ParentComponent;
-
-    public Variables(ScriptComponent Component)
-    {
-        ParentComponent = Component;
-    }
-
-}
-]]></arrayElement>
+                          dataType="System.String"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectTypeGuids>{30D016F9-3734-4E33-A861-5E7D899E18F3};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5703fa31-7676-423d-97c0-644629467667}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SC_5c5bb911751a40929d21768e8c7904b1</RootNamespace>
+    <AssemblyName>SC_5c5bb911751a40929d21768e8c7904b1</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>true</ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>.\bin\Debug\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <OutputPath>.\bin\Release\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.SqlServer.TxScript, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.SqlServer.DTSRuntimeWrap, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.SqlServer.DTSPipelineWrap, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.SqlServer.PipelineHost, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Compile Include="main.cs" />
+    <Compile Include="BufferWrapper.cs" />
+    <Compile Include="ComponentWrapper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <!-- Include the build rules for a C# project.-->
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- This section defines VSTA properties that describe the host-changable project properties. -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{30D016F9-3734-4E33-A861-5E7D899E18F3}">
+        <ProjectProperties HostName="ScriptComponent" HostPackage="{B3A685AA-7EAF-4BC6-9940-57959FA5AC07}" ApplicationType="usd" Language="cs" TemplatesPath="" DebugInfoExeName="" DebugInfoCommandLine="" DebugInfoWorkingDir="" IconImageList="" />
+        <Host Name="ScriptComponent" GeneratedNamespace="SC_5c5bb911751a40929d21768e8c7904b1" IconIndex="0"></Host>
+        <ProjectClient>
+          <HostIdentifier>SSIS_SC120</HostIdentifier>
+        </ProjectClient>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>]]></arrayElement>
                         <arrayElement
                           dataType="System.String"><![CDATA[Project]]></arrayElement>
                         <arrayElement
@@ -5721,13 +5722,13 @@ public class Variables
                           dataType="System.String"><![CDATA[<?xml version="1.0" encoding="UTF-16" standalone="yes"?>
 <c:Project xmlns:c="http://schemas.microsoft.com/codeprojectml/2010/08/main" xmlns:msb="http://schemas.microsoft.com/developer/msbuild/2003" runtimeVersion="3.0" schemaVersion="1.0">
 	<msb:PropertyGroup>
-		<msb:CodeName>SC_64a66fc91d5e48ae8b092fd3a3a88e34</msb:CodeName>
+		<msb:CodeName>SC_5c5bb911751a40929d21768e8c7904b1</msb:CodeName>
 		<msb:Language>msBuild</msb:Language>
-		<msb:DisplayName>SC_64a66fc91d5e48ae8b092fd3a3a88e34</msb:DisplayName>
-		<msb:ProjectId>{084D9625-9B4F-49FC-B495-F4A9ACA45097}</msb:ProjectId>
+		<msb:DisplayName>SC_5c5bb911751a40929d21768e8c7904b1</msb:DisplayName>
+		<msb:ProjectId>{3742AE1E-05DF-48D2-B16B-1164F8B669AD}</msb:ProjectId>
 	</msb:PropertyGroup>
 	<msb:ItemGroup>
-		<msb:Project Include="SC_64a66fc91d5e48ae8b092fd3a3a88e34.csproj"/>
+		<msb:Project Include="SC_5c5bb911751a40929d21768e8c7904b1.csproj"/>
 		<msb:File Include="Properties\AssemblyInfo.cs"/>
 		<msb:File Include="Properties\Settings.settings"/>
 		<msb:File Include="Properties\Resources.resx"/>
@@ -5751,11 +5752,11 @@ using System.Runtime.CompilerServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 //
-[assembly: AssemblyTitle("SC_64a66fc91d5e48ae8b092fd3a3a88e34")]
+[assembly: AssemblyTitle("SC_5c5bb911751a40929d21768e8c7904b1")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("SC_64a66fc91d5e48ae8b092fd3a3a88e34")]
+[assembly: AssemblyProduct("SC_5c5bb911751a40929d21768e8c7904b1")]
 [assembly: AssemblyCopyright("Copyright @  2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -5798,14 +5799,14 @@ using System.Runtime.CompilerServices;
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="SC_64a66fc91d5e48ae8b092fd3a3a88e34.Properties.Resources.get_ResourceManager():System.Resources.Resou" +
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="SC_5c5bb911751a40929d21768e8c7904b1.Properties.Resources.get_ResourceManager():System.Resources.Resou" +
     "rceManager")]
-[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="SC_64a66fc91d5e48ae8b092fd3a3a88e34.Properties.Resources.get_Culture():System.Globalization.CultureIn" +
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="SC_5c5bb911751a40929d21768e8c7904b1.Properties.Resources.get_Culture():System.Globalization.CultureIn" +
     "fo")]
-[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="SC_64a66fc91d5e48ae8b092fd3a3a88e34.Properties.Resources.set_Culture(System.Globalization.CultureInfo" +
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="SC_5c5bb911751a40929d21768e8c7904b1.Properties.Resources.set_Culture(System.Globalization.CultureInfo" +
     "):Void")]
 
-namespace SC_64a66fc91d5e48ae8b092fd3a3a88e34.Properties {
+namespace SC_5c5bb911751a40929d21768e8c7904b1.Properties {
     
     
     /// <summary>
@@ -5833,7 +5834,7 @@ namespace SC_64a66fc91d5e48ae8b092fd3a3a88e34.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if ((resourceMan == null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("SC_64a66fc91d5e48ae8b092fd3a3a88e34.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("SC_5c5bb911751a40929d21768e8c7904b1.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -5867,48 +5868,48 @@ namespace SC_64a66fc91d5e48ae8b092fd3a3a88e34.Properties {
                       <arrayElements
                         arrayElementCount="2">
                         <arrayElement
-                          dataType="System.String"><![CDATA[SC_64a66fc91d5e48ae8b092fd3a3a88e34.dll]]></arrayElement>
+                          dataType="System.String"><![CDATA[SC_5c5bb911751a40929d21768e8c7904b1.dll]]></arrayElement>
                         <arrayElement
                           dataType="System.String"><![CDATA[TVqQAAMAAAAEAAAA//8AALgAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAgAAAAA4fug4AtAnNIbgBTM0hVGhpcyBwcm9ncmFtIGNhbm5vdCBiZSBydW4gaW4gRE9TIG1v
-ZGUuDQ0KJAAAAAAAAABQRQAATAEDAN1UHlYAAAAAAAAAAOAAAiELAQsAACQAAAAIAAAAAAAA/kEA
+ZGUuDQ0KJAAAAAAAAABQRQAATAEDAOZdH1YAAAAAAAAAAOAAAiELAQsAACQAAAAIAAAAAAAA/kEA
 AAAgAAAAYAAAAAAAEAAgAAAAAgAABAAAAAAAAAAEAAAAAAAAAACgAAAAAgAAAAAAAAMAQIUAABAA
-ABAAAAAAEAAAEAAAAAAAABAAAAAAAAAAAAAAAKhBAABTAAAAAGAAAAgEAAAAAAAAAAAAAAAAAAAA
+ABAAAAAAEAAAEAAAAAAAABAAAAAAAAAAAAAAAKxBAABPAAAAAGAAAAgEAAAAAAAAAAAAAAAAAAAA
 AAAAAIAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAIAAACAAAAAAAAAAAAAAACCAAAEgAAAAAAAAAAAAAAC50ZXh0AAAABCIAAAAgAAAAJAAAAAIA
 AAAAAAAAAAAAAAAAACAAAGAucnNyYwAAAAgEAAAAYAAAAAYAAAAmAAAAAAAAAAAAAAAAAABAAABA
 LnJlbG9jAAAMAAAAAIAAAAACAAAALAAAAAAAAAAAAAAAAAAAQAAAQgAAAAAAAAAAAAAAAAAAAADg
-QQAAAAAAAEgAAAACAAUAaCYAAEAbAAABAAAAAAAAALAlAAC4AAAAAAAAAAAAAAAAAAAAAAAAAAAA
+QQAAAAAAAEgAAAACAAUAaCYAAEQbAAABAAAAAAAAALAlAAC4AAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAH4CKA0AAAoCAnM+AAAGfQEAAAQCAnM/AAAGfQIAAAQqAzAE
 AE8AAAAAAAAABHIBAABwGm8OAAAKLBUCBQIDKA8AAAoOBHMNAAAGbwcAAAYFbxAAAAosIwICewQA
 AAQXWH0EAAAEAnsEAAAEFzMMAm8DAAAGAigEAAAGKgYqbgJ7AwAABCwSAnsDAAAEbzwAAAYCFH0D
-AAAEKgAAABMwBQA9AAAAAQAAERYKKy4EBpQOBHIPAABwKBEAAAozGQIFBpoCBAaUKA8AAAoOBHMm
+AAAEKgAAABMwBQA9AAAAAQAAERYKKy4EBpQOBHIRAABwKBEAAAozGQIFBpoCBAaUKA8AAAoOBHMm
 AAAGfQMAAAQGF1gKBgMyzgJvBgAABioGKkorBwIDbwgAAAYDbyQAAAYt8SoGKh4CKBMAAAoqHgIo
-FAAACioTMAIA1QAAAAIAABEWCgNvIgAABiMAAAAAAAAkQFppCwJ7AwAABG87AAAGAnsDAAAEA28O
-AAAGbycAAAYCewMAAAQDbxAAAAZvKQAABgJ7AwAABANvIAAABm8rAAAGAnsDAAAEA28eAAAGby0A
-AAYCewMAAAQDbxwAAAZvLwAABgJ7AwAABANvGgAABm8xAAAGAnsDAAAEA28YAAAGbzMAAAYCewMA
-AAQDbxYAAAZvNQAABgJ7AwAABANvFAAABm83AAAGAnsDAAAEA28SAAAGbzkAAAYGF1gKBgc+QP//
+FAAACioTMAIA1QAAAAIAABEWCgNvDgAABiMAAAAAAAAkQFppCwJ7AwAABG87AAAGAnsDAAAEA28Q
+AAAGbycAAAYCewMAAAQDbxIAAAZvKQAABgJ7AwAABANvIgAABm8rAAAGAnsDAAAEA28gAAAGby0A
+AAYCewMAAAQDbx4AAAZvLwAABgJ7AwAABANvHAAABm8xAAAGAnsDAAAEA28aAAAGbzMAAAYCewMA
+AAQDbxgAAAZvNQAABgJ7AwAABANvFgAABm83AAAGAnsDAAAEA28UAAAGbzkAAAYGF1gKBgc+QP//
 /yoeAigBAAAGKioCAwQFKBUAAAoqUgJ7FgAACgJ7FwAAChaUbxgAAAoqIgIWKBkAAAoqUgJ7FgAA
-CgJ7FwAACheUbxoAAAoqIgIXKBkAAAoqUgJ7FgAACgJ7FwAAChiUbxoAAAoqIgIYKBkAAAoqUgJ7
-FgAACgJ7FwAAChmUbxoAAAoqIgIZKBkAAAoqUgJ7FgAACgJ7FwAAChqUbxoAAAoqIgIaKBkAAAoq
-UgJ7FgAACgJ7FwAAChuUbxoAAAoqIgIbKBkAAAoqUgJ7FgAACgJ7FwAAChyUbxoAAAoqIgIcKBkA
-AAoqUgJ7FgAACgJ7FwAACh2UbxoAAAoqIgIdKBkAAAoqUgJ7FgAACgJ7FwAACh6UbxoAAAoqIgIe
-KBkAAAoqVgJ7FgAACgJ7FwAACh8JlG8aAAAKKiYCHwkoGQAACipWAnsWAAAKAnsXAAAKHwqUbxsA
+CgJ7FwAACheUbxoAAAoqIgIXKBkAAAoqUgJ7FgAACgJ7FwAAChiUbxsAAAoqIgIYKBkAAAoqUgJ7
+FgAACgJ7FwAAChmUbxsAAAoqIgIZKBkAAAoqUgJ7FgAACgJ7FwAAChqUbxsAAAoqIgIaKBkAAAoq
+UgJ7FgAACgJ7FwAAChuUbxsAAAoqIgIbKBkAAAoqUgJ7FgAACgJ7FwAAChyUbxsAAAoqIgIcKBkA
+AAoqUgJ7FgAACgJ7FwAACh2UbxsAAAoqIgIdKBkAAAoqUgJ7FgAACgJ7FwAACh6UbxsAAAoqIgIe
+KBkAAAoqVgJ7FgAACgJ7FwAACh8JlG8bAAAKKiYCHwkoGQAACipWAnsWAAAKAnsXAAAKHwqUbxsA
 AAoqJgIfCigZAAAKKh4CKBwAAAoqHgIoHQAACioqAgMEBSgVAAAKKjoCFgOMGAAAASgeAAAKKloD
-LAgCFigfAAAKKnIfAABwcyAAAAp6JgIXAygeAAAKKloDLAgCFygfAAAKKnIfAABwcyAAAAp6JgIY
-AygeAAAKKloDLAgCGCgfAAAKKnIfAABwcyAAAAp6JgIZAygeAAAKKloDLAgCGSgfAAAKKnIfAABw
-cyAAAAp6JgIaAygeAAAKKloDLAgCGigfAAAKKnIfAABwcyAAAAp6JgIbAygeAAAKKloDLAgCGygf
-AAAKKnIfAABwcyAAAAp6JgIcAygeAAAKKloDLAgCHCgfAAAKKnIfAABwcyAAAAp6JgIdAygeAAAK
-KloDLAgCHSgfAAAKKnIfAABwcyAAAAp6JgIeAygeAAAKKloDLAgCHigfAAAKKnIfAABwcyAAAAp6
-KgIfCQMoHgAACipeAywJAh8JKB8AAAoqch8AAHBzIAAACnoeAighAAAKKh4CKCIAAAoqHgIoHQAA
+LAgCFigfAAAKKnIjAABwcyAAAAp6JgIXAygeAAAKKloDLAgCFygfAAAKKnIjAABwcyAAAAp6JgIY
+AygeAAAKKloDLAgCGCgfAAAKKnIjAABwcyAAAAp6JgIZAygeAAAKKloDLAgCGSgfAAAKKnIjAABw
+cyAAAAp6JgIaAygeAAAKKloDLAgCGigfAAAKKnIjAABwcyAAAAp6JgIbAygeAAAKKloDLAgCGygf
+AAAKKnIjAABwcyAAAAp6JgIcAygeAAAKKloDLAgCHCgfAAAKKnIjAABwcyAAAAp6JgIdAygeAAAK
+KloDLAgCHSgfAAAKKnIjAABwcyAAAAp6JgIeAygeAAAKKloDLAgCHigfAAAKKnIjAABwcyAAAAp6
+KgIfCQMoHgAACipeAywJAh8JKB8AAAoqciMAAHBzIAAACnoeAighAAAKKh4CKCIAAAoqHgIoHQAA
 Cio6AigjAAAKAgN9BQAABCo6AigjAAAKAgN9BgAABCoeAigjAAAKKhMwAgAtAAAAAwAAEX4HAAAE
-LSByvAAAcNAIAAACKCUAAApvJgAACnMnAAAKCgaABwAABH4HAAAEKhp+CAAABCoeAoAIAAAEKhp+
+LSBywAAAcNAIAAACKCUAAApvJgAACnMnAAAKCgaABwAABH4HAAAEKhp+CAAABCoeAoAIAAAEKhp+
 CQAABCouc0UAAAaACQAABCoeAigqAAAKKgAAAAAAtAAAAM7K774BAAAAkQAAAGxTeXN0ZW0uUmVz
 b3VyY2VzLlJlc291cmNlUmVhZGVyLCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJl
 PW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkjU3lzdGVtLlJlc291cmNl
 cy5SdW50aW1lUmVzb3VyY2VTZXQCAAAAAAAAAAAAAABQQURQQURQtAAAAEJTSkIBAAEAAAAAAAwA
-AAB2NC4wLjMwMzE5AAAAAAUAbAAAAJgKAAAjfgAABAsAACANAAAjU3RyaW5ncwAAAAAkGAAAMAEA
-ACNVUwBUGQAAEAAAACNHVUlEAAAAZBkAANwBAAAjQmxvYgAAAAAAAAACAAABVxWiAQkBAAAA+iUz
+AAB2NC4wLjMwMzE5AAAAAAUAbAAAAJgKAAAjfgAABAsAACANAAAjU3RyaW5ncwAAAAAkGAAANAEA
+ACNVUwBYGQAAEAAAACNHVUlEAAAAaBkAANwBAAAjQmxvYgAAAAAAAAACAAABVxWiAQkBAAAA+iUz
 ABYAAAEAAAAgAAAACQAAAAkAAABGAAAAKAAAACoAAAAPAAAAAwAAAAQAAAAtAAAALgAAAAEAAAAE
 AAAAAQAAAAAACgABAAAAAAAGAPwA2wAGAAwB2wAKACkBIgEOAEUBMAESAJMB2wAGAKIB2wAKAIAI
 bwgKALEInAgKAKQJigkKAM8JvQkKAOYJvQkKAAMKvQkKACIKvQkKADsKvQkKAFQKvQkKAG8KvQkK
@@ -5920,12 +5921,12 @@ AHIAFwAGAFgAHwABAGMBIwABAF8IewABAF8IewARAJAIhQARAL0IiQARAAEJpwBQIAAAAACGGF0B
 GwABAHAgAAAAAMYAsAEmAAEAyyAAAAAAxgG9ARsABQDNIAAAAACBAMsBGwAFAOwgAAAAAMYA3wEw
 AAUANSEAAAAAxgHrARsACQA3IQAAAADGAf8BPAAJAEohAAAAAMYBEwI8AAoATCEAAAAAxgAqAhsA
 CwBUIQAAAADGADUCGwALAFwhAAAAAMYAEwI8AAsAPSIAAAAAhhhdARsADABFIgAAAACGGF0BQgAM
-AFAiAAAAAIYIQQJMAA8AZSIAAAAAhghUAlAADwBuIgAAAACGCG4CVAAPAIMiAAAAAIYIgwJQAA8A
-jCIAAAAAhgifAlQADwChIgAAAACGCLYCUAAPAKoiAAAAAIYI1AJUAA8AvyIAAAAAhgjrAlAADwDI
-IgAAAACGCAkDVAAPAN0iAAAAAIYIIANQAA8A5iIAAAAAhgg+A1QADwD7IgAAAACGCFUDUAAPAAQj
-AAAAAIYIcwNUAA8AGSMAAAAAhgiKA1AADwAiIwAAAACGCKgDVAAPADcjAAAAAIYIvwNQAA8AQCMA
-AAAAhgjdA1QADwBVIwAAAACGCPQDUAAPAF4jAAAAAIYIEgRUAA8AdCMAAAAAhggpBFAADwB+IwAA
-AACGCEcEWAAPAJQjAAAAAIYIUgRQAA8AniMAAAAAhgBkBFAADwCmIwAAAACGAGwEUAAPAK4jAAAA
+AFAiAAAAAIYIQQJMAA8AZSIAAAAAhghMAlAADwBuIgAAAACGCF4CVAAPAIMiAAAAAIYIcQJQAA8A
+jCIAAAAAhgiLAlgADwChIgAAAACGCKACUAAPAKoiAAAAAIYIvAJYAA8AvyIAAAAAhgjTAlAADwDI
+IgAAAACGCPECWAAPAN0iAAAAAIYICANQAA8A5iIAAAAAhggmA1gADwD7IgAAAACGCD0DUAAPAAQj
+AAAAAIYIWwNYAA8AGSMAAAAAhghyA1AADwAiIwAAAACGCJADWAAPADcjAAAAAIYIpwNQAA8AQCMA
+AAAAhgjFA1gADwBVIwAAAACGCNwDUAAPAF4jAAAAAIYI+gNYAA8AdCMAAAAAhggRBFAADwB+IwAA
+AACGCC8EWAAPAJQjAAAAAIYIRgRQAA8AniMAAAAAhgBkBFAADwCmIwAAAACGAGwEUAAPAK4jAAAA
 AIYYXQFCAA8AuSMAAAAAhghDBmwAEgDIIwAAAACGCFYGcQATAN8jAAAAAIYIcAZ2ABQA6SMAAAAA
 hgiFBnEAFQAAJAAAAACGCKEGdgAWAAokAAAAAIYIuAZxABcAISQAAAAAhgjWBnYAGAArJAAAAACG
 CO0GcQAZAEIkAAAAAIYICwd2ABoATCQAAAAAhggiB3EAGwBjJAAAAACGCEAHdgAcAG0kAAAAAIYI
@@ -5940,51 +5941,51 @@ CQAAAQB6CQAAAQB6CQAAAQB6CQAAAQB6CQAAAQB6CQAAAQB6CQAAAQB6CQAAAQB6CQAAAQB6CQAA
 AQB6CQAAAQB6CQAAAQB6CQAAAQB6CQAAAQB6CQAAAQB6CQAAAQB6CQAAAQB6CQAAAQB6CQAAAQCA
 CQAAAQCACQAAAQB6CUkAXQF2AFEAXQF2AFkAXQF2AGEAXQF2AGkAXQF2AHEAXQF2AHkAXQF2AIEA
 XQF2AIkAXQF2AJEAXQF2AJkAXQFsAKEAXQEbAAkAXQEbAKkAVgu1AAkAXQu8ACkAbgtQAAkAfgvC
-ALkAXQEbAAkAKgIbAAkANQIbABEAXQFCABEANwnXABEAZgnbACkAsQvfABEAugvkACkAwQvpACkA
+ALkAXQEbAAkAKgIbAAkANQIbABEAXQFCABEANwnXABEAZgnbACkAsQvfABEAuwvkACkAwgvpACkA
 ywvuABEAZARQABEAbARQABEA2wvzABEA5AtsAMkAXQF2ABEASQgbABEAUAgbABkAXQEbANEAXQEb
 ANkATQz5ANkAaAwAATkAXQEFAfEAXQERAQEBXQEbACEAXQEbAC4AGwCVAS4AYwC7AS4ACwAkAS4A
 EwBsAS4AIwCVAS4AKwCVAS4AMwBsAS4AOwCbAS4AQwCVAS4AWwCyAWMAkwDNAAMBIwHNACEBSwHN
-AGkFQwEXAYkFQwEXAckA0gAMAQQAAQAFABcACAArAAkALQAAAHgEXAAAAIcEYAAAAJ0EZAAAAK4E
-YAAAAMYEZAAAANkEYAAAAPMEZAAAAAYFYAAAACAFZAAAADMFYAAAAE0FZAAAAGAFYAAAAHoFZAAA
-AI0FYAAAAKcFZAAAALoFYAAAANQFZAAAAOcFYAAAAAEGZAAAABQGYAAAAC4GaAAAADUGYAAAAHgE
-XAAAAIcEYAAAAJ0EZAAAAK4EYAAAAAEGZAAAABQGYAAAANQFZAAAAOcFYAAAAKcFZAAAALoFYAAA
-AHoFZAAAAI0FYAAAAE0FZAAAAGAFYAAAACAFZAAAADMFYAAAAPMEZAAAAAYFYAAAAMYEZAAAANkE
+AGkFQwEXAYkFQwEXAckA0gAMAQQAAQAFABcACAArAAkALQAAAHgEXAAAAH8EYAAAAI0EZAAAAJwE
+YAAAALIEaAAAAMMEYAAAANsEaAAAAO4EYAAAAAgFaAAAABsFYAAAADUFaAAAAEgFYAAAAGIFaAAA
+AHUFYAAAAI8FaAAAAKIFYAAAALwFaAAAAM8FYAAAAOkFaAAAAPwFYAAAABYGaAAAACkGYAAAAI0E
+ZAAAAJwEYAAAALIEaAAAAMMEYAAAABYGaAAAACkGYAAAAOkFaAAAAPwFYAAAALwFaAAAAM8FYAAA
+AI8FaAAAAKIFYAAAAGIFaAAAAHUFYAAAADUFaAAAAEgFYAAAAAgFaAAAABsFYAAAANsEaAAAAO4E
 YAAAAIAInQAAAPkIogAAAB0JsAACAA4AAwACAA8ABQACABAABwACABEACQACABIACwACABMADQAC
 ABQADwACABUAEQACABYAEwACABcAFQACABgAFwACABkAGQACABoAGwACABsAHQACABwAHwACAB0A
 IQACAB4AIwACAB8AJQACACAAJwACACEAKQACACIAKwACACMALQABACcALwABACgAMQABACkAMwAB
 ACoANQABACsANwABACwAOQABAC0AOwABAC4APQABAC8APwABADAAQQABADEAQwABADIARQABADMA
 RwABADQASQABADUASwABADYATQABADcATwABADgAUQABADkAUwABADoAVQACAEEAVwACAEIAWQAB
-AEMAWQACAEQAWwAEgAAAAQAAAIUW9mMAAAAAAAAaCwAADAAAAAAAAAAAAAAAAQC+AAAAAAAEAAAA
+AEMAWQACAEQAWwAEgAAAAQAAAIYWuz8AAAAAAAAaCwAADAAAAAAAAAAAAAAAAQC+AAAAAAAEAAAA
 AAAAAAAAAAAKABkBAAAAAAQAAAAAAAAAAAAAAAoAIgEAAAAADAAAAAAAAAAAAAAAAQByAQAAAAAA
-AAAAAQAAANsMAAAAAAA8TW9kdWxlPgBTQ182NGE2NmZjOTFkNWU0OGFlOGIwOTJmZDNhM2E4OGUz
-NC5kbGwAVXNlckNvbXBvbmVudABTY3JpcHRNYWluAElucHV0MEJ1ZmZlcgBPdXRwdXQwQnVmZmVy
-AENvbm5lY3Rpb25zAFZhcmlhYmxlcwBSZXNvdXJjZXMAU0NfNjRhNjZmYzkxZDVlNDhhZThiMDky
-ZmQzYTNhODhlMzQuUHJvcGVydGllcwBTZXR0aW5ncwBNaWNyb3NvZnQuU3FsU2VydmVyLlR4U2Ny
+AAAAAQAAANsMAAAAAAA8TW9kdWxlPgBTQ181YzViYjkxMTc1MWE0MDkyOWQyMTc2OGU4Yzc5MDRi
+MS5kbGwAVXNlckNvbXBvbmVudABTY3JpcHRNYWluAElucHV0MEJ1ZmZlcgBPdXRwdXQwQnVmZmVy
+AENvbm5lY3Rpb25zAFZhcmlhYmxlcwBSZXNvdXJjZXMAU0NfNWM1YmI5MTE3NTFhNDA5MjlkMjE3
+NjhlOGM3OTA0YjEuUHJvcGVydGllcwBTZXR0aW5ncwBNaWNyb3NvZnQuU3FsU2VydmVyLlR4U2Ny
 aXB0AE1pY3Jvc29mdC5TcWxTZXJ2ZXIuRHRzLlBpcGVsaW5lAFNjcmlwdENvbXBvbmVudABTY3Jp
 cHRCdWZmZXIAbXNjb3JsaWIAU3lzdGVtAE9iamVjdABTeXN0ZW0uQ29uZmlndXJhdGlvbgBBcHBs
 aWNhdGlvblNldHRpbmdzQmFzZQAuY3RvcgBJbnB1dHNGaW5pc2hlZABNaWNyb3NvZnQuU3FsU2Vy
 dmVyLlBpcGVsaW5lSG9zdABQaXBlbGluZUJ1ZmZlcgBPdXRwdXROYW1lTWFwAFByb2Nlc3NJbnB1
 dABGaW5pc2hPdXRwdXRzAE1hcmtPdXRwdXRzRmluaXNoZWQAUHJpbWVPdXRwdXQAQ3JlYXRlTmV3
 T3V0cHV0Um93cwBJbnB1dDBfUHJvY2Vzc0lucHV0AElucHV0MF9Qcm9jZXNzSW5wdXRSb3cAUHJl
-RXhlY3V0ZQBQb3N0RXhlY3V0ZQBnZXRfQmFzaXNlbGVtZW50SUQAZ2V0X0Jhc2lzZWxlbWVudElE
-X0lzTnVsbABnZXRfQmFzaXNlbGVtZW50bmFtZQBnZXRfQmFzaXNlbGVtZW50bmFtZV9Jc051bGwA
-Z2V0X0Jhc2lzZWxlbWVudG5hbWVMOABnZXRfQmFzaXNlbGVtZW50bmFtZUw4X0lzTnVsbABnZXRf
-QmFzaXNlbGVtZW50bmFtZUw3AGdldF9CYXNpc2VsZW1lbnRuYW1lTDdfSXNOdWxsAGdldF9CYXNp
-c2VsZW1lbnRuYW1lTDYAZ2V0X0Jhc2lzZWxlbWVudG5hbWVMNl9Jc051bGwAZ2V0X0Jhc2lzZWxl
-bWVudG5hbWVMNQBnZXRfQmFzaXNlbGVtZW50bmFtZUw1X0lzTnVsbABnZXRfQmFzaXNlbGVtZW50
-bmFtZUw0AGdldF9CYXNpc2VsZW1lbnRuYW1lTDRfSXNOdWxsAGdldF9CYXNpc2VsZW1lbnRuYW1l
-TDMAZ2V0X0Jhc2lzZWxlbWVudG5hbWVMM19Jc051bGwAZ2V0X0Jhc2lzZWxlbWVudG5hbWVMMgBn
-ZXRfQmFzaXNlbGVtZW50bmFtZUwyX0lzTnVsbABnZXRfQmFzaXNlbGVtZW50bmFtZUwxAGdldF9C
-YXNpc2VsZW1lbnRuYW1lTDFfSXNOdWxsAGdldF9BbnRlaWwAZ2V0X0FudGVpbF9Jc051bGwATmV4
-dFJvdwBFbmRPZlJvd3NldABCYXNpc2VsZW1lbnRJRABCYXNpc2VsZW1lbnRJRF9Jc051bGwAQmFz
-aXNlbGVtZW50bmFtZQBCYXNpc2VsZW1lbnRuYW1lX0lzTnVsbABCYXNpc2VsZW1lbnRuYW1lTDgA
-QmFzaXNlbGVtZW50bmFtZUw4X0lzTnVsbABCYXNpc2VsZW1lbnRuYW1lTDcAQmFzaXNlbGVtZW50
-bmFtZUw3X0lzTnVsbABCYXNpc2VsZW1lbnRuYW1lTDYAQmFzaXNlbGVtZW50bmFtZUw2X0lzTnVs
-bABCYXNpc2VsZW1lbnRuYW1lTDUAQmFzaXNlbGVtZW50bmFtZUw1X0lzTnVsbABCYXNpc2VsZW1l
-bnRuYW1lTDQAQmFzaXNlbGVtZW50bmFtZUw0X0lzTnVsbABCYXNpc2VsZW1lbnRuYW1lTDMAQmFz
-aXNlbGVtZW50bmFtZUwzX0lzTnVsbABCYXNpc2VsZW1lbnRuYW1lTDIAQmFzaXNlbGVtZW50bmFt
-ZUwyX0lzTnVsbABCYXNpc2VsZW1lbnRuYW1lTDEAQmFzaXNlbGVtZW50bmFtZUwxX0lzTnVsbABB
-bnRlaWwAQW50ZWlsX0lzTnVsbABzZXRfQmFzaXNlbGVtZW50SUQAc2V0X0Jhc2lzZWxlbWVudElE
+RXhlY3V0ZQBQb3N0RXhlY3V0ZQBnZXRfQW50ZWlsAGdldF9BbnRlaWxfSXNOdWxsAGdldF9CYXNp
+c2VsZW1lbnRJRABnZXRfQmFzaXNlbGVtZW50SURfSXNOdWxsAGdldF9CYXNpc2VsZW1lbnRuYW1l
+AGdldF9CYXNpc2VsZW1lbnRuYW1lX0lzTnVsbABnZXRfQmFzaXNlbGVtZW50bmFtZUw4AGdldF9C
+YXNpc2VsZW1lbnRuYW1lTDhfSXNOdWxsAGdldF9CYXNpc2VsZW1lbnRuYW1lTDcAZ2V0X0Jhc2lz
+ZWxlbWVudG5hbWVMN19Jc051bGwAZ2V0X0Jhc2lzZWxlbWVudG5hbWVMNgBnZXRfQmFzaXNlbGVt
+ZW50bmFtZUw2X0lzTnVsbABnZXRfQmFzaXNlbGVtZW50bmFtZUw1AGdldF9CYXNpc2VsZW1lbnRu
+YW1lTDVfSXNOdWxsAGdldF9CYXNpc2VsZW1lbnRuYW1lTDQAZ2V0X0Jhc2lzZWxlbWVudG5hbWVM
+NF9Jc051bGwAZ2V0X0Jhc2lzZWxlbWVudG5hbWVMMwBnZXRfQmFzaXNlbGVtZW50bmFtZUwzX0lz
+TnVsbABnZXRfQmFzaXNlbGVtZW50bmFtZUwyAGdldF9CYXNpc2VsZW1lbnRuYW1lTDJfSXNOdWxs
+AGdldF9CYXNpc2VsZW1lbnRuYW1lTDEAZ2V0X0Jhc2lzZWxlbWVudG5hbWVMMV9Jc051bGwATmV4
+dFJvdwBFbmRPZlJvd3NldABBbnRlaWwAQW50ZWlsX0lzTnVsbABCYXNpc2VsZW1lbnRJRABCYXNp
+c2VsZW1lbnRJRF9Jc051bGwAQmFzaXNlbGVtZW50bmFtZQBCYXNpc2VsZW1lbnRuYW1lX0lzTnVs
+bABCYXNpc2VsZW1lbnRuYW1lTDgAQmFzaXNlbGVtZW50bmFtZUw4X0lzTnVsbABCYXNpc2VsZW1l
+bnRuYW1lTDcAQmFzaXNlbGVtZW50bmFtZUw3X0lzTnVsbABCYXNpc2VsZW1lbnRuYW1lTDYAQmFz
+aXNlbGVtZW50bmFtZUw2X0lzTnVsbABCYXNpc2VsZW1lbnRuYW1lTDUAQmFzaXNlbGVtZW50bmFt
+ZUw1X0lzTnVsbABCYXNpc2VsZW1lbnRuYW1lTDQAQmFzaXNlbGVtZW50bmFtZUw0X0lzTnVsbABC
+YXNpc2VsZW1lbnRuYW1lTDMAQmFzaXNlbGVtZW50bmFtZUwzX0lzTnVsbABCYXNpc2VsZW1lbnRu
+YW1lTDIAQmFzaXNlbGVtZW50bmFtZUwyX0lzTnVsbABCYXNpc2VsZW1lbnRuYW1lTDEAQmFzaXNl
+bGVtZW50bmFtZUwxX0lzTnVsbABzZXRfQmFzaXNlbGVtZW50SUQAc2V0X0Jhc2lzZWxlbWVudElE
 X0lzTnVsbABzZXRfQmFzaXNlbGVtZW50bmFtZQBzZXRfQmFzaXNlbGVtZW50bmFtZV9Jc051bGwA
 c2V0X0Jhc2lzZWxlbWVudG5hbWVMMQBzZXRfQmFzaXNlbGVtZW50bmFtZUwxX0lzTnVsbABzZXRf
 QmFzaXNlbGVtZW50bmFtZUwyAHNldF9CYXNpc2VsZW1lbnRuYW1lTDJfSXNOdWxsAHNldF9CYXNp
@@ -6006,30 +6007,30 @@ QXR0cmlidXRlAEFzc2VtYmx5UHJvZHVjdEF0dHJpYnV0ZQBBc3NlbWJseUNvcHlyaWdodEF0dHJp
 YnV0ZQBBc3NlbWJseVRyYWRlbWFya0F0dHJpYnV0ZQBBc3NlbWJseUN1bHR1cmVBdHRyaWJ1dGUA
 QXNzZW1ibHlWZXJzaW9uQXR0cmlidXRlAFN5c3RlbS5SdW50aW1lLkNvbXBpbGVyU2VydmljZXMA
 Q29tcGlsYXRpb25SZWxheGF0aW9uc0F0dHJpYnV0ZQBSdW50aW1lQ29tcGF0aWJpbGl0eUF0dHJp
-YnV0ZQBTQ182NGE2NmZjOTFkNWU0OGFlOGIwOTJmZDNhM2E4OGUzNABTdHJpbmcAU3RyaW5nQ29t
+YnV0ZQBTQ181YzViYjkxMTc1MWE0MDkyOWQyMTc2OGU4Yzc5MDRiMQBTdHJpbmcAU3RyaW5nQ29t
 cGFyaXNvbgBFcXVhbHMAR2V0Q29sdW1uSW5kZXhlcwBnZXRfRW5kT2ZSb3dzZXQAR2V0T3V0cHV0
-SUQAU1NJU1NjcmlwdENvbXBvbmVudEVudHJ5UG9pbnRBdHRyaWJ1dGUAR2V0SW50MzIASXNOdWxs
-AEdldFN0cmluZwBHZXREb3VibGUASW50MzIAc2V0X0l0ZW0AU2V0TnVsbABJbnZhbGlkT3BlcmF0
+SUQAU1NJU1NjcmlwdENvbXBvbmVudEVudHJ5UG9pbnRBdHRyaWJ1dGUAR2V0RG91YmxlAElzTnVs
+bABHZXRJbnQzMgBHZXRTdHJpbmcASW50MzIAc2V0X0l0ZW0AU2V0TnVsbABJbnZhbGlkT3BlcmF0
 aW9uRXhjZXB0aW9uAFN5c3RlbS5EaWFnbm9zdGljcwBEZWJ1Z2dlck5vblVzZXJDb2RlQXR0cmli
 dXRlAFR5cGUAUnVudGltZVR5cGVIYW5kbGUAR2V0VHlwZUZyb21IYW5kbGUAQXNzZW1ibHkAZ2V0
 X0Fzc2VtYmx5AFN5c3RlbS5Db21wb25lbnRNb2RlbABFZGl0b3JCcm93c2FibGVBdHRyaWJ1dGUA
 RWRpdG9yQnJvd3NhYmxlU3RhdGUAQ29tcGlsZXJHZW5lcmF0ZWRBdHRyaWJ1dGUALmNjdG9yAFND
-XzY0YTY2ZmM5MWQ1ZTQ4YWU4YjA5MmZkM2EzYTg4ZTM0LlByb3BlcnRpZXMuUmVzb3VyY2VzLnJl
-c291cmNlcwAAAAANSQBuAHAAdQB0ADAAAA9PAHUAdABwAHUAdAAwAACAm0kAcwBOAHUAbABsACAA
-cAByAG8AcABlAHIAdAB5ACAAYwBhAG4AbgBvAHQAIABiAGUAIABzAGUAdAAgAHQAbwAgAEYAYQBs
-AHMAZQAuACAAQQBzAHMAaQBnAG4AIABhACAAdgBhAGwAdQBlACAAdABvACAAdABoAGUAIABjAG8A
-bAB1AG0AbgAgAGkAbgBzAHQAZQBhAGQALgAAcVMAQwBfADYANABhADYANgBmAGMAOQAxAGQANQBl
-ADQAOABhAGUAOABiADAAOQAyAGYAZAAzAGEAMwBhADgAOABlADMANAAuAFAAcgBvAHAAZQByAHQA
-aQBlAHMALgBSAGUAcwBvAHUAcgBjAGUAcwAAAACUakJA/mOpQZAA9U2aKllIAAiJhF3NgIDMkQi3
-elxWGTTgiQMGEhgDBhIcAyAAAQMGEhQCBggJIAQBCA4SFRIZCyAEAQgdCB0SFRIZBSABARIQCSAD
-ARIVHQgSGQMgAAgDIAACAyAADgMgAA0DKAAIAygAAgMoAA4DKAANBCABAQgEIAEBAgQgAQEOAwYS
-BQUgAQESBQMGEh0DBhIhBAAAEh0EAAASIQUAAQESIQQIABIdBAgAEiEDBhIkBAAAEiQECAASJAYg
-AgIOEVkFIAEdCAgGAAIIEhkOAwcBCAQBAAAABAcCCAgDBhIVAwYdCAQgAQgIBCABAggEIAEOCAQg
-AQ0IBSACAQgcBgABEm0RcQQgABJ1BiACAQ4SdQQHARIdBSABARF9CAEAAgAAAAAAAwAAAUcBABou
-TkVURnJhbWV3b3JrLFZlcnNpb249djQuMAEAVA4URnJhbWV3b3JrRGlzcGxheU5hbWUQLk5FVCBG
-cmFtZXdvcmsgNCgBACNTQ182NGE2NmZjOTFkNWU0OGFlOGIwOTJmZDNhM2E4OGUzNAAABQEAAAAA
-FgEAEUNvcHlyaWdodCBAICAyMDE1AAAIAQAIAAAAAAAeAQABAFQCFldyYXBOb25FeGNlcHRpb25U
-aHJvd3MBAADQQQAAAAAAAAAAAADuQQAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA4EEAAAAAAAAA
+XzVjNWJiOTExNzUxYTQwOTI5ZDIxNzY4ZThjNzkwNGIxLlByb3BlcnRpZXMuUmVzb3VyY2VzLnJl
+c291cmNlcwAAAAAPSQBuAHAAdQB0ACAAMAAAEU8AdQB0AHAAdQB0ACAAMAAAgJtJAHMATgB1AGwA
+bAAgAHAAcgBvAHAAZQByAHQAeQAgAGMAYQBuAG4AbwB0ACAAYgBlACAAcwBlAHQAIAB0AG8AIABG
+AGEAbABzAGUALgAgAEEAcwBzAGkAZwBuACAAYQAgAHYAYQBsAHUAZQAgAHQAbwAgAHQAaABlACAA
+YwBvAGwAdQBtAG4AIABpAG4AcwB0AGUAYQBkAC4AAHFTAEMAXwA1AGMANQBiAGIAOQAxADEANwA1
+ADEAYQA0ADAAOQAyADkAZAAyADEANwA2ADgAZQA4AGMANwA5ADAANABiADEALgBQAHIAbwBwAGUA
+cgB0AGkAZQBzAC4AUgBlAHMAbwB1AHIAYwBlAHMAAAAAYkxqE3kEdUu/oj6viBCTiwAIiYRdzYCA
+zJEIt3pcVhk04IkDBhIYAwYSHAMgAAEDBhIUAgYICSAEAQgOEhUSGQsgBAEIHQgdEhUSGQUgAQES
+EAkgAwESFR0IEhkDIAANAyAAAgMgAAgDIAAOAygADQMoAAIDKAAIAygADgQgAQEIBCABAQIEIAEB
+DgMGEgUFIAEBEgUDBhIdAwYSIQQAABIdBAAAEiEFAAEBEiEECAASHQQIABIhAwYSJAQAABIkBAgA
+EiQGIAICDhFZBSABHQgIBgACCBIZDgMHAQgEAQAAAAQHAggIAwYSFQMGHQgEIAENCAQgAQIIBCAB
+CAgEIAEOCAUgAgEIHAYAARJtEXEEIAASdQYgAgEOEnUEBwESHQUgAQERfQgBAAIAAAAAAAMAAAFH
+AQAaLk5FVEZyYW1ld29yayxWZXJzaW9uPXY0LjABAFQOFEZyYW1ld29ya0Rpc3BsYXlOYW1lEC5O
+RVQgRnJhbWV3b3JrIDQoAQAjU0NfNWM1YmI5MTE3NTFhNDA5MjlkMjE3NjhlOGM3OTA0YjEAAAUB
+AAAAABYBABFDb3B5cmlnaHQgQCAgMjAxNQAACAEACAAAAAAAHgEAAQBUAhZXcmFwTm9uRXhjZXB0
+aW9uVGhyb3dzAQAA1EEAAAAAAAAAAAAA7kEAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOBBAAAA
 AAAAAAAAAAAAX0NvckRsbE1haW4AbXNjb3JlZS5kbGwAAAAAAP8lACAAEAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
@@ -6042,22 +6043,22 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAEAAA
 ABgAAIAAAAAAAAAAAAAAAAAAAAEAAQAAADAAAIAAAAAAAAAAAAAAAAAAAAEAAAAAAEgAAABYYAAA
 sAMAAAAAAAAAAAAAsAM0AAAAVgBTAF8AVgBFAFIAUwBJAE8ATgBfAEkATgBGAE8AAAAAAL0E7/4A
-AAEAAAABAPZjhRYAAAEA9mOFFj8AAAAAAAAABAAAAAIAAAAAAAAAAAAAAAAAAABEAAAAAQBWAGEA
+AAEAAAABALs/hhYAAAEAuz+GFj8AAAAAAAAABAAAAAIAAAAAAAAAAAAAAAAAAABEAAAAAQBWAGEA
 cgBGAGkAbABlAEkAbgBmAG8AAAAAACQABAAAAFQAcgBhAG4AcwBsAGEAdABpAG8AbgAAAAAAAACw
 BBADAAABAFMAdAByAGkAbgBnAEYAaQBsAGUASQBuAGYAbwAAAOwCAAABADAAMAAwADAAMAA0AGIA
-MAAAAHAAJAABAEYAaQBsAGUARABlAHMAYwByAGkAcAB0AGkAbwBuAAAAAABTAEMAXwA2ADQAYQA2
-ADYAZgBjADkAMQBkADUAZQA0ADgAYQBlADgAYgAwADkAMgBmAGQAMwBhADMAYQA4ADgAZQAzADQA
-AABAAA8AAQBGAGkAbABlAFYAZQByAHMAaQBvAG4AAAAAADEALgAwAC4ANQA3ADYANQAuADIANQA1
-ADkAMAAAAAAAcAAoAAEASQBuAHQAZQByAG4AYQBsAE4AYQBtAGUAAABTAEMAXwA2ADQAYQA2ADYA
-ZgBjADkAMQBkADUAZQA0ADgAYQBlADgAYgAwADkAMgBmAGQAMwBhADMAYQA4ADgAZQAzADQALgBk
+MAAAAHAAJAABAEYAaQBsAGUARABlAHMAYwByAGkAcAB0AGkAbwBuAAAAAABTAEMAXwA1AGMANQBi
+AGIAOQAxADEANwA1ADEAYQA0ADAAOQAyADkAZAAyADEANwA2ADgAZQA4AGMANwA5ADAANABiADEA
+AABAAA8AAQBGAGkAbABlAFYAZQByAHMAaQBvAG4AAAAAADEALgAwAC4ANQA3ADYANgAuADEANgAz
+ADEANQAAAAAAcAAoAAEASQBuAHQAZQByAG4AYQBsAE4AYQBtAGUAAABTAEMAXwA1AGMANQBiAGIA
+OQAxADEANwA1ADEAYQA0ADAAOQAyADkAZAAyADEANwA2ADgAZQA4AGMANwA5ADAANABiADEALgBk
 AGwAbAAAAEgAEgABAEwAZQBnAGEAbABDAG8AcAB5AHIAaQBnAGgAdAAAAEMAbwBwAHkAcgBpAGcA
 aAB0ACAAQAAgACAAMgAwADEANQAAAHgAKAABAE8AcgBpAGcAaQBuAGEAbABGAGkAbABlAG4AYQBt
-AGUAAABTAEMAXwA2ADQAYQA2ADYAZgBjADkAMQBkADUAZQA0ADgAYQBlADgAYgAwADkAMgBmAGQA
-MwBhADMAYQA4ADgAZQAzADQALgBkAGwAbAAAAGgAJAABAFAAcgBvAGQAdQBjAHQATgBhAG0AZQAA
-AAAAUwBDAF8ANgA0AGEANgA2AGYAYwA5ADEAZAA1AGUANAA4AGEAZQA4AGIAMAA5ADIAZgBkADMA
-YQAzAGEAOAA4AGUAMwA0AAAARAAPAAEAUAByAG8AZAB1AGMAdABWAGUAcgBzAGkAbwBuAAAAMQAu
-ADAALgA1ADcANgA1AC4AMgA1ADUAOQAwAAAAAABIAA8AAQBBAHMAcwBlAG0AYgBsAHkAIABWAGUA
-cgBzAGkAbwBuAAAAMQAuADAALgA1ADcANgA1AC4AMgA1ADUAOQAwAAAAAAAAAAAAAAAAAAAAAAAA
+AGUAAABTAEMAXwA1AGMANQBiAGIAOQAxADEANwA1ADEAYQA0ADAAOQAyADkAZAAyADEANwA2ADgA
+ZQA4AGMANwA5ADAANABiADEALgBkAGwAbAAAAGgAJAABAFAAcgBvAGQAdQBjAHQATgBhAG0AZQAA
+AAAAUwBDAF8ANQBjADUAYgBiADkAMQAxADcANQAxAGEANAAwADkAMgA5AGQAMgAxADcANgA4AGUA
+OABjADcAOQAwADQAYgAxAAAARAAPAAEAUAByAG8AZAB1AGMAdABWAGUAcgBzAGkAbwBuAAAAMQAu
+ADAALgA1ADcANgA2AC4AMQA2ADMAMQA1AAAAAABIAA8AAQBBAHMAcwBlAG0AYgBsAHkAIABWAGUA
+cgBzAGkAbwBuAAAAMQAuADAALgA1ADcANgA2AC4AMQA2ADMAMQA1AAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
@@ -6082,7 +6083,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
                       dataType="System.String"
                       description="Specifies the name of the Microsoft Visual Studio Tools for Applications project. Project names must be unique within a package."
                       name="VSTAProjectName"
-                      typeConverter="NOTBROWSABLE">SC_64a66fc91d5e48ae8b092fd3a3a88e34</property>
+                      typeConverter="NOTBROWSABLE">SC_5c5bb911751a40929d21768e8c7904b1</property>
                     <property
                       dataType="System.String"
                       description="Specifies the programming language used by the script."
@@ -6111,151 +6112,149 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
                       dataType="System.String"
                       description="Checksum to match component metedata against compiled codes."
                       name="MetadataChecksum"
-                      typeConverter="NOTBROWSABLE">2a486cdda389966832c9083514f0b0c6</property>
+                      typeConverter="NOTBROWSABLE">4d68891b8b319c88e3880b9c2ab4102e</property>
                     <property
                       dataType="System.String"
                       name="UserComponentTypeName">Microsoft.ScriptComponentHost</property>
                   </properties>
                   <inputs>
                     <input
-                      refId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\Create Basiselemente.Inputs[Input0]"
+                      refId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\Create Basiselemente.Inputs[Input 0]"
                       hasSideEffects="true"
-                      name="Input0">
+                      name="Input 0">
                       <inputColumns>
                         <inputColumn
-                          refId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\Create Basiselemente.Inputs[Input0].Columns[BasiselementID]"
+                          refId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\Create Basiselemente.Inputs[Input 0].Columns[Anteil]"
+                          cachedDataType="r8"
+                          cachedName="Anteil"
+                          lineageId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\OLE DB Source.Outputs[OLE DB Source Output].Columns[Anteil]" />
+                        <inputColumn
+                          refId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\Create Basiselemente.Inputs[Input 0].Columns[BasiselementID]"
                           cachedDataType="i4"
                           cachedName="BasiselementID"
-                          lineageId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\OLE DB Source.Outputs[OLE DB Source Output].Columns[BasiselementID]"
-                          name="BasiselementID" />
+                          lineageId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\OLE DB Source.Outputs[OLE DB Source Output].Columns[BasiselementID]" />
                         <inputColumn
-                          refId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\Create Basiselemente.Inputs[Input0].Columns[Basiselementname]"
+                          refId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\Create Basiselemente.Inputs[Input 0].Columns[Basiselementname]"
                           cachedDataType="wstr"
                           cachedLength="45"
                           cachedName="Basiselementname"
                           lineageId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\OLE DB Source.Outputs[OLE DB Source Output].Columns[Basiselementname]" />
                         <inputColumn
-                          refId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\Create Basiselemente.Inputs[Input0].Columns[Basiselementname_L8]"
+                          refId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\Create Basiselemente.Inputs[Input 0].Columns[Basiselementname_L8]"
                           cachedDataType="wstr"
                           cachedLength="45"
                           cachedName="Basiselementname_L8"
-                          lineageId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\OLE DB Source.Outputs[OLE DB Source Output].Columns[Basiselementname_L8]"
-                          name="Basiselementname_L8" />
+                          lineageId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\OLE DB Source.Outputs[OLE DB Source Output].Columns[Basiselementname_L8]" />
                         <inputColumn
-                          refId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\Create Basiselemente.Inputs[Input0].Columns[Basiselementname_L7]"
+                          refId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\Create Basiselemente.Inputs[Input 0].Columns[Basiselementname_L7]"
                           cachedDataType="wstr"
                           cachedLength="45"
                           cachedName="Basiselementname_L7"
                           lineageId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\OLE DB Source.Outputs[OLE DB Source Output].Columns[Basiselementname_L7]" />
                         <inputColumn
-                          refId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\Create Basiselemente.Inputs[Input0].Columns[Basiselementname_L6]"
+                          refId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\Create Basiselemente.Inputs[Input 0].Columns[Basiselementname_L6]"
                           cachedDataType="wstr"
                           cachedLength="45"
                           cachedName="Basiselementname_L6"
                           lineageId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\OLE DB Source.Outputs[OLE DB Source Output].Columns[Basiselementname_L6]" />
                         <inputColumn
-                          refId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\Create Basiselemente.Inputs[Input0].Columns[Basiselementname_L5]"
+                          refId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\Create Basiselemente.Inputs[Input 0].Columns[Basiselementname_L5]"
                           cachedDataType="wstr"
                           cachedLength="45"
                           cachedName="Basiselementname_L5"
                           lineageId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\OLE DB Source.Outputs[OLE DB Source Output].Columns[Basiselementname_L5]" />
                         <inputColumn
-                          refId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\Create Basiselemente.Inputs[Input0].Columns[Basiselementname_L4]"
+                          refId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\Create Basiselemente.Inputs[Input 0].Columns[Basiselementname_L4]"
                           cachedDataType="wstr"
                           cachedLength="45"
                           cachedName="Basiselementname_L4"
                           lineageId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\OLE DB Source.Outputs[OLE DB Source Output].Columns[Basiselementname_L4]" />
                         <inputColumn
-                          refId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\Create Basiselemente.Inputs[Input0].Columns[Basiselementname_L3]"
+                          refId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\Create Basiselemente.Inputs[Input 0].Columns[Basiselementname_L3]"
                           cachedDataType="wstr"
                           cachedLength="45"
                           cachedName="Basiselementname_L3"
                           lineageId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\OLE DB Source.Outputs[OLE DB Source Output].Columns[Basiselementname_L3]" />
                         <inputColumn
-                          refId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\Create Basiselemente.Inputs[Input0].Columns[Basiselementname_L2]"
+                          refId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\Create Basiselemente.Inputs[Input 0].Columns[Basiselementname_L2]"
                           cachedDataType="wstr"
                           cachedLength="45"
                           cachedName="Basiselementname_L2"
                           lineageId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\OLE DB Source.Outputs[OLE DB Source Output].Columns[Basiselementname_L2]" />
                         <inputColumn
-                          refId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\Create Basiselemente.Inputs[Input0].Columns[Basiselementname_L1]"
+                          refId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\Create Basiselemente.Inputs[Input 0].Columns[Basiselementname_L1]"
                           cachedDataType="wstr"
                           cachedLength="45"
                           cachedName="Basiselementname_L1"
                           lineageId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\OLE DB Source.Outputs[OLE DB Source Output].Columns[Basiselementname_L1]" />
-                        <inputColumn
-                          refId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\Create Basiselemente.Inputs[Input0].Columns[Anteil]"
-                          cachedDataType="r8"
-                          cachedName="Anteil"
-                          lineageId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\OLE DB Source.Outputs[OLE DB Source Output].Columns[Anteil]" />
                       </inputColumns>
                       <externalMetadataColumns />
                     </input>
                   </inputs>
                   <outputs>
                     <output
-                      refId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\Create Basiselemente.Outputs[Output0]"
+                      refId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\Create Basiselemente.Outputs[Output 0]"
                       hasSideEffects="true"
-                      name="Output0">
+                      name="Output 0">
                       <outputColumns>
                         <outputColumn
-                          refId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\Create Basiselemente.Outputs[Output0].Columns[BasiselementID]"
+                          refId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\Create Basiselemente.Outputs[Output 0].Columns[BasiselementID]"
                           dataType="i4"
-                          lineageId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\Create Basiselemente.Outputs[Output0].Columns[BasiselementID]"
+                          lineageId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\Create Basiselemente.Outputs[Output 0].Columns[BasiselementID]"
                           name="BasiselementID" />
                         <outputColumn
-                          refId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\Create Basiselemente.Outputs[Output0].Columns[Basiselementname]"
+                          refId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\Create Basiselemente.Outputs[Output 0].Columns[Basiselementname]"
                           dataType="wstr"
                           length="45"
-                          lineageId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\Create Basiselemente.Outputs[Output0].Columns[Basiselementname]"
+                          lineageId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\Create Basiselemente.Outputs[Output 0].Columns[Basiselementname]"
                           name="Basiselementname" />
                         <outputColumn
-                          refId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\Create Basiselemente.Outputs[Output0].Columns[Basiselementname_L1]"
+                          refId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\Create Basiselemente.Outputs[Output 0].Columns[Basiselementname_L1]"
                           dataType="wstr"
                           length="45"
-                          lineageId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\Create Basiselemente.Outputs[Output0].Columns[Basiselementname_L1]"
+                          lineageId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\Create Basiselemente.Outputs[Output 0].Columns[Basiselementname_L1]"
                           name="Basiselementname_L1" />
                         <outputColumn
-                          refId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\Create Basiselemente.Outputs[Output0].Columns[Basiselementname_L2]"
+                          refId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\Create Basiselemente.Outputs[Output 0].Columns[Basiselementname_L2]"
                           dataType="wstr"
                           length="45"
-                          lineageId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\Create Basiselemente.Outputs[Output0].Columns[Basiselementname_L2]"
+                          lineageId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\Create Basiselemente.Outputs[Output 0].Columns[Basiselementname_L2]"
                           name="Basiselementname_L2" />
                         <outputColumn
-                          refId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\Create Basiselemente.Outputs[Output0].Columns[Basiselementname_L3]"
+                          refId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\Create Basiselemente.Outputs[Output 0].Columns[Basiselementname_L3]"
                           dataType="wstr"
                           length="45"
-                          lineageId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\Create Basiselemente.Outputs[Output0].Columns[Basiselementname_L3]"
+                          lineageId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\Create Basiselemente.Outputs[Output 0].Columns[Basiselementname_L3]"
                           name="Basiselementname_L3" />
                         <outputColumn
-                          refId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\Create Basiselemente.Outputs[Output0].Columns[Basiselementname_L4]"
+                          refId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\Create Basiselemente.Outputs[Output 0].Columns[Basiselementname_L4]"
                           dataType="wstr"
                           length="45"
-                          lineageId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\Create Basiselemente.Outputs[Output0].Columns[Basiselementname_L4]"
+                          lineageId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\Create Basiselemente.Outputs[Output 0].Columns[Basiselementname_L4]"
                           name="Basiselementname_L4" />
                         <outputColumn
-                          refId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\Create Basiselemente.Outputs[Output0].Columns[Basiselementname_L5]"
+                          refId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\Create Basiselemente.Outputs[Output 0].Columns[Basiselementname_L5]"
                           dataType="wstr"
                           length="45"
-                          lineageId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\Create Basiselemente.Outputs[Output0].Columns[Basiselementname_L5]"
+                          lineageId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\Create Basiselemente.Outputs[Output 0].Columns[Basiselementname_L5]"
                           name="Basiselementname_L5" />
                         <outputColumn
-                          refId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\Create Basiselemente.Outputs[Output0].Columns[Basiselementname_L6]"
+                          refId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\Create Basiselemente.Outputs[Output 0].Columns[Basiselementname_L6]"
                           dataType="wstr"
                           length="45"
-                          lineageId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\Create Basiselemente.Outputs[Output0].Columns[Basiselementname_L6]"
+                          lineageId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\Create Basiselemente.Outputs[Output 0].Columns[Basiselementname_L6]"
                           name="Basiselementname_L6" />
                         <outputColumn
-                          refId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\Create Basiselemente.Outputs[Output0].Columns[Basiselementname_L7]"
+                          refId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\Create Basiselemente.Outputs[Output 0].Columns[Basiselementname_L7]"
                           dataType="wstr"
                           length="45"
-                          lineageId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\Create Basiselemente.Outputs[Output0].Columns[Basiselementname_L7]"
+                          lineageId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\Create Basiselemente.Outputs[Output 0].Columns[Basiselementname_L7]"
                           name="Basiselementname_L7" />
                         <outputColumn
-                          refId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\Create Basiselemente.Outputs[Output0].Columns[Basiselementname_L8]"
+                          refId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\Create Basiselemente.Outputs[Output 0].Columns[Basiselementname_L8]"
                           dataType="wstr"
                           length="45"
-                          lineageId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\Create Basiselemente.Outputs[Output0].Columns[Basiselementname_L8]"
+                          lineageId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\Create Basiselemente.Outputs[Output 0].Columns[Basiselementname_L8]"
                           name="Basiselementname_L8" />
                       </outputColumns>
                       <externalMetadataColumns />
@@ -7124,70 +7123,70 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
                           cachedDataType="i4"
                           cachedName="BasiselementID"
                           externalMetadataColumnId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[BasiselementID]"
-                          lineageId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\Create Basiselemente.Outputs[Output0].Columns[BasiselementID]" />
+                          lineageId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\Create Basiselemente.Outputs[Output 0].Columns[BasiselementID]" />
                         <inputColumn
                           refId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Basiselementname]"
                           cachedDataType="wstr"
                           cachedLength="45"
                           cachedName="Basiselementname"
                           externalMetadataColumnId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Basiselementname]"
-                          lineageId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\Create Basiselemente.Outputs[Output0].Columns[Basiselementname]" />
+                          lineageId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\Create Basiselemente.Outputs[Output 0].Columns[Basiselementname]" />
                         <inputColumn
                           refId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Basiselementname_L1]"
                           cachedDataType="wstr"
                           cachedLength="45"
                           cachedName="Basiselementname_L1"
                           externalMetadataColumnId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Basiselementname_L1]"
-                          lineageId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\Create Basiselemente.Outputs[Output0].Columns[Basiselementname_L1]" />
+                          lineageId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\Create Basiselemente.Outputs[Output 0].Columns[Basiselementname_L1]" />
                         <inputColumn
                           refId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Basiselementname_L2]"
                           cachedDataType="wstr"
                           cachedLength="45"
                           cachedName="Basiselementname_L2"
                           externalMetadataColumnId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Basiselementname_L2]"
-                          lineageId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\Create Basiselemente.Outputs[Output0].Columns[Basiselementname_L2]" />
+                          lineageId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\Create Basiselemente.Outputs[Output 0].Columns[Basiselementname_L2]" />
                         <inputColumn
                           refId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Basiselementname_L3]"
                           cachedDataType="wstr"
                           cachedLength="45"
                           cachedName="Basiselementname_L3"
                           externalMetadataColumnId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Basiselementname_L3]"
-                          lineageId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\Create Basiselemente.Outputs[Output0].Columns[Basiselementname_L3]" />
+                          lineageId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\Create Basiselemente.Outputs[Output 0].Columns[Basiselementname_L3]" />
                         <inputColumn
                           refId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Basiselementname_L4]"
                           cachedDataType="wstr"
                           cachedLength="45"
                           cachedName="Basiselementname_L4"
                           externalMetadataColumnId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Basiselementname_L4]"
-                          lineageId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\Create Basiselemente.Outputs[Output0].Columns[Basiselementname_L4]" />
+                          lineageId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\Create Basiselemente.Outputs[Output 0].Columns[Basiselementname_L4]" />
                         <inputColumn
                           refId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Basiselementname_L5]"
                           cachedDataType="wstr"
                           cachedLength="45"
                           cachedName="Basiselementname_L5"
                           externalMetadataColumnId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Basiselementname_L5]"
-                          lineageId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\Create Basiselemente.Outputs[Output0].Columns[Basiselementname_L5]" />
+                          lineageId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\Create Basiselemente.Outputs[Output 0].Columns[Basiselementname_L5]" />
                         <inputColumn
                           refId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Basiselementname_L6]"
                           cachedDataType="wstr"
                           cachedLength="45"
                           cachedName="Basiselementname_L6"
                           externalMetadataColumnId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Basiselementname_L6]"
-                          lineageId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\Create Basiselemente.Outputs[Output0].Columns[Basiselementname_L6]" />
+                          lineageId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\Create Basiselemente.Outputs[Output 0].Columns[Basiselementname_L6]" />
                         <inputColumn
                           refId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Basiselementname_L7]"
                           cachedDataType="wstr"
                           cachedLength="45"
                           cachedName="Basiselementname_L7"
                           externalMetadataColumnId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Basiselementname_L7]"
-                          lineageId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\Create Basiselemente.Outputs[Output0].Columns[Basiselementname_L7]" />
+                          lineageId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\Create Basiselemente.Outputs[Output 0].Columns[Basiselementname_L7]" />
                         <inputColumn
                           refId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Basiselementname_L8]"
                           cachedDataType="wstr"
                           cachedLength="45"
                           cachedName="Basiselementname_L8"
                           externalMetadataColumnId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Basiselementname_L8]"
-                          lineageId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\Create Basiselemente.Outputs[Output0].Columns[Basiselementname_L8]" />
+                          lineageId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\Create Basiselemente.Outputs[Output 0].Columns[Basiselementname_L8]" />
                         <inputColumn
                           refId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ID]"
                           cachedDataType="i4"
@@ -7349,24 +7348,6 @@ FROM            basiselement_im_bild INNER JOIN
                           externalMetadataColumnId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Anteil]"
                           lineageId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\OLE DB Source.Outputs[OLE DB Source Output].Columns[Anteil]"
                           name="Anteil"
-                          truncationRowDisposition="FailComponent" />
-                        <outputColumn
-                          refId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\OLE DB Source.Outputs[OLE DB Source Output].Columns[Sekunden]"
-                          dataType="i4"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Sekunden]"
-                          lineageId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\OLE DB Source.Outputs[OLE DB Source Output].Columns[Sekunden]"
-                          name="Sekunden"
-                          truncationRowDisposition="FailComponent" />
-                        <outputColumn
-                          refId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\OLE DB Source.Outputs[OLE DB Source Output].Columns[Filmdauer]"
-                          dataType="i8"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Filmdauer]"
-                          lineageId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\OLE DB Source.Outputs[OLE DB Source Output].Columns[Filmdauer]"
-                          name="Filmdauer"
                           truncationRowDisposition="FailComponent" />
                         <outputColumn
                           refId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\OLE DB Source.Outputs[OLE DB Source Output].Columns[BasiselementID]"
@@ -7598,16 +7579,6 @@ FROM            basiselement_im_bild INNER JOIN
                           lineageId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Basiselementname_L1]"
                           name="Basiselementname_L1" />
                         <outputColumn
-                          refId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Sekunden]"
-                          dataType="i4"
-                          lineageId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Sekunden]"
-                          name="Sekunden" />
-                        <outputColumn
-                          refId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Filmdauer]"
-                          dataType="i8"
-                          lineageId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Filmdauer]"
-                          name="Filmdauer" />
-                        <outputColumn
                           refId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Anteil]"
                           dataType="r8"
                           lineageId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Anteil]"
@@ -7633,7 +7604,7 @@ FROM            basiselement_im_bild INNER JOIN
               <paths>
                 <path
                   refId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases.Paths[OLE DB Source Output]"
-                  endId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\Create Basiselemente.Inputs[Input0]"
+                  endId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\Create Basiselemente.Inputs[Input 0]"
                   name="OLE DB Source Output"
                   startId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\OLE DB Source.Outputs[OLE DB Source Output]" />
                 <path
@@ -7642,10 +7613,10 @@ FROM            basiselement_im_bild INNER JOIN
                   name="Output 0"
                   startId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\Increment arbitrary ID column.Outputs[Output 0]" />
                 <path
-                  refId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases.Paths[Output0]"
+                  refId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases.Paths[Output 01]"
                   endId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\Increment arbitrary ID column.Inputs[Input 0]"
-                  name="Output0"
-                  startId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\Create Basiselemente.Outputs[Output0]" />
+                  name="Output 0"
+                  startId="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\Create Basiselemente.Outputs[Output 0]" />
               </paths>
             </pipeline>
           </DTS:ObjectData>
@@ -7670,7 +7641,7 @@ FROM            basiselement_im_bild INNER JOIN
               DTS:LocaleID="-1"
               DTS:ObjectName="Create &quot;BasiselementImBild&quot; Table"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2014; © 2014 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="5">
+              DTS:ThreadHint="4">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -7687,7 +7658,7 @@ FROM            basiselement_im_bild INNER JOIN
               DTS:LocaleID="-1"
               DTS:ObjectName="Create weighted &quot;Basiselement&quot; Table"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2014; © 2014 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="4">
+              DTS:ThreadHint="0">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -11171,7 +11142,7 @@ FROM            kostuem INNER JOIN
               DTS:LocaleID="-1"
               DTS:ObjectName="Create weighted &quot;Kostuem&quot; Table"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2014; © 2014 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="7">
+              DTS:ThreadHint="5">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -11214,7 +11185,7 @@ FROM            kostuem INNER JOIN
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
       DTS:CreationName=""
-      DTS:DTSID="{76DFB718-DB36-453D-B828-DCABACA52BFA}"
+      DTS:DTSID="{3723F4A0-B24D-4EDC-AB37-C033E165542C}"
       DTS:From="Package\Basic Preparation"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 1"
@@ -11230,16 +11201,16 @@ FROM            kostuem INNER JOIN
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 3]"
       DTS:CreationName=""
-      DTS:DTSID="{51CC6AEE-D952-4D00-9BCC-E555865A8CE9}"
-      DTS:From="Package\Basic Preparation"
+      DTS:DTSID="{AEC2029F-167D-49D5-884C-6C537E5379A8}"
+      DTS:From="Package\Hierarchy"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 3"
       DTS:To="Package\Weighting &quot;Kostuem&quot;" />
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 4]"
       DTS:CreationName=""
-      DTS:DTSID="{7B9E6A1B-8AD3-41BF-B177-8FCC0A5CDD18}"
-      DTS:From="Package\Basic Preparation"
+      DTS:DTSID="{76021A55-4DBE-42B6-AAC6-13EA0B257FA2}"
+      DTS:From="Package\Hierarchy"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 4"
       DTS:To="Package\Weighting &quot;Basiselement&quot;" />
@@ -11344,7 +11315,7 @@ FROM            kostuem INNER JOIN
           PanelSize="310,409"
           Size="310,452"
           Id="Package\Basic Preparation"
-          TopLeft="381,24" />
+          TopLeft="549.333333333333,24" />
         <NodeLayout
           Size="159,42"
           Id="Package\Hierarchy\Flatten Hierarchy"
@@ -11355,7 +11326,7 @@ FROM            kostuem INNER JOIN
           PanelSize="170,103"
           Size="170,146"
           Id="Package\Hierarchy"
-          TopLeft="319.333333333333,623" />
+          TopLeft="452.404761904762,663.333333333333" />
         <NodeLayout
           Size="164,42"
           Id="Package\Reports\Invalid Filmdauer"
@@ -11370,7 +11341,7 @@ FROM            kostuem INNER JOIN
           PanelSize="400,103"
           Size="400,146"
           Id="Package\Reports"
-          TopLeft="534.666666666667,622.333333333333" />
+          TopLeft="1005.76190476191,175.238095238095" />
         <NodeLayout
           Size="187,42"
           Id="Package\Stereotyp\Create Stereotyp Table"
@@ -11407,7 +11378,7 @@ FROM            kostuem INNER JOIN
           PanelSize="198,205"
           Size="198,248"
           Id="Package\Stereotyp"
-          TopLeft="73.3333333333333,622.333333333333" />
+          TopLeft="714.952380952381,662.547619047619" />
         <NodeLayout
           Size="250,42"
           Id="Package\Weighting &quot;Basiselement&quot;\Calculate &quot;BasiselementImBild&quot; Data"
@@ -11481,15 +11452,15 @@ FROM            kostuem INNER JOIN
           PanelSize="583,411"
           Size="583,454"
           Id="Package\Weighting &quot;Basiselement&quot;"
-          TopLeft="972,17" />
+          TopLeft="722.5,1087.16666666667" />
         <NodeLayout
           Size="230,42"
           Id="Package\Weighting &quot;Kostuem&quot;\Calculate &quot;KostuemImBild&quot; Data"
-          TopLeft="156.5,210.5" />
+          TopLeft="156.5,211.5" />
         <NodeLayout
           Size="184,42"
           Id="Package\Weighting &quot;Kostuem&quot;\Create Kostuem Cases"
-          TopLeft="179.5,312.5" />
+          TopLeft="179.5,313.5" />
         <NodeLayout
           Size="222,42"
           Id="Package\Weighting &quot;Kostuem&quot;\Create Tables\Create &quot;KostuemImBild&quot; Table"
@@ -11511,14 +11482,14 @@ FROM            kostuem INNER JOIN
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,59"
+              EndConnector="0,60"
               Start="0,0"
-              End="0,51.5">
+              End="0,52.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,51.5" />
+                    End="0,52.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -11529,7 +11500,7 @@ FROM            kostuem INNER JOIN
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Weighting &quot;Kostuem&quot;.PrecedenceConstraints[Constraint 1]"
-          TopLeft="271.5,252.5">
+          TopLeft="271.5,253.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -11552,36 +11523,36 @@ FROM            kostuem INNER JOIN
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="543,410"
-          Size="543,453"
+          PanelSize="543,411"
+          Size="543,454"
           Id="Package\Weighting &quot;Kostuem&quot;"
-          TopLeft="976,619.666666666667" />
+          TopLeft="166.5,1088.5" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="445.4,476">
+          TopLeft="754.666666666667,476">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-273.066666666667,146.333333333333"
+              EndConnector="59.2857142857144,186.547619047619"
               Start="0,0"
-              End="-273.066666666667,138.833333333333">
+              End="59.2857142857144,179.047619047619">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,38.9529018535399" />
+                    End="0,71.1937771257411" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,38.9529018535399"
-                    Point2="0,42.9529018535399"
-                    Point3="-4,42.9529018535399" />
+                    Point1="0,71.1937771257411"
+                    Point2="0,75.1937771257411"
+                    Point3="4,75.1937771257411" />
                   <mssgle:LineSegment
-                    End="-269.066666666667,42.9529018535399" />
+                    End="55.2857142857144,75.1937771257411" />
                   <mssgle:CubicBezierSegment
-                    Point1="-269.066666666667,42.9529018535399"
-                    Point2="-273.066666666667,42.9529018535399"
-                    Point3="-273.066666666667,46.9529018535399" />
+                    Point1="55.2857142857144,75.1937771257411"
+                    Point2="59.2857142857144,75.1937771257411"
+                    Point3="59.2857142857144,79.1937771257411" />
                   <mssgle:LineSegment
-                    End="-273.066666666667,138.833333333333" />
+                    End="59.2857142857144,179.047619047619" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -11592,30 +11563,30 @@ FROM            kostuem INNER JOIN
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 1]"
-          TopLeft="505.8,476">
+          TopLeft="654,476">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-101.466666666667,147"
+              EndConnector="-116.595238095238,187.333333333333"
               Start="0,0"
-              End="-101.466666666667,139.5">
+              End="-116.595238095238,179.833333333333">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,61.566833452466" />
+                    End="0,71.5104835258879" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,61.566833452466"
-                    Point2="0,65.566833452466"
-                    Point3="-4,65.566833452466" />
+                    Point1="0,71.5104835258879"
+                    Point2="0,75.5104835258879"
+                    Point3="-4,75.5104835258879" />
                   <mssgle:LineSegment
-                    End="-97.466666666667,65.566833452466" />
+                    End="-112.595238095238,75.5104835258879" />
                   <mssgle:CubicBezierSegment
-                    Point1="-97.466666666667,65.566833452466"
-                    Point2="-101.466666666667,65.566833452466"
-                    Point3="-101.466666666667,69.566833452466" />
+                    Point1="-112.595238095238,75.5104835258879"
+                    Point2="-116.595238095238,75.5104835258879"
+                    Point3="-116.595238095238,79.5104835258879" />
                   <mssgle:LineSegment
-                    End="-101.466666666667,139.5" />
+                    End="-116.595238095238,179.833333333333" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -11626,30 +11597,18 @@ FROM            kostuem INNER JOIN
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 2]"
-          TopLeft="566.2,476">
+          TopLeft="859.333333333333,249.119047619047">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="168.466666666667,146.333333333333"
+              EndConnector="146.428571428572,0"
               Start="0,0"
-              End="168.466666666667,138.833333333333">
+              End="138.928571428572,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,61.2694781987132" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,61.2694781987132"
-                    Point2="0,65.2694781987132"
-                    Point3="4,65.2694781987132" />
-                  <mssgle:LineSegment
-                    End="164.466666666667,65.2694781987132" />
-                  <mssgle:CubicBezierSegment
-                    Point1="164.466666666667,65.2694781987132"
-                    Point2="168.466666666667,65.2694781987132"
-                    Point3="168.466666666667,69.2694781987132" />
-                  <mssgle:LineSegment
-                    End="168.466666666667,138.833333333333" />
+                    End="138.928571428572,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -11660,30 +11619,30 @@ FROM            kostuem INNER JOIN
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 3]"
-          TopLeft="626.6,476">
+          TopLeft="510.404761904762,809.333333333333">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="620.9,143.666666666667"
+              EndConnector="-72.4047619047616,279.166666666667"
               Start="0,0"
-              End="620.9,136.166666666667">
+              End="-72.4047619047616,271.666666666667">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,38.1701610452751" />
+                    End="0,109.228438228438" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,38.1701610452751"
-                    Point2="0,42.1701610452751"
-                    Point3="4,42.1701610452751" />
+                    Point1="0,109.228438228438"
+                    Point2="0,113.228438228438"
+                    Point3="-4,113.228438228438" />
                   <mssgle:LineSegment
-                    End="616.9,42.1701610452751" />
+                    End="-68.4047619047616,113.228438228438" />
                   <mssgle:CubicBezierSegment
-                    Point1="616.9,42.1701610452751"
-                    Point2="620.9,42.1701610452751"
-                    Point3="620.9,46.1701610452751" />
+                    Point1="-68.4047619047616,113.228438228438"
+                    Point2="-72.4047619047616,113.228438228438"
+                    Point3="-72.4047619047616,117.228438228438" />
                   <mssgle:LineSegment
-                    End="620.9,136.166666666667" />
+                    End="-72.4047619047616,271.666666666667" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -11694,18 +11653,30 @@ FROM            kostuem INNER JOIN
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 4]"
-          TopLeft="691,247">
+          TopLeft="564.404761904762,809.333333333333">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="281,0"
+              EndConnector="449.595238095238,277.833333333333"
               Start="0,0"
-              End="273.5,0">
+              End="449.595238095238,270.333333333333">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="273.5,0" />
+                    End="0,108.687645687646" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,108.687645687646"
+                    Point2="0,112.687645687646"
+                    Point3="4,112.687645687646" />
+                  <mssgle:LineSegment
+                    End="445.595238095238,112.687645687646" />
+                  <mssgle:CubicBezierSegment
+                    Point1="445.595238095238,112.687645687646"
+                    Point2="449.595238095238,112.687645687646"
+                    Point3="449.595238095238,116.687645687646" />
+                  <mssgle:LineSegment
+                    End="449.595238095238,270.333333333333" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -12032,35 +12003,9 @@ FROM            kostuem INNER JOIN
           Id="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\OLE DB Source"
           TopLeft="199,285" />
         <NodeLayout
-          Size="159,42"
-          Id="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\Create Basiselemente"
-          TopLeft="411,287" />
-        <NodeLayout
           Size="163,42"
           Id="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\Increment arbitrary ID column"
           TopLeft="631,284" />
-        <EdgeLayout
-          Id="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases.Paths[Output0]"
-          TopLeft="570,306.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="61,0"
-              Start="0,0"
-              End="53.5,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="53.5,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
         <EdgeLayout
           Id="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases.Paths[Output 0]"
           TopLeft="794,303.5">
@@ -12083,20 +12028,46 @@ FROM            kostuem INNER JOIN
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <NodeLayout
+          Size="180,42"
+          Id="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases\Create Basiselemente"
+          TopLeft="407,285" />
         <EdgeLayout
           Id="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases.Paths[OLE DB Source Output]"
-          TopLeft="349,307">
+          TopLeft="349,306">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="62,0"
+              EndConnector="58,0"
               Start="0,0"
-              End="54.5,0">
+              End="50.5,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="54.5,0" />
+                    End="50.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Weighting &quot;Basiselement&quot;\Create Basiselement Cases.Paths[Output 01]"
+          TopLeft="587,305.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="44,0"
+              Start="0,0"
+              End="36.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="36.5,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
