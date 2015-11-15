@@ -26,7 +26,7 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">WIN-PMAUG1E77ME</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAlOdMrcey2USnMyHoXTU+IQAAAAACAAAAAAAQZgAAAAEAACAAAAD/o0yhT46lW+r1ZKvV7mRU6Sid2SYKt+eUOo5ciJobWAAAAAAOgAAAAAIAACAAAAChnZeUJEBvwP0UOXfKzVX0SqYBPidd0xWv54RUDzpI1JAAAADgbOW4C6/tvH5hfpJyQsQXUzoWJC7GkwFslvTksRz6LvtDRl5hjfa/PD1V5vmyOhXmrl0Ir9rHzw2Cfn3xYQC3mElyu0KMDmQzSnYk7gTlg5KDaXEZf3glvmh8QffFhq4AtuRYzvt1utrJqth0/9ypSglPusKpxxMGFmeH8wrORo6jGdDmqcft0b/LVlCfnS5AAAAAv4iRV9IwIOmL20vaqT53vbf64GhHnWNKzPCwr7k9h3kQMc6LyUr3rrlzDIM7odMY13+yiKuEQmuPbQoWm9krrw==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAW54pSskAcUe7JbE4R3GG/QAAAAACAAAAAAAQZgAAAAEAACAAAACl2x/6Pc72m2jdtUjKov3z78EsGniLUpfqifBzjzwNYAAAAAAOgAAAAAIAACAAAACHS3vVmC6Ssn6v4btLPPm/nnaXS1a8Hs7r/3b9ZlYL1JAAAADYrvoHYsLQeHhIx73vckkPm8bGE8pA9BfspDCio4U9T79hf3scmic3SxTkpLKbIe3nTSAHrsPfunatLXFt54tIEJ8NcwHhXZzX2MCOkzgkybOBY9QmbSwjDUdacHwwehfeqbE5PmClybmsjJSWClKNcsA3GW4OGsOeUEvynvvo+rbPVXg6U7wVCNmnFEqrU4FAAAAAvZrlxFjPW/uy4wGWAcuIh/DwOGPsCvNWPObErj9tJEtDIAGi7qk/K9Y+ziO8Yv3gv1VWNg9WIoB7bEj8nf9rxg==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
@@ -108,8 +108,6 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">
-                    </SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -312,10 +310,10 @@
                 <SSIS:Property SSIS:Name="Name">MySQL Migration Package</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">15</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">18</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{AD5DA9BF-9C0B-4CAE-B08C-64AE432381D5}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{78627364-FA6A-46D7-99B6-709C3CEF3E27}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -361,7 +359,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">C:\Users\Administrator\Desktop\git\muse-patternmining\MUSE Migration\muse_mysql_ssma.xml</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">C:\Users\Administrator\Documents\muse\git\muse-patternmining\MUSE Migration\muse_mysql_ssma.xml</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -376,7 +374,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">C:\Users\Administrator\Desktop\git\muse-patternmining\MUSE Migration\muse_mysql_ssma_config.xml</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">C:\Users\Administrator\Documents\muse\git\muse-patternmining\MUSE Migration\muse_mysql_ssma_config.xml</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
