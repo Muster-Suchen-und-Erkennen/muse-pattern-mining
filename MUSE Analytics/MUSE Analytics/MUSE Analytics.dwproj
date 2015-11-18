@@ -8,19 +8,11 @@
   </Database>
   <DataSources>
     <ProjectItem>
-      <Name>ds_muse.ds</Name>
-      <FullPath>ds_muse.ds</FullPath>
-    </ProjectItem>
-    <ProjectItem>
       <Name>ds_muse_analytics.ds</Name>
       <FullPath>ds_muse_analytics.ds</FullPath>
     </ProjectItem>
   </DataSources>
   <DataSourceViews>
-    <ProjectItem>
-      <Name>dsv_muse_structure.dsv</Name>
-      <FullPath>dsv_muse_structure.dsv</FullPath>
-    </ProjectItem>
     <ProjectItem>
       <Name>dsv_kostuem_film_rolle.dsv</Name>
       <FullPath>dsv_kostuem_film_rolle.dsv</FullPath>
@@ -54,22 +46,12 @@
       <Options>
         <ConnectionMappings>
           <ConfigurationSetting>
-            <Id>ds_muse</Id>
-            <Name>ds_muse</Name>
-            <Value xsi:type="xsd:string">Provider=SQLNCLI11.1;Data Source=localhost;Integrated Security=SSPI;Initial Catalog=muse</Value>
-          </ConfigurationSetting>
-          <ConfigurationSetting>
             <Id>ds_muse_analytics</Id>
             <Name>ds_muse_analytics</Name>
             <Value xsi:type="xsd:string">Provider=SQLNCLI11.1;Data Source=localhost;Integrated Security=SSPI;Initial Catalog=muse_analytics</Value>
           </ConfigurationSetting>
         </ConnectionMappings>
         <ConnectionSecurityMappings>
-          <ConfigurationSetting>
-            <Id>ds_muse</Id>
-            <Name>ds_muse</Name>
-            <Value xsi:type="xsd:int">0</Value>
-          </ConfigurationSetting>
           <ConfigurationSetting>
             <Id>ds_muse_analytics</Id>
             <Name>ds_muse_analytics</Name>
