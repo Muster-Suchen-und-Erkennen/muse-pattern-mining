@@ -43,6 +43,18 @@
       <Name>ms_basiselement__farbe_charakter.dmm</Name>
       <FullPath>ms_basiselement__farbe_charakter.dmm</FullPath>
     </ProjectItem>
+    <ProjectItem>
+      <Name>ms_basiselement__design_charakter.dmm</Name>
+      <FullPath>ms_basiselement__design_charakter.dmm</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>ms_basiselement__material_charakter.dmm</Name>
+      <FullPath>ms_basiselement__material_charakter.dmm</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>ms_basiselement__zustand_charakter.dmm</Name>
+      <FullPath>ms_basiselement__zustand_charakter.dmm</FullPath>
+    </ProjectItem>
   </MiningModels>
   <Configurations>
     <Configuration>

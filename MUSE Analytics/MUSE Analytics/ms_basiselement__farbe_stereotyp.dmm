@@ -16,7 +16,7 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="12" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-11091" scrolltop="-7122" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="32041" y="24368" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="12" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-11091" scrolltop="-7122" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="31433" y="24368" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
               <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
             </font>
@@ -136,11 +136,195 @@
     <DataSourceViewID>dsv_basiselemente</DataSourceViewID>
   </Source>
   <Columns>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="de0ef5d7-7e80-46be-9a6f-9da6282d2fbd">
+      <ID>Filmtitel</ID>
+      <Name>Filmtitel</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="60a2e60d-1025-41ec-91c0-0feaab8576bb">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="62d84151-afc5-4cc1-850a-496c8f21d8bd">
+            <TableID>Basiselement</TableID>
+            <ColumnID>Filmtitel</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="80a3d960-0744-4ce1-8f76-c96c38c227e9">
+      <ID>Geschlecht</ID>
+      <Name>Geschlecht</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="cbf23411-207c-4123-a79f-fec910ab7281">
+          <DataType>WChar</DataType>
+          <DataSize>29</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ab7c9f64-aba4-4a66-a1f5-1cc545dd2bc9">
+            <TableID>Basiselement</TableID>
+            <ColumnID>Geschlecht</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="b47c8da5-3aa6-4704-b10a-be2d1a527196">
+      <ID>ID</ID>
+      <Name>ID</Name>
+      <IsKey>true</IsKey>
+      <Type>Long</Type>
+      <Content>Key</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="32d4a9ee-27e1-4bef-a4d7-5f20aa672369">
+          <DataType>Integer</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="bac6420b-e870-4a86-af44-1f88fbf48d98">
+            <TableID>Basiselement</TableID>
+            <ColumnID>ID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="a9dbc034-3692-4de5-9762-ae80d4595823">
+      <ID>Kostuemkurztext</ID>
+      <Name>Kostuemkurztext</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="847877de-1818-4e2f-b2d9-9dbab47ae674">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1b4f7833-6f08-41ac-bf5a-e4dd9ddceb9c">
+            <TableID>Basiselement</TableID>
+            <ColumnID>Kostuemkurztext</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="9eb37f87-c97e-426b-9d76-122234f09ad1">
+      <ID>Muse URL</ID>
+      <Name>Muse URL</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="13f483bb-c449-4a68-9143-b999393e4013">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="829f6af7-bbb3-4a63-9666-879d555b40e8">
+            <TableID>Basiselement</TableID>
+            <ColumnID>MuseURL</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="55ecd136-40b9-4399-93f4-22cac47c9a2e">
+      <Annotations>
+        <Annotation>
+          <Name>MDXFilterComponent</Name>
+        </Annotation>
+      </Annotations>
+      <ID>Basiselement Farbe</ID>
+      <Name>Basiselement Farbe 1</Name>
+      <ForeignKeyColumns>
+        <ForeignKeyColumn dwd:design-time-name="f0a84a7f-c2fe-4ef6-afc6-ca9596d07bbd">
+          <DataType>Integer</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0c431994-397d-42c0-93db-3eec29f001e8">
+            <TableID>BasiselementFarbname</TableID>
+            <ColumnID>ID</ColumnID>
+          </Source>
+        </ForeignKeyColumn>
+      </ForeignKeyColumns>
+      <Columns>
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="bb964b9f-2dfb-49d8-bea8-1e8fef880e73">
+          <ID>Farbname L1</ID>
+          <Name>Farbname L1</Name>
+          <IsKey>true</IsKey>
+          <Type>Text</Type>
+          <Content>Key</Content>
+          <KeyColumns>
+            <KeyColumn dwd:design-time-name="6e6ccba4-9999-45ae-bca8-8ad5704e4e60">
+              <DataType>WChar</DataType>
+              <DataSize>45</DataSize>
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="f3be2260-bb56-4e36-91c2-fd66ad823fc0">
+                <TableID>BasiselementFarbname</TableID>
+                <ColumnID>Farbname_L1</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+      </Columns>
+    </Column>
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="20a2294d-dc98-4a58-bdb9-84ea42761ac0">
+      <ID>Basiselement Farbe 1</ID>
+      <Name>Basiselement Farbe 2</Name>
+      <ForeignKeyColumns>
+        <ForeignKeyColumn dwd:design-time-name="b5770015-1036-4210-8deb-71d68c5e8f42">
+          <DataType>Integer</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="cfa985ae-37d9-4a76-806e-67b646a2833a">
+            <TableID>BasiselementFarbname</TableID>
+            <ColumnID>ID</ColumnID>
+          </Source>
+        </ForeignKeyColumn>
+      </ForeignKeyColumns>
+      <Columns>
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="7e3c84ff-cdaa-4f79-8231-280f1adaf1fd">
+          <ID>Farbname L2</ID>
+          <Name>Farbname L2</Name>
+          <IsKey>true</IsKey>
+          <Type>Text</Type>
+          <Content>Key</Content>
+          <KeyColumns>
+            <KeyColumn dwd:design-time-name="17d09b5f-cb6a-4f6c-9879-36c818d50948">
+              <DataType>WChar</DataType>
+              <DataSize>45</DataSize>
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="bb088638-5498-4645-b98b-69a0caab27eb">
+                <TableID>BasiselementFarbname</TableID>
+                <ColumnID>Farbname_L2</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+      </Columns>
+    </Column>
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="35c22f2c-b8e9-4249-98be-1f2f55c3a925">
+      <ID>Basiselement Farbe 2</ID>
+      <Name>Basiselement Farbe 3</Name>
+      <ForeignKeyColumns>
+        <ForeignKeyColumn dwd:design-time-name="0453a193-286b-462b-88e8-2b2215e8e1ab">
+          <DataType>Integer</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d85bffba-9ab3-49d0-9816-47485653ca32">
+            <TableID>BasiselementFarbname</TableID>
+            <ColumnID>ID</ColumnID>
+          </Source>
+        </ForeignKeyColumn>
+      </ForeignKeyColumns>
+      <Columns>
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="a27f1c53-de87-4bde-aca4-ca55795711bf">
+          <ID>Farbname L3</ID>
+          <Name>Farbname L3</Name>
+          <IsKey>true</IsKey>
+          <Type>Text</Type>
+          <Content>Key</Content>
+          <KeyColumns>
+            <KeyColumn dwd:design-time-name="4e1b48c3-9096-41bc-9598-e5110ba447e1">
+              <DataType>WChar</DataType>
+              <DataSize>45</DataSize>
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="be35ed77-f4dd-4432-b71d-fa754ec43390">
+                <TableID>BasiselementFarbname</TableID>
+                <ColumnID>Farbname_L3</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+      </Columns>
+    </Column>
     <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="6dd55f3a-3feb-49d4-8eb6-ecad6d3eae99">
       <Annotations>
         <Annotation>
           <Name>MDXFilterComponent</Name>
-          <Value></Value>
         </Annotation>
       </Annotations>
       <ID>Rolle Stereotyp</ID>
@@ -268,192 +452,6 @@
               <Source xsi:type="ColumnBinding" dwd:design-time-name="49625b52-4e0b-43e2-8181-acb7c0f395d0">
                 <TableID>RolleStereotyp</TableID>
                 <ColumnID>Stereotyp_L4</ColumnID>
-              </Source>
-            </KeyColumn>
-          </KeyColumns>
-        </Column>
-      </Columns>
-    </Column>
-    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="de0ef5d7-7e80-46be-9a6f-9da6282d2fbd">
-      <ID>Filmtitel</ID>
-      <Name>Filmtitel</Name>
-      <Type>Text</Type>
-      <Content>Discrete</Content>
-      <KeyColumns>
-        <KeyColumn dwd:design-time-name="60a2e60d-1025-41ec-91c0-0feaab8576bb">
-          <DataType>WChar</DataType>
-          <DataSize>255</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="62d84151-afc5-4cc1-850a-496c8f21d8bd">
-            <TableID>Basiselement</TableID>
-            <ColumnID>Filmtitel</ColumnID>
-          </Source>
-        </KeyColumn>
-      </KeyColumns>
-    </Column>
-    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="80a3d960-0744-4ce1-8f76-c96c38c227e9">
-      <ID>Geschlecht</ID>
-      <Name>Geschlecht</Name>
-      <Type>Text</Type>
-      <Content>Discrete</Content>
-      <KeyColumns>
-        <KeyColumn dwd:design-time-name="cbf23411-207c-4123-a79f-fec910ab7281">
-          <DataType>WChar</DataType>
-          <DataSize>29</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="ab7c9f64-aba4-4a66-a1f5-1cc545dd2bc9">
-            <TableID>Basiselement</TableID>
-            <ColumnID>Geschlecht</ColumnID>
-          </Source>
-        </KeyColumn>
-      </KeyColumns>
-    </Column>
-    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="b47c8da5-3aa6-4704-b10a-be2d1a527196">
-      <ID>ID</ID>
-      <Name>ID</Name>
-      <IsKey>true</IsKey>
-      <Type>Long</Type>
-      <Content>Key</Content>
-      <KeyColumns>
-        <KeyColumn dwd:design-time-name="32d4a9ee-27e1-4bef-a4d7-5f20aa672369">
-          <DataType>Integer</DataType>
-          <DataSize>-1</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="bac6420b-e870-4a86-af44-1f88fbf48d98">
-            <TableID>Basiselement</TableID>
-            <ColumnID>ID</ColumnID>
-          </Source>
-        </KeyColumn>
-      </KeyColumns>
-    </Column>
-    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="a9dbc034-3692-4de5-9762-ae80d4595823">
-      <ID>Kostuemkurztext</ID>
-      <Name>Kostuemkurztext</Name>
-      <Type>Text</Type>
-      <Content>Discrete</Content>
-      <KeyColumns>
-        <KeyColumn dwd:design-time-name="847877de-1818-4e2f-b2d9-9dbab47ae674">
-          <DataType>WChar</DataType>
-          <DataSize>100</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="1b4f7833-6f08-41ac-bf5a-e4dd9ddceb9c">
-            <TableID>Basiselement</TableID>
-            <ColumnID>Kostuemkurztext</ColumnID>
-          </Source>
-        </KeyColumn>
-      </KeyColumns>
-    </Column>
-    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="9eb37f87-c97e-426b-9d76-122234f09ad1">
-      <ID>Muse URL</ID>
-      <Name>Muse URL</Name>
-      <Type>Text</Type>
-      <Content>Discrete</Content>
-      <KeyColumns>
-        <KeyColumn dwd:design-time-name="13f483bb-c449-4a68-9143-b999393e4013">
-          <DataType>WChar</DataType>
-          <DataSize>255</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="829f6af7-bbb3-4a63-9666-879d555b40e8">
-            <TableID>Basiselement</TableID>
-            <ColumnID>MuseURL</ColumnID>
-          </Source>
-        </KeyColumn>
-      </KeyColumns>
-    </Column>
-    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="55ecd136-40b9-4399-93f4-22cac47c9a2e">
-      <Annotations>
-        <Annotation>
-          <Name>MDXFilterComponent</Name>
-          <Value></Value>
-        </Annotation>
-      </Annotations>
-      <ID>Basiselement Farbe</ID>
-      <Name>Basiselement Farbe 1</Name>
-      <ForeignKeyColumns>
-        <ForeignKeyColumn dwd:design-time-name="f0a84a7f-c2fe-4ef6-afc6-ca9596d07bbd">
-          <DataType>Integer</DataType>
-          <DataSize>-1</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="0c431994-397d-42c0-93db-3eec29f001e8">
-            <TableID>BasiselementFarbname</TableID>
-            <ColumnID>ID</ColumnID>
-          </Source>
-        </ForeignKeyColumn>
-      </ForeignKeyColumns>
-      <Columns>
-        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="bb964b9f-2dfb-49d8-bea8-1e8fef880e73">
-          <ID>Farbname L1</ID>
-          <Name>Farbname L1</Name>
-          <IsKey>true</IsKey>
-          <Type>Text</Type>
-          <Content>Key</Content>
-          <KeyColumns>
-            <KeyColumn dwd:design-time-name="6e6ccba4-9999-45ae-bca8-8ad5704e4e60">
-              <DataType>WChar</DataType>
-              <DataSize>45</DataSize>
-              <Source xsi:type="ColumnBinding" dwd:design-time-name="f3be2260-bb56-4e36-91c2-fd66ad823fc0">
-                <TableID>BasiselementFarbname</TableID>
-                <ColumnID>Farbname_L1</ColumnID>
-              </Source>
-            </KeyColumn>
-          </KeyColumns>
-        </Column>
-      </Columns>
-    </Column>
-    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="20a2294d-dc98-4a58-bdb9-84ea42761ac0">
-      <ID>Basiselement Farbe 1</ID>
-      <Name>Basiselement Farbe 2</Name>
-      <ForeignKeyColumns>
-        <ForeignKeyColumn dwd:design-time-name="b5770015-1036-4210-8deb-71d68c5e8f42">
-          <DataType>Integer</DataType>
-          <DataSize>-1</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="cfa985ae-37d9-4a76-806e-67b646a2833a">
-            <TableID>BasiselementFarbname</TableID>
-            <ColumnID>ID</ColumnID>
-          </Source>
-        </ForeignKeyColumn>
-      </ForeignKeyColumns>
-      <Columns>
-        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="7e3c84ff-cdaa-4f79-8231-280f1adaf1fd">
-          <ID>Farbname L2</ID>
-          <Name>Farbname L2</Name>
-          <IsKey>true</IsKey>
-          <Type>Text</Type>
-          <Content>Key</Content>
-          <KeyColumns>
-            <KeyColumn dwd:design-time-name="17d09b5f-cb6a-4f6c-9879-36c818d50948">
-              <DataType>WChar</DataType>
-              <DataSize>45</DataSize>
-              <Source xsi:type="ColumnBinding" dwd:design-time-name="bb088638-5498-4645-b98b-69a0caab27eb">
-                <TableID>BasiselementFarbname</TableID>
-                <ColumnID>Farbname_L2</ColumnID>
-              </Source>
-            </KeyColumn>
-          </KeyColumns>
-        </Column>
-      </Columns>
-    </Column>
-    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="35c22f2c-b8e9-4249-98be-1f2f55c3a925">
-      <ID>Basiselement Farbe 2</ID>
-      <Name>Basiselement Farbe 3</Name>
-      <ForeignKeyColumns>
-        <ForeignKeyColumn dwd:design-time-name="0453a193-286b-462b-88e8-2b2215e8e1ab">
-          <DataType>Integer</DataType>
-          <DataSize>-1</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="d85bffba-9ab3-49d0-9816-47485653ca32">
-            <TableID>BasiselementFarbname</TableID>
-            <ColumnID>ID</ColumnID>
-          </Source>
-        </ForeignKeyColumn>
-      </ForeignKeyColumns>
-      <Columns>
-        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="a27f1c53-de87-4bde-aca4-ca55795711bf">
-          <ID>Farbname L3</ID>
-          <Name>Farbname L3</Name>
-          <IsKey>true</IsKey>
-          <Type>Text</Type>
-          <Content>Key</Content>
-          <KeyColumns>
-            <KeyColumn dwd:design-time-name="4e1b48c3-9096-41bc-9598-e5110ba447e1">
-              <DataType>WChar</DataType>
-              <DataSize>45</DataSize>
-              <Source xsi:type="ColumnBinding" dwd:design-time-name="be35ed77-f4dd-4432-b71d-fa754ec43390">
-                <TableID>BasiselementFarbname</TableID>
-                <ColumnID>Farbname_L3</ColumnID>
               </Source>
             </KeyColumn>
           </KeyColumns>
