@@ -536,6 +536,12 @@
       <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
       <State>Unprocessed</State>
       <Algorithm>Microsoft_Association_Rules</Algorithm>
+      <AlgorithmParameters>
+        <AlgorithmParameter>
+          <Name>MINIMUM_PROBABILITY</Name>
+          <Value xsi:type="xsd:double">0</Value>
+        </AlgorithmParameter>
+      </AlgorithmParameters>
       <Columns>
         <Column dwd:design-time-name="47ea48fe-73d2-40c6-8bbb-eb3c51a575ed">
           <ID>ID</ID>
