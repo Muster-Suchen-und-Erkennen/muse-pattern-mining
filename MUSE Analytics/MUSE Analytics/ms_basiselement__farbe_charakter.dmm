@@ -16,7 +16,7 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="13" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-10183" scrolltop="-6897" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="30639" y="24368" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="12" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-10183" scrolltop="-6897" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="32041" y="24368" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
               <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
             </font>
@@ -221,7 +221,6 @@
       <Annotations>
         <Annotation>
           <Name>MDXFilterComponent</Name>
-          <Value></Value>
         </Annotation>
       </Annotations>
       <ID>Basiselement Farbe</ID>
@@ -326,7 +325,6 @@
       <Annotations>
         <Annotation>
           <Name>MDXFilterComponent</Name>
-          <Value></Value>
         </Annotation>
       </Annotations>
       <ID>Kostuem Charaktereigenschaft</ID>
@@ -536,36 +534,12 @@
       <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
       <State>Unprocessed</State>
       <Algorithm>Microsoft_Association_Rules</Algorithm>
-      <AlgorithmParameters>
-        <AlgorithmParameter>
-          <Name>MINIMUM_PROBABILITY</Name>
-          <Value xsi:type="xsd:double">0</Value>
-        </AlgorithmParameter>
-      </AlgorithmParameters>
       <Columns>
         <Column dwd:design-time-name="b3d61a64-27d3-4e3f-84e6-bc911324a547">
           <ID>ID</ID>
           <Name>ID</Name>
           <SourceColumnID>ID</SourceColumnID>
           <Usage>Key</Usage>
-        </Column>
-        <Column dwd:design-time-name="65a362d2-08eb-45ef-8092-d24a986ae605">
-          <ID>Basiselement Farbe 3</ID>
-          <Name>Basiselement Farbe 3</Name>
-          <SourceColumnID>Basiselement Farbe 2</SourceColumnID>
-          <Columns>
-            <Column dwd:design-time-name="a4e168f4-a91e-477d-b409-771e4537be92">
-              <ID>Farbname L3</ID>
-              <Name>Farbname L3</Name>
-              <SourceColumnID>Farbname L3</SourceColumnID>
-              <Usage>Key</Usage>
-            </Column>
-          </Columns>
-        </Column>
-        <Column dwd:design-time-name="0069de8d-7389-4fa5-a49d-d0f49963848b">
-          <ID>Geschlecht</ID>
-          <Name>Geschlecht</Name>
-          <SourceColumnID>Geschlecht</SourceColumnID>
         </Column>
         <Column dwd:design-time-name="266696c1-04c1-4be8-bddb-94f724cd4a68">
           <ID>Kostuem Charaktereigenschaft 4</ID>
@@ -577,6 +551,19 @@
               <ID>Charaktereigenschaft L4</ID>
               <Name>Charaktereigenschaft L4</Name>
               <SourceColumnID>Charaktereigenschaft L4</SourceColumnID>
+              <Usage>Key</Usage>
+            </Column>
+          </Columns>
+        </Column>
+        <Column dwd:design-time-name="69ab7602-d924-44e7-93a7-fa924158258c">
+          <ID>Basiselement Farbe 2</ID>
+          <Name>Basiselement Farbe 2</Name>
+          <SourceColumnID>Basiselement Farbe 1</SourceColumnID>
+          <Columns>
+            <Column dwd:design-time-name="e9bf162b-9620-4450-81d6-3c137601c9d4">
+              <ID>Farbname L2</ID>
+              <Name>Farbname L2</Name>
+              <SourceColumnID>Farbname L2</SourceColumnID>
               <Usage>Key</Usage>
             </Column>
           </Columns>

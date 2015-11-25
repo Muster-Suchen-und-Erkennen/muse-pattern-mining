@@ -219,7 +219,6 @@
       <Annotations>
         <Annotation>
           <Name>MDXFilterComponent</Name>
-          <Value></Value>
         </Annotation>
       </Annotations>
       <ID>Basiselement Material</ID>
@@ -390,7 +389,6 @@
       <Annotations>
         <Annotation>
           <Name>MDXFilterComponent</Name>
-          <Value></Value>
         </Annotation>
       </Annotations>
       <ID>Kostuem Charaktereigenschaft</ID>
