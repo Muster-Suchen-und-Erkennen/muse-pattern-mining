@@ -16,7 +16,7 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="12" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-10686" scrolltop="-6262" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="32041" y="24368" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="14" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-9079" scrolltop="-4347" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="29342" y="24368" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
               <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
             </font>
@@ -27,7 +27,7 @@
           <layoutmanager>
             <ddsxmlobj />
           </layoutmanager>
-          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="Basiselement" left="20" top="0" logicalid="6" controlid="1" masterid="0" hint1="0" hint2="0" width="4419" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="Basiselement" left="0" top="4702" logicalid="6" controlid="1" masterid="0" hint1="0" hint2="0" width="4419" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
             <control>
               <ddsxmlobjectstreaminitwrapper binary="000a00004311000088130000" />
             </control>
@@ -38,7 +38,7 @@
             </layoutobject>
             <shape groupshapeid="0" groupnode="0" />
           </ddscontrol>
-          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="BasiselementMaterial" left="6839" top="714" logicalid="7" controlid="2" masterid="0" hint1="0" hint2="0" width="3360" height="3572" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="BasiselementMaterial" left="529" top="12102" logicalid="7" controlid="2" masterid="0" hint1="0" hint2="0" width="3360" height="3572" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
             <control>
               <ddsxmlobjectstreaminitwrapper binary="000a0000200d0000f40d0000" />
             </control>
@@ -49,7 +49,7 @@
             </layoutobject>
             <shape groupshapeid="0" groupnode="0" />
           </ddscontrol>
-          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="KostuemCharaktereigenschaft" left="46" top="7400" logicalid="8" controlid="3" masterid="0" hint1="0" hint2="0" width="4366" height="3995" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="KostuemCharaktereigenschaft" left="6819" top="5204" logicalid="8" controlid="3" masterid="0" hint1="0" hint2="0" width="4366" height="3995" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
             <control>
               <ddsxmlobjectstreaminitwrapper binary="000a00000e1100009b0f0000" />
             </control>
@@ -60,7 +60,7 @@
             </layoutobject>
             <shape groupshapeid="0" groupnode="0" />
           </ddscontrol>
-          <ddscontrol controlprogid="MSDDS.Polyline" left="4139" top="2101" logicalid="9" controlid="4" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+          <ddscontrol controlprogid="MSDDS.Polyline" left="1810" top="9203" logicalid="9" controlid="4" masterid="0" hint1="0" hint2="0" width="799" height="3199" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
             <control>
               <ddsxmlobj>
                 <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
@@ -73,12 +73,12 @@
                 <property name="VisibleAP" value="0" vartype="3" />
               </ddsxmlobj>
             </layoutobject>
-            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="2" sourceattachpoint="23" destattachpoint="16" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
-              <point x="4439" y="2500" />
-              <point x="6839" y="2500" />
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="2" sourceattachpoint="7" destattachpoint="4" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="2209" y="9702" />
+              <point x="2209" y="12102" />
             </connector>
           </ddscontrol>
-          <ddscontrol controlprogid="MSDDS.Polyline" left="1830" top="4501" logicalid="10" controlid="5" masterid="0" hint1="0" hint2="0" width="799" height="3199" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+          <ddscontrol controlprogid="MSDDS.Polyline" left="4119" top="6803" logicalid="10" controlid="5" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
             <control>
               <ddsxmlobj>
                 <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
@@ -91,9 +91,40 @@
                 <property name="VisibleAP" value="0" vartype="3" />
               </ddsxmlobj>
             </layoutobject>
-            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="3" sourceattachpoint="7" destattachpoint="6" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
-              <point x="2229" y="5000" />
-              <point x="2229" y="7400" />
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="3" sourceattachpoint="23" destattachpoint="20" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="4419" y="7202" />
+              <point x="5619" y="7202" />
+              <point x="5619" y="7201" />
+              <point x="6819" y="7201" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="FilmGenre" left="709" top="0" logicalid="12" controlid="7" masterid="0" hint1="0" hint2="0" width="3000" height="2302" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000a0000b80b0000fe080000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="Filmgenre" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="1810" top="2002" logicalid="13" controlid="8" masterid="0" hint1="0" hint2="0" width="799" height="3200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FilmGenre-Basiselement]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="7" sourceattachpoint="6" destattachpoint="5" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="2209" y="4702" />
+              <point x="2209" y="2302" />
             </connector>
           </ddscontrol>
         </dds>
@@ -109,15 +140,15 @@
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
-      <Value>-10686</Value>
+      <Value>-9079</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
-      <Value>-6262</Value>
+      <Value>-4347</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
-      <Value>20</Value>
+      <Value>0</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
@@ -385,6 +416,72 @@
         </Column>
       </Columns>
     </Column>
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="6c42d947-7533-46cf-8a65-9980af494112">
+      <ID>Film Genre</ID>
+      <Name>Film Genre 1</Name>
+      <ForeignKeyColumns>
+        <ForeignKeyColumn dwd:design-time-name="256938c3-385a-400c-a0e5-088a3b3aa165">
+          <DataType>Integer</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a5eacc07-15f0-4015-8107-ab42d10934b0">
+            <TableID>Filmgenre</TableID>
+            <ColumnID>ID</ColumnID>
+          </Source>
+        </ForeignKeyColumn>
+      </ForeignKeyColumns>
+      <Columns>
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="cdf6a1fc-22af-4865-9967-6bb9ecf346d6">
+          <ID>Genre L1</ID>
+          <Name>Genre L1</Name>
+          <IsKey>true</IsKey>
+          <Type>Text</Type>
+          <Content>Key</Content>
+          <KeyColumns>
+            <KeyColumn dwd:design-time-name="66f92ce3-4cff-4fcf-950e-270720233da8">
+              <DataType>WChar</DataType>
+              <DataSize>45</DataSize>
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="aa20bc7d-6a19-4f13-8e3b-b58f57169368">
+                <TableID>Filmgenre</TableID>
+                <ColumnID>Genre_L1</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+      </Columns>
+    </Column>
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="1bfd985e-8d64-4f2b-89ab-89481c5d1de9">
+      <ID>Film Genre 1</ID>
+      <Name>Film Genre 2</Name>
+      <ForeignKeyColumns>
+        <ForeignKeyColumn dwd:design-time-name="6d9c0516-49e2-4189-b548-d05508aaf702">
+          <DataType>Integer</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f6057e4c-a459-4bc2-9082-61c661f7a7fe">
+            <TableID>Filmgenre</TableID>
+            <ColumnID>ID</ColumnID>
+          </Source>
+        </ForeignKeyColumn>
+      </ForeignKeyColumns>
+      <Columns>
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="fc692244-cf6c-4097-82cf-d316aa9f3d41">
+          <ID>Genre L2</ID>
+          <Name>Genre L2</Name>
+          <IsKey>true</IsKey>
+          <Type>Text</Type>
+          <Content>Key</Content>
+          <KeyColumns>
+            <KeyColumn dwd:design-time-name="116adc72-fb75-4a32-9a27-2deab198f9e2">
+              <DataType>WChar</DataType>
+              <DataSize>45</DataSize>
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="13f66157-9a57-44d9-941b-823d707039bd">
+                <TableID>Filmgenre</TableID>
+                <ColumnID>Genre_L2</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+      </Columns>
+    </Column>
     <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="3a23c4eb-194e-4946-9d96-1cb7c1e09764">
       <Annotations>
         <Annotation>
@@ -592,9 +689,58 @@
   <MiningModels>
     <MiningModel dwd:design-time-name="572894d5-8fd8-4a0e-a85c-1b477e317521">
       <ID>ms_basiselement__material_charakter_1</ID>
-      <Name>ms_basiselement__material_charakter_1</Name>
+      <Name>ms_basiselement__material_charakter_western</Name>
       <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
       <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <Annotations>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Microsoft.AnalysisServices.MiningModel</Name>
+          <Value>
+            <Microsoft.AnalysisServices.MiningModel xmlns="">
+              <Filter>&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;MiningModelFilter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;Items&gt;
+    &lt;FilterGridItem&gt;
+      &lt;IsGroup&gt;false&lt;/IsGroup&gt;
+      &lt;IsDataTable&gt;false&lt;/IsDataTable&gt;
+      &lt;Operator&gt;Contains&lt;/Operator&gt;
+      &lt;ColumnName&gt;Film Genre 1&lt;/ColumnName&gt;
+      &lt;ColumnID&gt;Film Genre&lt;/ColumnID&gt;
+      &lt;Value /&gt;
+      &lt;AndOr&gt;None&lt;/AndOr&gt;
+      &lt;ChildItems&gt;
+        &lt;FilterGridItem&gt;
+          &lt;IsGroup&gt;false&lt;/IsGroup&gt;
+          &lt;IsDataTable&gt;false&lt;/IsDataTable&gt;
+          &lt;Operator&gt;=&lt;/Operator&gt;
+          &lt;ColumnName&gt;Genre L1&lt;/ColumnName&gt;
+          &lt;ColumnID&gt;Genre L1&lt;/ColumnID&gt;
+          &lt;Value&gt;Western&lt;/Value&gt;
+          &lt;AndOr&gt;None&lt;/AndOr&gt;
+          &lt;ChildItems /&gt;
+        &lt;/FilterGridItem&gt;
+        &lt;FilterGridItem&gt;
+          &lt;IsGroup&gt;false&lt;/IsGroup&gt;
+          &lt;IsDataTable&gt;false&lt;/IsDataTable&gt;
+          &lt;ColumnName /&gt;
+          &lt;AndOr&gt;AND&lt;/AndOr&gt;
+          &lt;ChildItems /&gt;
+        &lt;/FilterGridItem&gt;
+      &lt;/ChildItems&gt;
+    &lt;/FilterGridItem&gt;
+    &lt;FilterGridItem&gt;
+      &lt;IsGroup&gt;false&lt;/IsGroup&gt;
+      &lt;IsDataTable&gt;false&lt;/IsDataTable&gt;
+      &lt;ColumnName /&gt;
+      &lt;AndOr&gt;AND&lt;/AndOr&gt;
+      &lt;ChildItems /&gt;
+    &lt;/FilterGridItem&gt;
+  &lt;/Items&gt;
+&lt;/MiningModelFilter&gt;</Filter>
+            </Microsoft.AnalysisServices.MiningModel>
+          </Value>
+        </Annotation>
+      </Annotations>
       <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
       <State>Unprocessed</State>
       <Algorithm>Microsoft_Association_Rules</Algorithm>
@@ -638,8 +784,14 @@
             </Column>
           </Columns>
         </Column>
+        <Column dwd:design-time-name="fc6275d0-658a-46bc-a13d-2eee16f2bb4b">
+          <ID>Geschlecht</ID>
+          <Name>Geschlecht</Name>
+          <SourceColumnID>Geschlecht</SourceColumnID>
+        </Column>
       </Columns>
       <AllowDrillThrough>true</AllowDrillThrough>
+      <ddl100_100:Filter>EXISTS (SELECT * FROM [Film Genre 1] WHERE  [Genre L1] = 'Western' )</ddl100_100:Filter>
     </MiningModel>
   </MiningModels>
 </MiningStructure>
