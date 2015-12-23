@@ -11,8 +11,8 @@
   DTS:LocaleID="1031"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="285"
-  DTS:VersionGUID="{676ED285-BFB2-47CB-AF26-640EFD63FCE1}">
+  DTS:VersionBuild="291"
+  DTS:VersionGUID="{730D5F63-6441-4A64-AA64-7B8B2F8A59FE}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -1688,14 +1688,35 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
               VSTAMinorVersion="0"
               Language="CSharp">
               <ProjectItem
-                Name="Properties\Settings.settings"
-                Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
-<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
-  <Profiles>
-    <Profile Name="(Default)" />
-  </Profiles>
-  <Settings />
-</SettingsFile>]]></ProjectItem>
+                Name="Properties\AssemblyInfo.cs"
+                Encoding="UTF8"><![CDATA[using System.Reflection;
+using System.Runtime.CompilerServices;
+
+//
+// General Information about an assembly is controlled through the following 
+// set of attributes. Change these attribute values to modify the information
+// associated with an assembly.
+//
+[assembly: AssemblyTitle("ST_1ebb46fb9d2b4c5abed465bdb863318a")]
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("ST_1ebb46fb9d2b4c5abed465bdb863318a")]
+[assembly: AssemblyCopyright("Copyright @  2015")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
+//
+// Version information for an assembly consists of the following four values:
+//
+//      Major Version
+//      Minor Version 
+//      Build Number
+//      Revision
+//
+// You can specify all the values or you can default the Revision and Build Numbers 
+// by using the '*' as shown below:
+
+[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
               <ProjectItem
                 Name="Properties\Resources.resx"
                 Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
@@ -2418,35 +2439,14 @@ namespace ST_1ebb46fb9d2b4c5abed465bdb863318a.Properties {
     }
 }]]></ProjectItem>
               <ProjectItem
-                Name="Properties\AssemblyInfo.cs"
-                Encoding="UTF8"><![CDATA[using System.Reflection;
-using System.Runtime.CompilerServices;
-
-//
-// General Information about an assembly is controlled through the following 
-// set of attributes. Change these attribute values to modify the information
-// associated with an assembly.
-//
-[assembly: AssemblyTitle("ST_1ebb46fb9d2b4c5abed465bdb863318a")]
-[assembly: AssemblyDescription("")]
-[assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ST_1ebb46fb9d2b4c5abed465bdb863318a")]
-[assembly: AssemblyCopyright("Copyright @  2015")]
-[assembly: AssemblyTrademark("")]
-[assembly: AssemblyCulture("")]
-//
-// Version information for an assembly consists of the following four values:
-//
-//      Major Version
-//      Minor Version 
-//      Build Number
-//      Revision
-//
-// You can specify all the values or you can default the Revision and Build Numbers 
-// by using the '*' as shown below:
-
-[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
+                Name="Properties\Settings.settings"
+                Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
+<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
+  <Profiles>
+    <Profile Name="(Default)" />
+  </Profiles>
+  <Settings />
+</SettingsFile>]]></ProjectItem>
               <ProjectItem
                 Name="Properties\Resources.Designer.cs"
                 Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
@@ -2837,7 +2837,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
           DTS:LocaleID="-1"
           DTS:ObjectName="Invalid Filmdauer"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2014; © 2014 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="1">
+          DTS:ThreadHint="2">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -2853,7 +2853,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
           DTS:LocaleID="-1"
           DTS:ObjectName="Invalid Timecodes"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2014; © 2014 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="2">
+          DTS:ThreadHint="1">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -2904,7 +2904,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
                     <property
                       dataType="System.String"
                       description="Specifies the name of the database object used to open a rowset."
-                      name="OpenRowset">[dbo].[basiselement_im_bild]</property>
+                      name="OpenRowset">[basiselement_im_bild]</property>
                     <property
                       dataType="System.String"
                       description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -3003,6 +3003,11 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
                           refId="Package\Weighting &quot;Basiselement&quot;\Calculate &quot;BasiselementImBild&quot; Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[BasiselementID]"
                           dataType="i4"
                           name="BasiselementID" />
+                        <externalMetadataColumn
+                          refId="Package\Weighting &quot;Basiselement&quot;\Calculate &quot;BasiselementImBild&quot; Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Rollenrelevanz]"
+                          dataType="wstr"
+                          length="29"
+                          name="Rollenrelevanz" />
                       </externalMetadataColumns>
                     </input>
                   </inputs>
@@ -3056,25 +3061,17 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT basiselement.BasiselementID
-,SUM(DATEDIFF([second], kostuemtimecode.Timecodeanfang, kostuemtimecode.Timecodeende)) AS 'Sekunden'
-,(film.Dauer * 60) AS 'Filmdauer'
-,ROUND((CAST(SUM(DATEDIFF([second], kostuemtimecode.Timecodeanfang, kostuemtimecode.Timecodeende)) AS float) * 100) / (film.Dauer * 60), 1) AS 'Anteil'
-FROM kostuembasiselement
-INNER JOIN basiselement
-ON kostuembasiselement.BasiselementID = basiselement.BasiselementID 
-INNER JOIN kostuemtimecode 
-INNER JOIN kostuem
-ON kostuemtimecode.KostuemID = kostuem.KostuemID 
-AND kostuemtimecode.RollenID = kostuem.RollenID 
-AND kostuemtimecode.FilmID = kostuem.FilmID 
-INNER JOIN film 
-ON kostuem.FilmID = film.FilmID
-ON kostuembasiselement.KostuemID = kostuem.KostuemID 
-AND kostuembasiselement.RollenID = kostuem.RollenID 
-AND kostuembasiselement.FilmID = kostuem.FilmID
-WHERE (DATEDIFF([second], kostuemtimecode.Timecodeanfang, kostuemtimecode.Timecodeende) &gt; 0) AND (film.Dauer IS NOT NULL) AND (film.Dauer &gt; 0)
-GROUP BY kostuem.FilmID, kostuem.RollenID, kostuem.KostuemID, basiselement.BasiselementID, film.Dauer
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT        basiselement.BasiselementID, SUM(DATEDIFF([second], kostuemtimecode.Timecodeanfang, kostuemtimecode.Timecodeende)) AS 'Sekunden', film.Dauer * 60 AS 'Filmdauer', 
+                         ROUND((CAST(SUM(DATEDIFF([second], kostuemtimecode.Timecodeanfang, kostuemtimecode.Timecodeende)) AS float) * 100) / (film.Dauer * 60), 2) AS 'Anteil', rolle.Rollenrelevanz
+FROM            kostuembasiselement INNER JOIN
+                         basiselement ON kostuembasiselement.BasiselementID = basiselement.BasiselementID INNER JOIN
+                         kostuemtimecode INNER JOIN
+                         kostuem ON kostuemtimecode.KostuemID = kostuem.KostuemID AND kostuemtimecode.RollenID = kostuem.RollenID AND kostuemtimecode.FilmID = kostuem.FilmID INNER JOIN
+                         film ON kostuem.FilmID = film.FilmID ON kostuembasiselement.KostuemID = kostuem.KostuemID AND kostuembasiselement.RollenID = kostuem.RollenID AND 
+                         kostuembasiselement.FilmID = kostuem.FilmID INNER JOIN
+                         rolle ON kostuem.RollenID = rolle.RollenID AND kostuem.FilmID = rolle.FilmID
+WHERE        (DATEDIFF([second], kostuemtimecode.Timecodeanfang, kostuemtimecode.Timecodeende) &gt; 0) AND (film.Dauer IS NOT NULL) AND (film.Dauer &gt; 0)
+GROUP BY kostuem.FilmID, kostuem.RollenID, kostuem.KostuemID, basiselement.BasiselementID, film.Dauer, rolle.Rollenrelevanz
 ORDER BY kostuem.FilmID, kostuem.RollenID, kostuem.KostuemID</property>
                     <property
                       dataType="System.String"
@@ -3147,6 +3144,16 @@ ORDER BY kostuem.FilmID, kostuem.RollenID, kostuem.KostuemID</property>
                           lineageId="Package\Weighting &quot;Basiselement&quot;\Calculate &quot;BasiselementImBild&quot; Data\OLE DB Source.Outputs[OLE DB Source Output].Columns[BasiselementID]"
                           name="BasiselementID"
                           truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Weighting &quot;Basiselement&quot;\Calculate &quot;BasiselementImBild&quot; Data\OLE DB Source.Outputs[OLE DB Source Output].Columns[Rollenrelevanz]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Weighting &quot;Basiselement&quot;\Calculate &quot;BasiselementImBild&quot; Data\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Rollenrelevanz]"
+                          length="29"
+                          lineageId="Package\Weighting &quot;Basiselement&quot;\Calculate &quot;BasiselementImBild&quot; Data\OLE DB Source.Outputs[OLE DB Source Output].Columns[Rollenrelevanz]"
+                          name="Rollenrelevanz"
+                          truncationRowDisposition="FailComponent" />
                       </outputColumns>
                       <externalMetadataColumns
                         isUsed="True">
@@ -3166,6 +3173,11 @@ ORDER BY kostuem.FilmID, kostuem.RollenID, kostuem.KostuemID</property>
                           refId="Package\Weighting &quot;Basiselement&quot;\Calculate &quot;BasiselementImBild&quot; Data\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[BasiselementID]"
                           dataType="i4"
                           name="BasiselementID" />
+                        <externalMetadataColumn
+                          refId="Package\Weighting &quot;Basiselement&quot;\Calculate &quot;BasiselementImBild&quot; Data\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Rollenrelevanz]"
+                          dataType="wstr"
+                          length="29"
+                          name="Rollenrelevanz" />
                       </externalMetadataColumns>
                     </output>
                     <output
@@ -3193,6 +3205,12 @@ ORDER BY kostuem.FilmID, kostuem.RollenID, kostuem.KostuemID</property>
                           dataType="r8"
                           lineageId="Package\Weighting &quot;Basiselement&quot;\Calculate &quot;BasiselementImBild&quot; Data\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Anteil]"
                           name="Anteil" />
+                        <outputColumn
+                          refId="Package\Weighting &quot;Basiselement&quot;\Calculate &quot;BasiselementImBild&quot; Data\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Rollenrelevanz]"
+                          dataType="wstr"
+                          length="29"
+                          lineageId="Package\Weighting &quot;Basiselement&quot;\Calculate &quot;BasiselementImBild&quot; Data\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Rollenrelevanz]"
+                          name="Rollenrelevanz" />
                         <outputColumn
                           refId="Package\Weighting &quot;Basiselement&quot;\Calculate &quot;BasiselementImBild&quot; Data\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
                           dataType="i4"
@@ -3614,7 +3632,7 @@ public class ScriptMain : UserComponent
     public override void Input0_ProcessInputRow(Input0Buffer Row)
     {
         int i = 0;
-        int caseNumber = (int) Math.Round(Row.Anteil + 1);
+        int caseNumber = (int) Math.Round(Row.Anteil * 10);
         while (i < caseNumber)
         {
             Output0Buffer.AddRow();
@@ -4174,20 +4192,20 @@ namespace SC_5c5bb911751a40929d21768e8c7904b1.Properties {
                           dataType="System.String"><![CDATA[<?xml version="1.0" encoding="UTF-16" standalone="yes"?>
 <c:Project xmlns:c="http://schemas.microsoft.com/codeprojectml/2010/08/main" xmlns:msb="http://schemas.microsoft.com/developer/msbuild/2003" runtimeVersion="3.0" schemaVersion="1.0">
 	<msb:PropertyGroup>
-		<msb:CodeName>SC_5c5bb911751a40929d21768e8c7904b1</msb:CodeName>
 		<msb:Language>msBuild</msb:Language>
+		<msb:CodeName>SC_5c5bb911751a40929d21768e8c7904b1</msb:CodeName>
 		<msb:DisplayName>SC_5c5bb911751a40929d21768e8c7904b1</msb:DisplayName>
 		<msb:ProjectId>{3742AE1E-05DF-48D2-B16B-1164F8B669AD}</msb:ProjectId>
 	</msb:PropertyGroup>
 	<msb:ItemGroup>
 		<msb:Project Include="SC_5c5bb911751a40929d21768e8c7904b1.csproj"/>
-		<msb:File Include="Properties\AssemblyInfo.cs"/>
 		<msb:File Include="Properties\Settings.settings"/>
+		<msb:File Include="Properties\AssemblyInfo.cs"/>
 		<msb:File Include="Properties\Resources.resx"/>
 		<msb:File Include="Properties\Resources.Designer.cs"/>
-		<msb:File Include="Properties\Settings.Designer.cs"/>
-		<msb:File Include="main.cs"/>
 		<msb:File Include="BufferWrapper.cs"/>
+		<msb:File Include="main.cs"/>
+		<msb:File Include="Properties\Settings.Designer.cs"/>
 		<msb:File Include="ComponentWrapper.cs"/>
 	</msb:ItemGroup>
 </c:Project>]]></arrayElement>
@@ -4324,7 +4342,7 @@ namespace SC_5c5bb911751a40929d21768e8c7904b1.Properties {
                         <arrayElement
                           dataType="System.String"><![CDATA[TVqQAAMAAAAEAAAA//8AALgAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAgAAAAA4fug4AtAnNIbgBTM0hVGhpcyBwcm9ncmFtIGNhbm5vdCBiZSBydW4gaW4gRE9TIG1v
-ZGUuDQ0KJAAAAAAAAABQRQAATAEDAFltVVYAAAAAAAAAAOAAAiELAQsAACIAAAAIAAAAAAAAzkAA
+ZGUuDQ0KJAAAAAAAAABQRQAATAEDALhmelYAAAAAAAAAAOAAAiELAQsAACIAAAAIAAAAAAAAzkAA
 AAAgAAAAYAAAAAAAEAAgAAAAAgAABAAAAAAAAAAEAAAAAAAAAACgAAAAAgAAAAAAAAMAQIUAABAA
 ABAAAAAAEAAAEAAAAAAAABAAAAAAAAAAAAAAAHRAAABXAAAAAGAAAAgEAAAAAAAAAAAAAAAAAAAA
 AAAAAIAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
@@ -4337,7 +4355,7 @@ AE8AAAAAAAAABHIBAABwGm8OAAAKLBUCBQIDKA8AAAoOBHMNAAAGbwcAAAYFbxAAAAosIwICewQA
 AAQXWH0EAAAEAnsEAAAEFzMMAm8DAAAGAigEAAAGKgYqbgJ7AwAABCwSAnsDAAAEbzgAAAYCFH0D
 AAAEKgAAABMwBQA9AAAAAQAAERYKKy4EBpQOBHIRAABwKBEAAAozGQIFBpoCBAaUKA8AAAoOBHMk
 AAAGfQMAAAQGF1gKBgMyzgJvBgAABioGKkorBwIDbwgAAAYDbyIAAAYt8SoGKh4CKBMAAAoqHgIo
-FAAACioTMAIAzgAAAAIAABEWCgNvDgAABiMAAAAAAADwP1goFQAACmkLOKgAAAACewMAAARvNwAA
+FAAACioTMAIAzgAAAAIAABEWCgNvDgAABiMAAAAAAAAkQFooFQAACmkLOKgAAAACewMAAARvNwAA
 BgJ7AwAABANvEAAABm8lAAAGAnsDAAAEA28SAAAGbycAAAYCewMAAAQDbyAAAAZvKQAABgJ7AwAA
 BANvHgAABm8rAAAGAnsDAAAEA28cAAAGby0AAAYCewMAAAQDbxoAAAZvLwAABgJ7AwAABANvGAAA
 Bm8xAAAGAnsDAAAEA28WAAAGbzMAAAYCewMAAAQDbxQAAAZvNQAABgYXWAoGBz9R////Kh4CKAEA
@@ -4404,7 +4422,7 @@ AgARAAkAAgASAAsAAgATAA0AAgAUAA8AAgAVABEAAgAWABMAAgAXABUAAgAYABcAAgAZABkAAgAa
 ABsAAgAbAB0AAgAcAB8AAgAdACEAAgAeACMAAgAfACUAAgAgACcAAgAhACkAAQAlACsAAQAmAC0A
 AQAnAC8AAQAoADEAAQApADMAAQAqADUAAQArADcAAQAsADkAAQAtADsAAQAuAD0AAQAvAD8AAQAw
 AEEAAQAxAEMAAQAyAEUAAQAzAEcAAQA0AEkAAQA1AEsAAQA2AE0AAgA9AE8AAgA+AFEAAQA/AFEA
-AgBAAFMABIAAAAEAAACvFrRAAAAAAAAAgwoAAAwAAAAAAAAAAAAAAAEAvgAAAAAABAAAAAAAAAAA
+AgBAAFMABIAAAAEAAADLFmRIAAAAAAAAgwoAAAwAAAAAAAAAAAAAAAEAvgAAAAAABAAAAAAAAAAA
 AAAACgAZAQAAAAAEAAAAAAAAAAAAAAAKACIBAAAAAAwAAAAAAAAAAAAAAAEAcgEAAAAAAAAAAAEA
 AABPDAAAAAAAPE1vZHVsZT4AU0NfNWM1YmI5MTE3NTFhNDA5MjlkMjE3NjhlOGM3OTA0YjEuZGxs
 AFVzZXJDb21wb25lbnQAU2NyaXB0TWFpbgBJbnB1dDBCdWZmZXIAT3V0cHV0MEJ1ZmZlcgBDb25u
@@ -4468,7 +4486,7 @@ AHQAIABiAGUAIABzAGUAdAAgAHQAbwAgAEYAYQBsAHMAZQAuACAAQQBzAHMAaQBnAG4AIABhACAA
 dgBhAGwAdQBlACAAdABvACAAdABoAGUAIABjAG8AbAB1AG0AbgAgAGkAbgBzAHQAZQBhAGQALgAA
 cVMAQwBfADUAYwA1AGIAYgA5ADEAMQA3ADUAMQBhADQAMAA5ADIAOQBkADIAMQA3ADYAOABlADgA
 YwA3ADkAMAA0AGIAMQAuAFAAcgBvAHAAZQByAHQAaQBlAHMALgBSAGUAcwBvAHUAcgBjAGUAcwAA
-AAB97Uu2Yp8kQYCPNMR3NluoAAiJhF3NgIDMkQi3elxWGTTgiQMGEhgDBhIcAyAAAQMGEhQCBggJ
+AADIgnlq3aPCQ6+HUQWeAKwdAAiJhF3NgIDMkQi3elxWGTTgiQMGEhgDBhIcAyAAAQMGEhQCBggJ
 IAQBCA4SFRIZCyAEAQgdCB0SFRIZBSABARIQCSADARIVHQgSGQMgAA0DIAACAyAACAMgAA4DKAAN
 AygAAgMoAAgDKAAOBCABAQgEIAEBAgQgAQEOAwYSBQUgAQESBQMGEh0DBhIhBAAAEh0EAAASIQUA
 AQESIQQIABIdBAgAEiEDBhIkBAAAEiQECAASJAYgAgIOEVkFIAEdCAgGAAIIEhkOAwcBCAQBAAAA
@@ -4486,13 +4504,13 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABABAA
 AAAYAACAAAAAAAAAAAAAAAAAAAABAAEAAAAwAACAAAAAAAAAAAAAAAAAAAABAAAAAABIAAAAWGAA
 ALADAAAAAAAAAAAAALADNAAAAFYAUwBfAFYARQBSAFMASQBPAE4AXwBJAE4ARgBPAAAAAAC9BO/+
-AAABAAAAAQC0QK8WAAABALRArxY/AAAAAAAAAAQAAAACAAAAAAAAAAAAAAAAAAAARAAAAAEAVgBh
+AAABAAAAAQBkSMsWAAABAGRIyxY/AAAAAAAAAAQAAAACAAAAAAAAAAAAAAAAAAAARAAAAAEAVgBh
 AHIARgBpAGwAZQBJAG4AZgBvAAAAAAAkAAQAAABUAHIAYQBuAHMAbABhAHQAaQBvAG4AAAAAAAAA
 sAQQAwAAAQBTAHQAcgBpAG4AZwBGAGkAbABlAEkAbgBmAG8AAADsAgAAAQAwADAAMAAwADAANABi
 ADAAAABwACQAAQBGAGkAbABlAEQAZQBzAGMAcgBpAHAAdABpAG8AbgAAAAAAUwBDAF8ANQBjADUA
 YgBiADkAMQAxADcANQAxAGEANAAwADkAMgA5AGQAMgAxADcANgA4AGUAOABjADcAOQAwADQAYgAx
-AAAAQAAPAAEARgBpAGwAZQBWAGUAcgBzAGkAbwBuAAAAAAAxAC4AMAAuADUAOAAwADcALgAxADYA
-NQA2ADQAAAAAAHAAKAABAEkAbgB0AGUAcgBuAGEAbABOAGEAbQBlAAAAUwBDAF8ANQBjADUAYgBi
+AAAAQAAPAAEARgBpAGwAZQBWAGUAcgBzAGkAbwBuAAAAAAAxAC4AMAAuADUAOAAzADUALgAxADgA
+NQAzADIAAAAAAHAAKAABAEkAbgB0AGUAcgBuAGEAbABOAGEAbQBlAAAAUwBDAF8ANQBjADUAYgBi
 ADkAMQAxADcANQAxAGEANAAwADkAMgA5AGQAMgAxADcANgA4AGUAOABjADcAOQAwADQAYgAxAC4A
 ZABsAGwAAABIABIAAQBMAGUAZwBhAGwAQwBvAHAAeQByAGkAZwBoAHQAAABDAG8AcAB5AHIAaQBn
 AGgAdAAgAEAAIAAgADIAMAAxADUAAAB4ACgAAQBPAHIAaQBnAGkAbgBhAGwARgBpAGwAZQBuAGEA
@@ -4500,8 +4518,8 @@ bQBlAAAAUwBDAF8ANQBjADUAYgBiADkAMQAxADcANQAxAGEANAAwADkAMgA5AGQAMgAxADcANgA4
 AGUAOABjADcAOQAwADQAYgAxAC4AZABsAGwAAABoACQAAQBQAHIAbwBkAHUAYwB0AE4AYQBtAGUA
 AAAAAFMAQwBfADUAYwA1AGIAYgA5ADEAMQA3ADUAMQBhADQAMAA5ADIAOQBkADIAMQA3ADYAOABl
 ADgAYwA3ADkAMAA0AGIAMQAAAEQADwABAFAAcgBvAGQAdQBjAHQAVgBlAHIAcwBpAG8AbgAAADEA
-LgAwAC4ANQA4ADAANwAuADEANgA1ADYANAAAAAAASAAPAAEAQQBzAHMAZQBtAGIAbAB5ACAAVgBl
-AHIAcwBpAG8AbgAAADEALgAwAC4ANQA4ADAANwAuADEANgA1ADYANAAAAAAAAAAAAAAAAAAAAAAA
+LgAwAC4ANQA4ADMANQAuADEAOAA1ADMAMgAAAAAASAAPAAEAQQBzAHMAZQBtAGIAbAB5ACAAVgBl
+AHIAcwBpAG8AbgAAADEALgAwAC4ANQA4ADMANQAuADEAOAA1ADMAMgAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
@@ -6041,12 +6059,12 @@ FROM            basiselement_im_bild INNER JOIN
               DTS:LocaleID="-1"
               DTS:ObjectName="Create &quot;BasiselementImBild&quot; Table"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2014; © 2014 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="0">
+              DTS:ThreadHint="3">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
                   SQLTask:Connection="{82D75573-97DA-4285-AB7B-6708F7CF9820}"
-                  SQLTask:SqlStatementSource="IF OBJECT_ID('dbo.basiselement_im_bild', 'U') IS NOT NULL&#xA;  DROP TABLE [dbo].[basiselement_im_bild]&#xA;GO&#xA;CREATE TABLE [dbo].[basiselement_im_bild](&#xA;&#x9;[Sekunden] [int],&#xA;&#x9;[Filmdauer] [bigint],&#xA;&#x9;[Anteil] [float],&#xA;&#x9;[BasiselementID] [int]&#xA;) ON [PRIMARY]&#xA;GO" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+                  SQLTask:SqlStatementSource="IF OBJECT_ID('dbo.basiselement_im_bild', 'U') IS NOT NULL&#xA;  DROP TABLE [dbo].[basiselement_im_bild]&#xA;GO&#xA;CREATE TABLE [dbo].[basiselement_im_bild](&#xA;&#x9;[Sekunden] [int] NULL,&#xA;&#x9;[Filmdauer] [bigint] NULL,&#xA;&#x9;[Anteil] [float] NULL,&#xA;&#x9;[BasiselementID] [int] NULL,&#xA;&#x9;[Rollenrelevanz] [nvarchar](29) NULL&#xA;) ON [PRIMARY]&#xA;GO" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
               </DTS:ObjectData>
             </DTS:Executable>
             <DTS:Executable
@@ -6058,7 +6076,7 @@ FROM            basiselement_im_bild INNER JOIN
               DTS:LocaleID="-1"
               DTS:ObjectName="Create weighted &quot;Basiselement&quot; Table"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2014; © 2014 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="3">
+              DTS:ThreadHint="0">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -6234,6 +6252,13 @@ ORDER BY kostuem.FilmID, kostuem.RollenID, kostuem.KostuemID</property>
                           cachedName="Anteil"
                           externalMetadataColumnId="Package\Weighting &quot;Kostuem&quot;\Calculate &quot;KostuemImBild&quot; Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Anteil]"
                           lineageId="Package\Weighting &quot;Kostuem&quot;\Calculate &quot;KostuemImBild&quot; Data\OLE DB Source.Outputs[OLE DB Source Output].Columns[Anteil]" />
+                        <inputColumn
+                          refId="Package\Weighting &quot;Kostuem&quot;\Calculate &quot;KostuemImBild&quot; Data\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Rollenrelevanz]"
+                          cachedDataType="wstr"
+                          cachedLength="29"
+                          cachedName="Rollenrelevanz"
+                          externalMetadataColumnId="Package\Weighting &quot;Kostuem&quot;\Calculate &quot;KostuemImBild&quot; Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Rollenrelevanz]"
+                          lineageId="Package\Weighting &quot;Kostuem&quot;\Calculate &quot;KostuemImBild&quot; Data\OLE DB Source.Outputs[OLE DB Source Output].Columns[Rollenrelevanz]" />
                       </inputColumns>
                       <externalMetadataColumns
                         isUsed="True">
@@ -6261,6 +6286,11 @@ ORDER BY kostuem.FilmID, kostuem.RollenID, kostuem.KostuemID</property>
                           refId="Package\Weighting &quot;Kostuem&quot;\Calculate &quot;KostuemImBild&quot; Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Anteil]"
                           dataType="r8"
                           name="Anteil" />
+                        <externalMetadataColumn
+                          refId="Package\Weighting &quot;Kostuem&quot;\Calculate &quot;KostuemImBild&quot; Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Rollenrelevanz]"
+                          dataType="wstr"
+                          length="29"
+                          name="Rollenrelevanz" />
                       </externalMetadataColumns>
                     </input>
                   </inputs>
@@ -6314,20 +6344,14 @@ ORDER BY kostuem.FilmID, kostuem.RollenID, kostuem.KostuemID</property>
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT kostuem.FilmID, kostuem.RollenID, kostuem.KostuemID
-  , SUM(DATEDIFF([second], kostuemtimecode.Timecodeanfang, kostuemtimecode.Timecodeende)) AS 'Sekunden'
-  , film.Dauer * 60 as 'Filmdauer'
-  , ROUND((CAST(SUM(DATEDIFF([second], kostuemtimecode.Timecodeanfang, kostuemtimecode.Timecodeende)) AS float) * 100 / (film.Dauer * 60)), 1) as 'Anteil'
-FROM kostuemtimecode
-INNER JOIN kostuem
-ON kostuemtimecode.KostuemID = kostuem.KostuemID
-AND kostuemtimecode.RollenID = kostuem.RollenID
-AND kostuemtimecode.FilmID   = kostuem.FilmID
-INNER JOIN film
-ON kostuem.FilmID = film.FilmID
-WHERE DATEDIFF([second], kostuemtimecode.Timecodeanfang, kostuemtimecode.Timecodeende) &gt; 0
-AND film.Dauer IS NOT NULL AND film.Dauer &gt; 0
-GROUP BY kostuem.FilmID, kostuem.RollenID, kostuem.KostuemID, film.Dauer
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT        kostuem.FilmID, kostuem.RollenID, kostuem.KostuemID, SUM(DATEDIFF([second], kostuemtimecode.Timecodeanfang, kostuemtimecode.Timecodeende)) AS 'Sekunden', film.Dauer * 60 AS 'Filmdauer', 
+                         ROUND((CAST(SUM(DATEDIFF([second], kostuemtimecode.Timecodeanfang, kostuemtimecode.Timecodeende)) AS float) * 100) / (film.Dauer * 60), 2) AS 'Anteil', rolle.Rollenrelevanz
+FROM            kostuemtimecode INNER JOIN
+                         kostuem ON kostuemtimecode.KostuemID = kostuem.KostuemID AND kostuemtimecode.RollenID = kostuem.RollenID AND kostuemtimecode.FilmID = kostuem.FilmID INNER JOIN
+                         film ON kostuem.FilmID = film.FilmID INNER JOIN
+                         rolle ON kostuem.RollenID = rolle.RollenID AND kostuem.FilmID = rolle.FilmID
+WHERE        (DATEDIFF([second], kostuemtimecode.Timecodeanfang, kostuemtimecode.Timecodeende) &gt; 0) AND (film.Dauer IS NOT NULL) AND (film.Dauer &gt; 0)
+GROUP BY kostuem.FilmID, kostuem.RollenID, kostuem.KostuemID, film.Dauer, rolle.Rollenrelevanz
 ORDER BY kostuem.FilmID, kostuem.RollenID, kostuem.KostuemID</property>
                     <property
                       dataType="System.String"
@@ -6418,6 +6442,16 @@ ORDER BY kostuem.FilmID, kostuem.RollenID, kostuem.KostuemID</property>
                           lineageId="Package\Weighting &quot;Kostuem&quot;\Calculate &quot;KostuemImBild&quot; Data\OLE DB Source.Outputs[OLE DB Source Output].Columns[Anteil]"
                           name="Anteil"
                           truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Weighting &quot;Kostuem&quot;\Calculate &quot;KostuemImBild&quot; Data\OLE DB Source.Outputs[OLE DB Source Output].Columns[Rollenrelevanz]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Weighting &quot;Kostuem&quot;\Calculate &quot;KostuemImBild&quot; Data\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Rollenrelevanz]"
+                          length="29"
+                          lineageId="Package\Weighting &quot;Kostuem&quot;\Calculate &quot;KostuemImBild&quot; Data\OLE DB Source.Outputs[OLE DB Source Output].Columns[Rollenrelevanz]"
+                          name="Rollenrelevanz"
+                          truncationRowDisposition="FailComponent" />
                       </outputColumns>
                       <externalMetadataColumns
                         isUsed="True">
@@ -6445,6 +6479,11 @@ ORDER BY kostuem.FilmID, kostuem.RollenID, kostuem.KostuemID</property>
                           refId="Package\Weighting &quot;Kostuem&quot;\Calculate &quot;KostuemImBild&quot; Data\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Anteil]"
                           dataType="r8"
                           name="Anteil" />
+                        <externalMetadataColumn
+                          refId="Package\Weighting &quot;Kostuem&quot;\Calculate &quot;KostuemImBild&quot; Data\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Rollenrelevanz]"
+                          dataType="wstr"
+                          length="29"
+                          name="Rollenrelevanz" />
                       </externalMetadataColumns>
                     </output>
                     <output
@@ -6482,6 +6521,12 @@ ORDER BY kostuem.FilmID, kostuem.RollenID, kostuem.KostuemID</property>
                           dataType="r8"
                           lineageId="Package\Weighting &quot;Kostuem&quot;\Calculate &quot;KostuemImBild&quot; Data\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Anteil]"
                           name="Anteil" />
+                        <outputColumn
+                          refId="Package\Weighting &quot;Kostuem&quot;\Calculate &quot;KostuemImBild&quot; Data\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Rollenrelevanz]"
+                          dataType="wstr"
+                          length="29"
+                          lineageId="Package\Weighting &quot;Kostuem&quot;\Calculate &quot;KostuemImBild&quot; Data\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Rollenrelevanz]"
+                          name="Rollenrelevanz" />
                         <outputColumn
                           refId="Package\Weighting &quot;Kostuem&quot;\Calculate &quot;KostuemImBild&quot; Data\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
                           dataType="i4"
@@ -6662,7 +6707,7 @@ public class ScriptMain : UserComponent
     public override void Input0_ProcessInputRow(Input0Buffer Row)
     {
         int i = 0;
-        int caseNumber = (int) Math.Round(Row.Anteil + 1);
+        int caseNumber = (int) Math.Round(Row.Anteil * 10);
         while (i < caseNumber)
         {
             Output0Buffer.AddRow();
@@ -7536,20 +7581,20 @@ public class Variables
                           dataType="System.String"><![CDATA[<?xml version="1.0" encoding="UTF-16" standalone="yes"?>
 <c:Project xmlns:c="http://schemas.microsoft.com/codeprojectml/2010/08/main" xmlns:msb="http://schemas.microsoft.com/developer/msbuild/2003" runtimeVersion="3.0" schemaVersion="1.0">
 	<msb:PropertyGroup>
-		<msb:Language>msBuild</msb:Language>
 		<msb:CodeName>SC_64a66fc91d5e48ae8b092fd3a3a88e34</msb:CodeName>
+		<msb:Language>msBuild</msb:Language>
 		<msb:DisplayName>SC_64a66fc91d5e48ae8b092fd3a3a88e34</msb:DisplayName>
 		<msb:ProjectId>{084D9625-9B4F-49FC-B495-F4A9ACA45097}</msb:ProjectId>
 	</msb:PropertyGroup>
 	<msb:ItemGroup>
 		<msb:Project Include="SC_64a66fc91d5e48ae8b092fd3a3a88e34.csproj"/>
-		<msb:File Include="Properties\Settings.settings"/>
 		<msb:File Include="Properties\AssemblyInfo.cs"/>
+		<msb:File Include="Properties\Settings.settings"/>
 		<msb:File Include="Properties\Resources.resx"/>
 		<msb:File Include="Properties\Resources.Designer.cs"/>
-		<msb:File Include="BufferWrapper.cs"/>
-		<msb:File Include="main.cs"/>
 		<msb:File Include="Properties\Settings.Designer.cs"/>
+		<msb:File Include="main.cs"/>
+		<msb:File Include="BufferWrapper.cs"/>
 		<msb:File Include="ComponentWrapper.cs"/>
 	</msb:ItemGroup>
 </c:Project>]]></arrayElement>
@@ -7686,7 +7731,7 @@ namespace SC_64a66fc91d5e48ae8b092fd3a3a88e34.Properties {
                         <arrayElement
                           dataType="System.String"><![CDATA[TVqQAAMAAAAEAAAA//8AALgAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAgAAAAA4fug4AtAnNIbgBTM0hVGhpcyBwcm9ncmFtIGNhbm5vdCBiZSBydW4gaW4gRE9TIG1v
-ZGUuDQ0KJAAAAAAAAABQRQAATAEDAJxtVVYAAAAAAAAAAOAAAiELAQsAACQAAAAIAAAAAAAAvkIA
+ZGUuDQ0KJAAAAAAAAABQRQAATAEDAJRmelYAAAAAAAAAAOAAAiELAQsAACQAAAAIAAAAAAAAvkIA
 AAAgAAAAYAAAAAAAEAAgAAAAAgAABAAAAAAAAAAEAAAAAAAAAACgAAAAAgAAAAAAAAMAQIUAABAA
 ABAAAAAAEAAAEAAAAAAAABAAAAAAAAAAAAAAAGhCAABTAAAAAGAAAAgEAAAAAAAAAAAAAAAAAAAA
 AAAAAIAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
@@ -7699,7 +7744,7 @@ AE8AAAAAAAAABHIBAABwGm8OAAAKLBUCBQIDKA8AAAoOBHMNAAAGbwcAAAYFbxAAAAosIwICewQA
 AAQXWH0EAAAEAnsEAAAEFzMMAm8DAAAGAigEAAAGKgYqbgJ7AwAABCwSAnsDAAAEb0AAAAYCFH0D
 AAAEKgAAABMwBQA9AAAAAQAAERYKKy4EBpQOBHIPAABwKBEAAAozGQIFBpoCBAaUKA8AAAoOBHMo
 AAAGfQMAAAQGF1gKBgMyzgJvBgAABioGKkorBwIDbwgAAAYDbyYAAAYt8SoGKh4CKBMAAAoqHgIo
-FAAACioTMAMACgEAAAIAABEWCgNvJAAABiMAAAAAAADwP1goFQAACmkLOOQAAAACewMAAARvPwAA
+FAAACioTMAMACgEAAAIAABEWCgNvJAAABiMAAAAAAAAkQFooFQAACmkLOOQAAAACewMAAARvPwAA
 BgJ7AwAABANvEAAABm8pAAAGAnsDAAAEA28SAAAGby0AAAYCewMAAAQDbw4AAAZvKwAABgJ7AwAA
 BANvGAAABm8zAAAGAnsDAAAEA28cAAAGbzcAAAYCewMAAAQDbx4AAAZvOQAABgJ7AwAABANvIAAA
 Bm87AAAGAnsDAAAEA28iAAAGbz0AAAYCewMAAAQDbxYAAAZvMQAABgJ7AwAABANvGgAABm81AAAG
@@ -7774,7 +7819,7 @@ FwACABkAGQACABoAGwACABsAHQACABwAHwACAB0AIQACAB4AIwACAB8AJQACACAAJwACACEAKQAC
 ACIAKwACACMALQACACQALwACACUAMQABACkAMwABACoANQABACsANwABACwAOQABAC0AOwABAC4A
 PQACAC8APwACADAAQQABADEAQwABADIARQABADMARwABADQASQABADUASwABADYATQABADcATwAB
 ADgAUQABADkAUwABADoAVQABADsAVwABADwAWQABAD0AWwABAD4AXQACAEUAXwACAEYAYQABAEcA
-YQACAEgAYwAEgAAAAQAAAK8W1kAAAAAAAABhCgAADAAAAAAAAAAAAAAAAQC+AAAAAAAEAAAAAAAA
+YQACAEgAYwAEgAAAAQAAAMsWUkgAAAAAAABhCgAADAAAAAAAAAAAAAAAAQC+AAAAAAAEAAAAAAAA
 AAAAAAAKABkBAAAAAAQAAAAAAAAAAAAAAAoAIgEAAAAADAAAAAAAAAAAAAAAAQByAQAAAAAAAAAA
 AQAAAFkMAAAAAAAAADxNb2R1bGU+AFNDXzY0YTY2ZmM5MWQ1ZTQ4YWU4YjA5MmZkM2EzYTg4ZTM0
 LmRsbABVc2VyQ29tcG9uZW50AFNjcmlwdE1haW4ASW5wdXQwQnVmZmVyAE91dHB1dDBCdWZmZXIA
@@ -7838,7 +7883,7 @@ AGEAbgBuAG8AdAAgAGIAZQAgAHMAZQB0ACAAdABvACAARgBhAGwAcwBlAC4AIABBAHMAcwBpAGcA
 bgAgAGEAIAB2AGEAbAB1AGUAIAB0AG8AIAB0AGgAZQAgAGMAbwBsAHUAbQBuACAAaQBuAHMAdABl
 AGEAZAAuAABxUwBDAF8ANgA0AGEANgA2AGYAYwA5ADEAZAA1AGUANAA4AGEAZQA4AGIAMAA5ADIA
 ZgBkADMAYQAzAGEAOAA4AGUAMwA0AC4AUAByAG8AcABlAHIAdABpAGUAcwAuAFIAZQBzAG8AdQBy
-AGMAZQBzAAAAACJqH9c6E0REnZ71iYrFpW4ACImEXc2AgMyRCLd6XFYZNOCJAwYSGAMGEhwDIAAB
+AGMAZQBzAAAAAO9gn+1t12dDqoQETi3IkwgACImEXc2AgMyRCLd6XFYZNOCJAwYSGAMGEhwDIAAB
 AwYSFAIGCAkgBAEIDhIVEhkLIAQBCB0IHRIVEhkFIAEBEhAJIAMBEhUdCBIZAyAACAMgAAIEIAAS
 HQMgAA4DIAANAygACAMoAAIEKAASHQMoAA4DKAANBCABAQgEIAEBAgQgAQEOAwYSBQUgAQESBQMG
 EiEDBhIlBAAAEiEEAAASJQUAAQESJQQIABIhBAgAEiUDBhIkBAAAEiQECAASJAYgAgIOEV0FIAEd
@@ -7857,13 +7902,13 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAEAAA
 ABgAAIAAAAAAAAAAAAAAAAAAAAEAAQAAADAAAIAAAAAAAAAAAAAAAAAAAAEAAAAAAEgAAABYYAAA
 sAMAAAAAAAAAAAAAsAM0AAAAVgBTAF8AVgBFAFIAUwBJAE8ATgBfAEkATgBGAE8AAAAAAL0E7/4A
-AAEAAAABANZArxYAAAEA1kCvFj8AAAAAAAAABAAAAAIAAAAAAAAAAAAAAAAAAABEAAAAAQBWAGEA
+AAEAAAABAFJIyxYAAAEAUkjLFj8AAAAAAAAABAAAAAIAAAAAAAAAAAAAAAAAAABEAAAAAQBWAGEA
 cgBGAGkAbABlAEkAbgBmAG8AAAAAACQABAAAAFQAcgBhAG4AcwBsAGEAdABpAG8AbgAAAAAAAACw
 BBADAAABAFMAdAByAGkAbgBnAEYAaQBsAGUASQBuAGYAbwAAAOwCAAABADAAMAAwADAAMAA0AGIA
 MAAAAHAAJAABAEYAaQBsAGUARABlAHMAYwByAGkAcAB0AGkAbwBuAAAAAABTAEMAXwA2ADQAYQA2
 ADYAZgBjADkAMQBkADUAZQA0ADgAYQBlADgAYgAwADkAMgBmAGQAMwBhADMAYQA4ADgAZQAzADQA
-AABAAA8AAQBGAGkAbABlAFYAZQByAHMAaQBvAG4AAAAAADEALgAwAC4ANQA4ADAANwAuADEANgA1
-ADkAOAAAAAAAcAAoAAEASQBuAHQAZQByAG4AYQBsAE4AYQBtAGUAAABTAEMAXwA2ADQAYQA2ADYA
+AABAAA8AAQBGAGkAbABlAFYAZQByAHMAaQBvAG4AAAAAADEALgAwAC4ANQA4ADMANQAuADEAOAA1
+ADEANAAAAAAAcAAoAAEASQBuAHQAZQByAG4AYQBsAE4AYQBtAGUAAABTAEMAXwA2ADQAYQA2ADYA
 ZgBjADkAMQBkADUAZQA0ADgAYQBlADgAYgAwADkAMgBmAGQAMwBhADMAYQA4ADgAZQAzADQALgBk
 AGwAbAAAAEgAEgABAEwAZQBnAGEAbABDAG8AcAB5AHIAaQBnAGgAdAAAAEMAbwBwAHkAcgBpAGcA
 aAB0ACAAQAAgACAAMgAwADEANQAAAHgAKAABAE8AcgBpAGcAaQBuAGEAbABGAGkAbABlAG4AYQBt
@@ -7871,8 +7916,8 @@ AGUAAABTAEMAXwA2ADQAYQA2ADYAZgBjADkAMQBkADUAZQA0ADgAYQBlADgAYgAwADkAMgBmAGQA
 MwBhADMAYQA4ADgAZQAzADQALgBkAGwAbAAAAGgAJAABAFAAcgBvAGQAdQBjAHQATgBhAG0AZQAA
 AAAAUwBDAF8ANgA0AGEANgA2AGYAYwA5ADEAZAA1AGUANAA4AGEAZQA4AGIAMAA5ADIAZgBkADMA
 YQAzAGEAOAA4AGUAMwA0AAAARAAPAAEAUAByAG8AZAB1AGMAdABWAGUAcgBzAGkAbwBuAAAAMQAu
-ADAALgA1ADgAMAA3AC4AMQA2ADUAOQA4AAAAAABIAA8AAQBBAHMAcwBlAG0AYgBsAHkAIABWAGUA
-cgBzAGkAbwBuAAAAMQAuADAALgA1ADgAMAA3AC4AMQA2ADUAOQA4AAAAAAAAAAAAAAAAAAAAAAAA
+ADAALgA1ADgAMwA1AC4AMQA4ADUAMQA0AAAAAABIAA8AAQBBAHMAcwBlAG0AYgBsAHkAIABWAGUA
+cgBzAGkAbwBuAAAAMQAuADAALgA1ADgAMwA1AC4AMQA4ADUAMQA0AAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
@@ -9525,12 +9570,12 @@ FROM            kostuem INNER JOIN
               DTS:LocaleID="-1"
               DTS:ObjectName="Create &quot;KostuemImBild&quot; Table"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2014; © 2014 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="4">
+              DTS:ThreadHint="5">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
                   SQLTask:Connection="{82D75573-97DA-4285-AB7B-6708F7CF9820}"
-                  SQLTask:SqlStatementSource="IF OBJECT_ID('dbo.kostuem_im_bild', 'U') IS NOT NULL&#xA;  DROP TABLE [dbo].[kostuem_im_bild]&#xA;GO&#xA;CREATE TABLE [dbo].[kostuem_im_bild] (&#xA;    [FilmID] int,&#xA;    [RollenID] int,&#xA;    [KostuemID] int,&#xA;    [Sekunden] int,&#xA;    [Filmdauer] bigint,&#xA;    [Anteil] float&#xA;) ON [PRIMARY]&#xA;GO" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+                  SQLTask:SqlStatementSource="IF OBJECT_ID('dbo.kostuem_im_bild', 'U') IS NOT NULL&#xA;  DROP TABLE [dbo].[kostuem_im_bild]&#xA;GO&#xA;CREATE TABLE [dbo].[kostuem_im_bild](&#xA;&#x9;[FilmID] [int] NULL,&#xA;&#x9;[RollenID] [int] NULL,&#xA;&#x9;[KostuemID] [int] NULL,&#xA;&#x9;[Sekunden] [int] NULL,&#xA;&#x9;[Filmdauer] [bigint] NULL,&#xA;&#x9;[Anteil] [float] NULL,&#xA;&#x9;[Rollenrelevanz] [nvarchar](29) NULL&#xA;) ON [PRIMARY]&#xA;GO" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
               </DTS:ObjectData>
             </DTS:Executable>
             <DTS:Executable
@@ -9542,7 +9587,7 @@ FROM            kostuem INNER JOIN
               DTS:LocaleID="-1"
               DTS:ObjectName="Create weighted &quot;Kostuem&quot; Table"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2014; © 2014 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="5">
+              DTS:ThreadHint="4">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -10135,7 +10180,7 @@ FROM            kostuem INNER JOIN
     design-time-name="Package\Weighting &quot;Basiselement&quot;\Calculate &quot;BasiselementImBild&quot; Data">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="150,42"
           Id="Package\Weighting &quot;Basiselement&quot;\Calculate &quot;BasiselementImBild&quot; Data\OLE DB Source"
@@ -10163,9 +10208,7 @@ FROM            kostuem INNER JOIN
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -10307,7 +10350,7 @@ FROM            kostuem INNER JOIN
     design-time-name="Package\Weighting &quot;Kostuem&quot;\Calculate &quot;KostuemImBild&quot; Data">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="150,42"
           Id="Package\Weighting &quot;Kostuem&quot;\Calculate &quot;KostuemImBild&quot; Data\OLE DB Source"
@@ -10335,9 +10378,7 @@ FROM            kostuem INNER JOIN
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
