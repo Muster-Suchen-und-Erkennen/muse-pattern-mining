@@ -718,11 +718,6 @@
             </Column>
           </Columns>
         </Column>
-        <Column dwd:design-time-name="9812e8a6-8c4f-42ac-9f5d-404fc5067774">
-          <ID>Geschlecht</ID>
-          <Name>Geschlecht</Name>
-          <SourceColumnID>Geschlecht</SourceColumnID>
-        </Column>
       </Columns>
       <AllowDrillThrough>true</AllowDrillThrough>
       <ddl100_100:Filter>EXISTS (SELECT * FROM [Film Genre 1] WHERE  [Genre L1] = 'Western' )</ddl100_100:Filter>
@@ -823,11 +818,6 @@
               <Usage>Key</Usage>
             </Column>
           </Columns>
-        </Column>
-        <Column dwd:design-time-name="19da6b20-5fcd-4f44-aa1a-aeba841b9c98">
-          <ID>Geschlecht</ID>
-          <Name>Geschlecht</Name>
-          <SourceColumnID>Geschlecht</SourceColumnID>
         </Column>
       </Columns>
       <ddl100_100:Filter>EXISTS (SELECT * FROM [Film Genre 2] WHERE  [Genre L2] = 'Highschool Komödie' )</ddl100_100:Filter>
