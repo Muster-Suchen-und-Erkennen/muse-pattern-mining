@@ -24,24 +24,16 @@
   </DataSourceViews>
   <MiningModels>
     <ProjectItem>
-      <Name>ms_kostuem__charakter_basiselement.dmm</Name>
-      <FullPath>ms_kostuem__charakter_basiselement.dmm</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>ms_kostuem__stereotyp_basiselement.dmm</Name>
-      <FullPath>ms_kostuem__stereotyp_basiselement.dmm</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>ms_basiselement__farbe_stereotyp.dmm</Name>
-      <FullPath>ms_basiselement__farbe_stereotyp.dmm</FullPath>
+      <Name>ms_basiselement__design_charakter.dmm</Name>
+      <FullPath>ms_basiselement__design_charakter.dmm</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>ms_basiselement__farbe_charakter.dmm</Name>
       <FullPath>ms_basiselement__farbe_charakter.dmm</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>ms_basiselement__design_charakter.dmm</Name>
-      <FullPath>ms_basiselement__design_charakter.dmm</FullPath>
+      <Name>ms_basiselement__farbe_stereotyp.dmm</Name>
+      <FullPath>ms_basiselement__farbe_stereotyp.dmm</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>ms_basiselement__material_charakter.dmm</Name>
@@ -50,6 +42,18 @@
     <ProjectItem>
       <Name>ms_basiselement__zustand_charakter.dmm</Name>
       <FullPath>ms_basiselement__zustand_charakter.dmm</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>ms_kostuem__basiselement.dmm</Name>
+      <FullPath>ms_kostuem__basiselement.dmm</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>ms_kostuem__charakter_basiselement.dmm</Name>
+      <FullPath>ms_kostuem__charakter_basiselement.dmm</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>ms_kostuem__stereotyp_basiselement.dmm</Name>
+      <FullPath>ms_kostuem__stereotyp_basiselement.dmm</FullPath>
     </ProjectItem>
   </MiningModels>
   <Configurations>
