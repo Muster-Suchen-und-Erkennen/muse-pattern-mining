@@ -11,8 +11,8 @@
   DTS:LocaleID="1031"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="291"
-  DTS:VersionGUID="{730D5F63-6441-4A64-AA64-7B8B2F8A59FE}">
+  DTS:VersionBuild="295"
+  DTS:VersionGUID="{D460E16C-41E4-487A-A1D8-1DE70BD80B8D}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -47,6 +47,26 @@
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
+  <DTS:PackageParameters>
+    <DTS:PackageParameter
+      DTS:CreationName=""
+      DTS:DataType="14"
+      DTS:DTSID="{DAA7E1B6-6705-4655-B361-2CB18B39CCCC}"
+      DTS:ObjectName="cap_anteil_basiselement">
+      <DTS:Property
+        DTS:DataType="14"
+        DTS:Name="ParameterValue">3.3</DTS:Property>
+    </DTS:PackageParameter>
+    <DTS:PackageParameter
+      DTS:CreationName=""
+      DTS:DataType="14"
+      DTS:DTSID="{FFB0B533-2BEE-4A43-86B0-01C8F7631CA4}"
+      DTS:ObjectName="cap_anteil_kostuem">
+      <DTS:Property
+        DTS:DataType="14"
+        DTS:Name="ParameterValue">3.3</DTS:Property>
+    </DTS:PackageParameter>
+  </DTS:PackageParameters>
   <DTS:Variables />
   <DTS:Executables>
     <DTS:Executable
@@ -2984,6 +3004,13 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
                           cachedName="BasiselementID"
                           externalMetadataColumnId="Package\Weighting &quot;Basiselement&quot;\Calculate &quot;BasiselementImBild&quot; Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[BasiselementID]"
                           lineageId="Package\Weighting &quot;Basiselement&quot;\Calculate &quot;BasiselementImBild&quot; Data\OLE DB Source.Outputs[OLE DB Source Output].Columns[BasiselementID]" />
+                        <inputColumn
+                          refId="Package\Weighting &quot;Basiselement&quot;\Calculate &quot;BasiselementImBild&quot; Data\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Rollenrelevanz]"
+                          cachedDataType="wstr"
+                          cachedLength="29"
+                          cachedName="Rollenrelevanz"
+                          externalMetadataColumnId="Package\Weighting &quot;Basiselement&quot;\Calculate &quot;BasiselementImBild&quot; Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Rollenrelevanz]"
+                          lineageId="Package\Weighting &quot;Basiselement&quot;\Calculate &quot;BasiselementImBild&quot; Data\OLE DB Source.Outputs[OLE DB Source Output].Columns[Rollenrelevanz]" />
                       </inputColumns>
                       <externalMetadataColumns
                         isUsed="True">
@@ -5743,7 +5770,8 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
                          basiselement.Basiselementname_L4, basiselement.Basiselementname_L3, basiselement.Basiselementname_L2, basiselement.Basiselementname_L1, basiselement_im_bild.Sekunden, 
                          basiselement_im_bild.Filmdauer, basiselement_im_bild.Anteil
 FROM            basiselement_im_bild INNER JOIN
-                         basiselement ON basiselement_im_bild.BasiselementID = basiselement.BasiselementID</property>
+                         basiselement ON basiselement_im_bild.BasiselementID = basiselement.BasiselementID
+WHERE        (basiselement_im_bild.Anteil &lt;= ?)</property>
                     <property
                       dataType="System.String"
                       description="The variable that contains the SQL command to be executed."
@@ -5764,7 +5792,7 @@ FROM            basiselement_im_bild INNER JOIN
                     <property
                       dataType="System.String"
                       description="The mappings between the parameters in the SQL command and variables."
-                      name="ParameterMapping"></property>
+                      name="ParameterMapping">"Parameter0:Input",{DAA7E1B6-98FA-4655-B361-2CB18B39CCCC};</property>
                   </properties>
                   <connections>
                     <connection
@@ -9173,9 +9201,11 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT        kostuem.*, kostuem_im_bild.Sekunden, kostuem_im_bild.Filmdauer, kostuem_im_bild.Anteil
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT        kostuem.KostuemID, kostuem.RollenID, kostuem.FilmID, kostuem.Szenenbeschreibung, kostuem.Ortsbegebenheit, kostuem.DominanteFarbe, kostuem.StereotypRelevant, kostuem.DominanteFunktion, 
+                         kostuem.DominanterZustand, kostuem.Kostuemkurztext, kostuem.ID, kostuem.MuseURL, kostuem_im_bild.Sekunden, kostuem_im_bild.Filmdauer, kostuem_im_bild.Anteil
 FROM            kostuem INNER JOIN
-                         kostuem_im_bild ON kostuem.KostuemID = kostuem_im_bild.KostuemID AND kostuem.RollenID = kostuem_im_bild.RollenID AND kostuem.FilmID = kostuem_im_bild.FilmID</property>
+                         kostuem_im_bild ON kostuem.KostuemID = kostuem_im_bild.KostuemID AND kostuem.RollenID = kostuem_im_bild.RollenID AND kostuem.FilmID = kostuem_im_bild.FilmID
+WHERE        (kostuem_im_bild.Anteil &lt;= ?)</property>
                     <property
                       dataType="System.String"
                       description="The variable that contains the SQL command to be executed."
@@ -9196,7 +9226,7 @@ FROM            kostuem INNER JOIN
                     <property
                       dataType="System.String"
                       description="The mappings between the parameters in the SQL command and variables."
-                      name="ParameterMapping"></property>
+                      name="ParameterMapping">"Parameter0:Input",{FFB0B533-D411-4A43-86B0-01C8F7631CA4};</property>
                   </properties>
                   <connections>
                     <connection
