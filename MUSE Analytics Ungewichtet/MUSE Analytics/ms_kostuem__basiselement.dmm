@@ -246,6 +246,22 @@
         </KeyColumn>
       </KeyColumns>
     </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="fc755e6e-6778-4080-af5f-db8985affa1b">
+      <ID>Rollenrelevanz</ID>
+      <Name>Rollenrelevanz</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="69fdac8c-ad8f-4503-8e08-9f6c43228d5a">
+          <DataType>WChar</DataType>
+          <DataSize>29</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9135f9d3-dafc-47aa-8b0b-8146853fb9e9">
+            <TableID>KostuemFilmRolle</TableID>
+            <ColumnID>Rollenrelevanz</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
     <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="20be8795-65b3-4306-bf49-3fae32d7b8f6">
       <ID>Film Genre</ID>
       <Name>Film Genre 1</Name>
