@@ -295,54 +295,6 @@
         </KeyColumn>
       </KeyColumns>
     </Column>
-    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="4d4ccc72-22f4-449d-98c6-98fb362526f0">
-      <ID>Dominanter Zustand L1</ID>
-      <Name>Dominanter Zustand L1</Name>
-      <Type>Text</Type>
-      <Content>Discrete</Content>
-      <KeyColumns>
-        <KeyColumn dwd:design-time-name="632dcf14-9c9e-46a2-b94e-8cf55287a559">
-          <DataType>WChar</DataType>
-          <DataSize>45</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="b143f168-0d4b-42d8-b3fe-8178733bcaa3">
-            <TableID>Basiselement</TableID>
-            <ColumnID>DominanterZustand_L1</ColumnID>
-          </Source>
-        </KeyColumn>
-      </KeyColumns>
-    </Column>
-    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="7f674261-cd3c-4af8-b9b2-51145feb4a3a">
-      <ID>Dominanter Zustand L2</ID>
-      <Name>Dominanter Zustand L2</Name>
-      <Type>Text</Type>
-      <Content>Discrete</Content>
-      <KeyColumns>
-        <KeyColumn dwd:design-time-name="9ee8352c-1b0a-45f2-93d8-96a59d35ccaa">
-          <DataType>WChar</DataType>
-          <DataSize>45</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="c3362369-c0f6-40d3-bc2c-fbdee1a16f7d">
-            <TableID>Basiselement</TableID>
-            <ColumnID>DominanterZustand_L2</ColumnID>
-          </Source>
-        </KeyColumn>
-      </KeyColumns>
-    </Column>
-    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="1ef408cd-09c5-4e3b-841d-cfdbd425aebc">
-      <ID>Dominanter Zustand L3</ID>
-      <Name>Dominanter Zustand L3</Name>
-      <Type>Text</Type>
-      <Content>Discrete</Content>
-      <KeyColumns>
-        <KeyColumn dwd:design-time-name="1698245b-21fa-4376-bde6-5029225c1625">
-          <DataType>WChar</DataType>
-          <DataSize>45</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="9df41ba3-2f68-44df-ae3f-9b21e3a0deb0">
-            <TableID>Basiselement</TableID>
-            <ColumnID>DominanterZustand_L3</ColumnID>
-          </Source>
-        </KeyColumn>
-      </KeyColumns>
-    </Column>
     <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="87bb5d08-9f71-4592-9c53-dccc89e0d079">
       <Annotations>
         <Annotation>
@@ -843,11 +795,19 @@
             </Column>
           </Columns>
         </Column>
-        <Column dwd:design-time-name="eb728ba8-bf1f-4c58-83b2-968aaf5ba360">
-          <ID>Dominanter Zustand L2</ID>
-          <Name>Dominanter Zustand L2</Name>
-          <SourceColumnID>Dominanter Zustand L2</SourceColumnID>
+        <Column dwd:design-time-name="dc71e0f0-5c45-42cf-b49e-e1c22b5c4bfa">
+          <ID>Basiselement Zustand 2</ID>
+          <Name>Basiselement Zustand 2</Name>
+          <SourceColumnID>Basiselement Zustand 1</SourceColumnID>
           <Usage>PredictOnly</Usage>
+          <Columns>
+            <Column dwd:design-time-name="95e29c86-b451-4eef-99ed-199b136b740a">
+              <ID>Zustandsname L2</ID>
+              <Name>Zustandsname L2</Name>
+              <SourceColumnID>Zustandsname L2</SourceColumnID>
+              <Usage>Key</Usage>
+            </Column>
+          </Columns>
         </Column>
       </Columns>
       <AllowDrillThrough>true</AllowDrillThrough>
@@ -945,11 +905,19 @@
             </Column>
           </Columns>
         </Column>
-        <Column dwd:design-time-name="3ac0682a-20d0-4b3c-a748-0e9859f37766">
-          <ID>Dominanter Zustand L2</ID>
-          <Name>Dominanter Zustand L2</Name>
-          <SourceColumnID>Dominanter Zustand L2</SourceColumnID>
+        <Column dwd:design-time-name="b64e2de9-fad1-41f3-ae67-54b46d1cccd2">
+          <ID>Basiselement Zustand 2</ID>
+          <Name>Basiselement Zustand 2</Name>
+          <SourceColumnID>Basiselement Zustand 1</SourceColumnID>
           <Usage>PredictOnly</Usage>
+          <Columns>
+            <Column dwd:design-time-name="805db18d-3f01-4f9c-9e4d-c9cfc689e5be">
+              <ID>Zustandsname L2</ID>
+              <Name>Zustandsname L2</Name>
+              <SourceColumnID>Zustandsname L2</SourceColumnID>
+              <Usage>Key</Usage>
+            </Column>
+          </Columns>
         </Column>
       </Columns>
       <ddl100_100:Filter>EXISTS (SELECT * FROM [Film Genre 2] WHERE  [Genre L2] = 'Highschool Komödie' )</ddl100_100:Filter>

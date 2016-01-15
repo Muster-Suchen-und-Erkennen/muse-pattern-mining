@@ -293,54 +293,6 @@
         </KeyColumn>
       </KeyColumns>
     </Column>
-    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="fd345889-2c5a-4b50-a145-021d455cfff8">
-      <ID>Dominante Farbe L1</ID>
-      <Name>Dominante Farbe L1</Name>
-      <Type>Text</Type>
-      <Content>Discrete</Content>
-      <KeyColumns>
-        <KeyColumn dwd:design-time-name="2c39fe57-d1fa-4124-a189-23857185a93f">
-          <DataType>WChar</DataType>
-          <DataSize>45</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="ac40ddbf-7f5c-48f7-833b-d26719ced8a7">
-            <TableID>Basiselement</TableID>
-            <ColumnID>DominanteFarbe_L1</ColumnID>
-          </Source>
-        </KeyColumn>
-      </KeyColumns>
-    </Column>
-    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="8e92ce12-a12d-4c3a-8546-9081a433cdf9">
-      <ID>Dominante Farbe L2</ID>
-      <Name>Dominante Farbe L2</Name>
-      <Type>Text</Type>
-      <Content>Discrete</Content>
-      <KeyColumns>
-        <KeyColumn dwd:design-time-name="879053da-adef-4ba4-9834-1cacb2842719">
-          <DataType>WChar</DataType>
-          <DataSize>45</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="c128b206-cf0a-480f-8307-c3e8dec55f34">
-            <TableID>Basiselement</TableID>
-            <ColumnID>DominanteFarbe_L2</ColumnID>
-          </Source>
-        </KeyColumn>
-      </KeyColumns>
-    </Column>
-    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="b4795f41-3ac3-4346-bbdb-dd5e51608e7b">
-      <ID>Dominante Farbe L3</ID>
-      <Name>Dominante Farbe L3</Name>
-      <Type>Text</Type>
-      <Content>Discrete</Content>
-      <KeyColumns>
-        <KeyColumn dwd:design-time-name="533d39d4-916b-4679-bb53-c53e49a44866">
-          <DataType>WChar</DataType>
-          <DataSize>45</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="fd3339a8-a5fd-4cb8-8222-05062f169bcf">
-            <TableID>Basiselement</TableID>
-            <ColumnID>DominanteFarbe_L3</ColumnID>
-          </Source>
-        </KeyColumn>
-      </KeyColumns>
-    </Column>
     <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="55ecd136-40b9-4399-93f4-22cac47c9a2e">
       <Annotations>
         <Annotation>
