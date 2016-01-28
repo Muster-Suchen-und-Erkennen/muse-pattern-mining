@@ -1,0 +1,166 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="7b21e73f-054c-4cb2-9432-916d7fb003bd" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Kostuemspielzeit</ID>
+  <Name>Kostuemspielzeit</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-1739" scrolltop="-6509" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="7091" y="17013" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="kostuemspielzeit" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3572" height="3995" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="00080000f40d00009b0f0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_kostuemspielzeit" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-1739</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-6509</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="9a311541-89ee-45ab-b745-4041d6acbf77">
+    <DataSourceViewID>Kostuem DWX3</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="ab653289-7034-4f9d-b11a-74beb8749a94">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="810018c3-ee84-4d79-a718-25d8c3058e4b">
+      <ID>Kostuemspielzeit ID</ID>
+      <Name>Kostuemspielzeit ID</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d8240841-2bd9-4d6b-8f6d-5bc49e05f213">
+          <DataType>Integer</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4173165f-d9c4-44dc-bada-21fa2106ba1f">
+            <TableID>dbo_kostuemspielzeit</TableID>
+            <ColumnID>KostuemspielzeitID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="1428437c-e993-4479-a88e-7529d7fc3b68">
+          <AttributeID>Spielzeit</AttributeID>
+          <Name>Spielzeit</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="c2effd00-223d-4294-b2f0-48c2c169b075">
+          <AttributeID>Spielzeit Von</AttributeID>
+          <Name>Spielzeit Von</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="83eccee1-e648-44bc-b2f8-47274315017b">
+          <AttributeID>Spielzeit Bis</AttributeID>
+          <Name>Spielzeit Bis</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="64fae191-848c-4932-8b82-dad1593e9c3c">
+      <ID>Spielzeit</ID>
+      <Name>Spielzeit</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="3efeb165-5c49-4453-845e-c8cae5bd50ec">
+          <DataType>WChar</DataType>
+          <DataSize>45</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="cb342212-e498-4891-a7bd-8de7fe0cbcb0">
+            <TableID>dbo_kostuemspielzeit</TableID>
+            <ColumnID>Spielzeit</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="ddab4430-b580-4762-8c99-77e9a94c4191">
+      <ID>Spielzeit Von</ID>
+      <Name>Spielzeit Von</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="85c3f5ca-7b59-48ab-8bf3-97b71d798736">
+          <DataType>WChar</DataType>
+          <DataSize>45</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="db2eee6a-aab5-405e-864c-3dc518fafda8">
+            <TableID>dbo_kostuemspielzeit</TableID>
+            <ColumnID>SpielzeitVon</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="e6121391-c666-4207-9693-a0d370545ac0">
+      <ID>Spielzeit Bis</ID>
+      <Name>Spielzeit Bis</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="7480dbaf-3e24-4d00-83ed-69849742eaec">
+          <DataType>WChar</DataType>
+          <DataSize>45</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="802fc5fa-4687-48e4-9975-78f5dc8de15e">
+            <TableID>dbo_kostuemspielzeit</TableID>
+            <ColumnID>SpielzeitBis</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

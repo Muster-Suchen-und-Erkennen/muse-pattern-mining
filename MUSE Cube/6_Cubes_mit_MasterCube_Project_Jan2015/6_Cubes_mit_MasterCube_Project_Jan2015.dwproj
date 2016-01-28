@@ -1,0 +1,288 @@
+﻿<Project xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <ProductVersion>12.0.2430.0</ProductVersion>
+  <SchemaVersion>9.0.2.10</SchemaVersion>
+  <State>$base64$PFNvdXJjZUNvbnRyb2xJbmZvIHhtbG5zOnhzZD0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEiIHhtbG5zOnhzaT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiIHhtbG5zOmRkbDI9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDAzL2VuZ2luZS8yIiB4bWxuczpkZGwyXzI9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDAzL2VuZ2luZS8yLzIiIHhtbG5zOmRkbDEwMF8xMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDA4L2VuZ2luZS8xMDAvMTAwIiB4bWxuczpkZGwyMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEwL2VuZ2luZS8yMDAiIHhtbG5zOmRkbDIwMF8yMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEwL2VuZ2luZS8yMDAvMjAwIiB4bWxuczpkZGwzMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDExL2VuZ2luZS8zMDAiIHhtbG5zOmRkbDMwMF8zMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDExL2VuZ2luZS8zMDAvMzAwIiB4bWxuczpkZGw0MDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEyL2VuZ2luZS80MDAiIHhtbG5zOmRkbDQwMF80MDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEyL2VuZ2luZS80MDAvNDAwIiB4bWxuczpkd2Q9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vRGF0YVdhcmVob3VzZS9EZXNpZ25lci8xLjAiPg0KICA8RW5hYmxlZD5mYWxzZTwvRW5hYmxlZD4NCiAgPFByb2plY3ROYW1lPjwvUHJvamVjdE5hbWU+DQogIDxBdXhQYXRoPjwvQXV4UGF0aD4NCiAgPExvY2FsUGF0aD48L0xvY2FsUGF0aD4NCiAgPFByb3ZpZGVyPjwvUHJvdmlkZXI+DQo8L1NvdXJjZUNvbnRyb2xJbmZvPg==</State>
+  <Database>
+    <Name>6_Cubes_mit_MasterCube_Project_Jan2015.database</Name>
+    <FullPath>6_Cubes_mit_MasterCube_Project_Jan2015.database</FullPath>
+  </Database>
+  <Cubes>
+    <ProjectItem>
+      <Name>Kostuem DWX3.cube</Name>
+      <FullPath>Kostuem DWX3.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>Kostuem DWX3.partitions</Name>
+          <FullPath>Kostuem DWX3.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+  </Cubes>
+  <Dimensions>
+    <ProjectItem>
+      <Name>Basiselement.dim</Name>
+      <FullPath>Basiselement.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Basiselementdesign.dim</Name>
+      <FullPath>Basiselementdesign.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Basiselementfarbe.dim</Name>
+      <FullPath>Basiselementfarbe.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Basiselementform.dim</Name>
+      <FullPath>Basiselementform.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Basiselementfunktion.dim</Name>
+      <FullPath>Basiselementfunktion.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Basiselementmaterial.dim</Name>
+      <FullPath>Basiselementmaterial.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Basiselementtrageweise.dim</Name>
+      <FullPath>Basiselementtrageweise.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Basiselementzustand.dim</Name>
+      <FullPath>Basiselementzustand.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Film.dim</Name>
+      <FullPath>Film.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Filmfarbkonzept.dim</Name>
+      <FullPath>Filmfarbkonzept.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Filmgenre.dim</Name>
+      <FullPath>Filmgenre.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Filmproduktionsort.dim</Name>
+      <FullPath>Filmproduktionsort.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Hierarchie Basiselement Design.dim</Name>
+      <FullPath>Hierarchie Basiselement Design.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Hierarchie Basiselement Farbe.dim</Name>
+      <FullPath>Hierarchie Basiselement Farbe.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Hierarchie Basiselement Form.dim</Name>
+      <FullPath>Hierarchie Basiselement Form.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Hierarchie Basiselement Funktion.dim</Name>
+      <FullPath>Hierarchie Basiselement Funktion.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Hierarchie Basiselement Material.dim</Name>
+      <FullPath>Hierarchie Basiselement Material.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Hierarchie Basiselement Tragweise.dim</Name>
+      <FullPath>Hierarchie Basiselement Tragweise.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Hierarchie Basiselement Zustand.dim</Name>
+      <FullPath>Hierarchie Basiselement Zustand.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Hierarchie Basiselement.dim</Name>
+      <FullPath>Hierarchie Basiselement.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Hierarchie Film Farbkonzept.dim</Name>
+      <FullPath>Hierarchie Film Farbkonzept.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Hierarchie Film Genre.dim</Name>
+      <FullPath>Hierarchie Film Genre.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Hierarchie Film Produktionsort.dim</Name>
+      <FullPath>Hierarchie Film Produktionsort.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Hierarchie Kostuem Alterseindruck.dim</Name>
+      <FullPath>Hierarchie Kostuem Alterseindruck.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Hierarchie Kostuem Charaktereigenschaft.dim</Name>
+      <FullPath>Hierarchie Kostuem Charaktereigenschaft.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Hierarchie Kostuem Farbe.dim</Name>
+      <FullPath>Hierarchie Kostuem Farbe.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Hierarchie Kostuem Koerpermodifikation.dim</Name>
+      <FullPath>Hierarchie Kostuem Koerpermodifikation.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Hierarchie Kostuem Spielort.dim</Name>
+      <FullPath>Hierarchie Kostuem Spielort.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Hierarchie Kostuem Spielzeit.dim</Name>
+      <FullPath>Hierarchie Kostuem Spielzeit.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Hierarchie Kostuem Tageszeit.dim</Name>
+      <FullPath>Hierarchie Kostuem Tageszeit.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Hierarchie Rolle Dominante Charaktereigenschaft.dim</Name>
+      <FullPath>Hierarchie Rolle Dominante Charaktereigenschaft.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Hierarchie Teilelement Design.dim</Name>
+      <FullPath>Hierarchie Teilelement Design.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Hierarchie Teilelement Farbe.dim</Name>
+      <FullPath>Hierarchie Teilelement Farbe.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Hierarchie Teilelement Form.dim</Name>
+      <FullPath>Hierarchie Teilelement Form.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Hierarchie Teilelement Material.dim</Name>
+      <FullPath>Hierarchie Teilelement Material.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Hierarchie Teilelement Tragweise.dim</Name>
+      <FullPath>Hierarchie Teilelement Tragweise.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Hierarchie Teilelement Zustand.dim</Name>
+      <FullPath>Hierarchie Teilelement Zustand.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Hierarchie Teilelement.dim</Name>
+      <FullPath>Hierarchie Teilelement.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Kostuem.dim</Name>
+      <FullPath>Kostuem.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Kostuemalterseindruck.dim</Name>
+      <FullPath>Kostuemalterseindruck.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Kostuemcharaktereigenschaft.dim</Name>
+      <FullPath>Kostuemcharaktereigenschaft.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Kostuemkoerpermodifikationen.dim</Name>
+      <FullPath>Kostuemkoerpermodifikationen.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Kostuemspielort.dim</Name>
+      <FullPath>Kostuemspielort.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Kostuemspielzeit.dim</Name>
+      <FullPath>Kostuemspielzeit.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Kostuemtageszeit.dim</Name>
+      <FullPath>Kostuemtageszeit.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Rolle.dim</Name>
+      <FullPath>Rolle.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Rolledominantecharaktereigenschaft.dim</Name>
+      <FullPath>Rolledominantecharaktereigenschaft.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Rollenfamilienstand.dim</Name>
+      <FullPath>Rollenfamilienstand.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Teilelementdesign.dim</Name>
+      <FullPath>Teilelementdesign.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Teilelemente.dim</Name>
+      <FullPath>Teilelemente.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Teilelementfarbe.dim</Name>
+      <FullPath>Teilelementfarbe.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Teilelementform.dim</Name>
+      <FullPath>Teilelementform.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Teilelementmaterial.dim</Name>
+      <FullPath>Teilelementmaterial.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Teilelementtrageweise.dim</Name>
+      <FullPath>Teilelementtrageweise.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Teilelementzustand.dim</Name>
+      <FullPath>Teilelementzustand.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Rollen Stereotyp.dim</Name>
+      <FullPath>Rollen Stereotyp.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Hierarchie Rolle Stereotyp.dim</Name>
+      <FullPath>Hierarchie Rolle Stereotyp.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Hierarchie Rolle Beruf.dim</Name>
+      <FullPath>Hierarchie Rolle Beruf.dim</FullPath>
+    </ProjectItem>
+  </Dimensions>
+  <DataSources>
+    <ProjectItem>
+      <Name>Kostuem DWX3.ds</Name>
+      <FullPath>Kostuem DWX3.ds</FullPath>
+    </ProjectItem>
+  </DataSources>
+  <DataSourceViews>
+    <ProjectItem>
+      <Name>Kostuem DWX3.dsv</Name>
+      <FullPath>Kostuem DWX3.dsv</FullPath>
+    </ProjectItem>
+  </DataSourceViews>
+  <Configurations>
+    <Configuration>
+      <Name>Development</Name>
+      <Options>
+        <ConnectionMappings>
+          <ConfigurationSetting>
+            <Id>Kostuem DWX3</Id>
+            <Name>Kostuem DWX3</Name>
+            <Value xsi:type="xsd:string">Provider=SQLNCLI11.1;Data Source=localhost;Integrated Security=SSPI;Initial Catalog=kostuemDWX1</Value>
+          </ConfigurationSetting>
+        </ConnectionMappings>
+        <ConnectionSecurityMappings>
+          <ConfigurationSetting>
+            <Id>Kostuem DWX3</Id>
+            <Name>Kostuem DWX3</Name>
+            <Value xsi:type="xsd:int">0</Value>
+          </ConfigurationSetting>
+        </ConnectionSecurityMappings>
+      </Options>
+    </Configuration>
+  </Configurations>
+</Project>

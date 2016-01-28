@@ -1,0 +1,18 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "6_Cubes_mit_MasterCube_Project_Jan2015", "6_Cubes_mit_MasterCube_Project_Jan2015\6_Cubes_mit_MasterCube_Project_Jan2015.dwproj", "{C53363D8-4AC7-4CF5-9A40-EFE4B35427F1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C53363D8-4AC7-4CF5-9A40-EFE4B35427F1}.Development|Default.ActiveCfg = Development
+		{C53363D8-4AC7-4CF5-9A40-EFE4B35427F1}.Development|Default.Build.0 = Development
+		{C53363D8-4AC7-4CF5-9A40-EFE4B35427F1}.Development|Default.Deploy.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

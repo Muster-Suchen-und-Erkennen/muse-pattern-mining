@@ -1,0 +1,227 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="25c69011-8670-4277-9340-3cefd6d855f9" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Kostuem</ID>
+  <Name>Kostuem</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2375" scrolltop="-8110" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="12012" y="14102" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="Kostuem" left="-933" top="-5741" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="3863" height="5741" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000a0000170f00006d160000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Kostuem" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-2375</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-8110</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>-933</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>-5741</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="fd209d0f-309a-4b96-b4df-c5ae0e1c8e63">
+    <DataSourceViewID>Kostuem DWX3</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="d5a9e191-725a-46ff-ae55-b440dcf0ff4f">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="91db0627-f292-4a10-8a3f-86d095a69261">
+      <ID>Kostuem ID</ID>
+      <Name>Kostuem ID</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="daa0778e-73b0-4df3-9568-1c1050bf9896">
+          <DataType>Integer</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e6843b9d-1df6-497c-b1c5-e8d06931a9f5">
+            <TableID>dbo_Kostuem</TableID>
+            <ColumnID>KostuemID</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="512a2c8d-02fc-41e2-be54-51b3ec73b6e4">
+          <DataType>Integer</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3edf7be1-502e-4c46-a72e-f0b63d8b4220">
+            <TableID>dbo_Kostuem</TableID>
+            <ColumnID>RollenID</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="4198feb4-dd20-42a8-a7e3-9c4dca575e0b">
+          <DataType>Integer</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c001fb17-506a-4a71-bcb9-19553856fdc2">
+            <TableID>dbo_Kostuem</TableID>
+            <ColumnID>FilmID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="80e59445-4696-4e9a-94f4-7a25e57f2393">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="2fb30130-e3ca-4f03-9207-7fdc0e8a2bbb">
+          <TableID>dbo_Kostuem</TableID>
+          <ColumnID>KostuemID</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="fd547daf-2e20-4212-9b9c-d036e96ab724">
+          <AttributeID>Dominante Farbe</AttributeID>
+          <Name>Dominante Farbe</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="1c383705-2ab4-4ec7-be7d-eb823a61cab9">
+          <AttributeID>Ortsbegebenheit</AttributeID>
+          <Name>Ortsbegebenheit</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="969555d2-73bc-46bb-aa80-13ef092f10aa">
+          <AttributeID>Stereotyp Relevant</AttributeID>
+          <Name>Stereotyp Relevant</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="b243a042-23e2-4e81-9d47-3915a8d60e02">
+          <AttributeID>Kostuemkurztext</AttributeID>
+          <Name>Kostuemkurztext</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="ef16c1de-9383-488c-9764-4db153853467">
+          <AttributeID>Muse URL</AttributeID>
+          <Name>Muse URL</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="5823822e-09b7-48bb-89ee-88a3a357f8e3">
+      <ID>Dominante Farbe</ID>
+      <Name>Dominante Farbe</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="8311c1ba-f6fd-4228-ae77-390a1525e7eb">
+          <DataType>WChar</DataType>
+          <DataSize>45</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="094f626f-81ba-41d9-bd2e-08f82a4c33d5">
+            <TableID>dbo_Kostuem</TableID>
+            <ColumnID>DominanteFarbe</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="e731f3ee-56fc-42fd-acdf-81c0b4cf5739">
+      <ID>Ortsbegebenheit</ID>
+      <Name>Ortsbegebenheit</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a1a715bb-4193-44aa-a428-fbf523f90b1f">
+          <DataType>WChar</DataType>
+          <DataSize>35</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="39ac9d1b-545a-4d53-a775-bd960067de90">
+            <TableID>dbo_Kostuem</TableID>
+            <ColumnID>Ortsbegebenheit</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="311b27e6-eb59-437d-922a-65d28e256cc9">
+      <ID>Stereotyp Relevant</ID>
+      <Name>Stereotyp Relevant</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="6c292ae2-0bd7-4129-a874-933b27364408">
+          <DataType>WChar</DataType>
+          <DataSize>15</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="42ca8703-d520-4a36-841a-3fd95152fb69">
+            <TableID>dbo_Kostuem</TableID>
+            <ColumnID>StereotypRelevant</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="45835fb8-c436-4ebb-8687-0eb297fd2604">
+      <ID>Kostuemkurztext</ID>
+      <Name>Kostuemkurztext</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="dc9bff6c-d0b0-45f7-8ade-fd69a54c1172">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1225bfeb-1b57-48d3-8100-43fae0ad7ac7">
+            <TableID>dbo_Kostuem</TableID>
+            <ColumnID>Kostuemkurztext</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="41c8e01c-5154-4c72-a3e9-1095e32bf275">
+      <ID>Muse URL</ID>
+      <Name>Muse URL</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="7cc51de2-681c-4406-b1b3-90bd72a88b85">
+          <DataType>WChar</DataType>
+          <DataSize>150</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="339f151b-5db3-402f-a88b-7202381581a6">
+            <TableID>dbo_Kostuem</TableID>
+            <ColumnID>museURL</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

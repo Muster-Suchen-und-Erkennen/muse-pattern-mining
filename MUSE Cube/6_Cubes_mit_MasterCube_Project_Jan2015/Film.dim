@@ -1,0 +1,262 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="667008a4-03ed-4f1f-b5a6-e17a8b08c59a" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Film</ID>
+  <Name>Film</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2084" scrolltop="-8110" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="8652" y="21220" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="Film" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="4445" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000800005d11000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Film" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-2084</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-8110</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="31eee54a-6276-4e32-a0a7-32f444754b20">
+    <DataSourceViewID>Kostuem DWX3</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="7470705d-eba4-4bb1-ad80-ec7698857105">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="b66dca10-124f-4268-87a1-6ea1a8ee41ed">
+      <ID>Film ID</ID>
+      <Name>Film ID</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="4d46b37c-d052-44a0-834e-50c568852b30">
+          <DataType>Integer</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="586e44d2-57f4-4d41-b47d-dda89ef3c940">
+            <TableID>dbo_Film</TableID>
+            <ColumnID>FilmID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="19fdc79e-c024-4db7-aaac-b7f4e1776883">
+          <AttributeID>Originaltitel</AttributeID>
+          <Name>Originaltitel</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="0caba609-e04a-4681-a592-3c9ff6a42d5f">
+          <AttributeID>Regiseurvorname</AttributeID>
+          <Name>Regiseurvorname</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="6df2842c-6245-4e56-aff7-696f5d2f4553">
+          <AttributeID>Regiseurnachname</AttributeID>
+          <Name>Regiseurnachname</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="89c0e3a0-fa85-4d42-8d3a-16640ed04568">
+          <AttributeID>Kostuembildnervorname</AttributeID>
+          <Name>Kostuembildnervorname</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="59ed1750-77a0-46b3-b3d3-1bc40d72d5bc">
+          <AttributeID>Kostuembildnernachname</AttributeID>
+          <Name>Kostuembildnernachname</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="1360a2fb-15d4-436e-b69b-7b4d5daa8c0a">
+          <AttributeID>Erscheinungsjahr</AttributeID>
+          <Name>Erscheinungsjahr</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="c8a766ec-c56f-4d04-b4d2-069a06834406">
+          <AttributeID>Stil</AttributeID>
+          <Name>Stil</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="714df6a0-a516-461e-bf68-a4b052f99df0">
+          <AttributeID>Dauer</AttributeID>
+          <Name>Dauer</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="58fb0372-c27a-4d6e-a7ea-67655a06f93a">
+      <ID>Originaltitel</ID>
+      <Name>Originaltitel</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="bfa63bd3-965c-473d-b47d-57b1b2131141">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4e1c26cc-cc45-4647-a1c1-4c1d223c2e16">
+            <TableID>dbo_Film</TableID>
+            <ColumnID>Originaltitel</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="03418662-1987-4969-a886-bcc1fe81635c">
+      <ID>Regiseurvorname</ID>
+      <Name>Regiseurvorname</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="f0917f01-3e76-4a94-9402-7b62f6acfca2">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="84e4a924-117e-46cf-ab2b-cd96581ca87f">
+            <TableID>dbo_Film</TableID>
+            <ColumnID>Regiseurvorname</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="002a7894-8f15-4eac-8637-541aee1bda70">
+      <ID>Regiseurnachname</ID>
+      <Name>Regiseurnachname</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a811d330-b2b1-41ee-a2cf-59b8d1d121df">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d87bf3cd-cd7b-4a91-b6f8-93dbeefbf7e0">
+            <TableID>dbo_Film</TableID>
+            <ColumnID>Regiseurnachname</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="21f8364a-2bc1-4ffc-a11d-c9e48f572d6d">
+      <ID>Kostuembildnervorname</ID>
+      <Name>Kostuembildnervorname</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="f0462029-9457-432d-9e6d-4bc4dc4643d4">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b7f3a79a-c31f-4147-83aa-9cd36fd37641">
+            <TableID>dbo_Film</TableID>
+            <ColumnID>Kostuembildnervorname</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="67909ba3-a7ff-4dcc-9599-39e38cbf45aa">
+      <ID>Kostuembildnernachname</ID>
+      <Name>Kostuembildnernachname</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="69f2f00e-6dc8-4a23-b3e4-35696eab9999">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1beaaf6f-4d61-4659-99f8-39ad20bd6f5e">
+            <TableID>dbo_Film</TableID>
+            <ColumnID>Kostuembildnernachname</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="65433a73-809b-47ec-bb7b-54959a1f2cfe">
+      <ID>Erscheinungsjahr</ID>
+      <Name>Erscheinungsjahr</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="580f639d-df18-4544-923f-316e72998122">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3f44c19d-d6ff-41a0-ade3-3cb7802b65b9">
+            <TableID>dbo_Film</TableID>
+            <ColumnID>Erscheinungsjahr</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="61faec63-06d9-48e2-ab68-de4ea1d73b1d">
+      <ID>Stil</ID>
+      <Name>Stil</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="94d7c9cf-8dce-430d-9ffd-5bdecd4d1ccf">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="20da6f48-73aa-421b-ae4b-8247aecdbd9a">
+            <TableID>dbo_Film</TableID>
+            <ColumnID>Stil</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="79fdca16-3bc3-484f-be1b-c46661de5292">
+      <ID>Dauer</ID>
+      <Name>Dauer</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="9a90fa5f-5714-42fe-97d0-dc926395b383">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ab64a23d-910b-44c9-9312-5b53411307c5">
+            <TableID>dbo_Film</TableID>
+            <ColumnID>Dauer</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

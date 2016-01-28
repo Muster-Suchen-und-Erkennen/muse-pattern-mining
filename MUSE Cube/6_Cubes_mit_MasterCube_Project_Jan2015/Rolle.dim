@@ -1,0 +1,218 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="31f8a1e4-4ae0-401d-a069-354ad854cf55" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Rolle</ID>
+  <Name>Rolle</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2097" scrolltop="-8110" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="8652" y="21220" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="Rolle" left="20" top="-2143" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="4419" height="7143" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="0008000043110000e71b0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Rolle" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-2097</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-8110</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>-2143</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="79dffcb7-f370-4db5-be48-e8716b17f913">
+    <DataSourceViewID>Kostuem DWX3</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="f90313ab-4144-4206-b6bf-7a9940e44471">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="4dacdd22-472e-4267-980c-170e57a1affb">
+      <ID>Rollen ID</ID>
+      <Name>Rollen ID</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a77ec5b8-90c1-437e-9589-51928ba1c634">
+          <DataType>Integer</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="449280cc-c3e0-4845-8ff0-895f2cb47c75">
+            <TableID>dbo_Rolle</TableID>
+            <ColumnID>RollenID</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="714ce28e-2055-411f-ad32-716a406244bb">
+          <DataType>Integer</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d496e883-898c-43d2-9f0d-63e79900886c">
+            <TableID>dbo_Rolle</TableID>
+            <ColumnID>FilmID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="82a39e3f-7e24-4b30-ab8e-9186f7fcd24d">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="5167e618-d31f-4245-9df5-edc4a794adf8">
+          <TableID>dbo_Rolle</TableID>
+          <ColumnID>RollenID</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="0baad3b6-9ef0-459e-b104-b39eae6a2627">
+          <AttributeID>Rollenberuf</AttributeID>
+          <Name>Rollenberuf</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="aa7544a8-f2fa-4a7e-b701-b1df7da1b5f7">
+          <AttributeID>Geschlecht</AttributeID>
+          <Name>Geschlecht</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="d8568844-2acc-4092-a1b3-5246dbe3eaad">
+          <AttributeID>Rollenrelevanz</AttributeID>
+          <Name>Rollenrelevanz</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="e2fd0c3f-f6dc-450b-84b3-be7e0ee95ed7">
+          <AttributeID>Name</AttributeID>
+          <Name>Name_</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="d01b8c19-ec96-4a52-9365-c6b9f017e01e">
+          <AttributeID>Muse URL</AttributeID>
+          <Name>Muse URL</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="8b97fdf5-f090-4aa3-ab8b-fd550413fb4f">
+      <ID>Rollenberuf</ID>
+      <Name>Rollenberuf</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="37edd6df-0e18-473b-a078-2c65ac612098">
+          <DataType>WChar</DataType>
+          <DataSize>45</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="100d7cf3-d96f-42aa-8ab2-0b955614bf34">
+            <TableID>dbo_Rolle</TableID>
+            <ColumnID>Rollenberuf</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="42145628-5aa6-4ecf-ac8d-1bf328e33547">
+      <ID>Geschlecht</ID>
+      <Name>Geschlecht</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="efbd6b01-15a5-4b2d-8ebf-4bab480d797c">
+          <DataType>WChar</DataType>
+          <DataSize>29</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b7f22253-2f8f-494c-bbad-fd52922a27b4">
+            <TableID>dbo_Rolle</TableID>
+            <ColumnID>Geschlecht</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="53cd6d9e-c871-4d38-9f19-639d6541f915">
+      <ID>Rollenrelevanz</ID>
+      <Name>Rollenrelevanz</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="9641a497-5e17-40a9-94bf-fdff1e06f921">
+          <DataType>WChar</DataType>
+          <DataSize>29</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0f07ba1d-1955-48a6-9781-761f1ec28338">
+            <TableID>dbo_Rolle</TableID>
+            <ColumnID>Rollenrelevanz</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="e2b19dc6-6f95-4ffd-975d-e745a963a915">
+      <ID>Name</ID>
+      <Name>Name</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="8c1f443f-3ab7-40ed-a906-7ff76933cc96">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c4ad4dae-9fb3-4968-8e55-e9a2a662f504">
+            <TableID>dbo_Rolle</TableID>
+            <ColumnID>Name</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="4d97497a-0c75-4a50-b405-e89fc5613a4f">
+      <ID>Muse URL</ID>
+      <Name>Muse URL</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="ce554b01-9082-4ddf-953f-93cac2945931">
+          <DataType>WChar</DataType>
+          <DataSize>150</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9e648340-edc2-4328-b8d6-55e7ff03a42a">
+            <TableID>dbo_Rolle</TableID>
+            <ColumnID>MuseURL</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

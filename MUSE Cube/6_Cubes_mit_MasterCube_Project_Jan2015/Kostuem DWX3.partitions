@@ -1,0 +1,485 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="b46f10a9-d196-41a1-8707-c829f4adffe4" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Kostuem DWX3</ID>
+  <MeasureGroups>
+    <MeasureGroup>
+      <ID>Faktentabelle Basiselement</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="1eb27dbf-c407-4b84-a953-fa0efbd48630">
+          <ID>Faktentabelle Basiselement</ID>
+          <Name>Faktentabelle Basiselement</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="4795bd19-a513-49c9-b808-df9aac721783">
+            <DataSourceViewID>Kostuem DWX3</DataSourceViewID>
+            <TableID>dbo_FaktentabelleBasiselement</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Faktentabelle Kostuem</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="33ec5668-c4e5-43ca-aaf1-78620bd2efeb">
+          <ID>Faktentabelle Kostuem</ID>
+          <Name>Faktentabelle Kostuem</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="db99e401-daa4-4c69-abca-057eeba08f0b">
+            <DataSourceViewID>Kostuem DWX3</DataSourceViewID>
+            <TableID>dbo_FaktentabelleKostuem</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Faktentabelle Kostuem Timecode</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="b0c7956e-3f55-4198-b7cd-3b18aa821491">
+          <ID>Faktentabelle Kostuem Timecode</ID>
+          <Name>Faktentabelle Kostuem Timecode</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="4f37069f-6399-4641-8deb-a55a7e24857b">
+            <DataSourceViewID>Kostuem DWX3</DataSourceViewID>
+            <TableID>dbo_FaktentabelleKostuemTimecode</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Faktentabelle Rolle</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="9be8c2bf-c420-46d0-979a-2dcd54cb4376">
+          <ID>Faktentabelle Rolle</ID>
+          <Name>Faktentabelle Rolle</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="d7766f97-9d00-4f54-b3c4-4f40943ed192">
+            <DataSourceViewID>Kostuem DWX3</DataSourceViewID>
+            <TableID>dbo_FaktentabelleRolle</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Faktentabelle Teilelement</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="d9ae01a9-492c-4096-9186-e151a7cfccfc">
+          <ID>Faktentabelle Teilelement</ID>
+          <Name>Faktentabelle Teilelement</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="abacb11b-aa9c-4749-8482-b9de5f93f993">
+            <DataSourceViewID>Kostuem DWX3</DataSourceViewID>
+            <TableID>dbo_FaktentabelleTeilelement</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Faktentabelle Film 1</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="a3199c0b-d4fe-40d5-866b-2c64f86a7551">
+          <ID>Faktentabelle Film</ID>
+          <Name>Faktentabelle Film</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="1a89898e-dea3-4d74-8e5f-160617dfeacd">
+            <DataSourceViewID>Kostuem DWX3</DataSourceViewID>
+            <TableID>dbo_FaktentabelleFilm</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Faktentabelle Film 2</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="5bbdc4a8-e975-4302-a0e7-83dd121d3cd7">
+          <ID>Faktentabelle Film</ID>
+          <Name>Faktentabelle Film</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="ec589d24-34c6-47fa-a17b-0b5989983621">
+            <DataSourceViewID>Kostuem DWX3</DataSourceViewID>
+            <TableID>dbo_FaktentabelleFilm</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Faktentabelle Rolle 1</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="53b92910-85c7-4945-997f-5c2a6b4a3cc4">
+          <ID>Faktentabelle Rolle</ID>
+          <Name>Faktentabelle Rolle</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="11bb45e9-6497-462f-a284-c9ba04517567">
+            <DataSourceViewID>Kostuem DWX3</DataSourceViewID>
+            <TableID>dbo_FaktentabelleRolle</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Faktentabelle Kostuem 1</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="dadc289f-b7bf-49b0-b795-8ec1bf367748">
+          <ID>Faktentabelle Kostuem</ID>
+          <Name>Faktentabelle Kostuem</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="b551acfd-5b0c-423e-81eb-fe09fe88ded4">
+            <DataSourceViewID>Kostuem DWX3</DataSourceViewID>
+            <TableID>dbo_FaktentabelleKostuem</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Faktentabelle Basiselement 1</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="740acc5a-08d3-4bc9-affd-5d374c439b4c">
+          <ID>Faktentabelle Basiselement</ID>
+          <Name>Faktentabelle Basiselement</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="b2ea9c7e-748e-4d8c-b1bb-ba0b71856164">
+            <DataSourceViewID>Kostuem DWX3</DataSourceViewID>
+            <TableID>dbo_FaktentabelleBasiselement</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Faktentabelle Basiselement 2</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="0fb3220f-a484-48b2-941d-7c2900306b7e">
+          <ID>Faktentabelle Basiselement</ID>
+          <Name>Faktentabelle Basiselement</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="7407d41a-1075-4ab2-a952-16a40739a9e1">
+            <DataSourceViewID>Kostuem DWX3</DataSourceViewID>
+            <TableID>dbo_FaktentabelleBasiselement</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Faktentabelle Basiselement 3</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="a569de36-89cf-4761-87db-5321161d0b46">
+          <ID>Faktentabelle Basiselement</ID>
+          <Name>Faktentabelle Basiselement</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="e4e9f758-5e0a-4c07-a189-ac159e09b111">
+            <DataSourceViewID>Kostuem DWX3</DataSourceViewID>
+            <TableID>dbo_FaktentabelleBasiselement</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Faktentabelle Basiselement 4</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="ccdf1f46-9573-4800-90c4-ee7dc57325d6">
+          <ID>Faktentabelle Basiselement</ID>
+          <Name>Faktentabelle Basiselement</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="dbcf50c8-9f8d-405a-8026-d79ee3a2fce9">
+            <DataSourceViewID>Kostuem DWX3</DataSourceViewID>
+            <TableID>dbo_FaktentabelleBasiselement</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Faktentabelle Basiselement 5</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="abd6b055-258d-4f75-ae1d-6fc27fb12176">
+          <ID>Faktentabelle Basiselement</ID>
+          <Name>Faktentabelle Basiselement</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="d7826a4a-95ab-4f6f-ad16-2443cc606fe9">
+            <DataSourceViewID>Kostuem DWX3</DataSourceViewID>
+            <TableID>dbo_FaktentabelleBasiselement</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Faktentabelle Basiselement 6</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="e600f0fc-44e8-432c-84a1-74256367089b">
+          <ID>Faktentabelle Basiselement</ID>
+          <Name>Faktentabelle Basiselement</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="02f5b6ae-3f9c-4ee4-b9d8-a05a52652b36">
+            <DataSourceViewID>Kostuem DWX3</DataSourceViewID>
+            <TableID>dbo_FaktentabelleBasiselement</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Faktentabelle Basiselement 7</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="c0ae08cc-c84a-4864-a011-1a2e4854b594">
+          <ID>Faktentabelle Basiselement</ID>
+          <Name>Faktentabelle Basiselement</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="cdcfcc81-1f91-46fc-b0a7-eca50bffa750">
+            <DataSourceViewID>Kostuem DWX3</DataSourceViewID>
+            <TableID>dbo_FaktentabelleBasiselement</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Faktentabelle Basiselement 8</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="9089dd6a-7102-4f3f-b459-4b8a20ab170e">
+          <ID>Faktentabelle Basiselement</ID>
+          <Name>Faktentabelle Basiselement</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="5f68f1f1-d1a0-4405-9a5b-b87749bf89cf">
+            <DataSourceViewID>Kostuem DWX3</DataSourceViewID>
+            <TableID>dbo_FaktentabelleBasiselement</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Faktentabelle Teilelement 1</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="06b74c41-3e58-4ded-b3ce-c0d63b23d4e7">
+          <ID>Faktentabelle Teilelement</ID>
+          <Name>Faktentabelle Teilelement</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="1acaefe4-7cb0-41f9-9df0-5dedc291968a">
+            <DataSourceViewID>Kostuem DWX3</DataSourceViewID>
+            <TableID>dbo_FaktentabelleTeilelement</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Faktentabelle Teilelement 2</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="7e4b4845-907d-4f4b-8c9f-5b167873665b">
+          <ID>Faktentabelle Teilelement</ID>
+          <Name>Faktentabelle Teilelement</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="a403f230-d1a6-4ecb-a903-c5db5cfb0687">
+            <DataSourceViewID>Kostuem DWX3</DataSourceViewID>
+            <TableID>dbo_FaktentabelleTeilelement</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Faktentabelle Teilelement 3</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="084b562f-704f-44ac-a3f3-c6666be6d2e5">
+          <ID>Faktentabelle Teilelement</ID>
+          <Name>Faktentabelle Teilelement</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="5865aa2d-53aa-4f0b-8b9f-19df5c482559">
+            <DataSourceViewID>Kostuem DWX3</DataSourceViewID>
+            <TableID>dbo_FaktentabelleTeilelement</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Faktentabelle Teilelement 4</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="e864cd68-987c-45ac-a14c-3b9606497934">
+          <ID>Faktentabelle Teilelement</ID>
+          <Name>Faktentabelle Teilelement</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="a9063047-87a6-4352-9ce1-8fc9c4e4d42c">
+            <DataSourceViewID>Kostuem DWX3</DataSourceViewID>
+            <TableID>dbo_FaktentabelleTeilelement</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Faktentabelle Teilelement 5</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="3870cec5-7636-49ea-aefb-c25ea8160fc7">
+          <ID>Faktentabelle Teilelement</ID>
+          <Name>Faktentabelle Teilelement</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="a702ebd1-18d8-4629-b995-268cf2ece438">
+            <DataSourceViewID>Kostuem DWX3</DataSourceViewID>
+            <TableID>dbo_FaktentabelleTeilelement</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Faktentabelle Teilelement 6</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="f2ab5bcd-870b-4d65-b0dd-e2aa4ccf8e33">
+          <ID>Faktentabelle Teilelement</ID>
+          <Name>Faktentabelle Teilelement</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="8c999410-1a20-4c2c-b3e1-617911cb07b1">
+            <DataSourceViewID>Kostuem DWX3</DataSourceViewID>
+            <TableID>dbo_FaktentabelleTeilelement</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Faktentabelle Teilelement 7</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="79a175ef-c8f3-42ad-ae0c-355a671b01f1">
+          <ID>Faktentabelle Teilelement</ID>
+          <Name>Faktentabelle Teilelement</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="36dc6661-dd40-4816-88e9-109c27e5da28">
+            <DataSourceViewID>Kostuem DWX3</DataSourceViewID>
+            <TableID>dbo_FaktentabelleTeilelement</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+  </MeasureGroups>
+</Cube>
