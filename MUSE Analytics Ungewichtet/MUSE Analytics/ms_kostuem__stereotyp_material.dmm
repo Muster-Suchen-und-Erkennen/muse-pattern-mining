@@ -16,7 +16,7 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="24" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-8535" scrolltop="-2535" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="32570" y="21590" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="20" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-8535" scrolltop="-2535" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="20452" y="13335" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
               <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
             </font>
@@ -96,7 +96,7 @@
               <point x="3000" y="8472" />
             </connector>
           </ddscontrol>
-          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="BasiselementMaterial" left="5929" top="0" logicalid="20" controlid="11" masterid="0" hint1="0" hint2="0" width="3360" height="3572" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="BasiselementMaterial" left="5929" top="0" logicalid="15" controlid="6" masterid="0" hint1="0" hint2="0" width="3360" height="3572" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
             <control>
               <ddsxmlobjectstreaminitwrapper binary="000a0000200d0000f40d0000" />
             </control>
@@ -107,7 +107,7 @@
             </layoutobject>
             <shape groupshapeid="0" groupnode="0" />
           </ddscontrol>
-          <ddscontrol controlprogid="MSDDS.Polyline" left="7210" top="3272" logicalid="21" controlid="12" masterid="0" hint1="0" hint2="0" width="799" height="3200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+          <ddscontrol controlprogid="MSDDS.Polyline" left="7210" top="3272" logicalid="16" controlid="7" masterid="0" hint1="0" hint2="0" width="799" height="3200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
             <control>
               <ddsxmlobj>
                 <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
@@ -120,12 +120,12 @@
                 <property name="VisibleAP" value="0" vartype="3" />
               </ddsxmlobj>
             </layoutobject>
-            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="2" destid="11" sourceattachpoint="6" destattachpoint="5" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="2" destid="6" sourceattachpoint="6" destattachpoint="5" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
               <point x="7609" y="5972" />
               <point x="7609" y="3572" />
             </connector>
           </ddscontrol>
-          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="BasiselementMaterialeindruck" left="12219" top="7532" logicalid="22" controlid="13" masterid="0" hint1="0" hint2="0" width="3281" height="1879" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="BasiselementMaterialeindruck" left="12219" top="7532" logicalid="17" controlid="8" masterid="0" hint1="0" hint2="0" width="3281" height="1879" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
             <control>
               <ddsxmlobjectstreaminitwrapper binary="000a0000d10c000057070000" />
             </control>
@@ -136,7 +136,7 @@
             </layoutobject>
             <shape groupshapeid="0" groupnode="0" />
           </ddscontrol>
-          <ddscontrol controlprogid="MSDDS.Polyline" left="9519" top="8073" logicalid="23" controlid="14" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+          <ddscontrol controlprogid="MSDDS.Polyline" left="9519" top="8073" logicalid="18" controlid="9" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
             <control>
               <ddsxmlobj>
                 <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
@@ -149,7 +149,7 @@
                 <property name="VisibleAP" value="0" vartype="3" />
               </ddsxmlobj>
             </layoutobject>
-            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="2" destid="13" sourceattachpoint="23" destattachpoint="12" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="2" destid="8" sourceattachpoint="23" destattachpoint="12" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
               <point x="9819" y="8472" />
               <point x="11019" y="8472" />
               <point x="11019" y="8471" />
@@ -786,16 +786,16 @@
           <Name>Geschlecht</Name>
           <SourceColumnID>Geschlecht</SourceColumnID>
         </Column>
-        <Column dwd:design-time-name="f521dbbc-d999-447b-baa7-0dbdedff5349">
-          <ID>Basiselement Materialeindruck</ID>
-          <Name>Basiselement Materialeindruck</Name>
-          <SourceColumnID>Basiselement Materialeindruck</SourceColumnID>
+        <Column dwd:design-time-name="cf7ac24b-be91-46f1-a2be-69ed5213f1f6">
+          <ID>Basiselement Material 4</ID>
+          <Name>Basiselement Material 4</Name>
+          <SourceColumnID>Basiselement Material 3</SourceColumnID>
           <Usage>PredictOnly</Usage>
           <Columns>
-            <Column dwd:design-time-name="79ad5346-748e-43b6-ada0-cd938fb4c2e9">
-              <ID>Materialeindruck</ID>
-              <Name>Materialeindruck</Name>
-              <SourceColumnID>Materialeindruck</SourceColumnID>
+            <Column dwd:design-time-name="64cfb9d1-610c-465a-b669-31b80d546906">
+              <ID>Materialname L4</ID>
+              <Name>Materialname L4</Name>
+              <SourceColumnID>Materialname L4</SourceColumnID>
               <Usage>Key</Usage>
             </Column>
           </Columns>
@@ -857,16 +857,16 @@
           <Name>Geschlecht</Name>
           <SourceColumnID>Geschlecht</SourceColumnID>
         </Column>
-        <Column dwd:design-time-name="85bd4d35-3425-4568-a288-fdc81c126fae">
-          <ID>Basiselement Materialeindruck</ID>
-          <Name>Basiselement Materialeindruck</Name>
-          <SourceColumnID>Basiselement Materialeindruck</SourceColumnID>
+        <Column dwd:design-time-name="fe4917d9-dfad-40e5-8015-35a243884af3">
+          <ID>Basiselement Material 4</ID>
+          <Name>Basiselement Material 4</Name>
+          <SourceColumnID>Basiselement Material 3</SourceColumnID>
           <Usage>PredictOnly</Usage>
           <Columns>
-            <Column dwd:design-time-name="4586859f-f17a-4085-bb7e-66c37b3c4ae7">
-              <ID>Materialeindruck</ID>
-              <Name>Materialeindruck</Name>
-              <SourceColumnID>Materialeindruck</SourceColumnID>
+            <Column dwd:design-time-name="f102bafe-5e7f-4db5-839a-1fb81629e09b">
+              <ID>Materialname L4</ID>
+              <Name>Materialname L4</Name>
+              <SourceColumnID>Materialname L4</SourceColumnID>
               <Usage>Key</Usage>
             </Column>
           </Columns>

@@ -16,7 +16,7 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="24" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-11432" scrolltop="-5194" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="32570" y="21590" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="24" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-11432" scrolltop="-5194" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="19579" y="13335" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
               <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
             </font>
@@ -887,7 +887,7 @@
         </AlgorithmParameter>
         <AlgorithmParameter>
           <Name>MINIMUM_SUPPORT</Name>
-          <Value xsi:type="xsd:double">5</Value>
+          <Value xsi:type="xsd:double">10</Value>
         </AlgorithmParameter>
       </AlgorithmParameters>
       <Columns>
@@ -915,11 +915,19 @@
             </Column>
           </Columns>
         </Column>
-        <Column dwd:design-time-name="e23ae9e9-5c3b-48fa-958e-473e77d7028a">
-          <ID>Dominante Farbe L2</ID>
-          <Name>Dominante Farbe L2</Name>
-          <SourceColumnID>Dominante Farbe L2</SourceColumnID>
+        <Column dwd:design-time-name="2973204c-3637-4a97-a6ed-a7dade01cee7">
+          <ID>Basiselement Farbe 2</ID>
+          <Name>Basiselement Farbe 2</Name>
+          <SourceColumnID>Basiselement Farbe 1</SourceColumnID>
           <Usage>PredictOnly</Usage>
+          <Columns>
+            <Column dwd:design-time-name="738f3124-d5f4-4eac-8a4c-adfff5784d66">
+              <ID>Farbname L2</ID>
+              <Name>Farbname L2</Name>
+              <SourceColumnID>Farbname L2</SourceColumnID>
+              <Usage>Key</Usage>
+            </Column>
+          </Columns>
         </Column>
       </Columns>
       <ddl100_100:Filter>EXISTS (SELECT * FROM [Film Genre 1] WHERE  [Genre L1] = 'Western' )</ddl100_100:Filter>
@@ -977,11 +985,19 @@
             </Column>
           </Columns>
         </Column>
-        <Column dwd:design-time-name="94916604-0680-4545-978d-70a7a765d28a">
-          <ID>Dominante Farbe L2</ID>
-          <Name>Dominante Farbe L2</Name>
-          <SourceColumnID>Dominante Farbe L2</SourceColumnID>
+        <Column dwd:design-time-name="b82e1f06-40ae-45b7-b39d-81ddebf99003">
+          <ID>Basiselement Farbe 2</ID>
+          <Name>Basiselement Farbe 2</Name>
+          <SourceColumnID>Basiselement Farbe 1</SourceColumnID>
           <Usage>PredictOnly</Usage>
+          <Columns>
+            <Column dwd:design-time-name="1cbc671d-5bab-4d39-b9f2-ac6efed4064e">
+              <ID>Farbname L2</ID>
+              <Name>Farbname L2</Name>
+              <SourceColumnID>Farbname L2</SourceColumnID>
+              <Usage>Key</Usage>
+            </Column>
+          </Columns>
         </Column>
       </Columns>
       <ddl100_100:Filter>EXISTS (SELECT * FROM [Film Genre 2] WHERE  [Genre L2] = 'Highschool Komödie' ) AND( [Rollenrelevanz] = 'Nebenrolle' OR [Rollenrelevanz] = 'Statist' )</ddl100_100:Filter>

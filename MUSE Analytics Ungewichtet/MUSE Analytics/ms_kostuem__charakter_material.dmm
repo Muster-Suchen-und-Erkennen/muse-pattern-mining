@@ -16,7 +16,7 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="24" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-7058" scrolltop="-4347" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="32570" y="21590" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="24" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-7058" scrolltop="-4347" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="20452" y="13335" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
               <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
             </font>
@@ -903,7 +903,7 @@
         </AlgorithmParameter>
         <AlgorithmParameter>
           <Name>MINIMUM_SUPPORT</Name>
-          <Value xsi:type="xsd:double">5</Value>
+          <Value xsi:type="xsd:double">10</Value>
         </AlgorithmParameter>
       </AlgorithmParameters>
       <Columns>
@@ -931,16 +931,16 @@
             </Column>
           </Columns>
         </Column>
-        <Column dwd:design-time-name="4a6e26a2-7ebd-4244-a420-627a00dc4981">
-          <ID>Basiselement Materialeindruck</ID>
-          <Name>Basiselement Materialeindruck</Name>
-          <SourceColumnID>Basiselement Materialeindruck</SourceColumnID>
+        <Column dwd:design-time-name="b17db94d-b783-4a8c-ad1f-0bc87d00c6e6">
+          <ID>Basiselement Material 4</ID>
+          <Name>Basiselement Material 4</Name>
+          <SourceColumnID>Basiselement Material 3</SourceColumnID>
           <Usage>PredictOnly</Usage>
           <Columns>
-            <Column dwd:design-time-name="cc66cd20-62ff-43e3-96af-fd933e52cca0">
-              <ID>Materialeindruck</ID>
-              <Name>Materialeindruck</Name>
-              <SourceColumnID>Materialeindruck</SourceColumnID>
+            <Column dwd:design-time-name="fe95aa8c-69f3-43d4-beaf-39fdd86873b2">
+              <ID>Materialname L4</ID>
+              <Name>Materialname L4</Name>
+              <SourceColumnID>Materialname L4</SourceColumnID>
               <Usage>Key</Usage>
             </Column>
           </Columns>
@@ -1012,16 +1012,16 @@
             </Column>
           </Columns>
         </Column>
-        <Column dwd:design-time-name="670f41c5-4e0f-45dd-8b65-e3136fb4e82b">
-          <ID>Basiselement Materialeindruck</ID>
-          <Name>Basiselement Materialeindruck</Name>
-          <SourceColumnID>Basiselement Materialeindruck</SourceColumnID>
+        <Column dwd:design-time-name="91d4f50b-6990-4cab-99ab-94414e319bcc">
+          <ID>Basiselement Material 4</ID>
+          <Name>Basiselement Material 4</Name>
+          <SourceColumnID>Basiselement Material 3</SourceColumnID>
           <Usage>PredictOnly</Usage>
           <Columns>
-            <Column dwd:design-time-name="3e7072d7-abdb-4400-8417-9906e811d653">
-              <ID>Materialeindruck</ID>
-              <Name>Materialeindruck</Name>
-              <SourceColumnID>Materialeindruck</SourceColumnID>
+            <Column dwd:design-time-name="6719b4fa-4845-4fad-9877-d7a161bcee3d">
+              <ID>Materialname L4</ID>
+              <Name>Materialname L4</Name>
+              <SourceColumnID>Materialname L4</SourceColumnID>
               <Usage>Key</Usage>
             </Column>
           </Columns>

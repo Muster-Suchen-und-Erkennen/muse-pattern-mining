@@ -16,7 +16,7 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="20" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-9447" scrolltop="-1661" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="32570" y="21590" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="20" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-9447" scrolltop="-1661" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="19024" y="13335" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
               <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
             </font>
@@ -903,7 +903,7 @@
         </AlgorithmParameter>
         <AlgorithmParameter>
           <Name>MINIMUM_SUPPORT</Name>
-          <Value xsi:type="xsd:double">5</Value>
+          <Value xsi:type="xsd:double">10</Value>
         </AlgorithmParameter>
       </AlgorithmParameters>
       <Columns>
@@ -959,46 +959,7 @@
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Microsoft.AnalysisServices.MiningModel</Name>
           <Value>
             <Microsoft.AnalysisServices.MiningModel xmlns="">
-              <Filter>&lt;?xml version="1.0" encoding="utf-16"?&gt;
-&lt;MiningModelFilter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
-  &lt;Items&gt;
-    &lt;FilterGridItem&gt;
-      &lt;IsGroup&gt;false&lt;/IsGroup&gt;
-      &lt;IsDataTable&gt;false&lt;/IsDataTable&gt;
-      &lt;Operator&gt;Contains&lt;/Operator&gt;
-      &lt;ColumnName&gt;Film Genre 2&lt;/ColumnName&gt;
-      &lt;ColumnID&gt;Film Genre 1&lt;/ColumnID&gt;
-      &lt;Value /&gt;
-      &lt;AndOr&gt;None&lt;/AndOr&gt;
-      &lt;ChildItems&gt;
-        &lt;FilterGridItem&gt;
-          &lt;IsGroup&gt;false&lt;/IsGroup&gt;
-          &lt;IsDataTable&gt;false&lt;/IsDataTable&gt;
-          &lt;Operator&gt;=&lt;/Operator&gt;
-          &lt;ColumnName&gt;Genre L2&lt;/ColumnName&gt;
-          &lt;ColumnID&gt;Genre L2&lt;/ColumnID&gt;
-          &lt;Value&gt;Highschool Komödie&lt;/Value&gt;
-          &lt;AndOr&gt;None&lt;/AndOr&gt;
-          &lt;ChildItems /&gt;
-        &lt;/FilterGridItem&gt;
-        &lt;FilterGridItem&gt;
-          &lt;IsGroup&gt;false&lt;/IsGroup&gt;
-          &lt;IsDataTable&gt;false&lt;/IsDataTable&gt;
-          &lt;ColumnName /&gt;
-          &lt;AndOr&gt;AND&lt;/AndOr&gt;
-          &lt;ChildItems /&gt;
-        &lt;/FilterGridItem&gt;
-      &lt;/ChildItems&gt;
-    &lt;/FilterGridItem&gt;
-    &lt;FilterGridItem&gt;
-      &lt;IsGroup&gt;false&lt;/IsGroup&gt;
-      &lt;IsDataTable&gt;false&lt;/IsDataTable&gt;
-      &lt;ColumnName /&gt;
-      &lt;AndOr&gt;AND&lt;/AndOr&gt;
-      &lt;ChildItems /&gt;
-    &lt;/FilterGridItem&gt;
-  &lt;/Items&gt;
-&lt;/MiningModelFilter&gt;</Filter>
+              <Filter></Filter>
             </Microsoft.AnalysisServices.MiningModel>
           </Value>
         </Annotation>
@@ -1051,159 +1012,6 @@
               <ID>Dominante Charaktereigenschaft</ID>
               <Name>Dominante Charaktereigenschaft</Name>
               <SourceColumnID>Dominante Charaktereigenschaft</SourceColumnID>
-              <Usage>Key</Usage>
-            </Column>
-          </Columns>
-        </Column>
-      </Columns>
-      <AllowDrillThrough>true</AllowDrillThrough>
-      <ddl100_100:Filter>EXISTS (SELECT * FROM [Film Genre 2] WHERE  [Genre L2] = 'Highschool Komödie' )</ddl100_100:Filter>
-    </MiningModel>
-    <MiningModel dwd:design-time-name="be35910f-6290-43b9-8282-a0c5a37e80f2">
-      <ID>ms_kostuem__charakter_basiselement__highschool_komoedie_1</ID>
-      <Name>ms_kostuem__charakter_basiselement__highschool_komoedie_1</Name>
-      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
-      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
-      <Annotations>
-        <Annotation>
-          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Microsoft.AnalysisServices.MiningModel</Name>
-          <Value>
-            <Microsoft.AnalysisServices.MiningModel xmlns="">
-              <Filter></Filter>
-            </Microsoft.AnalysisServices.MiningModel>
-          </Value>
-        </Annotation>
-      </Annotations>
-      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
-      <State>Unprocessed</State>
-      <Algorithm>Microsoft_Association_Rules</Algorithm>
-      <AlgorithmParameters>
-        <AlgorithmParameter>
-          <Name>MINIMUM_PROBABILITY</Name>
-          <Value xsi:type="xsd:double">0</Value>
-        </AlgorithmParameter>
-        <AlgorithmParameter>
-          <Name>MINIMUM_SUPPORT</Name>
-          <Value xsi:type="xsd:double">5</Value>
-        </AlgorithmParameter>
-      </AlgorithmParameters>
-      <Columns>
-        <Column dwd:design-time-name="e058a416-7b7d-4731-ae4d-156801ca1e07">
-          <ID>ID</ID>
-          <Name>ID</Name>
-          <SourceColumnID>ID</SourceColumnID>
-          <Usage>Key</Usage>
-        </Column>
-        <Column dwd:design-time-name="f828eada-5dd9-47fd-8f14-0568f4444d59">
-          <ID>Geschlecht</ID>
-          <Name>Geschlecht</Name>
-          <SourceColumnID>Geschlecht</SourceColumnID>
-        </Column>
-        <Column dwd:design-time-name="c18dd7c1-c4c1-4883-9ff9-eb5dafdc5a95">
-          <ID>Rolle Charaktereigenschaft</ID>
-          <Name>Rolle Charaktereigenschaft</Name>
-          <SourceColumnID>Rolle Charaktereigenschaft</SourceColumnID>
-          <Columns>
-            <Column dwd:design-time-name="1e26dada-f55d-446a-b749-19d4385e274d">
-              <ID>Dominante Charaktereigenschaft</ID>
-              <Name>Dominante Charaktereigenschaft</Name>
-              <SourceColumnID>Dominante Charaktereigenschaft</SourceColumnID>
-              <Usage>Key</Usage>
-            </Column>
-          </Columns>
-        </Column>
-        <Column dwd:design-time-name="870dfefe-6c5d-4c52-9c1d-7f4344ab8a15">
-          <ID>Basiselement 4</ID>
-          <Name>Basiselement 4</Name>
-          <SourceColumnID>Basiselement 3</SourceColumnID>
-          <Usage>PredictOnly</Usage>
-          <Columns>
-            <Column dwd:design-time-name="a4d08b68-059e-42b3-8cf5-3ae08036f0af">
-              <ID>Basiselementname L4</ID>
-              <Name>Basiselementname L4</Name>
-              <SourceColumnID>Basiselementname L4</SourceColumnID>
-              <Usage>Key</Usage>
-            </Column>
-          </Columns>
-        </Column>
-      </Columns>
-      <AllowDrillThrough>true</AllowDrillThrough>
-      <ddl100_100:Filter>EXISTS (SELECT * FROM [Film Genre 2] WHERE  [Genre L2] = 'Highschool Komödie' ) AND( [Rollenrelevanz] = 'Nebenrolle' OR [Rollenrelevanz] = 'Statist' )</ddl100_100:Filter>
-    </MiningModel>
-    <MiningModel dwd:design-time-name="16eaff31-db02-4292-b531-141a1294d660">
-      <ID>ms_kostuem__charakter_basiselement__highschool_komoedie_2</ID>
-      <Name>ms_kostuem__charakter_basiselement__highschool_komoedie_2</Name>
-      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
-      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
-      <Annotations>
-        <Annotation>
-          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Microsoft.AnalysisServices.MiningModel</Name>
-          <Value>
-            <Microsoft.AnalysisServices.MiningModel xmlns="">
-              <Filter>&lt;?xml version="1.0" encoding="utf-16"?&gt;
-&lt;MiningModelFilter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
-  &lt;Items&gt;
-    &lt;FilterGridItem&gt;
-      &lt;IsGroup&gt;false&lt;/IsGroup&gt;
-      &lt;IsDataTable&gt;false&lt;/IsDataTable&gt;
-      &lt;ColumnName /&gt;
-      &lt;AndOr&gt;None&lt;/AndOr&gt;
-      &lt;ChildItems /&gt;
-    &lt;/FilterGridItem&gt;
-  &lt;/Items&gt;
-&lt;/MiningModelFilter&gt;</Filter>
-            </Microsoft.AnalysisServices.MiningModel>
-          </Value>
-        </Annotation>
-      </Annotations>
-      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
-      <State>Unprocessed</State>
-      <Algorithm>Microsoft_Association_Rules</Algorithm>
-      <AlgorithmParameters>
-        <AlgorithmParameter>
-          <Name>MINIMUM_PROBABILITY</Name>
-          <Value xsi:type="xsd:double">0</Value>
-        </AlgorithmParameter>
-        <AlgorithmParameter>
-          <Name>MINIMUM_SUPPORT</Name>
-          <Value xsi:type="xsd:double">10</Value>
-        </AlgorithmParameter>
-      </AlgorithmParameters>
-      <Columns>
-        <Column dwd:design-time-name="254b2e9b-f418-4cf1-b162-f4c8fa5f4348">
-          <ID>ID</ID>
-          <Name>ID</Name>
-          <SourceColumnID>ID</SourceColumnID>
-          <Usage>Key</Usage>
-        </Column>
-        <Column dwd:design-time-name="1be78eec-a612-46e0-9bfa-4af1f384d61a">
-          <ID>Geschlecht</ID>
-          <Name>Geschlecht</Name>
-          <SourceColumnID>Geschlecht</SourceColumnID>
-        </Column>
-        <Column dwd:design-time-name="c13d924f-b4c6-43de-9424-2b434762c387">
-          <ID>Rolle Charaktereigenschaft</ID>
-          <Name>Rolle Charaktereigenschaft</Name>
-          <SourceColumnID>Rolle Charaktereigenschaft</SourceColumnID>
-          <Columns>
-            <Column dwd:design-time-name="e7f0ee43-403a-4a9c-8440-427e5f46b7c4">
-              <ID>Dominante Charaktereigenschaft</ID>
-              <Name>Dominante Charaktereigenschaft</Name>
-              <SourceColumnID>Dominante Charaktereigenschaft</SourceColumnID>
-              <Usage>Key</Usage>
-            </Column>
-          </Columns>
-        </Column>
-        <Column dwd:design-time-name="9b241754-d637-4c27-890c-632f2abb68cb">
-          <ID>Basiselement 4</ID>
-          <Name>Basiselement 4</Name>
-          <SourceColumnID>Basiselement 3</SourceColumnID>
-          <Usage>PredictOnly</Usage>
-          <Columns>
-            <Column dwd:design-time-name="8bff3b96-d947-4e2f-989d-645da4a58718">
-              <ID>Basiselementname L4</ID>
-              <Name>Basiselementname L4</Name>
-              <SourceColumnID>Basiselementname L4</SourceColumnID>
               <Usage>Key</Usage>
             </Column>
           </Columns>
