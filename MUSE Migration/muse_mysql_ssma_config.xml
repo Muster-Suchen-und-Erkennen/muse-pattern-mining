@@ -7,14 +7,14 @@
 
 	<variable-group name="MySqlParams">
 		<variable-group name="MySqlConnectionParams">
-			<variable name="$SourceUserName$" value="root"/>
-			<variable name="$SourceServer$" value="127.0.0.1"/>
+			<variable name="$SourceUserName$" value="RepoMigration"/>
+			<variable name="$SourceServer$" value="muse.informatik.uni-stuttgart.de"/>
 			<variable name="$SourcePort$" value="3306"/>
-			<variable name="$SourcePassword$" value=""/>
+			<variable name="$SourcePassword$" value="RepoMigration"/>
 		</variable-group>
 
 		<variable-group name="MySqlServerObjectParams">
-			<variable name="$SourceDatabase$" value="`muse-2015-07-26`"/>
+			<variable name="$SourceDatabase$" value="`KostuemRepo`"/>
 		</variable-group>
 	</variable-group>
 	
