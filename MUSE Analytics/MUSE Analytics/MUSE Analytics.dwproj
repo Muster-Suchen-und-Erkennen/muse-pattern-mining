@@ -111,6 +111,35 @@
       <Name>ms_kostuem__beruf_stereotyp.dmm</Name>
       <FullPath>ms_kostuem__beruf_stereotyp.dmm</FullPath>
     </ProjectItem>
+    <ProjectItem>
+      <Name>ms_kostuem__Genre-L2_Dominante-Farbe-L2.dmm</Name>
+      <FullPath>ms_kostuem__Genre-L2_Dominante-Farbe-L2.dmm</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>ms_kostuem__Genre-L2_Spielzeit-L2.dmm</Name>
+      <FullPath>ms_kostuem__Genre-L2_Spielzeit-L2.dmm</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>ms_kostuem__Genre-L2_Dominante-Funktion.dmm</Name>
+      <FullPath>ms_kostuem__Genre-L2_Dominante-Funktion.dmm</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>ms_kostuem__Genre-L2_Charaktereigenschaft-L2.dmm</Name>
+      <FullPath>ms_kostuem__Genre-L2_Charaktereigenschaft-L2.dmm</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>ms_kostuem__Genre-L2_Koerpermodifikationname-L2.dmm</Name>
+      <FullPath>ms_kostuem__Genre-L2_Koerpermodifikationname-L2.dmm</FullPath>
+    </ProjectItem>
+
+
+
+
+
+
+
+
+
   </MiningModels>
   <Configurations>
     <Configuration>
