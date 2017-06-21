@@ -48,12 +48,68 @@
       <FullPath>ms_kostuem__basiselement.dmm</FullPath>
     </ProjectItem>
     <ProjectItem>
+      <Name>ms_kostuem__beruf_geschlecht.dmm</Name>
+      <FullPath>ms_kostuem__beruf_geschlecht.dmm</FullPath>
+    </ProjectItem>
+    <ProjectItem>
       <Name>ms_kostuem__charakter_basiselement.dmm</Name>
       <FullPath>ms_kostuem__charakter_basiselement.dmm</FullPath>
     </ProjectItem>
     <ProjectItem>
+      <Name>ms_kostuem__genre_geschlecht.dmm</Name>
+      <FullPath>ms_kostuem__genre_geschlecht.dmm</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>ms_kostuem__geschlecht_dom-alterseindruck.dmm</Name>
+      <FullPath>ms_kostuem__geschlecht_dom-alterseindruck.dmm</FullPath>
+    </ProjectItem>
+    <ProjectItem>
       <Name>ms_kostuem__stereotyp_basiselement.dmm</Name>
       <FullPath>ms_kostuem__stereotyp_basiselement.dmm</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>ms_kostuem__genre_beruf.dmm</Name>
+      <FullPath>ms_kostuem__genre_beruf.dmm</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>ms_kostuem__genre_ort.dmm</Name>
+      <FullPath>ms_kostuem__genre_ort.dmm</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>ms_kostuem__geschlecht_dom-charakter.dmm</Name>
+      <FullPath>ms_kostuem__geschlecht_dom-charakter.dmm</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>ms_kostuem__beruf_dom-charakter.dmm</Name>
+      <FullPath>ms_kostuem__beruf_dom-charakter.dmm</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>ms_kostuem__genre_dom-charakter.dmm</Name>
+      <FullPath>ms_kostuem__genre_dom-charakter.dmm</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>ms_kostuem__dom-alterseindruck_dom-charakter.dmm</Name>
+      <FullPath>ms_kostuem__dom-alterseindruck_dom-charakter.dmm</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>ms_kostuem__dom-charakter_stereotyp.dmm</Name>
+      <FullPath>ms_kostuem__dom-charakter_stereotyp.dmm</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>ms_kostuem__vorlage.dmm</Name>
+      <FullPath>ms_kostuem__vorlage.dmm</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>ms_kostuem__geschlecht_stereotyp.dmm</Name>
+      <FullPath>ms_kostuem__geschlecht_stereotyp.dmm</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>ms_kostuem__genre_stereotyp.dmm</Name>
+      <FullPath>ms_kostuem__genre_stereotyp.dmm</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>ms_kostuem__beruf_stereotyp.dmm</Name>
+      <FullPath>ms_kostuem__beruf_stereotyp.dmm</FullPath>
     </ProjectItem>
   </MiningModels>
   <Configurations>
