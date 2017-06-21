@@ -131,6 +131,26 @@
       <Name>ms_kostuem__Genre-L2_Koerpermodifikationname-L2.dmm</Name>
       <FullPath>ms_kostuem__Genre-L2_Koerpermodifikationname-L2.dmm</FullPath>
     </ProjectItem>
+    <ProjectItem>
+      <Name>ms_kostuem__Stereotyp-L2_Dominante-Farbe.dmm</Name>
+      <FullPath>ms_kostuem__Stereotyp-L2_Dominante-Farbe.dmm</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>ms_kostuem__Stereotyp-L2_Dominante-Funktion.dmm</Name>
+      <FullPath>ms_kostuem__Stereotyp-L2_Dominante-Funktion.dmm</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>ms_kostuem__Stereotyp-L2_Dominanter-Zustand.dmm</Name>
+      <FullPath>ms_kostuem__Stereotyp-L2_Dominanter-Zustand.dmm</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>ms_kostuem__Stereotyp-L2_Charaktereigenschaft-L2.dmm</Name>
+      <FullPath>ms_kostuem__Stereotyp-L2_Charaktereigenschaft-L2.dmm</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>ms_kostuem__Stereotyp-L2_Koerpermodifikationname-L2.dmm</Name>
+      <FullPath>ms_kostuem__Stereotyp-L2_Koerpermodifikationname-L2.dmm</FullPath>
+    </ProjectItem>
 
 
 
