@@ -131,7 +131,7 @@ class Document():
     def load(self):
         """(Re-)Load the document."""
         self.xml = ET.parse(self.filename)
-        self.root = path.basename(self.filename).split('_')[0]
+        self.root = path.basename(self.filename).split('_')[1]
         self.input_columns = []
 
     def __repr__(self):
