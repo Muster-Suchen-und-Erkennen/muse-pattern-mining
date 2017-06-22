@@ -1,0 +1,1065 @@
+<MiningStructure xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="9a04bc07-3516-401d-bb79-9590a3dca94b" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>ms_kostuem__Dominante-Charaktereigenschaft_Designname-L3</ID>
+  <Name>ms_kostuem__Dominante-Charaktereigenschaft_Designname-L3</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CaseTableName</Name>
+      <Value>KostuemFilmRolle</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds>
+          <diagram PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" PrintMarginTop="0" PrintPageNumbersMode="3" autotypeannotation="1" backcolor="16777215" backpictureclsid="{00000000-0000-0000-0000-000000000000}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" defaultpersistence="2" donotforceconnectorsbehindshapes="1" fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" gridx="150" gridy="150" marginx="5000" marginy="5000" marqueeselectionmode="0" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" mousepointer="0" nextobject="54" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scale="100" scrollleft="-2000" scrolltop="-1517" showscrollbars="1" snaptogrid="0" version="7" viewpagebreaks="0" x="10583" y="12065" zoom="100">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol allownudging="1" autodrag="1" controlid="1" controlprogid="DdsShapes.DdsObjectManagedBridge.3" dontautolayout="0" groupcollapsed="0" height="3995" hint1="0" hint2="0" isannotation="0" left="26" logicalid="18" masterid="0" nodefaultattachpoints="0" nomove="0" noresize="0" selectable="1" showselectionhandles="1" snaptogrid="0" tabstop="1" tooltip="KostuemCharaktereigenschaft" top="12102" usedefaultiddshape="1" visible="1" width="4366">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000a00000e1100009b0f0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="Kostuemcharaktereigenschaft" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupnode="0" groupshapeid="0" />
+          </ddscontrol>
+          <ddscontrol allownudging="1" autodrag="1" controlid="2" controlprogid="DdsShapes.DdsObjectManagedBridge.3" dontautolayout="0" groupcollapsed="0" height="5000" hint1="0" hint2="0" isannotation="0" left="0" logicalid="19" masterid="0" nodefaultattachpoints="0" nomove="0" noresize="0" selectable="1" showselectionhandles="1" snaptogrid="0" tabstop="1" tooltip="KostuemFilmRolle" top="4702" usedefaultiddshape="1" visible="1" width="4419">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000a00004311000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="KostuemFilmRolle" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupnode="0" groupshapeid="0" />
+          </ddscontrol>
+          <ddscontrol allownudging="1" autodrag="1" controlid="3" controlprogid="DdsShapes.DdsObjectManagedBridge.3" dontautolayout="0" groupcollapsed="0" height="4419" hint1="0" hint2="0" isannotation="0" left="6819" logicalid="20" masterid="0" nodefaultattachpoints="0" nomove="0" noresize="0" selectable="1" showselectionhandles="1" snaptogrid="0" tabstop="1" tooltip="Basiselement" top="4992" usedefaultiddshape="1" visible="1" width="4022">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000a0000b60f000043110000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="Basiselement" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupnode="0" groupshapeid="0" />
+          </ddscontrol>
+          <ddscontrol allownudging="1" autodrag="0" controlid="4" controlprogid="MSDDS.Polyline" dontautolayout="0" groupcollapsed="0" height="3199" hint1="0" hint2="0" isannotation="0" left="1810" logicalid="21" masterid="0" nodefaultattachpoints="1" nomove="0" noresize="0" selectable="1" showselectionhandles="0" snaptogrid="0" tabstop="1" top="9203" usedefaultiddshape="0" visible="1" width="799">
+            <control>
+              <ddsxmlobj>
+                <polyline adornsvisible="1" customendtypedstid="0" customendtypesrcid="0" endtypedst="6" endtypesrc="3" linerender="1" linestyle="0" usercolor="0" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[Kostuemcharaktereigenschaft-KostuemFilmRolle]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector bendpointeditmode="0" bendpointvisibility="0" destattachpoint="6" destid="1" lineroutestyle="MSDDS.Rectilinear" relatedid="0" segmenteditmode="0" sourceattachpoint="7" sourceid="2" virtual="0">
+              <point x="2209" y="9702" />
+              <point x="2209" y="12102" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol allownudging="1" autodrag="0" controlid="5" controlprogid="MSDDS.Polyline" dontautolayout="0" groupcollapsed="0" height="799" hint1="0" hint2="0" isannotation="0" left="4119" logicalid="22" masterid="0" nodefaultattachpoints="1" nomove="0" noresize="0" selectable="1" showselectionhandles="0" snaptogrid="0" tabstop="1" top="6803" usedefaultiddshape="0" visible="1" width="3000">
+            <control>
+              <ddsxmlobj>
+                <polyline adornsvisible="1" customendtypedstid="0" customendtypesrcid="0" endtypedst="6" endtypesrc="3" linerender="1" linestyle="0" usercolor="0" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[Basiselement-KostuemFilmRolle]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector bendpointeditmode="0" bendpointvisibility="0" destattachpoint="20" destid="3" lineroutestyle="MSDDS.Rectilinear" relatedid="0" segmenteditmode="0" sourceattachpoint="23" sourceid="2" virtual="0">
+              <point x="4419" y="7202" />
+              <point x="5619" y="7202" />
+              <point x="5619" y="7201" />
+              <point x="6819" y="7201" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol allownudging="1" autodrag="1" controlid="6" controlprogid="DdsShapes.DdsObjectManagedBridge.3" dontautolayout="0" groupcollapsed="0" height="2302" hint1="0" hint2="0" isannotation="0" left="709" logicalid="23" masterid="0" nodefaultattachpoints="0" nomove="0" noresize="0" selectable="1" showselectionhandles="1" snaptogrid="0" tabstop="1" tooltip="FilmGenre" top="0" usedefaultiddshape="1" visible="1" width="3000">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000a0000b80b0000fe080000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="Filmgenre" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupnode="0" groupshapeid="0" />
+          </ddscontrol>
+          <ddscontrol allownudging="1" autodrag="0" controlid="7" controlprogid="MSDDS.Polyline" dontautolayout="0" groupcollapsed="0" height="3200" hint1="0" hint2="0" isannotation="0" left="1810" logicalid="24" masterid="0" nodefaultattachpoints="1" nomove="0" noresize="0" selectable="1" showselectionhandles="0" snaptogrid="0" tabstop="1" top="2002" usedefaultiddshape="0" visible="1" width="799">
+            <control>
+              <ddsxmlobj>
+                <polyline adornsvisible="1" customendtypedstid="0" customendtypesrcid="0" endtypedst="6" endtypesrc="3" linerender="1" linestyle="0" usercolor="0" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[Filmgenre-KostuemFilmRolle]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector bendpointeditmode="0" bendpointvisibility="0" destattachpoint="5" destid="6" lineroutestyle="MSDDS.Rectilinear" relatedid="0" segmenteditmode="0" sourceattachpoint="6" sourceid="2" virtual="0">
+              <point x="2209" y="4702" />
+              <point x="2209" y="2302" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol allownudging="1" autodrag="1" controlid="8" controlprogid="DdsShapes.DdsObjectManagedBridge.3" dontautolayout="0" groupcollapsed="0" height="1879" hint1="0" hint2="0" isannotation="0" left="0" logicalid="25" masterid="0" nodefaultattachpoints="0" nomove="0" noresize="0" selectable="1" showselectionhandles="1" snaptogrid="0" tabstop="1" tooltip="RolleCharaktereigenschaft" top="0" usedefaultiddshape="1" visible="1" width="5318">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000a0000c614000057070000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="Rolledominantecharaktereigenschaft" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupnode="0" groupshapeid="0" />
+          </ddscontrol>
+          <ddscontrol allownudging="1" autodrag="0" controlid="9" controlprogid="MSDDS.Polyline" dontautolayout="0" groupcollapsed="0" height="3623" hint1="0" hint2="0" isannotation="0" left="159" logicalid="26" masterid="0" nodefaultattachpoints="1" nomove="0" noresize="0" selectable="1" showselectionhandles="0" snaptogrid="0" tabstop="1" top="1579" usedefaultiddshape="0" visible="1" width="4100">
+            <control>
+              <ddsxmlobj>
+                <polyline adornsvisible="1" customendtypedstid="0" customendtypesrcid="0" endtypedst="6" endtypesrc="3" linerender="1" linestyle="0" usercolor="0" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[Rolledominantecharaktereigenschaft-KostuemFilmRolle]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector bendpointeditmode="0" bendpointvisibility="0" destattachpoint="1" destid="8" lineroutestyle="MSDDS.Rectilinear" relatedid="0" segmenteditmode="0" sourceattachpoint="12" sourceid="2" virtual="0">
+              <point x="3859" y="4702" />
+              <point x="3859" y="3291" />
+              <point x="459" y="3291" />
+              <point x="459" y="1879" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol allownudging="1" autodrag="1" controlid="10" controlprogid="DdsShapes.DdsObjectManagedBridge.3" dontautolayout="0" groupcollapsed="0" height="3149" hint1="0" hint2="0" isannotation="0" left="0" logicalid="27" masterid="0" nodefaultattachpoints="0" nomove="0" noresize="0" selectable="1" showselectionhandles="1" snaptogrid="0" tabstop="1" tooltip="RolleStereotyp" top="0" usedefaultiddshape="1" visible="1" width="3000">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000a0000b80b00004d0c0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="RolleStereotyp" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupnode="0" groupshapeid="0" />
+          </ddscontrol>
+          <ddscontrol allownudging="1" autodrag="0" controlid="11" controlprogid="MSDDS.Polyline" dontautolayout="0" groupcollapsed="0" height="2353" hint1="0" hint2="0" isannotation="0" left="100" logicalid="28" masterid="0" nodefaultattachpoints="1" nomove="0" noresize="0" selectable="1" showselectionhandles="0" snaptogrid="0" tabstop="1" top="2849" usedefaultiddshape="0" visible="1" width="3059">
+            <control>
+              <ddsxmlobj>
+                <polyline adornsvisible="1" customendtypedstid="0" customendtypesrcid="0" endtypedst="6" endtypesrc="3" linerender="1" linestyle="0" usercolor="0" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[RolleStereotyp-KostuemFilmRolle]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector bendpointeditmode="0" bendpointvisibility="0" destattachpoint="1" destid="10" lineroutestyle="MSDDS.Rectilinear" relatedid="0" segmenteditmode="0" sourceattachpoint="8" sourceid="2" virtual="0">
+              <point x="2759" y="4702" />
+              <point x="2759" y="3926" />
+              <point x="400" y="3926" />
+              <point x="400" y="3149" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol allownudging="1" autodrag="1" controlid="12" controlprogid="DdsShapes.DdsObjectManagedBridge.3" dontautolayout="0" groupcollapsed="0" height="3149" hint1="0" hint2="0" isannotation="0" left="0" logicalid="29" masterid="0" nodefaultattachpoints="0" nomove="0" noresize="0" selectable="1" showselectionhandles="1" snaptogrid="0" tabstop="1" tooltip="RolleBeruf" top="0" usedefaultiddshape="1" visible="1" width="3122">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000a0000320c00004d0c0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="RolleBeruf" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupnode="0" groupshapeid="0" />
+          </ddscontrol>
+          <ddscontrol allownudging="1" autodrag="0" controlid="13" controlprogid="MSDDS.Polyline" dontautolayout="0" groupcollapsed="0" height="2353" hint1="0" hint2="0" isannotation="0" left="161" logicalid="30" masterid="0" nodefaultattachpoints="1" nomove="0" noresize="0" selectable="1" showselectionhandles="0" snaptogrid="0" tabstop="1" top="2849" usedefaultiddshape="0" visible="1" width="2448">
+            <control>
+              <ddsxmlobj>
+                <polyline adornsvisible="1" customendtypedstid="0" customendtypesrcid="0" endtypedst="6" endtypesrc="3" linerender="1" linestyle="0" usercolor="0" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[RolleBeruf-KostuemFilmRolle]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector bendpointeditmode="0" bendpointvisibility="0" destattachpoint="1" destid="12" lineroutestyle="MSDDS.Rectilinear" relatedid="0" segmenteditmode="0" sourceattachpoint="6" sourceid="2" virtual="0">
+              <point x="2209" y="4702" />
+              <point x="2209" y="3926" />
+              <point x="461" y="3926" />
+              <point x="461" y="3149" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol allownudging="1" autodrag="1" controlid="14" controlprogid="DdsShapes.DdsObjectManagedBridge.3" dontautolayout="0" groupcollapsed="0" height="2725" hint1="0" hint2="0" isannotation="0" left="0" logicalid="31" masterid="0" nodefaultattachpoints="0" nomove="0" noresize="0" selectable="1" showselectionhandles="1" snaptogrid="0" tabstop="1" tooltip="BasiselementFarbe" top="0" usedefaultiddshape="1" visible="1" width="3000">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000a0000b80b0000a50a0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="BasiselementFarbe" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupnode="0" groupshapeid="0" />
+          </ddscontrol>
+          <ddscontrol allownudging="1" autodrag="0" controlid="15" controlprogid="MSDDS.Polyline" dontautolayout="0" groupcollapsed="0" height="2777" hint1="0" hint2="0" isannotation="0" left="100" logicalid="32" masterid="0" nodefaultattachpoints="1" nomove="0" noresize="0" selectable="1" showselectionhandles="0" snaptogrid="0" tabstop="1" top="2425" usedefaultiddshape="0" visible="1" width="3609">
+            <control>
+              <ddsxmlobj>
+                <polyline adornsvisible="1" customendtypedstid="0" customendtypesrcid="0" endtypedst="6" endtypesrc="3" linerender="1" linestyle="0" usercolor="0" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[BasiselementFarbe-KostuemFilmRolle]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector bendpointeditmode="0" bendpointvisibility="0" destattachpoint="1" destid="14" lineroutestyle="MSDDS.Rectilinear" relatedid="0" segmenteditmode="0" sourceattachpoint="10" sourceid="2" virtual="0">
+              <point x="3309" y="4702" />
+              <point x="3309" y="3714" />
+              <point x="400" y="3714" />
+              <point x="400" y="2725" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol allownudging="1" autodrag="1" controlid="16" controlprogid="DdsShapes.DdsObjectManagedBridge.3" dontautolayout="0" groupcollapsed="0" height="3995" hint1="0" hint2="0" isannotation="0" left="0" logicalid="33" masterid="0" nodefaultattachpoints="0" nomove="0" noresize="0" selectable="1" showselectionhandles="1" snaptogrid="0" tabstop="1" tooltip="KostuemSpielzeit" top="0" usedefaultiddshape="1" visible="1" width="3000">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000a0000b80b00009b0f0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="Kostuemspielzeit" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupnode="0" groupshapeid="0" />
+          </ddscontrol>
+          <ddscontrol allownudging="1" autodrag="0" controlid="17" controlprogid="MSDDS.Polyline" dontautolayout="0" groupcollapsed="0" height="1507" hint1="0" hint2="0" isannotation="0" left="100" logicalid="34" masterid="0" nodefaultattachpoints="1" nomove="0" noresize="0" selectable="1" showselectionhandles="0" snaptogrid="0" tabstop="1" top="3695" usedefaultiddshape="0" visible="1" width="859">
+            <control>
+              <ddsxmlobj>
+                <polyline adornsvisible="1" customendtypedstid="0" customendtypesrcid="0" endtypedst="6" endtypesrc="3" linerender="1" linestyle="0" usercolor="0" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[Kostuemspielzeit-KostuemFilmRolle]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector bendpointeditmode="0" bendpointvisibility="0" destattachpoint="1" destid="16" lineroutestyle="MSDDS.Rectilinear" relatedid="0" segmenteditmode="0" sourceattachpoint="0" sourceid="2" virtual="0">
+              <point x="559" y="4702" />
+              <point x="559" y="4302" />
+              <point x="400" y="4302" />
+              <point x="400" y="3995" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol allownudging="1" autodrag="1" controlid="19" controlprogid="DdsShapes.DdsObjectManagedBridge.3" dontautolayout="0" groupcollapsed="0" height="3572" hint1="0" hint2="0" isannotation="0" left="0" logicalid="36" masterid="0" nodefaultattachpoints="0" nomove="0" noresize="0" selectable="1" showselectionhandles="1" snaptogrid="0" tabstop="1" tooltip="KostuemKoerpermodifikation" top="0" usedefaultiddshape="1" visible="1" width="4868">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000a000004130000f40d0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="Kostuemkoerpermodifikation" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupnode="0" groupshapeid="0" />
+          </ddscontrol>
+          <ddscontrol allownudging="1" autodrag="0" controlid="20" controlprogid="MSDDS.Polyline" dontautolayout="0" groupcollapsed="0" height="1930" hint1="0" hint2="0" isannotation="0" left="484" logicalid="37" masterid="0" nodefaultattachpoints="1" nomove="0" noresize="0" selectable="1" showselectionhandles="0" snaptogrid="0" tabstop="1" top="3272" usedefaultiddshape="0" visible="1" width="1025">
+            <control>
+              <ddsxmlobj>
+                <polyline adornsvisible="1" customendtypedstid="0" customendtypesrcid="0" endtypedst="6" endtypesrc="3" linerender="1" linestyle="0" usercolor="0" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[Kostuemkoerpermodifikation-KostuemFilmRolle]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector bendpointeditmode="0" bendpointvisibility="0" destattachpoint="3" destid="19" lineroutestyle="MSDDS.Rectilinear" relatedid="0" segmenteditmode="0" sourceattachpoint="2" sourceid="2" virtual="0">
+              <point x="1109" y="4702" />
+              <point x="1109" y="4137" />
+              <point x="784" y="4137" />
+              <point x="784" y="3572" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol allownudging="1" autodrag="1" controlid="21" controlprogid="DdsShapes.DdsObjectManagedBridge.3" dontautolayout="0" groupcollapsed="0" height="3572" hint1="0" hint2="0" isannotation="0" left="0" logicalid="38" masterid="0" nodefaultattachpoints="0" nomove="0" noresize="0" selectable="1" showselectionhandles="1" snaptogrid="0" tabstop="1" tooltip="BasiselementDesign" top="0" usedefaultiddshape="1" visible="1" width="3201">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000a0000810c0000f40d0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="BasiselementDesign" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupnode="0" groupshapeid="0" />
+          </ddscontrol>
+          <ddscontrol allownudging="1" autodrag="0" controlid="22" controlprogid="MSDDS.Polyline" dontautolayout="0" groupcollapsed="0" height="1930" hint1="0" hint2="0" isannotation="0" left="200" logicalid="39" masterid="0" nodefaultattachpoints="1" nomove="0" noresize="0" selectable="1" showselectionhandles="0" snaptogrid="0" tabstop="1" top="3272" usedefaultiddshape="0" visible="1" width="1859">
+            <control>
+              <ddsxmlobj>
+                <polyline adornsvisible="1" customendtypedstid="0" customendtypesrcid="0" endtypedst="6" endtypesrc="3" linerender="1" linestyle="0" usercolor="0" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[BasiselementDesign-KostuemFilmRolle]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector bendpointeditmode="0" bendpointvisibility="0" destattachpoint="1" destid="21" lineroutestyle="MSDDS.Rectilinear" relatedid="0" segmenteditmode="0" sourceattachpoint="4" sourceid="2" virtual="0">
+              <point x="1659" y="4702" />
+              <point x="1659" y="4137" />
+              <point x="500" y="4137" />
+              <point x="500" y="3572" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol allownudging="1" autodrag="1" controlid="23" controlprogid="DdsShapes.DdsObjectManagedBridge.3" dontautolayout="0" groupcollapsed="0" height="1879" hint1="0" hint2="0" isannotation="0" left="0" logicalid="40" masterid="0" nodefaultattachpoints="0" nomove="0" noresize="0" selectable="1" showselectionhandles="1" snaptogrid="0" tabstop="1" tooltip="BasiselementFarbeindruck" top="0" usedefaultiddshape="1" visible="1" width="3000">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000a0000b80b000057070000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="BasiselementFarbeindruck" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupnode="0" groupshapeid="0" />
+          </ddscontrol>
+          <ddscontrol allownudging="1" autodrag="0" controlid="24" controlprogid="MSDDS.Polyline" dontautolayout="0" groupcollapsed="0" height="3623" hint1="0" hint2="0" isannotation="0" left="100" logicalid="41" masterid="0" nodefaultattachpoints="1" nomove="0" noresize="0" selectable="1" showselectionhandles="0" snaptogrid="0" tabstop="1" top="1579" usedefaultiddshape="0" visible="1" width="859">
+            <control>
+              <ddsxmlobj>
+                <polyline adornsvisible="1" customendtypedstid="0" customendtypesrcid="0" endtypedst="6" endtypesrc="3" linerender="1" linestyle="0" usercolor="0" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[BasiselementFarbeindruck-KostuemFilmRolle]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector bendpointeditmode="0" bendpointvisibility="0" destattachpoint="1" destid="23" lineroutestyle="MSDDS.Rectilinear" relatedid="0" segmenteditmode="0" sourceattachpoint="0" sourceid="2" virtual="0">
+              <point x="559" y="4702" />
+              <point x="559" y="3291" />
+              <point x="400" y="3291" />
+              <point x="400" y="1879" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol allownudging="1" autodrag="1" controlid="25" controlprogid="DdsShapes.DdsObjectManagedBridge.3" dontautolayout="0" groupcollapsed="0" height="2725" hint1="0" hint2="0" isannotation="0" left="0" logicalid="42" masterid="0" nodefaultattachpoints="0" nomove="0" noresize="0" selectable="1" showselectionhandles="1" snaptogrid="0" tabstop="1" tooltip="BasiselementForm" top="0" usedefaultiddshape="1" visible="1" width="3000">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000a0000b80b0000a50a0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="BasiselementForm" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupnode="0" groupshapeid="0" />
+          </ddscontrol>
+          <ddscontrol allownudging="1" autodrag="0" controlid="26" controlprogid="MSDDS.Polyline" dontautolayout="0" groupcollapsed="0" height="2777" hint1="0" hint2="0" isannotation="0" left="100" logicalid="43" masterid="0" nodefaultattachpoints="1" nomove="0" noresize="0" selectable="1" showselectionhandles="0" snaptogrid="0" tabstop="1" top="2425" usedefaultiddshape="0" visible="1" width="859">
+            <control>
+              <ddsxmlobj>
+                <polyline adornsvisible="1" customendtypedstid="0" customendtypesrcid="0" endtypedst="6" endtypesrc="3" linerender="1" linestyle="0" usercolor="0" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[BasiselementForm-KostuemFilmRolle]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector bendpointeditmode="0" bendpointvisibility="0" destattachpoint="1" destid="25" lineroutestyle="MSDDS.Rectilinear" relatedid="0" segmenteditmode="0" sourceattachpoint="0" sourceid="2" virtual="0">
+              <point x="559" y="4702" />
+              <point x="559" y="3714" />
+              <point x="400" y="3714" />
+              <point x="400" y="2725" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol allownudging="1" autodrag="1" controlid="27" controlprogid="DdsShapes.DdsObjectManagedBridge.3" dontautolayout="0" groupcollapsed="0" height="3572" hint1="0" hint2="0" isannotation="0" left="0" logicalid="44" masterid="0" nodefaultattachpoints="0" nomove="0" noresize="0" selectable="1" showselectionhandles="1" snaptogrid="0" tabstop="1" tooltip="BasiselementFunktion" top="0" usedefaultiddshape="1" visible="1" width="3572">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000a0000f40d0000f40d0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="BasiselementFunktion" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupnode="0" groupshapeid="0" />
+          </ddscontrol>
+          <ddscontrol allownudging="1" autodrag="0" controlid="28" controlprogid="MSDDS.Polyline" dontautolayout="0" groupcollapsed="0" height="1930" hint1="0" hint2="0" isannotation="0" left="160" logicalid="45" masterid="0" nodefaultattachpoints="1" nomove="0" noresize="0" selectable="1" showselectionhandles="0" snaptogrid="0" tabstop="1" top="3272" usedefaultiddshape="0" visible="1" width="826">
+            <control>
+              <ddsxmlobj>
+                <polyline adornsvisible="1" customendtypedstid="0" customendtypesrcid="0" endtypedst="6" endtypesrc="3" linerender="1" linestyle="0" usercolor="0" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[BasiselementFunktion-KostuemFilmRolle]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector bendpointeditmode="0" bendpointvisibility="0" destattachpoint="3" destid="27" lineroutestyle="MSDDS.Rectilinear" relatedid="0" segmenteditmode="0" sourceattachpoint="0" sourceid="2" virtual="0">
+              <point x="559" y="4702" />
+              <point x="559" y="4137" />
+              <point x="686" y="4137" />
+              <point x="686" y="3572" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol allownudging="1" autodrag="1" controlid="29" controlprogid="DdsShapes.DdsObjectManagedBridge.3" dontautolayout="0" groupcollapsed="0" height="3572" hint1="0" hint2="0" isannotation="0" left="0" logicalid="46" masterid="0" nodefaultattachpoints="0" nomove="0" noresize="0" selectable="1" showselectionhandles="1" snaptogrid="0" tabstop="1" tooltip="BasiselementMaterial" top="0" usedefaultiddshape="1" visible="1" width="3360">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000a0000200d0000f40d0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="BasiselementMaterial" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupnode="0" groupshapeid="0" />
+          </ddscontrol>
+          <ddscontrol allownudging="1" autodrag="0" controlid="30" controlprogid="MSDDS.Polyline" dontautolayout="0" groupcollapsed="0" height="1930" hint1="0" hint2="0" isannotation="0" left="160" logicalid="47" masterid="0" nodefaultattachpoints="1" nomove="0" noresize="0" selectable="1" showselectionhandles="0" snaptogrid="0" tabstop="1" top="3272" usedefaultiddshape="0" visible="1" width="799">
+            <control>
+              <ddsxmlobj>
+                <polyline adornsvisible="1" customendtypedstid="0" customendtypesrcid="0" endtypedst="6" endtypesrc="3" linerender="1" linestyle="0" usercolor="0" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[BasiselementMaterial-KostuemFilmRolle]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector bendpointeditmode="0" bendpointvisibility="0" destattachpoint="1" destid="29" lineroutestyle="MSDDS.Rectilinear" relatedid="0" segmenteditmode="0" sourceattachpoint="0" sourceid="2" virtual="0">
+              <point x="559" y="4702" />
+              <point x="559" y="4137" />
+              <point x="580" y="4137" />
+              <point x="580" y="3572" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol allownudging="1" autodrag="1" controlid="31" controlprogid="DdsShapes.DdsObjectManagedBridge.3" dontautolayout="0" groupcollapsed="0" height="1879" hint1="0" hint2="0" isannotation="0" left="0" logicalid="48" masterid="0" nodefaultattachpoints="0" nomove="0" noresize="0" selectable="1" showselectionhandles="1" snaptogrid="0" tabstop="1" tooltip="BasiselementMaterialeindruck" top="0" usedefaultiddshape="1" visible="1" width="3281">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000a0000d10c000057070000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="BasiselementMaterialeindruck" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupnode="0" groupshapeid="0" />
+          </ddscontrol>
+          <ddscontrol allownudging="1" autodrag="0" controlid="32" controlprogid="MSDDS.Polyline" dontautolayout="0" groupcollapsed="0" height="3623" hint1="0" hint2="0" isannotation="0" left="160" logicalid="49" masterid="0" nodefaultattachpoints="1" nomove="0" noresize="0" selectable="1" showselectionhandles="0" snaptogrid="0" tabstop="1" top="1579" usedefaultiddshape="0" visible="1" width="799">
+            <control>
+              <ddsxmlobj>
+                <polyline adornsvisible="1" customendtypedstid="0" customendtypesrcid="0" endtypedst="6" endtypesrc="3" linerender="1" linestyle="0" usercolor="0" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[BasiselementMaterialeindruck-KostuemFilmRolle]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector bendpointeditmode="0" bendpointvisibility="0" destattachpoint="1" destid="31" lineroutestyle="MSDDS.Rectilinear" relatedid="0" segmenteditmode="0" sourceattachpoint="0" sourceid="2" virtual="0">
+              <point x="559" y="4702" />
+              <point x="559" y="3291" />
+              <point x="540" y="3291" />
+              <point x="540" y="1879" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol allownudging="1" autodrag="1" controlid="33" controlprogid="DdsShapes.DdsObjectManagedBridge.3" dontautolayout="0" groupcollapsed="0" height="2302" hint1="0" hint2="0" isannotation="0" left="0" logicalid="50" masterid="0" nodefaultattachpoints="0" nomove="0" noresize="0" selectable="1" showselectionhandles="1" snaptogrid="0" tabstop="1" tooltip="BasiselementTrageweise" top="0" usedefaultiddshape="1" visible="1" width="3810">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000a0000e20e0000fe080000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="BasiselementTrageweise" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupnode="0" groupshapeid="0" />
+          </ddscontrol>
+          <ddscontrol allownudging="1" autodrag="0" controlid="34" controlprogid="MSDDS.Polyline" dontautolayout="0" groupcollapsed="0" height="3200" hint1="0" hint2="0" isannotation="0" left="160" logicalid="51" masterid="0" nodefaultattachpoints="1" nomove="0" noresize="0" selectable="1" showselectionhandles="0" snaptogrid="0" tabstop="1" top="2002" usedefaultiddshape="0" visible="1" width="945">
+            <control>
+              <ddsxmlobj>
+                <polyline adornsvisible="1" customendtypedstid="0" customendtypesrcid="0" endtypedst="6" endtypesrc="3" linerender="1" linestyle="0" usercolor="0" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[BasiselementTrageweise-KostuemFilmRolle]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector bendpointeditmode="0" bendpointvisibility="0" destattachpoint="3" destid="33" lineroutestyle="MSDDS.Rectilinear" relatedid="0" segmenteditmode="0" sourceattachpoint="0" sourceid="2" virtual="0">
+              <point x="559" y="4702" />
+              <point x="559" y="3502" />
+              <point x="805" y="3502" />
+              <point x="805" y="2302" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol allownudging="1" autodrag="1" controlid="35" controlprogid="DdsShapes.DdsObjectManagedBridge.3" dontautolayout="0" groupcollapsed="0" height="2725" hint1="0" hint2="0" isannotation="0" left="0" logicalid="52" masterid="0" nodefaultattachpoints="0" nomove="0" noresize="0" selectable="1" showselectionhandles="1" snaptogrid="0" tabstop="1" tooltip="BasiselementZustand" top="0" usedefaultiddshape="1" visible="1" width="3519">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000a0000bf0d0000a50a0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="BasiselementZustand" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupnode="0" groupshapeid="0" />
+          </ddscontrol>
+          <ddscontrol allownudging="1" autodrag="0" controlid="36" controlprogid="MSDDS.Polyline" dontautolayout="0" groupcollapsed="0" height="2777" hint1="0" hint2="0" isannotation="0" left="160" logicalid="53" masterid="0" nodefaultattachpoints="1" nomove="0" noresize="0" selectable="1" showselectionhandles="0" snaptogrid="0" tabstop="1" top="2425" usedefaultiddshape="0" visible="1" width="799">
+            <control>
+              <ddsxmlobj>
+                <polyline adornsvisible="1" customendtypedstid="0" customendtypesrcid="0" endtypedst="6" endtypesrc="3" linerender="1" linestyle="0" usercolor="0" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[BasiselementZustand-KostuemFilmRolle]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector bendpointeditmode="0" bendpointvisibility="0" destattachpoint="3" destid="35" lineroutestyle="MSDDS.Rectilinear" relatedid="0" segmenteditmode="0" sourceattachpoint="0" sourceid="2" virtual="0">
+              <point x="559" y="4702" />
+              <point x="559" y="3714" />
+              <point x="659" y="3714" />
+              <point x="659" y="2725" />
+            </connector>
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-2000</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-1517</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding">
+    <DataSourceViewID>dsv_kostuem_film_rolle</DataSourceViewID>
+  </Source>
+  <Columns>
+    <Column xsi:type="TableMiningStructureColumn">
+      <ID>Rolle Charaktereigenschaft</ID>
+      <Name>Rolle Charaktereigenschaft</Name>
+      <ForeignKeyColumns>
+        <ForeignKeyColumn>
+          <DataType>Integer</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>Rolledominantecharaktereigenschaft</TableID>
+            <ColumnID>ID</ColumnID>
+          </Source>
+        </ForeignKeyColumn>
+      </ForeignKeyColumns>
+      <Columns>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>Dominante Charaktereigenschaft</ID>
+          <Name>Dominante Charaktereigenschaft</Name>
+          <IsKey>true</IsKey>
+          <Type>Text</Type>
+          <Content>Key</Content>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>WChar</DataType>
+              <DataSize>45</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>Rolledominantecharaktereigenschaft</TableID>
+                <ColumnID>DominanteCharaktereigenschaft</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+      </Columns>
+    </Column>
+    <Column xsi:type="TableMiningStructureColumn">
+      <ID>Basiselement Design</ID>
+      <Name>Basiselement Design 1</Name>
+      <ForeignKeyColumns>
+        <ForeignKeyColumn>
+          <DataType>Integer</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>BasiselementDesign</TableID>
+            <ColumnID>ID</ColumnID>
+          </Source>
+        </ForeignKeyColumn>
+      </ForeignKeyColumns>
+      <Columns>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>Designname L1</ID>
+          <Name>Designname L1</Name>
+          <IsKey>true</IsKey>
+          <Type>Text</Type>
+          <Content>Key</Content>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>WChar</DataType>
+              <DataSize>45</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>BasiselementDesign</TableID>
+                <ColumnID>Designname_L1</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+      </Columns>
+    </Column>
+    <Column xsi:type="TableMiningStructureColumn">
+      <ID>Basiselement Design 1</ID>
+      <Name>Basiselement Design 2</Name>
+      <ForeignKeyColumns>
+        <ForeignKeyColumn>
+          <DataType>Integer</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>BasiselementDesign</TableID>
+            <ColumnID>ID</ColumnID>
+          </Source>
+        </ForeignKeyColumn>
+      </ForeignKeyColumns>
+      <Columns>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>Designname L2</ID>
+          <Name>Designname L2</Name>
+          <IsKey>true</IsKey>
+          <Type>Text</Type>
+          <Content>Key</Content>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>WChar</DataType>
+              <DataSize>45</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>BasiselementDesign</TableID>
+                <ColumnID>Designname_L2</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+      </Columns>
+    </Column>
+    <Column xsi:type="TableMiningStructureColumn">
+      <ID>Basiselement Design 2</ID>
+      <Name>Basiselement Design 3</Name>
+      <ForeignKeyColumns>
+        <ForeignKeyColumn>
+          <DataType>Integer</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>BasiselementDesign</TableID>
+            <ColumnID>ID</ColumnID>
+          </Source>
+        </ForeignKeyColumn>
+      </ForeignKeyColumns>
+      <Columns>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>Designname L3</ID>
+          <Name>Designname L3</Name>
+          <IsKey>true</IsKey>
+          <Type>Text</Type>
+          <Content>Key</Content>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>WChar</DataType>
+              <DataSize>45</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>BasiselementDesign</TableID>
+                <ColumnID>Designname_L3</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+      </Columns>
+    </Column>
+    <Column xsi:type="TableMiningStructureColumn">
+      <ID>Basiselement Design 3</ID>
+      <Name>Basiselement Design 4</Name>
+      <ForeignKeyColumns>
+        <ForeignKeyColumn>
+          <DataType>Integer</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>BasiselementDesign</TableID>
+            <ColumnID>ID</ColumnID>
+          </Source>
+        </ForeignKeyColumn>
+      </ForeignKeyColumns>
+      <Columns>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>Designname L4</ID>
+          <Name>Designname L4</Name>
+          <IsKey>true</IsKey>
+          <Type>Text</Type>
+          <Content>Key</Content>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>WChar</DataType>
+              <DataSize>45</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>BasiselementDesign</TableID>
+                <ColumnID>Designname_L4</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+      </Columns>
+    </Column>
+    <Column xsi:type="TableMiningStructureColumn">
+      <ID>Basiselement Design 4</ID>
+      <Name>Basiselement Design 5</Name>
+      <ForeignKeyColumns>
+        <ForeignKeyColumn>
+          <DataType>Integer</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>BasiselementDesign</TableID>
+            <ColumnID>ID</ColumnID>
+          </Source>
+        </ForeignKeyColumn>
+      </ForeignKeyColumns>
+      <Columns>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>Designname L5</ID>
+          <Name>Designname L5</Name>
+          <IsKey>true</IsKey>
+          <Type>Text</Type>
+          <Content>Key</Content>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>WChar</DataType>
+              <DataSize>45</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>BasiselementDesign</TableID>
+                <ColumnID>Designname_L5</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+      </Columns>
+    </Column>
+    <Column xsi:type="TableMiningStructureColumn">
+      <ID>Film Genre 1</ID>
+      <Name>Film Genre 2</Name>
+      <ForeignKeyColumns>
+        <ForeignKeyColumn>
+          <DataType>Integer</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>Filmgenre</TableID>
+            <ColumnID>ID</ColumnID>
+          </Source>
+        </ForeignKeyColumn>
+      </ForeignKeyColumns>
+      <Columns>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>Genre L2</ID>
+          <Name>Genre L2</Name>
+          <IsKey>true</IsKey>
+          <Type>Text</Type>
+          <Content>Key</Content>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>WChar</DataType>
+              <DataSize>45</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>Filmgenre</TableID>
+                <ColumnID>Genre_L2</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+      </Columns>
+    </Column>
+    <Column xsi:type="TableMiningStructureColumn">
+      <ID>Film Genre</ID>
+      <Name>Film Genre 1</Name>
+      <ForeignKeyColumns>
+        <ForeignKeyColumn>
+          <DataType>Integer</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>Filmgenre</TableID>
+            <ColumnID>ID</ColumnID>
+          </Source>
+        </ForeignKeyColumn>
+      </ForeignKeyColumns>
+      <Columns>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>Genre L1</ID>
+          <Name>Genre L1</Name>
+          <IsKey>true</IsKey>
+          <Type>Text</Type>
+          <Content>Key</Content>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>WChar</DataType>
+              <DataSize>45</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>Filmgenre</TableID>
+                <ColumnID>Genre_L1</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+      </Columns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn">
+      <ID>ID</ID>
+      <Name>ID</Name>
+      <IsKey>true</IsKey>
+      <Type>Long</Type>
+      <Content>Key</Content>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>Integer</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>KostuemFilmRolle</TableID>
+            <ColumnID>ID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn">
+      <ID>Geschlecht</ID>
+      <Name>Geschlecht</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>29</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>KostuemFilmRolle</TableID>
+            <ColumnID>Geschlecht</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn">
+      <ID>Rollenrelevanz</ID>
+      <Name>Rollenrelevanz</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>29</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>KostuemFilmRolle</TableID>
+            <ColumnID>Rollenrelevanz</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+  </Columns>
+  <MiningModels>
+    <MiningModel>
+      <ID>ms_western__kostuem__Dominante-Charaktereigenschaft_Designname-L3</ID>
+      <Name>western__kostuem__Dominante-Charaktereigenschaft_Designname-L3</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <Annotations>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Microsoft.AnalysisServices.MiningModel</Name>
+          <Value>
+            <Microsoft.AnalysisServices.MiningModel>
+              <Filter>&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;MiningModelFilter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;Items&gt;
+    &lt;FilterGridItem&gt;
+      &lt;IsGroup&gt;false&lt;/IsGroup&gt;
+      &lt;IsDataTable&gt;false&lt;/IsDataTable&gt;
+      &lt;Operator&gt;Contains&lt;/Operator&gt;
+      &lt;ColumnName&gt;Film Genre 1&lt;/ColumnName&gt;
+      &lt;ColumnID&gt;Film Genre&lt;/ColumnID&gt;
+      &lt;Value /&gt;
+      &lt;AndOr&gt;None&lt;/AndOr&gt;
+      &lt;ChildItems&gt;
+        &lt;FilterGridItem&gt;
+          &lt;IsGroup&gt;false&lt;/IsGroup&gt;
+          &lt;IsDataTable&gt;false&lt;/IsDataTable&gt;
+          &lt;Operator&gt;=&lt;/Operator&gt;
+          &lt;ColumnName&gt;Genre L1&lt;/ColumnName&gt;
+          &lt;ColumnID&gt;Genre L1&lt;/ColumnID&gt;
+          &lt;Value&gt;Western&lt;/Value&gt;
+          &lt;AndOr&gt;None&lt;/AndOr&gt;
+          &lt;ChildItems /&gt;
+        &lt;/FilterGridItem&gt;
+        &lt;FilterGridItem&gt;
+          &lt;IsGroup&gt;false&lt;/IsGroup&gt;
+          &lt;IsDataTable&gt;false&lt;/IsDataTable&gt;
+          &lt;ColumnName /&gt;
+          &lt;AndOr&gt;AND&lt;/AndOr&gt;
+          &lt;ChildItems /&gt;
+        &lt;/FilterGridItem&gt;
+      &lt;/ChildItems&gt;
+    &lt;/FilterGridItem&gt;
+    &lt;FilterGridItem&gt;
+      &lt;IsGroup&gt;false&lt;/IsGroup&gt;
+      &lt;IsDataTable&gt;false&lt;/IsDataTable&gt;
+      &lt;ColumnName /&gt;
+      &lt;AndOr&gt;AND&lt;/AndOr&gt;
+      &lt;ChildItems /&gt;
+    &lt;/FilterGridItem&gt;
+  &lt;/Items&gt;
+&lt;/MiningModelFilter&gt;</Filter>
+            </Microsoft.AnalysisServices.MiningModel>
+          </Value>
+        </Annotation>
+      </Annotations>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Algorithm>Microsoft_Association_Rules</Algorithm>
+      <AlgorithmParameters>
+        <AlgorithmParameter>
+          <Name>MINIMUM_PROBABILITY</Name>
+          <Value xsi:type="xsd:double">0</Value>
+        </AlgorithmParameter>
+      </AlgorithmParameters>
+      <Columns>
+        <Column>
+          <ID>ID</ID>
+          <Name>ID</Name>
+          <SourceColumnID>ID</SourceColumnID>
+          <Usage>Key</Usage>
+        </Column>
+        <Column><ID>Rolle Charaktereigenschaft</ID><Name>Rolle Charaktereigenschaft</Name><SourceColumnID>Rolle Charaktereigenschaft</SourceColumnID><Columns><Column><ID>Dominante Charaktereigenschaft</ID><Name>Dominante Charaktereigenschaft</Name><SourceColumnID>Dominante Charaktereigenschaft</SourceColumnID><Usage>Key</Usage></Column></Columns></Column><Column><ID>Basiselement Design 3</ID><Name>Basiselement Design 3</Name><SourceColumnID>Basiselement Design 2</SourceColumnID><Usage>PredictOnly</Usage><Columns><Column><ID>Designname L3</ID><Name>Designname L3</Name><SourceColumnID>Designname L3</SourceColumnID><Usage>Key</Usage></Column></Columns></Column></Columns>
+      <AllowDrillThrough>true</AllowDrillThrough>
+      <ddl100_100:Filter>EXISTS (SELECT * FROM [Film Genre 1] WHERE  [Genre L1] = 'Western' )</ddl100_100:Filter>
+    </MiningModel>
+    <MiningModel>
+      <ID>ms_highschool_komoedie__kostuem__Dominante-Charaktereigenschaft_Designname-L3</ID>
+      <Name>highschool_komoedie__kostuem__Dominante-Charaktereigenschaft_Designname-L3</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <Annotations>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Microsoft.AnalysisServices.MiningModel</Name>
+          <Value>
+            <Microsoft.AnalysisServices.MiningModel>
+              <Filter>&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;MiningModelFilter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;Items&gt;
+    &lt;FilterGridItem&gt;
+      &lt;IsGroup&gt;false&lt;/IsGroup&gt;
+      &lt;IsDataTable&gt;false&lt;/IsDataTable&gt;
+      &lt;Operator&gt;Contains&lt;/Operator&gt;
+      &lt;ColumnName&gt;Film Genre 2&lt;/ColumnName&gt;
+      &lt;ColumnID&gt;Film Genre 1&lt;/ColumnID&gt;
+      &lt;Value /&gt;
+      &lt;AndOr&gt;None&lt;/AndOr&gt;
+      &lt;ChildItems&gt;
+        &lt;FilterGridItem&gt;
+          &lt;IsGroup&gt;false&lt;/IsGroup&gt;
+          &lt;IsDataTable&gt;false&lt;/IsDataTable&gt;
+          &lt;Operator&gt;=&lt;/Operator&gt;
+          &lt;ColumnName&gt;Genre L2&lt;/ColumnName&gt;
+          &lt;ColumnID&gt;Genre L2&lt;/ColumnID&gt;
+          &lt;Value&gt;Highschool Komödie&lt;/Value&gt;
+          &lt;AndOr&gt;None&lt;/AndOr&gt;
+          &lt;ChildItems /&gt;
+        &lt;/FilterGridItem&gt;
+        &lt;FilterGridItem&gt;
+          &lt;IsGroup&gt;false&lt;/IsGroup&gt;
+          &lt;IsDataTable&gt;false&lt;/IsDataTable&gt;
+          &lt;ColumnName /&gt;
+          &lt;AndOr&gt;AND&lt;/AndOr&gt;
+          &lt;ChildItems /&gt;
+        &lt;/FilterGridItem&gt;
+      &lt;/ChildItems&gt;
+    &lt;/FilterGridItem&gt;
+    &lt;FilterGridItem&gt;
+      &lt;IsGroup&gt;false&lt;/IsGroup&gt;
+      &lt;IsDataTable&gt;false&lt;/IsDataTable&gt;
+      &lt;ColumnName /&gt;
+      &lt;AndOr&gt;AND&lt;/AndOr&gt;
+      &lt;ChildItems /&gt;
+    &lt;/FilterGridItem&gt;
+  &lt;/Items&gt;
+&lt;/MiningModelFilter&gt;</Filter>
+            </Microsoft.AnalysisServices.MiningModel>
+          </Value>
+        </Annotation>
+      </Annotations>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Algorithm>Microsoft_Association_Rules</Algorithm>
+      <AlgorithmParameters>
+        <AlgorithmParameter>
+          <Name>MINIMUM_PROBABILITY</Name>
+          <Value xsi:type="xsd:double">0</Value>
+        </AlgorithmParameter>
+      </AlgorithmParameters>
+      <Columns>
+        <Column>
+          <ID>ID</ID>
+          <Name>ID</Name>
+          <SourceColumnID>ID</SourceColumnID>
+          <Usage>Key</Usage>
+        </Column>
+        <Column><ID>Rolle Charaktereigenschaft</ID><Name>Rolle Charaktereigenschaft</Name><SourceColumnID>Rolle Charaktereigenschaft</SourceColumnID><Columns><Column><ID>Dominante Charaktereigenschaft</ID><Name>Dominante Charaktereigenschaft</Name><SourceColumnID>Dominante Charaktereigenschaft</SourceColumnID><Usage>Key</Usage></Column></Columns></Column><Column><ID>Basiselement Design 3</ID><Name>Basiselement Design 3</Name><SourceColumnID>Basiselement Design 2</SourceColumnID><Usage>PredictOnly</Usage><Columns><Column><ID>Designname L3</ID><Name>Designname L3</Name><SourceColumnID>Designname L3</SourceColumnID><Usage>Key</Usage></Column></Columns></Column></Columns>
+      <ddl100_100:Filter>EXISTS (SELECT * FROM [Film Genre 2] WHERE  [Genre L2] = 'Highschool Komödie' )</ddl100_100:Filter>
+    </MiningModel>
+  </MiningModels>
+</MiningStructure>
