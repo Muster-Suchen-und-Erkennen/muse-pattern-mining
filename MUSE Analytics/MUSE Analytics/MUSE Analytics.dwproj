@@ -251,6 +251,38 @@
       <Name>ms_kostuem__Dominante-Charaktereigenschaft_Farbeindruck.dmm</Name>
       <FullPath>ms_kostuem__Dominante-Charaktereigenschaft_Farbeindruck.dmm</FullPath>
     </ProjectItem>
+    <ProjectItem>
+      <Name>ms_kostuem__Dominante-Charaktereigenschaft_Koerpermodifikationname-L3.dmm</Name>
+      <FullPath>ms_kostuem__Dominante-Charaktereigenschaft_Koerpermodifikationname-L3.dmm</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>ms_kostuem__Charaktereigenschaft-L3_Koerpermodifikationname-L3.dmm</Name>
+      <FullPath>ms_kostuem__Charaktereigenschaft-L3_Koerpermodifikationname-L3.dmm</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>ms_kostuem__Charaktereigenschaft-L3_Designname-L3.dmm</Name>
+      <FullPath>ms_kostuem__Charaktereigenschaft-L3_Designname-L3.dmm</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>ms_kostuem__Charaktereigenschaft-L3_Formname-L2.dmm</Name>
+      <FullPath>ms_kostuem__Charaktereigenschaft-L3_Formname-L2.dmm</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>ms_kostuem__Charaktereigenschaft-L3_Trageweisename-L2.dmm</Name>
+      <FullPath>ms_kostuem__Charaktereigenschaft-L3_Trageweisename-L2.dmm</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>ms_kostuem__Charaktereigenschaft-L3_Zustandsname-L2.dmm</Name>
+      <FullPath>ms_kostuem__Charaktereigenschaft-L3_Zustandsname-L2.dmm</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>ms_kostuem__Charaktereigenschaft-L3_Funktionsname-L3.dmm</Name>
+      <FullPath>ms_kostuem__Charaktereigenschaft-L3_Funktionsname-L3.dmm</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>ms_kostuem__Charaktereigenschaft-L3_Materialeindruck.dmm</Name>
+      <FullPath>ms_kostuem__Charaktereigenschaft-L3_Materialeindruck.dmm</FullPath>
+    </ProjectItem>
 
 
 
