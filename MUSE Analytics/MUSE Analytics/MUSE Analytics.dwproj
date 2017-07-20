@@ -283,6 +283,10 @@
       <Name>ms_kostuem__Charaktereigenschaft-L3_Materialeindruck.dmm</Name>
       <FullPath>ms_kostuem__Charaktereigenschaft-L3_Materialeindruck.dmm</FullPath>
     </ProjectItem>
+    <ProjectItem>
+      <Name>ms_basiselement__vorlage.dmm</Name>
+      <FullPath>ms_basiselement__vorlage.dmm</FullPath>
+    </ProjectItem>
 
 
 
