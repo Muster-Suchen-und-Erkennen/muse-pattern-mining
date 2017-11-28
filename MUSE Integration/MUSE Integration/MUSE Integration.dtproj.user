@@ -4,7 +4,7 @@
     <Configuration>
       <Name>Development</Name>
       <Options>
-        <ServerName>WIN-PMAUG1E77ME</ServerName>
+        <ServerName>localhost</ServerName>
         <PathOnServer>/SSISDB/MuseAnalytics/MUSE Integration</PathOnServer>
         <Run64BitRuntime>true</Run64BitRuntime>
         <UserIDs />

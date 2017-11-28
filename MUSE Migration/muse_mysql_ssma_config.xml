@@ -7,9 +7,9 @@
 
 	<variable-group name="MySqlParams">
 		<variable-group name="MySqlConnectionParams">
-			<variable name="$SourceUserName$" value="RepoMigration"/>
 			<variable name="$SourceServer$" value="muse.informatik.uni-stuttgart.de"/>
 			<variable name="$SourcePort$" value="3306"/>
+			<variable name="$SourceUserName$" value="RepoMigration"/>
 			<variable name="$SourcePassword$" value="RepoMigration"/>
 		</variable-group>
 
@@ -21,7 +21,7 @@
 	<variable-group name="SQLServerParams">
 		<variable-group name="SqlServerConnectionParams">
 			<variable name="$TargetServerName$" value="localhost"/>
-			<variable name="$TargetDB$" value="muse"/>
+			<variable name="$TargetDB$" value="muse_nightly"/>
 		</variable-group>    
 	</variable-group>
 	

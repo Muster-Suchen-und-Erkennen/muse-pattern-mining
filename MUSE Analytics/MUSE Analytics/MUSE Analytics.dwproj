@@ -291,15 +291,6 @@
       <Name>ms_basiselement__Charaktereigenschaft-L3_Trageweisename-L2.dmm</Name>
       <FullPath>ms_basiselement__Charaktereigenschaft-L3_Trageweisename-L2.dmm</FullPath>
     </ProjectItem>
-
-
-
-
-
-
-
-
-
   </MiningModels>
   <Configurations>
     <Configuration>
@@ -309,7 +300,7 @@
           <ConfigurationSetting>
             <Id>ds_muse_analytics</Id>
             <Name>ds_muse_analytics</Name>
-            <Value xsi:type="xsd:string">Provider=SQLNCLI11.1;Data Source=localhost;Integrated Security=SSPI;Initial Catalog=muse_analytics</Value>
+            <Value xsi:type="xsd:string">Provider=SQLNCLI11.1;Data Source=localhost;Integrated Security=SSPI;Initial Catalog=muse_nightly_analytics</Value>
           </ConfigurationSetting>
         </ConnectionMappings>
         <ConnectionSecurityMappings>

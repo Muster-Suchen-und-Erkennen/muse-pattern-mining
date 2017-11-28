@@ -272,7 +272,7 @@
           <ConfigurationSetting>
             <Id>Kostuem DWX3</Id>
             <Name>Kostuem DWX3</Name>
-            <Value xsi:type="xsd:string">Provider=SQLNCLI11.1;Data Source=localhost;Integrated Security=SSPI;Initial Catalog=kostuemDWX1</Value>
+            <Value xsi:type="xsd:string">Provider=SQLNCLI11.1;Data Source=localhost;Integrated Security=SSPI;Initial Catalog=muse_nightly_dw</Value>
           </ConfigurationSetting>
         </ConnectionMappings>
         <ConnectionSecurityMappings>

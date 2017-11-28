@@ -26,7 +26,7 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">WIN-PMAUG1E77ME</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAi3n0smX/kUOc63C0gS9DJgAAAAACAAAAAAAQZgAAAAEAACAAAACHT5CyNk/XCKrcKeNMY/GGbLcj030Q2vaXU8EHZOibwQAAAAAOgAAAAAIAACAAAAAe/iOTyMqT8TP8gguH7GECLPFPoJTh6IdhdqbHbYG5TZAAAACbYosH+90AQGOb+4Dg0huAZNHaqnhScZu+Rwfnx0oNnWQlj8NicdRfDtWgy3+yvzoeBq3BRYQfE1EnyzLljIJ6dKDNrhLGmn6njxw8zlJpUPRc7U0QOKy01frtpfFNqS+7ZVIctIoZNqJELbOwyUi2KCPqUJjAtYhN4deXBW4jntaR+7zsvBYULrssJ+sHa8xAAAAAMFvLOJcaWfvTZwjT0DTpFs0HD55l3VIUUTVfyqezYzz4J4wZMi8CeDnsB8RmjSVQYa2BZqB5qRZNby2i8GSxNQ==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA7EbvqIxlFEiS7bZh5f6yogAAAAACAAAAAAAQZgAAAAEAACAAAACi9ocF9jyF03R/VlkfJ1DUqXasOV4xW186COCt1kB17QAAAAAOgAAAAAIAACAAAAAMU+BbeSV/CF80r+zG4sfn/yQnUtcjyuEQIgRFvb4EG5AAAAAcx3zd6m+WX9yiaUdiocw64MLvNy5Mx1YJ49ZhmU5IcxIIJpAr1M59PLJQpCDJSQEX6PR7ipSZn7nBeCTsC5lJe3cYUGCKTNJzTrpHCOcZGOl6XaTS0A3rdHKvphqHn60T2K64bJqWmw3zXrLCdSz5Abm5b310PXKW7SHWLHMDgQEOapV5rrMqWT44IokemWpAAAAAy9Dniphb2Yg30vyP/B4Dn0axbO/0FST+lty0/Z6JiHn6KSrgzX7PJTIaOYUKR5Xcvs/QZJynNo/mHi2OtZMB8Q==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
@@ -43,10 +43,10 @@
                 <SSIS:Property SSIS:Name="Name">Package</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">297</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">313</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{921F4A88-D849-4C75-ADF2-7446DF986EDE}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{4BBF34CF-6959-44F1-9CD9-E14246B35E19}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -167,7 +167,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">Data Source=localhost;Initial Catalog=muse;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">Data Source=localhost;Initial Catalog=muse_nightly;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -182,7 +182,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">muse</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">muse_nightly</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -255,7 +255,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">Data Source=localhost;Initial Catalog=muse_analytics;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">Data Source=localhost;Initial Catalog=muse_nightly_analytics;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -270,7 +270,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">muse_analytics</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">muse_nightly_analytics</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -340,10 +340,10 @@
                 <SSIS:Property SSIS:Name="Name">MySQL Migration Package</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">19</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">22</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{28C2777F-4FDC-4E67-A818-5304903C2E51}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{5C13DF37-5AB8-4584-95B9-F5C14A354D26}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -389,7 +389,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">C:\Users\Administrator\Documents\git\muse-patternmining\MUSE Migration\muse_mysql_ssma.xml</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">D:\MuseAnalytics\github\muse-pattern-mining\MUSE Migration\muse_mysql_ssma.xml</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -404,7 +404,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">C:\Users\Administrator\Documents\git\muse-patternmining\MUSE Migration\muse_mysql_ssma_config.xml</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">D:\MuseAnalytics\github\muse-pattern-mining\MUSE Migration\muse_mysql_ssma_config.xml</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
