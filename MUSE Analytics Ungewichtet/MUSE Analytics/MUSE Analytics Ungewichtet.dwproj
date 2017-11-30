@@ -24,80 +24,8 @@
   </DataSourceViews>
   <MiningModels>
     <ProjectItem>
-      <Name>ms_basiselement__charakter_design.dmm</Name>
-      <FullPath>ms_basiselement__charakter_design.dmm</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>ms_basiselement__charakter_farbe.dmm</Name>
-      <FullPath>ms_basiselement__charakter_farbe.dmm</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>ms_basiselement__charakter_material.dmm</Name>
-      <FullPath>ms_basiselement__charakter_material.dmm</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>ms_basiselement__charakter_zustand.dmm</Name>
-      <FullPath>ms_basiselement__charakter_zustand.dmm</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>ms_basiselement__stereotyp_design.dmm</Name>
-      <FullPath>ms_basiselement__stereotyp_design.dmm</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>ms_basiselement__stereotyp_farbe.dmm</Name>
-      <FullPath>ms_basiselement__stereotyp_farbe.dmm</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>ms_basiselement__stereotyp_material.dmm</Name>
-      <FullPath>ms_basiselement__stereotyp_material.dmm</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>ms_basiselement__stereotyp_zustand.dmm</Name>
-      <FullPath>ms_basiselement__stereotyp_zustand.dmm</FullPath>
-    </ProjectItem>
-    <ProjectItem>
       <Name>ms_kostuem__basiselement.dmm</Name>
       <FullPath>ms_kostuem__basiselement.dmm</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>ms_kostuem__charakter_basiselement.dmm</Name>
-      <FullPath>ms_kostuem__charakter_basiselement.dmm</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>ms_kostuem__charakter_design.dmm</Name>
-      <FullPath>ms_kostuem__charakter_design.dmm</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>ms_kostuem__charakter_farbe.dmm</Name>
-      <FullPath>ms_kostuem__charakter_farbe.dmm</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>ms_kostuem__charakter_material.dmm</Name>
-      <FullPath>ms_kostuem__charakter_material.dmm</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>ms_kostuem__charakter_zustand.dmm</Name>
-      <FullPath>ms_kostuem__charakter_zustand.dmm</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>ms_kostuem__stereotyp_basiselement.dmm</Name>
-      <FullPath>ms_kostuem__stereotyp_basiselement.dmm</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>ms_kostuem__stereotyp_design.dmm</Name>
-      <FullPath>ms_kostuem__stereotyp_design.dmm</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>ms_kostuem__stereotyp_farbe.dmm</Name>
-      <FullPath>ms_kostuem__stereotyp_farbe.dmm</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>ms_kostuem__stereotyp_material.dmm</Name>
-      <FullPath>ms_kostuem__stereotyp_material.dmm</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>ms_kostuem__stereotyp_zustand.dmm</Name>
-      <FullPath>ms_kostuem__stereotyp_zustand.dmm</FullPath>
     </ProjectItem>
   </MiningModels>
   <Configurations>
@@ -108,7 +36,7 @@
           <ConfigurationSetting>
             <Id>ds_muse_analytics</Id>
             <Name>ds_muse_analytics</Name>
-            <Value xsi:type="xsd:string">Provider=SQLNCLI11.1;Data Source=localhost;Integrated Security=SSPI;Initial Catalog=muse_analytics</Value>
+            <Value xsi:type="xsd:string">Provider=SQLNCLI11.1;Data Source=localhost;Integrated Security=SSPI;Initial Catalog=muse_nightly_analytics</Value>
           </ConfigurationSetting>
         </ConnectionMappings>
         <ConnectionSecurityMappings>
