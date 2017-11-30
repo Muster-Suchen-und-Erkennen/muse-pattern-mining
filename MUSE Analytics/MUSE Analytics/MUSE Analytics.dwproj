@@ -22,10 +22,6 @@
       <FullPath>basiselement_tops.dsv</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>basiselement_ungewichtet.dsv</Name>
-      <FullPath>basiselement_ungewichtet.dsv</FullPath>
-    </ProjectItem>
-    <ProjectItem>
       <Name>kostuem_gewichtet.dsv</Name>
       <FullPath>kostuem_gewichtet.dsv</FullPath>
     </ProjectItem>
@@ -46,10 +42,6 @@
     <ProjectItem>
       <Name>basiselement_tops_vorlage.dmm</Name>
       <FullPath>basiselement_tops_vorlage.dmm</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>basiselement_ungewichtet_vorlage.dmm</Name>
-      <FullPath>basiselement_ungewichtet_vorlage.dmm</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>kostuem_gewichtet_vorlage.dmm</Name>

@@ -1,4 +1,4 @@
-﻿<MiningStructure xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<MiningStructure xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="37f435eb-8602-4a7c-a79c-d3eee50df244" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>kostuem_ungewichtet_vorlage</ID>
   <Name>kostuem_ungewichtet_vorlage</Name>
   <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
@@ -16,7 +16,7 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="112" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-12122" scrolltop="367" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="40" x="26326" y="18494" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="112" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-12122" scrolltop="367" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="40" x="26326" y="12462" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
               <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
             </font>
@@ -909,35 +909,35 @@
   </Annotations>
   <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
   <State>Unprocessed</State>
-  <Source xsi:type="DataSourceViewBinding">
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="d1ce84e1-892c-4ee3-ad0d-fabd37e2017a">
     <DataSourceViewID>kostuem_ungewichtet</DataSourceViewID>
   </Source>
   <Columns>
-    <Column xsi:type="TableMiningStructureColumn">
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="6c0475c5-07df-4cc1-8b17-36169459c970">
       <ID>Kostuem Koerpermodifikation</ID>
       <Name>Kostuem Koerpermodifikation 1</Name>
       <ForeignKeyColumns>
-        <ForeignKeyColumn>
+        <ForeignKeyColumn dwd:design-time-name="8bc10f4b-c305-49a8-9094-94b654f7ff9e">
           <DataType>Integer</DataType>
           <DataSize>-1</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6c369b37-0910-4789-a48c-1c64ae2a597a">
             <TableID>Kostuemkoerpermodifikation</TableID>
             <ColumnID>ID</ColumnID>
           </Source>
         </ForeignKeyColumn>
       </ForeignKeyColumns>
       <Columns>
-        <Column xsi:type="ScalarMiningStructureColumn">
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="6eec2547-4ca5-493b-86b7-5f121cde0df1">
           <ID>Koerpermodifikationname L1</ID>
           <Name>Koerpermodifikationname L1</Name>
           <IsKey>true</IsKey>
           <Type>Text</Type>
           <Content>Key</Content>
           <KeyColumns>
-            <KeyColumn>
+            <KeyColumn dwd:design-time-name="27d84877-f880-44ac-a1eb-f6a482716a5e">
               <DataType>WChar</DataType>
               <DataSize>45</DataSize>
-              <Source xsi:type="ColumnBinding">
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="693dd3da-de2a-4868-8490-078e50267c47">
                 <TableID>Kostuemkoerpermodifikation</TableID>
                 <ColumnID>Koerpermodifikationname_L1</ColumnID>
               </Source>
@@ -946,31 +946,31 @@
         </Column>
       </Columns>
     </Column>
-    <Column xsi:type="TableMiningStructureColumn">
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="82c4febb-8322-44df-a61f-b4a847451b0c">
       <ID>Kostuem Koerpermodifikation 1</ID>
       <Name>Kostuem Koerpermodifikation 2</Name>
       <ForeignKeyColumns>
-        <ForeignKeyColumn>
+        <ForeignKeyColumn dwd:design-time-name="8116e405-f7d9-4f0b-80d1-b114ff5899bb">
           <DataType>Integer</DataType>
           <DataSize>-1</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4fd3e5a7-d947-4cb0-9dae-13de79c48832">
             <TableID>Kostuemkoerpermodifikation</TableID>
             <ColumnID>ID</ColumnID>
           </Source>
         </ForeignKeyColumn>
       </ForeignKeyColumns>
       <Columns>
-        <Column xsi:type="ScalarMiningStructureColumn">
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="1b31a2b6-2932-4d3c-857f-efc5a048ca11">
           <ID>Koerpermodifikationname L2</ID>
           <Name>Koerpermodifikationname L2</Name>
           <IsKey>true</IsKey>
           <Type>Text</Type>
           <Content>Key</Content>
           <KeyColumns>
-            <KeyColumn>
+            <KeyColumn dwd:design-time-name="aae8479e-5de9-48fd-9e92-fd6e3048670c">
               <DataType>WChar</DataType>
               <DataSize>45</DataSize>
-              <Source xsi:type="ColumnBinding">
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="967e4770-713f-4585-9e0e-2bc838993f90">
                 <TableID>Kostuemkoerpermodifikation</TableID>
                 <ColumnID>Koerpermodifikationname_L2</ColumnID>
               </Source>
@@ -979,31 +979,31 @@
         </Column>
       </Columns>
     </Column>
-    <Column xsi:type="TableMiningStructureColumn">
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="e2745205-3d63-4350-9302-b409e7a0c61c">
       <ID>Kostuem Koerpermodifikation 2</ID>
       <Name>Kostuem Koerpermodifikation 3</Name>
       <ForeignKeyColumns>
-        <ForeignKeyColumn>
+        <ForeignKeyColumn dwd:design-time-name="81b58a7c-8c3e-42ae-995c-ad898081598c">
           <DataType>Integer</DataType>
           <DataSize>-1</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="be5cdd8e-d34f-4832-a888-a8035b63ab34">
             <TableID>Kostuemkoerpermodifikation</TableID>
             <ColumnID>ID</ColumnID>
           </Source>
         </ForeignKeyColumn>
       </ForeignKeyColumns>
       <Columns>
-        <Column xsi:type="ScalarMiningStructureColumn">
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="8f834f71-71fa-4310-8980-9a9f5a807842">
           <ID>Koerpermodifikationname L3</ID>
           <Name>Koerpermodifikationname L3</Name>
           <IsKey>true</IsKey>
           <Type>Text</Type>
           <Content>Key</Content>
           <KeyColumns>
-            <KeyColumn>
+            <KeyColumn dwd:design-time-name="aa1aa243-d21f-412d-aaa7-3304d97743b0">
               <DataType>WChar</DataType>
               <DataSize>45</DataSize>
-              <Source xsi:type="ColumnBinding">
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="dcae41a3-e806-4544-8ef8-6fc342fcfa19">
                 <TableID>Kostuemkoerpermodifikation</TableID>
                 <ColumnID>Koerpermodifikationname_L3</ColumnID>
               </Source>
@@ -1012,31 +1012,31 @@
         </Column>
       </Columns>
     </Column>
-    <Column xsi:type="TableMiningStructureColumn">
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="08bedbd0-1876-45db-bf19-08d0f2f35c38">
       <ID>Kostuem Koerpermodifikation 3</ID>
       <Name>Kostuem Koerpermodifikation 4</Name>
       <ForeignKeyColumns>
-        <ForeignKeyColumn>
+        <ForeignKeyColumn dwd:design-time-name="e563ebb8-4e3b-4da6-a60e-413afa745727">
           <DataType>Integer</DataType>
           <DataSize>-1</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3a719255-9862-4c6a-a8f1-2607d7376d87">
             <TableID>Kostuemkoerpermodifikation</TableID>
             <ColumnID>ID</ColumnID>
           </Source>
         </ForeignKeyColumn>
       </ForeignKeyColumns>
       <Columns>
-        <Column xsi:type="ScalarMiningStructureColumn">
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="872899ba-8490-48ea-a48f-67ca4b416a41">
           <ID>Koerpermodifikationname L4</ID>
           <Name>Koerpermodifikationname L4</Name>
           <IsKey>true</IsKey>
           <Type>Text</Type>
           <Content>Key</Content>
           <KeyColumns>
-            <KeyColumn>
+            <KeyColumn dwd:design-time-name="49adb7d8-9b1a-432d-b23c-bd0b65f11070">
               <DataType>WChar</DataType>
               <DataSize>45</DataSize>
-              <Source xsi:type="ColumnBinding">
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="9befb47d-55c2-4cd7-8e48-14577077647c">
                 <TableID>Kostuemkoerpermodifikation</TableID>
                 <ColumnID>Koerpermodifikationname_L4</ColumnID>
               </Source>
@@ -1045,31 +1045,31 @@
         </Column>
       </Columns>
     </Column>
-    <Column xsi:type="TableMiningStructureColumn">
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="d3855ad5-9532-478a-b1dd-54d08f2553bc">
       <ID>Kostuem Koerpermodifikation 4</ID>
       <Name>Kostuem Koerpermodifikation 5</Name>
       <ForeignKeyColumns>
-        <ForeignKeyColumn>
+        <ForeignKeyColumn dwd:design-time-name="0f9f8c8a-33a3-40df-9403-69c2e59bc706">
           <DataType>Integer</DataType>
           <DataSize>-1</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8015326b-5dbb-45cf-9405-bf924b990c22">
             <TableID>Kostuemkoerpermodifikation</TableID>
             <ColumnID>ID</ColumnID>
           </Source>
         </ForeignKeyColumn>
       </ForeignKeyColumns>
       <Columns>
-        <Column xsi:type="ScalarMiningStructureColumn">
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="db1ebf18-9002-449a-96e0-1dd6f35d7684">
           <ID>Koerpermodifikationname L5</ID>
           <Name>Koerpermodifikationname L5</Name>
           <IsKey>true</IsKey>
           <Type>Text</Type>
           <Content>Key</Content>
           <KeyColumns>
-            <KeyColumn>
+            <KeyColumn dwd:design-time-name="54419d7f-41eb-4777-bb25-f9509139b3d1">
               <DataType>WChar</DataType>
               <DataSize>45</DataSize>
-              <Source xsi:type="ColumnBinding">
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="af7dca35-c751-41d3-8824-1e808b6c1cfb">
                 <TableID>Kostuemkoerpermodifikation</TableID>
                 <ColumnID>Koerpermodifikationname_L5</ColumnID>
               </Source>
@@ -1078,31 +1078,31 @@
         </Column>
       </Columns>
     </Column>
-    <Column xsi:type="TableMiningStructureColumn">
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="ed96a989-2e52-42e0-af09-c30699c41b8c">
       <ID>Kostuem Charaktereigenschaft</ID>
       <Name>Kostuem Charaktereigenschaft 1</Name>
       <ForeignKeyColumns>
-        <ForeignKeyColumn>
+        <ForeignKeyColumn dwd:design-time-name="b2c5a6eb-5506-4be0-94bf-3897b23550fc">
           <DataType>Integer</DataType>
           <DataSize>-1</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="21a8fca8-045a-466f-9998-11def1931d06">
             <TableID>Kostuemcharaktereigenschaft</TableID>
             <ColumnID>ID</ColumnID>
           </Source>
         </ForeignKeyColumn>
       </ForeignKeyColumns>
       <Columns>
-        <Column xsi:type="ScalarMiningStructureColumn">
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="b160a3ca-b5f2-4214-951a-2b7d9a1d7f1f">
           <ID>Charaktereigenschaft L1</ID>
           <Name>Charaktereigenschaft L1</Name>
           <IsKey>true</IsKey>
           <Type>Text</Type>
           <Content>Key</Content>
           <KeyColumns>
-            <KeyColumn>
+            <KeyColumn dwd:design-time-name="4258a900-231d-445c-843b-6affbb1685c8">
               <DataType>WChar</DataType>
               <DataSize>45</DataSize>
-              <Source xsi:type="ColumnBinding">
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="b3d30013-43b2-44a9-a75d-9590dff98df5">
                 <TableID>Kostuemcharaktereigenschaft</TableID>
                 <ColumnID>Charaktereigenschaft_L1</ColumnID>
               </Source>
@@ -1111,31 +1111,31 @@
         </Column>
       </Columns>
     </Column>
-    <Column xsi:type="TableMiningStructureColumn">
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="7a777210-651a-4481-995f-2281d45c5ef4">
       <ID>Kostuem Charaktereigenschaft 1</ID>
       <Name>Kostuem Charaktereigenschaft 2</Name>
       <ForeignKeyColumns>
-        <ForeignKeyColumn>
+        <ForeignKeyColumn dwd:design-time-name="b3833eb0-70ed-45e4-89d4-b97a90c37f7f">
           <DataType>Integer</DataType>
           <DataSize>-1</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="748d876a-c1f6-4864-8c60-a454128d2de1">
             <TableID>Kostuemcharaktereigenschaft</TableID>
             <ColumnID>ID</ColumnID>
           </Source>
         </ForeignKeyColumn>
       </ForeignKeyColumns>
       <Columns>
-        <Column xsi:type="ScalarMiningStructureColumn">
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="7dc09a01-d797-4692-9952-6173d82c68a4">
           <ID>Charaktereigenschaft L2</ID>
           <Name>Charaktereigenschaft L2</Name>
           <IsKey>true</IsKey>
           <Type>Text</Type>
           <Content>Key</Content>
           <KeyColumns>
-            <KeyColumn>
+            <KeyColumn dwd:design-time-name="9e10118e-ff33-4ec4-885d-dc7695f4bbfb">
               <DataType>WChar</DataType>
               <DataSize>45</DataSize>
-              <Source xsi:type="ColumnBinding">
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="b88a3eb3-7c2e-4406-8e80-383491e4c0f8">
                 <TableID>Kostuemcharaktereigenschaft</TableID>
                 <ColumnID>Charaktereigenschaft_L2</ColumnID>
               </Source>
@@ -1144,31 +1144,31 @@
         </Column>
       </Columns>
     </Column>
-    <Column xsi:type="TableMiningStructureColumn">
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="1bd5d389-7ee8-4bf4-8847-640bc23c3fc8">
       <ID>Kostuem Charaktereigenschaft 2</ID>
       <Name>Kostuem Charaktereigenschaft 3</Name>
       <ForeignKeyColumns>
-        <ForeignKeyColumn>
+        <ForeignKeyColumn dwd:design-time-name="a4bb8dbf-4d51-4d79-bd45-8747c369d9f0">
           <DataType>Integer</DataType>
           <DataSize>-1</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="19a1edc3-f81e-4c2f-aa1e-8bb4bb2a782b">
             <TableID>Kostuemcharaktereigenschaft</TableID>
             <ColumnID>ID</ColumnID>
           </Source>
         </ForeignKeyColumn>
       </ForeignKeyColumns>
       <Columns>
-        <Column xsi:type="ScalarMiningStructureColumn">
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="9a21fd51-777d-4349-b67e-bcdab4367a56">
           <ID>Charaktereigenschaft L3</ID>
           <Name>Charaktereigenschaft L3</Name>
           <IsKey>true</IsKey>
           <Type>Text</Type>
           <Content>Key</Content>
           <KeyColumns>
-            <KeyColumn>
+            <KeyColumn dwd:design-time-name="30b21bbd-fcec-4541-9296-632758b7da91">
               <DataType>WChar</DataType>
               <DataSize>45</DataSize>
-              <Source xsi:type="ColumnBinding">
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="049d49a5-73cd-442f-83f5-db200e36aaba">
                 <TableID>Kostuemcharaktereigenschaft</TableID>
                 <ColumnID>Charaktereigenschaft_L3</ColumnID>
               </Source>
@@ -1177,31 +1177,31 @@
         </Column>
       </Columns>
     </Column>
-    <Column xsi:type="TableMiningStructureColumn">
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="4a06fe6d-c907-4fa6-98e8-56297763f7be">
       <ID>Kostuem Charaktereigenschaft 3</ID>
       <Name>Kostuem Charaktereigenschaft 4</Name>
       <ForeignKeyColumns>
-        <ForeignKeyColumn>
+        <ForeignKeyColumn dwd:design-time-name="8c72a166-5004-48c0-bca2-e68ef181d54d">
           <DataType>Integer</DataType>
           <DataSize>-1</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d0467b8b-ede9-4d57-82a3-c10b4d616d3e">
             <TableID>Kostuemcharaktereigenschaft</TableID>
             <ColumnID>ID</ColumnID>
           </Source>
         </ForeignKeyColumn>
       </ForeignKeyColumns>
       <Columns>
-        <Column xsi:type="ScalarMiningStructureColumn">
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="78769bf0-084e-411c-ab71-f406dc0bec28">
           <ID>Charaktereigenschaft L4</ID>
           <Name>Charaktereigenschaft L4</Name>
           <IsKey>true</IsKey>
           <Type>Text</Type>
           <Content>Key</Content>
           <KeyColumns>
-            <KeyColumn>
+            <KeyColumn dwd:design-time-name="7f568ebb-121c-4d42-9066-78cc9e844b4c">
               <DataType>WChar</DataType>
               <DataSize>45</DataSize>
-              <Source xsi:type="ColumnBinding">
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="a59ae663-4037-4814-b8e9-85876fa40ce1">
                 <TableID>Kostuemcharaktereigenschaft</TableID>
                 <ColumnID>Charaktereigenschaft_L4</ColumnID>
               </Source>
@@ -1210,31 +1210,31 @@
         </Column>
       </Columns>
     </Column>
-    <Column xsi:type="TableMiningStructureColumn">
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="eb59a204-c23c-491e-9127-d8904b460891">
       <ID>Kostuem Charaktereigenschaft 4</ID>
       <Name>Kostuem Charaktereigenschaft 5</Name>
       <ForeignKeyColumns>
-        <ForeignKeyColumn>
+        <ForeignKeyColumn dwd:design-time-name="50694f1f-be84-4574-ae1a-9b9e0c164002">
           <DataType>Integer</DataType>
           <DataSize>-1</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ec6038a9-e631-4da7-84b6-9ad3edb51769">
             <TableID>Kostuemcharaktereigenschaft</TableID>
             <ColumnID>ID</ColumnID>
           </Source>
         </ForeignKeyColumn>
       </ForeignKeyColumns>
       <Columns>
-        <Column xsi:type="ScalarMiningStructureColumn">
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="a29dce83-ae12-467b-9f35-200f1ee696b2">
           <ID>Charaktereigenschaft L5</ID>
           <Name>Charaktereigenschaft L5</Name>
           <IsKey>true</IsKey>
           <Type>Text</Type>
           <Content>Key</Content>
           <KeyColumns>
-            <KeyColumn>
+            <KeyColumn dwd:design-time-name="312448aa-f9c8-443c-a4f0-e17f770ffdcd">
               <DataType>WChar</DataType>
               <DataSize>45</DataSize>
-              <Source xsi:type="ColumnBinding">
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="22afde83-80a9-482a-8ba2-2f99516cc11f">
                 <TableID>Kostuemcharaktereigenschaft</TableID>
                 <ColumnID>Charaktereigenschaft_L5</ColumnID>
               </Source>
@@ -1243,31 +1243,31 @@
         </Column>
       </Columns>
     </Column>
-    <Column xsi:type="TableMiningStructureColumn">
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="6bb48f78-b3b8-43c7-8757-990e236ab3b5">
       <ID>Kostuem Charaktereigenschaft 5</ID>
       <Name>Kostuem Charaktereigenschaft 6</Name>
       <ForeignKeyColumns>
-        <ForeignKeyColumn>
+        <ForeignKeyColumn dwd:design-time-name="c7bc22bc-8dc6-4ffc-8514-cb811d509f7a">
           <DataType>Integer</DataType>
           <DataSize>-1</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="cae043b7-ed4c-4eaa-9bfc-916fea92ca75">
             <TableID>Kostuemcharaktereigenschaft</TableID>
             <ColumnID>ID</ColumnID>
           </Source>
         </ForeignKeyColumn>
       </ForeignKeyColumns>
       <Columns>
-        <Column xsi:type="ScalarMiningStructureColumn">
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="fd63a3b0-431c-4b3c-908e-267c20e2f586">
           <ID>Charaktereigenschaft L6</ID>
           <Name>Charaktereigenschaft L6</Name>
           <IsKey>true</IsKey>
           <Type>Text</Type>
           <Content>Key</Content>
           <KeyColumns>
-            <KeyColumn>
+            <KeyColumn dwd:design-time-name="e1fe26ee-e3c6-4180-9e80-383f1edbe3f9">
               <DataType>WChar</DataType>
               <DataSize>45</DataSize>
-              <Source xsi:type="ColumnBinding">
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="349e0341-a95f-4cf6-9523-3fd63de31673">
                 <TableID>Kostuemcharaktereigenschaft</TableID>
                 <ColumnID>Charaktereigenschaft_L6</ColumnID>
               </Source>
@@ -1276,31 +1276,31 @@
         </Column>
       </Columns>
     </Column>
-    <Column xsi:type="TableMiningStructureColumn">
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="88984787-e0af-4bbc-9dec-67995e17e3e3">
       <ID>Kostuem Spielzeit</ID>
       <Name>Kostuem Spielzeit 1</Name>
       <ForeignKeyColumns>
-        <ForeignKeyColumn>
+        <ForeignKeyColumn dwd:design-time-name="4100bd41-8f54-4240-a59a-9d40277c43c6">
           <DataType>Integer</DataType>
           <DataSize>-1</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="07452c12-29f2-4efd-8499-747e69237e8d">
             <TableID>Kostuemspielzeit</TableID>
             <ColumnID>ID</ColumnID>
           </Source>
         </ForeignKeyColumn>
       </ForeignKeyColumns>
       <Columns>
-        <Column xsi:type="ScalarMiningStructureColumn">
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="9b8080cb-b104-471b-8572-34500b3e703d">
           <ID>Spielzeit L1</ID>
           <Name>Spielzeit L1</Name>
           <IsKey>true</IsKey>
           <Type>Text</Type>
           <Content>Key</Content>
           <KeyColumns>
-            <KeyColumn>
+            <KeyColumn dwd:design-time-name="7110fd67-8fde-4903-9fee-83ddd3f43094">
               <DataType>WChar</DataType>
               <DataSize>45</DataSize>
-              <Source xsi:type="ColumnBinding">
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="506e5150-ed77-415f-9172-e3eb42cb8be1">
                 <TableID>Kostuemspielzeit</TableID>
                 <ColumnID>Spielzeit_L1</ColumnID>
               </Source>
@@ -1309,31 +1309,31 @@
         </Column>
       </Columns>
     </Column>
-    <Column xsi:type="TableMiningStructureColumn">
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="1d372b23-a3a8-47c2-882c-c1bfcd00a1c9">
       <ID>Kostuem Spielzeit 1</ID>
       <Name>Kostuem Spielzeit 2</Name>
       <ForeignKeyColumns>
-        <ForeignKeyColumn>
+        <ForeignKeyColumn dwd:design-time-name="658814e4-953e-4e2a-acb4-7fbbe4826cea">
           <DataType>Integer</DataType>
           <DataSize>-1</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4fd01526-b500-4e8d-89c3-bb60928cf032">
             <TableID>Kostuemspielzeit</TableID>
             <ColumnID>ID</ColumnID>
           </Source>
         </ForeignKeyColumn>
       </ForeignKeyColumns>
       <Columns>
-        <Column xsi:type="ScalarMiningStructureColumn">
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="a49b3ccc-11d8-4c71-8028-6fab86f8f897">
           <ID>Spielzeit L2</ID>
           <Name>Spielzeit L2</Name>
           <IsKey>true</IsKey>
           <Type>Text</Type>
           <Content>Key</Content>
           <KeyColumns>
-            <KeyColumn>
+            <KeyColumn dwd:design-time-name="2841a0e3-1a66-462d-ae9e-94e0f031d8a3">
               <DataType>WChar</DataType>
               <DataSize>45</DataSize>
-              <Source xsi:type="ColumnBinding">
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="c5b0fa2b-bf1a-45a3-809c-4a5760061e95">
                 <TableID>Kostuemspielzeit</TableID>
                 <ColumnID>Spielzeit_L2</ColumnID>
               </Source>
@@ -1342,31 +1342,31 @@
         </Column>
       </Columns>
     </Column>
-    <Column xsi:type="TableMiningStructureColumn">
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="27bed5ca-caf7-42c9-ad3f-f219df71ee3b">
       <ID>Kostuem Spielzeit 2</ID>
       <Name>Kostuem Spielzeit 3</Name>
       <ForeignKeyColumns>
-        <ForeignKeyColumn>
+        <ForeignKeyColumn dwd:design-time-name="fd55855e-1172-41ba-9c12-ddd3e2d7d27c">
           <DataType>Integer</DataType>
           <DataSize>-1</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8be332e3-3147-4fe9-824e-e6e59a805de9">
             <TableID>Kostuemspielzeit</TableID>
             <ColumnID>ID</ColumnID>
           </Source>
         </ForeignKeyColumn>
       </ForeignKeyColumns>
       <Columns>
-        <Column xsi:type="ScalarMiningStructureColumn">
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="29e2b9ef-001c-4a9f-b5f5-75f546c7d9f9">
           <ID>Spielzeit L3</ID>
           <Name>Spielzeit L3</Name>
           <IsKey>true</IsKey>
           <Type>Text</Type>
           <Content>Key</Content>
           <KeyColumns>
-            <KeyColumn>
+            <KeyColumn dwd:design-time-name="13d18cc1-0771-4137-bf09-1228fd274f85">
               <DataType>WChar</DataType>
               <DataSize>45</DataSize>
-              <Source xsi:type="ColumnBinding">
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="6e2d4c47-cb01-4aad-969b-11e55f8c2940">
                 <TableID>Kostuemspielzeit</TableID>
                 <ColumnID>Spielzeit_L3</ColumnID>
               </Source>
@@ -1375,31 +1375,31 @@
         </Column>
       </Columns>
     </Column>
-    <Column xsi:type="TableMiningStructureColumn">
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="9ad4ccea-7a64-4cb3-88b4-2c2f84ebf0a4">
       <ID>Kostuem Spielzeit 3</ID>
       <Name>Kostuem Spielzeit 4</Name>
       <ForeignKeyColumns>
-        <ForeignKeyColumn>
+        <ForeignKeyColumn dwd:design-time-name="28c52e10-1da8-46ad-a91d-aff872233da0">
           <DataType>Integer</DataType>
           <DataSize>-1</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="39e7078f-b2e6-4dc4-9850-eeed4d5621e0">
             <TableID>Kostuemspielzeit</TableID>
             <ColumnID>ID</ColumnID>
           </Source>
         </ForeignKeyColumn>
       </ForeignKeyColumns>
       <Columns>
-        <Column xsi:type="ScalarMiningStructureColumn">
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="6738a015-26a1-4ca6-9a67-cbec1bebee2f">
           <ID>Spielzeit L4</ID>
           <Name>Spielzeit L4</Name>
           <IsKey>true</IsKey>
           <Type>Text</Type>
           <Content>Key</Content>
           <KeyColumns>
-            <KeyColumn>
+            <KeyColumn dwd:design-time-name="92db5870-51ae-4f50-ae2c-300b1906d529">
               <DataType>WChar</DataType>
               <DataSize>45</DataSize>
-              <Source xsi:type="ColumnBinding">
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="e655fa80-9b55-46b3-98b4-0eb4a929c3a5">
                 <TableID>Kostuemspielzeit</TableID>
                 <ColumnID>Spielzeit_L4</ColumnID>
               </Source>
@@ -1408,31 +1408,31 @@
         </Column>
       </Columns>
     </Column>
-    <Column xsi:type="TableMiningStructureColumn">
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="3e9d490c-5b70-40df-968d-9282b9e3e10c">
       <ID>Kostuem Spielzeit 5</ID>
       <Name>Kostuem Spielzeit von</Name>
       <ForeignKeyColumns>
-        <ForeignKeyColumn>
+        <ForeignKeyColumn dwd:design-time-name="eae1b812-3bbb-4ffc-b0cd-cd0124f8a48f">
           <DataType>Integer</DataType>
           <DataSize>-1</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="fa4ab6d8-b005-4814-be80-2fa571730da0">
             <TableID>Kostuemspielzeit</TableID>
             <ColumnID>ID</ColumnID>
           </Source>
         </ForeignKeyColumn>
       </ForeignKeyColumns>
       <Columns>
-        <Column xsi:type="ScalarMiningStructureColumn">
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="05850deb-32ef-4064-9b36-ee2d184a5c2a">
           <ID>Spielzeit Von</ID>
           <Name>Spielzeit Von</Name>
           <IsKey>true</IsKey>
           <Type>Text</Type>
           <Content>Key</Content>
           <KeyColumns>
-            <KeyColumn>
+            <KeyColumn dwd:design-time-name="cf5d304c-6d3f-4261-a927-b48edcb5ec87">
               <DataType>WChar</DataType>
               <DataSize>45</DataSize>
-              <Source xsi:type="ColumnBinding">
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="04fef7e3-c11d-4910-863b-dee551a1821b">
                 <TableID>Kostuemspielzeit</TableID>
                 <ColumnID>SpielzeitVon</ColumnID>
               </Source>
@@ -1441,31 +1441,31 @@
         </Column>
       </Columns>
     </Column>
-    <Column xsi:type="TableMiningStructureColumn">
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="d6209efb-1b2b-42c3-b6b8-0a9db169dc7a">
       <ID>Kostuem Spielzeit 4</ID>
       <Name>Kostuem Spielzeit bis</Name>
       <ForeignKeyColumns>
-        <ForeignKeyColumn>
+        <ForeignKeyColumn dwd:design-time-name="321bcaab-d1bd-4e05-bfe5-9ee8bbe086ed">
           <DataType>Integer</DataType>
           <DataSize>-1</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="59de56cb-748e-4056-a04b-cc751bb6e37f">
             <TableID>Kostuemspielzeit</TableID>
             <ColumnID>ID</ColumnID>
           </Source>
         </ForeignKeyColumn>
       </ForeignKeyColumns>
       <Columns>
-        <Column xsi:type="ScalarMiningStructureColumn">
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="c7f5f062-a949-424e-9814-53636576cb79">
           <ID>Spielzeit Bis</ID>
           <Name>Spielzeit Bis</Name>
           <IsKey>true</IsKey>
           <Type>Text</Type>
           <Content>Key</Content>
           <KeyColumns>
-            <KeyColumn>
+            <KeyColumn dwd:design-time-name="91267b1b-e054-4aea-9c42-764d9c9ab8d3">
               <DataType>WChar</DataType>
               <DataSize>45</DataSize>
-              <Source xsi:type="ColumnBinding">
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="176b158b-b84c-4abb-8f79-d8f2931572fe">
                 <TableID>Kostuemspielzeit</TableID>
                 <ColumnID>SpielzeitBis</ColumnID>
               </Source>
@@ -1474,31 +1474,31 @@
         </Column>
       </Columns>
     </Column>
-    <Column xsi:type="TableMiningStructureColumn">
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="e0117b87-bfc2-4754-be92-40cbb1a72162">
       <ID>Kostuem Dominante Farbe</ID>
       <Name>Kostuem Dominante Farbe 1</Name>
       <ForeignKeyColumns>
-        <ForeignKeyColumn>
+        <ForeignKeyColumn dwd:design-time-name="ba4b9076-0bd1-41a3-8ac4-03cf7b4d8654">
           <DataType>Integer</DataType>
           <DataSize>-1</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="51cc51f9-2355-4657-901a-130836cacc27">
             <TableID>KostuemDominanteFarbe</TableID>
             <ColumnID>ID</ColumnID>
           </Source>
         </ForeignKeyColumn>
       </ForeignKeyColumns>
       <Columns>
-        <Column xsi:type="ScalarMiningStructureColumn">
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="ba0d31e8-eab2-4e56-a026-243b8a99a2df">
           <ID>Dominante Farbe L1</ID>
           <Name>Dominante Farbe L1</Name>
           <IsKey>true</IsKey>
           <Type>Text</Type>
           <Content>Key</Content>
           <KeyColumns>
-            <KeyColumn>
+            <KeyColumn dwd:design-time-name="596e1060-0e32-42e0-bcaa-eede0e59e9d2">
               <DataType>WChar</DataType>
               <DataSize>45</DataSize>
-              <Source xsi:type="ColumnBinding">
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="b3fd9d0c-29c2-426e-aa48-4efd88525def">
                 <TableID>KostuemDominanteFarbe</TableID>
                 <ColumnID>DominanteFarbe_L1</ColumnID>
               </Source>
@@ -1507,31 +1507,31 @@
         </Column>
       </Columns>
     </Column>
-    <Column xsi:type="TableMiningStructureColumn">
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="e8b74944-af9a-4349-b531-cc064f9bf08a">
       <ID>Kostuem Dominante Farbe 1</ID>
       <Name>Kostuem Dominante Farbe 2</Name>
       <ForeignKeyColumns>
-        <ForeignKeyColumn>
+        <ForeignKeyColumn dwd:design-time-name="fea062f6-ba79-4f9d-b17c-c0f634594e50">
           <DataType>Integer</DataType>
           <DataSize>-1</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1f3a0e0b-ec15-40c1-9337-a0a01e89355e">
             <TableID>KostuemDominanteFarbe</TableID>
             <ColumnID>ID</ColumnID>
           </Source>
         </ForeignKeyColumn>
       </ForeignKeyColumns>
       <Columns>
-        <Column xsi:type="ScalarMiningStructureColumn">
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="25abae56-69a4-4d19-837e-7ae32103635f">
           <ID>Dominante Farbe L2</ID>
           <Name>Dominante Farbe L2</Name>
           <IsKey>true</IsKey>
           <Type>Text</Type>
           <Content>Key</Content>
           <KeyColumns>
-            <KeyColumn>
+            <KeyColumn dwd:design-time-name="6d8a1429-16e4-4c4c-b7f7-856304af901b">
               <DataType>WChar</DataType>
               <DataSize>45</DataSize>
-              <Source xsi:type="ColumnBinding">
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="48133e7e-4f8d-43c4-9b79-5292130133fc">
                 <TableID>KostuemDominanteFarbe</TableID>
                 <ColumnID>DominanteFarbe_L2</ColumnID>
               </Source>
@@ -1540,31 +1540,31 @@
         </Column>
       </Columns>
     </Column>
-    <Column xsi:type="TableMiningStructureColumn">
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="3c83e050-1484-4e76-8625-17cffa78d9e1">
       <ID>Kostuem Dominante Farbe 2</ID>
       <Name>Kostuem Dominante Farbe 3</Name>
       <ForeignKeyColumns>
-        <ForeignKeyColumn>
+        <ForeignKeyColumn dwd:design-time-name="3890571c-9f85-4a8e-9925-b05b3ead1228">
           <DataType>Integer</DataType>
           <DataSize>-1</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5303f2da-452e-46a7-938e-d40d259f7491">
             <TableID>KostuemDominanteFarbe</TableID>
             <ColumnID>ID</ColumnID>
           </Source>
         </ForeignKeyColumn>
       </ForeignKeyColumns>
       <Columns>
-        <Column xsi:type="ScalarMiningStructureColumn">
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="f77ad4a2-b5ba-42e8-bb93-87c986020ffb">
           <ID>Dominante Farbe L3</ID>
           <Name>Dominante Farbe L3</Name>
           <IsKey>true</IsKey>
           <Type>Text</Type>
           <Content>Key</Content>
           <KeyColumns>
-            <KeyColumn>
+            <KeyColumn dwd:design-time-name="8b2b5a53-5649-4028-8610-1b360507c7cd">
               <DataType>WChar</DataType>
               <DataSize>45</DataSize>
-              <Source xsi:type="ColumnBinding">
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="f3cb9900-592e-4ba9-86db-b96f19b41dc3">
                 <TableID>KostuemDominanteFarbe</TableID>
                 <ColumnID>DominanteFarbe_L3</ColumnID>
               </Source>
@@ -1573,31 +1573,31 @@
         </Column>
       </Columns>
     </Column>
-    <Column xsi:type="TableMiningStructureColumn">
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="7ab98430-850e-41c0-a569-4aa9efc1875c">
       <ID>Kostuem Dominanter Zustand</ID>
       <Name>Kostuem Dominanter Zustand 1</Name>
       <ForeignKeyColumns>
-        <ForeignKeyColumn>
+        <ForeignKeyColumn dwd:design-time-name="55cd7341-fb3a-42b0-a373-73802ca41070">
           <DataType>Integer</DataType>
           <DataSize>-1</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3b3a8dd3-74fb-4a39-b39e-8cf21441c4bb">
             <TableID>KostuemDominanterZustand</TableID>
             <ColumnID>ID</ColumnID>
           </Source>
         </ForeignKeyColumn>
       </ForeignKeyColumns>
       <Columns>
-        <Column xsi:type="ScalarMiningStructureColumn">
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="edd7a4ff-57de-42da-b480-c3e008dc87d5">
           <ID>Dominanter Zustand L1</ID>
           <Name>Dominanter Zustand L1</Name>
           <IsKey>true</IsKey>
           <Type>Text</Type>
           <Content>Key</Content>
           <KeyColumns>
-            <KeyColumn>
+            <KeyColumn dwd:design-time-name="8b61e726-bec3-422e-b153-c84f8ed0c083">
               <DataType>WChar</DataType>
               <DataSize>45</DataSize>
-              <Source xsi:type="ColumnBinding">
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="f5d38c10-aa57-48e2-8816-71418d1c5a1b">
                 <TableID>KostuemDominanterZustand</TableID>
                 <ColumnID>DominanterZustand_L1</ColumnID>
               </Source>
@@ -1606,31 +1606,31 @@
         </Column>
       </Columns>
     </Column>
-    <Column xsi:type="TableMiningStructureColumn">
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="c147cb35-3031-44fa-b0bb-a94c9c20e182">
       <ID>Kostuem Dominanter Zustand 1</ID>
       <Name>Kostuem Dominanter Zustand 2</Name>
       <ForeignKeyColumns>
-        <ForeignKeyColumn>
+        <ForeignKeyColumn dwd:design-time-name="13cb9984-4c57-4e92-9899-c200cb2004f7">
           <DataType>Integer</DataType>
           <DataSize>-1</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a6e7f712-bfce-47e5-9029-97304c9a22c1">
             <TableID>KostuemDominanterZustand</TableID>
             <ColumnID>ID</ColumnID>
           </Source>
         </ForeignKeyColumn>
       </ForeignKeyColumns>
       <Columns>
-        <Column xsi:type="ScalarMiningStructureColumn">
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="2db3098f-5d9f-4917-8503-c41d9b78ce6f">
           <ID>Dominanter Zustand L2</ID>
           <Name>Dominanter Zustand L2</Name>
           <IsKey>true</IsKey>
           <Type>Text</Type>
           <Content>Key</Content>
           <KeyColumns>
-            <KeyColumn>
+            <KeyColumn dwd:design-time-name="b88544af-4331-435b-827a-678b5ef981b4">
               <DataType>WChar</DataType>
               <DataSize>45</DataSize>
-              <Source xsi:type="ColumnBinding">
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="92f33c3d-a82b-4a5c-aeab-af9d30d9c954">
                 <TableID>KostuemDominanterZustand</TableID>
                 <ColumnID>DominanterZustand_L2</ColumnID>
               </Source>
@@ -1639,31 +1639,31 @@
         </Column>
       </Columns>
     </Column>
-    <Column xsi:type="TableMiningStructureColumn">
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="9791ac20-804c-401a-af80-49ac63a99c0a">
       <ID>Kostuem Dominanter Zustand 2</ID>
       <Name>Kostuem Dominanter Zustand 3</Name>
       <ForeignKeyColumns>
-        <ForeignKeyColumn>
+        <ForeignKeyColumn dwd:design-time-name="68f070ed-5c12-45af-8a32-0274a3cc3c5d">
           <DataType>Integer</DataType>
           <DataSize>-1</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="7022fb14-fcf4-41aa-8343-da95c4a31b70">
             <TableID>KostuemDominanterZustand</TableID>
             <ColumnID>ID</ColumnID>
           </Source>
         </ForeignKeyColumn>
       </ForeignKeyColumns>
       <Columns>
-        <Column xsi:type="ScalarMiningStructureColumn">
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="5d688013-931a-4b7c-a433-f962c02aadbc">
           <ID>Dominanter Zustand L3</ID>
           <Name>Dominanter Zustand L3</Name>
           <IsKey>true</IsKey>
           <Type>Text</Type>
           <Content>Key</Content>
           <KeyColumns>
-            <KeyColumn>
+            <KeyColumn dwd:design-time-name="6f9bea00-1188-4c18-b906-1800a391257e">
               <DataType>WChar</DataType>
               <DataSize>45</DataSize>
-              <Source xsi:type="ColumnBinding">
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="fe99183d-1c60-4d50-b0ce-296e9966e06e">
                 <TableID>KostuemDominanterZustand</TableID>
                 <ColumnID>DominanterZustand_L3</ColumnID>
               </Source>
@@ -1672,63 +1672,63 @@
         </Column>
       </Columns>
     </Column>
-    <Column xsi:type="ScalarMiningStructureColumn">
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="19fed379-2866-43b1-abe2-aa85647c2934">
       <ID>Dominanter Alterseindruck</ID>
       <Name>Dominanter Alterseindruck</Name>
       <Type>Text</Type>
       <Content>Discrete</Content>
       <KeyColumns>
-        <KeyColumn>
+        <KeyColumn dwd:design-time-name="dc6d8b32-c62d-4050-b377-021b92ea49b4">
           <DataType>WChar</DataType>
           <DataSize>45</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="124a913c-9431-493b-a205-a87353627091">
             <TableID>KostuemFilmRolle</TableID>
             <ColumnID>DominanterAlterseindruck</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
     </Column>
-    <Column xsi:type="ScalarMiningStructureColumn">
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="db9bb5b4-b254-4acf-9a25-62b138268cd1">
       <ID>Dominantes Alter</ID>
       <Name>Dominantes Alter</Name>
       <Type>Text</Type>
       <Content>Discrete</Content>
       <KeyColumns>
-        <KeyColumn>
+        <KeyColumn dwd:design-time-name="e58b0680-5c88-46ba-b1e0-3aeee81fb9b4">
           <DataType>WChar</DataType>
           <DataSize>10</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="07e6fa61-a164-4560-bfa8-3435059918e9">
             <TableID>KostuemFilmRolle</TableID>
             <ColumnID>DominantesAlter</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
     </Column>
-    <Column xsi:type="TableMiningStructureColumn">
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="6cf5bb1d-cf25-41e6-81e7-e77ea3c38b0c">
       <ID>Kostuem Dominante Funktion</ID>
       <Name>Kostuem Dominante Funktion 1</Name>
       <ForeignKeyColumns>
-        <ForeignKeyColumn>
+        <ForeignKeyColumn dwd:design-time-name="90637fd0-7622-41b5-9d2f-713ed584c43b">
           <DataType>Integer</DataType>
           <DataSize>-1</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="dbb5b804-f3fe-497a-9422-3784e3aa72b6">
             <TableID>KostuemDominanteFunktion</TableID>
             <ColumnID>ID</ColumnID>
           </Source>
         </ForeignKeyColumn>
       </ForeignKeyColumns>
       <Columns>
-        <Column xsi:type="ScalarMiningStructureColumn">
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="c44a1915-89b1-4b7d-b717-071936bb6e58">
           <ID>Dominante Funktion L1</ID>
           <Name>Dominante Funktion L1</Name>
           <IsKey>true</IsKey>
           <Type>Text</Type>
           <Content>Key</Content>
           <KeyColumns>
-            <KeyColumn>
+            <KeyColumn dwd:design-time-name="13de8817-1c91-4d91-829f-c3e163366266">
               <DataType>WChar</DataType>
               <DataSize>45</DataSize>
-              <Source xsi:type="ColumnBinding">
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="4bc599d9-3ad2-4d00-a9f4-ccc329e7198b">
                 <TableID>KostuemDominanteFunktion</TableID>
                 <ColumnID>DominanteFunktion_L1</ColumnID>
               </Source>
@@ -1737,31 +1737,31 @@
         </Column>
       </Columns>
     </Column>
-    <Column xsi:type="TableMiningStructureColumn">
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="5b11d452-c8fa-4288-b52b-6da1c81b5343">
       <ID>Kostuem Dominante Funktion 1</ID>
       <Name>Kostuem Dominante Funktion 2</Name>
       <ForeignKeyColumns>
-        <ForeignKeyColumn>
+        <ForeignKeyColumn dwd:design-time-name="e679587f-b46f-4e06-ae4f-37cece0cbafc">
           <DataType>Integer</DataType>
           <DataSize>-1</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6ee4e5e2-6b9f-45b3-9523-a5c056cc7f6c">
             <TableID>KostuemDominanteFunktion</TableID>
             <ColumnID>ID</ColumnID>
           </Source>
         </ForeignKeyColumn>
       </ForeignKeyColumns>
       <Columns>
-        <Column xsi:type="ScalarMiningStructureColumn">
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="82d1d133-878c-4e11-b870-50e9dc9c2567">
           <ID>Dominante Funktion L2</ID>
           <Name>Dominante Funktion L2</Name>
           <IsKey>true</IsKey>
           <Type>Text</Type>
           <Content>Key</Content>
           <KeyColumns>
-            <KeyColumn>
+            <KeyColumn dwd:design-time-name="fa744706-4a95-47f9-8fa1-82adc400af5d">
               <DataType>WChar</DataType>
               <DataSize>45</DataSize>
-              <Source xsi:type="ColumnBinding">
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="0d70c72c-ed92-4b82-a2d5-b73b849951f1">
                 <TableID>KostuemDominanteFunktion</TableID>
                 <ColumnID>DominanteFunktion_L2</ColumnID>
               </Source>
@@ -1770,31 +1770,31 @@
         </Column>
       </Columns>
     </Column>
-    <Column xsi:type="TableMiningStructureColumn">
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="7bd4441e-2891-455a-8e45-f5dbd7bcc99c">
       <ID>Kostuem Dominante Funktion 2</ID>
       <Name>Kostuem Dominante Funktion 3</Name>
       <ForeignKeyColumns>
-        <ForeignKeyColumn>
+        <ForeignKeyColumn dwd:design-time-name="4270e189-cc41-4fae-a03c-c088eb83cbf5">
           <DataType>Integer</DataType>
           <DataSize>-1</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="40e961d7-4fc6-4f1a-be1f-4ef98ce8f2ea">
             <TableID>KostuemDominanteFunktion</TableID>
             <ColumnID>ID</ColumnID>
           </Source>
         </ForeignKeyColumn>
       </ForeignKeyColumns>
       <Columns>
-        <Column xsi:type="ScalarMiningStructureColumn">
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="6b46654b-f728-4aee-99ef-014ee43bf63a">
           <ID>Dominante Funktion L3</ID>
           <Name>Dominante Funktion L3</Name>
           <IsKey>true</IsKey>
           <Type>Text</Type>
           <Content>Key</Content>
           <KeyColumns>
-            <KeyColumn>
+            <KeyColumn dwd:design-time-name="897dbe7f-471c-4231-b4ee-b76e01a3a164">
               <DataType>WChar</DataType>
               <DataSize>45</DataSize>
-              <Source xsi:type="ColumnBinding">
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="e2fb52d1-487a-4d96-a71f-6fb775174a64">
                 <TableID>KostuemDominanteFunktion</TableID>
                 <ColumnID>DominanteFunktion_L3</ColumnID>
               </Source>
@@ -1803,31 +1803,31 @@
         </Column>
       </Columns>
     </Column>
-    <Column xsi:type="TableMiningStructureColumn">
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="48a8e2ab-d0ca-4963-8e5f-d07c929d4080">
       <ID>Kostuem Dominante Funktion 3</ID>
       <Name>Kostuem Dominante Funktion 4</Name>
       <ForeignKeyColumns>
-        <ForeignKeyColumn>
+        <ForeignKeyColumn dwd:design-time-name="773871ea-39d2-4a65-a4e8-6641140dca8b">
           <DataType>Integer</DataType>
           <DataSize>-1</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="40a89d39-4341-44dc-919d-540d97a572d2">
             <TableID>KostuemDominanteFunktion</TableID>
             <ColumnID>ID</ColumnID>
           </Source>
         </ForeignKeyColumn>
       </ForeignKeyColumns>
       <Columns>
-        <Column xsi:type="ScalarMiningStructureColumn">
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="dab649e4-82f9-4583-903f-57e98f2a13a3">
           <ID>Dominante Funktion L4</ID>
           <Name>Dominante Funktion L4</Name>
           <IsKey>true</IsKey>
           <Type>Text</Type>
           <Content>Key</Content>
           <KeyColumns>
-            <KeyColumn>
+            <KeyColumn dwd:design-time-name="a6a0feb9-b86d-4d08-b757-97820b36f88d">
               <DataType>WChar</DataType>
               <DataSize>45</DataSize>
-              <Source xsi:type="ColumnBinding">
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="89e9852f-5445-48f3-90a6-38965e3e2e2f">
                 <TableID>KostuemDominanteFunktion</TableID>
                 <ColumnID>DominanteFunktion_L4</ColumnID>
               </Source>
@@ -1836,31 +1836,31 @@
         </Column>
       </Columns>
     </Column>
-    <Column xsi:type="TableMiningStructureColumn">
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="e661c2ba-158d-40ea-a05b-f46342427998">
       <ID>Kostuem Dominante Funktion 4</ID>
       <Name>Kostuem Dominante Funktion 5</Name>
       <ForeignKeyColumns>
-        <ForeignKeyColumn>
+        <ForeignKeyColumn dwd:design-time-name="dd6cbb43-e6a1-44ef-919a-a280d6536b6a">
           <DataType>Integer</DataType>
           <DataSize>-1</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4b535e03-744a-477f-9b63-5649d0a860ff">
             <TableID>KostuemDominanteFunktion</TableID>
             <ColumnID>ID</ColumnID>
           </Source>
         </ForeignKeyColumn>
       </ForeignKeyColumns>
       <Columns>
-        <Column xsi:type="ScalarMiningStructureColumn">
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="c0c31916-c3f2-4ac3-8254-8f750aeabbf8">
           <ID>Dominante Funktion L5</ID>
           <Name>Dominante Funktion L5</Name>
           <IsKey>true</IsKey>
           <Type>Text</Type>
           <Content>Key</Content>
           <KeyColumns>
-            <KeyColumn>
+            <KeyColumn dwd:design-time-name="92dc23b3-eaa5-40c8-bb62-55262d00b60e">
               <DataType>WChar</DataType>
               <DataSize>45</DataSize>
-              <Source xsi:type="ColumnBinding">
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="bbb2d518-9b69-4c70-bbfb-1da016c74015">
                 <TableID>KostuemDominanteFunktion</TableID>
                 <ColumnID>DominanteFunktion_L5</ColumnID>
               </Source>
@@ -1869,31 +1869,31 @@
         </Column>
       </Columns>
     </Column>
-    <Column xsi:type="TableMiningStructureColumn">
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="8f353e08-0026-40c5-ad94-b03f312cd9cb">
       <ID>Kostuem Alterseindruck</ID>
       <Name>Kostuem Alterseindruck 1</Name>
       <ForeignKeyColumns>
-        <ForeignKeyColumn>
+        <ForeignKeyColumn dwd:design-time-name="21533da7-7538-4c69-976a-710068508932">
           <DataType>Integer</DataType>
           <DataSize>-1</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c08fb75a-6e67-4968-b57f-b23abb3fd064">
             <TableID>Kostuemalterseindruck</TableID>
             <ColumnID>ID</ColumnID>
           </Source>
         </ForeignKeyColumn>
       </ForeignKeyColumns>
       <Columns>
-        <Column xsi:type="ScalarMiningStructureColumn">
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="b37eac2c-c7f4-49a5-a33d-b8dee773611d">
           <ID>Alterseindruck L1</ID>
           <Name>Alterseindruck L1</Name>
           <IsKey>true</IsKey>
           <Type>Text</Type>
           <Content>Key</Content>
           <KeyColumns>
-            <KeyColumn>
+            <KeyColumn dwd:design-time-name="ffaa18a0-8f4c-4f59-a50b-4e7057906b1f">
               <DataType>WChar</DataType>
               <DataSize>45</DataSize>
-              <Source xsi:type="ColumnBinding">
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="0a0b2348-0567-497d-8ee0-fc24fe7aae8d">
                 <TableID>Kostuemalterseindruck</TableID>
                 <ColumnID>Alterseindruck_L1</ColumnID>
               </Source>
@@ -1902,31 +1902,31 @@
         </Column>
       </Columns>
     </Column>
-    <Column xsi:type="TableMiningStructureColumn">
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="6267b3cd-afcc-447d-a804-9083b0800368">
       <ID>Kostuem Alterseindruck 1</ID>
       <Name>Kostuem Alterseindruck 2</Name>
       <ForeignKeyColumns>
-        <ForeignKeyColumn>
+        <ForeignKeyColumn dwd:design-time-name="8ae7fbc7-8065-4e45-a297-38fad783571f">
           <DataType>Integer</DataType>
           <DataSize>-1</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="195acb35-0f69-4299-8983-a2acefcee874">
             <TableID>Kostuemalterseindruck</TableID>
             <ColumnID>ID</ColumnID>
           </Source>
         </ForeignKeyColumn>
       </ForeignKeyColumns>
       <Columns>
-        <Column xsi:type="ScalarMiningStructureColumn">
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="b321d81e-c61b-40fd-8c02-8e929008c772">
           <ID>Alterseindruck L2</ID>
           <Name>Alterseindruck L2</Name>
           <IsKey>true</IsKey>
           <Type>Text</Type>
           <Content>Key</Content>
           <KeyColumns>
-            <KeyColumn>
+            <KeyColumn dwd:design-time-name="257db5d4-88ce-4c34-81f0-c6b58bed0f71">
               <DataType>WChar</DataType>
               <DataSize>45</DataSize>
-              <Source xsi:type="ColumnBinding">
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="3ee36da4-1b06-4f2a-9fb9-e971b357a50e">
                 <TableID>Kostuemalterseindruck</TableID>
                 <ColumnID>Alterseindruck_L2</ColumnID>
               </Source>
@@ -1935,31 +1935,31 @@
         </Column>
       </Columns>
     </Column>
-    <Column xsi:type="TableMiningStructureColumn">
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="21f8eb1c-5f70-4178-bb66-a74ffb178d70">
       <ID>Kostuem Alterseindruck 2</ID>
       <Name>Kostuem Alterseindruck 3</Name>
       <ForeignKeyColumns>
-        <ForeignKeyColumn>
+        <ForeignKeyColumn dwd:design-time-name="7d5504b5-344a-4b6e-8115-d075ff9ba975">
           <DataType>Integer</DataType>
           <DataSize>-1</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ffba987c-4479-4a2c-9a88-7e57a2cbbae2">
             <TableID>Kostuemalterseindruck</TableID>
             <ColumnID>ID</ColumnID>
           </Source>
         </ForeignKeyColumn>
       </ForeignKeyColumns>
       <Columns>
-        <Column xsi:type="ScalarMiningStructureColumn">
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="a344a0c6-71b1-46df-82a4-e72b22df110b">
           <ID>Alterseindruck L3</ID>
           <Name>Alterseindruck L3</Name>
           <IsKey>true</IsKey>
           <Type>Text</Type>
           <Content>Key</Content>
           <KeyColumns>
-            <KeyColumn>
+            <KeyColumn dwd:design-time-name="d7ff2fbf-1aea-4192-b8f9-b28ce1a8dbbd">
               <DataType>WChar</DataType>
               <DataSize>45</DataSize>
-              <Source xsi:type="ColumnBinding">
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="07284f1a-65c0-4393-a142-37e0f49e3ed2">
                 <TableID>Kostuemalterseindruck</TableID>
                 <ColumnID>Alterseindruck_L3</ColumnID>
               </Source>
@@ -1968,31 +1968,31 @@
         </Column>
       </Columns>
     </Column>
-    <Column xsi:type="TableMiningStructureColumn">
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="7c110ed4-a325-4979-b068-f4d64e263d40">
       <ID>Kostuem Spielort</ID>
       <Name>Kostuem Spielort 1</Name>
       <ForeignKeyColumns>
-        <ForeignKeyColumn>
+        <ForeignKeyColumn dwd:design-time-name="6de73f73-5b91-4f31-8cd1-d7371afe7949">
           <DataType>Integer</DataType>
           <DataSize>-1</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="41e036a5-52ca-49ba-9fb0-8641c196197e">
             <TableID>Kostuemspielort</TableID>
             <ColumnID>ID</ColumnID>
           </Source>
         </ForeignKeyColumn>
       </ForeignKeyColumns>
       <Columns>
-        <Column xsi:type="ScalarMiningStructureColumn">
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="445bd4cd-c144-48c8-8719-dee8e7fe7aff">
           <ID>Spielort L1</ID>
           <Name>Spielort L1</Name>
           <IsKey>true</IsKey>
           <Type>Text</Type>
           <Content>Key</Content>
           <KeyColumns>
-            <KeyColumn>
+            <KeyColumn dwd:design-time-name="d43e6ae9-1f39-409c-a669-cbb849c2a093">
               <DataType>WChar</DataType>
               <DataSize>45</DataSize>
-              <Source xsi:type="ColumnBinding">
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="51f7b35c-0787-4975-b4e9-11aef76cb561">
                 <TableID>Kostuemspielort</TableID>
                 <ColumnID>Spielort_L1</ColumnID>
               </Source>
@@ -2001,31 +2001,31 @@
         </Column>
       </Columns>
     </Column>
-    <Column xsi:type="TableMiningStructureColumn">
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="ba340f72-9006-4868-843f-48bcdb9e0c72">
       <ID>Kostuem Spielort 1</ID>
       <Name>Kostuem Spielort 2</Name>
       <ForeignKeyColumns>
-        <ForeignKeyColumn>
+        <ForeignKeyColumn dwd:design-time-name="1bb2777e-1259-4e14-84f6-e98159f36228">
           <DataType>Integer</DataType>
           <DataSize>-1</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2a8b5e2b-5d99-412f-9623-8f5f550dab43">
             <TableID>Kostuemspielort</TableID>
             <ColumnID>ID</ColumnID>
           </Source>
         </ForeignKeyColumn>
       </ForeignKeyColumns>
       <Columns>
-        <Column xsi:type="ScalarMiningStructureColumn">
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="1e85f2e4-1f21-49e8-924e-be858a4f9376">
           <ID>Spielort L2</ID>
           <Name>Spielort L2</Name>
           <IsKey>true</IsKey>
           <Type>Text</Type>
           <Content>Key</Content>
           <KeyColumns>
-            <KeyColumn>
+            <KeyColumn dwd:design-time-name="1cd8a7b2-06dd-4437-978a-01511094606f">
               <DataType>WChar</DataType>
               <DataSize>45</DataSize>
-              <Source xsi:type="ColumnBinding">
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="803ce4c4-e74f-4c75-beba-dbb6355f17ad">
                 <TableID>Kostuemspielort</TableID>
                 <ColumnID>Spielort_L2</ColumnID>
               </Source>
@@ -2034,31 +2034,31 @@
         </Column>
       </Columns>
     </Column>
-    <Column xsi:type="TableMiningStructureColumn">
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="f0d14807-72e2-4ee0-bba8-268683c280c9">
       <ID>Kostuem Tageszeit</ID>
       <Name>Kostuem Tageszeit 1</Name>
       <ForeignKeyColumns>
-        <ForeignKeyColumn>
+        <ForeignKeyColumn dwd:design-time-name="aee330cc-cf78-40a4-af9b-86c400489639">
           <DataType>Integer</DataType>
           <DataSize>-1</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6098e541-81ad-4b28-ac5d-0428b64c89b1">
             <TableID>Kostuemtageszeit</TableID>
             <ColumnID>ID</ColumnID>
           </Source>
         </ForeignKeyColumn>
       </ForeignKeyColumns>
       <Columns>
-        <Column xsi:type="ScalarMiningStructureColumn">
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="c8e460fc-5fe4-4805-8b11-408289aed611">
           <ID>Tageszeit L1</ID>
           <Name>Tageszeit L1</Name>
           <IsKey>true</IsKey>
           <Type>Text</Type>
           <Content>Key</Content>
           <KeyColumns>
-            <KeyColumn>
+            <KeyColumn dwd:design-time-name="4b5e1ded-ed73-4e70-8c90-ce3dff34e66c">
               <DataType>WChar</DataType>
               <DataSize>45</DataSize>
-              <Source xsi:type="ColumnBinding">
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="2029ef36-7349-483e-a05e-64580bcfd6bc">
                 <TableID>Kostuemtageszeit</TableID>
                 <ColumnID>Tageszeit_L1</ColumnID>
               </Source>
@@ -2067,31 +2067,31 @@
         </Column>
       </Columns>
     </Column>
-    <Column xsi:type="TableMiningStructureColumn">
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="191d1898-2655-47e5-bc47-a1812029e90f">
       <ID>Kostuem Tageszeit 1</ID>
       <Name>Kostuem Tageszeit 2</Name>
       <ForeignKeyColumns>
-        <ForeignKeyColumn>
+        <ForeignKeyColumn dwd:design-time-name="32d913d8-0278-4448-b5ed-ae13ea35e22c">
           <DataType>Integer</DataType>
           <DataSize>-1</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="975f4bb8-a2e2-4fd4-ba7f-c6e4966c2603">
             <TableID>Kostuemtageszeit</TableID>
             <ColumnID>ID</ColumnID>
           </Source>
         </ForeignKeyColumn>
       </ForeignKeyColumns>
       <Columns>
-        <Column xsi:type="ScalarMiningStructureColumn">
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="8b020a6b-96ff-45eb-a0cc-1dd019638a7b">
           <ID>Tageszeit L2</ID>
           <Name>Tageszeit L2</Name>
           <IsKey>true</IsKey>
           <Type>Text</Type>
           <Content>Key</Content>
           <KeyColumns>
-            <KeyColumn>
+            <KeyColumn dwd:design-time-name="3a3754a9-4683-4cf9-ac56-0507eea08d06">
               <DataType>WChar</DataType>
               <DataSize>45</DataSize>
-              <Source xsi:type="ColumnBinding">
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="3b5e3438-ffc2-454b-bc80-bc3e4aa3c4a5">
                 <TableID>Kostuemtageszeit</TableID>
                 <ColumnID>Tageszeit_L2</ColumnID>
               </Source>
@@ -2100,31 +2100,31 @@
         </Column>
       </Columns>
     </Column>
-    <Column xsi:type="TableMiningStructureColumn">
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="fab766e3-37e2-4c8f-b5d3-d31ffcb0cbfa">
       <ID>Kostuem Spielort Detail</ID>
       <Name>Kostuem Spielort Detail 1</Name>
       <ForeignKeyColumns>
-        <ForeignKeyColumn>
+        <ForeignKeyColumn dwd:design-time-name="2aee77b1-993b-4ce5-8ac2-e4f0f473b68a">
           <DataType>Integer</DataType>
           <DataSize>-1</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6745dade-6404-483b-bbad-6d17714642d1">
             <TableID>KostuemSpielortDetail</TableID>
             <ColumnID>ID</ColumnID>
           </Source>
         </ForeignKeyColumn>
       </ForeignKeyColumns>
       <Columns>
-        <Column xsi:type="ScalarMiningStructureColumn">
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="c50e4fb7-67ae-488b-85b5-b0de02968eda">
           <ID>Spielort Detail L1</ID>
           <Name>Spielort Detail L1</Name>
           <IsKey>true</IsKey>
           <Type>Text</Type>
           <Content>Key</Content>
           <KeyColumns>
-            <KeyColumn>
+            <KeyColumn dwd:design-time-name="cb00215a-c4c8-4de4-b1a6-b43ab96a8def">
               <DataType>WChar</DataType>
               <DataSize>45</DataSize>
-              <Source xsi:type="ColumnBinding">
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="9256cb8c-657d-47a0-968d-7c1fdfea7f47">
                 <TableID>KostuemSpielortDetail</TableID>
                 <ColumnID>SpielortDetail_L1</ColumnID>
               </Source>
@@ -2133,31 +2133,31 @@
         </Column>
       </Columns>
     </Column>
-    <Column xsi:type="TableMiningStructureColumn">
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="d678a956-2e24-4080-9b63-9689a96162b9">
       <ID>Kostuem Spielort Detail 1</ID>
       <Name>Kostuem Spielort Detail 2</Name>
       <ForeignKeyColumns>
-        <ForeignKeyColumn>
+        <ForeignKeyColumn dwd:design-time-name="fe57ac35-7444-4ad9-965f-6737993037af">
           <DataType>Integer</DataType>
           <DataSize>-1</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4357fcb7-97e5-471b-8ae0-a769671070c2">
             <TableID>KostuemSpielortDetail</TableID>
             <ColumnID>ID</ColumnID>
           </Source>
         </ForeignKeyColumn>
       </ForeignKeyColumns>
       <Columns>
-        <Column xsi:type="ScalarMiningStructureColumn">
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="ca03e03d-3775-49f5-9ff6-a181fe831d09">
           <ID>Spielort Detail L2</ID>
           <Name>Spielort Detail L2</Name>
           <IsKey>true</IsKey>
           <Type>Text</Type>
           <Content>Key</Content>
           <KeyColumns>
-            <KeyColumn>
+            <KeyColumn dwd:design-time-name="9a0b226e-262c-4374-a6f6-2a6e879b921d">
               <DataType>WChar</DataType>
               <DataSize>45</DataSize>
-              <Source xsi:type="ColumnBinding">
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="21a2a69d-364e-4487-b8b4-f74c8034b9c0">
                 <TableID>KostuemSpielortDetail</TableID>
                 <ColumnID>SpielortDetail_L2</ColumnID>
               </Source>
@@ -2166,31 +2166,31 @@
         </Column>
       </Columns>
     </Column>
-    <Column xsi:type="TableMiningStructureColumn">
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="ffd70515-4522-4ad4-9580-47a2ba2bb3a8">
       <ID>Kostuem Spielort Detail 2</ID>
       <Name>Kostuem Spielort Detail 3</Name>
       <ForeignKeyColumns>
-        <ForeignKeyColumn>
+        <ForeignKeyColumn dwd:design-time-name="20b66c61-d02e-432d-a2f0-49d5670301c0">
           <DataType>Integer</DataType>
           <DataSize>-1</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="bae8f5e8-5a11-4af8-94eb-1c11af4d7d43">
             <TableID>KostuemSpielortDetail</TableID>
             <ColumnID>ID</ColumnID>
           </Source>
         </ForeignKeyColumn>
       </ForeignKeyColumns>
       <Columns>
-        <Column xsi:type="ScalarMiningStructureColumn">
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="8a4288da-b4f7-4010-8767-9decc3745a8f">
           <ID>Spielort Detail L3</ID>
           <Name>Spielort Detail L3</Name>
           <IsKey>true</IsKey>
           <Type>Text</Type>
           <Content>Key</Content>
           <KeyColumns>
-            <KeyColumn>
+            <KeyColumn dwd:design-time-name="9ff0e6d3-1df6-4e6a-affe-9aad1ecc32bb">
               <DataType>WChar</DataType>
               <DataSize>45</DataSize>
-              <Source xsi:type="ColumnBinding">
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="9ffc2d6f-1d22-47f4-87b1-90d9d91bd300">
                 <TableID>KostuemSpielortDetail</TableID>
                 <ColumnID>SpielortDetail_L3</ColumnID>
               </Source>
@@ -2199,31 +2199,31 @@
         </Column>
       </Columns>
     </Column>
-    <Column xsi:type="TableMiningStructureColumn">
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="4bef6bbe-bc38-43e2-b914-1bd798f64d00">
       <ID>Kostuem Spielort Detail 3</ID>
       <Name>Kostuem Spielort Detail 4</Name>
       <ForeignKeyColumns>
-        <ForeignKeyColumn>
+        <ForeignKeyColumn dwd:design-time-name="4d3a35cb-9826-4b4b-9e83-31944b53fe34">
           <DataType>Integer</DataType>
           <DataSize>-1</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="19cc8bcc-8240-482a-a8c6-745abac7830d">
             <TableID>KostuemSpielortDetail</TableID>
             <ColumnID>ID</ColumnID>
           </Source>
         </ForeignKeyColumn>
       </ForeignKeyColumns>
       <Columns>
-        <Column xsi:type="ScalarMiningStructureColumn">
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="3430110a-f8ff-4152-93b8-53775531dbc6">
           <ID>Spielort Detail L4</ID>
           <Name>Spielort Detail L4</Name>
           <IsKey>true</IsKey>
           <Type>Text</Type>
           <Content>Key</Content>
           <KeyColumns>
-            <KeyColumn>
+            <KeyColumn dwd:design-time-name="c4fce818-5288-4bc8-b1b5-944d90fde6a9">
               <DataType>WChar</DataType>
               <DataSize>45</DataSize>
-              <Source xsi:type="ColumnBinding">
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="6e26c118-23a2-4d6d-9242-19eb17dee70d">
                 <TableID>KostuemSpielortDetail</TableID>
                 <ColumnID>SpielortDetail_L4</ColumnID>
               </Source>
@@ -2232,31 +2232,31 @@
         </Column>
       </Columns>
     </Column>
-    <Column xsi:type="TableMiningStructureColumn">
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="4378e1b3-4c11-4e8a-9c5f-3efce69b5222">
       <ID>Kostuem Spielort Detail 4</ID>
       <Name>Kostuem Spielort Detail 5</Name>
       <ForeignKeyColumns>
-        <ForeignKeyColumn>
+        <ForeignKeyColumn dwd:design-time-name="9621657f-d722-4b30-b768-bf62266ef322">
           <DataType>Integer</DataType>
           <DataSize>-1</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c73ad08a-4490-4303-855b-9161e1785d25">
             <TableID>KostuemSpielortDetail</TableID>
             <ColumnID>ID</ColumnID>
           </Source>
         </ForeignKeyColumn>
       </ForeignKeyColumns>
       <Columns>
-        <Column xsi:type="ScalarMiningStructureColumn">
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="b55de43f-cc38-4d9b-8ee7-3a120257e18d">
           <ID>Spielort Detail L5</ID>
           <Name>Spielort Detail L5</Name>
           <IsKey>true</IsKey>
           <Type>Text</Type>
           <Content>Key</Content>
           <KeyColumns>
-            <KeyColumn>
+            <KeyColumn dwd:design-time-name="5d9e9b34-f021-499b-a014-643e607b3b36">
               <DataType>WChar</DataType>
               <DataSize>45</DataSize>
-              <Source xsi:type="ColumnBinding">
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="710021d4-787d-4ef5-9d2f-59ec7a784ac7">
                 <TableID>KostuemSpielortDetail</TableID>
                 <ColumnID>SpielortDetail_L5</ColumnID>
               </Source>
@@ -2265,47 +2265,47 @@
         </Column>
       </Columns>
     </Column>
-    <Column xsi:type="ScalarMiningStructureColumn">
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="daced5a7-e625-47df-a1e7-d9f986051631">
       <ID>Erscheinungsjahr</ID>
       <Name>Erscheinungsjahr</Name>
       <Type>Long</Type>
       <Content>Continuous</Content>
       <KeyColumns>
-        <KeyColumn>
+        <KeyColumn dwd:design-time-name="ec1e1f2a-bae9-493e-8eab-364da7c88560">
           <DataType>Integer</DataType>
           <DataSize>-1</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5bd88cc9-eb1f-4726-84ba-af9f04688e73">
             <TableID>KostuemFilmRolle</TableID>
             <ColumnID>Erscheinungsjahr</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
     </Column>
-    <Column xsi:type="TableMiningStructureColumn">
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="a77339e6-7045-490a-99c4-52bf328d8b94">
       <ID>Rolle Beruf 3</ID>
       <Name>Rolle Beruf 4</Name>
       <ForeignKeyColumns>
-        <ForeignKeyColumn>
+        <ForeignKeyColumn dwd:design-time-name="a4f65fc9-e306-4e1c-9727-870910daa7b7">
           <DataType>Integer</DataType>
           <DataSize>-1</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0a44b2fb-c76e-49c8-82af-63e0d600f65e">
             <TableID>RolleBeruf</TableID>
             <ColumnID>ID</ColumnID>
           </Source>
         </ForeignKeyColumn>
       </ForeignKeyColumns>
       <Columns>
-        <Column xsi:type="ScalarMiningStructureColumn">
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="6188c6c4-ad10-4ad9-8e17-06d0e09fd667">
           <ID>Rollenberuf L4</ID>
           <Name>Rollenberuf L4</Name>
           <IsKey>true</IsKey>
           <Type>Text</Type>
           <Content>Key</Content>
           <KeyColumns>
-            <KeyColumn>
+            <KeyColumn dwd:design-time-name="86d62455-8e3c-4b28-8d5b-84c39a3079ba">
               <DataType>WChar</DataType>
               <DataSize>45</DataSize>
-              <Source xsi:type="ColumnBinding">
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="71dcb549-69a1-4617-ac8f-1e0a60abc081">
                 <TableID>RolleBeruf</TableID>
                 <ColumnID>Rollenberuf_L4</ColumnID>
               </Source>
@@ -2314,31 +2314,31 @@
         </Column>
       </Columns>
     </Column>
-    <Column xsi:type="TableMiningStructureColumn">
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="6b7fa939-ac7d-4682-bbeb-2a6c4485f7b6">
       <ID>Rolle Beruf 2</ID>
       <Name>Rolle Beruf 3</Name>
       <ForeignKeyColumns>
-        <ForeignKeyColumn>
+        <ForeignKeyColumn dwd:design-time-name="2bdb45d1-1ed2-4f5a-b874-14fa85e973c7">
           <DataType>Integer</DataType>
           <DataSize>-1</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5465a655-3a08-4ed6-9f97-82714610340f">
             <TableID>RolleBeruf</TableID>
             <ColumnID>ID</ColumnID>
           </Source>
         </ForeignKeyColumn>
       </ForeignKeyColumns>
       <Columns>
-        <Column xsi:type="ScalarMiningStructureColumn">
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="3fdad9ad-cb08-4582-83b8-bcd83e785f84">
           <ID>Rollenberuf L3</ID>
           <Name>Rollenberuf L3</Name>
           <IsKey>true</IsKey>
           <Type>Text</Type>
           <Content>Key</Content>
           <KeyColumns>
-            <KeyColumn>
+            <KeyColumn dwd:design-time-name="03fd995f-3be6-4228-a46a-ebd0e93ea2fb">
               <DataType>WChar</DataType>
               <DataSize>45</DataSize>
-              <Source xsi:type="ColumnBinding">
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="93c84985-a91b-40b3-917f-cf946501084a">
                 <TableID>RolleBeruf</TableID>
                 <ColumnID>Rollenberuf_L3</ColumnID>
               </Source>
@@ -2347,31 +2347,31 @@
         </Column>
       </Columns>
     </Column>
-    <Column xsi:type="TableMiningStructureColumn">
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="fe8cf010-4a4c-4dcb-8aea-82d9f717a443">
       <ID>Rolle Beruf 1</ID>
       <Name>Rolle Beruf 2</Name>
       <ForeignKeyColumns>
-        <ForeignKeyColumn>
+        <ForeignKeyColumn dwd:design-time-name="8eadb5c8-28c6-4796-9b63-de8267f03c12">
           <DataType>Integer</DataType>
           <DataSize>-1</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b17e0546-75bb-4c34-b34b-cdb0b4bf4911">
             <TableID>RolleBeruf</TableID>
             <ColumnID>ID</ColumnID>
           </Source>
         </ForeignKeyColumn>
       </ForeignKeyColumns>
       <Columns>
-        <Column xsi:type="ScalarMiningStructureColumn">
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="8f6eab7d-1db9-49ea-beb4-728a70d51a16">
           <ID>Rollenberuf L2</ID>
           <Name>Rollenberuf L2</Name>
           <IsKey>true</IsKey>
           <Type>Text</Type>
           <Content>Key</Content>
           <KeyColumns>
-            <KeyColumn>
+            <KeyColumn dwd:design-time-name="66616db9-f1cd-4b94-94eb-08dcfb195c3e">
               <DataType>WChar</DataType>
               <DataSize>45</DataSize>
-              <Source xsi:type="ColumnBinding">
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="4ac0a137-9cb0-4646-b339-4fa280c61430">
                 <TableID>RolleBeruf</TableID>
                 <ColumnID>Rollenberuf_L2</ColumnID>
               </Source>
@@ -2380,31 +2380,31 @@
         </Column>
       </Columns>
     </Column>
-    <Column xsi:type="TableMiningStructureColumn">
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="b96864ac-8738-4cda-89f5-1f65a9be7950">
       <ID>Rolle Beruf</ID>
       <Name>Rolle Beruf 1</Name>
       <ForeignKeyColumns>
-        <ForeignKeyColumn>
+        <ForeignKeyColumn dwd:design-time-name="f975e986-04ec-4255-a156-0deebbf33818">
           <DataType>Integer</DataType>
           <DataSize>-1</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="991b99a1-77f1-419e-967a-89b3ed8881ee">
             <TableID>RolleBeruf</TableID>
             <ColumnID>ID</ColumnID>
           </Source>
         </ForeignKeyColumn>
       </ForeignKeyColumns>
       <Columns>
-        <Column xsi:type="ScalarMiningStructureColumn">
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="0479e455-a70d-43ad-9c80-178d2bf700cf">
           <ID>Rollenberuf L1</ID>
           <Name>Rollenberuf L1</Name>
           <IsKey>true</IsKey>
           <Type>Text</Type>
           <Content>Key</Content>
           <KeyColumns>
-            <KeyColumn>
+            <KeyColumn dwd:design-time-name="a8575aae-95a2-4329-9881-704640a8dd04">
               <DataType>WChar</DataType>
               <DataSize>45</DataSize>
-              <Source xsi:type="ColumnBinding">
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="9fd66dbe-3a5c-4439-9cc8-f5bfcc63b709">
                 <TableID>RolleBeruf</TableID>
                 <ColumnID>Rollenberuf_L1</ColumnID>
               </Source>
@@ -2413,31 +2413,31 @@
         </Column>
       </Columns>
     </Column>
-    <Column xsi:type="TableMiningStructureColumn">
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="8b10e372-bca3-45e2-be60-086191fcf454">
       <ID>Rolle Stereotyp 3</ID>
       <Name>Rolle Stereotyp 4</Name>
       <ForeignKeyColumns>
-        <ForeignKeyColumn>
+        <ForeignKeyColumn dwd:design-time-name="b303da4d-867b-4892-be16-335a1965601f">
           <DataType>Integer</DataType>
           <DataSize>-1</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2931d9e8-98e0-4510-b14b-7de973ff6ad0">
             <TableID>RolleStereotyp</TableID>
             <ColumnID>ID</ColumnID>
           </Source>
         </ForeignKeyColumn>
       </ForeignKeyColumns>
       <Columns>
-        <Column xsi:type="ScalarMiningStructureColumn">
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="8de14bb6-eb24-45f5-8f18-aa2a7250ffef">
           <ID>Stereotyp L4</ID>
           <Name>Stereotyp L4</Name>
           <IsKey>true</IsKey>
           <Type>Text</Type>
           <Content>Key</Content>
           <KeyColumns>
-            <KeyColumn>
+            <KeyColumn dwd:design-time-name="fe7d64f7-579e-4089-af8f-94cc4b3b786d">
               <DataType>WChar</DataType>
               <DataSize>45</DataSize>
-              <Source xsi:type="ColumnBinding">
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="d44220e9-b2cb-40a4-a0de-f5bf53114ba5">
                 <TableID>RolleStereotyp</TableID>
                 <ColumnID>Stereotyp_L4</ColumnID>
               </Source>
@@ -2446,31 +2446,31 @@
         </Column>
       </Columns>
     </Column>
-    <Column xsi:type="TableMiningStructureColumn">
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="1211d83a-fb73-404b-9c2f-745b4f16b591">
       <ID>Rolle Stereotyp 2</ID>
       <Name>Rolle Stereotyp 3</Name>
       <ForeignKeyColumns>
-        <ForeignKeyColumn>
+        <ForeignKeyColumn dwd:design-time-name="f1b4bf6a-639d-4bfe-878b-fed258b817a0">
           <DataType>Integer</DataType>
           <DataSize>-1</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f5d519ef-473d-418b-b1db-e0a116674e83">
             <TableID>RolleStereotyp</TableID>
             <ColumnID>ID</ColumnID>
           </Source>
         </ForeignKeyColumn>
       </ForeignKeyColumns>
       <Columns>
-        <Column xsi:type="ScalarMiningStructureColumn">
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="c3170814-6eff-4b7a-9e0d-219a1c34cf6c">
           <ID>Stereotyp L3</ID>
           <Name>Stereotyp L3</Name>
           <IsKey>true</IsKey>
           <Type>Text</Type>
           <Content>Key</Content>
           <KeyColumns>
-            <KeyColumn>
+            <KeyColumn dwd:design-time-name="971c21af-f5be-4e37-bf85-f6011f65ce1d">
               <DataType>WChar</DataType>
               <DataSize>45</DataSize>
-              <Source xsi:type="ColumnBinding">
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="b5faef8c-78d3-4f39-82f5-522400134249">
                 <TableID>RolleStereotyp</TableID>
                 <ColumnID>Stereotyp_L3</ColumnID>
               </Source>
@@ -2479,31 +2479,31 @@
         </Column>
       </Columns>
     </Column>
-    <Column xsi:type="TableMiningStructureColumn">
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="ca23ae86-bb63-4b60-b3d1-8970be30d5fc">
       <ID>Rolle Stereotyp 1</ID>
       <Name>Rolle Stereotyp 2</Name>
       <ForeignKeyColumns>
-        <ForeignKeyColumn>
+        <ForeignKeyColumn dwd:design-time-name="657713e5-5522-4aec-be8b-651f9cb538a7">
           <DataType>Integer</DataType>
           <DataSize>-1</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="94c4e632-3de7-4d54-94fa-4605f7bba76c">
             <TableID>RolleStereotyp</TableID>
             <ColumnID>ID</ColumnID>
           </Source>
         </ForeignKeyColumn>
       </ForeignKeyColumns>
       <Columns>
-        <Column xsi:type="ScalarMiningStructureColumn">
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="124dcf74-801d-4cd3-b376-729c2e19e01a">
           <ID>Stereotyp L2</ID>
           <Name>Stereotyp L2</Name>
           <IsKey>true</IsKey>
           <Type>Text</Type>
           <Content>Key</Content>
           <KeyColumns>
-            <KeyColumn>
+            <KeyColumn dwd:design-time-name="832c6834-ae48-447c-b3bf-7ba513c7d0ad">
               <DataType>WChar</DataType>
               <DataSize>45</DataSize>
-              <Source xsi:type="ColumnBinding">
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="c588cd57-b783-4065-8e1f-ace07cb11eb8">
                 <TableID>RolleStereotyp</TableID>
                 <ColumnID>Stereotyp_L2</ColumnID>
               </Source>
@@ -2512,31 +2512,31 @@
         </Column>
       </Columns>
     </Column>
-    <Column xsi:type="TableMiningStructureColumn">
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="62510ed4-9df0-4429-9017-fc6bc1f926a8">
       <ID>Rolle Stereotyp</ID>
       <Name>Rolle Stereotyp 1</Name>
       <ForeignKeyColumns>
-        <ForeignKeyColumn>
+        <ForeignKeyColumn dwd:design-time-name="9d8565ba-2366-482c-9428-4e3a327e4aec">
           <DataType>Integer</DataType>
           <DataSize>-1</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="45432474-9f67-4a9a-8b85-25a6229d5972">
             <TableID>RolleStereotyp</TableID>
             <ColumnID>ID</ColumnID>
           </Source>
         </ForeignKeyColumn>
       </ForeignKeyColumns>
       <Columns>
-        <Column xsi:type="ScalarMiningStructureColumn">
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="ec238031-e35a-48f7-af8b-f6b00be65804">
           <ID>Stereotyp L1</ID>
           <Name>Stereotyp L1</Name>
           <IsKey>true</IsKey>
           <Type>Text</Type>
           <Content>Key</Content>
           <KeyColumns>
-            <KeyColumn>
+            <KeyColumn dwd:design-time-name="98914699-45b5-42f5-b8ad-4949ca398fe9">
               <DataType>WChar</DataType>
               <DataSize>45</DataSize>
-              <Source xsi:type="ColumnBinding">
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="ec6fb1ad-9034-40c4-a33d-7d2e3c04416d">
                 <TableID>RolleStereotyp</TableID>
                 <ColumnID>Stereotyp_L1</ColumnID>
               </Source>
@@ -2545,31 +2545,31 @@
         </Column>
       </Columns>
     </Column>
-    <Column xsi:type="TableMiningStructureColumn">
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="2bb81b44-91be-4da9-a7f0-c31f69b74a2c">
       <ID>Rolle Charaktereigenschaft</ID>
       <Name>Rolle Charaktereigenschaft</Name>
       <ForeignKeyColumns>
-        <ForeignKeyColumn>
+        <ForeignKeyColumn dwd:design-time-name="417b9645-1091-42b8-9d8a-6e8af4631460">
           <DataType>Integer</DataType>
           <DataSize>-1</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="530b449b-9e71-47bd-92c8-49a711c739f9">
             <TableID>Rolledominantecharaktereigenschaft</TableID>
             <ColumnID>ID</ColumnID>
           </Source>
         </ForeignKeyColumn>
       </ForeignKeyColumns>
       <Columns>
-        <Column xsi:type="ScalarMiningStructureColumn">
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="b43c4d89-ed96-4cf1-912f-9fa523cacbc1">
           <ID>Dominante Charaktereigenschaft</ID>
           <Name>Dominante Charaktereigenschaft</Name>
           <IsKey>true</IsKey>
           <Type>Text</Type>
           <Content>Key</Content>
           <KeyColumns>
-            <KeyColumn>
+            <KeyColumn dwd:design-time-name="b244261d-3a27-4aaa-8331-502328b955af">
               <DataType>WChar</DataType>
               <DataSize>45</DataSize>
-              <Source xsi:type="ColumnBinding">
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="57bb8122-a0e8-4555-8110-2e55fcdc4191">
                 <TableID>Rolledominantecharaktereigenschaft</TableID>
                 <ColumnID>DominanteCharaktereigenschaft</ColumnID>
               </Source>
@@ -2578,31 +2578,31 @@
         </Column>
       </Columns>
     </Column>
-    <Column xsi:type="TableMiningStructureColumn">
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="778ca42f-e36d-4934-b223-5adc584afdc6">
       <ID>Rolle Familienstand</ID>
       <Name>Rolle Familienstand</Name>
       <ForeignKeyColumns>
-        <ForeignKeyColumn>
+        <ForeignKeyColumn dwd:design-time-name="6f690f20-0e07-4eb6-8fa8-97a02d43c474">
           <DataType>Integer</DataType>
           <DataSize>-1</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="86acdab0-eb19-4895-9492-ff4a16d39903">
             <TableID>Rollefamilienstand</TableID>
             <ColumnID>ID</ColumnID>
           </Source>
         </ForeignKeyColumn>
       </ForeignKeyColumns>
       <Columns>
-        <Column xsi:type="ScalarMiningStructureColumn">
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="f745f797-0dd5-4a5c-9bd5-207b5c1f5388">
           <ID>Familienstand</ID>
           <Name>Familienstand</Name>
           <IsKey>true</IsKey>
           <Type>Text</Type>
           <Content>Key</Content>
           <KeyColumns>
-            <KeyColumn>
+            <KeyColumn dwd:design-time-name="1f5c9cfb-63fc-4e7e-b1d5-ee47ba90c1f2">
               <DataType>WChar</DataType>
               <DataSize>38</DataSize>
-              <Source xsi:type="ColumnBinding">
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="99f581ce-97a2-45d9-ab25-9ed66fd37e8c">
                 <TableID>Rollefamilienstand</TableID>
                 <ColumnID>Familienstand</ColumnID>
               </Source>
@@ -2611,31 +2611,31 @@
         </Column>
       </Columns>
     </Column>
-    <Column xsi:type="TableMiningStructureColumn">
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="d30a5f5c-81c2-4e60-b3e1-531baaa79b39">
       <ID>Basiselement</ID>
       <Name>Basiselement 1</Name>
       <ForeignKeyColumns>
-        <ForeignKeyColumn>
+        <ForeignKeyColumn dwd:design-time-name="45013994-fdb6-4cab-8eb0-bca5eeb0f4d6">
           <DataType>Integer</DataType>
           <DataSize>-1</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="bd477b12-7406-4ece-9334-b8c10499ed8a">
             <TableID>Basiselement</TableID>
             <ColumnID>ID</ColumnID>
           </Source>
         </ForeignKeyColumn>
       </ForeignKeyColumns>
       <Columns>
-        <Column xsi:type="ScalarMiningStructureColumn">
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="49a721ec-27f6-4292-9343-9f596bd63c4c">
           <ID>Basiselementname L1</ID>
           <Name>Basiselementname L1</Name>
           <IsKey>true</IsKey>
           <Type>Text</Type>
           <Content>Key</Content>
           <KeyColumns>
-            <KeyColumn>
+            <KeyColumn dwd:design-time-name="b76f537e-7356-419e-99d3-922a5f71c44b">
               <DataType>WChar</DataType>
               <DataSize>45</DataSize>
-              <Source xsi:type="ColumnBinding">
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="743efc64-64b8-46da-b903-d4ef1c3b0c4a">
                 <TableID>Basiselement</TableID>
                 <ColumnID>Basiselementname_L1</ColumnID>
               </Source>
@@ -2644,31 +2644,31 @@
         </Column>
       </Columns>
     </Column>
-    <Column xsi:type="TableMiningStructureColumn">
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="5d24acf2-6374-431d-a38b-c987eda69a8d">
       <ID>Basiselement 1</ID>
       <Name>Basiselement 2</Name>
       <ForeignKeyColumns>
-        <ForeignKeyColumn>
+        <ForeignKeyColumn dwd:design-time-name="5855e75e-a9c5-41ba-8fbe-bf7e0c1d3ff9">
           <DataType>Integer</DataType>
           <DataSize>-1</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9b88db44-cb74-4b15-a3a3-a37d6cc1dbe9">
             <TableID>Basiselement</TableID>
             <ColumnID>ID</ColumnID>
           </Source>
         </ForeignKeyColumn>
       </ForeignKeyColumns>
       <Columns>
-        <Column xsi:type="ScalarMiningStructureColumn">
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="343a45ea-dd6f-4eaf-92dc-771994f5aac7">
           <ID>Basiselementname L2</ID>
           <Name>Basiselementname L2</Name>
           <IsKey>true</IsKey>
           <Type>Text</Type>
           <Content>Key</Content>
           <KeyColumns>
-            <KeyColumn>
+            <KeyColumn dwd:design-time-name="5016173a-78de-45c4-ae65-89dfe160dbe4">
               <DataType>WChar</DataType>
               <DataSize>45</DataSize>
-              <Source xsi:type="ColumnBinding">
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="05516e3e-cb54-4f53-aa3f-e37f1036f086">
                 <TableID>Basiselement</TableID>
                 <ColumnID>Basiselementname_L2</ColumnID>
               </Source>
@@ -2677,31 +2677,31 @@
         </Column>
       </Columns>
     </Column>
-    <Column xsi:type="TableMiningStructureColumn">
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="86d6582c-81cf-4790-ad4b-8f959b11bdd9">
       <ID>Basiselement 2</ID>
       <Name>Basiselement 3</Name>
       <ForeignKeyColumns>
-        <ForeignKeyColumn>
+        <ForeignKeyColumn dwd:design-time-name="8268421f-6d12-4617-b929-8f10738a047d">
           <DataType>Integer</DataType>
           <DataSize>-1</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c4840664-a006-4e75-b6bc-e73e750b213c">
             <TableID>Basiselement</TableID>
             <ColumnID>ID</ColumnID>
           </Source>
         </ForeignKeyColumn>
       </ForeignKeyColumns>
       <Columns>
-        <Column xsi:type="ScalarMiningStructureColumn">
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="492553e9-e483-4da5-bd93-309b942ca7bd">
           <ID>Basiselementname L3</ID>
           <Name>Basiselementname L3</Name>
           <IsKey>true</IsKey>
           <Type>Text</Type>
           <Content>Key</Content>
           <KeyColumns>
-            <KeyColumn>
+            <KeyColumn dwd:design-time-name="88dc91de-94b8-4912-b042-cfa83541d81e">
               <DataType>WChar</DataType>
               <DataSize>45</DataSize>
-              <Source xsi:type="ColumnBinding">
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="c30dce3c-e063-463a-ba1d-ba25c3cdc010">
                 <TableID>Basiselement</TableID>
                 <ColumnID>Basiselementname_L3</ColumnID>
               </Source>
@@ -2710,31 +2710,31 @@
         </Column>
       </Columns>
     </Column>
-    <Column xsi:type="TableMiningStructureColumn">
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="99787e8e-ea63-4b9d-818e-ab79a4781e37">
       <ID>Basiselement 3</ID>
       <Name>Basiselement 4</Name>
       <ForeignKeyColumns>
-        <ForeignKeyColumn>
+        <ForeignKeyColumn dwd:design-time-name="943405e2-04bd-4be5-b73c-5ac0c46f37a7">
           <DataType>Integer</DataType>
           <DataSize>-1</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b0000ce2-65bf-4dcb-8c1f-5702708e56fb">
             <TableID>Basiselement</TableID>
             <ColumnID>ID</ColumnID>
           </Source>
         </ForeignKeyColumn>
       </ForeignKeyColumns>
       <Columns>
-        <Column xsi:type="ScalarMiningStructureColumn">
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="526192d7-0ca0-4549-a21b-d6f2ae310732">
           <ID>Basiselementname L4</ID>
           <Name>Basiselementname L4</Name>
           <IsKey>true</IsKey>
           <Type>Text</Type>
           <Content>Key</Content>
           <KeyColumns>
-            <KeyColumn>
+            <KeyColumn dwd:design-time-name="8eee9f32-1989-459e-b2d1-cb1b47b3b14a">
               <DataType>WChar</DataType>
               <DataSize>45</DataSize>
-              <Source xsi:type="ColumnBinding">
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="a5371656-ab7f-4a51-99dc-2e9b734830c6">
                 <TableID>Basiselement</TableID>
                 <ColumnID>Basiselementname_L4</ColumnID>
               </Source>
@@ -2743,31 +2743,31 @@
         </Column>
       </Columns>
     </Column>
-    <Column xsi:type="TableMiningStructureColumn">
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="848a0833-b42d-4076-949c-13a383520ab9">
       <ID>Basiselement 4</ID>
       <Name>Basiselement 5</Name>
       <ForeignKeyColumns>
-        <ForeignKeyColumn>
+        <ForeignKeyColumn dwd:design-time-name="5bde89bd-28ac-40c3-9254-0db44cca43c5">
           <DataType>Integer</DataType>
           <DataSize>-1</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9bbfa393-6e68-44ff-8237-612bf95606fb">
             <TableID>Basiselement</TableID>
             <ColumnID>ID</ColumnID>
           </Source>
         </ForeignKeyColumn>
       </ForeignKeyColumns>
       <Columns>
-        <Column xsi:type="ScalarMiningStructureColumn">
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="3cd7ae19-b9f6-4d78-ac11-5cad18ecbe3c">
           <ID>Basiselementname L5</ID>
           <Name>Basiselementname L5</Name>
           <IsKey>true</IsKey>
           <Type>Text</Type>
           <Content>Key</Content>
           <KeyColumns>
-            <KeyColumn>
+            <KeyColumn dwd:design-time-name="b18bcd5a-c3d7-4456-b8ed-0617d9ed8a3e">
               <DataType>WChar</DataType>
               <DataSize>45</DataSize>
-              <Source xsi:type="ColumnBinding">
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="690e7a61-2fe6-4ca7-9b03-15a79bec2f08">
                 <TableID>Basiselement</TableID>
                 <ColumnID>Basiselementname_L5</ColumnID>
               </Source>
@@ -2776,31 +2776,31 @@
         </Column>
       </Columns>
     </Column>
-    <Column xsi:type="TableMiningStructureColumn">
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="eb60dd7e-7526-4ea1-9c6e-007ce35ccd4e">
       <ID>Basiselement 5</ID>
       <Name>Basiselement 6</Name>
       <ForeignKeyColumns>
-        <ForeignKeyColumn>
+        <ForeignKeyColumn dwd:design-time-name="8f48acb0-feb1-44d5-a54e-7c2eff46457f">
           <DataType>Integer</DataType>
           <DataSize>-1</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="254461c1-1b6f-46e8-a739-2a7ad6c81119">
             <TableID>Basiselement</TableID>
             <ColumnID>ID</ColumnID>
           </Source>
         </ForeignKeyColumn>
       </ForeignKeyColumns>
       <Columns>
-        <Column xsi:type="ScalarMiningStructureColumn">
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="20995386-b46f-4ad7-95a6-2781d64a6dfb">
           <ID>Basiselementname L6</ID>
           <Name>Basiselementname L6</Name>
           <IsKey>true</IsKey>
           <Type>Text</Type>
           <Content>Key</Content>
           <KeyColumns>
-            <KeyColumn>
+            <KeyColumn dwd:design-time-name="7360e87c-3e6d-4647-95fe-1e85217155bf">
               <DataType>WChar</DataType>
               <DataSize>45</DataSize>
-              <Source xsi:type="ColumnBinding">
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="44485dd6-7677-4804-9829-782aaab01b1d">
                 <TableID>Basiselement</TableID>
                 <ColumnID>Basiselementname_L6</ColumnID>
               </Source>
@@ -2809,31 +2809,31 @@
         </Column>
       </Columns>
     </Column>
-    <Column xsi:type="TableMiningStructureColumn">
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="37c6d7ff-f399-4518-91c5-99f4801caf76">
       <ID>Basiselement 6</ID>
       <Name>Basiselement 7</Name>
       <ForeignKeyColumns>
-        <ForeignKeyColumn>
+        <ForeignKeyColumn dwd:design-time-name="d231fb66-26c0-4282-b5f9-56584f604d31">
           <DataType>Integer</DataType>
           <DataSize>-1</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b66dd9f3-bcb9-417d-8312-90bd13b72499">
             <TableID>Basiselement</TableID>
             <ColumnID>ID</ColumnID>
           </Source>
         </ForeignKeyColumn>
       </ForeignKeyColumns>
       <Columns>
-        <Column xsi:type="ScalarMiningStructureColumn">
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="5ad11263-5872-4e99-ba33-95188a49644c">
           <ID>Basiselementname L7</ID>
           <Name>Basiselementname L7</Name>
           <IsKey>true</IsKey>
           <Type>Text</Type>
           <Content>Key</Content>
           <KeyColumns>
-            <KeyColumn>
+            <KeyColumn dwd:design-time-name="63805704-bc22-4f6c-b198-cb900faf744e">
               <DataType>WChar</DataType>
               <DataSize>45</DataSize>
-              <Source xsi:type="ColumnBinding">
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="74b22325-965f-403a-904b-9bdfc791fab2">
                 <TableID>Basiselement</TableID>
                 <ColumnID>Basiselementname_L7</ColumnID>
               </Source>
@@ -2842,31 +2842,31 @@
         </Column>
       </Columns>
     </Column>
-    <Column xsi:type="TableMiningStructureColumn">
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="e4653999-1f25-4606-8f9b-bbce8dd06c5e">
       <ID>Basiselement Design</ID>
       <Name>Basiselement Design 1</Name>
       <ForeignKeyColumns>
-        <ForeignKeyColumn>
+        <ForeignKeyColumn dwd:design-time-name="c2cc870c-60e0-450b-9a08-51d912974572">
           <DataType>Integer</DataType>
           <DataSize>-1</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="731cc8c9-c4fd-465b-9d99-29e5af0ba3fc">
             <TableID>BasiselementDesign</TableID>
             <ColumnID>ID</ColumnID>
           </Source>
         </ForeignKeyColumn>
       </ForeignKeyColumns>
       <Columns>
-        <Column xsi:type="ScalarMiningStructureColumn">
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="0160138e-c337-4af6-8df2-83ae64d6905f">
           <ID>Designname L1</ID>
           <Name>Designname L1</Name>
           <IsKey>true</IsKey>
           <Type>Text</Type>
           <Content>Key</Content>
           <KeyColumns>
-            <KeyColumn>
+            <KeyColumn dwd:design-time-name="b1440bd4-cf54-4cf9-93b4-f82b223d5dfc">
               <DataType>WChar</DataType>
               <DataSize>45</DataSize>
-              <Source xsi:type="ColumnBinding">
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="535af196-2f31-4f12-9699-cff727f2b75f">
                 <TableID>BasiselementDesign</TableID>
                 <ColumnID>Designname_L1</ColumnID>
               </Source>
@@ -2875,31 +2875,31 @@
         </Column>
       </Columns>
     </Column>
-    <Column xsi:type="TableMiningStructureColumn">
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="7eebcbe6-cc78-4a27-b990-1fa7fb45a68a">
       <ID>Basiselement Design 1</ID>
       <Name>Basiselement Design 2</Name>
       <ForeignKeyColumns>
-        <ForeignKeyColumn>
+        <ForeignKeyColumn dwd:design-time-name="2b62494e-6270-47c3-95d2-c2ed362c0964">
           <DataType>Integer</DataType>
           <DataSize>-1</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2932833c-389e-4036-8826-16a8f7daf332">
             <TableID>BasiselementDesign</TableID>
             <ColumnID>ID</ColumnID>
           </Source>
         </ForeignKeyColumn>
       </ForeignKeyColumns>
       <Columns>
-        <Column xsi:type="ScalarMiningStructureColumn">
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="663e50e0-5c5a-4329-bbef-e0f46706f9ba">
           <ID>Designname L2</ID>
           <Name>Designname L2</Name>
           <IsKey>true</IsKey>
           <Type>Text</Type>
           <Content>Key</Content>
           <KeyColumns>
-            <KeyColumn>
+            <KeyColumn dwd:design-time-name="d786bcfd-d20d-46b9-9adb-c8b077890794">
               <DataType>WChar</DataType>
               <DataSize>45</DataSize>
-              <Source xsi:type="ColumnBinding">
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="4eada801-540a-450e-b5cd-66794ef2f41c">
                 <TableID>BasiselementDesign</TableID>
                 <ColumnID>Designname_L2</ColumnID>
               </Source>
@@ -2908,31 +2908,31 @@
         </Column>
       </Columns>
     </Column>
-    <Column xsi:type="TableMiningStructureColumn">
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="5b4caa17-3637-474c-b875-59dd6f5ce1ef">
       <ID>Basiselement Design 2</ID>
       <Name>Basiselement Design 3</Name>
       <ForeignKeyColumns>
-        <ForeignKeyColumn>
+        <ForeignKeyColumn dwd:design-time-name="030de1cc-9452-4498-a323-07274c8a0df6">
           <DataType>Integer</DataType>
           <DataSize>-1</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d1378e94-cd60-42df-b272-89febc8d8c0f">
             <TableID>BasiselementDesign</TableID>
             <ColumnID>ID</ColumnID>
           </Source>
         </ForeignKeyColumn>
       </ForeignKeyColumns>
       <Columns>
-        <Column xsi:type="ScalarMiningStructureColumn">
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="674270dd-1c97-4d4b-9dd9-db8eb7aca469">
           <ID>Designname L3</ID>
           <Name>Designname L3</Name>
           <IsKey>true</IsKey>
           <Type>Text</Type>
           <Content>Key</Content>
           <KeyColumns>
-            <KeyColumn>
+            <KeyColumn dwd:design-time-name="2bc7af34-10f6-4c95-ac7e-553b6eb59587">
               <DataType>WChar</DataType>
               <DataSize>45</DataSize>
-              <Source xsi:type="ColumnBinding">
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="e5cbb2ae-9eec-40c9-b8dc-30343d34eb16">
                 <TableID>BasiselementDesign</TableID>
                 <ColumnID>Designname_L3</ColumnID>
               </Source>
@@ -2941,31 +2941,31 @@
         </Column>
       </Columns>
     </Column>
-    <Column xsi:type="TableMiningStructureColumn">
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="20e69398-175e-4c82-904e-86ed7ee2b0d0">
       <ID>Basiselement Design 3</ID>
       <Name>Basiselement Design 4</Name>
       <ForeignKeyColumns>
-        <ForeignKeyColumn>
+        <ForeignKeyColumn dwd:design-time-name="61da74e0-ea16-4708-a1aa-6906ac3df7f2">
           <DataType>Integer</DataType>
           <DataSize>-1</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="236882c2-bf3d-4c62-bcd3-ba186d02ed0d">
             <TableID>BasiselementDesign</TableID>
             <ColumnID>ID</ColumnID>
           </Source>
         </ForeignKeyColumn>
       </ForeignKeyColumns>
       <Columns>
-        <Column xsi:type="ScalarMiningStructureColumn">
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="97918a49-91eb-4033-9cf5-f3385deca741">
           <ID>Designname L4</ID>
           <Name>Designname L4</Name>
           <IsKey>true</IsKey>
           <Type>Text</Type>
           <Content>Key</Content>
           <KeyColumns>
-            <KeyColumn>
+            <KeyColumn dwd:design-time-name="03e28a86-3aff-42a2-b1ab-021e34044e36">
               <DataType>WChar</DataType>
               <DataSize>45</DataSize>
-              <Source xsi:type="ColumnBinding">
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="b8297305-6138-48f7-a9f6-7d14145f8666">
                 <TableID>BasiselementDesign</TableID>
                 <ColumnID>Designname_L4</ColumnID>
               </Source>
@@ -2974,31 +2974,31 @@
         </Column>
       </Columns>
     </Column>
-    <Column xsi:type="TableMiningStructureColumn">
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="77e3a9c5-610b-44ea-ad15-a0dd0c403e6f">
       <ID>Basiselement Design 4</ID>
       <Name>Basiselement Design 5</Name>
       <ForeignKeyColumns>
-        <ForeignKeyColumn>
+        <ForeignKeyColumn dwd:design-time-name="dc7df1b5-5450-46ee-94fd-a903ee03c37d">
           <DataType>Integer</DataType>
           <DataSize>-1</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ec215281-5921-411b-b1ea-e296b9f6a04b">
             <TableID>BasiselementDesign</TableID>
             <ColumnID>ID</ColumnID>
           </Source>
         </ForeignKeyColumn>
       </ForeignKeyColumns>
       <Columns>
-        <Column xsi:type="ScalarMiningStructureColumn">
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="528d987f-8a84-410d-a8a7-141ccdd97a56">
           <ID>Designname L5</ID>
           <Name>Designname L5</Name>
           <IsKey>true</IsKey>
           <Type>Text</Type>
           <Content>Key</Content>
           <KeyColumns>
-            <KeyColumn>
+            <KeyColumn dwd:design-time-name="d636ef37-890b-40f4-9443-60acc7cd58a4">
               <DataType>WChar</DataType>
               <DataSize>45</DataSize>
-              <Source xsi:type="ColumnBinding">
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="f1ade513-3b1f-4671-9909-1331242f3a40">
                 <TableID>BasiselementDesign</TableID>
                 <ColumnID>Designname_L5</ColumnID>
               </Source>
@@ -3007,31 +3007,31 @@
         </Column>
       </Columns>
     </Column>
-    <Column xsi:type="TableMiningStructureColumn">
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="d01323ab-cabd-48ca-9464-a99bb4ac8d06">
       <ID>Basiselement Farbe</ID>
       <Name>Basiselement Farbe 1</Name>
       <ForeignKeyColumns>
-        <ForeignKeyColumn>
+        <ForeignKeyColumn dwd:design-time-name="1096470b-3963-4592-83d0-b50408304235">
           <DataType>Integer</DataType>
           <DataSize>-1</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a6473e87-fb1f-416c-9c61-971111739adb">
             <TableID>BasiselementFarbe</TableID>
             <ColumnID>ID</ColumnID>
           </Source>
         </ForeignKeyColumn>
       </ForeignKeyColumns>
       <Columns>
-        <Column xsi:type="ScalarMiningStructureColumn">
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="0f6670d4-5f4a-478d-8e7a-47223ba30c9c">
           <ID>Farbname L1</ID>
           <Name>Farbname L1</Name>
           <IsKey>true</IsKey>
           <Type>Text</Type>
           <Content>Key</Content>
           <KeyColumns>
-            <KeyColumn>
+            <KeyColumn dwd:design-time-name="721e5cae-e119-4092-bdda-9a91065c3cd6">
               <DataType>WChar</DataType>
               <DataSize>45</DataSize>
-              <Source xsi:type="ColumnBinding">
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="fbb2c31c-b739-47f6-a637-ca1fd292c0b5">
                 <TableID>BasiselementFarbe</TableID>
                 <ColumnID>Farbname_L1</ColumnID>
               </Source>
@@ -3040,31 +3040,31 @@
         </Column>
       </Columns>
     </Column>
-    <Column xsi:type="TableMiningStructureColumn">
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="74433070-9418-4780-ae3b-5d589eba1c46">
       <ID>Basiselement Farbe 1</ID>
       <Name>Basiselement Farbe 2</Name>
       <ForeignKeyColumns>
-        <ForeignKeyColumn>
+        <ForeignKeyColumn dwd:design-time-name="344e810a-206c-4f05-99c0-2ac3ea767420">
           <DataType>Integer</DataType>
           <DataSize>-1</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c16cf436-9b56-420e-b8ba-f18ae36a5fe5">
             <TableID>BasiselementFarbe</TableID>
             <ColumnID>ID</ColumnID>
           </Source>
         </ForeignKeyColumn>
       </ForeignKeyColumns>
       <Columns>
-        <Column xsi:type="ScalarMiningStructureColumn">
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="273e6e36-3e48-4120-8ded-ca4eb589995c">
           <ID>Farbname L2</ID>
           <Name>Farbname L2</Name>
           <IsKey>true</IsKey>
           <Type>Text</Type>
           <Content>Key</Content>
           <KeyColumns>
-            <KeyColumn>
+            <KeyColumn dwd:design-time-name="5840cf18-376b-43af-8885-13ee339d490b">
               <DataType>WChar</DataType>
               <DataSize>45</DataSize>
-              <Source xsi:type="ColumnBinding">
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="b48a31e5-527b-4a73-8e35-83da158bbe7f">
                 <TableID>BasiselementFarbe</TableID>
                 <ColumnID>Farbname_L2</ColumnID>
               </Source>
@@ -3073,31 +3073,31 @@
         </Column>
       </Columns>
     </Column>
-    <Column xsi:type="TableMiningStructureColumn">
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="4810df41-a781-4ed3-8fcf-78d292230bd0">
       <ID>Basiselement Farbe 2</ID>
       <Name>Basiselement Farbe 3</Name>
       <ForeignKeyColumns>
-        <ForeignKeyColumn>
+        <ForeignKeyColumn dwd:design-time-name="f8445272-de41-4c03-b62b-ee31c9a332b4">
           <DataType>Integer</DataType>
           <DataSize>-1</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="86d095a7-a9ea-432f-b10b-53756c7d4c01">
             <TableID>BasiselementFarbe</TableID>
             <ColumnID>ID</ColumnID>
           </Source>
         </ForeignKeyColumn>
       </ForeignKeyColumns>
       <Columns>
-        <Column xsi:type="ScalarMiningStructureColumn">
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="db769a02-3ba8-4add-81ef-68153a01ce12">
           <ID>Farbname L3</ID>
           <Name>Farbname L3</Name>
           <IsKey>true</IsKey>
           <Type>Text</Type>
           <Content>Key</Content>
           <KeyColumns>
-            <KeyColumn>
+            <KeyColumn dwd:design-time-name="ab4a607c-417e-451e-99ec-81c35631e471">
               <DataType>WChar</DataType>
               <DataSize>45</DataSize>
-              <Source xsi:type="ColumnBinding">
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="07f8ba56-ef92-4512-be96-755443e33808">
                 <TableID>BasiselementFarbe</TableID>
                 <ColumnID>Farbname_L3</ColumnID>
               </Source>
@@ -3106,31 +3106,31 @@
         </Column>
       </Columns>
     </Column>
-    <Column xsi:type="TableMiningStructureColumn">
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="69dcf328-0a63-44b6-8201-cf2d3f30af9a">
       <ID>Basiselement Farbeindruck</ID>
       <Name>Basiselement Farbeindruck</Name>
       <ForeignKeyColumns>
-        <ForeignKeyColumn>
+        <ForeignKeyColumn dwd:design-time-name="eb915424-a006-448f-8595-abf6bdff41ab">
           <DataType>Integer</DataType>
           <DataSize>-1</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="aa5f363d-5683-44a0-8ad5-d018bf7858e0">
             <TableID>BasiselementFarbeindruck</TableID>
             <ColumnID>ID</ColumnID>
           </Source>
         </ForeignKeyColumn>
       </ForeignKeyColumns>
       <Columns>
-        <Column xsi:type="ScalarMiningStructureColumn">
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="f973ce60-3178-41b6-87f4-2c3f93ae0eaa">
           <ID>Farbeindruck</ID>
           <Name>Farbeindruck</Name>
           <IsKey>true</IsKey>
           <Type>Text</Type>
           <Content>Key</Content>
           <KeyColumns>
-            <KeyColumn>
+            <KeyColumn dwd:design-time-name="28153973-475b-407e-9cfc-388276191c7a">
               <DataType>WChar</DataType>
               <DataSize>45</DataSize>
-              <Source xsi:type="ColumnBinding">
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="7fbb1ad0-1577-40e4-8008-66cb97eb1a22">
                 <TableID>BasiselementFarbeindruck</TableID>
                 <ColumnID>Farbeindruck</ColumnID>
               </Source>
@@ -3139,31 +3139,31 @@
         </Column>
       </Columns>
     </Column>
-    <Column xsi:type="TableMiningStructureColumn">
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="ddf48a69-fdf3-4ef8-8724-98c07bca6f63">
       <ID>Basiselement Form</ID>
       <Name>Basiselement Form 1</Name>
       <ForeignKeyColumns>
-        <ForeignKeyColumn>
+        <ForeignKeyColumn dwd:design-time-name="91962fa8-3185-4a04-9da3-d5f153356373">
           <DataType>Integer</DataType>
           <DataSize>-1</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="bd62d2b3-6574-4502-92db-dc4b8f301157">
             <TableID>BasiselementForm</TableID>
             <ColumnID>ID</ColumnID>
           </Source>
         </ForeignKeyColumn>
       </ForeignKeyColumns>
       <Columns>
-        <Column xsi:type="ScalarMiningStructureColumn">
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="5b6772f8-f2e9-4938-8a8e-3973ee95065a">
           <ID>Formname L1</ID>
           <Name>Formname L1</Name>
           <IsKey>true</IsKey>
           <Type>Text</Type>
           <Content>Key</Content>
           <KeyColumns>
-            <KeyColumn>
+            <KeyColumn dwd:design-time-name="f6cbe764-171a-40dd-8e15-e35cd95df705">
               <DataType>WChar</DataType>
               <DataSize>45</DataSize>
-              <Source xsi:type="ColumnBinding">
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="45769ab4-ea65-4955-8357-b6fec2a431ae">
                 <TableID>BasiselementForm</TableID>
                 <ColumnID>Formname_L1</ColumnID>
               </Source>
@@ -3172,31 +3172,31 @@
         </Column>
       </Columns>
     </Column>
-    <Column xsi:type="TableMiningStructureColumn">
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="879faf68-9dd8-4cac-8be0-7ba806c441a1">
       <ID>Basiselement Form 1</ID>
       <Name>Basiselement Form 2</Name>
       <ForeignKeyColumns>
-        <ForeignKeyColumn>
+        <ForeignKeyColumn dwd:design-time-name="2da7fd72-c1c4-4be6-8654-3de1c7fd1944">
           <DataType>Integer</DataType>
           <DataSize>-1</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="14d8beb3-fc55-43ad-bcb1-72f9afa16933">
             <TableID>BasiselementForm</TableID>
             <ColumnID>ID</ColumnID>
           </Source>
         </ForeignKeyColumn>
       </ForeignKeyColumns>
       <Columns>
-        <Column xsi:type="ScalarMiningStructureColumn">
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="5a638ef9-391e-469e-be60-f547cc881fda">
           <ID>Formname L2</ID>
           <Name>Formname L2</Name>
           <IsKey>true</IsKey>
           <Type>Text</Type>
           <Content>Key</Content>
           <KeyColumns>
-            <KeyColumn>
+            <KeyColumn dwd:design-time-name="ac72d802-3a4a-4dfb-b495-7c17e809b0e8">
               <DataType>WChar</DataType>
               <DataSize>45</DataSize>
-              <Source xsi:type="ColumnBinding">
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="539751c1-6922-4691-a951-70ca41ea226f">
                 <TableID>BasiselementForm</TableID>
                 <ColumnID>Formname_L2</ColumnID>
               </Source>
@@ -3205,31 +3205,31 @@
         </Column>
       </Columns>
     </Column>
-    <Column xsi:type="TableMiningStructureColumn">
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="15670d5a-0781-4cc0-bf15-624cfcd25176">
       <ID>Basiselement Form 2</ID>
       <Name>Basiselement Form 3</Name>
       <ForeignKeyColumns>
-        <ForeignKeyColumn>
+        <ForeignKeyColumn dwd:design-time-name="2f4cc530-d1cd-49a9-8302-604105e402f3">
           <DataType>Integer</DataType>
           <DataSize>-1</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="543ebb1b-c7f0-4690-b032-bb300e06f9bb">
             <TableID>BasiselementForm</TableID>
             <ColumnID>ID</ColumnID>
           </Source>
         </ForeignKeyColumn>
       </ForeignKeyColumns>
       <Columns>
-        <Column xsi:type="ScalarMiningStructureColumn">
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="32088dd9-6d1f-4430-8f63-8913cf43e826">
           <ID>Formname L3</ID>
           <Name>Formname L3</Name>
           <IsKey>true</IsKey>
           <Type>Text</Type>
           <Content>Key</Content>
           <KeyColumns>
-            <KeyColumn>
+            <KeyColumn dwd:design-time-name="6173aceb-c666-4040-b0d6-ca45c5321105">
               <DataType>WChar</DataType>
               <DataSize>45</DataSize>
-              <Source xsi:type="ColumnBinding">
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="a21b93b8-87b8-49b0-949b-62fe8b857abf">
                 <TableID>BasiselementForm</TableID>
                 <ColumnID>Formname_L3</ColumnID>
               </Source>
@@ -3238,31 +3238,31 @@
         </Column>
       </Columns>
     </Column>
-    <Column xsi:type="TableMiningStructureColumn">
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="641a0244-50ad-4a0d-88d1-d9a7f5ee5503">
       <ID>Basiselement Funktion</ID>
       <Name>Basiselement Funktion 1</Name>
       <ForeignKeyColumns>
-        <ForeignKeyColumn>
+        <ForeignKeyColumn dwd:design-time-name="367740b0-8164-42f3-9b95-f308e4bcd01e">
           <DataType>Integer</DataType>
           <DataSize>-1</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="38b8bc36-2e01-4017-8094-06e615a4fb02">
             <TableID>BasiselementFunktion</TableID>
             <ColumnID>ID</ColumnID>
           </Source>
         </ForeignKeyColumn>
       </ForeignKeyColumns>
       <Columns>
-        <Column xsi:type="ScalarMiningStructureColumn">
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="69ec5342-667e-4d04-8fe2-0fb0ab700885">
           <ID>Funktionsname L1</ID>
           <Name>Funktionsname L1</Name>
           <IsKey>true</IsKey>
           <Type>Text</Type>
           <Content>Key</Content>
           <KeyColumns>
-            <KeyColumn>
+            <KeyColumn dwd:design-time-name="15c41ae9-c695-4620-b27a-b0ce9afdb920">
               <DataType>WChar</DataType>
               <DataSize>45</DataSize>
-              <Source xsi:type="ColumnBinding">
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="3dfa848a-2fd6-48d0-8256-9866188b2e62">
                 <TableID>BasiselementFunktion</TableID>
                 <ColumnID>Funktionsname_L1</ColumnID>
               </Source>
@@ -3271,31 +3271,31 @@
         </Column>
       </Columns>
     </Column>
-    <Column xsi:type="TableMiningStructureColumn">
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="eeddae96-d7c8-4e96-bcb9-2b5c1ba0cee1">
       <ID>Basiselement Funktion 1</ID>
       <Name>Basiselement Funktion 2</Name>
       <ForeignKeyColumns>
-        <ForeignKeyColumn>
+        <ForeignKeyColumn dwd:design-time-name="b9bb9ba4-bdbe-48af-a5a8-57fc7f45c151">
           <DataType>Integer</DataType>
           <DataSize>-1</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d90edf07-ad55-4c48-bc11-04a355f6a22f">
             <TableID>BasiselementFunktion</TableID>
             <ColumnID>ID</ColumnID>
           </Source>
         </ForeignKeyColumn>
       </ForeignKeyColumns>
       <Columns>
-        <Column xsi:type="ScalarMiningStructureColumn">
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="af5c227b-2f81-4098-a24f-243f0c2736dc">
           <ID>Funktionsname L2</ID>
           <Name>Funktionsname L2</Name>
           <IsKey>true</IsKey>
           <Type>Text</Type>
           <Content>Key</Content>
           <KeyColumns>
-            <KeyColumn>
+            <KeyColumn dwd:design-time-name="2ea5455b-8db0-474a-bf8c-f0d0d798660f">
               <DataType>WChar</DataType>
               <DataSize>45</DataSize>
-              <Source xsi:type="ColumnBinding">
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="a6100575-9403-4a32-9c1e-5a3f05a809a4">
                 <TableID>BasiselementFunktion</TableID>
                 <ColumnID>Funktionsname_L2</ColumnID>
               </Source>
@@ -3304,31 +3304,31 @@
         </Column>
       </Columns>
     </Column>
-    <Column xsi:type="TableMiningStructureColumn">
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="730df21b-f674-47c2-ba54-26fcb841b86c">
       <ID>Basiselement Funktion 2</ID>
       <Name>Basiselement Funktion 3</Name>
       <ForeignKeyColumns>
-        <ForeignKeyColumn>
+        <ForeignKeyColumn dwd:design-time-name="46696bee-436f-4f7b-b88c-ceb81f5340bc">
           <DataType>Integer</DataType>
           <DataSize>-1</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f2ce6d16-77f3-419e-b393-0893d3151f0b">
             <TableID>BasiselementFunktion</TableID>
             <ColumnID>ID</ColumnID>
           </Source>
         </ForeignKeyColumn>
       </ForeignKeyColumns>
       <Columns>
-        <Column xsi:type="ScalarMiningStructureColumn">
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="dd6a0fc9-c882-45da-8f9f-2711a0ef19fd">
           <ID>Funktionsname L3</ID>
           <Name>Funktionsname L3</Name>
           <IsKey>true</IsKey>
           <Type>Text</Type>
           <Content>Key</Content>
           <KeyColumns>
-            <KeyColumn>
+            <KeyColumn dwd:design-time-name="ed949487-dce7-4f10-9bec-a6259bc34925">
               <DataType>WChar</DataType>
               <DataSize>45</DataSize>
-              <Source xsi:type="ColumnBinding">
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="73474142-c7f5-411b-a318-65feebe07b9f">
                 <TableID>BasiselementFunktion</TableID>
                 <ColumnID>Funktionsname_L3</ColumnID>
               </Source>
@@ -3337,31 +3337,31 @@
         </Column>
       </Columns>
     </Column>
-    <Column xsi:type="TableMiningStructureColumn">
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="709c26b4-070f-4b61-a835-812e8519d818">
       <ID>Basiselement Funktion 3</ID>
       <Name>Basiselement Funktion 4</Name>
       <ForeignKeyColumns>
-        <ForeignKeyColumn>
+        <ForeignKeyColumn dwd:design-time-name="1f0c4af8-e86c-41fc-98ad-b9cccd34f773">
           <DataType>Integer</DataType>
           <DataSize>-1</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3fc9d057-2fbb-4909-9521-5516ae3b5690">
             <TableID>BasiselementFunktion</TableID>
             <ColumnID>ID</ColumnID>
           </Source>
         </ForeignKeyColumn>
       </ForeignKeyColumns>
       <Columns>
-        <Column xsi:type="ScalarMiningStructureColumn">
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="3e3163f8-a089-4b04-ba35-7736c272eeb0">
           <ID>Funktionsname L4</ID>
           <Name>Funktionsname L4</Name>
           <IsKey>true</IsKey>
           <Type>Text</Type>
           <Content>Key</Content>
           <KeyColumns>
-            <KeyColumn>
+            <KeyColumn dwd:design-time-name="cd557f83-d678-4521-9a10-2ce6129aa714">
               <DataType>WChar</DataType>
               <DataSize>45</DataSize>
-              <Source xsi:type="ColumnBinding">
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="50a6b51a-78cd-446d-8efc-235fb2148025">
                 <TableID>BasiselementFunktion</TableID>
                 <ColumnID>Funktionsname_L4</ColumnID>
               </Source>
@@ -3370,31 +3370,31 @@
         </Column>
       </Columns>
     </Column>
-    <Column xsi:type="TableMiningStructureColumn">
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="22bd0e35-6e4e-4002-9f8c-b8e2751b4748">
       <ID>Basiselement Funktion 4</ID>
       <Name>Basiselement Funktion 5</Name>
       <ForeignKeyColumns>
-        <ForeignKeyColumn>
+        <ForeignKeyColumn dwd:design-time-name="244439eb-01db-4fa4-b872-ebac1d02814c">
           <DataType>Integer</DataType>
           <DataSize>-1</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f77701e6-bf2c-467f-9d3e-c71b022bdce3">
             <TableID>BasiselementFunktion</TableID>
             <ColumnID>ID</ColumnID>
           </Source>
         </ForeignKeyColumn>
       </ForeignKeyColumns>
       <Columns>
-        <Column xsi:type="ScalarMiningStructureColumn">
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="d0966899-7600-488e-ab05-96eb06eca7c0">
           <ID>Funktionsname L5</ID>
           <Name>Funktionsname L5</Name>
           <IsKey>true</IsKey>
           <Type>Text</Type>
           <Content>Key</Content>
           <KeyColumns>
-            <KeyColumn>
+            <KeyColumn dwd:design-time-name="932430b2-278c-40ce-87db-f39b5c48b0d0">
               <DataType>WChar</DataType>
               <DataSize>45</DataSize>
-              <Source xsi:type="ColumnBinding">
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="787607bb-dd81-415d-a3d6-1121cb587ebe">
                 <TableID>BasiselementFunktion</TableID>
                 <ColumnID>Funktionsname_L5</ColumnID>
               </Source>
@@ -3403,31 +3403,31 @@
         </Column>
       </Columns>
     </Column>
-    <Column xsi:type="TableMiningStructureColumn">
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="91a63d14-cac5-41ba-9b1e-42a3e2eb2ca0">
       <ID>Basiselement Material</ID>
       <Name>Basiselement Material 1</Name>
       <ForeignKeyColumns>
-        <ForeignKeyColumn>
+        <ForeignKeyColumn dwd:design-time-name="504b7c1b-13e5-494b-8647-f0bb7179977d">
           <DataType>Integer</DataType>
           <DataSize>-1</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2f875c4d-b36a-421a-a9ef-f053f04ca3a3">
             <TableID>BasiselementMaterial</TableID>
             <ColumnID>ID</ColumnID>
           </Source>
         </ForeignKeyColumn>
       </ForeignKeyColumns>
       <Columns>
-        <Column xsi:type="ScalarMiningStructureColumn">
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="7d4ea4af-e211-4131-bea2-566c42e16a59">
           <ID>Materialname L1</ID>
           <Name>Materialname L1</Name>
           <IsKey>true</IsKey>
           <Type>Text</Type>
           <Content>Key</Content>
           <KeyColumns>
-            <KeyColumn>
+            <KeyColumn dwd:design-time-name="84b2c6b3-cb63-4fc9-ba88-31a02aac98f1">
               <DataType>WChar</DataType>
               <DataSize>45</DataSize>
-              <Source xsi:type="ColumnBinding">
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="8e6ccc15-929c-463e-82ea-5c6e8e04080a">
                 <TableID>BasiselementMaterial</TableID>
                 <ColumnID>Materialname_L1</ColumnID>
               </Source>
@@ -3436,31 +3436,31 @@
         </Column>
       </Columns>
     </Column>
-    <Column xsi:type="TableMiningStructureColumn">
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="27de1bf2-c709-4b9b-8be9-8f934df7e9e8">
       <ID>Basiselement Material 1</ID>
       <Name>Basiselement Material 2</Name>
       <ForeignKeyColumns>
-        <ForeignKeyColumn>
+        <ForeignKeyColumn dwd:design-time-name="962005cf-3fe3-4a03-a0fc-c5488f5cb91c">
           <DataType>Integer</DataType>
           <DataSize>-1</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f3597181-e902-4ff7-9f7a-9dcb7014ace0">
             <TableID>BasiselementMaterial</TableID>
             <ColumnID>ID</ColumnID>
           </Source>
         </ForeignKeyColumn>
       </ForeignKeyColumns>
       <Columns>
-        <Column xsi:type="ScalarMiningStructureColumn">
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="8bb7a6dc-b13d-4f2d-8d72-0437771b355c">
           <ID>Materialname L2</ID>
           <Name>Materialname L2</Name>
           <IsKey>true</IsKey>
           <Type>Text</Type>
           <Content>Key</Content>
           <KeyColumns>
-            <KeyColumn>
+            <KeyColumn dwd:design-time-name="ff00ad96-a496-4181-a384-a9a6112a8e4c">
               <DataType>WChar</DataType>
               <DataSize>45</DataSize>
-              <Source xsi:type="ColumnBinding">
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="dd056b23-8ab4-4da7-a4e4-f41b03b247a5">
                 <TableID>BasiselementMaterial</TableID>
                 <ColumnID>Materialname_L2</ColumnID>
               </Source>
@@ -3469,31 +3469,31 @@
         </Column>
       </Columns>
     </Column>
-    <Column xsi:type="TableMiningStructureColumn">
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="6af2cc52-c825-4d99-84ec-6a5362f07855">
       <ID>Basiselement Material 2</ID>
       <Name>Basiselement Material 3</Name>
       <ForeignKeyColumns>
-        <ForeignKeyColumn>
+        <ForeignKeyColumn dwd:design-time-name="ac036e28-a40a-42ce-b146-c947dfe73753">
           <DataType>Integer</DataType>
           <DataSize>-1</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2155ad93-ee48-48c3-953e-eba4951c8828">
             <TableID>BasiselementMaterial</TableID>
             <ColumnID>ID</ColumnID>
           </Source>
         </ForeignKeyColumn>
       </ForeignKeyColumns>
       <Columns>
-        <Column xsi:type="ScalarMiningStructureColumn">
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="033dc2d1-b3c1-4d47-9cdd-c5549112dc59">
           <ID>Materialname L3</ID>
           <Name>Materialname L3</Name>
           <IsKey>true</IsKey>
           <Type>Text</Type>
           <Content>Key</Content>
           <KeyColumns>
-            <KeyColumn>
+            <KeyColumn dwd:design-time-name="5a984799-0c85-4b9b-9c29-34cd9d9754f3">
               <DataType>WChar</DataType>
               <DataSize>45</DataSize>
-              <Source xsi:type="ColumnBinding">
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="26c9d390-3e11-421f-8ad8-6c0813f8d281">
                 <TableID>BasiselementMaterial</TableID>
                 <ColumnID>Materialname_L3</ColumnID>
               </Source>
@@ -3502,31 +3502,31 @@
         </Column>
       </Columns>
     </Column>
-    <Column xsi:type="TableMiningStructureColumn">
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="aa46f09d-81a8-465f-a19d-1505975b5d2b">
       <ID>Basiselement Material 3</ID>
       <Name>Basiselement Material 4</Name>
       <ForeignKeyColumns>
-        <ForeignKeyColumn>
+        <ForeignKeyColumn dwd:design-time-name="7de60d19-244c-45bd-aedd-d20d93d9571a">
           <DataType>Integer</DataType>
           <DataSize>-1</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4ea86d2b-72e0-4caa-b075-1e842f40a954">
             <TableID>BasiselementMaterial</TableID>
             <ColumnID>ID</ColumnID>
           </Source>
         </ForeignKeyColumn>
       </ForeignKeyColumns>
       <Columns>
-        <Column xsi:type="ScalarMiningStructureColumn">
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="f67a1390-27c0-49f4-8995-2b36b411617f">
           <ID>Materialname L4</ID>
           <Name>Materialname L4</Name>
           <IsKey>true</IsKey>
           <Type>Text</Type>
           <Content>Key</Content>
           <KeyColumns>
-            <KeyColumn>
+            <KeyColumn dwd:design-time-name="5e810c98-83de-45b0-a58d-a201bcee7f67">
               <DataType>WChar</DataType>
               <DataSize>45</DataSize>
-              <Source xsi:type="ColumnBinding">
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="190ed1c0-03c4-44f4-8485-ad8e3b887e16">
                 <TableID>BasiselementMaterial</TableID>
                 <ColumnID>Materialname_L4</ColumnID>
               </Source>
@@ -3535,31 +3535,31 @@
         </Column>
       </Columns>
     </Column>
-    <Column xsi:type="TableMiningStructureColumn">
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="e4a2e1ac-d1fc-4234-b65a-a18cd83a3ce9">
       <ID>Basiselement Material 4</ID>
       <Name>Basiselement Material 5</Name>
       <ForeignKeyColumns>
-        <ForeignKeyColumn>
+        <ForeignKeyColumn dwd:design-time-name="c26df270-4461-4b80-a775-1369932816a7">
           <DataType>Integer</DataType>
           <DataSize>-1</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="aa291d89-87f4-43be-a88c-6c0641e4f106">
             <TableID>BasiselementMaterial</TableID>
             <ColumnID>ID</ColumnID>
           </Source>
         </ForeignKeyColumn>
       </ForeignKeyColumns>
       <Columns>
-        <Column xsi:type="ScalarMiningStructureColumn">
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="e8da7984-d3f7-489d-97c9-176af93b24b6">
           <ID>Materialname L5</ID>
           <Name>Materialname L5</Name>
           <IsKey>true</IsKey>
           <Type>Text</Type>
           <Content>Key</Content>
           <KeyColumns>
-            <KeyColumn>
+            <KeyColumn dwd:design-time-name="311ee12a-c852-4aad-b760-fcd26786e3a6">
               <DataType>WChar</DataType>
               <DataSize>45</DataSize>
-              <Source xsi:type="ColumnBinding">
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="04e4442c-5b8b-42cf-a8e0-d732c1f100e3">
                 <TableID>BasiselementMaterial</TableID>
                 <ColumnID>Materialname_L5</ColumnID>
               </Source>
@@ -3568,31 +3568,31 @@
         </Column>
       </Columns>
     </Column>
-    <Column xsi:type="TableMiningStructureColumn">
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="1d4c2efa-e73c-4b8c-86d6-0c3e72d02d0a">
       <ID>Basiselement Materialeindruck</ID>
       <Name>Basiselement Materialeindruck</Name>
       <ForeignKeyColumns>
-        <ForeignKeyColumn>
+        <ForeignKeyColumn dwd:design-time-name="17232dfe-f69c-4c9c-9d46-d1895b1704ec">
           <DataType>Integer</DataType>
           <DataSize>-1</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f6c7daac-b489-4b05-b90b-68388e178b97">
             <TableID>BasiselementMaterialeindruck</TableID>
             <ColumnID>ID</ColumnID>
           </Source>
         </ForeignKeyColumn>
       </ForeignKeyColumns>
       <Columns>
-        <Column xsi:type="ScalarMiningStructureColumn">
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="cac86a7d-f96a-4244-be2f-806469ab0fca">
           <ID>Materialeindruck</ID>
           <Name>Materialeindruck</Name>
           <IsKey>true</IsKey>
           <Type>Text</Type>
           <Content>Key</Content>
           <KeyColumns>
-            <KeyColumn>
+            <KeyColumn dwd:design-time-name="b9dd732c-53a6-4846-99bb-a99b773f5e31">
               <DataType>WChar</DataType>
               <DataSize>45</DataSize>
-              <Source xsi:type="ColumnBinding">
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="1d00db38-8fbe-4e80-a74c-f105efbcbc8a">
                 <TableID>BasiselementMaterialeindruck</TableID>
                 <ColumnID>Materialeindruck</ColumnID>
               </Source>
@@ -3601,31 +3601,31 @@
         </Column>
       </Columns>
     </Column>
-    <Column xsi:type="TableMiningStructureColumn">
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="bb824aaf-0f52-44ed-9b24-6c7a060c80e3">
       <ID>Basiselement Trageweise</ID>
       <Name>Basiselement Trageweise 1</Name>
       <ForeignKeyColumns>
-        <ForeignKeyColumn>
+        <ForeignKeyColumn dwd:design-time-name="03692495-555c-4e3a-8efd-5b01a1ee1854">
           <DataType>Integer</DataType>
           <DataSize>-1</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8351cc14-dfdd-4202-8390-1b92a05b8edd">
             <TableID>BasiselementTrageweise</TableID>
             <ColumnID>ID</ColumnID>
           </Source>
         </ForeignKeyColumn>
       </ForeignKeyColumns>
       <Columns>
-        <Column xsi:type="ScalarMiningStructureColumn">
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="a16d9420-8528-4ebd-ba8b-f8d940388826">
           <ID>Trageweisename L1</ID>
           <Name>Trageweisename L1</Name>
           <IsKey>true</IsKey>
           <Type>Text</Type>
           <Content>Key</Content>
           <KeyColumns>
-            <KeyColumn>
+            <KeyColumn dwd:design-time-name="df81a1ec-bda6-4f33-b905-00f6a678c236">
               <DataType>WChar</DataType>
               <DataSize>45</DataSize>
-              <Source xsi:type="ColumnBinding">
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="e076d38b-dace-49fb-9f36-7b347a08d248">
                 <TableID>BasiselementTrageweise</TableID>
                 <ColumnID>Trageweisename_L1</ColumnID>
               </Source>
@@ -3634,31 +3634,31 @@
         </Column>
       </Columns>
     </Column>
-    <Column xsi:type="TableMiningStructureColumn">
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="7320f0d3-30c9-4269-be8b-39f000025b04">
       <ID>Basiselement Trageweise 1</ID>
       <Name>Basiselement Trageweise 2</Name>
       <ForeignKeyColumns>
-        <ForeignKeyColumn>
+        <ForeignKeyColumn dwd:design-time-name="bc84f92e-b238-4531-aa7c-2cfd39471f44">
           <DataType>Integer</DataType>
           <DataSize>-1</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="832f4dcd-bc62-481d-b828-24cbf264975f">
             <TableID>BasiselementTrageweise</TableID>
             <ColumnID>ID</ColumnID>
           </Source>
         </ForeignKeyColumn>
       </ForeignKeyColumns>
       <Columns>
-        <Column xsi:type="ScalarMiningStructureColumn">
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="10353828-0b9a-4a4e-9952-4a6ae51e1085">
           <ID>Trageweisename L2</ID>
           <Name>Trageweisename L2</Name>
           <IsKey>true</IsKey>
           <Type>Text</Type>
           <Content>Key</Content>
           <KeyColumns>
-            <KeyColumn>
+            <KeyColumn dwd:design-time-name="ec28a01b-c383-4808-9953-b21bcdd2e215">
               <DataType>WChar</DataType>
               <DataSize>45</DataSize>
-              <Source xsi:type="ColumnBinding">
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="61ccbcfc-3d68-447f-97f6-5c88f5f5799a">
                 <TableID>BasiselementTrageweise</TableID>
                 <ColumnID>Trageweisename_L2</ColumnID>
               </Source>
@@ -3667,31 +3667,31 @@
         </Column>
       </Columns>
     </Column>
-    <Column xsi:type="TableMiningStructureColumn">
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="465569cd-6f30-428c-bd6c-fcdc1791353d">
       <ID>Basiselement Zustand</ID>
       <Name>Basiselement Zustand 1</Name>
       <ForeignKeyColumns>
-        <ForeignKeyColumn>
+        <ForeignKeyColumn dwd:design-time-name="deb7d615-c244-4a17-99c1-ba76c20ee5a1">
           <DataType>Integer</DataType>
           <DataSize>-1</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="db738799-01b1-4412-96dc-5cb28fc85894">
             <TableID>BasiselementZustand</TableID>
             <ColumnID>ID</ColumnID>
           </Source>
         </ForeignKeyColumn>
       </ForeignKeyColumns>
       <Columns>
-        <Column xsi:type="ScalarMiningStructureColumn">
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="928111af-99eb-49c5-9bb4-cec07be76f94">
           <ID>Zustandsname L1</ID>
           <Name>Zustandsname L1</Name>
           <IsKey>true</IsKey>
           <Type>Text</Type>
           <Content>Key</Content>
           <KeyColumns>
-            <KeyColumn>
+            <KeyColumn dwd:design-time-name="a09be569-f7f9-432f-8079-809ecc1bea4b">
               <DataType>WChar</DataType>
               <DataSize>45</DataSize>
-              <Source xsi:type="ColumnBinding">
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="5273a567-2047-4eb1-93bd-3b765a55ab90">
                 <TableID>BasiselementZustand</TableID>
                 <ColumnID>Zustandsname_L1</ColumnID>
               </Source>
@@ -3700,31 +3700,31 @@
         </Column>
       </Columns>
     </Column>
-    <Column xsi:type="TableMiningStructureColumn">
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="72ffdaa7-5f4e-4dd9-ab35-a2fa6083faac">
       <ID>Basiselement Zustand 1</ID>
       <Name>Basiselement Zustand 2</Name>
       <ForeignKeyColumns>
-        <ForeignKeyColumn>
+        <ForeignKeyColumn dwd:design-time-name="62fb2ee9-5b26-4549-9447-411d2328e88f">
           <DataType>Integer</DataType>
           <DataSize>-1</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8d879341-61a1-44d1-a6eb-ae0925979ad0">
             <TableID>BasiselementZustand</TableID>
             <ColumnID>ID</ColumnID>
           </Source>
         </ForeignKeyColumn>
       </ForeignKeyColumns>
       <Columns>
-        <Column xsi:type="ScalarMiningStructureColumn">
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="2e145e89-7923-480c-8871-c802474b8210">
           <ID>Zustandsname L2</ID>
           <Name>Zustandsname L2</Name>
           <IsKey>true</IsKey>
           <Type>Text</Type>
           <Content>Key</Content>
           <KeyColumns>
-            <KeyColumn>
+            <KeyColumn dwd:design-time-name="09a85ad8-3cee-435f-abf6-d7b3c3b1109e">
               <DataType>WChar</DataType>
               <DataSize>45</DataSize>
-              <Source xsi:type="ColumnBinding">
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="b5460844-e5d1-4523-9fb3-d6f4e2c7cfe1">
                 <TableID>BasiselementZustand</TableID>
                 <ColumnID>Zustandsname_L2</ColumnID>
               </Source>
@@ -3733,31 +3733,31 @@
         </Column>
       </Columns>
     </Column>
-    <Column xsi:type="TableMiningStructureColumn">
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="4bfc68fd-80b5-4e3a-b9dc-1e959f183e9f">
       <ID>Basiselement Zustand 2</ID>
       <Name>Basiselement Zustand 3</Name>
       <ForeignKeyColumns>
-        <ForeignKeyColumn>
+        <ForeignKeyColumn dwd:design-time-name="a7f76e00-f3c5-4061-b036-f8c818cb5f7c">
           <DataType>Integer</DataType>
           <DataSize>-1</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="837b41d2-4e73-48f4-8367-9902f4ebb4d9">
             <TableID>BasiselementZustand</TableID>
             <ColumnID>ID</ColumnID>
           </Source>
         </ForeignKeyColumn>
       </ForeignKeyColumns>
       <Columns>
-        <Column xsi:type="ScalarMiningStructureColumn">
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="c77fcd79-169a-4474-b23b-04b280528a97">
           <ID>Zustandsname L3</ID>
           <Name>Zustandsname L3</Name>
           <IsKey>true</IsKey>
           <Type>Text</Type>
           <Content>Key</Content>
           <KeyColumns>
-            <KeyColumn>
+            <KeyColumn dwd:design-time-name="d9d12031-22b3-4bba-a485-27850813b6f6">
               <DataType>WChar</DataType>
               <DataSize>45</DataSize>
-              <Source xsi:type="ColumnBinding">
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="1d27ed97-18e2-4035-bb4d-6ab6137b6cc3">
                 <TableID>BasiselementZustand</TableID>
                 <ColumnID>Zustandsname_L3</ColumnID>
               </Source>
@@ -3766,31 +3766,31 @@
         </Column>
       </Columns>
     </Column>
-    <Column xsi:type="TableMiningStructureColumn">
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="766bcd4c-7ac7-491c-9e64-2ee4ab388346">
       <ID>Film Genre 1</ID>
       <Name>Film Genre 2</Name>
       <ForeignKeyColumns>
-        <ForeignKeyColumn>
+        <ForeignKeyColumn dwd:design-time-name="01412da8-4dfb-44ee-9ff6-9c1d645e2146">
           <DataType>Integer</DataType>
           <DataSize>-1</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e9c7dda1-f882-46a5-82bd-fb118b88e6a7">
             <TableID>Filmgenre</TableID>
             <ColumnID>ID</ColumnID>
           </Source>
         </ForeignKeyColumn>
       </ForeignKeyColumns>
       <Columns>
-        <Column xsi:type="ScalarMiningStructureColumn">
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="274756ab-42a3-4a73-8bb5-51b91a5b0692">
           <ID>Genre L2</ID>
           <Name>Genre L2</Name>
           <IsKey>true</IsKey>
           <Type>Text</Type>
           <Content>Key</Content>
           <KeyColumns>
-            <KeyColumn>
+            <KeyColumn dwd:design-time-name="90ff528e-fc0b-462b-8304-f4f617678adb">
               <DataType>WChar</DataType>
               <DataSize>45</DataSize>
-              <Source xsi:type="ColumnBinding">
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="e6810f31-4d3f-4f29-a317-8fbacd52e02d">
                 <TableID>Filmgenre</TableID>
                 <ColumnID>Genre_L2</ColumnID>
               </Source>
@@ -3799,31 +3799,31 @@
         </Column>
       </Columns>
     </Column>
-    <Column xsi:type="TableMiningStructureColumn">
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="54391031-852c-455e-9679-b174839843bd">
       <ID>Film Genre</ID>
       <Name>Film Genre 1</Name>
       <ForeignKeyColumns>
-        <ForeignKeyColumn>
+        <ForeignKeyColumn dwd:design-time-name="6f1e1bd6-87d3-4515-b817-ac72f607324e">
           <DataType>Integer</DataType>
           <DataSize>-1</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f44b3adb-fc8b-4923-bbf0-f08bdaa8425d">
             <TableID>Filmgenre</TableID>
             <ColumnID>ID</ColumnID>
           </Source>
         </ForeignKeyColumn>
       </ForeignKeyColumns>
       <Columns>
-        <Column xsi:type="ScalarMiningStructureColumn">
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="42da8844-67ad-480f-b679-2b6c71e9fdfa">
           <ID>Genre L1</ID>
           <Name>Genre L1</Name>
           <IsKey>true</IsKey>
           <Type>Text</Type>
           <Content>Key</Content>
           <KeyColumns>
-            <KeyColumn>
+            <KeyColumn dwd:design-time-name="e09fef56-aa12-471b-acda-7ad5beea82b7">
               <DataType>WChar</DataType>
               <DataSize>45</DataSize>
-              <Source xsi:type="ColumnBinding">
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="0535b9dc-cbb9-4b12-a0fc-ad5b485ee70d">
                 <TableID>Filmgenre</TableID>
                 <ColumnID>Genre_L1</ColumnID>
               </Source>
@@ -3832,31 +3832,31 @@
         </Column>
       </Columns>
     </Column>
-    <Column xsi:type="TableMiningStructureColumn">
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="b0611e3e-1c63-4e19-8de3-96f8dc952c1e">
       <ID>Film Produktionsort</ID>
       <Name>Film Produktionsort 1</Name>
       <ForeignKeyColumns>
-        <ForeignKeyColumn>
+        <ForeignKeyColumn dwd:design-time-name="cdcb49a1-281b-48c4-8db1-cbbf72cc473c">
           <DataType>Integer</DataType>
           <DataSize>-1</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="26df5c48-493c-4a2a-8fc5-35265cbef102">
             <TableID>Filmproduktionsort</TableID>
             <ColumnID>ID</ColumnID>
           </Source>
         </ForeignKeyColumn>
       </ForeignKeyColumns>
       <Columns>
-        <Column xsi:type="ScalarMiningStructureColumn">
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="c16029b2-5edc-40b9-a0ee-f1e558744bf4">
           <ID>Produktionsort L1</ID>
           <Name>Produktionsort L1</Name>
           <IsKey>true</IsKey>
           <Type>Text</Type>
           <Content>Key</Content>
           <KeyColumns>
-            <KeyColumn>
+            <KeyColumn dwd:design-time-name="78a73e32-059a-41cd-93ee-395a9c96e201">
               <DataType>WChar</DataType>
               <DataSize>45</DataSize>
-              <Source xsi:type="ColumnBinding">
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="e0ef1da7-c333-4fc7-bd14-1e059c2cd843">
                 <TableID>Filmproduktionsort</TableID>
                 <ColumnID>Produktionsort_L1</ColumnID>
               </Source>
@@ -3865,31 +3865,31 @@
         </Column>
       </Columns>
     </Column>
-    <Column xsi:type="TableMiningStructureColumn">
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="6cc99c73-2c99-4a16-9f51-a22733c50cdd">
       <ID>Film Produktionsort 1</ID>
       <Name>Film Produktionsort 2</Name>
       <ForeignKeyColumns>
-        <ForeignKeyColumn>
+        <ForeignKeyColumn dwd:design-time-name="747967e2-90d4-4964-95fc-a75516fd5e6c">
           <DataType>Integer</DataType>
           <DataSize>-1</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="eb915e0e-151b-4716-ad2f-634b813e5b62">
             <TableID>Filmproduktionsort</TableID>
             <ColumnID>ID</ColumnID>
           </Source>
         </ForeignKeyColumn>
       </ForeignKeyColumns>
       <Columns>
-        <Column xsi:type="ScalarMiningStructureColumn">
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="1fa8b366-725c-4d5f-9c58-7d17a628d1a9">
           <ID>Produktionsort L2</ID>
           <Name>Produktionsort L2</Name>
           <IsKey>true</IsKey>
           <Type>Text</Type>
           <Content>Key</Content>
           <KeyColumns>
-            <KeyColumn>
+            <KeyColumn dwd:design-time-name="a215fc9b-2a7f-4ede-8f8b-3670e1f6fa62">
               <DataType>WChar</DataType>
               <DataSize>45</DataSize>
-              <Source xsi:type="ColumnBinding">
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="b5618bf0-ecf9-4e85-bc0d-af903bda56f0">
                 <TableID>Filmproduktionsort</TableID>
                 <ColumnID>Produktionsort_L2</ColumnID>
               </Source>
@@ -3898,31 +3898,31 @@
         </Column>
       </Columns>
     </Column>
-    <Column xsi:type="TableMiningStructureColumn">
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="ef5f9a29-94b2-44c7-b339-9d97effa5095">
       <ID>Film Farbkonzept</ID>
       <Name>Film Farbkonzept 1</Name>
       <ForeignKeyColumns>
-        <ForeignKeyColumn>
+        <ForeignKeyColumn dwd:design-time-name="9ab3710c-6466-4e5d-ac62-b292813e2b3a">
           <DataType>Integer</DataType>
           <DataSize>-1</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="65217958-8e8c-4aaa-b9b4-6c32db1c7f8b">
             <TableID>Filmfarbkonzept</TableID>
             <ColumnID>ID</ColumnID>
           </Source>
         </ForeignKeyColumn>
       </ForeignKeyColumns>
       <Columns>
-        <Column xsi:type="ScalarMiningStructureColumn">
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="61130bcb-0c94-4f9d-b75a-2a8ac25aa91e">
           <ID>Farbkonzept L1</ID>
           <Name>Farbkonzept L1</Name>
           <IsKey>true</IsKey>
           <Type>Text</Type>
           <Content>Key</Content>
           <KeyColumns>
-            <KeyColumn>
+            <KeyColumn dwd:design-time-name="75f7575c-67a2-453e-99a3-63fef418d406">
               <DataType>WChar</DataType>
               <DataSize>45</DataSize>
-              <Source xsi:type="ColumnBinding">
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="99abd8e3-8191-4116-8312-c7be24e8ea56">
                 <TableID>Filmfarbkonzept</TableID>
                 <ColumnID>Farbkonzept_L1</ColumnID>
               </Source>
@@ -3931,31 +3931,31 @@
         </Column>
       </Columns>
     </Column>
-    <Column xsi:type="TableMiningStructureColumn">
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="482a756a-b314-424c-a495-4e6f4351cf71">
       <ID>Film Farbkonzept 1</ID>
       <Name>Film Farbkonzept 2</Name>
       <ForeignKeyColumns>
-        <ForeignKeyColumn>
+        <ForeignKeyColumn dwd:design-time-name="409aa388-75d6-4b12-9a17-0cfe11408530">
           <DataType>Integer</DataType>
           <DataSize>-1</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3152160c-5b4f-454f-8974-41293a434950">
             <TableID>Filmfarbkonzept</TableID>
             <ColumnID>ID</ColumnID>
           </Source>
         </ForeignKeyColumn>
       </ForeignKeyColumns>
       <Columns>
-        <Column xsi:type="ScalarMiningStructureColumn">
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="55455e2a-1dd8-4f97-a1d4-add862293c6c">
           <ID>Farbkonzept L2</ID>
           <Name>Farbkonzept L2</Name>
           <IsKey>true</IsKey>
           <Type>Text</Type>
           <Content>Key</Content>
           <KeyColumns>
-            <KeyColumn>
+            <KeyColumn dwd:design-time-name="af9b788d-fc1d-43eb-a647-afc3d733ab45">
               <DataType>WChar</DataType>
               <DataSize>45</DataSize>
-              <Source xsi:type="ColumnBinding">
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="5f3896df-5581-45f3-b102-da6ff2dc2f26">
                 <TableID>Filmfarbkonzept</TableID>
                 <ColumnID>Farbkonzept_L2</ColumnID>
               </Source>
@@ -3964,97 +3964,97 @@
         </Column>
       </Columns>
     </Column>
-    <Column xsi:type="ScalarMiningStructureColumn">
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="4ce82ba8-27ab-40ef-a80a-4065a7a89953">
       <ID>ID</ID>
       <Name>ID</Name>
       <IsKey>true</IsKey>
       <Type>Long</Type>
       <Content>Key</Content>
       <KeyColumns>
-        <KeyColumn>
+        <KeyColumn dwd:design-time-name="aa8c160c-a348-4f13-83b4-2ef9182b9b37">
           <DataType>Integer</DataType>
           <DataSize>-1</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="90cdf665-8fa1-4566-beee-eeb035473198">
             <TableID>KostuemFilmRolle</TableID>
             <ColumnID>ID</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
     </Column>
-    <Column xsi:type="ScalarMiningStructureColumn">
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="6b836de5-24b4-4bd8-aaa3-e4b8a82c9f0a">
       <ID>Muse URL</ID>
       <Name>Muse URL</Name>
       <Type>Text</Type>
       <Content>Discrete</Content>
       <KeyColumns>
-        <KeyColumn>
+        <KeyColumn dwd:design-time-name="c779c443-366a-446a-aa69-9dfd3d3a243f">
           <DataType>WChar</DataType>
           <DataSize>255</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d3b1e4d6-573b-4bd1-80e4-9ebb882be522">
             <TableID>KostuemFilmRolle</TableID>
             <ColumnID>MuseURL</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
     </Column>
-    <Column xsi:type="ScalarMiningStructureColumn">
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="5d3d6956-c6d5-405c-a59e-9f67ce6ea9fe">
       <ID>Kostuemkurztext</ID>
       <Name>Kostuemkurztext</Name>
       <Type>Text</Type>
       <Content>Discrete</Content>
       <KeyColumns>
-        <KeyColumn>
+        <KeyColumn dwd:design-time-name="aa6d972e-7b02-4709-9c0f-ebf095ffdfaa">
           <DataType>WChar</DataType>
           <DataSize>100</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="fb5f8cd0-5034-4e5e-b349-8fcc83c7f439">
             <TableID>KostuemFilmRolle</TableID>
             <ColumnID>Kostuemkurztext</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
     </Column>
-    <Column xsi:type="ScalarMiningStructureColumn">
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="22f42fef-3631-40fe-92e3-6f38c21f92aa">
       <ID>Filmtitel</ID>
       <Name>Filmtitel</Name>
       <Type>Text</Type>
       <Content>Discrete</Content>
       <KeyColumns>
-        <KeyColumn>
+        <KeyColumn dwd:design-time-name="7858fcca-b7d4-4f28-b8ac-e9a6d4dac45f">
           <DataType>WChar</DataType>
           <DataSize>255</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="85308fca-3cc4-4295-a4bc-d0c1ff514ff2">
             <TableID>KostuemFilmRolle</TableID>
             <ColumnID>Filmtitel</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
     </Column>
-    <Column xsi:type="ScalarMiningStructureColumn">
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="c188c255-20f9-4e04-87f4-4771d4d42298">
       <ID>Geschlecht</ID>
       <Name>Geschlecht</Name>
       <Type>Text</Type>
       <Content>Discrete</Content>
       <KeyColumns>
-        <KeyColumn>
+        <KeyColumn dwd:design-time-name="1978dc87-58a6-4871-a971-9589a2b51817">
           <DataType>WChar</DataType>
           <DataSize>29</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5e46034d-a4d1-4b6d-abfb-a2d6e1908be9">
             <TableID>KostuemFilmRolle</TableID>
             <ColumnID>Geschlecht</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
     </Column>
-    <Column xsi:type="ScalarMiningStructureColumn">
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="f1a57cfc-bd3a-4605-929a-a51276a5b923">
       <ID>Rollenrelevanz</ID>
       <Name>Rollenrelevanz</Name>
       <Type>Text</Type>
       <Content>Discrete</Content>
       <KeyColumns>
-        <KeyColumn>
+        <KeyColumn dwd:design-time-name="16e171db-8d68-4a83-af5b-71a2d585fa29">
           <DataType>WChar</DataType>
           <DataSize>29</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="67c8f157-e4bb-4d44-9394-9747a4117166">
             <TableID>KostuemFilmRolle</TableID>
             <ColumnID>Rollenrelevanz</ColumnID>
           </Source>
@@ -4063,9 +4063,9 @@
     </Column>
   </Columns>
   <MiningModels>
-    <MiningModel>
+    <MiningModel dwd:design-time-name="2f1c7ee1-938a-4204-82f5-24f1bc0d1723">
       <ID>ms_kostuem__charakter_basiselement_1 2 1 1 2 1 1 1 1 1</ID>
-      <Name>western__K_a_b 1 1</Name>
+      <Name>western__K_a_b</Name>
       <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
       <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
       <Annotations>
@@ -4127,24 +4127,24 @@
         </AlgorithmParameter>
       </AlgorithmParameters>
       <Columns>
-        <Column>
+        <Column dwd:design-time-name="80c40f89-9927-462b-8d01-a8c7ebd43150">
           <ID>ID</ID>
           <Name>ID</Name>
           <SourceColumnID>ID</SourceColumnID>
           <Usage>Key</Usage>
         </Column>
-        <Column>
+        <Column dwd:design-time-name="3951ec9c-fa84-4e68-9e71-84a05b12d908">
           <ID>Geschlecht</ID>
           <Name>Geschlecht</Name>
           <SourceColumnID>Geschlecht</SourceColumnID>
         </Column>
-        <Column>
+        <Column dwd:design-time-name="6ede6c37-aa83-4663-9bdd-4a36b23bdd91">
           <ID>Basiselement Design 3</ID>
           <Name>Basiselement Design 3</Name>
           <SourceColumnID>Basiselement Design 2</SourceColumnID>
           <Usage>PredictOnly</Usage>
           <Columns>
-            <Column>
+            <Column dwd:design-time-name="2d5ce94f-f9db-4e8e-bb34-4a68cd8c5cba">
               <ID>Designname L3</ID>
               <Name>Designname L3</Name>
               <SourceColumnID>Designname L3</SourceColumnID>
@@ -4156,9 +4156,9 @@
       <AllowDrillThrough>true</AllowDrillThrough>
       <ddl100_100:Filter>EXISTS (SELECT * FROM [Film Genre 1] WHERE  [Genre L1] = 'Western' )</ddl100_100:Filter>
     </MiningModel>
-    <MiningModel>
+    <MiningModel dwd:design-time-name="8c9fb3c0-017d-4c5c-8ee4-0ae862ffabd6">
       <ID>ms_kostuem__charakter_basiselement__highschool_komoedie 1 1 1 2 1 1 1 1 1</ID>
-      <Name>highschool_komoedie__K_a_b 1 1</Name>
+      <Name>highschool_komoedie__K_a_b</Name>
       <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
       <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
       <Annotations>
@@ -4220,24 +4220,24 @@
         </AlgorithmParameter>
       </AlgorithmParameters>
       <Columns>
-        <Column>
+        <Column dwd:design-time-name="d446d962-7b6d-44d0-9fb5-2578b7296cd9">
           <ID>ID</ID>
           <Name>ID</Name>
           <SourceColumnID>ID</SourceColumnID>
           <Usage>Key</Usage>
         </Column>
-        <Column>
+        <Column dwd:design-time-name="7eee708c-31ac-432e-9bf6-02d99c4d3d13">
           <ID>Geschlecht</ID>
           <Name>Geschlecht</Name>
           <SourceColumnID>Geschlecht</SourceColumnID>
         </Column>
-        <Column>
+        <Column dwd:design-time-name="751beff7-a160-4bc1-b8e4-a4c8e1fd12c9">
           <ID>Basiselement Design 3</ID>
           <Name>Basiselement Design 3</Name>
           <SourceColumnID>Basiselement Design 2</SourceColumnID>
           <Usage>PredictOnly</Usage>
           <Columns>
-            <Column>
+            <Column dwd:design-time-name="8ff82d40-9db0-48c0-a815-4dd0aeca18fa">
               <ID>Designname L3</ID>
               <Name>Designname L3</Name>
               <SourceColumnID>Designname L3</SourceColumnID>
