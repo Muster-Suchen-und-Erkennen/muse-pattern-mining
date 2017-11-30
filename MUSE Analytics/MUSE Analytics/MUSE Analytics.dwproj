@@ -8,28 +8,60 @@
   </Database>
   <DataSources>
     <ProjectItem>
-      <Name>ds_muse_analytics.ds</Name>
-      <FullPath>ds_muse_analytics.ds</FullPath>
+      <Name>muse_analytics.ds</Name>
+      <FullPath>muse_analytics.ds</FullPath>
     </ProjectItem>
   </DataSources>
   <DataSourceViews>
     <ProjectItem>
-      <Name>dsv_kostuem_film_rolle_gewichtet.dsv</Name>
-      <FullPath>dsv_kostuem_film_rolle_gewichtet.dsv</FullPath>
+      <Name>basiselement_gewichtet.dsv</Name>
+      <FullPath>basiselement_gewichtet.dsv</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>dsv_basiselemente_gewichtet.dsv</Name>
-      <FullPath>dsv_basiselemente_gewichtet.dsv</FullPath>
+      <Name>basiselement_tops.dsv</Name>
+      <FullPath>basiselement_tops.dsv</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>basiselement_ungewichtet.dsv</Name>
+      <FullPath>basiselement_ungewichtet.dsv</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>kostuem_gewichtet.dsv</Name>
+      <FullPath>kostuem_gewichtet.dsv</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>kostuem_tops.dsv</Name>
+      <FullPath>kostuem_tops.dsv</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>kostuem_ungewichtet.dsv</Name>
+      <FullPath>kostuem_ungewichtet.dsv</FullPath>
     </ProjectItem>
   </DataSourceViews>
   <MiningModels>
+    <ProjectItem>
+      <Name>basiselement_gewichtet_vorlage.dmm</Name>
+      <FullPath>basiselement_gewichtet_vorlage.dmm</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>basiselement_tops_vorlage.dmm</Name>
+      <FullPath>basiselement_tops_vorlage.dmm</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>basiselement_ungewichtet_vorlage.dmm</Name>
+      <FullPath>basiselement_ungewichtet_vorlage.dmm</FullPath>
+    </ProjectItem>
     <ProjectItem>
       <Name>kostuem_gewichtet_vorlage.dmm</Name>
       <FullPath>kostuem_gewichtet_vorlage.dmm</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>basiselement_gewichtet_vorlage.dmm</Name>
-      <FullPath>basiselement_gewichtet_vorlage.dmm</FullPath>
+      <Name>kostuem_tops_vorlage.dmm</Name>
+      <FullPath>kostuem_tops_vorlage.dmm</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>kostuem_ungewichtet_vorlage.dmm</Name>
+      <FullPath>kostuem_ungewichtet_vorlage.dmm</FullPath>
     </ProjectItem>
   </MiningModels>
   <Configurations>
