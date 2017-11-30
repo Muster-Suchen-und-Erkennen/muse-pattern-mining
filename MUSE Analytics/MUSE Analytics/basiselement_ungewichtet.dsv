@@ -1,0 +1,1753 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="f03ccd3a-fcd9-4c43-9237-7d806417f7fb" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>basiselement_ungewichtet</ID>
+  <Name>basiselement_ungewichtet</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout>
+              <dds>
+                <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="108" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-11185" scrolltop="4563" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="40" x="27490" y="16801" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+                  <font>
+                    <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+                  </font>
+                  <mouseicon>
+                    <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+                  </mouseicon>
+                </diagram>
+                <layoutmanager>
+                  <ddsxmlobj />
+                </layoutmanager>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="Basiselement" left="20380" top="21967" logicalid="54" controlid="1" masterid="0" hint1="0" hint2="0" width="4471" height="5265" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000a00007711000091140000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="Basiselement" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="FilmGenre" left="14831" top="20576" logicalid="55" controlid="2" masterid="0" hint1="0" hint2="0" width="3149" height="2144" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000a00004d0c000060080000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="Filmgenre" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="BasiselementDesign" left="27251" top="17202" logicalid="56" controlid="3" masterid="0" hint1="0" hint2="0" width="4029" height="3536" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000a0000bd0f0000d00d0000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dbo_basiselementdesign" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="BasiselementForm" left="14880" top="45971" logicalid="57" controlid="4" masterid="0" hint1="0" hint2="0" width="3149" height="2541" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000a00004d0c0000ed090000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dbo_basiselementform" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="BasiselementFunktion" left="27251" top="23138" logicalid="58" controlid="5" masterid="0" hint1="0" hint2="0" width="4570" height="3493" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000a0000da110000a50d0000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dbo_basiselementfunktion" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="BasiselementTrageweise" left="17935" top="1163" logicalid="59" controlid="6" masterid="0" hint1="0" hint2="0" width="3831" height="2065" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000a0000f70e000011080000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dbo_basiselementtrageweise" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="BasiselementZustand" left="8313" top="45971" logicalid="60" controlid="7" masterid="0" hint1="0" hint2="0" width="4167" height="2614" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000a000047100000360a0000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dbo_basiselementzustand" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="FilmProduktionsort" left="13872" top="16112" logicalid="61" controlid="8" masterid="0" hint1="0" hint2="0" width="4108" height="2064" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000a00000c10000010080000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="Filmproduktionsort" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="RolleCharaktereigenschaft" left="0" top="45971" logicalid="62" controlid="9" masterid="0" hint1="0" hint2="0" width="5913" height="1562" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000a0000191700001a060000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="Rolledominantecharaktereigenschaft" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="RolleFamilienstand" left="14005" top="12127" logicalid="63" controlid="10" masterid="0" hint1="0" hint2="0" width="3975" height="1585" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000a0000870f000031060000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="Rollefamilienstand" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="KostuemCharaktereigenschaft" left="27251" top="10965" logicalid="64" controlid="11" masterid="0" hint1="0" hint2="0" width="5623" height="3837" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000a0000f7150000fd0e0000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="Kostuemcharaktereigenschaft" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="KostuemKoerpermodifikation" left="3985" top="0" logicalid="65" controlid="12" masterid="0" hint1="0" hint2="0" width="5861" height="3228" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000a0000e51600009c0c0000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="Kostuemkoerpermodifikation" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="KostuemAlterseindruck" left="27251" top="5628" logicalid="66" controlid="13" masterid="0" hint1="0" hint2="0" width="3590" height="2937" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000a0000060e0000790b0000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="Kostuemalterseindruck" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="KostuemSpielort" left="12246" top="1085" logicalid="67" controlid="14" masterid="0" hint1="0" hint2="0" width="3289" height="2143" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000a0000d90c00005f080000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="Kostuemspielort" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="KostuemSpielzeit" left="34919" top="45971" logicalid="68" controlid="15" masterid="0" hint1="0" hint2="0" width="3652" height="4034" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000a0000440e0000c20f0000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="Kostuemspielzeit" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="KostuemTageszeit" left="14261" top="30882" logicalid="69" controlid="16" masterid="0" hint1="0" hint2="0" width="3719" height="2149" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000a0000870e000065080000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="Kostuemtageszeit" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="BasiselementFarbe" left="30085" top="822" logicalid="70" controlid="17" masterid="0" hint1="0" hint2="0" width="3917" height="2406" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000a00004d0f000066090000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="BasiselementFarbname" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="BasiselementFarbeindruck" left="36402" top="1616" logicalid="71" controlid="18" masterid="0" hint1="0" hint2="0" width="4844" height="1612" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000a0000ec1200004c060000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="BasiselementFarbeindruck" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="BasiselementMaterial" left="13457" top="25120" logicalid="72" controlid="19" masterid="0" hint1="0" hint2="0" width="4523" height="3362" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000a0000ab110000220d0000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="BasiselementMaterialname" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="BasiselementMaterialeindruck" left="12662" top="35431" logicalid="73" controlid="20" masterid="0" hint1="0" hint2="0" width="5318" height="1641" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000a0000c614000069060000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="BasiselementMaterialeindruck" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="RolleStereotyp" left="27251" top="29031" logicalid="74" controlid="21" masterid="0" hint1="0" hint2="0" width="3485" height="2920" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000a00009d0d0000680b0000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="RolleStereotyp" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="MSDDS.Polyline" left="24551" top="18670" logicalid="75" controlid="22" masterid="0" hint1="0" hint2="0" width="3000" height="6329" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobj>
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    </ddsxmlobj>
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dataSet.Relations[BasiselementDesign-Basiselement]" vartype="8" />
+                      <property name="Virtual" value="0" vartype="11" />
+                      <property name="VisibleAP" value="0" vartype="3" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="3" sourceattachpoint="23" destattachpoint="20" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="24851" y="24599" />
+                    <point x="26051" y="24599" />
+                    <point x="26051" y="18970" />
+                    <point x="27251" y="18970" />
+                  </connector>
+                </ddscontrol>
+                <ddscontrol controlprogid="MSDDS.Polyline" left="23866" top="2928" logicalid="76" controlid="23" masterid="0" hint1="0" hint2="0" width="15258" height="19539" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobj>
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    </ddsxmlobj>
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dataSet.Relations[BasiselementFarbeindruck-Basiselement]" vartype="8" />
+                      <property name="Virtual" value="0" vartype="11" />
+                      <property name="VisibleAP" value="0" vartype="3" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="18" sourceattachpoint="12" destattachpoint="9" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="24265" y="21967" />
+                    <point x="24265" y="12598" />
+                    <point x="38824" y="12598" />
+                    <point x="38824" y="3228" />
+                  </connector>
+                </ddscontrol>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="RolleBeruf" left="27251" top="40422" logicalid="77" controlid="24" masterid="0" hint1="0" hint2="0" width="3122" height="3149" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000a0000320c00004d0c0000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="RolleBeruf" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="FilmFarbkonzept" left="24166" top="926" logicalid="78" controlid="25" masterid="0" hint1="0" hint2="0" width="3519" height="2302" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000a0000bf0d0000fe080000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="FilmFarbkonzept" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="KostuemSpielortDetail" left="40971" top="45971" logicalid="79" controlid="26" masterid="0" hint1="0" hint2="0" width="4260" height="3572" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000a0000a4100000f40d0000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="KostuemSpielortDetail" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="MSDDS.Polyline" left="23866" top="26733" logicalid="80" controlid="27" masterid="0" hint1="0" hint2="0" width="19535" height="19538" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobj>
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    </ddsxmlobj>
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dataSet.Relations[KostuemSpielortDetail-Basiselement]" vartype="8" />
+                      <property name="Virtual" value="0" vartype="11" />
+                      <property name="VisibleAP" value="0" vartype="3" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="26" sourceattachpoint="13" destattachpoint="6" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="24265" y="27232" />
+                    <point x="24265" y="36601" />
+                    <point x="43101" y="36601" />
+                    <point x="43101" y="45971" />
+                  </connector>
+                </ddscontrol>
+                <ddscontrol controlprogid="MSDDS.Polyline" left="17680" top="25300" logicalid="81" controlid="28" masterid="0" hint1="0" hint2="0" width="3000" height="11251" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobj>
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    </ddsxmlobj>
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dataSet.Relations[BasiselementMaterialeindruck-Basiselement]" vartype="8" />
+                      <property name="Virtual" value="0" vartype="11" />
+                      <property name="VisibleAP" value="0" vartype="3" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="20" sourceattachpoint="26" destattachpoint="21" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="20380" y="25699" />
+                    <point x="19180" y="25699" />
+                    <point x="19180" y="36251" />
+                    <point x="17980" y="36251" />
+                  </connector>
+                </ddscontrol>
+                <ddscontrol controlprogid="MSDDS.Polyline" left="13590" top="2928" logicalid="82" controlid="29" masterid="0" hint1="0" hint2="0" width="9425" height="19539" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobj>
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    </ddsxmlobj>
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dataSet.Relations[KostuemSpielort-Basiselement]" vartype="8" />
+                      <property name="Virtual" value="0" vartype="11" />
+                      <property name="VisibleAP" value="0" vartype="3" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="14" sourceattachpoint="6" destattachpoint="5" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="22615" y="21967" />
+                    <point x="22615" y="12598" />
+                    <point x="13890" y="12598" />
+                    <point x="13890" y="3228" />
+                  </connector>
+                </ddscontrol>
+                <ddscontrol controlprogid="MSDDS.Polyline" left="17680" top="21348" logicalid="83" controlid="30" masterid="0" hint1="0" hint2="0" width="3000" height="3101" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobj>
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    </ddsxmlobj>
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dataSet.Relations[FilmGenre-Basiselement]" vartype="8" />
+                      <property name="Virtual" value="0" vartype="11" />
+                      <property name="VisibleAP" value="0" vartype="3" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="2" sourceattachpoint="20" destattachpoint="13" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="20380" y="24049" />
+                    <point x="19180" y="24049" />
+                    <point x="19180" y="21648" />
+                    <point x="17980" y="21648" />
+                  </connector>
+                </ddscontrol>
+                <ddscontrol controlprogid="MSDDS.Polyline" left="22766" top="2928" logicalid="84" controlid="31" masterid="0" hint1="0" hint2="0" width="3459" height="19539" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobj>
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    </ddsxmlobj>
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dataSet.Relations[FilmFarbkonzept-Basiselement]" vartype="8" />
+                      <property name="Virtual" value="0" vartype="11" />
+                      <property name="VisibleAP" value="0" vartype="3" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="25" sourceattachpoint="8" destattachpoint="7" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="23165" y="21967" />
+                    <point x="23165" y="12598" />
+                    <point x="25925" y="12598" />
+                    <point x="25925" y="3228" />
+                  </connector>
+                </ddscontrol>
+                <ddscontrol controlprogid="MSDDS.Polyline" left="17680" top="12619" logicalid="85" controlid="32" masterid="0" hint1="0" hint2="0" width="3000" height="10730" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobj>
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    </ddsxmlobj>
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dataSet.Relations[RolleFamilienstand-Basiselement]" vartype="8" />
+                      <property name="Virtual" value="0" vartype="11" />
+                      <property name="VisibleAP" value="0" vartype="3" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="10" sourceattachpoint="16" destattachpoint="17" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="20380" y="22949" />
+                    <point x="19180" y="22949" />
+                    <point x="19180" y="12919" />
+                    <point x="17980" y="12919" />
+                  </connector>
+                </ddscontrol>
+                <ddscontrol controlprogid="MSDDS.Polyline" left="23316" top="2928" logicalid="86" controlid="33" masterid="0" hint1="0" hint2="0" width="9027" height="19539" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobj>
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    </ddsxmlobj>
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dataSet.Relations[BasiselementFarbe-Basiselement]" vartype="8" />
+                      <property name="Virtual" value="0" vartype="11" />
+                      <property name="VisibleAP" value="0" vartype="3" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="17" sourceattachpoint="10" destattachpoint="7" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="23715" y="21967" />
+                    <point x="23715" y="12598" />
+                    <point x="32043" y="12598" />
+                    <point x="32043" y="3228" />
+                  </connector>
+                </ddscontrol>
+                <ddscontrol controlprogid="MSDDS.Polyline" left="24551" top="6796" logicalid="87" controlid="34" masterid="0" hint1="0" hint2="0" width="3000" height="16553" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobj>
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    </ddsxmlobj>
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dataSet.Relations[KostuemAlterseindruck-Basiselement]" vartype="8" />
+                      <property name="Virtual" value="0" vartype="11" />
+                      <property name="VisibleAP" value="0" vartype="3" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="13" sourceattachpoint="17" destattachpoint="18" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="24851" y="22949" />
+                    <point x="26051" y="22949" />
+                    <point x="26051" y="7096" />
+                    <point x="27251" y="7096" />
+                  </connector>
+                </ddscontrol>
+                <ddscontrol controlprogid="MSDDS.Polyline" left="6615" top="2928" logicalid="88" controlid="35" masterid="0" hint1="0" hint2="0" width="15300" height="19539" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobj>
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    </ddsxmlobj>
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dataSet.Relations[KostuemKoerpermodifikation-Basiselement]" vartype="8" />
+                      <property name="Virtual" value="0" vartype="11" />
+                      <property name="VisibleAP" value="0" vartype="3" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="12" sourceattachpoint="2" destattachpoint="11" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="21515" y="21967" />
+                    <point x="21515" y="12598" />
+                    <point x="6915" y="12598" />
+                    <point x="6915" y="3228" />
+                  </connector>
+                </ddscontrol>
+                <ddscontrol controlprogid="MSDDS.Polyline" left="24551" top="25300" logicalid="89" controlid="36" masterid="0" hint1="0" hint2="0" width="3000" height="16996" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobj>
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    </ddsxmlobj>
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dataSet.Relations[RolleBeruf-Basiselement]" vartype="8" />
+                      <property name="Virtual" value="0" vartype="11" />
+                      <property name="VisibleAP" value="0" vartype="3" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="24" sourceattachpoint="27" destattachpoint="14" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="24851" y="25699" />
+                    <point x="26051" y="25699" />
+                    <point x="26051" y="41996" />
+                    <point x="27251" y="41996" />
+                  </connector>
+                </ddscontrol>
+                <ddscontrol controlprogid="MSDDS.Polyline" left="19550" top="2928" logicalid="90" controlid="37" masterid="0" hint1="0" hint2="0" width="2915" height="19539" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobj>
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    </ddsxmlobj>
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dataSet.Relations[BasiselementTrageweise-Basiselement]" vartype="8" />
+                      <property name="Virtual" value="0" vartype="11" />
+                      <property name="VisibleAP" value="0" vartype="3" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="6" sourceattachpoint="4" destattachpoint="7" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="22065" y="21967" />
+                    <point x="22065" y="12598" />
+                    <point x="19850" y="12598" />
+                    <point x="19850" y="3228" />
+                  </connector>
+                </ddscontrol>
+                <ddscontrol controlprogid="MSDDS.Polyline" left="24551" top="26400" logicalid="91" controlid="38" masterid="0" hint1="0" hint2="0" width="3000" height="4391" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobj>
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    </ddsxmlobj>
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dataSet.Relations[RolleStereotyp-Basiselement]" vartype="8" />
+                      <property name="Virtual" value="0" vartype="11" />
+                      <property name="VisibleAP" value="0" vartype="3" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="21" sourceattachpoint="31" destattachpoint="14" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="24851" y="26799" />
+                    <point x="26051" y="26799" />
+                    <point x="26051" y="30491" />
+                    <point x="27251" y="30491" />
+                  </connector>
+                </ddscontrol>
+                <ddscontrol controlprogid="MSDDS.Polyline" left="17680" top="16844" logicalid="92" controlid="39" masterid="0" hint1="0" hint2="0" width="3000" height="7055" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobj>
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    </ddsxmlobj>
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dataSet.Relations[FilmProduktionsort-Basiselement]" vartype="8" />
+                      <property name="Virtual" value="0" vartype="11" />
+                      <property name="VisibleAP" value="0" vartype="3" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="8" sourceattachpoint="18" destattachpoint="17" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="20380" y="23499" />
+                    <point x="19180" y="23499" />
+                    <point x="19180" y="17144" />
+                    <point x="17980" y="17144" />
+                  </connector>
+                </ddscontrol>
+                <ddscontrol controlprogid="MSDDS.Polyline" left="23316" top="26733" logicalid="93" controlid="40" masterid="0" hint1="0" hint2="0" width="13729" height="19538" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobj>
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    </ddsxmlobj>
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dataSet.Relations[KostuemSpielzeit-Basiselement]" vartype="8" />
+                      <property name="Virtual" value="0" vartype="11" />
+                      <property name="VisibleAP" value="0" vartype="3" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="15" sourceattachpoint="11" destattachpoint="6" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="23715" y="27232" />
+                    <point x="23715" y="36601" />
+                    <point x="36745" y="36601" />
+                    <point x="36745" y="45971" />
+                  </connector>
+                </ddscontrol>
+                <ddscontrol controlprogid="MSDDS.Polyline" left="16154" top="26733" logicalid="94" controlid="41" masterid="0" hint1="0" hint2="0" width="6311" height="19538" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobj>
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    </ddsxmlobj>
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dataSet.Relations[BasiselementForm-Basiselement]" vartype="8" />
+                      <property name="Virtual" value="0" vartype="11" />
+                      <property name="VisibleAP" value="0" vartype="3" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="4" sourceattachpoint="5" destattachpoint="4" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="22065" y="27232" />
+                    <point x="22065" y="36601" />
+                    <point x="16454" y="36601" />
+                    <point x="16454" y="45971" />
+                  </connector>
+                </ddscontrol>
+                <ddscontrol controlprogid="MSDDS.Polyline" left="24551" top="24584" logicalid="95" controlid="42" masterid="0" hint1="0" hint2="0" width="3000" height="965" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobj>
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    </ddsxmlobj>
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dataSet.Relations[BasiselementFunktion-Basiselement]" vartype="8" />
+                      <property name="Virtual" value="0" vartype="11" />
+                      <property name="VisibleAP" value="0" vartype="3" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="5" sourceattachpoint="25" destattachpoint="18" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="24851" y="25149" />
+                    <point x="26051" y="25149" />
+                    <point x="26051" y="24884" />
+                    <point x="27251" y="24884" />
+                  </connector>
+                </ddscontrol>
+                <ddscontrol controlprogid="MSDDS.Polyline" left="17680" top="24750" logicalid="96" controlid="43" masterid="0" hint1="0" hint2="0" width="3000" height="7506" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobj>
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    </ddsxmlobj>
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dataSet.Relations[KostuemTageszeit-Basiselement]" vartype="8" />
+                      <property name="Virtual" value="0" vartype="11" />
+                      <property name="VisibleAP" value="0" vartype="3" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="16" sourceattachpoint="24" destattachpoint="17" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="20380" y="25149" />
+                    <point x="19180" y="25149" />
+                    <point x="19180" y="31956" />
+                    <point x="17980" y="31956" />
+                  </connector>
+                </ddscontrol>
+                <ddscontrol controlprogid="MSDDS.Polyline" left="17680" top="24200" logicalid="97" controlid="44" masterid="0" hint1="0" hint2="0" width="3000" height="2901" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobj>
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    </ddsxmlobj>
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dataSet.Relations[BasiselementMaterial-Basiselement]" vartype="8" />
+                      <property name="Virtual" value="0" vartype="11" />
+                      <property name="VisibleAP" value="0" vartype="3" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="19" sourceattachpoint="22" destattachpoint="19" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="20380" y="24599" />
+                    <point x="19180" y="24599" />
+                    <point x="19180" y="26801" />
+                    <point x="17980" y="26801" />
+                  </connector>
+                </ddscontrol>
+                <ddscontrol controlprogid="MSDDS.Polyline" left="24551" top="12583" logicalid="98" controlid="45" masterid="0" hint1="0" hint2="0" width="3000" height="11316" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobj>
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    </ddsxmlobj>
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dataSet.Relations[KostuemCharaktereigenschaft-Basiselement]" vartype="8" />
+                      <property name="Virtual" value="0" vartype="11" />
+                      <property name="VisibleAP" value="0" vartype="3" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="11" sourceattachpoint="19" destattachpoint="24" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="24851" y="23499" />
+                    <point x="26051" y="23499" />
+                    <point x="26051" y="12883" />
+                    <point x="27251" y="12883" />
+                  </connector>
+                </ddscontrol>
+                <ddscontrol controlprogid="MSDDS.Polyline" left="2656" top="26733" logicalid="99" controlid="46" masterid="0" hint1="0" hint2="0" width="19259" height="19538" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobj>
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    </ddsxmlobj>
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dataSet.Relations[RolleCharaktereigenschaft-Basiselement]" vartype="8" />
+                      <property name="Virtual" value="0" vartype="11" />
+                      <property name="VisibleAP" value="0" vartype="3" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="9" sourceattachpoint="3" destattachpoint="10" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="21515" y="27232" />
+                    <point x="21515" y="36601" />
+                    <point x="2956" y="36601" />
+                    <point x="2956" y="45971" />
+                  </connector>
+                </ddscontrol>
+                <ddscontrol controlprogid="MSDDS.Polyline" left="10096" top="26733" logicalid="100" controlid="47" masterid="0" hint1="0" hint2="0" width="11269" height="19538" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobj>
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    </ddsxmlobj>
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dataSet.Relations[BasiselementZustand-Basiselement]" vartype="8" />
+                      <property name="Virtual" value="0" vartype="11" />
+                      <property name="VisibleAP" value="0" vartype="3" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="7" sourceattachpoint="1" destattachpoint="6" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="20965" y="27232" />
+                    <point x="20965" y="36601" />
+                    <point x="10396" y="36601" />
+                    <point x="10396" y="45971" />
+                  </connector>
+                </ddscontrol>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="KostuemDominanteFarbe" left="20429" top="45971" logicalid="101" controlid="48" masterid="0" hint1="0" hint2="0" width="4695" height="2811" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000a000057120000fb0a0000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="KostuemDominanteFarbe" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="MSDDS.Polyline" left="22216" top="26733" logicalid="102" controlid="49" masterid="0" hint1="0" hint2="0" width="860" height="19538" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobj>
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    </ddsxmlobj>
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dataSet.Relations[KostuemDominanteFarbe-Basiselement]" vartype="8" />
+                      <property name="Virtual" value="0" vartype="11" />
+                      <property name="VisibleAP" value="0" vartype="3" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="48" sourceattachpoint="7" destattachpoint="8" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="22615" y="27232" />
+                    <point x="22615" y="36601" />
+                    <point x="22776" y="36601" />
+                    <point x="22776" y="45971" />
+                  </connector>
+                </ddscontrol>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="KostuemDominanterZustand" left="27524" top="45971" logicalid="103" controlid="50" masterid="0" hint1="0" hint2="0" width="4995" height="2811" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000a000083130000fb0a0000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="KostuemDominanterZustand" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="MSDDS.Polyline" left="22766" top="26733" logicalid="104" controlid="51" masterid="0" hint1="0" hint2="0" width="7555" height="19538" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobj>
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    </ddsxmlobj>
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dataSet.Relations[KostuemDominanterZustand-Basiselement]" vartype="8" />
+                      <property name="Virtual" value="0" vartype="11" />
+                      <property name="VisibleAP" value="0" vartype="3" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="50" sourceattachpoint="9" destattachpoint="8" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="23165" y="27232" />
+                    <point x="23165" y="36601" />
+                    <point x="30021" y="36601" />
+                    <point x="30021" y="45971" />
+                  </connector>
+                </ddscontrol>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="KostuemDominanteFunktion" left="27251" top="34351" logicalid="105" controlid="52" masterid="0" hint1="0" hint2="0" width="5491" height="3671" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000a000073150000570e0000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="KostuemDominanteFunktion" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="MSDDS.Polyline" left="24551" top="25850" logicalid="106" controlid="53" masterid="0" hint1="0" hint2="0" width="3000" height="10636" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobj>
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    </ddsxmlobj>
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dataSet.Relations[KostuemDominanteFunktion-Basiselement]" vartype="8" />
+                      <property name="Virtual" value="0" vartype="11" />
+                      <property name="VisibleAP" value="0" vartype="3" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="52" sourceattachpoint="29" destattachpoint="24" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="24851" y="26249" />
+                    <point x="26051" y="26249" />
+                    <point x="26051" y="36186" />
+                    <point x="27251" y="36186" />
+                  </connector>
+                </ddscontrol>
+              </dds>
+</DiagramLayout>
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>-11185</DiagramViewPortLeft>
+            <DiagramViewPortTop>4563</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>40</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>ds_muse_analytics</DataSourceID>
+  <Schema>
+    <xs:schema id="Basiselemente" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="Basiselemente" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="e2cfe778-6a86-4f04-b810-8979520b1045">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="Basiselement" msprop:design-time-name="ebcb9fd7-c571-492f-ba95-e7bf1c432757" msprop:IsLogical="True" msprop:FriendlyName="Basiselement" msprop:DbTableName="Basiselement" msprop:TableType="View" msprop:Description="" msprop:QueryDefinition="SELECT        Rolle.Geschlecht, Film.Erscheinungsjahr, Film.Filmtitel, Film.Originaltitel, kostuem.Kostuemkurztext, kostuem.Szenenbeschreibung, kostuem.MuseURL, basiselement_gewichtet.ID, &#xD;&#xA;                         basiselement_gewichtet.Basiselementname, Rolle.Rollenrelevanz&#xD;&#xA;FROM            KostuemBasiselement INNER JOIN&#xD;&#xA;                         kostuem ON KostuemBasiselement.KostuemID = kostuem.KostuemID AND KostuemBasiselement.RollenID = kostuem.RollenID AND KostuemBasiselement.FilmID = kostuem.FilmID INNER JOIN&#xD;&#xA;                         basiselement_gewichtet ON KostuemBasiselement.BasiselementID = basiselement_gewichtet.BasiselementID INNER JOIN&#xD;&#xA;                         Film ON kostuem.FilmID = Film.FilmID INNER JOIN&#xD;&#xA;                         Rolle ON kostuem.RollenID = Rolle.RollenID AND kostuem.FilmID = Rolle.FilmID" msprop:QueryBuilder="SpecificQueryBuilder">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Geschlecht" msprop:design-time-name="8ef5303b-842e-40ed-99f1-c67ce9003f96" msprop:DbColumnName="Geschlecht" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="29" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Erscheinungsjahr" msprop:design-time-name="c27797b6-149f-4a30-a44b-2c14cf99427e" msprop:DbColumnName="Erscheinungsjahr" type="xs:int" minOccurs="0" />
+                  <xs:element name="Filmtitel" msprop:design-time-name="fd66872f-0d01-41be-987d-c34066c4ece5" msprop:DbColumnName="Filmtitel" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Originaltitel" msprop:design-time-name="09a2ed3f-be0f-4f4d-ac31-fa88181ee485" msprop:DbColumnName="Originaltitel" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Kostuemkurztext" msprop:design-time-name="1ba4d440-e342-4044-83f6-f7ad44377083" msprop:DbColumnName="Kostuemkurztext" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Szenenbeschreibung" msprop:design-time-name="edcd69c8-480b-45aa-b355-bdb373f29f7f" msprop:DbColumnName="Szenenbeschreibung" type="xs:string" minOccurs="0" />
+                  <xs:element name="MuseURL" msprop:design-time-name="de970da5-605a-4427-880a-2a160cef8fee" msprop:DbColumnName="MuseURL" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="ID" msprop:design-time-name="29d0895c-5c2b-454e-85e3-2d5b356a7f73" msprop:DbColumnName="ID" type="xs:int" />
+                  <xs:element name="Basiselementname" msprop:design-time-name="d7b14d45-44da-43fe-a5a2-5d0bc4c7977b" msprop:DbColumnName="Basiselementname" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Rollenrelevanz" msprop:design-time-name="e0f21dd5-ec11-4958-9891-d94394e774d5" msprop:DbColumnName="Rollenrelevanz" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="29" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="Filmgenre" msprop:design-time-name="c60a8b23-a865-4e57-95c8-467751a15811" msprop:IsLogical="True" msprop:FriendlyName="FilmGenre" msprop:DbTableName="FilmGenre" msprop:TableType="View" msprop:Description="" msprop:QueryDefinition="SELECT        FilmGenre.Genre_L2, FilmGenre.Genre_L1, Basiselement.BasiselementID AS ID&#xD;&#xA;FROM            FilmGenre INNER JOIN&#xD;&#xA;                         KostuemBasiselement ON FilmGenre.FilmID = KostuemBasiselement.FilmID INNER JOIN&#xD;&#xA;                         Basiselement ON KostuemBasiselement.BasiselementID = Basiselement.BasiselementID&#xD;&#xA;WHERE        (FilmGenre.Genre_L1 IS NOT NULL)" msprop:QueryBuilder="SpecificQueryBuilder">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Genre_L2" msprop:design-time-name="cbc5ca35-125b-4af0-88a0-772d77955365" msprop:DbColumnName="Genre_L2" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Genre_L1" msprop:design-time-name="37d55783-bc19-4291-808d-efb57a0fc939" msprop:DbColumnName="Genre_L1" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="ID" msprop:design-time-name="4dd7abfe-ea72-4757-85af-7a0409c3260c" msprop:DbColumnName="ID" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_basiselementdesign" msprop:design-time-name="4d9280cd-626f-4456-a37d-dea55a64088b" msprop:IsLogical="True" msprop:FriendlyName="BasiselementDesign" msprop:DbTableName="BasiselementDesign" msprop:TableType="View" msprop:QueryDefinition="SELECT        BasiselementDesign.Designname_L5, BasiselementDesign.Designname_L4, BasiselementDesign.Designname_L3, BasiselementDesign.Designname_L2, BasiselementDesign.Designname_L1, &#xD;&#xA;                         Basiselement.BasiselementID AS ID&#xD;&#xA;FROM            BasiselementDesign INNER JOIN&#xD;&#xA;                         Basiselement ON BasiselementDesign.BasiselementID = Basiselement.BasiselementID&#xD;&#xA;WHERE        (BasiselementDesign.Designname_L1 IS NOT NULL)" msprop:QueryBuilder="SpecificQueryBuilder">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Designname_L5" msprop:design-time-name="d29456c0-cfae-450d-aff1-1fbd49e53d6d" msprop:DbColumnName="Designname_L5" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Designname_L4" msprop:design-time-name="b12aa403-69c9-41a5-aa29-a68dd9c49b88" msprop:DbColumnName="Designname_L4" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Designname_L3" msprop:design-time-name="0bc0ab1e-74e3-4736-9446-0e94b5330e23" msprop:DbColumnName="Designname_L3" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Designname_L2" msprop:design-time-name="9b545052-a56d-4fee-af1a-c668f2c3068b" msprop:DbColumnName="Designname_L2" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Designname_L1" msprop:design-time-name="a73c8254-dfc9-4286-ac90-3e8b316bce38" msprop:DbColumnName="Designname_L1" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="ID" msprop:design-time-name="6d443708-5d08-4014-a34e-669565e67aa0" msprop:DbColumnName="ID" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_basiselementform" msprop:design-time-name="2ff1fb8c-e6e6-4a26-b392-f1a8a86dea92" msprop:IsLogical="True" msprop:FriendlyName="BasiselementForm" msprop:DbTableName="BasiselementForm" msprop:TableType="View" msprop:QueryDefinition="SELECT        BasiselementForm.Formname_L3, BasiselementForm.Formname_L2, BasiselementForm.Formname_L1, Basiselement.BasiselementID AS ID&#xD;&#xA;FROM            BasiselementForm INNER JOIN&#xD;&#xA;                         Basiselement ON BasiselementForm.BasiselementID = Basiselement.BasiselementID&#xD;&#xA;WHERE        (BasiselementForm.Formname_L1 IS NOT NULL)" msprop:QueryBuilder="SpecificQueryBuilder">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Formname_L3" msprop:design-time-name="ea209dc7-2459-45b9-9eec-cfe838b3a1c0" msprop:DbColumnName="Formname_L3" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Formname_L2" msprop:design-time-name="dc8ae033-572e-43e3-8c89-37894f4fadf2" msprop:DbColumnName="Formname_L2" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Formname_L1" msprop:design-time-name="b3d677c7-341b-468a-86ee-43cd8dd0a0a6" msprop:DbColumnName="Formname_L1" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="ID" msprop:design-time-name="f2f3f9a9-9927-4ce6-bdf5-a6189d3e8f3d" msprop:DbColumnName="ID" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_basiselementfunktion" msprop:design-time-name="4454e494-73f3-4899-bd88-c924ebe8ffd6" msprop:IsLogical="True" msprop:FriendlyName="BasiselementFunktion" msprop:DbTableName="BasiselementFunktion" msprop:TableType="View" msprop:QueryDefinition="SELECT        BasiselementFunktion.Funktionsname_L5, BasiselementFunktion.Funktionsname_L4, BasiselementFunktion.Funktionsname_L3, BasiselementFunktion.Funktionsname_L2, &#xD;&#xA;                         BasiselementFunktion.Funktionsname_L1, Basiselement.BasiselementID AS ID&#xD;&#xA;FROM            BasiselementFunktion INNER JOIN&#xD;&#xA;                         Basiselement ON BasiselementFunktion.BasiselementID = Basiselement.BasiselementID&#xD;&#xA;WHERE        (BasiselementFunktion.Funktionsname_L1 IS NOT NULL)" msprop:QueryBuilder="SpecificQueryBuilder">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Funktionsname_L5" msprop:design-time-name="5a53d8d7-6466-4fac-b5f3-ad04e67c2c70" msprop:DbColumnName="Funktionsname_L5" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Funktionsname_L4" msprop:design-time-name="2d2c5c01-3f3a-4df2-a006-337ea00e0069" msprop:DbColumnName="Funktionsname_L4" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Funktionsname_L3" msprop:design-time-name="c6b3a8c7-25ce-4e87-ae86-9d8e17c64861" msprop:DbColumnName="Funktionsname_L3" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Funktionsname_L2" msprop:design-time-name="a65383aa-1216-47d0-8c8d-9ec1e109a2af" msprop:DbColumnName="Funktionsname_L2" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="ID" msprop:design-time-name="f155883e-811c-43f9-a5ae-1649016e68f6" msprop:DbColumnName="ID" type="xs:int" minOccurs="0" />
+                  <xs:element name="Funktionsname_L1" msprop:design-time-name="e4dfe3d6-613a-4e2b-afc1-994221afac86" msprop:DbColumnName="Funktionsname_L1" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_basiselementtrageweise" msprop:design-time-name="387a84d6-29ba-43e4-b07b-ebe55d57e79c" msprop:IsLogical="True" msprop:FriendlyName="BasiselementTrageweise" msprop:DbTableName="BasiselementTrageweise" msprop:TableType="View" msprop:QueryDefinition="SELECT        BasiselementTrageweise.Trageweisename_L2, BasiselementTrageweise.Trageweisename_L1, Basiselement.BasiselementID AS ID&#xD;&#xA;FROM            BasiselementTrageweise INNER JOIN&#xD;&#xA;                         Basiselement ON BasiselementTrageweise.BasiselementID = Basiselement.BasiselementID&#xD;&#xA;WHERE        (BasiselementTrageweise.Trageweisename_L1 IS NOT NULL)" msprop:QueryBuilder="SpecificQueryBuilder">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Trageweisename_L2" msprop:design-time-name="defbca42-bf85-4e63-a326-688de3238a00" msprop:DbColumnName="Trageweisename_L2" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Trageweisename_L1" msprop:design-time-name="4c1b6c5d-6e33-45ca-ab3f-7e9d21024b52" msprop:DbColumnName="Trageweisename_L1" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="ID" msprop:design-time-name="56eb12c4-eee3-4bf7-af3a-a4546d1fcf91" msprop:DbColumnName="ID" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_basiselementzustand" msprop:design-time-name="65978ed4-6df2-46f1-b034-a972719b19f6" msprop:IsLogical="True" msprop:FriendlyName="BasiselementZustand" msprop:DbTableName="BasiselementZustand" msprop:TableType="View" msprop:QueryDefinition="SELECT        BasiselementZustand.Zustandsname_L3, BasiselementZustand.Zustandsname_L2, BasiselementZustand.Zustandsname_L1, Basiselement.BasiselementID AS ID&#xD;&#xA;FROM            BasiselementZustand INNER JOIN&#xD;&#xA;                         Basiselement ON BasiselementZustand.BasiselementID = Basiselement.BasiselementID&#xD;&#xA;WHERE        (BasiselementZustand.Zustandsname_L1 IS NOT NULL)" msprop:QueryBuilder="SpecificQueryBuilder">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Zustandsname_L3" msprop:design-time-name="53e10c2d-016b-4bc3-86ed-72d82295bc24" msprop:DbColumnName="Zustandsname_L3" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Zustandsname_L2" msprop:design-time-name="95f59f53-8f03-40af-87ef-0c492921ab8e" msprop:DbColumnName="Zustandsname_L2" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Zustandsname_L1" msprop:design-time-name="31f2d671-25a2-4e3e-a5ab-c04da26f3dc2" msprop:DbColumnName="Zustandsname_L1" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="ID" msprop:design-time-name="1bbe735c-62e7-411e-b8ec-c995f9c5db5f" msprop:DbColumnName="ID" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="Filmproduktionsort" msprop:design-time-name="b6023410-d600-42cb-807c-acb46fac8e94" msprop:IsLogical="True" msprop:FriendlyName="FilmProduktionsort" msprop:DbTableName="FilmProduktionsort" msprop:TableType="View" msprop:Description="" msprop:QueryDefinition="SELECT        FilmProduktionsort.Produktionsort_L2, FilmProduktionsort.Produktionsort_L1, Basiselement.BasiselementID AS ID&#xD;&#xA;FROM            FilmProduktionsort INNER JOIN&#xD;&#xA;                         KostuemBasiselement ON FilmProduktionsort.FilmID = KostuemBasiselement.FilmID INNER JOIN&#xD;&#xA;                         Basiselement ON KostuemBasiselement.BasiselementID = Basiselement.BasiselementID&#xD;&#xA;WHERE        (FilmProduktionsort.Produktionsort_L1 IS NOT NULL)" msprop:QueryBuilder="SpecificQueryBuilder">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Produktionsort_L2" msprop:design-time-name="ce7ea418-c6a3-45f7-867b-ad072345c45c" msprop:DbColumnName="Produktionsort_L2" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Produktionsort_L1" msprop:design-time-name="36e5a56d-5f0d-459e-bdc7-8512a75dc6c7" msprop:DbColumnName="Produktionsort_L1" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="ID" msprop:design-time-name="e8592a9d-3013-4ca4-b2be-5bea3ec50ede" msprop:DbColumnName="ID" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="Rolledominantecharaktereigenschaft" msprop:design-time-name="a0b3a2df-cce0-474b-b572-c1472f1e1604" msprop:IsLogical="True" msprop:FriendlyName="RolleCharaktereigenschaft" msprop:DbTableName="RolleCharaktereigenschaft" msprop:TableType="View" msprop:Description="" msprop:QueryDefinition="SELECT        RolleDominanteCharaktereigenschaft.DominanteCharaktereigenschaft, Basiselement.BasiselementID AS ID&#xD;&#xA;FROM            RolleDominanteCharaktereigenschaft INNER JOIN&#xD;&#xA;                         KostuemBasiselement ON RolleDominanteCharaktereigenschaft.RollenID = KostuemBasiselement.RollenID AND RolleDominanteCharaktereigenschaft.FilmID = KostuemBasiselement.FilmID INNER JOIN&#xD;&#xA;                         Basiselement ON KostuemBasiselement.BasiselementID = Basiselement.BasiselementID&#xD;&#xA;WHERE        (RolleDominanteCharaktereigenschaft.DominanteCharaktereigenschaft IS NOT NULL)" msprop:QueryBuilder="SpecificQueryBuilder">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="DominanteCharaktereigenschaft" msprop:design-time-name="ad8532d9-a7da-4c1a-b2c6-e2865a22fc46" msprop:DbColumnName="DominanteCharaktereigenschaft" msprop:FriendlyName="DominanteCharaktereigenschaft" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="ID" msprop:design-time-name="a166a5b1-9d20-4b9d-8b99-1182ce365e97" msprop:DbColumnName="ID" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="Rollefamilienstand" msprop:design-time-name="7a63a803-d5d9-4481-b700-0446b81a4bb2" msprop:IsLogical="True" msprop:FriendlyName="RolleFamilienstand" msprop:DbTableName="RolleFamilienstand" msprop:TableType="View" msprop:Description="" msprop:QueryDefinition="SELECT        RolleFamilienstand.Familienstand, Basiselement.BasiselementID AS ID&#xD;&#xA;FROM            RolleFamilienstand INNER JOIN&#xD;&#xA;                         KostuemBasiselement ON RolleFamilienstand.RollenID = KostuemBasiselement.RollenID AND RolleFamilienstand.FilmID = KostuemBasiselement.FilmID INNER JOIN&#xD;&#xA;                         Basiselement ON KostuemBasiselement.BasiselementID = Basiselement.BasiselementID&#xD;&#xA;WHERE        (RolleFamilienstand.Familienstand IS NOT NULL)" msprop:QueryBuilder="SpecificQueryBuilder">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Familienstand" msprop:design-time-name="6a0b4461-73b4-40ad-adaa-2d54f581d125" msprop:DbColumnName="Familienstand" msprop:FriendlyName="Familienstand" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="38" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="ID" msprop:design-time-name="0679369c-0eb1-461d-9138-9ed10108d0cc" msprop:DbColumnName="ID" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="Kostuemcharaktereigenschaft" msprop:design-time-name="b4a65ad3-d5ba-453f-8cbb-136eabb83b56" msprop:IsLogical="True" msprop:FriendlyName="KostuemCharaktereigenschaft" msprop:DbTableName="KostuemCharaktereigenschaft" msprop:TableType="View" msprop:Description="" msprop:QueryDefinition="SELECT        KostuemCharaktereigenschaft.Charaktereigenschaft_L6, KostuemCharaktereigenschaft.Charaktereigenschaft_L5, KostuemCharaktereigenschaft.Charaktereigenschaft_L4, &#xD;&#xA;                         KostuemCharaktereigenschaft.Charaktereigenschaft_L3, KostuemCharaktereigenschaft.Charaktereigenschaft_L2, KostuemCharaktereigenschaft.Charaktereigenschaft_L1, &#xD;&#xA;                         Basiselement.BasiselementID AS ID&#xD;&#xA;FROM            KostuemBasiselement INNER JOIN&#xD;&#xA;                         KostuemCharaktereigenschaft ON KostuemBasiselement.KostuemID = KostuemCharaktereigenschaft.KostuemID AND KostuemBasiselement.RollenID = KostuemCharaktereigenschaft.RollenID AND &#xD;&#xA;                         KostuemBasiselement.FilmID = KostuemCharaktereigenschaft.FilmID INNER JOIN&#xD;&#xA;                         Basiselement ON KostuemBasiselement.BasiselementID = Basiselement.BasiselementID&#xD;&#xA;WHERE        (KostuemCharaktereigenschaft.Charaktereigenschaft_L1 IS NOT NULL)" msprop:QueryBuilder="SpecificQueryBuilder">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Charaktereigenschaft_L6" msprop:design-time-name="c09463ae-c503-4bcf-b88b-afadc59d819f" msprop:DbColumnName="Charaktereigenschaft_L6" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Charaktereigenschaft_L5" msprop:design-time-name="55319db3-6926-4d45-9f0a-56d98619bd5c" msprop:DbColumnName="Charaktereigenschaft_L5" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Charaktereigenschaft_L4" msprop:design-time-name="390c4c82-ed61-487e-adcd-d96369cfc044" msprop:DbColumnName="Charaktereigenschaft_L4" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Charaktereigenschaft_L3" msprop:design-time-name="39369662-1b6a-43c3-808a-9b3722501acc" msprop:DbColumnName="Charaktereigenschaft_L3" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Charaktereigenschaft_L2" msprop:design-time-name="78b96d53-cf1e-4c59-943a-0e99ba49921a" msprop:DbColumnName="Charaktereigenschaft_L2" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Charaktereigenschaft_L1" msprop:design-time-name="87f8acd0-48f6-4581-9530-a5625d926e07" msprop:DbColumnName="Charaktereigenschaft_L1" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="ID" msprop:design-time-name="b521126e-87fc-4d11-ae55-e7a3bfdb1e21" msprop:DbColumnName="ID" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="Kostuemkoerpermodifikation" msprop:design-time-name="43032382-aeb0-4a55-8d28-774e0c63e521" msprop:IsLogical="True" msprop:FriendlyName="KostuemKoerpermodifikation" msprop:DbTableName="KostuemKoerpermodifikation" msprop:TableType="View" msprop:Description="" msprop:QueryDefinition="SELECT        KostuemKoerpermodifikation.Koerpermodifikationname_L5, KostuemKoerpermodifikation.Koerpermodifikationname_L4, KostuemKoerpermodifikation.Koerpermodifikationname_L3, &#xD;&#xA;                         KostuemKoerpermodifikation.Koerpermodifikationname_L2, KostuemKoerpermodifikation.Koerpermodifikationname_L1, Basiselement.BasiselementID AS ID&#xD;&#xA;FROM            KostuemBasiselement INNER JOIN&#xD;&#xA;                         KostuemKoerpermodifikation ON KostuemBasiselement.KostuemID = KostuemKoerpermodifikation.KostuemID AND KostuemBasiselement.RollenID = KostuemKoerpermodifikation.RollenID AND &#xD;&#xA;                         KostuemBasiselement.FilmID = KostuemKoerpermodifikation.FilmID INNER JOIN&#xD;&#xA;                         Basiselement ON KostuemBasiselement.BasiselementID = Basiselement.BasiselementID&#xD;&#xA;WHERE        (KostuemKoerpermodifikation.Koerpermodifikationname_L1 IS NOT NULL)" msprop:QueryBuilder="SpecificQueryBuilder">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Koerpermodifikationname_L5" msprop:design-time-name="cd9ba1e2-32ad-4a0c-9185-644a1f773000" msprop:DbColumnName="Koerpermodifikationname_L5" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Koerpermodifikationname_L4" msprop:design-time-name="e046b65c-2e6f-418b-8f61-12ebda22980d" msprop:DbColumnName="Koerpermodifikationname_L4" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Koerpermodifikationname_L3" msprop:design-time-name="3deac086-776e-4413-b9ca-6acd378d5e9a" msprop:DbColumnName="Koerpermodifikationname_L3" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Koerpermodifikationname_L2" msprop:design-time-name="811a6135-b3cf-448a-9979-8a5509444444" msprop:DbColumnName="Koerpermodifikationname_L2" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Koerpermodifikationname_L1" msprop:design-time-name="dfd9eeb3-f240-4eb9-90d9-f374de203393" msprop:DbColumnName="Koerpermodifikationname_L1" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="ID" msprop:design-time-name="88d946a3-4cdb-41d0-b51c-de810ad0d339" msprop:DbColumnName="ID" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="Kostuemalterseindruck" msprop:design-time-name="18f62699-e6b2-4749-9e47-8fdf1ca4341d" msprop:IsLogical="True" msprop:FriendlyName="KostuemAlterseindruck" msprop:DbTableName="KostuemAlterseindruck" msprop:TableType="View" msprop:Description="" msprop:QueryDefinition="SELECT        KostuemAlterseindruck.NumAlter, KostuemAlterseindruck.Alterseindruck_L3, KostuemAlterseindruck.Alterseindruck_L2, KostuemAlterseindruck.Alterseindruck_L1, Basiselement.BasiselementID AS ID&#xD;&#xA;FROM            KostuemAlterseindruck INNER JOIN&#xD;&#xA;                         KostuemBasiselement ON KostuemAlterseindruck.KostuemID = KostuemBasiselement.KostuemID AND KostuemAlterseindruck.RollenID = KostuemBasiselement.RollenID AND &#xD;&#xA;                         KostuemAlterseindruck.FilmID = KostuemBasiselement.FilmID INNER JOIN&#xD;&#xA;                         Basiselement ON KostuemBasiselement.BasiselementID = Basiselement.BasiselementID&#xD;&#xA;WHERE        (KostuemAlterseindruck.Alterseindruck_L1 IS NOT NULL)" msprop:QueryBuilder="SpecificQueryBuilder">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="NumAlter" msprop:design-time-name="ac0153bb-8daa-4632-bc9a-1ac42102a08c" msprop:DbColumnName="NumAlter" msprop:FriendlyName="NumAlter" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Alterseindruck_L3" msprop:design-time-name="aee774a8-1182-4d96-bf8e-ac5e2f879706" msprop:DbColumnName="Alterseindruck_L3" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Alterseindruck_L2" msprop:design-time-name="75f718e0-aebd-460a-8b4b-2f2d4fb7a2da" msprop:DbColumnName="Alterseindruck_L2" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Alterseindruck_L1" msprop:design-time-name="156d232c-7203-4151-accf-e4a838cf9df6" msprop:DbColumnName="Alterseindruck_L1" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="ID" msprop:design-time-name="ec3a6b3b-475d-445b-83b5-4908e3fad8ab" msprop:DbColumnName="ID" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="Kostuemspielort" msprop:design-time-name="4c16d4a6-f585-4462-9a72-f31307a79946" msprop:IsLogical="True" msprop:FriendlyName="KostuemSpielort" msprop:DbTableName="KostuemSpielort" msprop:TableType="View" msprop:Description="" msprop:QueryDefinition="SELECT        KostuemSpielort.Spielort_L2, KostuemSpielort.Spielort_L1, Basiselement.BasiselementID AS ID&#xD;&#xA;FROM            KostuemBasiselement INNER JOIN&#xD;&#xA;                         KostuemSpielort ON KostuemBasiselement.KostuemID = KostuemSpielort.KostuemID AND KostuemBasiselement.RollenID = KostuemSpielort.RollenID AND &#xD;&#xA;                         KostuemBasiselement.FilmID = KostuemSpielort.FilmID INNER JOIN&#xD;&#xA;                         Basiselement ON KostuemBasiselement.BasiselementID = Basiselement.BasiselementID&#xD;&#xA;WHERE        (KostuemSpielort.Spielort_L1 IS NOT NULL)" msprop:QueryBuilder="SpecificQueryBuilder">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Spielort_L2" msprop:design-time-name="ef54dd47-dee3-4ac5-8a80-d66412f348e1" msprop:DbColumnName="Spielort_L2" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Spielort_L1" msprop:design-time-name="973c2c5f-3452-404d-8736-f6777e83bb13" msprop:DbColumnName="Spielort_L1" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="ID" msprop:design-time-name="7452e233-afa0-44b3-aa7a-717d8c3ff8e4" msprop:DbColumnName="ID" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="Kostuemspielzeit" msprop:design-time-name="0f81f925-fba7-4758-b82a-a6dc068ff25c" msprop:IsLogical="True" msprop:FriendlyName="KostuemSpielzeit" msprop:DbTableName="KostuemSpielzeit" msprop:TableType="View" msprop:Description="" msprop:QueryDefinition="SELECT        KostuemSpielzeit.Spielzeit_L4, KostuemSpielzeit.Spielzeit_L3, KostuemSpielzeit.Spielzeit_L2, KostuemSpielzeit.Spielzeit_L1, KostuemSpielzeit.SpielzeitVon, KostuemSpielzeit.SpielzeitBis, &#xD;&#xA;                         Basiselement.BasiselementID AS ID&#xD;&#xA;FROM            KostuemBasiselement INNER JOIN&#xD;&#xA;                         KostuemSpielzeit ON KostuemBasiselement.KostuemID = KostuemSpielzeit.KostuemID AND KostuemBasiselement.RollenID = KostuemSpielzeit.RollenID AND &#xD;&#xA;                         KostuemBasiselement.FilmID = KostuemSpielzeit.FilmID INNER JOIN&#xD;&#xA;                         Basiselement ON KostuemBasiselement.BasiselementID = Basiselement.BasiselementID&#xD;&#xA;WHERE        (KostuemSpielzeit.Spielzeit_L1 IS NOT NULL)" msprop:QueryBuilder="SpecificQueryBuilder">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Spielzeit_L4" msprop:design-time-name="bea402b9-f712-4b1d-b219-c568b1bfb230" msprop:DbColumnName="Spielzeit_L4" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Spielzeit_L3" msprop:design-time-name="942a8c79-67db-49be-a4d5-1e6acc016e15" msprop:DbColumnName="Spielzeit_L3" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Spielzeit_L2" msprop:design-time-name="54da40bb-c06d-4fa6-b1ee-1d3fc409fa80" msprop:DbColumnName="Spielzeit_L2" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Spielzeit_L1" msprop:design-time-name="607477c5-4359-4002-8b1a-4c3d5f4d0b69" msprop:DbColumnName="Spielzeit_L1" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="SpielzeitVon" msprop:design-time-name="e1f09c72-5d81-4614-9d9c-cbcdb206e4f1" msprop:DbColumnName="SpielzeitVon" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="SpielzeitBis" msprop:design-time-name="c9b9f266-2415-4f94-8fae-598f495a6d08" msprop:DbColumnName="SpielzeitBis" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="ID" msprop:design-time-name="1443ee60-815d-46bd-9389-8ca8aafc4bc6" msprop:DbColumnName="ID" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="Kostuemtageszeit" msprop:design-time-name="b31c440e-aabd-4c44-b5e0-0f1126d84129" msprop:IsLogical="True" msprop:FriendlyName="KostuemTageszeit" msprop:DbTableName="KostuemTageszeit" msprop:TableType="View" msprop:Description="" msprop:QueryDefinition="SELECT        KostuemTageszeit.Tageszeit_L2, KostuemTageszeit.Tageszeit_L1, Basiselement.BasiselementID AS ID&#xD;&#xA;FROM            KostuemBasiselement INNER JOIN&#xD;&#xA;                         KostuemTageszeit ON KostuemBasiselement.KostuemID = KostuemTageszeit.KostuemID AND KostuemBasiselement.RollenID = KostuemTageszeit.RollenID AND &#xD;&#xA;                         KostuemBasiselement.FilmID = KostuemTageszeit.FilmID INNER JOIN&#xD;&#xA;                         Basiselement ON KostuemBasiselement.BasiselementID = Basiselement.BasiselementID&#xD;&#xA;WHERE        (KostuemTageszeit.Tageszeit_L1 IS NOT NULL)" msprop:QueryBuilder="SpecificQueryBuilder">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Tageszeit_L2" msprop:design-time-name="c961a2e1-bb56-43a6-a8e9-8a8ac2c8ec54" msprop:DbColumnName="Tageszeit_L2" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Tageszeit_L1" msprop:design-time-name="b188a5f8-a5ac-4505-960d-f59fcb83b54e" msprop:DbColumnName="Tageszeit_L1" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="ID" msprop:design-time-name="abaa0317-fe36-4428-9ce1-b8ac29c1b1ef" msprop:DbColumnName="ID" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="BasiselementFarbname" msprop:design-time-name="ed7cf704-b047-4161-b8eb-59137da0b293" msprop:IsLogical="True" msprop:FriendlyName="BasiselementFarbe" msprop:DbTableName="BasiselementFarbe" msprop:TableType="View" msprop:Description="" msprop:QueryDefinition="SELECT        BasiselementFarbe.Farbname_L3, BasiselementFarbe.Farbname_L2, BasiselementFarbe.Farbname_L1, Basiselement.BasiselementID AS ID&#xD;&#xA;FROM            BasiselementFarbe INNER JOIN&#xD;&#xA;                         Basiselement ON BasiselementFarbe.BasiselementID = Basiselement.BasiselementID&#xD;&#xA;WHERE        (BasiselementFarbe.Farbname_L1 IS NOT NULL)" msprop:QueryBuilder="SpecificQueryBuilder">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Farbname_L3" msprop:design-time-name="ddc358af-ca50-458d-bf2d-1cc9589e8028" msprop:DbColumnName="Farbname_L3" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Farbname_L2" msprop:design-time-name="c54133e1-fcf4-4b8f-965c-223214be7195" msprop:DbColumnName="Farbname_L2" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Farbname_L1" msprop:design-time-name="704e2b4c-1f3d-4ca3-8023-2bab8853f46c" msprop:DbColumnName="Farbname_L1" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="ID" msprop:design-time-name="8c3c60e0-d52f-4090-ad8f-bc246e395076" msprop:DbColumnName="ID" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="BasiselementFarbeindruck" msprop:design-time-name="7c5e7b53-1b43-4d9c-adc6-0c89885e3528" msprop:IsLogical="True" msprop:FriendlyName="BasiselementFarbeindruck" msprop:DbTableName="BasiselementFarbeindruck" msprop:TableType="View" msprop:Description="" msprop:QueryDefinition="SELECT        BasiselementFarbe.Farbeindruck, Basiselement.BasiselementID AS ID&#xD;&#xA;FROM            BasiselementFarbe INNER JOIN&#xD;&#xA;                         Basiselement ON BasiselementFarbe.BasiselementID = Basiselement.BasiselementID&#xD;&#xA;WHERE        (BasiselementFarbe.Farbeindruck IS NOT NULL)" msprop:QueryBuilder="SpecificQueryBuilder">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Farbeindruck" msprop:design-time-name="4a20700b-b082-4c6d-aa51-d2ae22579c25" msprop:DbColumnName="Farbeindruck" msprop:FriendlyName="Farbeindruck" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="ID" msprop:design-time-name="18a4e07f-6dd4-49db-bf3b-c8bfb0aa86f6" msprop:DbColumnName="ID" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="BasiselementMaterialname" msprop:design-time-name="d9524dc2-efec-4682-81b8-4dae08cd994b" msprop:IsLogical="True" msprop:FriendlyName="BasiselementMaterial" msprop:DbTableName="BasiselementMaterial" msprop:TableType="View" msprop:Description="" msprop:QueryDefinition="SELECT        BasiselementMaterial.Materialname_L5, BasiselementMaterial.Materialname_L4, BasiselementMaterial.Materialname_L3, BasiselementMaterial.Materialname_L2, BasiselementMaterial.Materialname_L1, &#xD;&#xA;                         Basiselement.BasiselementID AS ID&#xD;&#xA;FROM            BasiselementMaterial INNER JOIN&#xD;&#xA;                         Basiselement ON BasiselementMaterial.BasiselementID = Basiselement.BasiselementID&#xD;&#xA;WHERE        (BasiselementMaterial.Materialname_L1 IS NOT NULL)" msprop:QueryBuilder="SpecificQueryBuilder">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Materialname_L5" msprop:design-time-name="d8f1b81b-e9af-412b-a649-a8538320a898" msprop:DbColumnName="Materialname_L5" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Materialname_L4" msprop:design-time-name="a69cea6e-5bb2-4647-a604-0e319f31528e" msprop:DbColumnName="Materialname_L4" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Materialname_L3" msprop:design-time-name="5066d2ed-bdcc-4dae-ab32-633d1b800675" msprop:DbColumnName="Materialname_L3" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Materialname_L2" msprop:design-time-name="98bd6ffd-d8e8-4450-983b-807701fe9995" msprop:DbColumnName="Materialname_L2" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Materialname_L1" msprop:design-time-name="07478826-0c50-41ae-b07a-6e60328ce42c" msprop:DbColumnName="Materialname_L1" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="ID" msprop:design-time-name="6cb986fc-7d68-4cfc-a48e-06e27ca3d310" msprop:DbColumnName="ID" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="BasiselementMaterialeindruck" msprop:design-time-name="b06b4f45-18c7-42fe-82ad-3e564e2cc088" msprop:IsLogical="True" msprop:FriendlyName="BasiselementMaterialeindruck" msprop:DbTableName="BasiselementMaterialeindruck" msprop:TableType="View" msprop:Description="" msprop:QueryDefinition="SELECT        BasiselementMaterial.Materialeindruck, Basiselement.BasiselementID AS ID&#xD;&#xA;FROM            BasiselementMaterial INNER JOIN&#xD;&#xA;                         Basiselement ON BasiselementMaterial.BasiselementID = Basiselement.BasiselementID" msprop:QueryBuilder="SpecificQueryBuilder">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Materialeindruck" msprop:design-time-name="a7e7b86c-33c4-4443-9c8b-8f193ddad333" msprop:DbColumnName="Materialeindruck" msprop:FriendlyName="Materialeindruck" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="ID" msprop:design-time-name="d48f4a90-d8f8-4ebd-8832-db3ce8556f49" msprop:DbColumnName="ID" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="RolleStereotyp" msprop:design-time-name="700e885c-eb2c-4594-b9a5-97438bf910b1" msprop:IsLogical="True" msprop:FriendlyName="RolleStereotyp" msprop:DbTableName="RolleStereotyp" msprop:TableType="View" msprop:Description="" msprop:QueryDefinition="SELECT        RolleStereotyp.Stereotyp_L1, RolleStereotyp.Stereotyp_L2, RolleStereotyp.Stereotyp_L3, RolleStereotyp.Stereotyp_L4, Basiselement.BasiselementID AS ID&#xD;&#xA;FROM            RolleStereotyp INNER JOIN&#xD;&#xA;                         KostuemBasiselement ON RolleStereotyp.RollenID = KostuemBasiselement.RollenID AND RolleStereotyp.FilmID = KostuemBasiselement.FilmID INNER JOIN&#xD;&#xA;                         Basiselement ON KostuemBasiselement.BasiselementID = Basiselement.BasiselementID&#xD;&#xA;WHERE        (RolleStereotyp.Stereotyp_L1 IS NOT NULL)" msprop:QueryBuilder="SpecificQueryBuilder">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Stereotyp_L1" msprop:design-time-name="782bfd9e-b3fb-4ddc-93de-cbf9b19e6088" msprop:DbColumnName="Stereotyp_L1" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Stereotyp_L2" msprop:design-time-name="56afb32e-28e6-4d79-b1f2-53794a1a9aac" msprop:DbColumnName="Stereotyp_L2" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Stereotyp_L3" msprop:design-time-name="e08facc0-45ca-4617-9927-a85e0060bb8b" msprop:DbColumnName="Stereotyp_L3" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Stereotyp_L4" msprop:design-time-name="ac7f7fa6-8b74-4f5d-9f2c-2dd38b9e44c6" msprop:DbColumnName="Stereotyp_L4" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="ID" msprop:design-time-name="49a80c69-7e4f-40d9-916a-ccb25c13ab9f" msprop:DbColumnName="ID" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="RolleBeruf" msprop:design-time-name="2c8bb36f-05c0-4d24-83ee-1b31a011e283" msprop:IsLogical="True" msprop:FriendlyName="RolleBeruf" msprop:DbTableName="RolleBeruf" msprop:TableType="View" msprop:Description="" msprop:QueryDefinition="SELECT        Rolle.Rollenberuf_L1, Rolle.Rollenberuf_L3, Rolle.Rollenberuf_L4, Rolle.Rollenberuf_L2, Basiselement.BasiselementID AS ID&#xD;&#xA;FROM            KostuemBasiselement INNER JOIN&#xD;&#xA;                         Rolle ON KostuemBasiselement.RollenID = Rolle.RollenID AND KostuemBasiselement.FilmID = Rolle.FilmID INNER JOIN&#xD;&#xA;                         Basiselement ON KostuemBasiselement.BasiselementID = Basiselement.BasiselementID&#xD;&#xA;WHERE        (Rolle.Rollenberuf_L1 IS NOT NULL)" msprop:QueryBuilder="SpecificQueryBuilder">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ID" msprop:design-time-name="4f036dac-0bb7-4069-91c4-756cfcfa423f" msprop:DbColumnName="ID" msprop:FriendlyName="ID" type="xs:int" minOccurs="0" />
+                  <xs:element name="Rollenberuf_L1" msprop:design-time-name="d4ab00af-2e79-4f28-94cf-183bcfe8f32f" msprop:DbColumnName="Rollenberuf_L1" msprop:FriendlyName="Rollenberuf_L1" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Rollenberuf_L3" msprop:design-time-name="03680adf-1909-4c09-ac87-28190a82baf9" msprop:DbColumnName="Rollenberuf_L3" msprop:FriendlyName="Rollenberuf_L3" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Rollenberuf_L4" msprop:design-time-name="4b3c8674-9f97-4319-b347-248b5a9c2386" msprop:DbColumnName="Rollenberuf_L4" msprop:FriendlyName="Rollenberuf_L4" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Rollenberuf_L2" msprop:design-time-name="e2f15949-43a2-451f-a4b6-e9d1e67911da" msprop:DbColumnName="Rollenberuf_L2" msprop:FriendlyName="Rollenberuf_L2" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="FilmFarbkonzept" msprop:design-time-name="024df7ae-9dda-4291-9e84-c4a08cea790f" msprop:IsLogical="True" msprop:FriendlyName="FilmFarbkonzept" msprop:DbTableName="FilmFarbkonzept" msprop:TableType="View" msprop:Description="" msprop:QueryDefinition="SELECT        FilmFarbkonzept.Farbkonzept_L1, FilmFarbkonzept.Farbkonzept_L2, Basiselement.BasiselementID AS ID&#xD;&#xA;FROM            KostuemBasiselement INNER JOIN&#xD;&#xA;                         FilmFarbkonzept ON KostuemBasiselement.FilmID = FilmFarbkonzept.FilmID INNER JOIN&#xD;&#xA;                         Basiselement ON KostuemBasiselement.BasiselementID = Basiselement.BasiselementID&#xD;&#xA;WHERE        (FilmFarbkonzept.Farbkonzept_L1 IS NOT NULL)" msprop:QueryBuilder="SpecificQueryBuilder">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Farbkonzept_L1" msprop:design-time-name="e33e34ec-0014-4bd7-bcb0-535cebae9453" msprop:DbColumnName="Farbkonzept_L1" msprop:FriendlyName="Farbkonzept_L1" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Farbkonzept_L2" msprop:design-time-name="94c3c50a-62a5-4961-9375-c48ff1064972" msprop:DbColumnName="Farbkonzept_L2" msprop:FriendlyName="Farbkonzept_L2" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="ID" msprop:design-time-name="391ad6ca-fd78-44b9-9334-f6b6a85add0c" msprop:DbColumnName="ID" msprop:FriendlyName="ID" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="KostuemSpielortDetail" msprop:design-time-name="33cfe55c-5e3c-4994-9930-954dca796190" msprop:IsLogical="True" msprop:FriendlyName="KostuemSpielortDetail" msprop:DbTableName="KostuemSpielortDetail" msprop:TableType="View" msprop:Description="" msprop:QueryDefinition="SELECT        KostuemSpielort.SpielortDetail_L1, KostuemSpielort.SpielortDetail_L2, KostuemSpielort.SpielortDetail_L3, KostuemSpielort.SpielortDetail_L4, KostuemSpielort.SpielortDetail_L5, &#xD;&#xA;                         Basiselement.BasiselementID AS ID&#xD;&#xA;FROM            KostuemBasiselement INNER JOIN&#xD;&#xA;                         KostuemSpielort ON KostuemBasiselement.KostuemID = KostuemSpielort.KostuemID AND KostuemBasiselement.RollenID = KostuemSpielort.RollenID AND &#xD;&#xA;                         KostuemBasiselement.FilmID = KostuemSpielort.FilmID INNER JOIN&#xD;&#xA;                         Basiselement ON KostuemBasiselement.BasiselementID = Basiselement.BasiselementID&#xD;&#xA;WHERE        (KostuemSpielort.SpielortDetail_L1 IS NOT NULL)" msprop:QueryBuilder="SpecificQueryBuilder">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ID" msprop:design-time-name="37eb67d5-2e91-463b-88ef-6ad345434a2e" msprop:DbColumnName="ID" msprop:FriendlyName="ID" type="xs:int" minOccurs="0" />
+                  <xs:element name="SpielortDetail_L1" msprop:design-time-name="4438a479-abb4-41aa-9838-ff3e9e9459ab" msprop:DbColumnName="SpielortDetail_L1" msprop:FriendlyName="SpielortDetail_L1" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="SpielortDetail_L2" msprop:design-time-name="2c2d5dae-9fee-49eb-b634-1fbc2fb24382" msprop:DbColumnName="SpielortDetail_L2" msprop:FriendlyName="SpielortDetail_L2" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="SpielortDetail_L3" msprop:design-time-name="ed1d769f-e19f-4812-af32-1aeb13a53f36" msprop:DbColumnName="SpielortDetail_L3" msprop:FriendlyName="SpielortDetail_L3" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="SpielortDetail_L4" msprop:design-time-name="e256a9b9-6ed2-4516-81f8-4001a61dd560" msprop:DbColumnName="SpielortDetail_L4" msprop:FriendlyName="SpielortDetail_L4" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="SpielortDetail_L5" msprop:design-time-name="fba6e410-f9fb-46c9-80cf-8fa554bba83b" msprop:DbColumnName="SpielortDetail_L5" msprop:FriendlyName="SpielortDetail_L5" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="KostuemDominanteFarbe" msprop:design-time-name="8cb3e20f-2c76-4936-b581-f0eb1ee3660f" msprop:IsLogical="True" msprop:FriendlyName="KostuemDominanteFarbe" msprop:DbTableName="KostuemDominanteFarbe" msprop:TableType="View" msprop:Description="" msprop:QueryDefinition="SELECT        kostuem.DominanteFarbe_L3, kostuem.DominanteFarbe_L2, kostuem.DominanteFarbe_L1, Basiselement.BasiselementID AS ID&#xD;&#xA;FROM            KostuemBasiselement INNER JOIN&#xD;&#xA;                         kostuem ON KostuemBasiselement.KostuemID = kostuem.KostuemID AND KostuemBasiselement.RollenID = kostuem.RollenID AND KostuemBasiselement.FilmID = kostuem.FilmID INNER JOIN&#xD;&#xA;                         Basiselement ON KostuemBasiselement.BasiselementID = Basiselement.BasiselementID" msprop:QueryBuilder="SpecificQueryBuilder">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ID" msprop:design-time-name="bb64a349-e529-44f8-b625-4182e8009481" msprop:DbColumnName="ID" msprop:FriendlyName="ID" type="xs:int" minOccurs="0" />
+                  <xs:element name="DominanteFarbe_L3" msprop:design-time-name="e5bec5a8-d691-408e-8493-4ef7e5be32d3" msprop:DbColumnName="DominanteFarbe_L3" msprop:FriendlyName="DominanteFarbe_L3" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="DominanteFarbe_L2" msprop:design-time-name="456a6a91-1a5e-4d9a-ae93-fb525a614955" msprop:DbColumnName="DominanteFarbe_L2" msprop:FriendlyName="DominanteFarbe_L2" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="DominanteFarbe_L1" msprop:design-time-name="a28d1ade-b99d-46f0-816a-078d2ad5a8b8" msprop:DbColumnName="DominanteFarbe_L1" msprop:FriendlyName="DominanteFarbe_L1" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="KostuemDominanterZustand" msprop:design-time-name="92d26a52-a6b0-4a2e-9e5e-cdfb66f25c3c" msprop:IsLogical="True" msprop:FriendlyName="KostuemDominanterZustand" msprop:DbTableName="KostuemDominanterZustand" msprop:TableType="View" msprop:Description="" msprop:QueryDefinition="SELECT        kostuem.DominanterZustand_L1, kostuem.DominanterZustand_L2, kostuem.DominanterZustand_L3, Basiselement.BasiselementID AS ID&#xD;&#xA;FROM            KostuemBasiselement INNER JOIN&#xD;&#xA;                         kostuem ON KostuemBasiselement.KostuemID = kostuem.KostuemID AND KostuemBasiselement.RollenID = kostuem.RollenID AND KostuemBasiselement.FilmID = kostuem.FilmID INNER JOIN&#xD;&#xA;                         Basiselement ON KostuemBasiselement.BasiselementID = Basiselement.BasiselementID&#xD;&#xA;WHERE        (kostuem.DominanterZustand_L1 IS NOT NULL)" msprop:QueryBuilder="SpecificQueryBuilder">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ID" msprop:design-time-name="cc26a734-6ab4-411b-9f86-75a831973f02" msprop:DbColumnName="ID" msprop:FriendlyName="ID" type="xs:int" minOccurs="0" />
+                  <xs:element name="DominanterZustand_L1" msprop:design-time-name="6813e353-9116-4eea-b233-47d67fc241ed" msprop:DbColumnName="DominanterZustand_L1" msprop:FriendlyName="DominanterZustand_L1" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="DominanterZustand_L2" msprop:design-time-name="ee6c488a-4dc3-4d51-a7b7-1996d7311885" msprop:DbColumnName="DominanterZustand_L2" msprop:FriendlyName="DominanterZustand_L2" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="DominanterZustand_L3" msprop:design-time-name="1c3b3961-59e9-4420-b2fb-f011cb0fbe45" msprop:DbColumnName="DominanterZustand_L3" msprop:FriendlyName="DominanterZustand_L3" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="KostuemDominanteFunktion" msprop:design-time-name="20303d56-6d73-4c28-8ae6-50081a6a52e9" msprop:IsLogical="True" msprop:FriendlyName="KostuemDominanteFunktion" msprop:DbTableName="KostuemDominanteFunktion" msprop:TableType="View" msprop:Description="" msprop:QueryDefinition="SELECT        kostuem.DominanteFunktion_L5, kostuem.DominanteFunktion_L4, kostuem.DominanteFunktion_L3, kostuem.DominanteFunktion_L2, kostuem.DominanteFunktion_L1, Basiselement.BasiselementID AS ID&#xD;&#xA;FROM            KostuemBasiselement INNER JOIN&#xD;&#xA;                         kostuem ON KostuemBasiselement.KostuemID = kostuem.KostuemID AND KostuemBasiselement.RollenID = kostuem.RollenID AND KostuemBasiselement.FilmID = kostuem.FilmID INNER JOIN&#xD;&#xA;                         Basiselement ON KostuemBasiselement.BasiselementID = Basiselement.BasiselementID" msprop:QueryBuilder="SpecificQueryBuilder">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ID" msprop:design-time-name="7a3d3222-d64c-44d6-8a5d-ac78431adf09" msprop:DbColumnName="ID" msprop:FriendlyName="ID" type="xs:int" minOccurs="0" />
+                  <xs:element name="DominanteFunktion_L5" msprop:design-time-name="6eae6f69-4053-4df8-b25b-702a3bce1bbc" msprop:DbColumnName="DominanteFunktion_L5" msprop:FriendlyName="DominanteFunktion_L5" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="DominanteFunktion_L4" msprop:design-time-name="f062f915-9bb5-4bc8-8410-783886305765" msprop:DbColumnName="DominanteFunktion_L4" msprop:FriendlyName="DominanteFunktion_L4" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="DominanteFunktion_L3" msprop:design-time-name="e5c8e198-6834-4f08-b71e-6ef16acd65db" msprop:DbColumnName="DominanteFunktion_L3" msprop:FriendlyName="DominanteFunktion_L3" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="DominanteFunktion_L2" msprop:design-time-name="d23a4a60-7120-4c9d-b728-654f821de99b" msprop:DbColumnName="DominanteFunktion_L2" msprop:FriendlyName="DominanteFunktion_L2" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="DominanteFunktion_L1" msprop:design-time-name="4c2f0420-b6db-4aa3-9490-5dd8413dbe9b" msprop:DbColumnName="DominanteFunktion_L1" msprop:FriendlyName="DominanteFunktion_L1" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msprop:IsLogical="True" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//Basiselement" />
+          <xs:field xpath="ID" />
+        </xs:unique>
+      </xs:element>
+      <xs:annotation>
+        <xs:appinfo>
+          <msdata:Relationship name="BasiselementDesign-Basiselement" msdata:parent="Basiselement" msdata:child="dbo_basiselementdesign" msdata:parentkey="ID" msdata:childkey="ID" msprop:IsLogical="True" msprop:Description="" />
+          <msdata:Relationship name="BasiselementFarbeindruck-Basiselement" msdata:parent="Basiselement" msdata:child="BasiselementFarbeindruck" msdata:parentkey="ID" msdata:childkey="ID" msprop:IsLogical="True" msprop:Description="" />
+          <msdata:Relationship name="KostuemSpielortDetail-Basiselement" msdata:parent="Basiselement" msdata:child="KostuemSpielortDetail" msdata:parentkey="ID" msdata:childkey="ID" msprop:IsLogical="True" msprop:Description="" />
+          <msdata:Relationship name="BasiselementMaterialeindruck-Basiselement" msdata:parent="Basiselement" msdata:child="BasiselementMaterialeindruck" msdata:parentkey="ID" msdata:childkey="ID" msprop:IsLogical="True" msprop:Description="" />
+          <msdata:Relationship name="KostuemSpielort-Basiselement" msdata:parent="Basiselement" msdata:child="Kostuemspielort" msdata:parentkey="ID" msdata:childkey="ID" msprop:IsLogical="True" msprop:Description="" />
+          <msdata:Relationship name="FilmGenre-Basiselement" msdata:parent="Basiselement" msdata:child="Filmgenre" msdata:parentkey="ID" msdata:childkey="ID" msprop:IsLogical="True" msprop:Description="" />
+          <msdata:Relationship name="FilmFarbkonzept-Basiselement" msdata:parent="Basiselement" msdata:child="FilmFarbkonzept" msdata:parentkey="ID" msdata:childkey="ID" msprop:IsLogical="True" msprop:Description="" />
+          <msdata:Relationship name="RolleFamilienstand-Basiselement" msdata:parent="Basiselement" msdata:child="Rollefamilienstand" msdata:parentkey="ID" msdata:childkey="ID" msprop:IsLogical="True" msprop:Description="" />
+          <msdata:Relationship name="BasiselementFarbe-Basiselement" msdata:parent="Basiselement" msdata:child="BasiselementFarbname" msdata:parentkey="ID" msdata:childkey="ID" msprop:IsLogical="True" msprop:Description="" />
+          <msdata:Relationship name="KostuemAlterseindruck-Basiselement" msdata:parent="Basiselement" msdata:child="Kostuemalterseindruck" msdata:parentkey="ID" msdata:childkey="ID" msprop:IsLogical="True" msprop:Description="" />
+          <msdata:Relationship name="KostuemKoerpermodifikation-Basiselement" msdata:parent="Basiselement" msdata:child="Kostuemkoerpermodifikation" msdata:parentkey="ID" msdata:childkey="ID" msprop:IsLogical="True" msprop:Description="" />
+          <msdata:Relationship name="RolleBeruf-Basiselement" msdata:parent="Basiselement" msdata:child="RolleBeruf" msdata:parentkey="ID" msdata:childkey="ID" msprop:IsLogical="True" msprop:Description="" />
+          <msdata:Relationship name="BasiselementTrageweise-Basiselement" msdata:parent="Basiselement" msdata:child="dbo_basiselementtrageweise" msdata:parentkey="ID" msdata:childkey="ID" msprop:IsLogical="True" msprop:Description="" />
+          <msdata:Relationship name="RolleStereotyp-Basiselement" msdata:parent="Basiselement" msdata:child="RolleStereotyp" msdata:parentkey="ID" msdata:childkey="ID" msprop:IsLogical="True" msprop:Description="" />
+          <msdata:Relationship name="FilmProduktionsort-Basiselement" msdata:parent="Basiselement" msdata:child="Filmproduktionsort" msdata:parentkey="ID" msdata:childkey="ID" msprop:IsLogical="True" msprop:Description="" />
+          <msdata:Relationship name="KostuemSpielzeit-Basiselement" msdata:parent="Basiselement" msdata:child="Kostuemspielzeit" msdata:parentkey="ID" msdata:childkey="ID" msprop:IsLogical="True" msprop:Description="" />
+          <msdata:Relationship name="BasiselementForm-Basiselement" msdata:parent="Basiselement" msdata:child="dbo_basiselementform" msdata:parentkey="ID" msdata:childkey="ID" msprop:IsLogical="True" msprop:Description="" />
+          <msdata:Relationship name="BasiselementFunktion-Basiselement" msdata:parent="Basiselement" msdata:child="dbo_basiselementfunktion" msdata:parentkey="ID" msdata:childkey="ID" msprop:IsLogical="True" msprop:Description="" />
+          <msdata:Relationship name="KostuemTageszeit-Basiselement" msdata:parent="Basiselement" msdata:child="Kostuemtageszeit" msdata:parentkey="ID" msdata:childkey="ID" msprop:IsLogical="True" msprop:Description="" />
+          <msdata:Relationship name="BasiselementMaterial-Basiselement" msdata:parent="Basiselement" msdata:child="BasiselementMaterialname" msdata:parentkey="ID" msdata:childkey="ID" msprop:IsLogical="True" msprop:Description="" />
+          <msdata:Relationship name="KostuemCharaktereigenschaft-Basiselement" msdata:parent="Basiselement" msdata:child="Kostuemcharaktereigenschaft" msdata:parentkey="ID" msdata:childkey="ID" msprop:IsLogical="True" msprop:Description="" />
+          <msdata:Relationship name="RolleCharaktereigenschaft-Basiselement" msdata:parent="Basiselement" msdata:child="Rolledominantecharaktereigenschaft" msdata:parentkey="ID" msdata:childkey="ID" msprop:IsLogical="True" msprop:Description="" />
+          <msdata:Relationship name="BasiselementZustand-Basiselement" msdata:parent="Basiselement" msdata:child="dbo_basiselementzustand" msdata:parentkey="ID" msdata:childkey="ID" msprop:IsLogical="True" msprop:Description="" />
+          <msdata:Relationship name="KostuemDominanteFarbe-Basiselement" msdata:parent="Basiselement" msdata:child="KostuemDominanteFarbe" msdata:parentkey="ID" msdata:childkey="ID" msprop:IsLogical="True" msprop:Description="" />
+          <msdata:Relationship name="KostuemDominanterZustand-Basiselement" msdata:parent="Basiselement" msdata:child="KostuemDominanterZustand" msdata:parentkey="ID" msdata:childkey="ID" msprop:IsLogical="True" msprop:Description="" />
+          <msdata:Relationship name="KostuemDominanteFunktion-Basiselement" msdata:parent="Basiselement" msdata:child="KostuemDominanteFunktion" msdata:parentkey="ID" msdata:childkey="ID" msprop:IsLogical="True" msprop:Description="" />
+        </xs:appinfo>
+      </xs:annotation>
+    </xs:schema>
+    <Basiselemente xmlns="" />
+  </Schema>
+</DataSourceView>
