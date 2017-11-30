@@ -4065,7 +4065,7 @@
   <MiningModels>
     <MiningModel dwd:design-time-name="2f1c7ee1-938a-4204-82f5-24f1bc0d1723">
       <ID>ms_kostuem__charakter_basiselement_1 2 1 1 2 1 1 1 1 1</ID>
-      <Name>western__K_a_b</Name>
+      <Name>western__K_a_b2</Name>
       <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
       <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
       <Annotations>
@@ -4158,7 +4158,7 @@
     </MiningModel>
     <MiningModel dwd:design-time-name="8c9fb3c0-017d-4c5c-8ee4-0ae862ffabd6">
       <ID>ms_kostuem__charakter_basiselement__highschool_komoedie 1 1 1 2 1 1 1 1 1</ID>
-      <Name>highschool_komoedie__K_a_b</Name>
+      <Name>highschool_komoedie__K_a_b2</Name>
       <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
       <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
       <Annotations>
