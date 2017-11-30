@@ -4,7 +4,9 @@
 
 import argparse
 import re
+import csv
 from os import path
+from pathlib import Path
 from xml.etree import ElementTree as ET
 
 from typing import List, Union, Set, Tuple, TypeVar
@@ -52,6 +54,19 @@ class MiningColumn():
         """The ID of the mining column."""
         return self.node.find('./default:ID', Document.namespaces).text
 
+    @property
+    def level(self) -> int:
+        level = re.match('.*[Ll]?([0-9]+)$', str(self))
+        if not level:
+            return 0
+        for group in level.groups():
+            return max(map(int, group))
+
+    @property
+    def shortname(self):
+        name = str(self)
+        return re.sub('[-_\s]*[Ll]?[0-9]+$', '', name)
+
     def __str__(self):
         """The name of the column (if nested the name of the child column)."""
         if not self.nested:
@@ -74,8 +89,8 @@ class MiningColumn():
             return True
         if not strict:
             regex = re.compile('.[Ll]?[0-9]+$')
-            column = re.sub(regex, '', column)
-            to_compare = re.sub(regex, '', to_compare)
+            column = regex.sub('', column)
+            to_compare = regex.sub('', to_compare)
             return to_compare == column
         return False
 
@@ -131,7 +146,7 @@ class Document():
     def load(self):
         """(Re-)Load the document."""
         self.xml = ET.parse(self.filename)
-        self.root = path.basename(self.filename).split('_')[1]
+        self.root = path.basename(self.filename).rstrip('_vorlage.dmm').strip('ms_')
         self.input_columns = []
 
     def __repr__(self):
@@ -172,11 +187,6 @@ class Document():
     @property
     def name(self) -> str:
         """The name of this document."""
-        name = [self.root]
-        if self.input_columns:
-            name.append(str(self.input_columns[0]).replace(' ', '-'))
-        if self.output_column:
-            name.append(str(self.output_column).replace(' ', '-'))
         return '{}__{}'.format(self.root, self.part_name)
 
     @property
@@ -184,12 +194,16 @@ class Document():
         """Part of the name containing used mining columns."""
         name = []
         if self.input_columns:
-            name.append(str(self.input_columns[0]).replace(' ', '-'))
+            name.append('_'.join([col.shortname for col in self.input_columns]))
         if self.output_column:
-            name.append(str(self.output_column).replace(' ', '-'))
+            name.append(self.output_column.shortname)
         if not name:
             return 'null_null'
-        return '_'.join(name)
+        return '__'.join(name)
+
+    def get_columns_by_name(self, col_name):
+        matches = [col for col in self.mining_columns if col.matches(col_name)]
+        return matches
 
     def clear_selection(self):
         """Clear the selection."""
@@ -241,28 +255,57 @@ class Document():
             else:
                 column_root.remove(col.node)
 
-    def write(self, output_folder: str=OUTPUT_FOLDER):
+    def write(self):
         """Write the prepared file to disk."""
-        self.xml.write(path.join(output_folder, 'ms_{}.dmm'.format(self.name)), encoding='utf-8')
+        new_model = Path(self.filename).resolve().parent / Path('{}.dmm'.format(self.name))
+        self.xml.write(str(new_model), encoding='utf-8')
 
         # fix first line of xml not containing all namespaces:
         # pylint: disable=line-too-long
         firstline = '<MiningStructure xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="9a04bc07-3516-401d-bb79-9590a3dca94b" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">\n'
         lines = ['']
-        with open(path.join(output_folder, 'ms_{}.dmm'.format(self.name))) as file:
+        with new_model.open() as file:
             lines = file.readlines()
         lines[0] = firstline
-        with open(path.join(output_folder, 'ms_{}.dmm'.format(self.name)), mode='w') as file:
+        with new_model.open(mode='w') as file:
             lines = file.writelines(lines)
-        self.write_project_item(output_folder)
+        self.write_project_item()
 
-    def write_project_item(self, output_folder: str=OUTPUT_FOLDER):
+    def write_project_item(self):
         """Append the project item xml code to a temp file."""
-        with open(path.join(output_folder, 'project_items.txt'), mode='a') as file:
-            file.write('    <ProjectItem>\n')
-            file.write('      <Name>ms_{}.dmm</Name>\n'.format(self.name))
-            file.write('      <FullPath>ms_{}.dmm</FullPath>\n'.format(self.name))
-            file.write('    </ProjectItem>\n')
+        project_files = Path(self.filename).resolve().parent.glob('*.dwproj')
+        for project in project_files:
+            lines = None
+            with project.open() as file:
+                lines = file.readlines()
+            with project.open(mode='w') as file:
+                for line in lines:
+                    if '</MiningModels>' in line:
+                        file.write('    <ProjectItem>\n')
+                        file.write('      <Name>{}.dmm</Name>\n'.format(self.name))
+                        file.write('      <FullPath>{}.dmm</FullPath>\n'.format(self.name))
+                        file.write('    </ProjectItem>\n')
+                    file.write(line)
+
+    def export_mining_columns(self) -> str:
+        columns = sorted(self.mining_columns, key=str)
+        last_col = None
+        filtered = []
+        for col in columns:
+            if last_col and col.matches(last_col):
+                continue
+            else:
+                last_col = col
+                if col.shortname.upper() != 'ID':
+                    filtered.append(col.shortname)
+        filtered.sort()
+        output = Path(self.filename).resolve()
+        output = output.parent / Path(output.stem + '.csv')
+        with output.open(mode='w') as csv_file:
+            writer = csv.writer(csv_file)
+            writer.writerow([''] + filtered)
+            for row in filtered:
+                writer.writerow([row] + ['']*len(filtered))
 
 
 T = TypeVar('T')
@@ -306,28 +349,67 @@ def final_check(doc: Document) -> bool:
     return False
 
 
+def find_model_by_name(name: str) -> Path:
+    if not name.endswith('.dmm'):
+        name += '.dmm'
+    models = Path().rglob('*.dmm')
+    for model in models:
+        if model.name == name:
+            return model
+
+
+def find_csv_by_name(name: str) -> Path:
+    if not name.endswith('.csv'):
+        name += '.csv'
+    models = Path().rglob('*.csv')
+    for model in models:
+        if model.name == name:
+            return model
+
+
 def main():
     """Main input loop."""
-    parser = argparse.ArgumentParser(description='Create a new mining model from the template.')
-    parser.add_argument('file')
+    parser = argparse.ArgumentParser(description='Create a new mining model from the template.\n'
+                                     'Use "extract" to extract possible mining columns into a csv.\n'
+                                     'Use "create" to create all specified mining models from a csv.')
+    parser.add_argument('operation', type=str, choices=('extract', 'create'), metavar='operation', help='"create" or "extract"')
+    parser.add_argument('filename', type=str, help='Either the name of the model (if "extract") or the name of the csv file (if "create").')
     args = parser.parse_args()
-    doc = Document(args.file)
 
-    while True:
-        add_input_column(doc)
-        add_output_column(doc)
-        if final_check(doc):
-            break
-        doc.clear_selection()
-    else:
-        doc.clear_selection()
-        print('exiting program')
-        return
+    if args.operation == 'extract':
+        model = find_model_by_name(args.filename)
+        if not model:
+            print("Model could not be found!")
+            return
+        doc = Document(str(model))
+        doc.export_mining_columns()
 
-    doc.prepare()
-    if REMOVE_UNUSED_COLUMNS:
-        doc.remove_unused()
-    doc.write()
+    elif args.operation == 'create':
+        csv_file = find_csv_by_name(args.filename)
+        if not csv_file:
+            print("CSV File could not be found!")
+            return
+        model = find_model_by_name(csv_file.stem)
+        if not model:
+            print("Model for CSV File could not be found!")
+            return
+        with csv_file.open() as csv_file:
+            reader = csv.DictReader(csv_file)
+            for row in reader:
+                output_row = row.pop('', None)
+                input_rows = [key for key in row if row[key]]
+                if output_row is not None and input_rows:
+                    print(input_rows, '->', output_row)
+                    doc = Document(str(model))
+                    doc.output_column = max(doc.get_columns_by_name(output_row),
+                                            key=lambda x: x.level)
+                    for col in input_rows:
+                        col = max(doc.get_columns_by_name(col), key=lambda x: x.level)
+                        doc.input_columns.append(col)
+                    doc.prepare()
+                    if REMOVE_UNUSED_COLUMNS:
+                        doc.remove_unused()
+                    doc.write()
 
 if __name__ == '__main__':
     main()
