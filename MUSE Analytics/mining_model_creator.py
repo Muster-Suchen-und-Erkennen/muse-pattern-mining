@@ -258,6 +258,9 @@ class Document():
     def write(self):
         """Write the prepared file to disk."""
         new_model = Path(self.filename).resolve().parent / Path('{}.dmm'.format(self.name))
+        if new_model.exists():
+            if not confirm('Model {} already exists! Override existing Model?'.format(self.name), default=False):
+                return
         self.xml.write(str(new_model), encoding='utf-8')
 
         # fix first line of xml not containing all namespaces:
@@ -278,6 +281,10 @@ class Document():
             lines = None
             with project.open() as file:
                 lines = file.readlines()
+            for line in lines:
+                if self.name in line:
+                    # dmm already exists in project
+                    return
             with project.open(mode='w') as file:
                 for line in lines:
                     if '</MiningModels>' in line:
@@ -301,8 +308,11 @@ class Document():
         filtered.sort()
         output = Path(self.filename).resolve()
         output = output.parent / Path(output.stem + '.csv')
+        if output.exists():
+            if not confirm('CSV File for {} already exists! Override CSV File?'.format(output.stem), default=False):
+                return
         with output.open(mode='w') as csv_file:
-            writer = csv.writer(csv_file)
+            writer = csv.writer(csv_file, delimiter=';')
             writer.writerow([''] + filtered)
             for row in filtered:
                 writer.writerow([row] + ['']*len(filtered))
@@ -343,10 +353,21 @@ def final_check(doc: Document) -> bool:
     print('Please check your inputs: \n')
     print(doc)
     print('\n')
-    result = input('Is everything correct? ([y]es, [n]o) [default: y]: ')
-    if result in ('yes', 'y', 'YES', 'Yes', 'Y', 'j', 'J', 'ja', 'JA', 'Ja', ''):
-        return True
-    return False
+    return confirm('Is everything correct?')
+
+
+def confirm(message: str, default: bool=True) -> bool:
+    default = 'y' if default else 'n'
+    result = input('{message} ([y]es, [n]o) [default: {default}]: '.format(message=message, default=default))
+    while True:
+        if result.isspace() or result == '':
+            return default
+        elif result in ('yes', 'y', 'YES', 'Yes', 'Y', 'j', 'J', 'ja', 'JA', 'Ja'):
+            return True
+        elif result in ('no', 'n', 'NO', 'No', 'N', 'nein', 'Nein', 'NEIN'):
+            return False
+        else:
+            result = input('Please answer with [y]es or [n]o. [default: {default}]: '.format(default=default))
 
 
 def find_model_by_name(name: str) -> Path:
@@ -373,6 +394,8 @@ def main():
                                      'Use "extract" to extract possible mining columns into a csv.\n'
                                      'Use "create" to create all specified mining models from a csv.')
     parser.add_argument('operation', type=str, choices=('extract', 'create'), metavar='operation', help='"create" or "extract"')
+    parser.add_argument('--multiple-input-columns', '-m', dest='multiple', action='store_true',
+                        help='If creating mining models "--multiple-input-columns" allows multiple input columns for a single model.')
     parser.add_argument('filename', type=str, help='Either the name of the model (if "extract") or the name of the csv file (if "create").')
     args = parser.parse_args()
 
@@ -394,22 +417,36 @@ def main():
             print("Model for CSV File could not be found!")
             return
         with csv_file.open() as csv_file:
-            reader = csv.DictReader(csv_file)
+            reader = csv.DictReader(csv_file, delimiter=';')
             for row in reader:
                 output_row = row.pop('', None)
                 input_rows = [key for key in row if row[key]]
                 if output_row is not None and input_rows:
-                    print(input_rows, '->', output_row)
-                    doc = Document(str(model))
-                    doc.output_column = max(doc.get_columns_by_name(output_row),
-                                            key=lambda x: x.level)
-                    for col in input_rows:
-                        col = max(doc.get_columns_by_name(col), key=lambda x: x.level)
-                        doc.input_columns.append(col)
-                    doc.prepare()
-                    if REMOVE_UNUSED_COLUMNS:
-                        doc.remove_unused()
-                    doc.write()
+                    if args.multiple:
+                        print(input_rows, '->', output_row)
+                        doc = Document(str(model))
+                        doc.output_column = max(doc.get_columns_by_name(output_row),
+                                                key=lambda x: x.level)
+                        for col in input_rows:
+                            col = max(doc.get_columns_by_name(col), key=lambda x: x.level)
+                            doc.input_columns.append(col)
+                        doc.prepare()
+                        if REMOVE_UNUSED_COLUMNS:
+                            doc.remove_unused()
+                        doc.write()
+                    else:
+                        for input_row in input_rows:
+                            print(input_row, '->', output_row)
+                            doc = Document(str(model))
+                            doc.output_column = max(doc.get_columns_by_name(output_row),
+                                                    key=lambda x: x.level)
+                            doc.input_columns.append(max(doc.get_columns_by_name(input_row),
+                                                         key=lambda x: x.level))
+                            doc.prepare()
+                            if REMOVE_UNUSED_COLUMNS:
+                                doc.remove_unused()
+                            doc.write()
+
 
 if __name__ == '__main__':
     main()

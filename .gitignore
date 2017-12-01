@@ -4,5 +4,6 @@
 *\bin
 *.suo
 .vscode
+.mypy_cache
 .sonarlint
 MUSE Analytics/MUSE Analytics/project_items.txt
