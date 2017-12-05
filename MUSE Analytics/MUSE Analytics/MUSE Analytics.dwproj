@@ -63,6 +63,14 @@
       <Name>kostuem_ungewichtet_vorlage.dmm</Name>
       <FullPath>kostuem_ungewichtet_vorlage.dmm</FullPath>
     </ProjectItem>
+    <ProjectItem>
+      <Name>kostuem_gewichtet__Charaktereigenschaft__Alterseindruck.dmm</Name>
+      <FullPath>kostuem_gewichtet__Charaktereigenschaft__Alterseindruck.dmm</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>kostuem_gewichtet__Dominante Farbe__Alterseindruck.dmm</Name>
+      <FullPath>kostuem_gewichtet__Dominante Farbe__Alterseindruck.dmm</FullPath>
+    </ProjectItem>
   </MiningModels>
   <Configurations>
     <Configuration>
