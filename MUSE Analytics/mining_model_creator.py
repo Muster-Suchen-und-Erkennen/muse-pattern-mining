@@ -396,6 +396,7 @@ def main():
     parser.add_argument('operation', type=str, choices=('extract', 'create'), metavar='operation', help='"create" or "extract"')
     parser.add_argument('--multiple-input-columns', '-m', dest='multiple', action='store_true',
                         help='If creating mining models "--multiple-input-columns" allows multiple input columns for a single model.')
+    parser.add_argument('--model', type=str, help='The Mining Model used as base Model for creating new Models. Only used if operation is "create".')
     parser.add_argument('filename', type=str, help='Either the name of the model (if "extract") or the name of the csv file (if "create").')
     args = parser.parse_args()
 
@@ -412,7 +413,11 @@ def main():
         if not csv_file:
             print("CSV File could not be found!")
             return
-        model = find_model_by_name(csv_file.stem)
+        model = None
+        if args.model:
+            model = find_model_by_name(args.model)
+        else:
+            model = find_model_by_name(csv_file.stem)
         if not model:
             print("Model for CSV File could not be found!")
             return
