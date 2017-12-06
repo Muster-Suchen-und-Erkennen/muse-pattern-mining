@@ -422,7 +422,8 @@ def find_csv_by_name(name: str) -> Path:
 def initialize_argument_parser():
     parser = argparse.ArgumentParser(description='Create a new mining model from the template.\n'
                                      'Use "extract" to extract possible mining columns into a csv.\n'
-                                     'Use "create" to create all specified mining models from a csv.')
+                                     'Use "create" to create all specified mining models from a csv.\n'
+                                     'For more help please look in the readme.md.')
     parser.add_argument('operation', type=str, choices=('extract', 'create', 'delete'), metavar='operation', help='"create" to create new mining models, "extract" to extract mining columns from a mining model or "delete" to delete created mining models.')
     parser.add_argument('--multiple-input-columns', '-m', dest='multiple', action='store_true',
                         help='If creating mining models "--multiple-input-columns" allows multiple input columns for a single model.')
