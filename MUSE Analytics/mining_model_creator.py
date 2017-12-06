@@ -5,7 +5,7 @@
 import argparse
 import re
 import csv
-from os import path
+from os import path, remove
 from pathlib import Path
 from xml.etree import ElementTree as ET
 
@@ -275,7 +275,7 @@ class Document():
         self.write_project_item()
 
     def write_project_item(self):
-        """Append the project item xml code to a temp file."""
+        """Add the mining model to the project file."""
         project_files = Path(self.filename).resolve().parent.glob('*.dwproj')
         for project in project_files:
             lines = None
@@ -293,6 +293,37 @@ class Document():
                         file.write('      <FullPath>{}.dmm</FullPath>\n'.format(self.name))
                         file.write('    </ProjectItem>\n')
                     file.write(line)
+
+    def delete(self):
+        """Delete existing model from disk."""
+        new_model = Path(self.filename).resolve().parent / Path('{}.dmm'.format(self.name))
+        if new_model.exists():
+            remove(str(new_model))
+        self.remove_project_item()
+
+    def remove_project_item(self):
+        """Add the mining model to the project file."""
+        project_files = Path(self.filename).resolve().parent.glob('*.dwproj')
+
+        def project_items(lines):
+            """Group project items into one string."""
+            index = 0
+            while index < len(lines):
+                line = lines[index]
+                if '<ProjectItem>' in line:
+                    while '</ProjectItem>' not in line:
+                        index += 1
+                        line += lines[index]
+                yield line
+                index += 1
+
+        for project in project_files:
+            lines = None
+            with project.open() as file:
+                lines = file.readlines()
+            lines = [line for line in project_items(lines) if self.name not in line]
+            with project.open(mode='w') as file:
+                file.writelines(lines)
 
     def export_mining_columns(self) -> str:
         columns = sorted(self.mining_columns, key=str)
@@ -388,16 +419,57 @@ def find_csv_by_name(name: str) -> Path:
             return model
 
 
-def main():
-    """Main input loop."""
+def initialize_argument_parser():
     parser = argparse.ArgumentParser(description='Create a new mining model from the template.\n'
                                      'Use "extract" to extract possible mining columns into a csv.\n'
                                      'Use "create" to create all specified mining models from a csv.')
-    parser.add_argument('operation', type=str, choices=('extract', 'create'), metavar='operation', help='"create" or "extract"')
+    parser.add_argument('operation', type=str, choices=('extract', 'create', 'delete'), metavar='operation', help='"create" to create new mining models, "extract" to extract mining columns from a mining model or "delete" to delete created mining models.')
     parser.add_argument('--multiple-input-columns', '-m', dest='multiple', action='store_true',
                         help='If creating mining models "--multiple-input-columns" allows multiple input columns for a single model.')
-    parser.add_argument('--model', type=str, help='The Mining Model used as base Model for creating new Models. Only used if operation is "create".')
-    parser.add_argument('filename', type=str, help='Either the name of the model (if "extract") or the name of the csv file (if "create").')
+    parser.add_argument('--model', type=str, help='The Mining Model used as base Model for creating new Models. Only used if operation is "create" or "delete".')
+    parser.add_argument('filename', type=str, help='Either the name of the model (if "extract") or the name of the csv file (if "create" or "delete").')
+    return parser
+
+
+def update_multiple_models(input_columns, output_column, model, create: bool=True):
+    """Create/Delete multiple mining models."""
+    print(input_columns, '->', output_column)
+    doc = Document(str(model))
+    doc.output_column = max(doc.get_columns_by_name(output_column),
+                            key=lambda x: x.level)
+    for col in input_columns:
+        col = max(doc.get_columns_by_name(col), key=lambda x: x.level)
+        doc.input_columns.append(col)
+    if create:
+        doc.prepare()
+        if REMOVE_UNUSED_COLUMNS:
+            doc.remove_unused()
+        doc.write()
+    else:
+        doc.delete()
+
+
+def update_single_model(input_rows, output_column, model, create: bool=True):
+    """Create/Delete single mining model."""
+    for input_columns in input_rows:
+        print(input_columns, '->', output_column)
+        doc = Document(str(model))
+        doc.output_column = max(doc.get_columns_by_name(output_column),
+                                key=lambda x: x.level)
+        doc.input_columns.append(max(doc.get_columns_by_name(input_columns),
+                                     key=lambda x: x.level))
+        if create:
+            doc.prepare()
+            if REMOVE_UNUSED_COLUMNS:
+                doc.remove_unused()
+            doc.write()
+        else:
+            doc.delete()
+
+
+def main():
+    """Main input loop."""
+    parser = initialize_argument_parser()
     args = parser.parse_args()
 
     if args.operation == 'extract':
@@ -408,7 +480,7 @@ def main():
         doc = Document(str(model))
         doc.export_mining_columns()
 
-    elif args.operation == 'create':
+    elif args.operation in ('create', 'delete'):
         csv_file = find_csv_by_name(args.filename)
         if not csv_file:
             print("CSV File could not be found!")
@@ -424,33 +496,13 @@ def main():
         with csv_file.open() as csv_file:
             reader = csv.DictReader(csv_file, delimiter=';')
             for row in reader:
-                output_row = row.pop('', None)
-                input_rows = [key for key in row if row[key]]
-                if output_row is not None and input_rows:
+                output_column = row.pop('', None)
+                input_columns = [key for key in row if row[key]]
+                if output_column is not None and input_columns:
                     if args.multiple:
-                        print(input_rows, '->', output_row)
-                        doc = Document(str(model))
-                        doc.output_column = max(doc.get_columns_by_name(output_row),
-                                                key=lambda x: x.level)
-                        for col in input_rows:
-                            col = max(doc.get_columns_by_name(col), key=lambda x: x.level)
-                            doc.input_columns.append(col)
-                        doc.prepare()
-                        if REMOVE_UNUSED_COLUMNS:
-                            doc.remove_unused()
-                        doc.write()
+                        update_multiple_models(input_columns, output_column, model, args.operation == 'create')
                     else:
-                        for input_row in input_rows:
-                            print(input_row, '->', output_row)
-                            doc = Document(str(model))
-                            doc.output_column = max(doc.get_columns_by_name(output_row),
-                                                    key=lambda x: x.level)
-                            doc.input_columns.append(max(doc.get_columns_by_name(input_row),
-                                                         key=lambda x: x.level))
-                            doc.prepare()
-                            if REMOVE_UNUSED_COLUMNS:
-                                doc.remove_unused()
-                            doc.write()
+                        update_single_model(input_columns, output_column, model, args.operation == 'create')
 
 
 if __name__ == '__main__':
