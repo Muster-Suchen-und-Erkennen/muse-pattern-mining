@@ -4,6 +4,12 @@
 
 __Requires Python >= 3.3__
 
+For better hashes install `humanhash3` or another version of `humanhash`:
+
+```
+pip install humanhash3
+```
+
 
 ```bash
 python3 mining_model_creator.py -h
@@ -46,6 +52,7 @@ Beruf;;x;
 
 The first row defines all possible input columns. The first name of the following rows defines column to predict. Every non empty cell is regarded as true.
 
+
 ### 3. create the models:
 
 ```bash
@@ -63,6 +70,7 @@ python3 mining_model_creator.py create -m <name of csv-file>
 ```
 
 This will create one model for every row. You can copy a row to make different models predicting the same mining column.
+Ìf the generated name exceeds 100 characters in length the input columns get replaced by a hash. For human readable hashes please install `humanhash`.  If a column with name `filename` is present in the csv, than the filename is read from this column.
 
 You can also specify the mining model to use as base for model creation:
 

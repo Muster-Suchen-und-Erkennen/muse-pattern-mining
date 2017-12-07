@@ -5,6 +5,12 @@
 import argparse
 import re
 import csv
+import hashlib
+humanhash = None
+try:
+    import humanhash
+except ImportError:
+    pass
 from os import path, remove
 from pathlib import Path
 from xml.etree import ElementTree as ET
@@ -125,7 +131,7 @@ class Document():
     input_columns = None  # type: List[MiningColumn]
     output_column = None  # type: MiningColumn
 
-    def __init__(self, filename: str):
+    def __init__(self, filename: str, name: str=None):
         ET.register_namespace('', 'http://schemas.microsoft.com/analysisservices/2003/engine')
         ET.register_namespace('xsd', 'http://www.w3.org/2001/XMLSchema')
         ET.register_namespace('xsi', 'http://www.w3.org/2001/XMLSchema-instance')
@@ -142,6 +148,8 @@ class Document():
 
         self.filename = filename
         self.load()
+
+        self._name = name
 
     def load(self):
         """(Re-)Load the document."""
@@ -186,8 +194,18 @@ class Document():
 
     @property
     def name(self) -> str:
-        """The name of this document."""
-        return '{}__{}'.format(self.root, self.part_name)
+        """The name of this documentnormalized to 100 characters."""
+        name = ''
+        if self._name:
+            name = self._name
+        else:
+            name = '{}__{}'.format(self.root, self.part_name)
+        if len(name) > 100:
+            part_name = hashlib.sha256(self.part_name.encode()).hexdigest()
+            if humanhash:
+                part_name = humanhash.humanize(part_name, words=3)
+            name = '{}__{}__{}'.format(self.root, part_name, self.output_column.shortname)[:100]
+        return name
 
     @property
     def part_name(self) -> str:
@@ -344,9 +362,9 @@ class Document():
                 return
         with output.open(mode='w') as csv_file:
             writer = csv.writer(csv_file, delimiter=';')
-            writer.writerow([''] + filtered)
+            writer.writerow([''] + filtered + ['filename'])
             for row in filtered:
-                writer.writerow([row] + ['']*len(filtered))
+                writer.writerow([row] + ['']*(len(filtered) + 1))
 
 
 T = TypeVar('T')
@@ -432,15 +450,16 @@ def initialize_argument_parser():
     return parser
 
 
-def update_multiple_models(input_columns, output_column, model, create: bool=True):
+def update_multiple_models(input_columns, output_column, model, output_name: str, create: bool=True):
     """Create/Delete multiple mining models."""
     print(input_columns, '->', output_column)
-    doc = Document(str(model))
+    doc = Document(str(model), output_name)
     doc.output_column = max(doc.get_columns_by_name(output_column),
                             key=lambda x: x.level)
     for col in input_columns:
         col = max(doc.get_columns_by_name(col), key=lambda x: x.level)
         doc.input_columns.append(col)
+    print(doc.name)
     if create:
         doc.prepare()
         if REMOVE_UNUSED_COLUMNS:
@@ -498,10 +517,11 @@ def main():
             reader = csv.DictReader(csv_file, delimiter=';')
             for row in reader:
                 output_column = row.pop('', None)
+                output_name = row.pop('filename', None)
                 input_columns = [key for key in row if row[key]]
                 if output_column is not None and input_columns:
                     if args.multiple:
-                        update_multiple_models(input_columns, output_column, model, args.operation == 'create')
+                        update_multiple_models(input_columns, output_column, model, output_name, args.operation == 'create')
                     else:
                         update_single_model(input_columns, output_column, model, args.operation == 'create')
 
