@@ -233,18 +233,21 @@ class Document():
         uuids = self.xml.getroot().findall('.//*[@dwd:design-time-name]', Document.namespaces)
         for node in uuids:
             del node.attrib['{http://schemas.microsoft.com/DataWarehouse/Designer/1.0}design-time-name']
-        self.xml.getroot().find('./default:ID', Document.namespaces).text = 'ms_{}'.format(self.name)
-        self.xml.getroot().find('./default:Name', Document.namespaces).text = 'ms_{}'.format(self.name)
+        self.xml.getroot().find('./default:ID', Document.namespaces).text = self.name
+        self.xml.getroot().find('./default:Name', Document.namespaces).text = self.name
         # Mining models
         models = self.xml.getroot().findall('./default:MiningModels/default:MiningModel', Document.namespaces)
         for model in models:
             self._prepare_model_columns(model)
-            if model.find('./default:Name', Document.namespaces).text.startswith('western'):
-                model.find('./default:ID', Document.namespaces).text = 'ms_western__{}'.format(self.name)
-                model.find('./default:Name', Document.namespaces).text = 'western__{}'.format(self.name)
-            elif model.find('./default:Name', Document.namespaces).text.startswith('highschool_komoedie'):
-                model.find('./default:ID', Document.namespaces).text = 'ms_highschool_komoedie__{}'.format(self.name)
-                model.find('./default:Name', Document.namespaces).text = 'highschool_komoedie__{}'.format(self.name)
+            if 'western' in model.find('./default:Name', Document.namespaces).text:
+                model.find('./default:ID', Document.namespaces).text = 'western__{}'.format(self.name)[:100]
+                model.find('./default:Name', Document.namespaces).text = 'western__{}'.format(self.name)[:100]
+            elif 'highschool_komoedie' in model.find('./default:Name', Document.namespaces).text:
+                model.find('./default:ID', Document.namespaces).text = 'highschool_komoedie__{}'.format(self.name)[:100]
+                model.find('./default:Name', Document.namespaces).text = 'highschool_komoedie__{}'.format(self.name)[:100]
+            elif 'maerchen' in model.find('./default:Name', Document.namespaces).text:
+                model.find('./default:ID', Document.namespaces).text = 'maerchen__{}'.format(self.name)[:100]
+                model.find('./default:Name', Document.namespaces).text = 'maerchen__{}'.format(self.name)[:100]
 
     def _prepare_model_columns(self, model: ET.Element):
         """Prepare the mining columns for the different models."""
