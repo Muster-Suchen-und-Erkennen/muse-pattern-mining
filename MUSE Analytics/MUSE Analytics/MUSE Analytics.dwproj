@@ -71,6 +71,22 @@
       <Name>kostuem_gewichtet__Dominante Farbe__Alterseindruck.dmm</Name>
       <FullPath>kostuem_gewichtet__Dominante Farbe__Alterseindruck.dmm</FullPath>
     </ProjectItem>
+    <ProjectItem>
+      <Name>basiselement_gewichtet__Geschlecht_Rollenrelevanz_Stereotyp__Designname.dmm</Name>
+      <FullPath>basiselement_gewichtet__Geschlecht_Rollenrelevanz_Stereotyp__Designname.dmm</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>basiselement_gewichtet__Geschlecht_Rollenrelevanz_Stereotyp__Farbname.dmm</Name>
+      <FullPath>basiselement_gewichtet__Geschlecht_Rollenrelevanz_Stereotyp__Farbname.dmm</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>basiselement_gewichtet__Geschlecht_Rollenrelevanz_Stereotyp__Materialname.dmm</Name>
+      <FullPath>basiselement_gewichtet__Geschlecht_Rollenrelevanz_Stereotyp__Materialname.dmm</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>basiselement_gewichtet__Geschlecht_Rollenrelevanz_Stereotyp__Zustandsname.dmm</Name>
+      <FullPath>basiselement_gewichtet__Geschlecht_Rollenrelevanz_Stereotyp__Zustandsname.dmm</FullPath>
+    </ProjectItem>
   </MiningModels>
   <Configurations>
     <Configuration>
